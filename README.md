@@ -69,6 +69,25 @@ are stored for deduplication but never used as identity.
 ## Tools
 
 ```sh
+tools/rcgrep.py --shaders                 # find documents by what they contain
+tools/rcgrep.py --3d --unique
+tools/rcgrep.py --op 'Particle|Mesh' --root ~/code/github/Origami
+tools/rcgrep.py --text 'half4\s+main' --json
+```
+
+`rcgrep` searches any tree, not just this corpus, and is how new material gets found. Two
+detectors, because one is not enough:
+
+* **Operation search uses the TypeScript reader, not `rc2json`.** `rc2json` keeps its own
+  opcode table and fails outright on extension operations — every 3D document is undecodable
+  by it — so an op search built on `rc2json` reports zero for exactly the documents you are
+  looking for.
+* **Shader search is content-based.** A shader is not an operation: its AGSL source travels as
+  a text payload, so no opcode reveals it.
+
+Results cache by content hash, so the same document in five checkouts is decoded once.
+
+```sh
 tools/rcx.py add <path…> --source NAME [--collection NAME]   # ingest, dedupe, attach sources
 tools/rcx.py rm <id>…                                        # remove cleanly
 tools/rcx.py catalog                                         # rebuild all derived data

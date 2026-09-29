@@ -64,6 +64,12 @@ that demonstrates the operation — usually what you want when the question is "
 corpus has no example" apart from "this operation does not exist". Both are browsable at
 `ops.html`.
 
+## Searching beyond the corpus
+
+`tools/rcgrep.py` finds documents by content across any tree — `--shaders`, `--3d`,
+`--op REGEX`, `--text REGEX`, `--json`. Use it to answer "is there an example of X anywhere"
+before concluding the corpus has none.
+
 ## Per document
 
 | path | contents |
