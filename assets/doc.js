@@ -23,32 +23,23 @@ function chosenSize(value) {
 }
 
 /**
- * Scale the canvas down to fit the stage without distorting it.
+ * Show the canvas at the size it is played at, 1:1.
  *
- * player.resize() sets canvas.style.width/height itself, to the full pixel size divided by
- * density. A 1024x1024 document would therefore overflow the stage. Overriding the style here
- * keeps the document PLAYING at the chosen resolution - which is the point of the menu, since
- * resize() re-flows layout and re-evaluates componentWidth/Height - while DISPLAYING it at
- * whatever fits.
+ * player.resize() sets canvas.style.width/height itself to pixels/density, so on a 2x display
+ * a 1024-pixel document would be shown at 512 CSS px and the menu would appear to do nothing.
+ * The style is therefore set explicitly here: picking 1024 gives a 1024 px player.
+ *
+ * Nothing is scaled to fit. If the document is larger than the stage the frame scrolls, which
+ * is the honest thing to do - a document played at 1024 and squeezed into 586 is not showing
+ * you what it looks like at 1024. Documents smaller than the stage are centred in it.
  */
 function fitCanvas() {
     if (!handle) return;
-    const frame = document.querySelector('.frame');
     const cw = handle.canvas.width, ch = handle.canvas.height;
     if (!cw || !ch) return;
-    const availW = frame.clientWidth - 24;
-    const availH = frame.clientHeight - 24;
-    // Deliberately NOT capped at 1: the stage is two thirds of the page and the document is
-    // meant to fill it, so a small document is scaled up to fit. The menu controls the
-    // resolution it is PLAYED at; this only controls how large it is shown. Pick 2x or 1024
-    // if the upscale looks soft - that re-renders rather than stretching.
-    const scale = Math.min(availW / cw, availH / ch);
-    handle.canvas.style.width = `${Math.round(cw * scale)}px`;
-    handle.canvas.style.height = `${Math.round(ch * scale)}px`;
-    const note = document.getElementById('size-note');
-    note.textContent = Math.abs(scale - 1) < 0.01
-        ? `${cw}×${ch}`
-        : `${cw}×${ch}, shown at ${Math.round(scale * 100)}%`;
+    handle.canvas.style.width = `${cw}px`;
+    handle.canvas.style.height = `${ch}px`;
+    document.getElementById('size-note').textContent = `${cw} × ${ch}`;
 }
 
 function applySize() {

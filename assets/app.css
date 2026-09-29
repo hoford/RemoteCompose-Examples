@@ -12,7 +12,7 @@ body {
   font: 14px/1.5 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif;
   height: 100vh; display: flex; flex-direction: column;
 }
-header { padding: 18px 22px 12px; border-bottom: 1px solid var(--line); }
+header { padding: 18px 28px 12px; border-bottom: 1px solid var(--line); }
 h1 { margin: 0; font-size: 19px; letter-spacing: -.01em; }
 .tagline { margin: 6px 0 0; color: var(--dim); font-size: 13px; max-width: 70ch; }
 code { background: var(--panel); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
@@ -20,8 +20,8 @@ code { background: var(--panel); padding: 1px 5px; border-radius: 4px; font-size
 main { flex: 1; display: flex; min-height: 0; }
 
 #sidebar {
-  width: 258px; flex: none; border-right: 1px solid var(--line);
-  padding: 14px; overflow-y: auto; background: var(--panel);
+  width: 272px; flex: none; border-right: 1px solid var(--line);
+  padding: 14px 16px 14px 28px; overflow-y: auto; background: var(--panel);
 }
 .counts { display: flex; align-items: center; justify-content: space-between; gap: 8px;
           font-size: 12px; color: var(--dim); margin-bottom: 12px; }
@@ -79,7 +79,7 @@ main { flex: 1; display: flex; min-height: 0; }
 .doc-body { overflow: hidden; }
 .doc-page { flex: 1; min-height: 0; overflow-y: auto; }
 
-.stage { height: 66vh; display: flex; flex-direction: column; padding: 12px 22px 0; }
+.stage { height: 66vh; display: flex; flex-direction: column; padding: 12px 28px 0; }
 .stage-bar {
   display: flex; align-items: center; justify-content: space-between;
   gap: 16px; padding-bottom: 10px; flex: none;
@@ -94,15 +94,21 @@ main { flex: 1; display: flex; min-height: 0; }
 .size-pick select:hover { border-color: var(--accent); }
 #size-note { font-variant-numeric: tabular-nums; min-width: 15ch; }
 
+/* overflow:auto, not hidden: the document is shown at its true played size, so anything
+   larger than the stage scrolls rather than being shrunk to fit. */
 .frame {
   flex: 1; min-height: 0; background: #0b0e13;
   border: 1px solid var(--line); border-radius: 10px;
-  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  display: flex; align-items: center; justify-content: center; overflow: auto;
 }
+/* Keeps a larger-than-stage canvas from being squashed by the flex centring. */
+.frame canvas { flex: none; margin: auto; }
 @media (prefers-color-scheme: light) { .frame { background: #eef1f5; } }
-.frame canvas { display: block; }
 
-.doc-info { padding: 22px; max-width: 900px; }
+
+/* Left gutter matches the stage above it so the text block lines up with the frame
+   rather than running to the window edge. */
+.doc-info { padding: 22px 28px 48px; max-width: 980px; }
 .doc-info h2 { margin: 0 0 4px; font-size: 19px; }
 .doc-info .path { color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
 .dl { display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0; }
