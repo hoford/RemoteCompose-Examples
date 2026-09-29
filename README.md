@@ -36,6 +36,11 @@ values combine with AND, because they are properties a document holds at once: p
 `Source` is the exception and combines with OR, since a document has exactly one. Each facet
 heading says which it is.
 
+Counts are live: every value shows how many documents it would actually yield given what is
+already selected, and values that would yield none are greyed and inert. With AND inside a
+facet it is otherwise easy to pick a combination nothing satisfies — `shaders` and `particles`
+share no document here — and an empty grid does not say whether that is a bug or the answer.
+
 ## Finding your way in
 
 `ops.html` — every operation the engine defines, the documents using it, and the ones with no

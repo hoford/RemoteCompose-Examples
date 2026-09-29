@@ -14,6 +14,8 @@ const S = {
     shards: new Map(),        // shard index -> array of card records
     selected: new Map(),      // facet kind -> Set of selected values
     matching: [],             // doc indices passing the filter, ascending
+    mergedByKind: new Map(),  // facet kind -> its own merged postings
+    buttons: null,            // facet kind -> value -> {btn, n}
     query: '',
 };
 
@@ -61,12 +63,14 @@ const AND_FACETS = new Set(['api', 'flag', 'authoring', 'tag']);
 
 function applyFilter() {
     let result = null;
+    S.mergedByKind = new Map();
     for (const [kind, values] of S.selected) {
         if (!values.size) continue;
         const lists = [...values].map((v) => decodePostings(S.facets[kind][v].p));
         const merged = AND_FACETS.has(kind)
             ? lists.reduce((a, b) => intersect(a, b))
             : union(lists);
+        S.mergedByKind.set(kind, merged);
         result = result === null ? merged : intersect(result, merged);
     }
     if (result === null) {
@@ -74,7 +78,52 @@ function applyFilter() {
     }
     S.matching = result;
     renderCounts();
+    updateAvailability();
     layout(true);
+}
+
+/**
+ * Show how many documents each value would actually yield, and disable the dead ends.
+ *
+ * With AND inside a facet it is easy to pick a combination nothing satisfies - shaders and
+ * particles share no document here - and an empty grid does not say whether that is a bug or
+ * the honest answer. Each value is therefore costed against the current selection and greyed
+ * when it would give nothing.
+ *
+ * The base differs by facet kind. For an AND facet a new value narrows what is already
+ * matched, so it is costed against the live result. For an OR facet (source) a new value ADDS
+ * to its own group, so it is costed against the constraints from the OTHER facets only -
+ * costing it against the live result would make every unselected source look empty as soon as
+ * one was chosen.
+ */
+function updateAvailability() {
+    if (!S.buttons) return;
+    const all = () => Array.from({ length: S.total }, (_, i) => i);
+
+    for (const [kind, entries] of S.buttons) {
+        let base;
+        if (AND_FACETS.has(kind)) {
+            base = S.matching;
+        } else {
+            base = null;
+            for (const [k, merged] of S.mergedByKind) {
+                if (k === kind) continue;
+                base = base === null ? merged : intersect(base, merged);
+            }
+            if (base === null) base = all();
+        }
+        const selected = S.selected.get(kind) || new Set();
+        for (const [value, ui] of entries) {
+            if (selected.has(value)) {          // never disable what is selected, or it cannot be undone
+                ui.btn.classList.remove('off');
+                ui.n.textContent = S.facets[kind][value].n;
+                continue;
+            }
+            const n = intersect(base, decodePostings(S.facets[kind][value].p)).length;
+            ui.n.textContent = n;
+            ui.btn.classList.toggle('off', n === 0);
+        }
+    }
 }
 
 // ── shards ───────────────────────────────────────────────────────────────────
@@ -159,6 +208,7 @@ const KIND_LABEL = { source: 'Source', api: 'API used', flag: 'Features', author
 function renderFacets() {
     const host = document.getElementById('facets');
     host.innerHTML = '';
+    S.buttons = new Map();
     for (const kind of ['api', 'flag', 'source', 'authoring']) {
         const vals = S.facets[kind];
         if (!vals || !Object.keys(vals).length) continue;
@@ -168,11 +218,15 @@ function renderFacets() {
             `<h3>${KIND_LABEL[kind] || kind}<span class="mode">${mode}</span></h3>`;
         const wrap = document.createElement('div');
         wrap.className = 'facet-values';
+        const reg = new Map();
+        S.buttons.set(kind, reg);
         for (const [v, info] of Object.entries(vals).sort((a, b) => b[1].n - a[1].n)) {
             const b = document.createElement('button');
             b.className = 'facet';
             b.innerHTML = `${esc(v)} <span class="n">${info.n}</span>`;
+            reg.set(v, { btn: b, n: b.querySelector('.n') });
             b.onclick = () => {
+                if (b.classList.contains('off')) return;
                 const set = S.selected.get(kind) || new Set();
                 set.has(v) ? set.delete(v) : set.add(v);
                 S.selected.set(kind, set);
