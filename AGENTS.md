@@ -29,7 +29,7 @@ read if you want to search the corpus.
 }
 ```
 
-`apis` is the field to filter on. It is **derived from the compiled document**, not written by
+The site's filter combines multiple `apis` values with AND. `apis` is the field to filter on. It is **derived from the compiled document**, not written by
 hand, so it cannot drift from what the document actually does.
 
 ## Finding an example of a specific operation

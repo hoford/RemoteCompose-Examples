@@ -153,3 +153,5 @@ table.kv td:first-child { color: var(--dim); white-space: nowrap; }
 #uncovered .facet { cursor: default; font-family: ui-monospace, monospace; font-size: 11px; }
 #uncovered .facet:hover { border-color: var(--line); }
 .ops-page + footer, header .back { display: inline-block; margin-bottom: 8px; }
+#facets h3 .mode { float: right; text-transform: none; letter-spacing: 0;
+                   font-weight: 400; opacity: .7; font-size: 10px; }

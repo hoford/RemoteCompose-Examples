@@ -30,8 +30,11 @@ Filtering never touches the documents:
   be displayed.
 - The grid renders only the visible window, so scrolling costs what is on screen.
 
-Within a facet, values are alternatives (OR). Across facets they are constraints (AND) — so
-"drawCircle or drawPath, but only from droidkaigi26" is expressible.
+Selecting more always narrows. Within a multi-valued facet — API used, Features, Authored in —
+values combine with AND, because they are properties a document holds at once: picking
+`drawCircle` and `drawPath` gives the 95 documents using both, not the 423 using either.
+`Source` is the exception and combines with OR, since a document has exactly one. Each facet
+heading says which it is.
 
 ## Finding your way in
 

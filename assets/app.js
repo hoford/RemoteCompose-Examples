@@ -54,14 +54,19 @@ function union(lists) {
     return [...seen].sort((x, y) => x - y);
 }
 
+// Facets whose values are properties a document can hold several of at once. Selecting two
+// of these NARROWS: "uses drawCircle AND drawPath". `source` is deliberately excluded - a
+// document has exactly one, so intersecting two sources would always return nothing.
+const AND_FACETS = new Set(['api', 'flag', 'authoring', 'tag']);
+
 function applyFilter() {
     let result = null;
     for (const [kind, values] of S.selected) {
         if (!values.size) continue;
-        // Within a facet the values are alternatives (OR); across facets they are constraints
-        // (AND). "drawCircle or drawPath, but only from droidkaigi26."
         const lists = [...values].map((v) => decodePostings(S.facets[kind][v].p));
-        const merged = union(lists);
+        const merged = AND_FACETS.has(kind)
+            ? lists.reduce((a, b) => intersect(a, b))
+            : union(lists);
         result = result === null ? merged : intersect(result, merged);
     }
     if (result === null) {
@@ -158,7 +163,9 @@ function renderFacets() {
         const vals = S.facets[kind];
         if (!vals || !Object.keys(vals).length) continue;
         const sec = document.createElement('section');
-        sec.innerHTML = `<h3>${KIND_LABEL[kind] || kind}</h3>`;
+        const mode = AND_FACETS.has(kind) ? 'all of' : 'any of';
+        sec.innerHTML =
+            `<h3>${KIND_LABEL[kind] || kind}<span class="mode">${mode}</span></h3>`;
         const wrap = document.createElement('div');
         wrap.className = 'facet-values';
         for (const [v, info] of Object.entries(vals).sort((a, b) => b[1].n - a[1].n)) {
