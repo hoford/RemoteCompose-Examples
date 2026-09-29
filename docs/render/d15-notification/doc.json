@@ -1,0 +1,83 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 380,
+    "height": 120,
+    "contentDescription": "notif",
+    "profiles": 513
+  },
+  "root": {
+    "row": {
+      "children": [
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "i",
+                  "fontSize": 28.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "size": 60.0
+              },
+              {
+                "background": "#FF1E88E5"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "column": {
+            "children": [
+              {
+                "text": {
+                  "value": "New message",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0
+                }
+              },
+              {
+                "text": {
+                  "value": "Tap to read the full details now",
+                  "fontSize": 14.0,
+                  "color": "#FFB0BEC5"
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "padding": [
+                  16,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF263238"
+        },
+        {
+          "padding": 16
+        }
+      ],
+      "verticalAlignment": "center"
+    }
+  }
+}

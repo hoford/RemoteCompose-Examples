@@ -1,0 +1,50 @@
+{
+  "id": "iot-panels-light/07-radiator-valve",
+  "sha256": "ea0e54af4298fb733608973365946dbfc9aa53e165001e70c3548b340b4b163f",
+  "bytes": 2065,
+  "ops": 92,
+  "distinctOps": 20,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 12,
+    "DATA_TEXT": 5,
+    "MATRIX_SAVE": 3,
+    "ANIMATED_FLOAT": 16,
+    "MATRIX_TRANSLATE": 1,
+    "DRAW_PATH": 1,
+    "MATRIX_RESTORE": 3,
+    "CONTAINER_END": 9,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 2,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

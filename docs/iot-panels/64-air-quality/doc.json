@@ -1,0 +1,667 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Air Quality Monitor \u2014 PM2.5 \u00b7 laser"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "aqi",
+         "value": "0.5 + 0.5 * sin(@t * 0.3926991)"
+        }
+       },
+       {
+        "variable": {
+         "name": "pm",
+         "value": "6.0 + @aqi * 48.0"
+        }
+       },
+       {
+        "variable": {
+         "name": "pmText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@pm",
+          "whole": 2,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "loop": {
+         "index": "a",
+         "from": 0.0,
+         "until": 16.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "ap",
+            "value": "fract(@t * 0.45 + a * 0.0625)"
+           }
+          },
+          {
+           "variable": {
+            "name": "ax",
+            "value": "180.0 + sin(a * 2.1) * 26.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#78899D"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.55 * (1.0 - @ap) * (0.35 + 0.65 * @aqi)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@ax",
+            "cy": "272.0 - @ap * 74.0",
+            "radius": "2.6 * (1.0 - @ap * 0.4)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.2
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": "0.40 * (1.0 - @ap)"
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": "@ax",
+            "y1": "104.0 - @ap * 34.0",
+            "x2": "@ax",
+            "y2": "94.0 - @ap * 34.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 126,
+         "top": 106,
+         "right": 234,
+         "bottom": 268,
+         "rx": 22,
+         "ry": 22
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#05080D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 148,
+         "top": 102,
+         "right": 212,
+         "bottom": 114,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.2
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 148,
+         "top": 102,
+         "right": 212,
+         "bottom": 114,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 126,
+         "top": 106,
+         "right": 234,
+         "bottom": 268,
+         "rx": 22,
+         "ry": 22
+        }
+       },
+       {
+        "loop": {
+         "index": "g",
+         "from": 0.0,
+         "until": 5.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#1B2534"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.0
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 142,
+            "y1": "228.0 + g * 8.0",
+            "x2": 218,
+            "y2": "228.0 + g * 8.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 7.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 166,
+         "radius": 40
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 7.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "0.95 * (1.0 - @aqi)"
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 140,
+         "top": 126,
+         "right": 220,
+         "bottom": 206,
+         "startAngle": 130,
+         "sweepAngle": "280.0 * (0.25 + 0.75 * @aqi)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF7070"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 7.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "0.95 * @aqi"
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 140,
+         "top": 126,
+         "right": 220,
+         "bottom": 206,
+         "startAngle": 130,
+         "sweepAngle": "280.0 * (0.25 + 0.75 * @aqi)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 166,
+         "radius": 32
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 26.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@pmText",
+         "x": 180,
+         "y": 162,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "PM2.5",
+         "x": 180,
+         "y": 184,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Air Quality Monitor",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "PM2.5 \u00b7 laser",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

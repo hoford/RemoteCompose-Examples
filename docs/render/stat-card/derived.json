@@ -1,0 +1,28 @@
+{
+  "id": "render/stat-card",
+  "sha256": "5d911b90cc6b32420aece8c96037d41954146deaa1dacf547a6fa514805d580f",
+  "bytes": 272,
+  "ops": 16,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

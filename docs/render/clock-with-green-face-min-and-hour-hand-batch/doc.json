@@ -1,0 +1,126 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "green clock",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF2E7D32",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 140.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 3.0
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 140.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 8.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "save": [
+            {
+              "rotate": {
+                "angle": "time * 6",
+                "pivotX": 150.0,
+                "pivotY": 150.0
+              }
+            },
+            {
+              "drawLine": {
+                "x1": 150.0,
+                "y1": 150.0,
+                "x2": 150.0,
+                "y2": 60.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 12.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "save": [
+            {
+              "rotate": {
+                "angle": "time * 0.5",
+                "pivotX": 150.0,
+                "pivotY": 150.0
+              }
+            },
+            {
+              "drawLine": {
+                "x1": 150.0,
+                "y1": 150.0,
+                "x2": 150.0,
+                "y2": 90.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 5.0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "iot-panels-light/45-rain-sensor",
+  "sha256": "1b0335ac93ee25f088fb4c09fbd463bb01b418a1a2279cef195b96425c6ee990",
+  "bytes": 2421,
+  "ops": 96,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 2,
+    "DRAW_ROUND_RECT": 6,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 20,
+    "DRAW_LINE": 2,
+    "CONTAINER_END": 8,
+    "DRAW_PATH": 4,
+    "DRAW_CIRCLE": 6,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

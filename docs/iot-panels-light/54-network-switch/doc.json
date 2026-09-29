@@ -1,0 +1,591 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Network Switch \u2014 8-port gigabit \u00b7 PoE"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 44,
+         "top": 132,
+         "right": 316,
+         "bottom": 224,
+         "rx": 8,
+         "ry": 8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 44,
+         "top": 132,
+         "right": 316,
+         "bottom": 224,
+         "rx": 8,
+         "ry": 8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 44,
+         "top": 132,
+         "right": 316,
+         "bottom": 144,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "loop": {
+         "index": "p",
+         "from": 0.0,
+         "until": 8.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "px",
+            "value": "62.0 + (p % 4.0) * 34.0 + floor(p / 4.0) * 148.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "act",
+            "value": "0.5 + 0.5 * sin(@t * (3.0 + (p % 5.0) * 1.7) + p * 2.3)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#05080D"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@px",
+            "top": 166,
+            "right": "@px + 26.0",
+            "bottom": 196,
+            "rx": 3,
+            "ry": 3
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#3A4B60"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@px + 8.0",
+            "top": 190,
+            "right": "@px + 18.0",
+            "bottom": 200,
+            "rx": 2,
+            "ry": 2
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.10 + 0.85 * @act"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@px + 6.0",
+            "cy": 157,
+            "radius": 4.4
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.08 + 0.5 * (1.0 - @act)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@px + 20.0",
+            "cy": 157,
+            "radius": 4.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 56,
+         "top": 206,
+         "right": 304,
+         "bottom": 218,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "loop": {
+         "index": "k",
+         "from": 0.0,
+         "until": 12.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "kp",
+            "value": "fract(@t * 0.7 + k * 0.0833333)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.75 * (1.0 - abs(@kp - 0.5) * 0.9)"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "58.0 + @kp * 236.0",
+            "top": 209,
+            "right": "68.0 + @kp * 236.0",
+            "bottom": 215,
+            "rx": 2,
+            "ry": 2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 210,
+         "top": 166,
+         "right": 236,
+         "bottom": 196,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.35 + 0.6 * (0.5 + 0.5 * sin(@t * 12.0))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 223,
+         "cy": 158,
+         "radius": 3.6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 10.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "UPLINK",
+         "x": 223,
+         "y": 240,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Network Switch",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "8-port gigabit \u00b7 PoE",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

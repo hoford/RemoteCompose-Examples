@@ -1,0 +1,40 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "contentDescription": "Hello RcJson",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF202830"
+        },
+        {
+          "padding": 24
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center",
+      "children": [
+        {
+          "text": {
+            "value": "Hello, RemoteCompose JSON",
+            "fontSize": 28.0,
+            "color": "#FFFFFFFF"
+          }
+        },
+        {
+          "text": {
+            "value": "official json syntax baseline",
+            "fontSize": 16.0,
+            "color": "#FF88CCFF"
+          }
+        }
+      ]
+    }
+  }
+}

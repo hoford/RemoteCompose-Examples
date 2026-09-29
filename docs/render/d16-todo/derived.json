@@ -1,0 +1,30 @@
+{
+  "id": "render/d16-todo",
+  "sha256": "50e16024c0fa23d787e20e08dbfdc485cfa17406be8df468b0c85aab7f3ed1ff",
+  "bytes": 1262,
+  "ops": 84,
+  "distinctOps": 11,
+  "width": 320,
+  "height": 280,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 9,
+    "MODIFIER_HEIGHT": 5,
+    "MODIFIER_BACKGROUND": 5,
+    "MODIFIER_PADDING": 10,
+    "DATA_TEXT": 7,
+    "CONTAINER_END": 37,
+    "LAYOUT_ROW": 4,
+    "LAYOUT_BOX": 4
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

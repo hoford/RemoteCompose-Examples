@@ -1,0 +1,33 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "K01 text sizing itself - pure font metrics, expected to differ"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "text",
+        "text": "Handgloves",
+        "color": "#FF0B1020",
+        "fontSize": 18,
+        "modifiers": [
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

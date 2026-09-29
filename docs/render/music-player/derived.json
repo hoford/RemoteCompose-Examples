@@ -1,0 +1,40 @@
+{
+  "id": "render/music-player",
+  "sha256": "234724d47d8f52e749d6a6fb39fb55d14f35c5d3715068e127908130611154b7",
+  "bytes": 1980,
+  "ops": 97,
+  "distinctOps": 15,
+  "width": 400,
+  "height": 260,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 5,
+    "MODIFIER_WIDTH": 11,
+    "MODIFIER_HEIGHT": 7,
+    "MODIFIER_BACKGROUND": 5,
+    "MODIFIER_PADDING": 6,
+    "LAYOUT_CANVAS": 1,
+    "DATA_TEXT": 9,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 41,
+    "LAYOUT_COLUMN": 3,
+    "LAYOUT_ROW": 3
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

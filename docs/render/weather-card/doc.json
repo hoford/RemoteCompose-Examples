@@ -1,0 +1,60 @@
+{
+  "name": "weather_card",
+  "description": "Weather card: a colored card with a city name, a large temperature, and a condition line, centered. Use for a single-location weather summary.",
+  "tags": [
+    "ui",
+    "card",
+    "weather",
+    "text"
+  ],
+  "data_schema": "text fields: city, temperature, condition",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 320,
+      "contentDescription": "weather",
+      "profiles": 513
+    },
+    "root": {
+      "column": {
+        "modifiers": [
+          "fillMaxSize",
+          {
+            "background": "#FF1976D2"
+          },
+          {
+            "padding": 24
+          }
+        ],
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "text": {
+              "value": "San Francisco",
+              "fontSize": 22.0,
+              "color": "#FFFFFFFF",
+              "fontWeight": 600.0
+            }
+          },
+          {
+            "text": {
+              "value": "18°",
+              "fontSize": 84.0,
+              "color": "#FFFFFFFF",
+              "fontWeight": 300.0
+            }
+          },
+          {
+            "text": {
+              "value": "Partly Cloudy",
+              "fontSize": 18.0,
+              "color": "#FFBBDEFB"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "A02 child fillMaxSize inside filled root"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          "fillMaxSize",
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

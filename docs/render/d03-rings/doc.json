@@ -1,0 +1,97 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 280,
+    "contentDescription": "rings",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 400,
+            "bottom": 280,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF0081C8",
+            "style": "stroke",
+            "width": 9.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 130,
+            "cy": 120,
+            "radius": 42
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF111111"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 200,
+            "cy": 120,
+            "radius": 42
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFEE334E"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 270,
+            "cy": 120,
+            "radius": 42
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFCB131"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 165,
+            "cy": 160,
+            "radius": 42
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF00A651"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 235,
+            "cy": 160,
+            "radius": 42
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "render/v3-dupwidth",
+  "sha256": "93c5d207e1fd490e617ab95a562a4431e301b97db90cbc5ae0042d9df3468d74",
+  "bytes": 203,
+  "ops": 13,
+  "distinctOps": 9,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 1,
+    "ANIMATED_FLOAT": 2,
+    "PAINT_VALUES": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

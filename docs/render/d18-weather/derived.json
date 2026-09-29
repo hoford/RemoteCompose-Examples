@@ -1,0 +1,28 @@
+{
+  "id": "render/d18-weather",
+  "sha256": "dc92322788c0521dabd756a68e4e16e713243ef83c4081f354af5b741168e2d8",
+  "bytes": 406,
+  "ops": 23,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 2,
+    "DATA_TEXT": 4,
+    "CONTAINER_END": 11
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

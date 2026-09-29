@@ -1,0 +1,44 @@
+{
+  "id": "render/watch",
+  "sha256": "8af8ccb18c522e411802c0b46c9c6fb05010fc1a4b4a9c0bba81b1b97eb17228",
+  "bytes": 1628,
+  "ops": 82,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 10,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 37,
+    "DRAW_CIRCLE": 5,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 4,
+    "MATRIX_ROTATE": 4,
+    "DRAW_ROUND_RECT": 4,
+    "MATRIX_RESTORE": 4,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

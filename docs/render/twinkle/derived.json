@@ -1,0 +1,40 @@
+{
+  "id": "render/twinkle",
+  "sha256": "b9d575c60bbfc673433f075498bd83f4e96e1f3250c9f5830c030cec69b42d2b",
+  "bytes": 12317,
+  "ops": 368,
+  "distinctOps": 13,
+  "width": 480,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 117,
+    "MATRIX_SCALE": 1,
+    "PAINT_VALUES": 116,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 108,
+    "DRAW_LINE": 14,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

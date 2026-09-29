@@ -1,0 +1,30 @@
+{
+  "id": "render/d01-target",
+  "sha256": "41127aa2e7f9b1b3265dc36e6937c9002c3ea4bdbf17a49cfa63231619be608e",
+  "bytes": 277,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

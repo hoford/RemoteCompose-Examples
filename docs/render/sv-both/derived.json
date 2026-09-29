@@ -1,0 +1,42 @@
+{
+  "id": "render/sv-both",
+  "sha256": "7df5a350b2fb48e48bebe5c1d23535f5acdb56d2fd5319016448401155967454",
+  "bytes": 581,
+  "ops": 37,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 2,
+    "DATA_FLOAT": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 15,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 1,
+    "ANIMATED_FLOAT": 2,
+    "DRAW_CIRCLE": 1,
+    "RUN_ACTION": 1,
+    "VALUE_FLOAT_CHANGE_ACTION": 1
+  },
+  "apis": [
+    "drawCircle",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

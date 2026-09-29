@@ -1,0 +1,40 @@
+{
+  "id": "render/themetest",
+  "sha256": "aafc0241c6b1d09ab3cf89a80f15ff8e0b30e9eb1661b39d113952ab11bf1ff2",
+  "bytes": 1103,
+  "ops": 66,
+  "distinctOps": 14,
+  "width": 480,
+  "height": 620,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 6,
+    "THEME": 9,
+    "COLOR_EXPRESSIONS": 6,
+    "CONTAINER_END": 10,
+    "NAMED_VARIABLE": 3,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 11,
+    "DRAW_RECT": 10,
+    "DATA_TEXT": 3,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "theming"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

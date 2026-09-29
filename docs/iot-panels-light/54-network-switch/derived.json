@@ -1,0 +1,41 @@
+{
+  "id": "iot-panels-light/54-network-switch",
+  "sha256": "01fecadb6e7a50a0100edc51916886991922e54b45024fb19219bfdf9aac9726",
+  "bytes": 1909,
+  "ops": 81,
+  "distinctOps": 14,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 17,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 8,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

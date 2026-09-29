@@ -1,0 +1,696 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Security Camera \u2014 PTZ \u00b7 night vision \u00b7 REC"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "pan",
+         "value": "sin(@t * 0.3926991) * 32.0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 168,
+         "top": 62,
+         "right": 192,
+         "bottom": 96,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 160,
+         "top": 56,
+         "right": 200,
+         "bottom": 72
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 100,
+         "radius": 13
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "@pan",
+            "pivotX": 180,
+            "pivotY": 100
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.04
+             }
+            ]
+           }
+          },
+          {
+           "drawPath": "M 180 104 L 250 252 L 110 252 Z"
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.032
+             }
+            ]
+           }
+          },
+          {
+           "drawPath": "M 180 104 L 214 252 L 146 252 Z"
+          },
+          {
+           "variable": {
+            "name": "sp",
+            "value": "fract(@t * 0.4)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.8
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": "0.30 * (1.0 - @sp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": "180.0 - 6.0 - 64.0 * @sp",
+            "y1": "104.0 + @sp * 148.0",
+            "x2": "180.0 + 6.0 + 64.0 * @sp",
+            "y2": "104.0 + @sp * 148.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#2C3A4B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 154,
+            "top": 96,
+            "right": 206,
+            "bottom": 168,
+            "rx": 16,
+            "ry": 16
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#243141"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.5
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 154,
+            "top": 96,
+            "right": 206,
+            "bottom": 168,
+            "rx": 16,
+            "ry": 16
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#0A0F16"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 150,
+            "radius": 20
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#16212E"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 150,
+            "radius": 13
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.28
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 150,
+            "radius": 7
+           }
+          },
+          {
+           "loop": {
+            "index": "k",
+            "from": 0.0,
+            "until": 8.0,
+            "step": 1.0,
+            "commands": [
+             {
+              "save": {
+               "commands": [
+                {
+                 "rotate": {
+                  "angle": "k * 45.0",
+                  "pivotX": 180,
+                  "pivotY": 150
+                 }
+                },
+                {
+                 "paint": {
+                  "ops": [
+                   {
+                    "color": "#C4E86B"
+                   },
+                   {
+                    "style": "fill"
+                   },
+                   {
+                    "alpha": "0.25 + 0.45 * (0.5 + 0.5 * sin(@t * 3.1415927))"
+                   }
+                  ]
+                 }
+                },
+                {
+                 "drawCircle": {
+                  "cx": 180,
+                  "cy": 133,
+                  "radius": 2.2
+                 }
+                }
+               ]
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 132,
+         "top": 52,
+         "right": 228,
+         "bottom": 148,
+         "startAngle": 200,
+         "sweepAngle": 140
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "@pan",
+            "pivotX": 180,
+            "pivotY": 100
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 54,
+            "radius": 3.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF7070"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.20 + 0.75 * (0.5 + 0.5 * sin(@t * 6.2831853))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 300,
+         "cy": 44,
+         "radius": 4.4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "REC",
+         "x": 320,
+         "y": 44,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Security Camera",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "PTZ \u00b7 night vision \u00b7 REC",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

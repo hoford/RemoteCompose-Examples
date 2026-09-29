@@ -1,0 +1,29 @@
+{
+  "id": "render/01-simple-demo",
+  "sha256": "b2cbc944e308ea525cad677690169f7fc9c63492d0283335171b7201afbaadc7",
+  "bytes": 269,
+  "ops": 18,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_COLUMN": 1,
+    "DATA_TEXT": 1,
+    "LAYOUT_TEXT": 1,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

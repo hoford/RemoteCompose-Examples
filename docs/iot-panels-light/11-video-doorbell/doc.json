@@ -1,0 +1,647 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Video Doorbell \u2014 1440p \u00b7 chime \u00b7 motion"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "press",
+         "value": "0.5 + 0.5 * sin(@t * 1.5707963)"
+        }
+       },
+       {
+        "loop": {
+         "index": "r",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "rp",
+            "value": "fract(@t * 0.5 + r / 3.0)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.2
+             },
+             {
+              "alpha": "0.34 * (1.0 - @rp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 208,
+            "radius": "22.0 + @rp * 96.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 150,
+         "top": 84,
+         "right": 210,
+         "bottom": 250,
+         "rx": 22,
+         "ry": 22
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 150,
+         "top": 84,
+         "right": 210,
+         "bottom": 250,
+         "rx": 22,
+         "ry": 22
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 156,
+         "top": 90,
+         "right": 204,
+         "bottom": 168,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A0F16"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 126,
+         "radius": 24
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 126,
+         "radius": 24
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#16212E"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 126,
+         "radius": 16
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.3
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 126,
+         "radius": 9
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "@t * 60.0",
+            "pivotX": 180,
+            "pivotY": 126
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFFFFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.55
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 113,
+            "radius": 3.0
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "index": "i",
+         "from": 0.0,
+         "until": 2.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.20 + 0.35 * (0.5 + 0.5 * sin(@t * 3.1415927))"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "162.0 + i * 36.0",
+            "cy": 152,
+            "radius": 3.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF7070"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.25 + 0.7 * (0.5 + 0.5 * sin(@t * 6.2831853))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 196,
+         "cy": 100,
+         "radius": 3.6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.10 + 0.22 * @press"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 208,
+         "radius": 26
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#18212E"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 208,
+         "radius": 20
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.6
+          },
+          {
+           "alpha": "0.45 + 0.55 * @press"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 208,
+         "radius": 20
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.30 + 0.6 * @press"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 208,
+         "radius": 7
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Video Doorbell",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1440p \u00b7 chime \u00b7 motion",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

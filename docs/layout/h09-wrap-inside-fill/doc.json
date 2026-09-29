@@ -1,0 +1,48 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H09 a wrapping box inside a filling one"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 70
+              },
+              {
+                "height": 50
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "G04 heightIn clamping a requested height"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 120
+          },
+          {
+            "height": 300
+          },
+          {
+            "heightIn": [
+              0,
+              100
+            ]
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

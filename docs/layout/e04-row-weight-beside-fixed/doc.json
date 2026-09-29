@@ -1,0 +1,47 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "E04 fixed 100 beside weight 1 - the weighted child gets what is left"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 100
+          },
+          {
+            "height": 60
+          },
+          {
+            "background": "#FFFF4D6D"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

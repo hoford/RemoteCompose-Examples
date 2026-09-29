@@ -1,0 +1,42 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 200,
+    "height": 200,
+    "contentDescription": "sizes",
+    "profiles": 513
+  },
+  "root": {
+    "box": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "children": [
+        {
+          "box": {
+            "modifiers": [
+              {
+                "size": 120.0
+              },
+              {
+                "background": "#FFAA0000"
+              }
+            ],
+            "children": [
+              {
+                "text": {
+                  "value": "hi",
+                  "fontSize": 40.0,
+                  "fontWeight": 700.0,
+                  "color": "#FFFFFFFF",
+                  "maxLines": 2,
+                  "overflow": "ellipsis"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

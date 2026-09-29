@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels/18-water-leak",
+  "sha256": "f3a593d4a06781110598d4b32f5ee03f55f4ed5a2a100a7296dc24c67263a517",
+  "bytes": 2374,
+  "ops": 100,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 2,
+    "DRAW_ROUND_RECT": 13,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 24,
+    "DRAW_OVAL": 5,
+    "CONTAINER_END": 9,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

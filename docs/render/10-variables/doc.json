@@ -1,0 +1,107 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "contentDescription": "vars",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "variables": [
+              {
+                "cx": "windowWidth / 2"
+              },
+              {
+                "cy": "windowHeight / 2"
+              },
+              {
+                "r": 90
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FF101820",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 320,
+                  "bottom": 320,
+                  "rx": 0,
+                  "ry": 0
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FFFFCA28",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": "@cx",
+                  "cy": "@cy",
+                  "radius": "@r"
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FF101820",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": "@cx - 30",
+                  "cy": "@cy - 25",
+                  "radius": "12"
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": "@cx + 30",
+                  "cy": "@cy - 25",
+                  "radius": "12"
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FF101820",
+                  "style": "stroke",
+                  "width": 8.0,
+                  "strokeCap": "round"
+                }
+              },
+              {
+                "drawArc": {
+                  "left": "@cx - 45",
+                  "top": "@cy - 30",
+                  "right": "@cx + 45",
+                  "bottom": "@cy + 45",
+                  "startAngle": "20",
+                  "sweepAngle": "140"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

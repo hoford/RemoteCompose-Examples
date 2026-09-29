@@ -1,0 +1,40 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 200,
+    "contentDescription": "themed colours and an exported variable",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              { "blue": "#FF0047AB" },
+              { "blueLight": "#FF7FB2FF" },
+              { "surface": { "light": "#FFF4F6F8", "dark": "#FF10141A" } },
+              { "brand": { "light": "@colors.blue", "dark": "@colors.blueLight" } }
+            ],
+            "variables": [
+              { "pulse": { "value": "40 + sin(time * 2.0) * 18", "export": true } }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": ["fillMaxSize"],
+            "commands": [
+              { "paint": { "color": "$colors.surface", "style": "fill" } },
+              { "drawRect": { "left": 0, "top": 0, "right": 320, "bottom": 200 } },
+              { "paint": { "color": "$colors.brand", "style": "fill" } },
+              { "drawCircle": { "cx": 160, "cy": 100, "radius": "@pulse" } }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

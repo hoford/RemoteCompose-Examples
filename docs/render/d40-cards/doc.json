@@ -1,0 +1,164 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 480,
+    "height": 180,
+    "contentDescription": "cards",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              {
+                "a": "#FF5E35B1"
+              },
+              {
+                "b": "#FF00897B"
+              },
+              {
+                "c": "#FFD81B60"
+              }
+            ]
+          }
+        },
+        {
+          "row": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "verticalAlignment": "center",
+            "children": [
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "weight": 1.0
+                    },
+                    {
+                      "background": "$colors.a"
+                    },
+                    {
+                      "padding": 14
+                    }
+                  ],
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "center",
+                  "children": [
+                    {
+                      "column": {
+                        "horizontalAlignment": "center",
+                        "children": [
+                          {
+                            "text": {
+                              "value": "128",
+                              "fontSize": 40.0,
+                              "fontWeight": 700.0,
+                              "color": "#FFFFFFFF"
+                            }
+                          },
+                          {
+                            "text": {
+                              "value": "USERS",
+                              "fontSize": 14.0,
+                              "color": "#FFE0E0E0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "weight": 1.0
+                    },
+                    {
+                      "background": "$colors.b"
+                    },
+                    {
+                      "padding": 14
+                    }
+                  ],
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "center",
+                  "children": [
+                    {
+                      "column": {
+                        "horizontalAlignment": "center",
+                        "children": [
+                          {
+                            "text": {
+                              "value": "94%",
+                              "fontSize": 40.0,
+                              "fontWeight": 700.0,
+                              "color": "#FFFFFFFF"
+                            }
+                          },
+                          {
+                            "text": {
+                              "value": "UPTIME",
+                              "fontSize": 14.0,
+                              "color": "#FFE0E0E0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "weight": 1.0
+                    },
+                    {
+                      "background": "$colors.c"
+                    },
+                    {
+                      "padding": 14
+                    }
+                  ],
+                  "horizontalAlignment": "center",
+                  "verticalAlignment": "center",
+                  "children": [
+                    {
+                      "column": {
+                        "horizontalAlignment": "center",
+                        "children": [
+                          {
+                            "text": {
+                              "value": "3.4k",
+                              "fontSize": 40.0,
+                              "fontWeight": 700.0,
+                              "color": "#FFFFFFFF"
+                            }
+                          },
+                          {
+                            "text": {
+                              "value": "EVENTS",
+                              "fontSize": 14.0,
+                              "color": "#FFE0E0E0"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

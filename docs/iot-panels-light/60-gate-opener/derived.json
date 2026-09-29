@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels-light/60-gate-opener",
+  "sha256": "d3d5d28e14439e5979ff08b3e5b87890216706ce3e8d28925a176cc1351b8f65",
+  "bytes": 2119,
+  "ops": 100,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 25,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 15,
+    "MATRIX_SAVE": 3,
+    "CLIP_RECT": 1,
+    "ANIMATED_FLOAT": 17,
+    "MATRIX_TRANSLATE": 1,
+    "DATA_TEXT": 6,
+    "CONTAINER_END": 10,
+    "MATRIX_RESTORE": 3,
+    "DRAW_CIRCLE": 7,
+    "MATRIX_ROTATE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

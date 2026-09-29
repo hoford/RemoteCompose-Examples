@@ -1,0 +1,42 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "G07 requiredHeightIn"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 120
+          },
+          {
+            "height": 40
+          },
+          {
+            "requiredHeightIn": [
+              180,
+              400
+            ]
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

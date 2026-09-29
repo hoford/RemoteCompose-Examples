@@ -1,0 +1,46 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "bc",
+    "profiles": 513
+  },
+  "root": {
+    "box": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF000010"
+        }
+      ],
+      "children": [
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FFFFFFFF",
+                  "style": "stroke",
+                  "width": 2.0,
+                  "strokeCap": "round"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 0.0,
+                  "y1": 0.0,
+                  "x2": 300.0,
+                  "y2": 300.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

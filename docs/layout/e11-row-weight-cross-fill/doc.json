@@ -1,0 +1,45 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "E11 weighted child also filling the cross axis"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FF4DA3FF"
+          },
+          "fillMaxHeight"
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      }
+    ]
+  }
+}

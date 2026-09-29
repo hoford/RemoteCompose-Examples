@@ -1,0 +1,42 @@
+{
+  "id": "render/14-colors",
+  "sha256": "230dc8908e7c7b6e6f73e0ea43c4642257b6f74b47797986723e6f6496b16b69",
+  "bytes": 515,
+  "ops": 38,
+  "distinctOps": 17,
+  "width": 320,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 3,
+    "NAMED_VARIABLE": 3,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 12,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 1,
+    "COMPONENT_VALUE": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

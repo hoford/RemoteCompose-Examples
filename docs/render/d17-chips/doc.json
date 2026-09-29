@@ -1,0 +1,174 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 280,
+    "height": 360,
+    "contentDescription": "chips",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "children": [
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "red",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FFE53935"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "orange",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FFFB8C00"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "green",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FF43A047"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "blue",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FF1E88E5"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "purple",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FF8E24AA"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "teal",
+                  "fontSize": 18.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 54.0
+              },
+              {
+                "background": "#FF00897B"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF101418"
+        },
+        {
+          "padding": 10
+        }
+      ]
+    }
+  }
+}

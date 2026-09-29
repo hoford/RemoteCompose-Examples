@@ -1,0 +1,35 @@
+{
+  "id": "render/counter",
+  "sha256": "ff593d8b663a2f721ec6e1a40d2bb84382bb55379465add237875bf5cbe9e2ae",
+  "bytes": 375,
+  "ops": 26,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "DATA_FLOAT": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 1,
+    "CONTAINER_END": 11,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "RUN_ACTION": 1,
+    "ANIMATED_FLOAT": 1
+  },
+  "apis": [
+    "expressions",
+    "layout"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

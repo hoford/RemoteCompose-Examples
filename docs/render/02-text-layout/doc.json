@@ -1,0 +1,116 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 600,
+    "height": 600,
+    "featurePaintMeasure": 0,
+    "contentDescription": "Demo",
+    "profiles": 513
+  },
+  "root": [
+    {
+      "row": {
+        "modifiers": [
+          {
+            "background": "#FF00FF00"
+          },
+          {
+            "padding": 8.0
+          },
+          {
+            "fillMaxWidth": "NaN"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "column": {
+              "modifiers": [
+                {
+                  "weight": 1.0
+                },
+                {
+                  "background": "#FFFFFF00"
+                }
+              ],
+              "horizontalAlignment": "start",
+              "verticalAlignment": "top",
+              "children": [
+                {
+                  "text": {
+                    "value": "New Arsenal Game",
+                    "maxLines": 1,
+                    "overflow": "ellipsis"
+                  }
+                },
+                {
+                  "text": {
+                    "value": "Arsenal vs Bayern Munich",
+                    "fontSize": 64.0,
+                    "maxLines": 3,
+                    "overflow": "ellipsis"
+                  }
+                },
+                {
+                  "text": {
+                    "value": "UEFA Champions League Group Stage",
+                    "maxLines": 2,
+                    "overflow": "ellipsis"
+                  }
+                },
+                {
+                  "text": {
+                    "value": "Wednesday 26th November",
+                    "maxLines": 1,
+                    "overflow": "ellipsis"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "column": {
+              "modifiers": [
+                {
+                  "size": 130.0
+                },
+                {
+                  "background": "#FF00FFFF"
+                },
+                {
+                  "padding": 8.0
+                }
+              ],
+              "horizontalAlignment": "center",
+              "verticalAlignment": "center",
+              "children": [
+                {
+                  "box": {
+                    "modifiers": [
+                      {
+                        "size": 100.0
+                      },
+                      {
+                        "background": "#FFFFFF00"
+                      }
+                    ],
+                    "horizontalAlignment": "center",
+                    "verticalAlignment": "center",
+                    "children": [
+                      {
+                        "text": {
+                          "value": "IMG"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

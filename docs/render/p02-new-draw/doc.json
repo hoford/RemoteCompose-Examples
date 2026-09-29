@@ -1,0 +1,59 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "contentDescription": "draw ops added in the current parser",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              { "ink": "#FF0E1116" },
+              { "hot": "#FFFF6B6B" },
+              { "cool": "#FF4DA3FF" }
+            ],
+            "variables": [
+              { "cx": 160.0 },
+              { "cy": 160.0 }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": ["fillMaxSize"],
+            "commands": [
+              { "paint": { "color": "$colors.ink", "style": "fill" } },
+              { "drawRect": { "left": 0, "top": 0, "right": 320, "bottom": 320 } },
+
+              {
+                "paint": {
+                  "style": "fill",
+                  "sweepGradient": {
+                    "centerX": "@cx",
+                    "centerY": "@cy",
+                    "colors": ["$colors.hot", "$colors.cool", "$colors.hot"],
+                    "stops": [0.0, 0.5, 1.0]
+                  }
+                }
+              },
+              {
+                "drawSector": {
+                  "left": 40, "top": 40, "right": 280, "bottom": 280,
+                  "startAngle": 200, "sweepAngle": 140
+                }
+              },
+
+              { "paint": { "color": "$colors.cool", "style": "stroke", "strokeWidth": 6.0, "strokeJoin": "round", "strokeCap": "round" } },
+              { "drawArc": { "left": 70, "top": 70, "right": 250, "bottom": 250, "startAngle": 20, "sweepAngle": 120 } }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

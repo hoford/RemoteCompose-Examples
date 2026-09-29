@@ -1,0 +1,207 @@
+{
+  "name": "donut_percent",
+  "description": "Donut/pie chart: a ring split into colored segments sized by an array of values (e.g. percentages of a whole). Use for share/proportion/composition.",
+  "tags": [
+    "chart",
+    "pie",
+    "donut",
+    "proportion",
+    "data"
+  ],
+  "data_schema": "percent: number[]  — one slice per value (relative sizes; needn't sum to 100)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "donut chart",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "percent": [
+                    30,
+                    22,
+                    18,
+                    14,
+                    10,
+                    6
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 300,
+                    "bottom": 300
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@percent)",
+                    "commit": true
+                  }
+                },
+                {
+                  "save": [
+                    {
+                      "rotate": {
+                        "angle": -90.0,
+                        "pivotX": 150.0,
+                        "pivotY": 150.0
+                      }
+                    },
+                    {
+                      "loop": {
+                        "from": 0.0,
+                        "until": "@n",
+                        "index": "i",
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 0.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF2196F3",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 1.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF4CAF50",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 2.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FFFFC107",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 3.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FFE91E63",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 4.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF9C27B0",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "eq",
+                              "v1": "i % 6",
+                              "v2": 5.0,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF00BCD4",
+                                    "style": "stroke",
+                                    "width": 40.0
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "drawArc": {
+                              "left": 80,
+                              "top": 80,
+                              "right": 220,
+                              "bottom": 220,
+                              "startAngle": 0.0,
+                              "sweepAngle": "arrayGet(@percent, i) * 3.6 - 2"
+                            }
+                          },
+                          {
+                            "rotate": {
+                              "angle": "arrayGet(@percent, i) * 3.6",
+                              "pivotX": 150.0,
+                              "pivotY": 150.0
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

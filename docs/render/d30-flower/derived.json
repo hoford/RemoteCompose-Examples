@@ -1,0 +1,38 @@
+{
+  "id": "render/d30-flower",
+  "sha256": "48b86d163ab25c83dffefb712b136a4c28302be09db1ae49e07adb2a9a244665",
+  "bytes": 443,
+  "ops": 19,
+  "distinctOps": 12,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "PATH_CREATE": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 5,
+    "DRAW_PATH": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

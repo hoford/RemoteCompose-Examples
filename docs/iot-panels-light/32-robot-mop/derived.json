@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/32-robot-mop",
+  "sha256": "c3c2033dfe331af8c548a708b800e7656cd7beb63b31615753564384a77aad47",
+  "bytes": 1920,
+  "ops": 84,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 20,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 7,
+    "DRAW_LINE": 2,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 24,
+    "DRAW_OVAL": 1,
+    "CONTAINER_END": 9,
+    "DRAW_CIRCLE": 5,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

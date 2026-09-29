@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels/57-smart-curtains",
+  "sha256": "3eb4163e81c4413614f0d3c5a733bffba17be96dd933d7fd0e0fc5f51f32b77c",
+  "bytes": 1692,
+  "ops": 76,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 19,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 9,
+    "DRAW_LINE": 2,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 14,
+    "CONTAINER_END": 9,
+    "MATRIX_RESTORE": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,73 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "contentDescription": "checker",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 320
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4FC3F7",
+            "style": "fill"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 8.0,
+            "index": "i",
+            "commands": [
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 8.0,
+                  "index": "j",
+                  "commands": [
+                    {
+                      "conditionalOperations": {
+                        "condition": "lt",
+                        "v1": "(i + j) % 2",
+                        "v2": 0.5,
+                        "commands": [
+                          {
+                            "drawRect": {
+                              "left": "j * 40",
+                              "top": "i * 40",
+                              "right": "j * 40 + 40",
+                              "bottom": "i * 40 + 40"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

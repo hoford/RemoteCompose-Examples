@@ -1,0 +1,54 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "A11 child larger than a fixed-size parent that is NOT the root, so overflow is visible"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 200
+          },
+          {
+            "height": 140
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 320
+              },
+              {
+                "height": 260
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

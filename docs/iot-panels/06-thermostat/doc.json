@@ -1,0 +1,678 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Smart Thermostat \u2014 heating \u00b7 target 22\u00b0"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "cur",
+         "value": "19.6 + 2.6 * (0.5 + 0.5 * sin(continuousSec() * 0.5235968))"
+        }
+       },
+       {
+        "variable": {
+         "name": "set",
+         "value": 22.0
+        }
+       },
+       {
+        "variable": {
+         "name": "call",
+         "value": "clamp(0.0, 1.0, (@set - @cur) * 0.9)"
+        }
+       },
+       {
+        "variable": {
+         "name": "frac",
+         "value": "clamp(0.0, 1.0, (@cur - 10.0) / 20.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "curText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@cur",
+          "whole": 2,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "loop": {
+         "index": "h",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "hp",
+            "value": "fract(continuousSec() * 0.5 + h / 3.0)"
+           }
+          },
+          {
+           "save": {
+            "commands": [
+             {
+              "translate": {
+               "dx": 0,
+               "dy": "-@hp * 46.0"
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#FFB65C"
+                },
+                {
+                 "style": "stroke"
+                },
+                {
+                 "strokeWidth": 2.4
+                },
+                {
+                 "strokeCap": "round"
+                },
+                {
+                 "alpha": "@call * 0.34 * (1.0 - @hp)"
+                }
+               ]
+              }
+             },
+             {
+              "drawPath": "M 150 96 Q 158 84 166 96 Q 174 108 182 96 Q 190 84 198 96 Q 206 108 214 96"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.05 + 0.09 * @call"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 170,
+         "radius": 84
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#18212E"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 170,
+         "radius": 72
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 170,
+         "radius": 72
+        }
+       },
+       {
+        "loop": {
+         "index": "t",
+         "from": 0.0,
+         "until": 24.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "save": {
+            "commands": [
+             {
+              "rotate": {
+               "angle": "150.0 + t * 10.869565",
+               "pivotX": 180,
+               "pivotY": 170
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#78899D"
+                },
+                {
+                 "style": "stroke"
+                },
+                {
+                 "strokeWidth": 1.6
+                },
+                {
+                 "strokeCap": "round"
+                },
+                {
+                 "alpha": 0.5
+                }
+               ]
+              }
+             },
+             {
+              "drawLine": {
+               "x1": 180,
+               "y1": 106,
+               "x2": 180,
+               "y2": 112
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 6.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 122,
+         "top": 112,
+         "right": 238,
+         "bottom": 228,
+         "startAngle": 150,
+         "sweepAngle": 240
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 6.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 122,
+         "top": 112,
+         "right": 238,
+         "bottom": 228,
+         "startAngle": 150,
+         "sweepAngle": "240.0 * @frac"
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "150.0 + 240.0 * 0.6",
+            "pivotX": 180,
+            "pivotY": 170
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#EAF0F8"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.4
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": 0.85
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 180,
+            "y1": 104,
+            "x2": 180,
+            "y2": 116
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 40.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@curText",
+         "x": 172,
+         "y": 168,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 20.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "\u00b0",
+         "x": 206,
+         "y": 156,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "TARGET 22",
+         "x": 180,
+         "y": 200,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.12 + 0.78 * @call"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 224,
+         "radius": 4.5
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Smart Thermostat",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "heating \u00b7 target 22\u00b0",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

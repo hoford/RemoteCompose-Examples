@@ -1,0 +1,781 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Smart Planter \u2014 self-watering \u00b7 grow light"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "sway",
+         "value": "sin(@t * 1.0471976)"
+        }
+       },
+       {
+        "variable": {
+         "name": "pump",
+         "value": "fract(@t / 10.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "res",
+         "value": "0.75 - fract(@t / 40.0) * 0.4"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 118,
+         "top": 62,
+         "right": 242,
+         "bottom": 78,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 174,
+         "top": 46,
+         "right": 186,
+         "bottom": 64,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "loop": {
+         "index": "b",
+         "from": 0.0,
+         "until": 5.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#6FD68F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.55 + 0.35 * sin(@t * 2.0 - b)"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "128.0 + b * 22.0",
+            "top": 76,
+            "right": "146.0 + b * 22.0",
+            "bottom": 82,
+            "rx": 2,
+            "ry": 2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.05
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 122 80 L 238 80 L 292 246 L 68 246 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.04
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 140 80 L 220 80 L 254 246 L 106 246 Z"
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "@sway * 5.0",
+            "pivotX": 180,
+            "pivotY": 226
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#6FD68F"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 3.4
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": 0.8
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 180,
+            "y1": 226,
+            "x2": 180,
+            "y2": 134
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "index": "lf",
+         "from": 0.0,
+         "until": 5.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "lfy",
+            "value": "150.0 + lf * 20.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "lfs",
+            "value": "(lf % 2.0) * 2.0 - 1.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "lfa",
+            "value": "@sway * (5.0 + lf * 2.2) * @lfs"
+           }
+          },
+          {
+           "save": {
+            "commands": [
+             {
+              "rotate": {
+               "angle": "@lfa",
+               "pivotX": 180,
+               "pivotY": "@lfy"
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#6FD68F"
+                },
+                {
+                 "style": "fill"
+                },
+                {
+                 "alpha": "0.42 + 0.13 * (lf % 2.0)"
+                }
+               ]
+              }
+             },
+             {
+              "drawOval": {
+               "left": "180.0 + @lfs * 6.0 - 30.0 - @lfs * 22.0",
+               "top": "@lfy - 12.0",
+               "right": "180.0 + @lfs * 6.0 + 30.0 - @lfs * 22.0",
+               "bottom": "@lfy + 12.0"
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 106 224 L 254 224 L 240 274 L 120 274 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 102,
+         "top": 218,
+         "right": 258,
+         "bottom": 232,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#332616"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 112 228 L 248 228 L 243 252 L 117 252 Z"
+       },
+       {
+        "loop": {
+         "index": "sp",
+         "from": 0.0,
+         "until": 7.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#4A3722"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "126.0 + sp * 18.0",
+            "cy": "234.0 + (sp % 3.0) * 5.0",
+            "radius": 4.0
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 106 224 L 254 224 L 240 274 L 120 274 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A121B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 122,
+         "top": 252,
+         "right": 238,
+         "bottom": 270,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.3
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 122,
+         "top": "268.0 - @res * 16.0",
+         "right": 238,
+         "bottom": 270,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "loop": {
+         "index": "w",
+         "from": 0.0,
+         "until": 6.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "wp",
+            "value": "fract(@pump * 3.0 + w * 0.1666667)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#6FD68F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.75 * (1.0 - @wp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 224,
+            "cy": "266.0 - @wp * 40.0",
+            "radius": 4.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 220,
+         "top": 228,
+         "right": 228,
+         "bottom": 258,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 258,
+         "top": 196,
+         "right": 316,
+         "bottom": 218,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 13.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "46%",
+         "x": 287,
+         "y": 207,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Smart Planter",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "self-watering \u00b7 grow light",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

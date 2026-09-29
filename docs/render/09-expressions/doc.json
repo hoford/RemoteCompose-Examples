@@ -1,0 +1,49 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF66BB6A",
+            "style": "stroke",
+            "width": 4.0
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": "(windowWidth - 40) / 2",
+            "cy": "windowHeight / 2",
+            "radius": "max(50, windowWidth / 4)"
+          }
+        },
+        {
+          "drawLine": {
+            "x1": "-30 + windowWidth",
+            "y1": "2 + 3 * 4",
+            "x2": "windowWidth / 2",
+            "y2": "abs(-120)"
+          }
+        },
+        {
+          "drawArc": {
+            "left": "40",
+            "top": "40",
+            "right": "windowWidth - 40",
+            "bottom": "windowHeight - 40",
+            "startAngle": "sin(time) * 90",
+            "sweepAngle": "clamp(120, 0, 360)"
+          }
+        }
+      ]
+    }
+  }
+}

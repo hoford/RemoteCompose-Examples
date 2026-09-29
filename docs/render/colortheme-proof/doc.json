@@ -1,0 +1,72 @@
+{
+ "//": [
+  "Does a themed colour resolve to the correct variant?",
+  "",
+  "Three columns. Under 'light' and 'dark' are two ordinary named colours, drawn as-is —",
+  "they never change and are the reference. Under 'color theme' is a themed colour built",
+  "from those same two named colours. Whatever the player does, the third swatch should be",
+  "identical to the first in light mode and identical to the second in dark mode.",
+  "",
+  "Row 1 builds the themed colour from *references* to the named colours, which reaches",
+  "RemoteComposeWriter.addThemedColor(lightId, darkId).",
+  "Row 2 builds it from literals, which reaches addThemedColor(lightName, light, darkName,",
+  "dark). The two take different paths through ResourceParser, so both are shown.",
+  "",
+  "The colours are far apart in every channel and sit on a mid-grey field belonging to",
+  "neither, so a third outcome is distinguishable: a swatch matching NEITHER reference means",
+  "the themed colour was never loaded at all, as opposed to being loaded with the wrong",
+  "variant."
+ ],
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 300,
+  "profiles": 513,
+  "contentDescription": "themed colour vs named colour references",
+  "orderedResources": true
+ },
+ "resources": {
+  "colors": {
+   "lightRef": "#FFFF00FF",
+   "darkRef": "#FF00FFFF",
+   "themedByRef": { "light": "$colors.lightRef", "dark": "$colors.darkRef" },
+   "lightRef2": "#FFFF8000",
+   "darkRef2": "#FF0080FF",
+   "themedByValue": { "light": "#FFFF8000", "dark": "#FF0080FF" }
+  }
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": ["fillMaxSize"],
+      "commands": [
+       { "paint": { "ops": [{ "color": "#FF606060" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 0, "top": 0, "right": 480, "bottom": 300 } },
+
+       { "paint": { "ops": [{ "color": "#FF000000" }, { "style": "fill" }, { "textSize": 24 }, { "alpha": 1.0 }] } },
+       { "drawTextAnchored": { "text": "light", "x": 90, "y": 34, "panX": 0, "panY": 0 } },
+       { "drawTextAnchored": { "text": "dark", "x": 240, "y": 34, "panX": 0, "panY": 0 } },
+       { "drawTextAnchored": { "text": "color theme", "x": 390, "y": 34, "panX": 0, "panY": 0 } },
+
+       { "paint": { "ops": [{ "color": "@colors.lightRef" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 20, "top": 50, "right": 160, "bottom": 160 } },
+       { "paint": { "ops": [{ "color": "@colors.darkRef" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 170, "top": 50, "right": 310, "bottom": 160 } },
+       { "paint": { "ops": [{ "color": "@colors.themedByRef" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 320, "top": 50, "right": 460, "bottom": 160 } },
+
+       { "paint": { "ops": [{ "color": "@colors.lightRef2" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 20, "top": 175, "right": 160, "bottom": 285 } },
+       { "paint": { "ops": [{ "color": "@colors.darkRef2" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 170, "top": 175, "right": 310, "bottom": 285 } },
+       { "paint": { "ops": [{ "color": "@colors.themedByValue" }, { "style": "fill" }, { "alpha": 1.0 }] } },
+       { "drawRect": { "left": 320, "top": 175, "right": 460, "bottom": 285 } }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+# RemoteCompose Examples
+
+A browsable corpus of [RemoteCompose](https://developer.android.com/jetpack/androidx/releases/compose-remote)
+documents, published as a static GitHub Pages site. Every document is downloadable as compiled
+`.rc`, alongside its JSON and generator source where those exist.
+
+Agents: read **[AGENTS.md](AGENTS.md)**. The short version is `catalog/corpus.jsonl`.
+
+## The site ships no thumbnails
+
+Previews are generated **in the browser**. A card fetches the `.rc` it needs anyway, plays one
+frame with the TypeScript player, snapshots the canvas, hands the WebGL context back, and caches
+the image in IndexedDB.
+
+That is not a micro-optimisation. At ten thousand documents, stored thumbnails would be roughly
+120 MB in the repository and would cap preview quality at whatever size was baked in. Rendering
+client-side costs nothing extra in the repo, makes preview resolution a choice the *viewer*
+makes, and means a second visit costs no network at all.
+
+The `.rc` files themselves are the payload, and most are under 50 KB.
+
+## Querying scales, not just storage
+
+Filtering never touches the documents:
+
+- `catalog/facets.json` — every facet value with a delta+varint postings list of the documents
+  that have it. Filtering is set intersection over those lists, so query cost is independent of
+  corpus size.
+- `catalog/docs-NNN.json` — card metadata in shards of 500, fetched only for the rows about to
+  be displayed.
+- The grid renders only the visible window, so scrolling costs what is on screen.
+
+Within a facet, values are alternatives (OR). Across facets they are constraints (AND) — so
+"drawCircle or drawPath, but only from droidkaigi26" is expressible.
+
+## Curated vs derived
+
+```
+docs/<id>/
+    doc.rc          the document — always present, the primary artifact
+    doc.json        JSON source, when authored that way
+    src/*           the .py / .kt that produced it
+    entry.json      CURATED — title, description, tags. Never overwritten by a tool.
+    derived.json    GENERATED — op histogram, capability tags, sizes. Rebuilt wholesale.
+```
+
+This split is what makes the corpus safe to re-catalogue at scale: curation cannot be lost by a
+tool run, and derived facts cannot drift from the documents they describe.
+
+IDs are `<collection>/<slug>` — readable, stable across recompiles, and citable. Content hashes
+are stored for deduplication but never used as identity.
+
+## Tools
+
+```sh
+tools/rcx.py add <path…> --source NAME [--collection NAME]   # ingest, dedupe, attach sources
+tools/rcx.py rm <id>…                                        # remove cleanly
+tools/rcx.py catalog                                         # rebuild all derived data
+tools/rcx.py verify [--self-test]                            # integrity check
+tools/rcx.py serve [--port 8000]                             # preview locally
+```
+
+`add` deduplicates by content hash and survives repeated runs. `catalog` is idempotent.
+`verify --self-test` breaks the corpus on purpose five ways and asserts each break is caught —
+a validator that has never been seen to fail is not evidence of anything.
+
+Cataloguing needs `rc2json` for operation extraction; set `RC2JSON` if it is not at the default
+path. Dimensions are parsed natively and do not need it.
+
+## Known limitations
+
+**Some documents cannot be fully decoded** (`derived.json.decoded: false`). They play correctly;
+the cataloguing decoder is behind the format. They carry no `apis` and so will not appear under
+API filters. Currently 120 of 684.
+
+**`animated` is inferred statically** from the use of expressions, shaders or particles. A
+player can answer it exactly at runtime via `CoreDocument.needsRepaint()`.
+
+**Capability tags are a summary.** Several opcodes collapse to one tag. `derived.json.histogram`
+has the exact opcodes.

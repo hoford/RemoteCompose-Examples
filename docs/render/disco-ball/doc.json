@@ -1,0 +1,2297 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 400,
+  "height": 400,
+  "contentDescription": "rotating mirror ball, 326 mirrors",
+  "profiles": 513,
+  "orderedResources": true
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "color": "#FF06070B",
+         "style": "fill"
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0.0,
+         "top": 0.0,
+         "right": 400.0,
+         "bottom": 400.0
+        }
+       },
+       {
+        "variable": {
+         "name": "spin",
+         "value": "continuousSec() * 0.450295"
+        }
+       },
+       {
+        "variable": {
+         "name": "spin0",
+         "value": "continuousSec() * 0.450295 + 1.891815"
+        }
+       },
+       {
+        "variable": {
+         "name": "spin1",
+         "value": "continuousSec() * 0.450295 + 1.156612"
+        }
+       },
+       {
+        "variable": {
+         "name": "spin2",
+         "value": "continuousSec() * 0.450295 + 1.531125"
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF0D1018",
+         "style": "fill"
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 148.5
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF252C37",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x0",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w0",
+            "value": "12.3172*max(cos(i * 2.094395 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x0 - @w0",
+            "top": 348.123,
+            "right": "@x0 + @w0",
+            "bottom": 350.4324
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF252C38",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x1",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w1",
+            "value": "12.1594*max(cos(i * 0.698132 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x1 - @w1",
+            "top": 340.1212,
+            "right": "@x1 + @w1",
+            "bottom": 346.9609
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF262D39",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x2",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w2",
+            "value": "11.8475*max(cos(i * 0.418879 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x2 - @w2",
+            "top": 326.7347,
+            "right": "@x2 + @w2",
+            "bottom": 337.8417
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF28303C",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x3",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w3",
+            "value": "11.9580*max(cos(i * 0.314159 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x3 - @w3",
+            "top": 308.4778,
+            "right": "@x3 + @w3",
+            "bottom": 323.4253
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF2B3341",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x4",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w4",
+            "value": "11.6567*max(cos(i * 0.251327 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x4 - @w4",
+            "top": 286.0522,
+            "right": "@x4 + @w4",
+            "bottom": 304.2658
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF303948",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x5",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w5",
+            "value": "11.8742*max(cos(i * 0.224399 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x5 - @w5",
+            "top": 260.3196,
+            "right": "@x5 + @w5",
+            "bottom": 281.0994
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF353F50",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x6",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w6",
+            "value": "11.6374*max(cos(i * 0.202683 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x6 - @w6",
+            "top": 232.269,
+            "right": "@x6 + @w6",
+            "bottom": 254.8164
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF3C475A",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x7",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w7",
+            "value": "11.7242*max(cos(i * 0.196350 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x7 - @w7",
+            "top": 202.9783,
+            "right": "@x7 + @w7",
+            "bottom": 226.4268
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF445065",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x8",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w8",
+            "value": "11.7242*max(cos(i * 0.196350 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x8 - @w8",
+            "top": 173.5732,
+            "right": "@x8 + @w8",
+            "bottom": 197.0217
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF4B5971",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x9",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w9",
+            "value": "11.6374*max(cos(i * 0.202683 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x9 - @w9",
+            "top": 145.1836,
+            "right": "@x9 + @w9",
+            "bottom": 167.731
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF53627D",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x10",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w10",
+            "value": "11.8742*max(cos(i * 0.224399 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x10 - @w10",
+            "top": 118.9006,
+            "right": "@x10 + @w10",
+            "bottom": 139.6804
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF5A6B88",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x11",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w11",
+            "value": "11.6567*max(cos(i * 0.251327 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x11 - @w11",
+            "top": 95.7342,
+            "right": "@x11 + @w11",
+            "bottom": 113.9478
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF617391",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x12",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w12",
+            "value": "11.9580*max(cos(i * 0.314159 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x12 - @w12",
+            "top": 76.5747,
+            "right": "@x12 + @w12",
+            "bottom": 91.5222
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF667999",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x13",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w13",
+            "value": "11.8475*max(cos(i * 0.418879 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x13 - @w13",
+            "top": 62.1583,
+            "right": "@x13 + @w13",
+            "bottom": 73.2653
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF6A7D9F",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x14",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w14",
+            "value": "12.1594*max(cos(i * 0.698132 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x14 - @w14",
+            "top": 53.0391,
+            "right": "@x14 + @w14",
+            "bottom": 59.8788
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF6C80A2",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "x15",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w15",
+            "value": "12.3172*max(cos(i * 2.094395 + @spin), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x15 - @w15",
+            "top": 49.5676,
+            "right": "@x15 + @w15",
+            "bottom": 51.877
+           }
+          }
+         ]
+        }
+       },
+       {
+        "variable": {
+         "name": "spind",
+         "value": "continuousSec() * 0.450295 + 2.265535"
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFD0E0F8",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx3",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw3",
+            "value": "11.9580*max(cos(i * 0.314159 + @spin), 0) * max(0.54830*sin(i * 0.314159 + @spind) + -0.38883, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh3",
+            "value": "7.4738*max(0.54830*sin(i * 0.314159 + @spind) + -0.38883, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx3 - @sw3",
+            "top": "315.9516 - @sh3",
+            "right": "@sx3 + @sw3",
+            "bottom": "315.9516 + @sh3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx4",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw4",
+            "value": "11.6567*max(cos(i * 0.251327 + @spin), 0) * max(0.66810*sin(i * 0.251327 + @spind) + -0.31910, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh4",
+            "value": "9.1068*max(0.66810*sin(i * 0.251327 + @spind) + -0.31910, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx4 - @sw4",
+            "top": "295.159 - @sh4",
+            "right": "@sx4 + @sw4",
+            "bottom": "295.159 + @sh4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx5",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw5",
+            "value": "11.8742*max(cos(i * 0.224399 + @spin), 0) * max(0.76223*sin(i * 0.224399 + @spind) + -0.23711, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh5",
+            "value": "10.3899*max(0.76223*sin(i * 0.224399 + @spind) + -0.23711, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx5 - @sw5",
+            "top": "270.7095 - @sh5",
+            "right": "@sx5 + @sw5",
+            "bottom": "270.7095 + @sh5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx6",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw6",
+            "value": "11.6374*max(cos(i * 0.202683 + @spin), 0) * max(0.82707*sin(i * 0.202683 + @spind) + -0.14601, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh6",
+            "value": "11.2737*max(0.82707*sin(i * 0.202683 + @spind) + -0.14601, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx6 - @sw6",
+            "top": "243.5427 - @sh6",
+            "right": "@sx6 + @sw6",
+            "bottom": "243.5427 + @sh6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx7",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw7",
+            "value": "11.7242*max(cos(i * 0.196350 + @spin), 0) * max(0.86012*sin(i * 0.196350 + @spind) + -0.04930, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh7",
+            "value": "11.7242*max(0.86012*sin(i * 0.196350 + @spind) + -0.04930, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx7 - @sw7",
+            "top": "214.7026 - @sh7",
+            "right": "@sx7 + @sw7",
+            "bottom": "214.7026 + @sh7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx8",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw8",
+            "value": "11.7242*max(cos(i * 0.196350 + @spin), 0) * max(0.86012*sin(i * 0.196350 + @spind) + 0.04930, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh8",
+            "value": "11.7242*max(0.86012*sin(i * 0.196350 + @spind) + 0.04930, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx8 - @sw8",
+            "top": "185.2974 - @sh8",
+            "right": "@sx8 + @sw8",
+            "bottom": "185.2974 + @sh8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx9",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw9",
+            "value": "11.6374*max(cos(i * 0.202683 + @spin), 0) * max(0.82707*sin(i * 0.202683 + @spind) + 0.14601, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh9",
+            "value": "11.2737*max(0.82707*sin(i * 0.202683 + @spind) + 0.14601, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx9 - @sw9",
+            "top": "156.4573 - @sh9",
+            "right": "@sx9 + @sw9",
+            "bottom": "156.4573 + @sh9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx10",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw10",
+            "value": "11.8742*max(cos(i * 0.224399 + @spin), 0) * max(0.76223*sin(i * 0.224399 + @spind) + 0.23711, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh10",
+            "value": "10.3899*max(0.76223*sin(i * 0.224399 + @spind) + 0.23711, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx10 - @sw10",
+            "top": "129.2905 - @sh10",
+            "right": "@sx10 + @sw10",
+            "bottom": "129.2905 + @sh10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx11",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw11",
+            "value": "11.6567*max(cos(i * 0.251327 + @spin), 0) * max(0.66810*sin(i * 0.251327 + @spind) + 0.31910, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh11",
+            "value": "9.1068*max(0.66810*sin(i * 0.251327 + @spind) + 0.31910, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx11 - @sw11",
+            "top": "104.841 - @sh11",
+            "right": "@sx11 + @sw11",
+            "bottom": "104.841 + @sh11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx12",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw12",
+            "value": "11.9580*max(cos(i * 0.314159 + @spin), 0) * max(0.54830*sin(i * 0.314159 + @spind) + 0.38883, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh12",
+            "value": "7.4738*max(0.54830*sin(i * 0.314159 + @spind) + 0.38883, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx12 - @sw12",
+            "top": "84.0484 - @sh12",
+            "right": "@sx12 + @sw12",
+            "bottom": "84.0484 + @sh12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx13",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw13",
+            "value": "11.8475*max(cos(i * 0.418879 + @spin), 0) * max(0.40742*sin(i * 0.418879 + @spind) + 0.44361, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh13",
+            "value": "5.5535*max(0.40742*sin(i * 0.418879 + @spind) + 0.44361, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx13 - @sw13",
+            "top": "67.7118 - @sh13",
+            "right": "@sx13 + @sw13",
+            "bottom": "67.7118 + @sh13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx14",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw14",
+            "value": "12.1594*max(cos(i * 0.698132 + @spin), 0) * max(0.25089*sin(i * 0.698132 + @spind) + 0.48134, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh14",
+            "value": "3.4198*max(0.25089*sin(i * 0.698132 + @spind) + 0.48134, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx14 - @sw14",
+            "top": "56.4589 - @sh14",
+            "right": "@sx14 + @sw14",
+            "bottom": "56.4589 + @sh14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "sx15",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sw15",
+            "value": "12.3172*max(cos(i * 2.094395 + @spin), 0) * max(0.08471*sin(i * 2.094395 + @spind) + 0.50058, 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "sh15",
+            "value": "1.1547*max(0.08471*sin(i * 2.094395 + @spind) + 0.50058, 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@sx15 - @sw15",
+            "top": "50.7223 - @sh15",
+            "right": "@sx15 + @sw15",
+            "bottom": "50.7223 + @sh15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFFFF1CE",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_2",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_2",
+            "value": "16.1988*pow(max(0.45312*sin(i * 0.418879 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.7540) - 0.5)) + -0.24317, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_2",
+            "cy": 332.2882,
+            "radius": "@br0_2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_3",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_3",
+            "value": "16.1988*pow(max(0.60980*sin(i * 0.314159 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.1310) - 0.5)) + -0.21314, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_3",
+            "cy": 315.9516,
+            "radius": "@br0_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_4",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_4",
+            "value": "16.1988*pow(max(0.74304*sin(i * 0.251327 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.5080) - 0.5)) + -0.17492, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_4",
+            "cy": 295.159,
+            "radius": "@br0_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_5",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_5",
+            "value": "16.1988*pow(max(0.84773*sin(i * 0.224399 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.8850) - 0.5)) + -0.12998, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_5",
+            "cy": 270.7095,
+            "radius": "@br0_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_6",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_6",
+            "value": "16.1988*pow(max(0.91984*sin(i * 0.202683 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.2620) - 0.5)) + -0.08004, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_6",
+            "cy": 243.5427,
+            "radius": "@br0_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_7",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_7",
+            "value": "16.1988*pow(max(0.95661*sin(i * 0.196350 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.6390) - 0.5)) + -0.02703, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_7",
+            "cy": 214.7026,
+            "radius": "@br0_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_8",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_8",
+            "value": "16.1988*pow(max(0.95661*sin(i * 0.196350 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.0160) - 0.5)) + 0.02703, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_8",
+            "cy": 185.2974,
+            "radius": "@br0_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_9",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_9",
+            "value": "16.1988*pow(max(0.91984*sin(i * 0.202683 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.3930) - 0.5)) + 0.08004, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_9",
+            "cy": 156.4573,
+            "radius": "@br0_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_10",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_10",
+            "value": "16.1988*pow(max(0.84773*sin(i * 0.224399 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.7700) - 0.5)) + 0.12998, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_10",
+            "cy": 129.2905,
+            "radius": "@br0_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_11",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_11",
+            "value": "16.1988*pow(max(0.74304*sin(i * 0.251327 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.1470) - 0.5)) + 0.17492, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_11",
+            "cy": 104.841,
+            "radius": "@br0_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_12",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_12",
+            "value": "16.1988*pow(max(0.60980*sin(i * 0.314159 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.5240) - 0.5)) + 0.21314, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_12",
+            "cy": 84.0484,
+            "radius": "@br0_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_13",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_13",
+            "value": "16.1988*pow(max(0.45312*sin(i * 0.418879 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.9010) - 0.5)) + 0.24317, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_13",
+            "cy": 67.7118,
+            "radius": "@br0_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_14",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_14",
+            "value": "16.1988*pow(max(0.27903*sin(i * 0.698132 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.2780) - 0.5)) + 0.26386, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_14",
+            "cy": 56.4589,
+            "radius": "@br0_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx0_15",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br0_15",
+            "value": "16.1988*pow(max(0.09422*sin(i * 2.094395 + @spin0 + 2.6000*(fract(i * 0.6180339 + 0.6550) - 0.5)) + 0.27440, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx0_15",
+            "cy": 50.7223,
+            "radius": "@br0_15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF86ECFF",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_0",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_0",
+            "value": "16.1988*pow(max(0.09700*sin(i * 2.094395 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.0000) - 0.5)) + 0.14312, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_0",
+            "cy": 349.2777,
+            "radius": "@br1_0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_1",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_1",
+            "value": "16.1988*pow(max(0.28727*sin(i * 0.698132 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.3770) - 0.5)) + 0.13762, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_1",
+            "cy": 343.5411,
+            "radius": "@br1_1"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_2",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_2",
+            "value": "16.1988*pow(max(0.46650*sin(i * 0.418879 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.7540) - 0.5)) + 0.12683, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_2",
+            "cy": 332.2882,
+            "radius": "@br1_2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_3",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_3",
+            "value": "16.1988*pow(max(0.62780*sin(i * 0.314159 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.1310) - 0.5)) + 0.11117, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_3",
+            "cy": 315.9516,
+            "radius": "@br1_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_4",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_4",
+            "value": "16.1988*pow(max(0.76497*sin(i * 0.251327 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.5080) - 0.5)) + 0.09124, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_4",
+            "cy": 295.159,
+            "radius": "@br1_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_5",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_5",
+            "value": "16.1988*pow(max(0.87275*sin(i * 0.224399 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.8850) - 0.5)) + 0.06779, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_5",
+            "cy": 270.7095,
+            "radius": "@br1_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_6",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_6",
+            "value": "16.1988*pow(max(0.94699*sin(i * 0.202683 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.2620) - 0.5)) + 0.04175, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_6",
+            "cy": 243.5427,
+            "radius": "@br1_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_7",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_7",
+            "value": "16.1988*pow(max(0.98484*sin(i * 0.196350 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.6390) - 0.5)) + 0.01410, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_7",
+            "cy": 214.7026,
+            "radius": "@br1_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_8",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_8",
+            "value": "16.1988*pow(max(0.98484*sin(i * 0.196350 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.0160) - 0.5)) + -0.01410, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_8",
+            "cy": 185.2974,
+            "radius": "@br1_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_9",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_9",
+            "value": "16.1988*pow(max(0.94699*sin(i * 0.202683 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.3930) - 0.5)) + -0.04175, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_9",
+            "cy": 156.4573,
+            "radius": "@br1_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_10",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_10",
+            "value": "16.1988*pow(max(0.87275*sin(i * 0.224399 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.7700) - 0.5)) + -0.06779, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_10",
+            "cy": 129.2905,
+            "radius": "@br1_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_11",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_11",
+            "value": "16.1988*pow(max(0.76497*sin(i * 0.251327 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.1470) - 0.5)) + -0.09124, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_11",
+            "cy": 104.841,
+            "radius": "@br1_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_12",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_12",
+            "value": "16.1988*pow(max(0.62780*sin(i * 0.314159 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.5240) - 0.5)) + -0.11117, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_12",
+            "cy": 84.0484,
+            "radius": "@br1_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_13",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_13",
+            "value": "16.1988*pow(max(0.46650*sin(i * 0.418879 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.9010) - 0.5)) + -0.12683, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_13",
+            "cy": 67.7118,
+            "radius": "@br1_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx1_14",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br1_14",
+            "value": "16.1988*pow(max(0.28727*sin(i * 0.698132 + @spin1 + 2.6000*(fract(i * 0.6180339 + 0.2780) - 0.5)) + -0.13762, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx1_14",
+            "cy": 56.4589,
+            "radius": "@br1_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFFF9BE8",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_3",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_3",
+            "value": "16.1988*pow(max(0.55151*sin(i * 0.314159 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.1310) - 0.5)) + -0.38202, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_3",
+            "cy": 315.9516,
+            "radius": "@br2_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_4",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_4",
+            "value": "16.1988*pow(max(0.67202*sin(i * 0.251327 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.5080) - 0.5)) + -0.31352, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_4",
+            "cy": 295.159,
+            "radius": "@br2_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_5",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_5",
+            "value": "16.1988*pow(max(0.76670*sin(i * 0.224399 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.8850) - 0.5)) + -0.23296, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_5",
+            "cy": 270.7095,
+            "radius": "@br2_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_6",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_6",
+            "value": "16.1988*pow(max(0.83192*sin(i * 0.202683 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.2620) - 0.5)) + -0.14346, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_6",
+            "cy": 243.5427,
+            "radius": "@br2_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_7",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_7",
+            "value": "16.1988*pow(max(0.86516*sin(i * 0.196350 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.6390) - 0.5)) + -0.04844, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_7",
+            "cy": 214.7026,
+            "radius": "@br2_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_8",
+            "value": "200.0 + 149.2777*sin(i * 0.196350 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_8",
+            "value": "16.1988*pow(max(0.86516*sin(i * 0.196350 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.0160) - 0.5)) + 0.04844, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_8",
+            "cy": 185.2974,
+            "radius": "@br2_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 31.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_9",
+            "value": "200.0 + 143.5411*sin(i * 0.202683 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_9",
+            "value": "16.1988*pow(max(0.83192*sin(i * 0.202683 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.3930) - 0.5)) + 0.14346, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_9",
+            "cy": 156.4573,
+            "radius": "@br2_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 28.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_10",
+            "value": "200.0 + 132.2882*sin(i * 0.224399 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_10",
+            "value": "16.1988*pow(max(0.76670*sin(i * 0.224399 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.7700) - 0.5)) + 0.23296, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_10",
+            "cy": 129.2905,
+            "radius": "@br2_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_11",
+            "value": "200.0 + 115.9516*sin(i * 0.251327 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_11",
+            "value": "16.1988*pow(max(0.67202*sin(i * 0.251327 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.1470) - 0.5)) + 0.31352, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_11",
+            "cy": 104.841,
+            "radius": "@br2_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_12",
+            "value": "200.0 + 95.1590*sin(i * 0.314159 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_12",
+            "value": "16.1988*pow(max(0.55151*sin(i * 0.314159 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.5240) - 0.5)) + 0.38202, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_12",
+            "cy": 84.0484,
+            "radius": "@br2_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_13",
+            "value": "200.0 + 70.7095*sin(i * 0.418879 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_13",
+            "value": "16.1988*pow(max(0.40981*sin(i * 0.418879 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.9010) - 0.5)) + 0.43584, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_13",
+            "cy": 67.7118,
+            "radius": "@br2_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_14",
+            "value": "200.0 + 43.5427*sin(i * 0.698132 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_14",
+            "value": "16.1988*pow(max(0.25236*sin(i * 0.698132 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.2780) - 0.5)) + 0.47292, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_14",
+            "cy": 56.4589,
+            "radius": "@br2_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "bx2_15",
+            "value": "200.0 + 14.7026*sin(i * 2.094395 + @spin)"
+           }
+          },
+          {
+           "variable": {
+            "name": "br2_15",
+            "value": "16.1988*pow(max(0.08521*sin(i * 2.094395 + @spin2 + 2.6000*(fract(i * 0.6180339 + 0.6550) - 0.5)) + 0.49182, 0), 70.0)"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@bx2_15",
+            "cy": 50.7223,
+            "radius": "@br2_15"
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

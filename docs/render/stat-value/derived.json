@@ -1,0 +1,27 @@
+{
+  "id": "render/stat-value",
+  "sha256": "32fbbad81bd3b0e819536f1b3f14da847289a8160360616bf0350a832e48299a",
+  "bytes": 246,
+  "ops": 14,
+  "distinctOps": 8,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "CONTAINER_END": 7,
+    "DATA_TEXT": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

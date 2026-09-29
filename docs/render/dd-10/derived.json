@@ -1,0 +1,36 @@
+{
+  "id": "render/dd-10",
+  "sha256": "f9f0316aa7d00fea6915b615cd45218fc91759bd9b08629888ec9ff8c1fab14a",
+  "bytes": 239,
+  "ops": 16,
+  "distinctOps": 11,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 2,
+    "MATRIX_SCALE": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

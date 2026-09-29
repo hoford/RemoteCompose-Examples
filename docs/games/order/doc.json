@@ -1,0 +1,15 @@
+{
+  "header": { "apiLevel": 7, "width": 400, "height": 400, "profiles": 513,
+              "contentDescription": "equation order probe" },
+  "root": { "canvas": { "modifiers": ["fillMaxSize"], "commands": [
+    { "impulse": { "duration": 1000000, "start": 0, "commands": [
+      { "createParticles": { "id": "st", "variables": ["v", "x", "y", "w"],
+          "initialValues": ["0", "0", "0", "0"], "count": 1 } },
+      { "impulseProcess": { "commands": [
+        { "particlesLoop": { "system": "@st",
+            "equations": [ "v + 1", "x + v", "y + w", "w + 1" ],
+            "commands": [ { "paint": { "color": "#FF3DDC84", "style": "fill" } },
+                          { "drawCircle": { "cx": 200, "cy": 200, "radius": 5 } } ] } }
+      ] } }
+    ] } } ] } }
+}

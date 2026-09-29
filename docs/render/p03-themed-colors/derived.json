@@ -1,0 +1,40 @@
+{
+  "id": "render/p03-themed-colors",
+  "sha256": "f941c8d0fd663d65b7c75863402dc94de5741d3a3ede69c0a7fe15ecb446ee15",
+  "bytes": 556,
+  "ops": 37,
+  "distinctOps": 14,
+  "width": 320,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 4,
+    "NAMED_VARIABLE": 5,
+    "THEME": 6,
+    "COLOR_EXPRESSIONS": 4,
+    "CONTAINER_END": 8,
+    "ANIMATED_FLOAT": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "theming"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

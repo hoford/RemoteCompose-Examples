@@ -1,0 +1,53 @@
+{
+  "id": "iot-panels/12-security-camera",
+  "sha256": "9fc940f4d5af887790560ddc5fb8daf0bbecf77c267fc67d057f9c02314a49ca",
+  "bytes": 2017,
+  "ops": 92,
+  "distinctOps": 21,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 6,
+    "DRAW_OVAL": 1,
+    "DRAW_CIRCLE": 9,
+    "MATRIX_SAVE": 3,
+    "ANIMATED_FLOAT": 13,
+    "MATRIX_ROTATE": 3,
+    "DRAW_PATH": 2,
+    "DRAW_LINE": 1,
+    "DATA_TEXT": 4,
+    "MATRIX_RESTORE": 3,
+    "CONTAINER_END": 7,
+    "DRAW_ARC": 1,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

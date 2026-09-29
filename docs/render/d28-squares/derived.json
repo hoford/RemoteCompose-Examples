@@ -1,0 +1,41 @@
+{
+  "id": "render/d28-squares",
+  "sha256": "1da481017ccd42fd70292d3642f4529869b5e17ef883333e72d99cd88c95b901",
+  "bytes": 398,
+  "ops": 23,
+  "distinctOps": 14,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 5,
+    "MATRIX_ROTATE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

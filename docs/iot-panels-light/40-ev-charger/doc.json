@@ -1,0 +1,864 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "EV Charger \u2014 7.4 kW \u00b7 62%"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "soc",
+         "value": "0.34 + 0.5 * fract(@t / 26.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "pct",
+         "value": "@soc * 100.0"
+        }
+       },
+       {
+        "variable": {
+         "name": "pctText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@pct",
+          "whole": 2,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 52,
+         "top": 70,
+         "right": 148,
+         "bottom": 196,
+         "rx": 14,
+         "ry": 14
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 52,
+         "top": 70,
+         "right": 148,
+         "bottom": 196,
+         "rx": 14,
+         "ry": 14
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 8.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 100,
+         "cy": 118,
+         "radius": 30
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 8.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 70,
+         "top": 88,
+         "right": 130,
+         "bottom": 148,
+         "startAngle": -90,
+         "sweepAngle": "360.0 * @soc"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 20.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@pctText",
+         "x": 96,
+         "y": 118,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "%",
+         "x": 122,
+         "y": 120,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 64,
+         "top": 160,
+         "right": 136,
+         "bottom": 184,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 13.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "7.4 kW",
+         "x": 100,
+         "y": 172,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 6.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 100,
+         "y1": 196,
+         "x2": 100,
+         "y2": 246
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 100,
+         "y1": 246,
+         "x2": 214,
+         "y2": 246
+        }
+       },
+       {
+        "loop": {
+         "index": "p",
+         "from": 0.0,
+         "until": 11.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "pp",
+            "value": "fract(@t * 0.7 + p * 0.0909091)"
+           }
+          },
+          {
+           "variable": {
+            "name": "px",
+            "value": "100.0 + clamp(0.0, 1.0, (@pp - 0.42) * 1.72) * 114.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "py",
+            "value": "196.0 + clamp(0.0, 1.0, @pp * 2.4) * 50.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.9 * (1.0 - abs(@pp - 0.5) * 0.7)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@px",
+            "cy": "@py",
+            "radius": 4.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 196 232 L 214 200 L 292 200 L 314 232 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 192,
+         "top": 228,
+         "right": 320,
+         "bottom": 254,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A121B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 220 226 L 230 206 L 284 206 L 296 226 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 220,
+         "cy": 256,
+         "radius": 12
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 292,
+         "cy": 256,
+         "radius": 12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 220,
+         "cy": 256,
+         "radius": 5
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 292,
+         "cy": 256,
+         "radius": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A121B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 232,
+         "top": 232,
+         "right": 300,
+         "bottom": 248,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "loop": {
+         "index": "s",
+         "from": 0.0,
+         "until": 5.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "slit",
+            "value": "clamp(0.0, 1.0, (@soc - s / 5.0) * 5.0)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.10 + 0.80 * @slit"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "236.0 + s * 12.4",
+            "top": 235,
+            "right": "245.0 + s * 12.4",
+            "bottom": 245,
+            "rx": 2,
+            "ry": 2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1E2A38"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 206,
+         "cy": 240,
+         "radius": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.25 + 0.7 * (0.5 + 0.5 * sin(@t * 4.1887902))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 206,
+         "cy": 240,
+         "radius": 6
+        }
+       },
+       {
+        "loop": {
+         "index": "h",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "hp",
+            "value": "fract(@t * 0.8 + h / 3.0)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.8
+             },
+             {
+              "alpha": "0.34 * (1.0 - @hp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 206,
+            "cy": 240,
+            "radius": "10.0 + @hp * 34.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "EV Charger",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "7.4 kW \u00b7 62%",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

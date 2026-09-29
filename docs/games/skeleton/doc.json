@@ -1,0 +1,38 @@
+{
+  "header": { "apiLevel": 7, "width": 400, "height": 400, "profiles": 513,
+              "contentDescription": "skeleton: one actor bouncing in a box" },
+  "root": {
+    "canvas": {
+      "modifiers": ["fillMaxSize"],
+      "commands": [
+        { "paint": { "color": "#FF0B1020", "style": "fill" } },
+        { "drawRect": { "left": 0, "top": 0, "right": 400, "bottom": 400 } },
+
+        { "impulse": { "duration": 1000000, "start": 0, "commands": [
+          { "createParticles": {
+              "id": "ball",
+              "variables": ["bx", "by", "bvx", "bvy"],
+              "initialValues": ["200", "120", "90", "70"],
+              "count": 1 } },
+
+          { "impulseProcess": { "commands": [
+            { "particlesLoop": {
+                "system": "@ball",
+                "equations": [
+                  "bx + bvx * 0.016",
+                  "by + bvy * 0.016",
+                  "bvx * ifElse(20 - bx, -1, 1) * ifElse(bx - 380, -1, 1)",
+                  "bvy * ifElse(20 - by, -1, 1) * ifElse(by - 380, -1, 1)"
+                ],
+                "commands": [
+                  { "paint": { "color": "#FF4DA3FF", "style": "fill" } },
+                  { "drawCircle": { "cx": "@bx", "cy": "@by", "radius": 14 } },
+                  { "paint": { "color": "#FFAEE3FF", "style": "fill" } },
+                  { "drawCircle": { "cx": "@bx", "cy": "@by", "radius": 6 } }
+                ] } }
+          ] } }
+        ] } }
+      ]
+    }
+  }
+}

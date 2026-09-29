@@ -1,0 +1,38 @@
+{
+  "id": "render/horizontal-bar-chart-of-fruit-sales-appl",
+  "sha256": "045e68ce0dc894579b779b72228c64128494f7d141851f8628f512bd9ec3b5b4",
+  "bytes": 550,
+  "ops": 31,
+  "distinctOps": 12,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 5,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 8,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 9,
+    "DRAW_ROUND_RECT": 1
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

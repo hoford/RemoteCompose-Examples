@@ -1,0 +1,57 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "I05 clip combined with padding"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 220
+          },
+          {
+            "height": 160
+          },
+          {
+            "padding": 25
+          },
+          {
+            "clip": {
+              "type": "rect"
+            }
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              "fillMaxSize",
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "K08 text filling the width - the box is logic, the wrapping is metrics"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 300
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "text",
+            "text": "Handgloves quickly vexed the wizard Handgloves quickly vexed the wizard",
+            "color": "#FF0B1020",
+            "fontSize": 18,
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

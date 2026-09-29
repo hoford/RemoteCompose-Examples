@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/71-aroma-diffuser",
+  "sha256": "99c4bd058958d6c71184fc114a288ac179980015c5a160b8b842503d330876a8",
+  "bytes": 2090,
+  "ops": 86,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 3,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 24,
+    "DRAW_OVAL": 8,
+    "CONTAINER_END": 8,
+    "DRAW_CIRCLE": 5,
+    "DRAW_ARC": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

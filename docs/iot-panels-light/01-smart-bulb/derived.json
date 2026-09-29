@@ -1,0 +1,49 @@
+{
+  "id": "iot-panels-light/01-smart-bulb",
+  "sha256": "904152b6e95be839df702850e4e46c1a72b0ddb3c0ab490733b183dfc397bf1d",
+  "bytes": 1987,
+  "ops": 81,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 6,
+    "DATA_TEXT": 3,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 12,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 4,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 7,
+    "DRAW_CIRCLE": 9,
+    "DRAW_PATH": 2,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

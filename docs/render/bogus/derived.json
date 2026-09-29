@@ -1,0 +1,28 @@
+{
+  "id": "render/bogus",
+  "sha256": "fc869522abf8c355f2178b00e755c1260ba65df10863dd91c86a496ad91b35b1",
+  "bytes": 159,
+  "ops": 11,
+  "distinctOps": 8,
+  "width": 360,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

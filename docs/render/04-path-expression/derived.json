@@ -1,0 +1,31 @@
+{
+  "id": "render/04-path-expression",
+  "sha256": "6966d20745143cca4f8290bac8965f156acf827665e74aaa2852fe4aa12fc5d2",
+  "bytes": 656,
+  "ops": 19,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "DRAW_PATH": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

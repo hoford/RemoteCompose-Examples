@@ -1,0 +1,68 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "starburst",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFCA28",
+            "style": "stroke",
+            "width": 2.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 48.0,
+            "index": "i",
+            "commands": [
+              {
+                "save": [
+                  {
+                    "rotate": {
+                      "angle": "i * 7.5",
+                      "pivotX": 150.0,
+                      "pivotY": 150.0
+                    }
+                  },
+                  {
+                    "drawLine": {
+                      "x1": 150.0,
+                      "y1": 150.0,
+                      "x2": 150.0,
+                      "y2": 30.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "//": "BUBBLE DROP - each tap releases one bubble from the spout. They fall, bounce and shove each other. Land all three in the bin before the clock runs out.",
+  "//mechanic": "Bubbles push each other apart: each bubble computes a separation term against the other two and adds it to its own velocity. Three bubbles is the practical limit - each extra one costs every other bubble another term, and the expression cap is 32 tokens.",
+  "//release": "The tap edge increments `drop`; bubble k is inert until drop reaches k, so one tap is one bubble and there are exactly three.",
+  "//levels": "The bin narrows and moves, gravity rises and the clock tightens.",
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "Bubble Drop: tap to release bubbles and land all three in the bin"
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0B1020",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 400,
+            "bottom": 400
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF121A2E",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 12,
+            "top": 56,
+            "right": 388,
+            "bottom": 344,
+            "rx": 16,
+            "ry": 16
+          }
+        },
+        {
+          "impulse": {
+            "duration": 1000000,
+            "start": 0,
+            "commands": [
+              {
+                "createParticles": {
+                  "id": "st",
+                  "variables": [
+                    "touch",
+                    "prevT",
+                    "edge",
+                    "tapX",
+                    "tapY",
+                    "level",
+                    "curLvl",
+                    "rebuild",
+                    "started",
+                    "respawn",
+                    "grace",
+                    "hitG",
+                    "adv",
+                    "die",
+                    "inGoal",
+                    "wasHit",
+                    "score",
+                    "lives",
+                    "spd",
+                    "gx",
+                    "gy",
+                    "gr",
+                    "alive",
+                    "drop",
+                    "clock",
+                    "binX",
+                    "binW",
+                    "inBin"
+                  ],
+                  "initialValues": [
+                    "0",
+                    "0",
+                    "0",
+                    "-999",
+                    "-999",
+                    "1",
+                    "0",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "3",
+                    "1",
+                    "200",
+                    "200",
+                    "26",
+                    "1",
+                    "0",
+                    "0",
+                    "200",
+                    "70",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "k1",
+                  "variables": [
+                    "k1x",
+                    "k1y",
+                    "k1vx",
+                    "k1vy",
+                    "k1ox",
+                    "k1d1",
+                    "k1d2",
+                    "k1d3",
+                    "k1in",
+                    "k1sx",
+                    "k1sy"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "70",
+                    "0",
+                    "0",
+                    "0",
+                    "999",
+                    "999",
+                    "999",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "k2",
+                  "variables": [
+                    "k2x",
+                    "k2y",
+                    "k2vx",
+                    "k2vy",
+                    "k2ox",
+                    "k2d1",
+                    "k2d2",
+                    "k2d3",
+                    "k2in",
+                    "k2sx",
+                    "k2sy"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "70",
+                    "0",
+                    "0",
+                    "0",
+                    "999",
+                    "999",
+                    "999",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "k3",
+                  "variables": [
+                    "k3x",
+                    "k3y",
+                    "k3vx",
+                    "k3vy",
+                    "k3ox",
+                    "k3d1",
+                    "k3d2",
+                    "k3d3",
+                    "k3in",
+                    "k3sx",
+                    "k3sy"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "70",
+                    "0",
+                    "0",
+                    "0",
+                    "999",
+                    "999",
+                    "999",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "impulseProcess": {
+                  "commands": [
+                    {
+                      "particlesLoop": {
+                        "system": "@st",
+                        "equations": [
+                          "sign(max(0, touchTime - animationTime + 0.15)) * ifElse(0, 1, touchTime)",
+                          "touch",
+                          "touch * (1 - prevT)",
+                          "ifElse(tapX, touchX, edge)",
+                          "ifElse(tapY, touchY, edge)",
+                          "level + adv",
+                          "ifElse(level, -1, die)",
+                          "ifElse(0, 1, abs(level - curLvl) - 0.5)",
+                          "1",
+                          "die + (1 - started)",
+                          "ifElse(grace + 1, 0, rebuild)",
+                          "ifElse(0, 1, clock - (760 - level * 30)) * ifElse(0, 1, grace - 30)",
+                          "ifElse(0, 1, inBin - 2.5) * (1 - inGoal)",
+                          "hitG * (1 - wasHit)",
+                          "ifElse(0, 1, inBin - 2.5)",
+                          "hitG",
+                          "score + adv",
+                          "max(0, lives - die)",
+                          "1 + level * 0.06",
+                          "ifElse(gx, 200 + 132 * cos(level * 2.4), rebuild)",
+                          "ifElse(gy, 200 + 105 * sin(level * 2.4), rebuild)",
+                          "26",
+                          "ifElse(0, 1, lives - 0.5)",
+                          "ifElse(min(3, drop + edge), 0, rebuild)",
+                          "ifElse(clock + 1, 0, rebuild)",
+                          "ifElse(binX, 200 + 118 * cos(level * 0.9), rebuild)",
+                          "max(44, 74 - level * 3)",
+                          "k1in + k2in + k3in"
+                        ],
+                        "commands": [
+                          {
+                            "paint": {
+                              "color": "#FF16412A",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawRoundRect": {
+                              "left": "binX - binW",
+                              "top": 322,
+                              "right": "binX + binW",
+                              "bottom": 338,
+                              "rx": 6,
+                              "ry": 6
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF3DDC84",
+                              "style": "stroke",
+                              "strokeWidth": 2
+                            }
+                          },
+                          {
+                            "drawRoundRect": {
+                              "left": "binX - binW",
+                              "top": 322,
+                              "right": "binX + binW",
+                              "bottom": 338,
+                              "rx": 6,
+                              "ry": 6
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF2A3550",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": 200,
+                              "cy": 70,
+                              "radius": 13
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF8B95A5",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": 200,
+                              "cy": 70,
+                              "radius": 8
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@k1",
+                        "equations": [
+                          "ifElse(min(max(k1x + k1vx * alive * ifElse(0, 1, drop - 0.5), 24), 376), 200, rebuild)",
+                          "ifElse(min(k1y + k1vy * alive * ifElse(0, 1, drop - 0.5), 326), 70, rebuild)",
+                          "ifElse(abs(k1vx) * k1ox + k1vx * (1 - abs(k1ox)) + 0.8 * k1sx, 0, rebuild)",
+                          "ifElse(ifElse((k1vy + 0.14 + level * 0.012) * 0.995 + 0.8 * k1sy, -k1vy * 0.55, ifElse(0, 1, k1y - 325)), 0, rebuild)",
+                          "ifElse(0, 1, 24.5 - k1x) - ifElse(0, 1, k1x - 375.5)",
+                          "max(hypot(k1x - k1x, k1y - k1y), 1)",
+                          "max(hypot(k1x - k2x, k1y - k2y), 1)",
+                          "max(hypot(k1x - k3x, k1y - k3y), 1)",
+                          "ifElse(0, 1, binW - abs(k1x - binX)) * ifElse(0, 1, k1y - 314) * ifElse(0, 1, drop - 0.5)",
+                          "ifElse(0, 1, 26 - k1d2) * (k1x - k2x) / k1d2 + ifElse(0, 1, 26 - k1d3) * (k1x - k3x) / k1d3",
+                          "ifElse(0, 1, 26 - k1d2) * (k1y - k2y) / k1d2 + ifElse(0, 1, 26 - k1d3) * (k1y - k3y) / k1d3"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "gt",
+                              "v1": "@drop",
+                              "v2": 0.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF1E4E7A",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k1x",
+                                    "cy": "@k1y",
+                                    "radius": 15
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FF4DA3FF",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k1x",
+                                    "cy": "@k1y",
+                                    "radius": 11
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFFFFFF",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k1x",
+                                    "cy": "@k1y",
+                                    "radius": 4
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@k2",
+                        "equations": [
+                          "ifElse(min(max(k2x + k2vx * alive * ifElse(0, 1, drop - 1.5), 24), 376), 200, rebuild)",
+                          "ifElse(min(k2y + k2vy * alive * ifElse(0, 1, drop - 1.5), 326), 70, rebuild)",
+                          "ifElse(abs(k2vx) * k2ox + k2vx * (1 - abs(k2ox)) + 0.8 * k2sx, 0, rebuild)",
+                          "ifElse(ifElse((k2vy + 0.14 + level * 0.012) * 0.995 + 0.8 * k2sy, -k2vy * 0.55, ifElse(0, 1, k2y - 325)), 0, rebuild)",
+                          "ifElse(0, 1, 24.5 - k2x) - ifElse(0, 1, k2x - 375.5)",
+                          "max(hypot(k2x - k1x, k2y - k1y), 1)",
+                          "max(hypot(k2x - k2x, k2y - k2y), 1)",
+                          "max(hypot(k2x - k3x, k2y - k3y), 1)",
+                          "ifElse(0, 1, binW - abs(k2x - binX)) * ifElse(0, 1, k2y - 314) * ifElse(0, 1, drop - 1.5)",
+                          "ifElse(0, 1, 26 - k2d1) * (k2x - k1x) / k2d1 + ifElse(0, 1, 26 - k2d3) * (k2x - k3x) / k2d3",
+                          "ifElse(0, 1, 26 - k2d1) * (k2y - k1y) / k2d1 + ifElse(0, 1, 26 - k2d3) * (k2y - k3y) / k2d3"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "gt",
+                              "v1": "@drop",
+                              "v2": 1.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF4A3410",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k2x",
+                                    "cy": "@k2y",
+                                    "radius": 15
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFFB020",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k2x",
+                                    "cy": "@k2y",
+                                    "radius": 11
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFFFFFF",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k2x",
+                                    "cy": "@k2y",
+                                    "radius": 4
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@k3",
+                        "equations": [
+                          "ifElse(min(max(k3x + k3vx * alive * ifElse(0, 1, drop - 2.5), 24), 376), 200, rebuild)",
+                          "ifElse(min(k3y + k3vy * alive * ifElse(0, 1, drop - 2.5), 326), 70, rebuild)",
+                          "ifElse(abs(k3vx) * k3ox + k3vx * (1 - abs(k3ox)) + 0.8 * k3sx, 0, rebuild)",
+                          "ifElse(ifElse((k3vy + 0.14 + level * 0.012) * 0.995 + 0.8 * k3sy, -k3vy * 0.55, ifElse(0, 1, k3y - 325)), 0, rebuild)",
+                          "ifElse(0, 1, 24.5 - k3x) - ifElse(0, 1, k3x - 375.5)",
+                          "max(hypot(k3x - k1x, k3y - k1y), 1)",
+                          "max(hypot(k3x - k2x, k3y - k2y), 1)",
+                          "max(hypot(k3x - k3x, k3y - k3y), 1)",
+                          "ifElse(0, 1, binW - abs(k3x - binX)) * ifElse(0, 1, k3y - 314) * ifElse(0, 1, drop - 2.5)",
+                          "ifElse(0, 1, 26 - k3d1) * (k3x - k1x) / k3d1 + ifElse(0, 1, 26 - k3d2) * (k3x - k2x) / k3d2",
+                          "ifElse(0, 1, 26 - k3d1) * (k3y - k1y) / k3d1 + ifElse(0, 1, 26 - k3d2) * (k3y - k2y) / k3d2"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "gt",
+                              "v1": "@drop",
+                              "v2": 2.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF17414F",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k3x",
+                                    "cy": "@k3y",
+                                    "radius": 15
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FF4FD6C0",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k3x",
+                                    "cy": "@k3y",
+                                    "radius": 11
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFFFFFF",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@k3x",
+                                    "cy": "@k3y",
+                                    "radius": 4
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "variable": {
+            "name": "lvlText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@level",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "variable": {
+            "name": "livesText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@lives",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "conditionalOperations": {
+            "condition": "lt",
+            "v1": "@lives",
+            "v2": 0.5,
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FFFF4D6D",
+                  "style": "stroke",
+                  "strokeWidth": 3
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 12,
+                  "top": 56,
+                  "right": 388,
+                  "bottom": 344,
+                  "rx": 16,
+                  "ry": 16
+                }
+              }
+            ]
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LVL",
+            "x": 20,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF3DDC84",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@lvlText",
+            "x": 50,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 15
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "BUBBLE DROP",
+            "x": 200,
+            "y": 32,
+            "panX": 0,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LIVES",
+            "x": 344,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFF4D6D",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@livesText",
+            "x": 380,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "tap to drop a bubble - all three in the bin",
+            "x": 200,
+            "y": 372,
+            "panX": 0,
+            "panY": 0
+          }
+        }
+      ]
+    }
+  }
+}

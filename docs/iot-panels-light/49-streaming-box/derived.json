@@ -1,0 +1,51 @@
+{
+  "id": "iot-panels-light/49-streaming-box",
+  "sha256": "fce46a141ab1d55c74129e41aac2c752dece22ebc74ce379900311909c74344f",
+  "bytes": 2853,
+  "ops": 120,
+  "distinctOps": 20,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 35,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 15,
+    "DRAW_OVAL": 3,
+    "DATA_TEXT": 7,
+    "ANIMATED_FLOAT": 25,
+    "CONTAINER_END": 10,
+    "DRAW_CIRCLE": 7,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_ARC": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_LINE": 1
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

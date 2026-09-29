@@ -1,0 +1,30 @@
+{
+  "id": "render/a-bullseye-target-red-and-white",
+  "sha256": "4a94f31554e221accc614c8bba772835bfe6fadfb3a0a3779e81a4d063045557",
+  "bytes": 287,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

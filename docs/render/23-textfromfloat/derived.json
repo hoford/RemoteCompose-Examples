@@ -1,0 +1,27 @@
+{
+  "id": "render/23-textfromfloat",
+  "sha256": "b57fe3b606691f40929c7cd95a28fdb41b4ce0c9252931f62fe79cf819378f53",
+  "bytes": 250,
+  "ops": 14,
+  "distinctOps": 8,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

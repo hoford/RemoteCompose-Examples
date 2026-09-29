@@ -1,0 +1,555 @@
+{
+  "//": "ORBIT HOP - you orbit a planet automatically. Tap to let go along your current heading; whatever planet you reach captures you. Reach the green one.",
+  "//host": "There is no array lookup here, so 'which planet am I orbiting' is a number and the host position is selected by nested ifElse over three constants. That is the whole reason this game has exactly three planets.",
+  "//release": "relT is a cooldown since release. Without it the player is recaptured by the planet it just left on the very next frame, because it is still well inside that planet's capture radius.",
+  "//engine": "Expressions cap at 32 RPN tokens. ifElse(falseValue, trueValue, condition) reads its condition LAST. Every equation reads the previous frame's values.",
+  "//planets": "p1 (100,250) r34, p2 (215,140) r30, p3 (325,265) r34 = the goal.",
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "Orbit Hop: tap to leave orbit and fly to the next planet"
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0B1020",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 400,
+            "bottom": 400
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF121A2E",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 12,
+            "top": 56,
+            "right": 388,
+            "bottom": 344,
+            "rx": 16,
+            "ry": 16
+          }
+        },
+        {
+          "impulse": {
+            "duration": 1000000,
+            "start": 0,
+            "commands": [
+              {
+                "createParticles": {
+                  "id": "st",
+                  "variables": [
+                    "touch",
+                    "prevT",
+                    "edge",
+                    "tapX",
+                    "tapY",
+                    "level",
+                    "curLvl",
+                    "rebuild",
+                    "started",
+                    "respawn",
+                    "grace",
+                    "hitG",
+                    "adv",
+                    "die",
+                    "inGoal",
+                    "wasHit",
+                    "score",
+                    "lives",
+                    "spd",
+                    "gx",
+                    "gy",
+                    "gr",
+                    "alive",
+                    "mode",
+                    "relT",
+                    "driftT",
+                    "capR",
+                    "p1x",
+                    "p1y",
+                    "p2x",
+                    "p2y",
+                    "p3x",
+                    "p3y"
+                  ],
+                  "initialValues": [
+                    "0",
+                    "0",
+                    "0",
+                    "-999",
+                    "-999",
+                    "1",
+                    "0",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "3",
+                    "1",
+                    "200",
+                    "200",
+                    "26",
+                    "1",
+                    "0",
+                    "999",
+                    "0",
+                    "46",
+                    "100",
+                    "250",
+                    "215",
+                    "140",
+                    "325",
+                    "265"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "sh",
+                  "variables": [
+                    "px",
+                    "py",
+                    "pvx",
+                    "pvy",
+                    "ang",
+                    "host",
+                    "hx",
+                    "hy",
+                    "d1",
+                    "d2",
+                    "d3",
+                    "cap",
+                    "nhx",
+                    "nhy",
+                    "polx",
+                    "poly"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "200",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "200",
+                    "200",
+                    "999",
+                    "999",
+                    "999",
+                    "0",
+                    "200",
+                    "200",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "impulseProcess": {
+                  "commands": [
+                    {
+                      "particlesLoop": {
+                        "system": "@st",
+                        "equations": [
+                          "sign(max(0, touchTime - animationTime + 0.15)) * ifElse(0, 1, touchTime)",
+                          "touch",
+                          "touch * (1 - prevT)",
+                          "ifElse(tapX, touchX, edge)",
+                          "ifElse(tapY, touchY, edge)",
+                          "level + adv",
+                          "ifElse(level, -1, die)",
+                          "ifElse(0, 1, abs(level - curLvl) - 0.5)",
+                          "1",
+                          "die + (1 - started)",
+                          "ifElse(grace + 1, 0, rebuild)",
+                          "ifElse(0, 1, driftT - 220) * ifElse(0, 1, grace - 30)",
+                          "ifElse(0, 1, host - 1.5) * (1 - inGoal)",
+                          "hitG * (1 - wasHit)",
+                          "ifElse(0, 1, host - 1.5)",
+                          "hitG",
+                          "score + adv",
+                          "max(0, lives - die)",
+                          "1 + level * 0.1",
+                          "ifElse(gx, 200 + 132 * cos(level * 2.4), rebuild)",
+                          "ifElse(gy, 200 + 105 * sin(level * 2.4), rebuild)",
+                          "26",
+                          "ifElse(0, 1, lives - 0.5)",
+                          "ifElse(ifElse(mode, 1, edge * (1 - mode)), 0, cap)",
+                          "ifElse(relT + 1, 0, edge * (1 - mode))",
+                          "ifElse(driftT * mode + mode, 0, rebuild)",
+                          "max(34, 48 - level * 1.4)",
+                          "ifElse(p1x, 200 + 116 * cos(level * 0.7 + 0.0), rebuild)",
+                          "ifElse(p1y, 200 + 92 * sin(level * 0.7 + 0.0), rebuild)",
+                          "ifElse(p2x, 200 + 116 * cos(level * 0.7 + 2.0944), rebuild)",
+                          "ifElse(p2y, 200 + 92 * sin(level * 0.7 + 2.0944), rebuild)",
+                          "ifElse(p3x, 200 + 116 * cos(level * 0.7 + 4.1888), rebuild)",
+                          "ifElse(p3y, 200 + 92 * sin(level * 0.7 + 4.1888), rebuild)"
+                        ],
+                        "commands": [
+                          {
+                            "paint": {
+                              "color": "#FF1D2740",
+                              "style": "stroke",
+                              "strokeWidth": 1
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p1x",
+                              "cy": "@p1y",
+                              "radius": 46
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p2x",
+                              "cy": "@p2y",
+                              "radius": 46
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p3x",
+                              "cy": "@p3y",
+                              "radius": 46
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF2C3A5A",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p1x",
+                              "cy": "@p1y",
+                              "radius": 26
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p2x",
+                              "cy": "@p2y",
+                              "radius": 22
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF8B95A5",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p1x",
+                              "cy": "@p1y",
+                              "radius": 20
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p2x",
+                              "cy": "@p2y",
+                              "radius": 16
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF16412A",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p3x",
+                              "cy": "@p3y",
+                              "radius": 26
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF3DDC84",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@p3x",
+                              "cy": "@p3y",
+                              "radius": 20
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@sh",
+                        "equations": [
+                          "ifElse(ifElse(hx + cos(ang) * 46, min(max(px + pvx * alive, 22), 378), mode - 0.5), hx + 46, respawn)",
+                          "ifElse(ifElse(hy + sin(ang) * 46, min(max(py + pvy * alive, 66), 334), mode - 0.5), hy, respawn)",
+                          "ifElse(ifElse(abs(pvx) * polx + pvx * (1 - abs(polx)), -sin(ang) * 4.2, edge * (1 - mode)), 0, respawn)",
+                          "ifElse(ifElse(abs(pvy) * poly + pvy * (1 - abs(poly)), cos(ang) * 4.2, edge * (1 - mode)), 0, respawn)",
+                          "ifElse(ifElse(ang + 0.045 * spd * (1 - mode) * alive, atan2(py - nhy, px - nhx), cap), 0, respawn)",
+                          "ifElse(ifElse(host, ifElse(ifElse(0, 1, ifElse(0, 1, capR - d2)), 2, ifElse(0, 1, capR - d3)), cap), 0, respawn)",
+                          "ifElse(ifElse(p1x, p2x, host - 0.5), p3x, host - 1.5)",
+                          "ifElse(ifElse(p1y, p2y, host - 0.5), p3y, host - 1.5)",
+                          "hypot(px - p1x, py - p1y)",
+                          "hypot(px - p2x, py - p2y)",
+                          "hypot(px - p3x, py - p3y)",
+                          "ifElse(0, 1, relT - 22) * mode * max(ifElse(0, 1, capR - d1), max(ifElse(0, 1, capR - d2), ifElse(0, 1, capR - d3)))",
+                          "ifElse(ifElse(p1x, p2x, ifElse(0, 1, capR - d2)), p3x, ifElse(0, 1, capR - d3))",
+                          "ifElse(ifElse(p1y, p2y, ifElse(0, 1, capR - d2)), p3y, ifElse(0, 1, capR - d3))",
+                          "ifElse(0, 1, 22.5 - px) - ifElse(0, 1, px - 377.5)",
+                          "ifElse(0, 1, 66.5 - py) - ifElse(0, 1, py - 333.5)"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "lt",
+                              "v1": "@mode",
+                              "v2": 0.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF243A55",
+                                    "style": "stroke",
+                                    "strokeWidth": 1
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@hx",
+                                    "cy": "@hy",
+                                    "radius": 46
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF1E4E7A",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@px",
+                              "cy": "@py",
+                              "radius": 13
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF4DA3FF",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@px",
+                              "cy": "@py",
+                              "radius": 8
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FFAEE3FF",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@px",
+                              "cy": "@py",
+                              "radius": 3
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "variable": {
+            "name": "lvlText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@level",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "variable": {
+            "name": "livesText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@lives",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "conditionalOperations": {
+            "condition": "lt",
+            "v1": "@lives",
+            "v2": 0.5,
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FFFF4D6D",
+                  "style": "stroke",
+                  "strokeWidth": 3
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 12,
+                  "top": 56,
+                  "right": 388,
+                  "bottom": 344,
+                  "rx": 16,
+                  "ry": 16
+                }
+              }
+            ]
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LVL",
+            "x": 20,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF3DDC84",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@lvlText",
+            "x": 50,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 15
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "ORBIT HOP",
+            "x": 200,
+            "y": 32,
+            "panX": 0,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LIVES",
+            "x": 344,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFF4D6D",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@livesText",
+            "x": 380,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "tap to leave the orbit - reach the green planet",
+            "x": 200,
+            "y": 372,
+            "panX": 0,
+            "panY": 0
+          }
+        }
+      ]
+    }
+  },
+  "//levels": "Clearing a level means being captured by the green planet. All three planets are functions of `level`, so the layout changes every level while the capture radius shrinks. Drifting too long without a capture costs a life and rebuilds the same level.",
+  "//fail": "`hit` here is 'flying for more than 220 frames without being captured', which reuses the same grace-gated death machinery as the other games.",
+  "//geometry": "The three planets sit 120 degrees apart on a circle rotated by level, so they are always well separated. Independent trig per planet overlapped planets 1 and 2 at level 1, 29px apart against a radius of 26."
+}

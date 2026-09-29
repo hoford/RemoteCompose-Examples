@@ -1,0 +1,51 @@
+{
+  "id": "render/03-thermostat-light",
+  "sha256": "2c0adbd0b7c4469456a232f96197a5a52dcb5a02b8d613978c9df7fcfdda945c",
+  "bytes": 6154,
+  "ops": 252,
+  "distinctOps": 20,
+  "width": 360,
+  "height": 780,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 98,
+    "DRAW_RECT": 3,
+    "DATA_TEXT": 26,
+    "DRAW_TEXT_ANCHOR": 27,
+    "DRAW_ROUND_RECT": 30,
+    "DRAW_CIRCLE": 8,
+    "DRAW_PATH": 3,
+    "ANIMATED_FLOAT": 29,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 4,
+    "MATRIX_RESTORE": 2,
+    "CONTAINER_END": 8,
+    "DRAW_ARC": 2
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,51 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "K02 text inside a fixed 200-wide box - the BOX must be 200 everywhere"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 200
+          },
+          {
+            "height": 90
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "text",
+            "text": "Handgloves quickly vexed the wizard",
+            "color": "#FF0B1020",
+            "fontSize": 18,
+            "modifiers": [
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "render/dd-112",
+  "sha256": "55cf423dd168730f540b94d9b0741ca8756e9ee1bb6dad461858b68bb752aca4",
+  "bytes": 260,
+  "ops": 13,
+  "distinctOps": 8,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 3,
+    "PAINT_VALUES": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

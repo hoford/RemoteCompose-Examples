@@ -1,0 +1,54 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "a2_orbit",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4FC3F7",
+            "style": "fill"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 16.0,
+            "index": "i",
+            "commands": [
+              {
+                "drawCircle": {
+                  "cx": "150 + cos(time + i * 0.3927) * 110",
+                  "cy": "150 + sin(time + i * 0.3927) * 110",
+                  "radius": "5 + (sin(time * 3 + i) + 1) * 5"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

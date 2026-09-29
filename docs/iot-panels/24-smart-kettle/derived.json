@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels/24-smart-kettle",
+  "sha256": "a1862081346a113475af0bd96b4e91d19b1d7f4d6e5fa2fd579187d929616229",
+  "bytes": 2655,
+  "ops": 98,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 32,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 17,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 8,
+    "DRAW_PATH": 5,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

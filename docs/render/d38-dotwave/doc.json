@@ -1,0 +1,54 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 200,
+    "contentDescription": "dotwave",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 200
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF18FFB2",
+            "style": "fill"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 40.0,
+            "index": "i",
+            "commands": [
+              {
+                "drawCircle": {
+                  "cx": "8 + i * 8",
+                  "cy": "100 + sin(i * 0.4) * 60",
+                  "radius": "4"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "render/donut-percent",
+  "sha256": "8146952e933c23ba2a090227cdda62528df11f882be2917b3c1ca6610380a219",
+  "bytes": 699,
+  "ops": 40,
+  "distinctOps": 15,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 9,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 2,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 11,
+    "DRAW_ARC": 1,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

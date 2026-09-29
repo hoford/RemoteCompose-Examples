@@ -1,0 +1,67 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "J05 a GONE child in a row - does it still take space?"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 60
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 80
+          },
+          {
+            "height": 40
+          },
+          {
+            "visibility": 0
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 60
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      }
+    ]
+  }
+}

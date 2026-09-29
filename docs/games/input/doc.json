@@ -1,0 +1,38 @@
+{
+  "header": { "apiLevel": 7, "width": 400, "height": 400, "profiles": 513,
+              "contentDescription": "input probe 2" },
+  "root": {
+    "canvas": {
+      "modifiers": ["fillMaxSize"],
+      "commands": [
+        { "paint": { "color": "#FF0B1020", "style": "fill" } },
+        { "drawRect": { "left": 0, "top": 0, "right": 400, "bottom": 400 } },
+        { "impulse": { "duration": 1000000, "start": 0, "commands": [
+          { "createParticles": {
+              "id": "st",
+              "variables": ["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"],
+              "initialValues": ["0", "0", "0", "0", "0", "0", "0", "0"],
+              "count": 1 } },
+          { "impulseProcess": { "commands": [
+            { "particlesLoop": {
+                "system": "@st",
+                "equations": [
+                  "animationTime",
+                  "touchTime",
+                  "sign(max(0, touchTime - animationTime + 0.15))",
+                  "a4 + sign(max(0, touchTime - animationTime + 0.15))",
+                  "a5 + sign(max(0, touchTime - animationTime + 0.15)) * (1 - a6)",
+                  "sign(max(0, touchTime - animationTime + 0.15))",
+                  "ifElse(77, 88, sign(max(0, touchTime - animationTime + 0.15)) - 0.5)",
+                  "touchTime - animationTime + 0.15"
+                ],
+                "commands": [
+                  { "paint": { "color": "#FF3DDC84", "style": "fill" } },
+                  { "drawCircle": { "cx": 200, "cy": 200, "radius": 10 } }
+                ] } }
+          ] } }
+        ] } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "E08 verticalWeight in a column"
+  },
+  "root": {
+    "type": "column",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "verticalWeight": 1
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "verticalWeight": 3
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      }
+    ]
+  }
+}

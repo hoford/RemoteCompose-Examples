@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/04-motion-night-light",
+  "sha256": "933f529e17146796dd59b1e940109570938a81235fa3b7c13ffbe129a1c54a4d",
+  "bytes": 1961,
+  "ops": 82,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 25,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 8,
+    "DRAW_LINE": 1,
+    "ANIMATED_FLOAT": 17,
+    "DRAW_PATH": 3,
+    "DRAW_CIRCLE": 8,
+    "DRAW_OVAL": 1,
+    "DATA_TEXT": 2,
+    "DRAW_TEXT_ANCHOR": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

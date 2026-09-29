@@ -1,0 +1,40 @@
+{
+  "id": "render/dashboard-card",
+  "sha256": "6c9440c45fe943e2da5c206c0a10c507b205c32b6953c2a9b0a3fc8fada5bbf4",
+  "bytes": 1369,
+  "ops": 56,
+  "distinctOps": 15,
+  "width": 380,
+  "height": 220,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 5,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 2,
+    "LAYOUT_CANVAS": 1,
+    "DATA_TEXT": 7,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 26,
+    "LAYOUT_COLUMN": 2,
+    "LAYOUT_ROW": 2
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

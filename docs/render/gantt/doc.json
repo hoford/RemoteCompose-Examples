@@ -1,0 +1,784 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 840,
+  "height": 520,
+  "profiles": 513,
+  "contentDescription": "Gantt chart of a project schedule"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 840,
+         "bottom": 520
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF202124"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 34
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Project Schedule",
+         "x": 120,
+         "y": 46,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 120.0,
+         "y1": 104,
+         "x2": 120.0,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0",
+         "x": 120.0,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 221.76470588235293,
+         "y1": 104,
+         "x2": 221.76470588235293,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "5",
+         "x": 221.76470588235293,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 323.52941176470586,
+         "y1": 104,
+         "x2": 323.52941176470586,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "10",
+         "x": 323.52941176470586,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 425.29411764705884,
+         "y1": 104,
+         "x2": 425.29411764705884,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "15",
+         "x": 425.29411764705884,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 527.0588235294117,
+         "y1": 104,
+         "x2": 527.0588235294117,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "20",
+         "x": 527.0588235294117,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 628.8235294117648,
+         "y1": 104,
+         "x2": 628.8235294117648,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "25",
+         "x": 628.8235294117648,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 730.5882352941177,
+         "y1": 104,
+         "x2": 730.5882352941177,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "30",
+         "x": 730.5882352941177,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 120.0,
+         "top": 118.07999999999998,
+         "right": 242.11764705882354,
+         "bottom": 160.32,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Research",
+         "x": 108,
+         "y": 145.2,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF58518"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 221.76470588235293,
+         "top": 188.48000000000002,
+         "right": 364.2352941176471,
+         "bottom": 230.72000000000003,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Design",
+         "x": 108,
+         "y": 215.60000000000002,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF54A24B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 343.88235294117646,
+         "top": 258.88,
+         "right": 608.4705882352941,
+         "bottom": 301.12,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Build",
+         "x": 108,
+         "y": 286.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE45756"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 567.7647058823529,
+         "top": 329.28000000000003,
+         "right": 730.5882352941177,
+         "bottom": 371.52000000000004,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Test",
+         "x": 108,
+         "y": 356.40000000000003,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF72B7B2"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 710.2352941176471,
+         "top": 399.68,
+         "right": 791.6470588235294,
+         "bottom": 441.92,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Launch",
+         "x": 108,
+         "y": 426.8,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9AA0A6"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 120,
+         "y1": 104,
+         "x2": 120,
+         "y2": 456
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 120,
+         "y1": 456,
+         "x2": 812,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Day",
+         "x": 466.0,
+         "y": 510,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

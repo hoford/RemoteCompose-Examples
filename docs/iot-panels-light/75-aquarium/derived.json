@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/75-aquarium",
+  "sha256": "4e8498d67677877600c87f26a28eb5def5adf908eda247da4194ceaba5ae0b82",
+  "bytes": 2593,
+  "ops": 108,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 14,
+    "ANIMATED_FLOAT": 33,
+    "DATA_TEXT": 7,
+    "CONTAINER_END": 10,
+    "DRAW_LINE": 1,
+    "DRAW_OVAL": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

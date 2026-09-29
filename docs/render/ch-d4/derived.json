@@ -1,0 +1,35 @@
+{
+  "id": "render/ch-d4",
+  "sha256": "7beda3e0c446e311e140b7e2cf46f8f43a2d16a74c9e8c58a743d04cfea9273f",
+  "bytes": 289,
+  "ops": 18,
+  "distinctOps": 10,
+  "width": 200,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 5,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

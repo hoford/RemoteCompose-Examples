@@ -1,0 +1,47 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF66BB6A",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": "width / 2",
+            "cy": "height / 2",
+            "radius": "width / 5"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "stroke",
+            "width": 3.0
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": "width / 10",
+            "top": "height / 10",
+            "right": "width - width / 10",
+            "bottom": "height - height / 10",
+            "rx": 12.0,
+            "ry": 12.0
+          }
+        }
+      ]
+    }
+  }
+}

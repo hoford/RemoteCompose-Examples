@@ -1,0 +1,31 @@
+{
+  "id": "render/v4-op-add",
+  "sha256": "4ff60ad23838a4b6fd6c68d86a28b3a275bc585f92d115f65333875158248090",
+  "bytes": 188,
+  "ops": 12,
+  "distinctOps": 8,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 2,
+    "PAINT_VALUES": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

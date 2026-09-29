@@ -1,0 +1,60 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 220,
+    "contentDescription": "click handlers driving a variable",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "variables": [
+              { "count": { "value": 0, "export": true } }
+            ]
+          }
+        },
+        {
+          "column": {
+            "modifiers": ["fillMaxSize", { "background": "#FF12161C" }, { "padding": 20 }],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center",
+            "children": [
+              {
+                "text": {
+                  "textFromFloat": { "value": "@count", "before": 1, "decimal": 0 },
+                  "fontSize": 40.0,
+                  "color": "#FFFFFFFF"
+                }
+              },
+              { "spacer": { "modifiers": [{ "height": 16 }] } },
+              {
+                "box": {
+                  "modifiers": [
+                    { "size": [160, 48] },
+                    { "background": "#FF2D7FF9" },
+                    { "clip": { "type": "roundRect", "radius": 24 } },
+                    { "ripple": true },
+                    {
+                      "onClick": {
+                        "type": "valueFloatExpressionChange",
+                        "target": "@count",
+                        "value": "@count + 1"
+                      }
+                    }
+                  ],
+                  "children": [
+                    { "text": { "value": "tap me", "fontSize": 16.0, "color": "#FFFFFFFF" } }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

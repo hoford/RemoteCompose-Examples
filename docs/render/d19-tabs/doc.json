@@ -1,0 +1,115 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 480,
+    "height": 72,
+    "contentDescription": "tabs",
+    "profiles": 513
+  },
+  "root": {
+    "row": {
+      "children": [
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Home",
+                  "fontSize": 16.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF1E88E5"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Search",
+                  "fontSize": 16.0,
+                  "color": "#FF90A4AE",
+                  "fontWeight": 400.0
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF37474F"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Alerts",
+                  "fontSize": 16.0,
+                  "color": "#FF90A4AE",
+                  "fontWeight": 400.0
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF37474F"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Profile",
+                  "fontSize": 16.0,
+                  "color": "#FF90A4AE",
+                  "fontWeight": 400.0
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF37474F"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "verticalAlignment": "center"
+    }
+  }
+}

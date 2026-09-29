@@ -1,0 +1,26 @@
+{
+  "id": "layout/g10-widthin-exceeds-parent",
+  "sha256": "a966e6c3a93f1787862af14dd3154af8306c9869824cc28f0694afd17624daaf",
+  "bytes": 288,
+  "ops": 15,
+  "distinctOps": 8,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 2,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_WIDTH_IN": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "layout"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

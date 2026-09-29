@@ -1,0 +1,38 @@
+{
+  "id": "render/10-variables",
+  "sha256": "5994c486f9d51cb71e11052f8e01b75e4dce000f4c17966a195aada3a583dabe",
+  "bytes": 539,
+  "ops": 33,
+  "distinctOps": 12,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 14,
+    "DATA_FLOAT": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_CIRCLE": 3,
+    "DRAW_ARC": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

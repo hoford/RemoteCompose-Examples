@@ -1,0 +1,639 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Mesh Router \u2014 Wi-Fi 6E \u00b7 12 clients"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "loop": {
+         "index": "w",
+         "from": 0.0,
+         "until": 4.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "wp",
+            "value": "fract(@t * 0.4 + w * 0.25)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.0
+             },
+             {
+              "alpha": "0.28 * (1.0 - @wp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 176,
+            "radius": "26.0 + @wp * 116.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "index": "c",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "ca",
+            "value": "(0.0 - 150.0) + c * 60.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "cx",
+            "value": "180.0 + cos(@ca * 0.0174533) * 118.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "cy",
+            "value": "176.0 + sin(@ca * 0.0174533) * 96.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#1B2534"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.4
+             },
+             {
+              "alpha": 0.6
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 180,
+            "y1": 176,
+            "x2": "@cx",
+            "y2": "@cy"
+           }
+          },
+          {
+           "loop": {
+            "index": "k",
+            "from": 0.0,
+            "until": 3.0,
+            "step": 1.0,
+            "commands": [
+             {
+              "variable": {
+               "name": "kp",
+               "value": "fract(@t * 0.7 + c * 0.31 + k * 0.3333333)"
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#54C7F5"
+                },
+                {
+                 "style": "fill"
+                },
+                {
+                 "alpha": "0.8 * (1.0 - abs(@kp - 0.5) * 1.2)"
+                }
+               ]
+              }
+             },
+             {
+              "drawCircle": {
+               "cx": "180.0 + (@cx - 180.0) * @kp",
+               "cy": "176.0 + (@cy - 176.0) * @kp",
+               "radius": 3.0
+              }
+             }
+            ]
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#3A4B60"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@cx - 13.0",
+            "top": "@cy - 10.0",
+            "right": "@cx + 13.0",
+            "bottom": "@cy + 10.0",
+            "rx": 3,
+            "ry": 3
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.25 + 0.6 * (0.5 + 0.5 * sin(@t * 3.0 - c * 2.0))"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@cx",
+            "cy": "@cy",
+            "radius": 3.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 146,
+         "top": 148,
+         "right": 214,
+         "bottom": 158,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": -28,
+            "pivotX": 152,
+            "pivotY": 152
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#2C3A4B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 148,
+            "top": 96,
+            "right": 156,
+            "bottom": 154,
+            "rx": 4,
+            "ry": 4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": 28,
+            "pivotX": 208,
+            "pivotY": 152
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#2C3A4B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 204,
+            "top": 96,
+            "right": 212,
+            "bottom": 154,
+            "rx": 4,
+            "ry": 4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 136,
+         "top": 156,
+         "right": 224,
+         "bottom": 204,
+         "rx": 12,
+         "ry": 12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 136,
+         "top": 156,
+         "right": 224,
+         "bottom": 204,
+         "rx": 12,
+         "ry": 12
+        }
+       },
+       {
+        "loop": {
+         "index": "l",
+         "from": 0.0,
+         "until": 4.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.15 + 0.7 * (0.5 + 0.5 * sin(@t * 4.0 - l * 1.1))"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "154.0 + l * 17.0",
+            "cy": 192,
+            "radius": 3.2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 174,
+         "radius": 7
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Mesh Router",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Wi-Fi 6E \u00b7 12 clients",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

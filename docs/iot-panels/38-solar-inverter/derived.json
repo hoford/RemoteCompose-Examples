@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/38-solar-inverter",
+  "sha256": "6251413d626d249cd929d90c9ea65380aa0d7f3144dffa747204092a15c0fdf9",
+  "bytes": 2415,
+  "ops": 98,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 8,
+    "DRAW_ARC": 1,
+    "DATA_TEXT": 7,
+    "ANIMATED_FLOAT": 23,
+    "DRAW_CIRCLE": 6,
+    "CONTAINER_END": 10,
+    "DRAW_PATH": 2,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_LINE": 1
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

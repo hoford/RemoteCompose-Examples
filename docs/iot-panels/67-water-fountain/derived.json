@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/67-water-fountain",
+  "sha256": "f45f614ee0f28633bfd42208e0c45d9f468bc4dbc2cf930743eda5fa7a9c95b7",
+  "bytes": 2335,
+  "ops": 93,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 6,
+    "DRAW_OVAL": 5,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 20,
+    "CONTAINER_END": 10,
+    "DRAW_PATH": 4,
+    "DRAW_CIRCLE": 6,
+    "DRAW_LINE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

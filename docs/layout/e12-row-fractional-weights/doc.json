@@ -1,0 +1,44 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "E12 fractional weights 0.5 and 1.5"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 0.5
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1.5
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      }
+    ]
+  }
+}

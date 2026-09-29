@@ -1,0 +1,31 @@
+{
+  "id": "render/z-noimp",
+  "sha256": "e88922a9bce8179ec58915efaeb7d7f399a2ee5f637eb60645e758ec2f1756ae",
+  "bytes": 248,
+  "ops": 13,
+  "distinctOps": 8,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 3,
+    "PAINT_VALUES": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "render/d06-mondrian",
+  "sha256": "29b7c7082494b30e5cb71be2df451e5bded50f00ded9afbae47a936d3e1d6caf",
+  "bytes": 335,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 5,
+    "DRAW_ROUND_RECT": 4,
+    "DRAW_LINE": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

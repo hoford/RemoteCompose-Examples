@@ -1,0 +1,130 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 240,
+    "contentDescription": "bars",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 240,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE53935",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 25,
+            "top": 160,
+            "right": 59,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFB8C00",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 75,
+            "top": 110,
+            "right": 109,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFDD835",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 125,
+            "top": 70,
+            "right": 159,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF43A047",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 175,
+            "top": 125,
+            "right": 209,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF1E88E5",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 225,
+            "top": 40,
+            "right": 259,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8E24AA",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 275,
+            "top": 90,
+            "right": 309,
+            "bottom": 220,
+            "rx": 6,
+            "ry": 6
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "header": {
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              {
+                "brand": "#0047AB"
+              },
+              {
+                "accent": "#FF5722"
+              }
+            ]
+          }
+        },
+        {
+          "column": {
+            "modifiers": [
+              {
+                "fillMaxSize": 1.0
+              },
+              {
+                "background": "#F5F5F5"
+              },
+              {
+                "padding": 20
+              }
+            ],
+            "children": [
+              {
+                "text": {
+                  "value": "JSON RemoteCompose",
+                  "color": "$colors.brand",
+                  "fontSize": 24
+                }
+              },
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "height": 100
+                    },
+                    {
+                      "fillMaxWidth": 1.0
+                    },
+                    {
+                      "background": "#FFFFFF"
+                    },
+                    {
+                      "padding": 10
+                    }
+                  ],
+                  "children": [
+                    {
+                      "text": {
+                        "value": "Card Content",
+                        "color": "#333333"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "canvas": {
+                  "modifiers": [
+                    {
+                      "height": 200
+                    },
+                    {
+                      "fillMaxWidth": 1.0
+                    }
+                  ],
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": 0,
+                        "top": 0,
+                        "right": "width",
+                        "bottom": "height",
+                        "color": "#EEEEEE"
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "width / 2 + cos(time) * 50",
+                        "cy": "height / 2 + sin(time) * 30",
+                        "radius": "40 + sin(time * 2) * 10",
+                        "color": "$colors.accent"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

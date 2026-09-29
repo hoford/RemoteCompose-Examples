@@ -1,0 +1,34 @@
+{
+  "id": "render/11-layout-expr",
+  "sha256": "4d5413b7163719b68774c74965d8962a3fe2fb79d53c291fa0faf53ae37c04fb",
+  "bytes": 424,
+  "ops": 26,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "ANIMATED_FLOAT": 4,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 9,
+    "LAYOUT_BOX": 1
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

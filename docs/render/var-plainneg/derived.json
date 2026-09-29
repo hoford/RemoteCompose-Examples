@@ -1,0 +1,31 @@
+{
+  "id": "render/var-plainneg",
+  "sha256": "706704727c9b09a0b483a8d82bc01a71e258fa8adb496e81cddd9905f7f8c9e0",
+  "bytes": 202,
+  "ops": 12,
+  "distinctOps": 8,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 2,
+    "PAINT_VALUES": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

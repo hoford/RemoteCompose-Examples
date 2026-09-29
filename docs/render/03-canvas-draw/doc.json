@@ -1,0 +1,75 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "contentDescription": "Canvas draw ops",
+    "profiles": 513
+  },
+  "root": {
+    "box": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF101418"
+        }
+      ],
+      "children": [
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FF3DDC84",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 200.0,
+                  "cy": 140.0,
+                  "radius": 90.0
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FFFFB300",
+                  "style": "stroke",
+                  "width": 12.0,
+                  "strokeCap": "round"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 60.0,
+                  "y1": 300.0,
+                  "x2": 340.0,
+                  "y2": 300.0
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FF4FC3F7",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 120.0,
+                  "top": 250.0,
+                  "right": 280.0,
+                  "bottom": 350.0,
+                  "rx": 20.0,
+                  "ry": 20.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

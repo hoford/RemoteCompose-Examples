@@ -1,0 +1,30 @@
+{
+  "id": "render/d05-dotgrid",
+  "sha256": "6a9f35bddb418cac880beefb893fe03461ed434d5cfa51dfc5aa4c1e7c479c51",
+  "bytes": 891,
+  "ops": 61,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_CIRCLE": 25,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

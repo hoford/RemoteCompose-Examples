@@ -1,0 +1,53 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "J07 zIndex should reorder painting, not layout"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 120
+          },
+          {
+            "height": 90
+          },
+          {
+            "zIndex": 5
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 120
+          },
+          {
+            "height": 90
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      }
+    ]
+  }
+}

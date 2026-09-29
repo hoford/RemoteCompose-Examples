@@ -1,0 +1,37 @@
+{
+  "id": "render/a3-wave",
+  "sha256": "20dfa35dd7c44396bca8c1f6750e9c84a003669daabedb7d8d6f7cd546da1145",
+  "bytes": 293,
+  "ops": 18,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

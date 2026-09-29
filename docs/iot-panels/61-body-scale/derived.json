@@ -1,0 +1,41 @@
+{
+  "id": "iot-panels/61-body-scale",
+  "sha256": "9e4becee7b3ce89099c04dc60fe316e052e6e8ce38f28c1120d721e904cd463a",
+  "bytes": 2122,
+  "ops": 89,
+  "distinctOps": 14,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 23,
+    "CONTAINER_END": 8,
+    "DRAW_CIRCLE": 5,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

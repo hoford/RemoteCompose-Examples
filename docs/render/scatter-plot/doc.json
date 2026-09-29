@@ -1,0 +1,137 @@
+{
+  "name": "scatter_plot",
+  "description": "Scatter plot: a dot for each (x,y) pair from two parallel arrays. Use for correlation / point clouds.",
+  "tags": [
+    "chart",
+    "scatter",
+    "points",
+    "correlation",
+    "data"
+  ],
+  "data_schema": "x: number[], y: number[]  — parallel arrays of point coords (pixels)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "scatter",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "x": [
+                    10,
+                    40,
+                    55,
+                    70,
+                    90,
+                    120,
+                    150,
+                    180,
+                    210,
+                    240
+                  ]
+                },
+                {
+                  "y": [
+                    30,
+                    80,
+                    60,
+                    140,
+                    110,
+                    90,
+                    170,
+                    150,
+                    200,
+                    230
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 300,
+                    "bottom": 300
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@x)",
+                    "commit": true
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF455A64",
+                    "style": "stroke",
+                    "width": 2.0
+                  }
+                },
+                {
+                  "drawLine": {
+                    "x1": 30,
+                    "y1": 270,
+                    "x2": 280,
+                    "y2": 270
+                  }
+                },
+                {
+                  "drawLine": {
+                    "x1": 30,
+                    "y1": 270,
+                    "x2": 30,
+                    "y2": 30
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF26C6DA",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "drawCircle": {
+                          "cx": "40 + arrayGet(@x, i)",
+                          "cy": "270 - arrayGet(@y, i)",
+                          "radius": 6.0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

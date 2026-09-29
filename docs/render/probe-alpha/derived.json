@@ -1,0 +1,37 @@
+{
+  "id": "render/probe-alpha",
+  "sha256": "e31f2db9584fccccca706bdf8a14a477d5dde49f98fa0cc9b1d9b3646dd67a30",
+  "bytes": 379,
+  "ops": 20,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_CIRCLE": 2,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,152 @@
+{
+  "name": "clock_analog",
+  "description": "Analog clock: a circular face with tick marks and white hour and minute hands that animate via the time variable. Use for clocks/timers.",
+  "tags": [
+    "clock",
+    "time",
+    "dial",
+    "animated"
+  ],
+  "data_schema": null,
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "clock",
+      "profiles": 513
+    },
+    "root": {
+      "canvas": {
+        "modifiers": [
+          "fillMaxSize"
+        ],
+        "commands": [
+          {
+            "paint": {
+              "color": "#FF0E1116",
+              "style": "fill"
+            }
+          },
+          {
+            "drawRect": {
+              "left": 0,
+              "top": 0,
+              "right": 300,
+              "bottom": 300
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFB0BEC5",
+              "style": "stroke",
+              "width": 3.0
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 130.0
+            }
+          },
+          {
+            "loop": {
+              "from": 0.0,
+              "until": 12.0,
+              "index": "i",
+              "commands": [
+                {
+                  "save": [
+                    {
+                      "rotate": {
+                        "angle": "i * 30",
+                        "pivotX": 150.0,
+                        "pivotY": 150.0
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": 150.0,
+                        "y1": 30.0,
+                        "x2": 150.0,
+                        "y2": 48.0
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFFFFFFF",
+              "style": "stroke",
+              "width": 8.0,
+              "strokeCap": "round"
+            }
+          },
+          {
+            "save": [
+              {
+                "rotate": {
+                  "angle": "time * 5",
+                  "pivotX": 150.0,
+                  "pivotY": 150.0
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 150.0,
+                  "y1": 150.0,
+                  "x2": 150.0,
+                  "y2": 95.0
+                }
+              }
+            ]
+          },
+          {
+            "paint": {
+              "color": "#FFFFFFFF",
+              "style": "stroke",
+              "width": 4.0,
+              "strokeCap": "round"
+            }
+          },
+          {
+            "save": [
+              {
+                "rotate": {
+                  "angle": "time * 60",
+                  "pivotX": 150.0,
+                  "pivotY": 150.0
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 150.0,
+                  "y1": 150.0,
+                  "x2": 150.0,
+                  "y2": 50.0
+                }
+              }
+            ]
+          },
+          {
+            "paint": {
+              "color": "#FFFFFFFF",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 6.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

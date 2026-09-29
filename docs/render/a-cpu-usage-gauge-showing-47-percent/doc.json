@@ -1,0 +1,88 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "cpu usage gauge",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "variable": {
+            "name": "pct",
+            "value": 47.0,
+            "commit": true
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF263238",
+            "style": "stroke",
+            "width": 24.0
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 100.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFF9800",
+            "style": "stroke",
+            "width": 24.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "drawArc": {
+            "left": 50,
+            "top": 50,
+            "right": 250,
+            "bottom": 250,
+            "startAngle": -90.0,
+            "sweepAngle": "@pct * 3.6"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill",
+            "textSize": 56.0
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "47%",
+            "x": 150.0,
+            "y": 150.0,
+            "panX": 0.0,
+            "panY": 0.0,
+            "flags": 0
+          }
+        }
+      ]
+    }
+  }
+}

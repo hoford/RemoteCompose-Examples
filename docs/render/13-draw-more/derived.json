@@ -1,0 +1,39 @@
+{
+  "id": "render/13-draw-more",
+  "sha256": "915966fcc21b19513e0f7e949067117b453748ce9461179edac90a4639f879f8",
+  "bytes": 286,
+  "ops": 20,
+  "distinctOps": 13,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 2,
+    "DRAW_OVAL": 1,
+    "DATA_TEXT": 1,
+    "COMPONENT_VALUE": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawOval",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

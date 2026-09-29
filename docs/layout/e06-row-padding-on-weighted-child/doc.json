@@ -1,0 +1,47 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "E06 padding on the weighted child itself"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FF4DA3FF"
+          },
+          {
+            "padding": 20
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      }
+    ]
+  }
+}

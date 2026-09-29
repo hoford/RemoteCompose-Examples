@@ -1,0 +1,108 @@
+{
+  "name": "bullseye",
+  "description": "Bullseye/target: concentric alternating-color filled circles. A simple decorative/score graphic.",
+  "tags": [
+    "icon",
+    "target",
+    "bullseye",
+    "rings"
+  ],
+  "data_schema": null,
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "target",
+      "profiles": 513
+    },
+    "root": {
+      "canvas": {
+        "modifiers": [
+          "fillMaxSize"
+        ],
+        "commands": [
+          {
+            "paint": {
+              "color": "#FF0E1116",
+              "style": "fill"
+            }
+          },
+          {
+            "drawRect": {
+              "left": 0,
+              "top": 0,
+              "right": 300,
+              "bottom": 300
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFE53935",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 120.0
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFFFFFFF",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 90.0
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFE53935",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 60.0
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFFFFFFF",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 30.0
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFE53935",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 150.0,
+              "radius": 12.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

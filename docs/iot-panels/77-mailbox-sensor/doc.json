@@ -1,0 +1,722 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Mailbox Sensor \u2014 post detected \u00b7 flag up"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "cyc",
+         "value": "fract(@t / 13.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "drop",
+         "value": "clamp(0.0, 1.0, (@cyc - 0.08) * 5.0) * clamp(0.0, 1.0, (0.52 - @cyc) * 5.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "slot",
+         "value": "clamp(0.0, 1.0, @cyc * 9.0) * clamp(0.0, 1.0, (0.40 - @cyc) * 5.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "mail",
+         "value": "clamp(0.0, 1.0, (@cyc - 0.30) * 6.0)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 168,
+         "top": 216,
+         "right": 192,
+         "bottom": 282,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 84,
+         "top": 130,
+         "right": 276,
+         "bottom": 220,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 84 132 L 276 132 L 262 106 L 98 106 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 84,
+         "top": 130,
+         "right": 276,
+         "bottom": 220,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#05080D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 122,
+         "top": 146,
+         "right": 238,
+         "bottom": 162,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "0.0 - @slot * 62.0",
+            "pivotX": 122,
+            "pivotY": 154
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#3A4B60"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 122,
+            "top": 146,
+            "right": 238,
+            "bottom": 160,
+            "rx": 3,
+            "ry": 3
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#243141"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.2
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 122,
+            "top": 146,
+            "right": 238,
+            "bottom": 160,
+            "rx": 3,
+            "ry": 3
+           }
+          }
+         ]
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "14.0 - @drop * 26.0",
+            "pivotX": 180,
+            "pivotY": 180
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#E6E2D6"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.92 * @drop"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 142,
+            "top": "150.0 + @drop * 32.0",
+            "right": 218,
+            "bottom": "196.0 + @drop * 32.0",
+            "rx": 2,
+            "ry": 2
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#78899D"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.4
+             },
+             {
+              "alpha": "0.7 * @drop"
+             }
+            ]
+           }
+          },
+          {
+           "drawPath": "M 142 152 L 180 176 L 218 152"
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#E6E2D6"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.85 * @mail"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 112,
+         "top": 196,
+         "right": 210,
+         "bottom": 212,
+         "rx": 2,
+         "ry": 2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#D6D2C4"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.7 * @mail"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 126,
+         "top": 190,
+         "right": 232,
+         "bottom": 204,
+         "rx": 2,
+         "ry": 2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 160,
+         "top": 112,
+         "right": 200,
+         "bottom": 128,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.12 + 0.85 * @mail"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180,
+         "cy": 120,
+         "radius": 5
+        }
+       },
+       {
+        "loop": {
+         "index": "w",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "wp",
+            "value": "fract(@t * 0.9 + w / 3.0)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFB65C"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.8
+             },
+             {
+              "alpha": "@mail * 0.36 * (1.0 - @wp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": 180,
+            "cy": 120,
+            "radius": "9.0 + @wp * 48.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "save": {
+         "commands": [
+          {
+           "rotate": {
+            "angle": "0.0 - @mail * 84.0",
+            "pivotX": 286,
+            "pivotY": 206
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#3A4B60"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 282,
+            "top": 148,
+            "right": 290,
+            "bottom": 208,
+            "rx": 2,
+            "ry": 2
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFB65C"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.9
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": 288,
+            "top": 150,
+            "right": 320,
+            "bottom": 174,
+            "rx": 2,
+            "ry": 2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB65C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Mailbox Sensor",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "post detected \u00b7 flag up",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

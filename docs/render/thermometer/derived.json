@@ -1,0 +1,38 @@
+{
+  "id": "render/thermometer",
+  "sha256": "7acbddf5e87c692e4e115c71910191f6d6401b534f56de9ef4f413694912087d",
+  "bytes": 283,
+  "ops": 18,
+  "distinctOps": 12,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "DATA_FLOAT": 1,
+    "DRAW_ROUND_RECT": 2,
+    "DRAW_CIRCLE": 1,
+    "ANIMATED_FLOAT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

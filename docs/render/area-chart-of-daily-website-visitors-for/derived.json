@@ -1,0 +1,41 @@
+{
+  "id": "render/area-chart-of-daily-website-visitors-for",
+  "sha256": "4b1e87285540e60a97d7d5c330b1c29a5b9e4bcf65a7439a07060fb9253ded55",
+  "bytes": 694,
+  "ops": 28,
+  "distinctOps": 14,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 8,
+    "PATH_CREATE": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 6,
+    "DRAW_PATH": 1,
+    "DRAW_LINE": 1
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

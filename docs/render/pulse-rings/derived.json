@@ -1,0 +1,37 @@
+{
+  "id": "render/pulse-rings",
+  "sha256": "3883814e4d5e9519a02b810a6812bb8dfcc9ae932c687cfcd811c94018f3cd9c",
+  "bytes": 281,
+  "ops": 16,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

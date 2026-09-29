@@ -1,0 +1,37 @@
+{
+  "id": "render/a1-pulse",
+  "sha256": "90cd481d5dfc7dee927c504a462b6f0ad80dabb13825c509b145f26ccf84dcbd",
+  "bytes": 284,
+  "ops": 16,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "render/00-ring",
+  "sha256": "1293586ee2361dc562a494371086340dcb018a4ccc81a4b255a7d936a9500fb6",
+  "bytes": 610,
+  "ops": 34,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "MATRIX_SAVE": 2,
+    "DATA_FLOAT": 2,
+    "ANIMATED_FLOAT": 6,
+    "MATRIX_ROTATE": 2,
+    "DATA_TEXT": 2,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_RESTORE": 2,
+    "CONTAINER_END": 5,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

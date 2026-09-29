@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels/52-range-extender",
+  "sha256": "3a0e14f2b726228b63a78cf7e1952906ee7393494c98e1a1f266f30e5e835d72",
+  "bytes": 2184,
+  "ops": 91,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DATA_TEXT": 7,
+    "ANIMATED_FLOAT": 24,
+    "DRAW_ARC": 2,
+    "CONTAINER_END": 9,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_CIRCLE": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

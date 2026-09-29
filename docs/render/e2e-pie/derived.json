@@ -1,0 +1,43 @@
+{
+  "id": "render/e2e-pie",
+  "sha256": "110a4751d5006652139c1d5e725129ece5245b91fc575abc6272fa6eecb5ddb3",
+  "bytes": 880,
+  "ops": 49,
+  "distinctOps": 16,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 10,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 11,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 2,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 13,
+    "DRAW_ARC": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

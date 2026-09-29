@@ -1,0 +1,79 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "L02 same flow with spacedBy 30 - the spacing alone must force a wrap"
+  },
+  "root": {
+    "type": "flow",
+    "modifiers": [
+      {
+        "spacedBy": 30
+      },
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FFFF4D6D"
+          }
+        ]
+      }
+    ]
+  }
+}

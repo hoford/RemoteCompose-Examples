@@ -1,0 +1,50 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "K05 text with weight beside a fixed sibling - the weighted BOX is pure logic"
+  },
+  "root": {
+    "type": "row",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 120
+          },
+          {
+            "height": 50
+          },
+          {
+            "background": "#FFFF4D6D"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Weighted",
+        "color": "#FF0B1020",
+        "fontSize": 18,
+        "modifiers": [
+          {
+            "weight": 1
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

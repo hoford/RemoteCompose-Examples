@@ -1,0 +1,42 @@
+{
+  "id": "render/perf-path-l9",
+  "sha256": "984acac381f54562d1755b5069fc6ef8d7d79db3a79a4456190cd74d56a48b4b",
+  "bytes": 1234,
+  "ops": 75,
+  "distinctOps": 16,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 11,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "DATA_TEXT": 5,
+    "MODIFIER_PADDING": 5,
+    "CONTAINER_END": 34,
+    "LAYOUT_ROW": 4,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DRAW_PATH": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

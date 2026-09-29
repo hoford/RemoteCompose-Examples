@@ -1,0 +1,36 @@
+{
+  "id": "render/12-compvalue",
+  "sha256": "7d4d39ee75210ef4d9d5775f0ad5d0d1193bbfb3719c61e77227e95edca2de08",
+  "bytes": 356,
+  "ops": 22,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 7,
+    "DRAW_CIRCLE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

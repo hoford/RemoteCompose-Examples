@@ -1,0 +1,235 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "starfield \u2014 stars streaming toward the viewer",
+  "orderedResources": true
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "scale": {
+         "sx": "width/480",
+         "sy": "height/360",
+         "pivotX": 0,
+         "pivotY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF01030A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 480,
+         "bottom": 360
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FC4FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.22
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 180.0,
+         "radius": 7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.55
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 180.0,
+         "radius": 2.2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB6D8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.55
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 111.0,
+         "step": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "u0",
+            "value": "fract(continuousSec()*(0.0555 + fract(i*0.6180339 + i*i*0.1149)*0.1445) + fract(i*0.7548777 + i*i*0.0731))"
+           }
+          },
+          {
+           "drawLine": {
+            "x1": "240.0 + cos(i*2.399963)*pow(@u0*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y1": "180.0 + sin(i*2.399963)*pow(@u0*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "x2": "240.0 + cos(i*2.399963)*pow(@u0, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y2": "180.0 + sin(i*2.399963)*pow(@u0, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD8E8FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.8
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 1.0,
+         "until": 111.0,
+         "step": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "u1",
+            "value": "fract(continuousSec()*(0.0555 + fract(i*0.6180339 + i*i*0.1149)*0.1445) + fract(i*0.7548777 + i*i*0.0731))"
+           }
+          },
+          {
+           "drawLine": {
+            "x1": "240.0 + cos(i*2.399963)*pow(@u1*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y1": "180.0 + sin(i*2.399963)*pow(@u1*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "x2": "240.0 + cos(i*2.399963)*pow(@u1, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y2": "180.0 + sin(i*2.399963)*pow(@u1, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.3
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 2.0,
+         "until": 111.0,
+         "step": 3.0,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "u2",
+            "value": "fract(continuousSec()*(0.0555 + fract(i*0.6180339 + i*i*0.1149)*0.1445) + fract(i*0.7548777 + i*i*0.0731))"
+           }
+          },
+          {
+           "drawLine": {
+            "x1": "240.0 + cos(i*2.399963)*pow(@u2*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y1": "180.0 + sin(i*2.399963)*pow(@u2*0.88, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "x2": "240.0 + cos(i*2.399963)*pow(@u2, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)",
+            "y2": "180.0 + sin(i*2.399963)*pow(@u2, 2.35)*(300 + fract(i*0.3183099 + i*i*0.1597)*200)"
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

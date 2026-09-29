@@ -1,0 +1,48 @@
+{
+  "id": "render/banner-sf-sweep",
+  "sha256": "48e0ca560c6db11f5967954075d264de0d67cb9fb46d54fd17564f9f25b5a8e2",
+  "bytes": 11618,
+  "ops": 245,
+  "distinctOps": 19,
+  "width": 1200,
+  "height": 1200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 46,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 3,
+    "MATRIX_SAVE": 21,
+    "ANIMATED_FLOAT": 58,
+    "MATRIX_TRANSLATE": 18,
+    "CLIP_RECT": 1,
+    "MATRIX_RESTORE": 21,
+    "DRAW_CIRCLE": 4,
+    "MATRIX_SCALE": 17,
+    "DRAW_PATH": 43,
+    "DATA_TEXT": 1,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

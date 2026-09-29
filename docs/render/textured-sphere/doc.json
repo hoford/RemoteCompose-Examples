@@ -1,0 +1,134 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 256,
+  "height": 256,
+  "profiles": 513,
+  "contentDescription": "textured sphere: bitmap resource + texture3D by name"
+ },
+ "resources": {
+  "bitmaps": [
+   {
+    "checker": {
+     "file": "textures/checker.png"
+    }
+   }
+  ]
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 256,
+         "bottom": 256
+        }
+       },
+       {
+        "clearDepth3D": {}
+       },
+       {
+        "camera3D": {
+         "projection": "perspective",
+         "fovY": 0.9,
+         "aspect": 1.0,
+         "near": 0.1,
+         "far": 60.0,
+         "eye": [
+          0,
+          0,
+          3.0
+         ],
+         "center": [
+          0,
+          0,
+          0
+         ],
+         "up": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "lights3D": {
+         "lights": [
+          {
+           "type": "directional",
+           "color": "#FFFFFFFF",
+           "dir": [
+            -0.3,
+            -0.5,
+            -0.8
+           ],
+           "intensity": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "texture3D": {
+         "bitmap": "@checker"
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 1,
+         "primitive": "sphere",
+         "segments": 32,
+         "radius": 1.0,
+         "center": [
+          0,
+          0,
+          0
+         ],
+         "uv": "uv"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          }
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "I02 column whose children total more than its height"
+  },
+  "root": {
+    "type": "column",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 60
+          },
+          {
+            "height": 180
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 60
+          },
+          {
+            "height": 180
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 60
+          },
+          {
+            "height": 180
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      }
+    ]
+  }
+}

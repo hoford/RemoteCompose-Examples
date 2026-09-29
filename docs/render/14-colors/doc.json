@@ -1,0 +1,100 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 360,
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              {
+                "brand": "#FF6200EE"
+              },
+              {
+                "accent": "#FF03DAC6"
+              },
+              {
+                "ink": "#FF1A1A2E"
+              }
+            ]
+          }
+        },
+        {
+          "column": {
+            "modifiers": [
+              "fillMaxSize",
+              {
+                "background": "$colors.ink"
+              },
+              {
+                "padding": 20
+              }
+            ],
+            "horizontalAlignment": "center",
+            "children": [
+              {
+                "text": {
+                  "value": "Themed Palette",
+                  "fontSize": 26.0,
+                  "color": "$colors.accent",
+                  "fontWeight": 700.0
+                }
+              },
+              {
+                "box": {
+                  "modifiers": [
+                    "fillMaxWidth",
+                    {
+                      "height": 60.0
+                    },
+                    {
+                      "background": "$colors.brand"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "text": {
+                        "value": "brand",
+                        "color": "#FFFFFFFF"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "canvas": {
+                  "modifiers": [
+                    "fillMaxWidth",
+                    {
+                      "height": 120.0
+                    }
+                  ],
+                  "commands": [
+                    {
+                      "paint": {
+                        "color": "$colors.accent",
+                        "style": "fill"
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "width / 2",
+                        "cy": 60.0,
+                        "radius": 40.0
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

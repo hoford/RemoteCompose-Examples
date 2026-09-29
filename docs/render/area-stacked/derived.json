@@ -1,0 +1,34 @@
+{
+  "id": "render/area-stacked",
+  "sha256": "87531a12beb608047d8eb394e21d25243e86e0b91045814b60f72e5d2cd93f02",
+  "bytes": 12755,
+  "ops": 610,
+  "distinctOps": 12,
+  "width": 900,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 276,
+    "DRAW_RECT": 256,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 28,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

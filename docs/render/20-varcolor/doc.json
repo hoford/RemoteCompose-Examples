@@ -1,0 +1,63 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 200,
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [
+              {
+                "bg": "#FF1A1A2E"
+              },
+              {
+                "fg": "#FFFFCA28"
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "$colors.bg",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 300,
+                  "bottom": 200
+                }
+              },
+              {
+                "paint": {
+                  "color": "$colors.fg",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 150.0,
+                  "cy": 100.0,
+                  "radius": 60.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

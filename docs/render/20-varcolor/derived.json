@@ -1,0 +1,32 @@
+{
+  "id": "render/20-varcolor",
+  "sha256": "f08b9e8d16fe5224e2568831704bccc423ac4bb5ff41d0761637c23584aec2ff",
+  "bytes": 199,
+  "ops": 17,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 2,
+    "NAMED_VARIABLE": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

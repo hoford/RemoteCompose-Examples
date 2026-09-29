@@ -1,0 +1,28 @@
+{
+  "id": "render/gen-bars",
+  "sha256": "eed4b51f0d16d456c2bd77f84117cb4b9b5758edbcc539ef76a088d12caa9048",
+  "bytes": 308,
+  "ops": 21,
+  "distinctOps": 8,
+  "width": 300,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 6,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

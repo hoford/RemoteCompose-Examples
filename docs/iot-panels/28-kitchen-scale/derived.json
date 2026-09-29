@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels/28-kitchen-scale",
+  "sha256": "996a9e7bcde5516e5a92b52fb457b8cd5404f2bab5912afc8846b908c65f8506",
+  "bytes": 1925,
+  "ops": 79,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 25,
+    "DRAW_RECT": 3,
+    "DRAW_ROUND_RECT": 9,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 14,
+    "DRAW_CIRCLE": 3,
+    "CONTAINER_END": 7,
+    "DRAW_PATH": 2,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

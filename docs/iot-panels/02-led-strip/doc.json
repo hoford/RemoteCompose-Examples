@@ -1,0 +1,508 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "LED Light Strip \u2014 chase \u00b7 60 fps"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec() * 1.2"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#18212E"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 38,
+         "top": 138,
+         "right": 322,
+         "bottom": 176,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 38,
+         "top": 138,
+         "right": 322,
+         "bottom": 176,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "loop": {
+         "index": "i",
+         "from": 0.0,
+         "until": 14.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "lx",
+            "value": "50.0 + i * 19.6"
+           }
+          },
+          {
+           "variable": {
+            "name": "w",
+            "value": "0.5 + 0.5 * sin(@t * 3.1415927 - i * 0.4487990)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.020 + 0.055 * @w"
+             }
+            ]
+           }
+          },
+          {
+           "drawOval": {
+            "left": "@lx - 46.0",
+            "top": 172,
+            "right": "@lx + 46.0",
+            "bottom": 226
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.020 + 0.055 * (1.0 - @w)"
+             }
+            ]
+           }
+          },
+          {
+           "drawOval": {
+            "left": "@lx - 46.0",
+            "top": 172,
+            "right": "@lx + 46.0",
+            "bottom": 226
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.18 + 0.82 * @w"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@lx - 6.5",
+            "top": 146,
+            "right": "@lx + 6.5",
+            "bottom": 168,
+            "rx": 3,
+            "ry": 3
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.18 + 0.82 * (1.0 - @w)"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@lx - 6.5",
+            "top": 146,
+            "right": "@lx + 6.5",
+            "bottom": 168,
+            "rx": 3,
+            "ry": 3
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFFFFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.10 + 0.45 * @w"
+             }
+            ]
+           }
+          },
+          {
+           "drawRoundRect": {
+            "left": "@lx - 2.5",
+            "top": 149,
+            "right": "@lx + 2.5",
+            "bottom": 156,
+            "rx": 2,
+            "ry": 2
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 30,
+         "top": 150,
+         "right": 40,
+         "bottom": 164,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 320,
+         "top": 150,
+         "right": 330,
+         "bottom": 164,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.2
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 22,
+         "y1": 157,
+         "x2": 30,
+         "y2": 157
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "LED Light Strip",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "chase \u00b7 60 fps",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

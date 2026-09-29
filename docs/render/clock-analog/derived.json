@@ -1,0 +1,43 @@
+{
+  "id": "render/clock-analog",
+  "sha256": "6d5b695c0034ca371414c9188ac1fb29d3d7899df9f380f9cc317454eb75fe26",
+  "bytes": 447,
+  "ops": 34,
+  "distinctOps": 15,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 5,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 2,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 3,
+    "ANIMATED_FLOAT": 3,
+    "MATRIX_ROTATE": 3,
+    "DRAW_LINE": 3,
+    "MATRIX_RESTORE": 3,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

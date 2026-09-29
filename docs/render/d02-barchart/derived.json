@@ -1,0 +1,28 @@
+{
+  "id": "render/d02-barchart",
+  "sha256": "1c7b562546c7001054990ce9fead7082a7ab0dd14a6f351531d4954717a23926",
+  "bytes": 393,
+  "ops": 23,
+  "distinctOps": 8,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_ROUND_RECT": 7,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

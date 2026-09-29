@@ -1,0 +1,36 @@
+{
+  "id": "render/a-battery-icon-at-about-75-percent-green",
+  "sha256": "05ee66a9a3ce351cd38cce8d02e2e5331c1680579b767e76aa999a907ee47aaf",
+  "bytes": 316,
+  "ops": 19,
+  "distinctOps": 11,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "DATA_FLOAT": 1,
+    "DRAW_ROUND_RECT": 3,
+    "ANIMATED_FLOAT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "render/btn-top",
+  "sha256": "2bccbb11630a24a16f133a9e2b0b0b822d5877605de73e110f0f124ccff1e832",
+  "bytes": 1345,
+  "ops": 70,
+  "distinctOps": 20,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 4,
+    "DATA_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 7,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 8,
+    "DATA_TEXT": 3,
+    "MODIFIER_PADDING": 3,
+    "MODIFIER_CLICK": 1,
+    "CONTAINER_END": 25,
+    "LAYOUT_ROW": 2,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DRAW_PATH": 1,
+    "RUN_ACTION": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

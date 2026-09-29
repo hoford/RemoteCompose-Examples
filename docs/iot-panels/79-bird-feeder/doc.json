@@ -1,0 +1,779 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Bird Feeder \u2014 camera \u00b7 species ID"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "cyc",
+         "value": "fract(@t / 16.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "land",
+         "value": "clamp(0.0, 1.0, @cyc * 5.0) * clamp(0.0, 1.0, (0.78 - @cyc) * 5.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "flash",
+         "value": "clamp(0.0, 1.0, (@cyc - 0.26) * 30.0) * clamp(0.0, 1.0, (0.36 - @cyc) * 20.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "seed",
+         "value": "0.85 - @cyc * 0.30"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 180,
+         "y1": 48,
+         "x2": 180,
+         "y2": 72
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 138 92 L 222 92 L 200 68 L 160 68 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 146,
+         "top": 92,
+         "right": 214,
+         "bottom": 216,
+         "rx": 8,
+         "ry": 8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A121B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 152,
+         "top": 98,
+         "right": 208,
+         "bottom": 210,
+         "rx": 6,
+         "ry": 6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.4
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 152,
+         "top": "210.0 - @seed * 108.0",
+         "right": 208,
+         "bottom": 210,
+         "rx": 6,
+         "ry": 6
+        }
+       },
+       {
+        "loop": {
+         "index": "s",
+         "from": 0.0,
+         "until": 16.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "sy",
+            "value": "204.0 - (s % 8.0) * 12.0"
+           }
+          },
+          {
+           "variable": {
+            "name": "svis",
+            "value": "clamp(0.0, 1.0, (@seed * 108.0) - (210.0 - @sy))"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#C4E86B"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.55 * @svis"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "162.0 + floor(s / 8.0) * 34.0 + (s % 3.0) * 8.0",
+            "cy": "@sy",
+            "radius": 3.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 146,
+         "top": 92,
+         "right": 214,
+         "bottom": 216,
+         "rx": 8,
+         "ry": 8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 114,
+         "top": 212,
+         "right": 246,
+         "bottom": 240
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 96,
+         "top": 222,
+         "right": 264,
+         "bottom": 228,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "variable": {
+         "name": "bx",
+         "value": "268.0 - @land * 44.0"
+        }
+       },
+       {
+        "variable": {
+         "name": "by",
+         "value": "192.0 + @land * 26.0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#AEBECE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.30 + 0.68 * @land"
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": "@bx - 20.0",
+         "top": "@by - 12.0",
+         "right": "@bx + 14.0",
+         "bottom": "@by + 12.0"
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "@bx + 14.0",
+         "cy": "@by - 10.0",
+         "radius": 9.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.35 + 0.6 * @land"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": "@bx + 21.0",
+         "top": "@by - 12.0",
+         "right": "@bx + 30.0",
+         "bottom": "@by - 8.0",
+         "rx": 2,
+         "ry": 2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#AEBECE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.30 + 0.68 * @land"
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": "@bx - 30.0",
+         "top": "@by - 6.0",
+         "right": "@bx - 14.0",
+         "bottom": "@by + 4.0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 58,
+         "top": 120,
+         "right": 104,
+         "bottom": 158,
+         "rx": 7,
+         "ry": 7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A0F16"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 81,
+         "cy": 139,
+         "radius": 12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.25 + 0.5 * @land"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 81,
+         "cy": 139,
+         "radius": 6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 * @flash"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 81,
+         "cy": 139,
+         "radius": 22
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 104,
+         "y1": 139,
+         "x2": 146,
+         "y2": 139
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 44,
+         "top": 244,
+         "right": 180,
+         "bottom": 268,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.30 + 0.65 * @land"
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "GOLDFINCH  98%",
+         "x": 112,
+         "y": 256,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#C4E86B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Bird Feeder",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "camera \u00b7 species ID",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

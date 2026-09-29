@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels/48-smart-tv",
+  "sha256": "e542f57b85c856acc4c940dc77f099ea3db187fcc86f0ea11def51949a9f1df8",
+  "bytes": 1871,
+  "ops": 81,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 20,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 12,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 19,
+    "CONTAINER_END": 8,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "DRAW_OVAL": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_CIRCLE": 3,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

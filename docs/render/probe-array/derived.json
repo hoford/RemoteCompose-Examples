@@ -1,0 +1,34 @@
+{
+  "id": "render/probe-array",
+  "sha256": "2c5327ab0224c040a90aecf66fe33783f053409735790f095c7ddac3aa78cc6e",
+  "bytes": 558,
+  "ops": 25,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 260,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 5,
+    "DRAW_RECT": 5,
+    "ANIMATED_FLOAT": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

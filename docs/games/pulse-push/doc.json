@@ -1,0 +1,695 @@
+{
+  "//": "PULSE PUSH - tap to emit a shockwave that pushes the ball. Reach the goal ring, avoid the hazards. Clearing a level increments it and the field is rebuilt.",
+  "//levels": "The field is a function of `level`. `curLvl` records what is currently built; when it differs from `level` the `rebuild` flag goes high and every entity equation takes its setup branch instead of its motion branch. curLvl catches up on its own, so the flag self-clears. Death sets curLvl to -1, which rebuilds the same level - one mechanism, two uses.",
+  "//difficulty": "Three axes, not one multiplier: hazards activate progressively (one at level 1, two at level 2, three from level 3), the goal shrinks from r26 to a floor of r16, and everything moves faster with spd. Entity count is fixed at parse time, so 'more hazards' is done by gating collision and drawing rather than by creating particles.",
+  "//setup": "Setup values are expressions in `level`, never constants: the goal walks a circle and the ball starts diametrically opposite it, so the two can never be generated on top of each other.",
+  "//engine": "Expressions cap at 32 RPN tokens. ifElse(falseValue, trueValue, condition) reads its condition LAST. A particlesLoop evaluates in one pass - no equation sees a sibling's new value. See GUIDE.md.",
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "Pulse Push: tap to push the ball to the goal without hitting a hazard"
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0B1020",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 400,
+            "bottom": 400
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF121A2E",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 12,
+            "top": 56,
+            "right": 388,
+            "bottom": 344,
+            "rx": 16,
+            "ry": 16
+          }
+        },
+        {
+          "impulse": {
+            "duration": 1000000,
+            "start": 0,
+            "commands": [
+              {
+                "createParticles": {
+                  "id": "st",
+                  "variables": [
+                    "touch",
+                    "prevT",
+                    "edge",
+                    "pulseT",
+                    "tapX",
+                    "tapY",
+                    "level",
+                    "curLvl",
+                    "rebuild",
+                    "started",
+                    "respawn",
+                    "grace",
+                    "adv",
+                    "hitG",
+                    "die",
+                    "inGoal",
+                    "wasHit",
+                    "score",
+                    "lives",
+                    "spd",
+                    "gx",
+                    "gy",
+                    "gr",
+                    "alive"
+                  ],
+                  "initialValues": [
+                    "0",
+                    "0",
+                    "0",
+                    "999",
+                    "-999",
+                    "-999",
+                    "1",
+                    "0",
+                    "1",
+                    "0",
+                    "1",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "3",
+                    "1",
+                    "200",
+                    "200",
+                    "26",
+                    "1"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "ball",
+                  "variables": [
+                    "bx",
+                    "by",
+                    "bvx",
+                    "bvy",
+                    "bux",
+                    "buy",
+                    "bolx",
+                    "boly",
+                    "bd",
+                    "bimp",
+                    "bsp",
+                    "bsc",
+                    "goalHit",
+                    "hit"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "200",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "999",
+                    "0",
+                    "0",
+                    "1",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "h1",
+                  "variables": [
+                    "h1x",
+                    "h1y",
+                    "h1vx",
+                    "h1vy",
+                    "h1ox",
+                    "h1oy",
+                    "h1t"
+                  ],
+                  "initialValues": [
+                    "200",
+                    "120",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "h2",
+                  "variables": [
+                    "h2x",
+                    "h2y",
+                    "h2vx",
+                    "h2vy",
+                    "h2ox",
+                    "h2oy",
+                    "h2t"
+                  ],
+                  "initialValues": [
+                    "300",
+                    "215",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "createParticles": {
+                  "id": "h3",
+                  "variables": [
+                    "h3x",
+                    "h3y",
+                    "h3vx",
+                    "h3vy",
+                    "h3ox",
+                    "h3oy",
+                    "h3t"
+                  ],
+                  "initialValues": [
+                    "150",
+                    "270",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "count": 1
+                }
+              },
+              {
+                "impulseProcess": {
+                  "commands": [
+                    {
+                      "particlesLoop": {
+                        "system": "@st",
+                        "equations": [
+                          "sign(max(0, touchTime - animationTime + 0.15)) * ifElse(0, 1, touchTime)",
+                          "touch",
+                          "touch * (1 - prevT)",
+                          "ifElse(pulseT + 1, 0, edge)",
+                          "ifElse(tapX, touchX, edge)",
+                          "ifElse(tapY, touchY, edge)",
+                          "level + adv",
+                          "ifElse(level, -1, die)",
+                          "ifElse(0, 1, abs(level - curLvl) - 0.5)",
+                          "1",
+                          "die + (1 - started)",
+                          "ifElse(grace + 1, 0, rebuild)",
+                          "goalHit * (1 - inGoal)",
+                          "hit * ifElse(0, 1, grace - 30)",
+                          "hitG * (1 - wasHit)",
+                          "goalHit",
+                          "hitG",
+                          "score + adv",
+                          "max(0, lives - die)",
+                          "1 + level * 0.12",
+                          "ifElse(gx, 200 + 132 * cos(level * 2.4), rebuild)",
+                          "ifElse(gy, 200 + 105 * sin(level * 2.4), rebuild)",
+                          "max(16, 26 - level * 0.8)",
+                          "ifElse(0, 1, lives - 0.5)"
+                        ],
+                        "commands": [
+                          {
+                            "paint": {
+                              "color": "#FF1B3A47",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@gx",
+                              "cy": "@gy",
+                              "radius": "@gr"
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF7CE0FF",
+                              "style": "stroke",
+                              "strokeWidth": 2
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@gx",
+                              "cy": "@gy",
+                              "radius": "@gr"
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF7CE0FF",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@gx",
+                              "cy": "@gy",
+                              "radius": 4
+                            }
+                          },
+                          {
+                            "conditionalOperations": {
+                              "condition": "lt",
+                              "v1": "@pulseT",
+                              "v2": 45,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF2E6C8F",
+                                    "style": "stroke",
+                                    "strokeWidth": 3
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@tapX",
+                                    "cy": "@tapY",
+                                    "radius": "pulseT * 5"
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FF17384A",
+                                    "style": "stroke",
+                                    "strokeWidth": 9
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@tapX",
+                                    "cy": "@tapY",
+                                    "radius": "pulseT * 5"
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@h1",
+                        "equations": [
+                          "ifElse(min(max(h1x + h1vx * spd * alive, 21), 379), 200 + 92 * cos(level * 1.7), rebuild)",
+                          "ifElse(min(max(h1y + h1vy * spd * alive, 65), 335), 200 + 82 * sin(level * 1.7), rebuild)",
+                          "ifElse(abs(h1vx) * h1ox + h1vx * (1 - abs(h1ox)), cos(level * 2.3) * 1.4, rebuild)",
+                          "ifElse(abs(h1vy) * h1oy + h1vy * (1 - abs(h1oy)), sin(level * 2.3) * 1.4, rebuild)",
+                          "ifElse(0, 1, 21.5 - h1x) - ifElse(0, 1, h1x - 378.5)",
+                          "ifElse(0, 1, 65.5 - h1y) - ifElse(0, 1, h1y - 334.5)",
+                          "ifElse(0, 1, 19 - hypot(bx - h1x, by - h1y))"
+                        ],
+                        "commands": [
+                          {
+                            "paint": {
+                              "color": "#FF3A1220",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@h1x",
+                              "cy": "@h1y",
+                              "radius": 13
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FFFF4D6D",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@h1x",
+                              "cy": "@h1y",
+                              "radius": 9
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@h2",
+                        "equations": [
+                          "ifElse(min(max(h2x + h2vx * spd * alive, 21), 379), 200 + 92 * cos(level * 1.7 + 2.1), rebuild)",
+                          "ifElse(min(max(h2y + h2vy * spd * alive, 65), 335), 200 + 82 * sin(level * 1.7 + 2.1), rebuild)",
+                          "ifElse(abs(h2vx) * h2ox + h2vx * (1 - abs(h2ox)), cos(level * 2.3 + 2.1) * 1.4, rebuild)",
+                          "ifElse(abs(h2vy) * h2oy + h2vy * (1 - abs(h2oy)), sin(level * 2.3 + 2.1) * 1.4, rebuild)",
+                          "ifElse(0, 1, 21.5 - h2x) - ifElse(0, 1, h2x - 378.5)",
+                          "ifElse(0, 1, 65.5 - h2y) - ifElse(0, 1, h2y - 334.5)",
+                          "ifElse(0, 1, level - 1.5) * ifElse(0, 1, 19 - hypot(bx - h2x, by - h2y))"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "gt",
+                              "v1": "@level",
+                              "v2": 1.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF3A1220",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@h2x",
+                                    "cy": "@h2y",
+                                    "radius": 13
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFF4D6D",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@h2x",
+                                    "cy": "@h2y",
+                                    "radius": 9
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@h3",
+                        "equations": [
+                          "ifElse(min(max(h3x + h3vx * spd * alive, 21), 379), 200 + 92 * cos(level * 1.7 + 4.2), rebuild)",
+                          "ifElse(min(max(h3y + h3vy * spd * alive, 65), 335), 200 + 82 * sin(level * 1.7 + 4.2), rebuild)",
+                          "ifElse(abs(h3vx) * h3ox + h3vx * (1 - abs(h3ox)), cos(level * 2.3 + 4.2) * 1.4, rebuild)",
+                          "ifElse(abs(h3vy) * h3oy + h3vy * (1 - abs(h3oy)), sin(level * 2.3 + 4.2) * 1.4, rebuild)",
+                          "ifElse(0, 1, 21.5 - h3x) - ifElse(0, 1, h3x - 378.5)",
+                          "ifElse(0, 1, 65.5 - h3y) - ifElse(0, 1, h3y - 334.5)",
+                          "ifElse(0, 1, level - 2.5) * ifElse(0, 1, 19 - hypot(bx - h3x, by - h3y))"
+                        ],
+                        "commands": [
+                          {
+                            "conditionalOperations": {
+                              "condition": "gt",
+                              "v1": "@level",
+                              "v2": 2.5,
+                              "commands": [
+                                {
+                                  "paint": {
+                                    "color": "#FF3A1220",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@h3x",
+                                    "cy": "@h3y",
+                                    "radius": 13
+                                  }
+                                },
+                                {
+                                  "paint": {
+                                    "color": "#FFFF4D6D",
+                                    "style": "fill"
+                                  }
+                                },
+                                {
+                                  "drawCircle": {
+                                    "cx": "@h3x",
+                                    "cy": "@h3y",
+                                    "radius": 9
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "particlesLoop": {
+                        "system": "@ball",
+                        "equations": [
+                          "ifElse(min(max(bx + bvx * alive, 22), 378), 200 - 132 * cos(level * 2.4), respawn)",
+                          "ifElse(min(max(by + bvy * alive, 66), 334), 200 - 105 * sin(level * 2.4), respawn)",
+                          "ifElse(abs(bux) * bolx + bux * (1 - abs(bolx)), 0, respawn)",
+                          "ifElse(abs(buy) * boly + buy * (1 - abs(boly)), 0, respawn)",
+                          "(bvx * 0.998 + bimp * (bx - tapX)) * bsc",
+                          "(bvy * 0.998 + bimp * (by - tapY)) * bsc",
+                          "ifElse(0, 1, 22.5 - bx) - ifElse(0, 1, bx - 377.5)",
+                          "ifElse(0, 1, 66.5 - by) - ifElse(0, 1, by - 333.5)",
+                          "max(hypot(bx - tapX, by - tapY), 1)",
+                          "ifElse(0, 1, 45 - pulseT) * ifElse(0, 1, 26 - abs(bd - pulseT * 5)) * 1.35 / bd",
+                          "hypot(bvx, bvy)",
+                          "min(1, 6 / max(bsp, 0.01))",
+                          "ifElse(0, 1, gr - 2 - hypot(bx - gx, by - gy))",
+                          "max(h1t, max(h2t, h3t))"
+                        ],
+                        "commands": [
+                          {
+                            "paint": {
+                              "color": "#FF1E4E7A",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@bx",
+                              "cy": "@by",
+                              "radius": 15
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FF4DA3FF",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@bx",
+                              "cy": "@by",
+                              "radius": 10
+                            }
+                          },
+                          {
+                            "paint": {
+                              "color": "#FFAEE3FF",
+                              "style": "fill"
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@bx",
+                              "cy": "@by",
+                              "radius": 4
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "variable": {
+            "name": "lvlText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@level",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "variable": {
+            "name": "livesText",
+            "value": {
+              "type": "textFromFloat",
+              "value": "@lives",
+              "whole": 1,
+              "decimal": 0
+            }
+          }
+        },
+        {
+          "conditionalOperations": {
+            "condition": "lt",
+            "v1": "@lives",
+            "v2": 0.5,
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FFFF4D6D",
+                  "style": "stroke",
+                  "strokeWidth": 3
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 12,
+                  "top": 56,
+                  "right": 388,
+                  "bottom": 344,
+                  "rx": 16,
+                  "ry": 16
+                }
+              }
+            ]
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LVL",
+            "x": 20,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF3DDC84",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@lvlText",
+            "x": 50,
+            "y": 32,
+            "panX": -1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 15
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "PULSE PUSH",
+            "x": 200,
+            "y": 32,
+            "panX": 0,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "LIVES",
+            "x": 344,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFF4D6D",
+            "style": "fill",
+            "textSize": 16
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "@livesText",
+            "x": 380,
+            "y": 32,
+            "panX": 1,
+            "panY": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8B95A5",
+            "style": "fill",
+            "textSize": 13
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "tap near the ball to push it",
+            "x": 200,
+            "y": 372,
+            "panX": 0,
+            "panY": 0
+          }
+        }
+      ]
+    }
+  }
+}

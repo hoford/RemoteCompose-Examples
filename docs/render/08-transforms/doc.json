@@ -1,0 +1,162 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "xf",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 300.0,
+            "bottom": 300.0,
+            "rx": 0.0,
+            "ry": 0.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE53935",
+            "style": "fill"
+          }
+        },
+        {
+          "drawArc": {
+            "left": 40.0,
+            "top": 40.0,
+            "right": 260.0,
+            "bottom": 260.0,
+            "startAngle": 0.0,
+            "sweepAngle": 120.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF43A047"
+          }
+        },
+        {
+          "drawArc": {
+            "left": 40.0,
+            "top": 40.0,
+            "right": 260.0,
+            "bottom": 260.0,
+            "startAngle": 120.0,
+            "sweepAngle": 140.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF1E88E5"
+          }
+        },
+        {
+          "drawArc": {
+            "left": 40.0,
+            "top": 40.0,
+            "right": 260.0,
+            "bottom": 260.0,
+            "startAngle": 260.0,
+            "sweepAngle": 100.0
+          }
+        },
+        {
+          "save": [
+            {
+              "translate": {
+                "dx": 150.0,
+                "dy": 150.0
+              }
+            },
+            {
+              "rotate": {
+                "angle": 30.0
+              }
+            },
+            {
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "width": 4.0,
+                "strokeCap": "round"
+              }
+            },
+            {
+              "drawLine": {
+                "x1": -60.0,
+                "y1": 0.0,
+                "x2": 60.0,
+                "y2": 0.0
+              }
+            },
+            {
+              "scale": {
+                "sx": 1.5,
+                "sy": 1.5
+              }
+            },
+            {
+              "clipRect": {
+                "left": -20.0,
+                "top": -20.0,
+                "right": 20.0,
+                "bottom": 20.0
+              }
+            },
+            {
+              "paint": {
+                "color": "#FFFDD835",
+                "style": "fill"
+              }
+            },
+            {
+              "drawCircle": {
+                "cx": 0.0,
+                "cy": 0.0,
+                "radius": 30.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FF8E24AA",
+            "style": "stroke",
+            "width": 3.0
+          }
+        },
+        {
+          "rotate": {
+            "angle": 45.0,
+            "pivotX": 150.0,
+            "pivotY": 150.0
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 120.0,
+            "top": 120.0,
+            "right": 180.0,
+            "bottom": 180.0,
+            "rx": 8.0,
+            "ry": 8.0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "name": "thermometer",
+  "description": "Thermometer gauge: a vertical tube with a bulb, filled red from the bottom to a level set by a single value. Use for temperature / a 0-100 reading.",
+  "tags": [
+    "gauge",
+    "thermometer",
+    "temperature",
+    "value"
+  ],
+  "data_schema": "level: number (0..100)  — fill height",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "thermometer",
+      "profiles": 513
+    },
+    "root": {
+      "canvas": {
+        "modifiers": [
+          "fillMaxSize"
+        ],
+        "commands": [
+          {
+            "paint": {
+              "color": "#FF0E1116",
+              "style": "fill"
+            }
+          },
+          {
+            "drawRect": {
+              "left": 0,
+              "top": 0,
+              "right": 300,
+              "bottom": 300
+            }
+          },
+          {
+            "variable": {
+              "name": "level",
+              "value": 70.0,
+              "commit": true
+            }
+          },
+          {
+            "paint": {
+              "color": "#FF37474F",
+              "style": "fill"
+            }
+          },
+          {
+            "drawRoundRect": {
+              "left": 134,
+              "top": 40,
+              "right": 166,
+              "bottom": 230,
+              "rx": 16,
+              "ry": 16
+            }
+          },
+          {
+            "paint": {
+              "color": "#FFE53935",
+              "style": "fill"
+            }
+          },
+          {
+            "drawCircle": {
+              "cx": 150.0,
+              "cy": 240.0,
+              "radius": 34.0
+            }
+          },
+          {
+            "drawRoundRect": {
+              "left": 140,
+              "top": "210 - @level / 100 * 150",
+              "right": 160,
+              "bottom": 244,
+              "rx": 10,
+              "ry": 10
+            }
+          }
+        ]
+      }
+    }
+  }
+}

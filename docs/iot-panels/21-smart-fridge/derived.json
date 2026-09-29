@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels/21-smart-fridge",
+  "sha256": "5152cd749995ba02101ae4078f9613c3ceda4b2b2fb643f77c73f3a51139accb",
+  "bytes": 2141,
+  "ops": 91,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 29,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 16,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 14,
+    "DRAW_OVAL": 1,
+    "CONTAINER_END": 8,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

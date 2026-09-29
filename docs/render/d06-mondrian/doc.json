@@ -1,0 +1,110 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "mondrian",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE53935"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 180,
+            "bottom": 180,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF1E88E5"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 200,
+            "top": 210,
+            "right": 300,
+            "bottom": 300,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFDD835"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 200,
+            "top": 0,
+            "right": 300,
+            "bottom": 120,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF111111",
+            "style": "stroke",
+            "width": 12.0
+          }
+        },
+        {
+          "drawLine": {
+            "x1": 190,
+            "y1": 0,
+            "x2": 190,
+            "y2": 300
+          }
+        },
+        {
+          "drawLine": {
+            "x1": 0,
+            "y1": 190,
+            "x2": 300,
+            "y2": 190
+          }
+        },
+        {
+          "drawLine": {
+            "x1": 200,
+            "y1": 120,
+            "x2": 300,
+            "y2": 120
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "ops": [
+              {
+                "style": "fill"
+              },
+              {
+                "linearGradient": {
+                  "x1": 0.0,
+                  "y1": 0.0,
+                  "x2": 320.0,
+                  "y2": 320.0,
+                  "colors": [
+                    "#FF6200EE",
+                    "#FF03DAC6"
+                  ],
+                  "tileMode": 0
+                }
+              }
+            ]
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 160
+          }
+        },
+        {
+          "paint": {
+            "sweepGradient": {
+              "centerX": 160.0,
+              "centerY": 240.0,
+              "colors": [
+                "#FFE53935",
+                "#FFFDD835",
+                "#FF43A047",
+                "#FFE53935"
+              ]
+            }
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 160.0,
+            "cy": 240.0,
+            "radius": 60.0
+          }
+        },
+        {
+          "setColor": {
+            "color": "#FFFFFFFF"
+          }
+        },
+        {
+          "setStyle": {
+            "style": "stroke"
+          }
+        },
+        {
+          "setStrokeWidth": {
+            "width": 4.0
+          }
+        },
+        {
+          "paint": {
+            "ops": [
+              {
+                "color": "#FF101820"
+              },
+              {
+                "style": "fill"
+              },
+              {
+                "alpha": 0.5
+              }
+            ]
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 20,
+            "top": 20,
+            "right": 120,
+            "bottom": 80,
+            "rx": 8,
+            "ry": 8
+          }
+        }
+      ]
+    }
+  }
+}

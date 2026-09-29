@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels/65-smart-mirror",
+  "sha256": "aad5c9de5bdf471d51ef50addcfbf6ad33dccea5fdf6b764cea77c304f6e1dee",
+  "bytes": 1919,
+  "ops": 87,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 7,
+    "ANIMATED_FLOAT": 19,
+    "DRAW_CIRCLE": 6,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DRAW_OVAL": 2,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "drawCircle",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,47 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "contentDescription": "modifiers added in the current parser",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": ["fillMaxSize", { "background": "#FF12161C" }, { "padding": 16 }],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center",
+      "children": [
+        {
+          "box": {
+            "modifiers": [
+              { "size": [120, 60] },
+              { "background": "#FF2D7FF9" },
+              { "clip": { "type": "roundRect", "radius": 12 } },
+              { "graphicsLayer": { "rotationZ": -6.0, "scaleX": 1.05, "scaleY": 1.05, "alpha": 0.95 } },
+              { "zIndex": 2.0 }
+            ],
+            "children": [
+              { "text": { "value": "graphicsLayer", "fontSize": 13.0, "color": "#FFFFFFFF" } }
+            ]
+          }
+        },
+        { "spacer": { "modifiers": [{ "height": 14 }] } },
+        {
+          "box": {
+            "modifiers": [
+              { "size": [140, 44] },
+              { "offset": [12, 0] },
+              { "background": "#FF1E2530" },
+              { "border": { "width": 2.0, "cornerRadius": 10.0, "color": "#FF5AC8FA" } },
+              { "semantics": { "contentDescription": "offset + border box" } }
+            ],
+            "children": [
+              { "text": { "value": "offset + border", "fontSize": 13.0, "color": "#FF9AB0C8" } }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

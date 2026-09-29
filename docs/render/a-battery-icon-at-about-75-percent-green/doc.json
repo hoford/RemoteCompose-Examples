@@ -1,0 +1,88 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "battery",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "variable": {
+            "name": "pct",
+            "value": 75.0,
+            "commit": true
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 6.0
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 60,
+            "top": 110,
+            "right": 230,
+            "bottom": 190,
+            "rx": 12,
+            "ry": 12
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 230,
+            "top": 135,
+            "right": 248,
+            "bottom": 165,
+            "rx": 4,
+            "ry": 4
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF00C853",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 70,
+            "top": 120,
+            "right": "70 + @pct / 100 * 160",
+            "bottom": 180,
+            "rx": 6,
+            "ry": 6
+          }
+        }
+      ]
+    }
+  }
+}

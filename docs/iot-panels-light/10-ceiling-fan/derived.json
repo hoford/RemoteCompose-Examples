@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels-light/10-ceiling-fan",
+  "sha256": "4cb20a9d915b5fc76c8d1d3ca4d0d190e7b55171347428c56c2cd0dbdd880727",
+  "bytes": 1749,
+  "ops": 84,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 21,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 7,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 15,
+    "DRAW_OVAL": 1,
+    "CONTAINER_END": 10,
+    "DRAW_CIRCLE": 8,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "MATRIX_RESTORE": 2,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

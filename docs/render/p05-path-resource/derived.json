@@ -1,0 +1,32 @@
+{
+  "id": "render/p05-path-resource",
+  "sha256": "7839194e5f3713c64f733547b36e399581c8c2dee4941fcac1845f08baab1e82",
+  "bytes": 477,
+  "ops": 21,
+  "distinctOps": 11,
+  "width": 220,
+  "height": 220,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 3,
+    "NAMED_VARIABLE": 3,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "DRAW_PATH": 2,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

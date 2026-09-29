@@ -1,0 +1,51 @@
+{
+  "id": "iot-panels-light/74-smart-planter",
+  "sha256": "5fb439da8c09294a8bed9cccbac99fef6b27f3b2802292fc6bdea0b5892729e7",
+  "bytes": 2824,
+  "ops": 110,
+  "distinctOps": 20,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 29,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DATA_TEXT": 7,
+    "ANIMATED_FLOAT": 24,
+    "CONTAINER_END": 10,
+    "DRAW_PATH": 5,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 2,
+    "DRAW_OVAL": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

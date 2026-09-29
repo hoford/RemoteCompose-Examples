@@ -1,0 +1,46 @@
+{
+  "id": "render/drag-circles",
+  "sha256": "e3a20b7c6cfe77d6e0bcc76547532c43a64a1c87d56427cb606b7acd4f47c05c",
+  "bytes": 3704,
+  "ops": 159,
+  "distinctOps": 20,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 22,
+    "DATA_FLOAT": 22,
+    "ANIMATED_FLOAT": 43,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_TOUCH_DOWN": 1,
+    "CONTAINER_END": 18,
+    "MODIFIER_TOUCH_UP": 1,
+    "MODIFIER_TOUCH_CANCEL": 1,
+    "PAINT_VALUES": 18,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DRAW_CIRCLE": 12,
+    "RUN_ACTION": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,316 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 620,
+  "profiles": 513,
+  "contentDescription": "themed colour resolution on cold start",
+  "orderedResources": true
+ },
+ "resources": {
+  "colors": {
+   "t_alpha": {
+    "light": "#FFFF00FF",
+    "dark": "#FF00FFFF"
+   },
+   "t_beta": {
+    "light": "#FFFF8000",
+    "dark": "#FF0080FF"
+   },
+   "t_gamma": {
+    "light": "#FFFFFFFF",
+    "dark": "#FF202020"
+   }
+  }
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF606060"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 480,
+         "bottom": 620
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF000000"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "themed",
+         "x": 24,
+         "y": 34,
+         "panX": -1,
+         "panY": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "light ref",
+         "x": 190,
+         "y": 34,
+         "panX": -1,
+         "panY": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "dark ref",
+         "x": 340,
+         "y": 34,
+         "panX": -1,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "@colors.t_alpha"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 24,
+         "top": 60,
+         "right": 164,
+         "bottom": 160
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF00FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 180,
+         "top": 60,
+         "right": 310,
+         "bottom": 160
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF00FFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 326,
+         "top": 60,
+         "right": 456,
+         "bottom": 160
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "@colors.t_beta"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 24,
+         "top": 180,
+         "right": 164,
+         "bottom": 280
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF8000"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 180,
+         "top": 180,
+         "right": 310,
+         "bottom": 280
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0080FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 326,
+         "top": 180,
+         "right": 456,
+         "bottom": 280
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "@colors.t_gamma"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 24,
+         "top": 300,
+         "right": 164,
+         "bottom": 400
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 180,
+         "top": 300,
+         "right": 310,
+         "bottom": 400
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF202020"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 326,
+         "top": 300,
+         "right": 456,
+         "bottom": 400
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "flower",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "pathCreate": {
+            "id": "f",
+            "x": "150 + (60 + cos(0) * 45)",
+            "y": 150.0
+          }
+        },
+        {
+          "loop": {
+            "from": 1.0,
+            "until": 121.0,
+            "index": "i",
+            "commands": [
+              {
+                "pathAppendLineTo": {
+                  "path": "f",
+                  "x": "150 + cos(i * 0.05236) * (60 + cos(i * 0.05236 * 6) * 45)",
+                  "y": "150 + sin(i * 0.05236) * (60 + cos(i * 0.05236 * 6) * 45)"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "pathAppendClose": {
+            "path": "f"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE91E63",
+            "style": "stroke",
+            "width": 2.5
+          }
+        },
+        {
+          "drawPath": {
+            "path": "f"
+          }
+        }
+      ]
+    }
+  }
+}

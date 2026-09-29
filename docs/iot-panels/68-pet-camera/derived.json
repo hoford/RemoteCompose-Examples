@@ -1,0 +1,52 @@
+{
+  "id": "iot-panels/68-pet-camera",
+  "sha256": "e6d7cbee998a0e49d470c01820b26d14803f75e7b0efc6adb8c6a5d93037a581",
+  "bytes": 2394,
+  "ops": 103,
+  "distinctOps": 21,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 7,
+    "DRAW_OVAL": 2,
+    "DRAW_CIRCLE": 12,
+    "ANIMATED_FLOAT": 24,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 2,
+    "DATA_TEXT": 3,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 7,
+    "MATRIX_TRANSLATE": 1,
+    "DRAW_PATH": 3,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

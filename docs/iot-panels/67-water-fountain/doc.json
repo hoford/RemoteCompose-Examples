@@ -1,0 +1,661 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Water Fountain \u2014 circulating \u00b7 filtered"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 72,
+         "top": 200,
+         "right": 288,
+         "bottom": 272
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A121B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 84,
+         "top": 206,
+         "right": 276,
+         "bottom": 266
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.24
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 88,
+         "top": 214,
+         "right": 272,
+         "bottom": 264
+        }
+       },
+       {
+        "loop": {
+         "index": "r",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "rp",
+            "value": "fract(@t * 0.9 + r / 3.0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "rr",
+            "value": "10.0 + @rp * 74.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 1.8
+             },
+             {
+              "alpha": "0.42 * (1.0 - @rp)"
+             }
+            ]
+           }
+          },
+          {
+           "drawOval": {
+            "left": "214.0 - @rr",
+            "top": "236.0 - @rr * 0.30",
+            "right": "214.0 + @rr",
+            "bottom": "236.0 + @rr * 0.30"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 120,
+         "top": 108,
+         "right": 176,
+         "bottom": 214,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 172 118 L 214 118 L 214 134 L 172 134 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 120,
+         "top": 108,
+         "right": 176,
+         "bottom": 214,
+         "rx": 10,
+         "ry": 10
+        }
+       },
+       {
+        "loop": {
+         "index": "u",
+         "from": 0.0,
+         "until": 8.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "up",
+            "value": "fract(@t * 1.1 + u * 0.125)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 0.7
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "148.0 + sin(u * 2.3) * 6.0",
+            "cy": "206.0 - @up * 76.0",
+            "radius": 3.4
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "index": "a",
+         "from": 0.0,
+         "until": 14.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "ap",
+            "value": "fract(@t * 1.2 + a * 0.0714286)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#54C7F5"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.85 * (1.0 - @ap * 0.35)"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "196.0 + @ap * 22.0",
+            "cy": "126.0 + @ap * @ap * 108.0 - @ap * 6.0",
+            "radius": 3.8
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 128,
+         "top": 150,
+         "right": 168,
+         "bottom": 200,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "loop": {
+         "index": "g",
+         "from": 0.0,
+         "until": 4.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#1B2534"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.0
+             },
+             {
+              "strokeCap": "round"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 134,
+            "y1": "160.0 + g * 10.0",
+            "x2": 162,
+            "y2": "160.0 + g * 10.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.20 + 0.6 * (0.5 + 0.5 * sin(@t * 1.5707963))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 148,
+         "cy": 122,
+         "radius": 6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.7
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 40,
+         "top": 196,
+         "right": 106,
+         "bottom": 234
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 100,
+         "cy": 194,
+         "radius": 15
+        }
+       },
+       {
+        "drawPath": "M 90 184 L 94 168 L 102 180 Z"
+       },
+       {
+        "drawPath": "M 106 180 L 114 168 L 116 184 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#1B2534"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.4
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.7
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 42 210 Q 24 196 32 180"
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#54C7F5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Water Fountain",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "circulating \u00b7 filtered",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

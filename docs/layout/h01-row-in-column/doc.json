@@ -1,0 +1,79 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H01 a row nested inside a column"
+  },
+  "root": {
+    "type": "column",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "row",
+        "modifiers": [
+          {
+            "height": 60
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 50
+              },
+              {
+                "height": 30
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 70
+              },
+              {
+                "height": 30
+              },
+              {
+                "background": "#FFFFB020"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      }
+    ]
+  }
+}

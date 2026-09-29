@@ -1,0 +1,70 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "variable": {
+            "name": "a",
+            "value": {
+              "value": "(sin(time) + 1) * 100 + 40",
+              "anim": 1.2
+            },
+            "commit": true
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF18FFB2",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": "@a"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFCA28",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": {
+              "value": "150 + cos(time) * 90",
+              "anim": 0.8
+            },
+            "cy": 150.0,
+            "radius": 18.0
+          }
+        }
+      ]
+    }
+  }
+}

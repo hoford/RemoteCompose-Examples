@@ -1,0 +1,54 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "a3_wave",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFCA28",
+            "style": "fill"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 40.0,
+            "index": "i",
+            "commands": [
+              {
+                "drawCircle": {
+                  "cx": "8 + i * 8",
+                  "cy": "150 + sin(time * 2 + i * 0.35) * 70",
+                  "radius": "4"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "render/disco-ball",
+  "sha256": "ec9b539a6b1bcde3d6102f457bc2a11bad0d97cf06c377352b45013291eb7473",
+  "bytes": 16095,
+  "ops": 420,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 30,
+    "DRAW_CIRCLE": 43,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 244,
+    "CONTAINER_END": 75
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

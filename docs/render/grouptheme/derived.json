@@ -1,0 +1,25 @@
+{
+  "id": "render/grouptheme",
+  "sha256": "b44fe0337f649745cc8439f567694f3bff8d371f3408930cffb6f223473af320",
+  "bytes": 241,
+  "ops": 11,
+  "distinctOps": 5,
+  "width": 480,
+  "height": 260,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "COLOR_THEME": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 4
+  },
+  "apis": [
+    "drawRect",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

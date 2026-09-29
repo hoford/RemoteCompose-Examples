@@ -1,0 +1,126 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "buttons",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "children": [
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Primary",
+                  "fontSize": 20.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 56.0
+              },
+              {
+                "background": "#FF1E88E5"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Success",
+                  "fontSize": 20.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 56.0
+              },
+              {
+                "background": "#FF43A047"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Danger",
+                  "fontSize": 20.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 56.0
+              },
+              {
+                "background": "#FFE53935"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "Neutral",
+                  "fontSize": 20.0,
+                  "color": "#FF263238",
+                  "fontWeight": 600.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 56.0
+              },
+              {
+                "background": "#FFCFD8DC"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF202830"
+        },
+        {
+          "padding": 16
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center"
+    }
+  }
+}

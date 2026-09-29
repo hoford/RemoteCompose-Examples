@@ -1,0 +1,305 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 600,
+  "profiles": 513,
+  "contentDescription": "nested scrollers: the inner one must take the press"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF101828"
+   },
+   {
+    "verticalScroll": 0.0
+   }
+  ],
+  "children": [
+   {
+    "box": {
+     "modifiers": [
+      {
+       "height": 150
+      },
+      "fillMaxWidth",
+      {
+       "background": "#FFFFB020"
+      }
+     ],
+     "children": [
+      {
+       "text": {
+        "text": "out0",
+        "fontSize": 32,
+        "color": "#FF101828"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "box": {
+     "modifiers": [
+      {
+       "height": 150
+      },
+      "fillMaxWidth",
+      {
+       "background": "#FFA8701E"
+      }
+     ],
+     "children": [
+      {
+       "text": {
+        "text": "out1",
+        "fontSize": 32,
+        "color": "#FF101828"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "column": {
+     "modifiers": [
+      {
+       "height": 300
+      },
+      "fillMaxWidth",
+      {
+       "background": "#FF1E5FA8"
+      },
+      {
+       "verticalScroll": 0.0
+      }
+     ],
+     "children": [
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in0",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF89C2FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in1",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in2",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF89C2FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in3",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in4",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF89C2FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in5",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in6",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 150
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF89C2FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "in7",
+           "fontSize": 32,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "box": {
+     "modifiers": [
+      {
+       "height": 150
+      },
+      "fillMaxWidth",
+      {
+       "background": "#FFFFB020"
+      }
+     ],
+     "children": [
+      {
+       "text": {
+        "text": "out2",
+        "fontSize": 32,
+        "color": "#FF101828"
+       }
+      }
+     ]
+    }
+   },
+   {
+    "box": {
+     "modifiers": [
+      {
+       "height": 150
+      },
+      "fillMaxWidth",
+      {
+       "background": "#FFA8701E"
+      }
+     ],
+     "children": [
+      {
+       "text": {
+        "text": "out3",
+        "fontSize": 32,
+        "color": "#FF101828"
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

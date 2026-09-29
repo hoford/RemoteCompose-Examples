@@ -1,0 +1,66 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 320,
+    "contentDescription": "weather",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "children": [
+        {
+          "text": {
+            "value": "San Francisco",
+            "fontSize": 22.0,
+            "color": "#FFFFFFFF",
+            "fontWeight": 600.0
+          }
+        },
+        {
+          "text": {
+            "value": "18°",
+            "fontSize": 84.0,
+            "color": "#FFFFFFFF",
+            "fontWeight": 300.0
+          }
+        },
+        {
+          "text": {
+            "value": "Partly Cloudy",
+            "fontSize": 18.0,
+            "color": "#FFBBDEFB"
+          }
+        },
+        {
+          "text": {
+            "value": "H 21°   L 13°",
+            "fontSize": 15.0,
+            "color": "#FF90CAF9",
+            "modifiers": [
+              {
+                "padding": [
+                  0,
+                  10,
+                  0,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF1976D2"
+        },
+        {
+          "padding": 24
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center"
+    }
+  }
+}

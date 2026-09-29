@@ -1,0 +1,38 @@
+{
+  "id": "render/asteroids",
+  "sha256": "e361b9e95b790626e8cb3824c26d0b1af3b8a11542e36348f918cd2e572547de",
+  "bytes": 20860,
+  "ops": 584,
+  "distinctOps": 12,
+  "width": 480,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 454,
+    "MATRIX_SCALE": 1,
+    "PAINT_VALUES": 13,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 104,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

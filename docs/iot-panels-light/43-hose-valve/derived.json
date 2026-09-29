@@ -1,0 +1,49 @@
+{
+  "id": "iot-panels-light/43-hose-valve",
+  "sha256": "18c354f688a5ebfd0556ec1c367f321c857c08235b5c0bcc28c633c2b1d697ae",
+  "bytes": 2243,
+  "ops": 99,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 30,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 12,
+    "DRAW_LINE": 1,
+    "ANIMATED_FLOAT": 19,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DATA_TEXT": 5,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_CIRCLE": 7,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 8,
+    "DRAW_OVAL": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

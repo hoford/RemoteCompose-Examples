@@ -1,0 +1,30 @@
+{
+  "id": "render/bullseye",
+  "sha256": "7561ec44c51e70f76228047c2a6ef5c0005cd2886d2cdb770522b87f986568bb",
+  "bytes": 285,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

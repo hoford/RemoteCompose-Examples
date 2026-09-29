@@ -1,0 +1,28 @@
+{
+  "id": "render/04-align-padding",
+  "sha256": "c6da209f1aef7fea2a611e673a2b1b5be76f561d72f763f3153e0277df515d1d",
+  "bytes": 326,
+  "ops": 24,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_PADDING": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 13,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

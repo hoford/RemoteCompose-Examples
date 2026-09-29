@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels-light/34-tumble-dryer",
+  "sha256": "af18b58eaf8bdab10e0ea3534bbc211c96f9762972b687d95bb31cb40b615112",
+  "bytes": 2297,
+  "ops": 103,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 29,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 16,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 19,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 9,
+    "DRAW_TEXT_ANCHOR": 3,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 2,
+    "MATRIX_RESTORE": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

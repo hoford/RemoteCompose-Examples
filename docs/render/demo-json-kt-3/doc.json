@@ -1,0 +1,284 @@
+{
+  "header": {
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "variables": [
+              {
+                "fov": 400
+              },
+              {
+                "dist": 4
+              },
+              {
+                "rotX": "time * 0.7"
+              },
+              {
+                "rotY": "time * 1.1"
+              },
+              {
+                "cosX": "cos($vars.rotX)"
+              },
+              {
+                "sinX": "sin($vars.rotX)"
+              },
+              {
+                "cosY": "cos($vars.rotY)"
+              },
+              {
+                "sinY": "sin($vars.rotY)"
+              },
+              {
+                "cx": "width / 2"
+              },
+              {
+                "cy": "height / 2"
+              },
+              {
+                "v0x": "(-1 * $vars.cosY + -1 * $vars.sinY)"
+              },
+              {
+                "v0y": "(-1 * $vars.cosX - (-1 * -1 * $vars.sinY + -1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v0z": "(-1 * $vars.sinX + (-1 * -1 * $vars.sinY + -1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v0px": "$vars.v0x * $vars.fov / $vars.v0z + $vars.cx"
+              },
+              {
+                "v0py": "$vars.v0y * $vars.fov / $vars.v0z + $vars.cy"
+              },
+              {
+                "v1x": "(1 * $vars.cosY + -1 * $vars.sinY)"
+              },
+              {
+                "v1y": "(-1 * $vars.cosX - (1 * -1 * $vars.sinY + -1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v1z": "(-1 * $vars.sinX + (1 * -1 * $vars.sinY + -1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v1px": "$vars.v1x * $vars.fov / $vars.v1z + $vars.cx"
+              },
+              {
+                "v1py": "$vars.v1y * $vars.fov / $vars.v1z + $vars.cy"
+              },
+              {
+                "v2x": "(1 * $vars.cosY + 1 * $vars.sinY)"
+              },
+              {
+                "v2y": "(1 * $vars.cosX - (1 * 1 * $vars.sinY + 1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v2z": "(1 * $vars.sinX + (1 * 1 * $vars.sinY + 1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v2px": "$vars.v2x * $vars.fov / $vars.v2z + $vars.cx"
+              },
+              {
+                "v2py": "$vars.v2y * $vars.fov / $vars.v2z + $vars.cy"
+              },
+              {
+                "v3x": "(-1 * $vars.cosY + 1 * $vars.sinY)"
+              },
+              {
+                "v3y": "(1 * $vars.cosX - (-1 * 1 * $vars.sinY + 1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v3z": "(1 * $vars.sinX + (-1 * 1 * $vars.sinY + 1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v3px": "$vars.v3x * $vars.fov / $vars.v3z + $vars.cx"
+              },
+              {
+                "v3py": "$vars.v3y * $vars.fov / $vars.v3z + $vars.cy"
+              },
+              {
+                "v4x": "(-1 * $vars.cosY + -1 * $vars.sinY)"
+              },
+              {
+                "v4y": "(-1 * $vars.cosX - (-1 * -1 * $vars.sinY + 1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v4z": "(-1 * $vars.sinX + (-1 * -1 * $vars.sinY + 1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v4px": "$vars.v4x * $vars.fov / $vars.v4z + $vars.cx"
+              },
+              {
+                "v4py": "$vars.v4y * $vars.fov / $vars.v4z + $vars.cy"
+              },
+              {
+                "v5x": "(1 * $vars.cosY + -1 * $vars.sinY)"
+              },
+              {
+                "v5y": "(-1 * $vars.cosX - (1 * -1 * $vars.sinY + 1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v5z": "(-1 * $vars.sinX + (1 * -1 * $vars.sinY + 1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v5px": "$vars.v5x * $vars.fov / $vars.v5z + $vars.cx"
+              },
+              {
+                "v5py": "$vars.v5y * $vars.fov / $vars.v5z + $vars.cy"
+              },
+              {
+                "v6x": "(1 * $vars.cosY + 1 * $vars.sinY)"
+              },
+              {
+                "v6y": "(1 * $vars.cosX - (1 * 1 * $vars.sinY + -1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v6z": "(1 * $vars.sinX + (1 * 1 * $vars.sinY + -1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v6px": "$vars.v6x * $vars.fov / $vars.v6z + $vars.cx"
+              },
+              {
+                "v6py": "$vars.v6y * $vars.fov / $vars.v6z + $vars.cy"
+              },
+              {
+                "v7x": "(-1 * $vars.cosY + 1 * $vars.sinY)"
+              },
+              {
+                "v7y": "(1 * $vars.cosX - (-1 * 1 * $vars.sinY + -1 * $vars.cosY) * $vars.sinX)"
+              },
+              {
+                "v7z": "(1 * $vars.sinX + (-1 * 1 * $vars.sinY + -1 * $vars.cosY) * $vars.cosX) + $vars.dist"
+              },
+              {
+                "v7px": "$vars.v7x * $vars.fov / $vars.v7z + $vars.cx"
+              },
+              {
+                "v7py": "$vars.v7y * $vars.fov / $vars.v7z + $vars.cy"
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              {
+                "fillMaxSize": 1.0
+              }
+            ],
+            "commands": [
+              {
+                "setColor": {
+                  "color": "#00FF00"
+                }
+              },
+              {
+                "setStrokeWidth": {
+                  "width": 2
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v0px",
+                  "y1": "$vars.v0py",
+                  "x2": "$vars.v1px",
+                  "y2": "$vars.v1py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v1px",
+                  "y1": "$vars.v1py",
+                  "x2": "$vars.v2px",
+                  "y2": "$vars.v2py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v2px",
+                  "y1": "$vars.v2py",
+                  "x2": "$vars.v3px",
+                  "y2": "$vars.v3py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v3px",
+                  "y1": "$vars.v3py",
+                  "x2": "$vars.v0px",
+                  "y2": "$vars.v0py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v4px",
+                  "y1": "$vars.v4py",
+                  "x2": "$vars.v5px",
+                  "y2": "$vars.v5py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v5px",
+                  "y1": "$vars.v5py",
+                  "x2": "$vars.v6px",
+                  "y2": "$vars.v6py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v6px",
+                  "y1": "$vars.v6py",
+                  "x2": "$vars.v7px",
+                  "y2": "$vars.v7py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v7px",
+                  "y1": "$vars.v7py",
+                  "x2": "$vars.v4px",
+                  "y2": "$vars.v4py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v0px",
+                  "y1": "$vars.v0py",
+                  "x2": "$vars.v4px",
+                  "y2": "$vars.v4py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v1px",
+                  "y1": "$vars.v1py",
+                  "x2": "$vars.v5px",
+                  "y2": "$vars.v5py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v2px",
+                  "y1": "$vars.v2py",
+                  "x2": "$vars.v6px",
+                  "y2": "$vars.v6py"
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": "$vars.v3px",
+                  "y1": "$vars.v3py",
+                  "x2": "$vars.v7px",
+                  "y2": "$vars.v7py"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

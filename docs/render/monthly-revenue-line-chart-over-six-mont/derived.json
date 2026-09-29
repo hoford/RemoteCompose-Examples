@@ -1,0 +1,40 @@
+{
+  "id": "render/monthly-revenue-line-chart-over-six-mont",
+  "sha256": "5dc289bb70cb7c0f6d8d4a2cdd9e895e54761a5e0d8d5f649910b03e8e33380c",
+  "bytes": 598,
+  "ops": 29,
+  "distinctOps": 13,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 8,
+    "DRAW_LINE": 2,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 6,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

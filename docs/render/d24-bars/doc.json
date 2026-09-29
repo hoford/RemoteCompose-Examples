@@ -1,0 +1,105 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 340,
+    "height": 240,
+    "contentDescription": "bars",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "floatArrays": [
+              {
+                "d": [
+                  50,
+                  120,
+                  80,
+                  170,
+                  110,
+                  200,
+                  140,
+                  95
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FF0E1116",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 340,
+                  "bottom": 240
+                }
+              },
+              {
+                "variable": {
+                  "name": "n",
+                  "value": "arrayLength(@d)",
+                  "commit": true
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "linearGradient": {
+                        "x1": 0.0,
+                        "y1": 220.0,
+                        "x2": 0.0,
+                        "y2": 20.0,
+                        "colors": [
+                          "#FF7C4DFF",
+                          "#FF18FFB2"
+                        ],
+                        "tileMode": 0
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": "@n",
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRoundRect": {
+                        "left": "20 + i * 40",
+                        "top": "220 - arrayGet(@d, i)",
+                        "right": "20 + i * 40 + 30",
+                        "bottom": 220.0,
+                        "rx": 5.0,
+                        "ry": 5.0
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

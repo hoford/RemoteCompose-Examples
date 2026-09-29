@@ -1,0 +1,83 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "donut chart",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF2196F3",
+            "style": "stroke",
+            "width": 40
+          }
+        },
+        {
+          "drawArc": {
+            "left": 75,
+            "top": 75,
+            "right": 225,
+            "bottom": 225,
+            "startAngle": -90,
+            "sweepAngle": 120
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4CAF50",
+            "style": "stroke",
+            "width": 40
+          }
+        },
+        {
+          "drawArc": {
+            "left": 75,
+            "top": 75,
+            "right": 225,
+            "bottom": 225,
+            "startAngle": 30,
+            "sweepAngle": 120
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFC107",
+            "style": "stroke",
+            "width": 40
+          }
+        },
+        {
+          "drawArc": {
+            "left": 75,
+            "top": 75,
+            "right": 225,
+            "bottom": 225,
+            "startAngle": 150,
+            "sweepAngle": 120
+          }
+        }
+      ]
+    }
+  }
+}

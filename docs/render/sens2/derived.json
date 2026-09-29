@@ -1,0 +1,36 @@
+{
+  "id": "render/sens2",
+  "sha256": "ac1438ce9b2da69c011f161e8fc1608dd2244aa19d28c1b1b11a10b0f9edd286",
+  "bytes": 1045,
+  "ops": 43,
+  "distinctOps": 11,
+  "width": 420,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 20,
+    "ANIMATED_FLOAT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

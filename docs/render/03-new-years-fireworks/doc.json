@@ -1,0 +1,2084 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 360,
+    "height": 360,
+    "profiles": 513,
+    "contentDescription": "New Year's Fireworks — rockets launching and bursting fireworks countdown",
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "box": {
+        "modifiers": [
+          "fillMaxSize"
+        ],
+        "children": [
+          {
+            "type": "canvas",
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "variable": {
+                  "name": "progress",
+                  "value": "(continuousSec() % 3.0) * 33.333"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#182846"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 360,
+                  "bottom": 360
+                }
+              },
+              {
+                "variable": {
+                  "name": "p",
+                  "value": "fract(continuousSec() / 3.0)"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFFFFF"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "textSize": 23
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawTextAnchored": {
+                  "text": "New Year's Fireworks",
+                  "x": 180.0,
+                  "y": 38.0,
+                  "panX": 0,
+                  "panY": 0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#40C4FF"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.85
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 8.0,
+                  "step": 1.0,
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": "20.0 + fract(i * 0.618 + continuousSec() * 0.08) * 320.0",
+                        "top": "30.0 + fract(i * 0.814 + continuousSec() * 0.15) * 250.0",
+                        "right": "28.0 + fract(i * 0.618 + continuousSec() * 0.08) * 320.0",
+                        "bottom": "34.0 + fract(i * 0.814 + continuousSec() * 0.15) * 250.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FF4081"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.85
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 8.0,
+                  "step": 1.0,
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": "30.0 + fract(i * 0.419 + continuousSec() * 0.07) * 300.0",
+                        "top": "40.0 + fract(i * 0.632 + continuousSec() * 0.14) * 240.0",
+                        "right": "37.0 + fract(i * 0.419 + continuousSec() * 0.07) * 300.0",
+                        "bottom": "45.0 + fract(i * 0.632 + continuousSec() * 0.14) * 240.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFD700"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.9
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 8.0,
+                  "step": 1.0,
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": "15.0 + fract(i * 0.883 + continuousSec() * 0.09) * 330.0",
+                        "top": "35.0 + fract(i * 0.351 + continuousSec() * 0.16) * 245.0",
+                        "right": "22.0 + fract(i * 0.883 + continuousSec() * 0.09) * 330.0",
+                        "bottom": "39.0 + fract(i * 0.351 + continuousSec() * 0.16) * 245.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "b",
+                  "commands": [
+                    {
+                      "conditionalOperations": {
+                        "condition": "lt",
+                        "v1": "b",
+                        "v2": "2.0 + @p * 10.0",
+                        "commands": [
+                          {
+                            "variable": {
+                              "name": "ph",
+                              "value": "fract(continuousSec() * 0.36 + b * 0.29)"
+                            }
+                          },
+                          {
+                            "variable": {
+                              "name": "bx",
+                              "value": "44.0 + fract(b * 0.6180339 + continuousSec() * 0.011) * 272.0"
+                            }
+                          },
+                          {
+                            "variable": {
+                              "name": "by",
+                              "value": "68.0 + fract(b * 0.7548777 + continuousSec() * 0.008) * 148.0"
+                            }
+                          },
+                          {
+                            "variable": {
+                              "name": "rr",
+                              "value": "5.0 + @ph * 76.0"
+                            }
+                          },
+                          {
+                            "variable": {
+                              "name": "aa",
+                              "value": "(1.0 - @ph) * 0.66"
+                            }
+                          },
+                          {
+                            "paint": {
+                              "ops": [
+                                {
+                                  "color": "#FFEAD7"
+                                },
+                                {
+                                  "style": "fill"
+                                },
+                                {
+                                  "alpha": "(1.0 - @ph) * (1.0 - @ph) * 0.6"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "drawCircle": {
+                              "cx": "@bx",
+                              "cy": "@by",
+                              "radius": "3.0 + @ph * 4.0"
+                            }
+                          },
+                          {
+                            "loop": {
+                              "from": 0.0,
+                              "until": 16.0,
+                              "step": 1.0,
+                              "index": "j",
+                              "commands": [
+                                {
+                                  "conditionalOperations": {
+                                    "condition": "lt",
+                                    "v1": "b % 4",
+                                    "v2": 0.5,
+                                    "commands": [
+                                      {
+                                        "paint": {
+                                          "ops": [
+                                            {
+                                              "color": "#00E676"
+                                            },
+                                            {
+                                              "style": "stroke"
+                                            },
+                                            {
+                                              "strokeWidth": 2.8
+                                            },
+                                            {
+                                              "strokeCap": "round"
+                                            },
+                                            {
+                                              "alpha": "@aa"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "drawLine": {
+                                          "x1": "@bx + @rr * 0.24 * cos(j * 0.3926991)",
+                                          "y1": "@by + @rr * 0.24 * sin(j * 0.3926991)",
+                                          "x2": "@bx + @rr * cos(j * 0.3926991)",
+                                          "y2": "@by + @rr * sin(j * 0.3926991)"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "conditionalOperations": {
+                                    "condition": "ge",
+                                    "v1": "b % 4",
+                                    "v2": 0.5,
+                                    "commands": [
+                                      {
+                                        "conditionalOperations": {
+                                          "condition": "lt",
+                                          "v1": "b % 4",
+                                          "v2": 1.5,
+                                          "commands": [
+                                            {
+                                              "paint": {
+                                                "ops": [
+                                                  {
+                                                    "color": "#FF3D00"
+                                                  },
+                                                  {
+                                                    "style": "stroke"
+                                                  },
+                                                  {
+                                                    "strokeWidth": 2.8
+                                                  },
+                                                  {
+                                                    "strokeCap": "round"
+                                                  },
+                                                  {
+                                                    "alpha": "@aa"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "drawLine": {
+                                                "x1": "@bx + @rr * 0.24 * cos(j * 0.3926991)",
+                                                "y1": "@by + @rr * 0.24 * sin(j * 0.3926991)",
+                                                "x2": "@bx + @rr * cos(j * 0.3926991)",
+                                                "y2": "@by + @rr * sin(j * 0.3926991)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "conditionalOperations": {
+                                    "condition": "ge",
+                                    "v1": "b % 4",
+                                    "v2": 1.5,
+                                    "commands": [
+                                      {
+                                        "conditionalOperations": {
+                                          "condition": "lt",
+                                          "v1": "b % 4",
+                                          "v2": 2.5,
+                                          "commands": [
+                                            {
+                                              "paint": {
+                                                "ops": [
+                                                  {
+                                                    "color": "#FFC107"
+                                                  },
+                                                  {
+                                                    "style": "stroke"
+                                                  },
+                                                  {
+                                                    "strokeWidth": 2.8
+                                                  },
+                                                  {
+                                                    "strokeCap": "round"
+                                                  },
+                                                  {
+                                                    "alpha": "@aa"
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            {
+                                              "drawLine": {
+                                                "x1": "@bx + @rr * 0.24 * cos(j * 0.3926991)",
+                                                "y1": "@by + @rr * 0.24 * sin(j * 0.3926991)",
+                                                "x2": "@bx + @rr * cos(j * 0.3926991)",
+                                                "y2": "@by + @rr * sin(j * 0.3926991)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "conditionalOperations": {
+                                    "condition": "ge",
+                                    "v1": "b % 4",
+                                    "v2": 2.5,
+                                    "commands": [
+                                      {
+                                        "paint": {
+                                          "ops": [
+                                            {
+                                              "color": "#40C4FF"
+                                            },
+                                            {
+                                              "style": "fill"
+                                            },
+                                            {
+                                              "alpha": "@aa"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "drawCircle": {
+                                          "cx": "@bx + @rr * cos(j * 0.3926991)",
+                                          "cy": "@by + @rr * sin(j * 0.3926991)",
+                                          "radius": 2.9
+                                        }
+                                      },
+                                      {
+                                        "drawCircle": {
+                                          "cx": "@bx + @rr * 0.62 * cos((j * 0.3926991) + 0.196)",
+                                          "cy": "@by + @rr * 0.62 * sin((j * 0.3926991) + 0.196)",
+                                          "radius": 2.1
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#1C273E"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 280.0,
+                  "right": 360.0,
+                  "bottom": 360.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#28395A"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 2.0
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 0,
+                  "y1": 280.0,
+                  "x2": 360.0,
+                  "y2": 280.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#455A64"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 115.0,
+                  "top": 268.0,
+                  "right": 165.0,
+                  "bottom": 282.0,
+                  "rx": 3.0,
+                  "ry": 3.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#D32F2F"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 120.0,
+                  "top": 258.0,
+                  "right": 160.0,
+                  "bottom": 268.0,
+                  "rx": 2.0,
+                  "ry": 2.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFC107"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.9
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 138.0,
+                  "cy": 254.0,
+                  "radius": 4.5
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 145.0,
+                  "cy": 250.0,
+                  "radius": 5.5
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 152.0,
+                  "cy": 255.0,
+                  "radius": 4.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#1E88E5"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 162 170 L 176 150 L 194 162 L 180 182 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFFFFF"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 167 163 L 173 155 L 182 161 L 176 169 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#E53935"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 176 150 L 188 132 L 194 162 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FF9800"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.95
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 162 170 L 152 195 L 180 182 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFEB3B"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 165 172 L 158 188 L 177 180 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#43A047"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 132 205 L 138 188 L 148 192 L 142 209 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#00ACC1"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 138 188 L 143 175 L 148 192 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFC107"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.9
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 132 205 L 135 218 L 142 209 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#E53935"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 175 228 L 190 212 L 198 220 L 183 236 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFB300"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 190 212 L 202 200 L 198 220 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FF9800"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.9
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 175 228 L 165 240 L 183 236 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#E53935"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 32 232 L 42 195 L 56 226 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFD54F"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 3.0
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 36.0,
+                  "y1": 220.0,
+                  "x2": 49.0,
+                  "y2": 216.0
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 39.0,
+                  "y1": 208.0,
+                  "x2": 45.0,
+                  "y2": 206.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFD54F"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 42.0,
+                  "cy": 194.0,
+                  "radius": 4.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#43A047"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawOval": {
+                  "left": 30.0,
+                  "top": 224.0,
+                  "right": 58.0,
+                  "bottom": 234.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFEAD7"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 62.0,
+                  "cy": 242.0,
+                  "radius": 20.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#542D15"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "M 44 235 C 50 220, 74 220, 80 235 C 74 238, 66 235, 60 242 C 54 236, 48 238, 44 235 Z"
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#38180A"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 56.0,
+                  "cy": 242.0,
+                  "radius": 2.2
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 70.0,
+                  "cy": 242.0,
+                  "radius": 2.2
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FF8DA1"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 0.65
+                    }
+                  ]
+                }
+              },
+              {
+                "drawOval": {
+                  "left": 49.0,
+                  "top": 246.0,
+                  "right": 57.0,
+                  "bottom": 251.0
+                }
+              },
+              {
+                "drawOval": {
+                  "left": 69.0,
+                  "top": 246.0,
+                  "right": 77.0,
+                  "bottom": 251.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#E53935"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 1.8
+                    },
+                    {
+                      "strokeCap": "round"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawArc": {
+                  "left": 59.0,
+                  "top": 245.0,
+                  "right": 67.0,
+                  "bottom": 251.0,
+                  "startAngle": 0.0,
+                  "sweepAngle": 180.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#D32F2F"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 48.0,
+                  "top": 260.0,
+                  "right": 78.0,
+                  "bottom": 284.0,
+                  "rx": 6.0,
+                  "ry": 6.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFD54F"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 2.0
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 63.0,
+                  "cy": 272.0,
+                  "radius": 5.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#D32F2F"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 6.0
+                    },
+                    {
+                      "strokeCap": "round"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 76.0,
+                  "y1": 266.0,
+                  "x2": 88.0,
+                  "y2": 252.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFEAD7"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 89.0,
+                  "cy": 250.0,
+                  "radius": 3.5
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#1976D2"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 52.0,
+                  "top": 284.0,
+                  "right": 74.0,
+                  "bottom": 294.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#B71C1C"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 50.0,
+                  "top": 292.0,
+                  "right": 61.0,
+                  "bottom": 298.0,
+                  "rx": 2.0,
+                  "ry": 2.0
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": 65.0,
+                  "top": 292.0,
+                  "right": 76.0,
+                  "bottom": 298.0,
+                  "rx": 2.0,
+                  "ry": 2.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFFFFF"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "textSize": 24
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawTextAnchored": {
+                  "text": "Countdown...",
+                  "x": 165.0,
+                  "y": 332.0,
+                  "panX": 0,
+                  "panY": 0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#253A60"
+                    },
+                    {
+                      "style": "fill"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawCircle": {
+                  "cx": 315.0,
+                  "cy": 315.0,
+                  "radius": 26.0
+                }
+              },
+              {
+                "paint": {
+                  "ops": [
+                    {
+                      "color": "#FFEA00"
+                    },
+                    {
+                      "style": "stroke"
+                    },
+                    {
+                      "width": 1.0
+                    },
+                    {
+                      "strokeCap": "round"
+                    },
+                    {
+                      "alpha": 1.0
+                    }
+                  ]
+                }
+              },
+              {
+                "drawArc": {
+                  "left": 80.0,
+                  "top": 80.0,
+                  "right": 280.0,
+                  "bottom": 280.0,
+                  "startAngle": -90.0,
+                  "sweepAngle": "@progress * 3.6",
+                  "useCenter": false
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 0.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFFFFF"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFEA00"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 1.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFFFFF"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#00E5FF"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 2.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFEA00"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FF1744"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 3.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFFFFF"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#00E676"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 4.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#00E5FF"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#D500F9"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 12.0,
+                  "step": 1.0,
+                  "index": "n",
+                  "commands": [
+                    {
+                      "variable": {
+                        "name": "idx",
+                        "value": "n * 6.0 + 5.0"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fx",
+                        "value": "180.0 + 100.0 * cos((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "fy",
+                        "value": "180.0 + 100.0 * sin((-90.0 + @idx * 5.0) * 0.0174533)"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "x",
+                        "value": "max(0.0, min(1.0, (@progress - @idx * 1.3888) / 10.0))"
+                      }
+                    },
+                    {
+                      "variable": {
+                        "name": "s",
+                        "value": "sin(@x * 3.14159) + @x"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FFEA00"
+                          },
+                          {
+                            "style": "fill"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawCircle": {
+                        "cx": "@fx",
+                        "cy": "@fy",
+                        "radius": "@s * 2.0"
+                      }
+                    },
+                    {
+                      "paint": {
+                        "ops": [
+                          {
+                            "color": "#FF9100"
+                          },
+                          {
+                            "style": "stroke"
+                          },
+                          {
+                            "width": 1.5
+                          },
+                          {
+                            "strokeCap": "round"
+                          },
+                          {
+                            "alpha": 1.0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(-30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(-30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(-30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(-30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(30.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(30.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(30.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(30.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(90.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(90.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(90.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(90.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(150.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(150.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(150.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(150.0 * 0.0174533)"
+                      }
+                    },
+                    {
+                      "drawLine": {
+                        "x1": "@fx + @s * 4.0 * cos(210.0 * 0.0174533)",
+                        "y1": "@fy + @s * 4.0 * sin(210.0 * 0.0174533)",
+                        "x2": "@fx + @s * 8.0 * cos(210.0 * 0.0174533)",
+                        "y2": "@fy + @s * 8.0 * sin(210.0 * 0.0174533)"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 56.0
+              },
+              {
+                "height": 56.0
+              },
+              {
+                "offset": {
+                  "x": 287.0,
+                  "y": 287.0
+                }
+              },
+              {
+                "semantics": {
+                  "clickable": true,
+                  "contentDescription": "Cancel"
+                }
+              },
+              {
+                "onclick": {
+                  "type": "hostnamedaction",
+                  "name": "cancel"
+                }
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    }
+  ]
+}

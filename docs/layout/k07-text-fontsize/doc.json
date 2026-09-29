@@ -1,0 +1,44 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "K07 two font sizes stacked - relative heights should track the sizes"
+  },
+  "root": {
+    "type": "column",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "text",
+        "text": "Small",
+        "color": "#FF0B1020",
+        "fontSize": 12,
+        "modifiers": [
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Large",
+        "color": "#FF0B1020",
+        "fontSize": 30,
+        "modifiers": [
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

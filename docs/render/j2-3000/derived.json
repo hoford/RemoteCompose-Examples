@@ -1,0 +1,47 @@
+{
+  "id": "render/j2-3000",
+  "sha256": "6ac43c568e8c8813dc1e71e1c4e9ea297c1340b79e506beedfb2e8261a7f2c9f",
+  "bytes": 1520,
+  "ops": 73,
+  "distinctOps": 21,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 4,
+    "DATA_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 6,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_ROW": 2,
+    "MODIFIER_PADDING": 3,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 25,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "COMPONENT_VALUE": 2,
+    "DRAW_PATH": 1,
+    "RUN_ACTION": 1,
+    "ANIMATED_FLOAT": 8,
+    "MODIFIER_CLICK": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

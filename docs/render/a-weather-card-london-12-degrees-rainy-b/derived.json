@@ -1,0 +1,28 @@
+{
+  "id": "render/a-weather-card-london-12-degrees-rainy-b",
+  "sha256": "e9d078bfa2b55a0a4bb7a3ce6131b32d6bc3e244b80476e2ee51942e21cff764",
+  "bytes": 316,
+  "ops": 19,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 9
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

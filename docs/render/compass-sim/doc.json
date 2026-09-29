@@ -1,0 +1,1028 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 480,
+  "profiles": 513,
+  "contentDescription": "compass (simulated)"
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "scale": {
+         "sx": "width/480",
+         "sy": "height/480",
+         "pivotX": 0,
+         "pivotY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0B0E14"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 480,
+         "bottom": 480
+        }
+       },
+       {
+        "variable": {
+         "name": "shd",
+         "value": "sin(continuousSec()*0.4)"
+        }
+       },
+       {
+        "variable": {
+         "name": "chd",
+         "value": "cos(continuousSec()*0.4)"
+        }
+       },
+       {
+        "variable": {
+         "name": "srk",
+         "value": "sin(sin(continuousSec()*0.7)*0.25)"
+        }
+       },
+       {
+        "variable": {
+         "name": "crk",
+         "value": "cos(sin(continuousSec()*0.7)*0.25)"
+        }
+       },
+       {
+        "variable": {
+         "name": "max",
+         "value": "0"
+        }
+       },
+       {
+        "variable": {
+         "name": "may",
+         "value": "0 - 9.81*@srk"
+        }
+       },
+       {
+        "variable": {
+         "name": "maz",
+         "value": "9.81*@crk"
+        }
+       },
+       {
+        "variable": {
+         "name": "mgx",
+         "value": "0"
+        }
+       },
+       {
+        "variable": {
+         "name": "mgy",
+         "value": "0"
+        }
+       },
+       {
+        "variable": {
+         "name": "mgz",
+         "value": "0.4"
+        }
+       },
+       {
+        "variable": {
+         "name": "mmx",
+         "value": "0 - 20*@shd"
+        }
+       },
+       {
+        "variable": {
+         "name": "mmy",
+         "value": "20*@chd*@crk + 40*@srk"
+        }
+       },
+       {
+        "variable": {
+         "name": "mmz",
+         "value": "20*@chd*@srk - 40*@crk"
+        }
+       },
+       {
+        "variable": {
+         "name": "an",
+         "value": "hypot(hypot(@max, @may), @maz)"
+        }
+       },
+       {
+        "variable": {
+         "name": "ex",
+         "value": "@mmy*@maz - @mmz*@may"
+        }
+       },
+       {
+        "variable": {
+         "name": "ey",
+         "value": "@mmz*@max - @mmx*@maz"
+        }
+       },
+       {
+        "variable": {
+         "name": "ez",
+         "value": "@mmx*@may - @mmy*@max"
+        }
+       },
+       {
+        "variable": {
+         "name": "ny",
+         "value": "@maz*@ex - @max*@ez"
+        }
+       },
+       {
+        "variable": {
+         "name": "sy",
+         "value": "@ey * @an"
+        }
+       },
+       {
+        "variable": {
+         "name": "hh",
+         "value": "hypot(@ny, @sy)"
+        }
+       },
+       {
+        "variable": {
+         "name": "cm",
+         "value": "ifElse(1, (@ny)/(@hh), abs(@hh) - 0.0001)"
+        }
+       },
+       {
+        "variable": {
+         "name": "sm",
+         "value": "ifElse(0, (@sy)/(@hh), abs(@hh) - 0.0001)"
+        }
+       },
+       {
+        "variable": {
+         "name": "gv",
+         "value": "ifElse(0, (@max*@mgx + @may*@mgy + @maz*@mgz)/(@an), abs(@an) - 0.0001)"
+        }
+       },
+       {
+        "variable": {
+         "name": "mn",
+         "value": "hypot(hypot(@mmx, @mmy), @mmz)"
+        }
+       },
+       {
+        "variable": {
+         "name": "ok",
+         "value": "ifElse(0, 1, @mn - 15) * ifElse(0, 1, 90 - @mn)"
+        }
+       },
+       {
+        "variable": {
+         "name": "mw",
+         "value": "0.15 * @ok"
+        }
+       },
+       {
+        "variable": {
+         "name": "dtc",
+         "value": "clamp(0.004, 0.25, deltaTime())"
+        }
+       },
+       {
+        "variable": {
+         "name": "d",
+         "value": "0 - @gv * @dtc"
+        }
+       },
+       {
+        "variable": {
+         "name": "ee",
+         "value": "exp(0 - 6.0*@dtc)"
+        }
+       },
+       {
+        "variable": {
+         "name": "dte",
+         "value": "@dtc * @ee"
+        }
+       },
+       {
+        "variable": {
+         "name": "k1",
+         "value": "1 - @ee - 6.0*@dte"
+        }
+       },
+       {
+        "variable": {
+         "name": "k2",
+         "value": "@ee - 6.0*@dte"
+        }
+       },
+       {
+        "variable": {
+         "name": "k3",
+         "value": "36.0*@dte"
+        }
+       },
+       {
+        "variable": {
+         "name": "tilt",
+         "value": "acos(clamp(-1, 1, ifElse(1, (@maz)/(@an), abs(@an) - 0.0001))) * 57.29578"
+        }
+       },
+       {
+        "impulse": {
+         "duration": 1000000,
+         "start": 0,
+         "commands": [
+          {
+           "createParticles": {
+            "id": "cp",
+            "variables": [
+             "c",
+             "s",
+             "th",
+             "v"
+            ],
+            "initialValues": [
+             "1",
+             "0",
+             "0",
+             "0"
+            ],
+            "count": 1
+           }
+          },
+          {
+           "impulseProcess": {
+            "commands": [
+             {
+              "particlesLoop": {
+               "system": "@cp",
+               "equations": [
+                "(1 - @mw)*(c*cos(@d) - s*sin(@d)) + @mw*@cm",
+                "(1 - @mw)*(s*cos(@d) + c*sin(@d)) + @mw*@sm",
+                "th + (atan2(s*cos(th) - c*sin(th), c*cos(th) + s*sin(th)))*@k1 + v*@dte",
+                "v*@k2 + (atan2(s*cos(th) - c*sin(th), c*cos(th) + s*sin(th)))*@k3"
+               ],
+               "commands": []
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "variable": {
+         "name": "hdg",
+         "value": "(@th*57.29578 % 360 + 360) % 360"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF243044"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 240.0,
+         "radius": 196
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 240.0,
+         "radius": 150
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6D7A8C"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.4
+          },
+          {
+           "strokeCap": "butt"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 360.0,
+         "step": 5.0,
+         "index": "i",
+         "commands": [
+          {
+           "drawLine": {
+            "x1": "240.0 + sin((i*5 - @hdg)/57.29578)*176",
+            "y1": "240.0 - cos((i*5 - @hdg)/57.29578)*176",
+            "x2": "240.0 + sin((i*5 - @hdg)/57.29578)*192",
+            "y2": "240.0 - cos((i*5 - @hdg)/57.29578)*192"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB9C6D8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.2
+          },
+          {
+           "strokeCap": "butt"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 360.0,
+         "step": 15.0,
+         "index": "i",
+         "commands": [
+          {
+           "drawLine": {
+            "x1": "240.0 + sin((i*5 - @hdg)/57.29578)*168",
+            "y1": "240.0 - cos((i*5 - @hdg)/57.29578)*168",
+            "x2": "240.0 + sin((i*5 - @hdg)/57.29578)*192",
+            "y2": "240.0 - cos((i*5 - @hdg)/57.29578)*192"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "butt"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 360.0,
+         "step": 90.0,
+         "index": "i",
+         "commands": [
+          {
+           "drawLine": {
+            "x1": "240.0 + sin((i*5 - @hdg)/57.29578)*158",
+            "y1": "240.0 - cos((i*5 - @hdg)/57.29578)*158",
+            "x2": "240.0 + sin((i*5 - @hdg)/57.29578)*192",
+            "y2": "240.0 - cos((i*5 - @hdg)/57.29578)*192"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0453F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 30
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "N",
+         "x": "240.0 + sin((0 - @hdg)/57.29578)*132",
+         "y": "240.0 - cos((0 - @hdg)/57.29578)*132 + 9",
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0C6"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 24
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "E",
+         "x": "240.0 + sin((90 - @hdg)/57.29578)*132",
+         "y": "240.0 - cos((90 - @hdg)/57.29578)*132 + 9",
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0C6"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 24
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "S",
+         "x": "240.0 + sin((180 - @hdg)/57.29578)*132",
+         "y": "240.0 - cos((180 - @hdg)/57.29578)*132 + 9",
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0C6"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 24
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "W",
+         "x": "240.0 + sin((270 - @hdg)/57.29578)*132",
+         "y": "240.0 - cos((270 - @hdg)/57.29578)*132 + 9",
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0453F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 240.0,
+         "x2": "240.0 + sin(0 - @hdg/57.29578)*118",
+         "y2": "240.0 - cos(0 - @hdg/57.29578)*118"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0453F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 7.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 240.0,
+         "x2": "240.0 + sin((0 - @hdg)/57.29578)*118",
+         "y2": "240.0 - cos((0 - @hdg)/57.29578)*118"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8EDF5"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 7.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 240.0,
+         "x2": "240.0 + sin((180 - @hdg)/57.29578)*96",
+         "y2": "240.0 - cos((180 - @hdg)/57.29578)*96"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0B0E14"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 240.0,
+         "radius": 13
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB9C6D8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 240.0,
+         "radius": 13
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "M 229.0 26 L 251.0 26 L 240.0 48 Z"
+        }
+       },
+       {
+        "variable": {
+         "name": "hdgText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@hdg",
+          "whole": 3,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8EDF5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 54
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@hdgText",
+         "x": 228.0,
+         "y": 372.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0C6"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 26
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "\u00b0",
+         "x": 280.0,
+         "y": 360.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 0 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "N",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 45 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "NE",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 90 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "E",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 135 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "SE",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 180 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "S",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 225 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "SW",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 270 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "W",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3DDC84"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": "ifElse(0, 1, 22.5 - abs(((@hdg - 315 + 540) % 360) - 180))"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "NW",
+         "x": 240.0,
+         "y": 406.0,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFB020"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 17
+          },
+          {
+           "alpha": "clamp(0, 1, (@tilt - 25)/15)"
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "hold level",
+         "x": 240.0,
+         "y": 462,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

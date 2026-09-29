@@ -1,0 +1,34 @@
+{
+  "id": "render/03-canvas-draw",
+  "sha256": "34214d66576cd5f7c5dbc04be5e328aaaf6ab0541593df915a7a239a116cb0af",
+  "bytes": 307,
+  "ops": 21,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_CIRCLE": 1,
+    "DRAW_LINE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

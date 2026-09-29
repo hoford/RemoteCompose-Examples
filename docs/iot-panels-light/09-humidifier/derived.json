@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/09-humidifier",
+  "sha256": "89bedb43ee6c2894e04ed517f537705fe30e72d7f0648a5f91aae695ea2ba5ed",
+  "bytes": 1625,
+  "ops": 69,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 18,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 7,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 15,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 8,
+    "DRAW_OVAL": 1,
+    "DRAW_LINE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

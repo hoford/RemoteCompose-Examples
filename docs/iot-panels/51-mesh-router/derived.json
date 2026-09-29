@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/51-mesh-router",
+  "sha256": "ab3cdd150490dfcc5471cb31fb7140ba58e344744d2bf38bb2d2c24cc25c956e",
+  "bytes": 2082,
+  "ops": 92,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 9,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 20,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 10,
+    "DRAW_LINE": 1,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "MATRIX_RESTORE": 2,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

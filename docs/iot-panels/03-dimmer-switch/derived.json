@@ -1,0 +1,51 @@
+{
+  "id": "iot-panels/03-dimmer-switch",
+  "sha256": "04f9b8c188d1396366e0b8951c0e3e9592ee1140910b61c9b3a0106bb4103b99",
+  "bytes": 1677,
+  "ops": 77,
+  "distinctOps": 20,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 5,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 13,
+    "DRAW_OVAL": 1,
+    "CONTAINER_END": 7,
+    "DRAW_ARC": 2,
+    "DRAW_CIRCLE": 5,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

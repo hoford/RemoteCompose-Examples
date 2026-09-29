@@ -1,0 +1,55 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "rings",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4FC3F7",
+            "style": "stroke",
+            "width": 3.0
+          }
+        },
+        {
+          "loop": {
+            "from": 1.0,
+            "until": 13.0,
+            "index": "i",
+            "commands": [
+              {
+                "drawCircle": {
+                  "cx": 150.0,
+                  "cy": 150.0,
+                  "radius": "i * 11"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

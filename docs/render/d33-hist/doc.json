@@ -1,0 +1,80 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 340,
+    "height": 220,
+    "contentDescription": "hist",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "floatArrays": [
+              {
+                "h": [
+                  30,
+                  70,
+                  130,
+                  180,
+                  160,
+                  100,
+                  60,
+                  30
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FF0E1116",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 340,
+                  "bottom": 220
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FFFFB300",
+                  "style": "fill"
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": "arrayLength(@h)",
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": "18 + i * 40",
+                        "top": "200 - arrayGet(@h, i)",
+                        "right": "18 + i * 40 + 34",
+                        "bottom": 200.0
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

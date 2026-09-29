@@ -1,0 +1,78 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 380,
+    "contentDescription": "profile",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "children": [
+        {
+          "box": {
+            "children": [
+              {
+                "text": {
+                  "value": "JD",
+                  "fontSize": 48.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0
+                }
+              }
+            ],
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "height": 150.0
+              },
+              {
+                "background": "#FF3F51B5"
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "text": {
+            "value": "Jane Doe",
+            "fontSize": 30.0,
+            "color": "#FF212121",
+            "fontWeight": 700.0,
+            "textAlign": "center",
+            "modifiers": [
+              "fillMaxWidth",
+              {
+                "padding": [
+                  0,
+                  18,
+                  0,
+                  4
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": {
+            "value": "Product Designer",
+            "fontSize": 16.0,
+            "color": "#FF757575",
+            "textAlign": "center",
+            "modifiers": [
+              "fillMaxWidth"
+            ]
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FFECEFF1"
+        }
+      ],
+      "horizontalAlignment": "center"
+    }
+  }
+}

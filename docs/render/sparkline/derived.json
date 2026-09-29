@@ -1,0 +1,40 @@
+{
+  "id": "render/sparkline",
+  "sha256": "cf60f573e9466ae7944c785aab213030923a72603f061b353f0deafa3a64ea82",
+  "bytes": 544,
+  "ops": 25,
+  "distinctOps": 13,
+  "width": 300,
+  "height": 120,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 7,
+    "DATA_TEXT": 1,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 5,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

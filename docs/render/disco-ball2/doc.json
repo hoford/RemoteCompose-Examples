@@ -1,0 +1,3980 @@
+{
+ "//divcheck": {
+  "@s0": "sqrt(1 + ly^2) >= 1 by construction",
+  "@s1": "sqrt(1 + ly^2) >= 1 by construction",
+  "@s2": "sqrt(1 + ly^2) >= 1 by construction",
+  "@hl0": ">= 0.100; enforced by assert_hl_nonzero()",
+  "@hl1": ">= 0.100; enforced by assert_hl_nonzero()",
+  "@hl2": ">= 0.100; enforced by assert_hl_nonzero()"
+ },
+ "header": {
+  "apiLevel": 7,
+  "width": 400,
+  "height": 400,
+  "contentDescription": "mirror ball, 366 tiles, sweeping lights",
+  "profiles": 513,
+  "orderedResources": true
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "color": "#FF05060A",
+         "style": "fill"
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0.0,
+         "top": 0.0,
+         "right": 400.0,
+         "bottom": 400.0
+        }
+       },
+       {
+        "variable": {
+         "name": "spin",
+         "value": "continuousSec() * 0.399680"
+        }
+       },
+       {
+        "variable": {
+         "name": "a0",
+         "value": "continuousSec() * 0.549779 + 0.0"
+        }
+       },
+       {
+        "variable": {
+         "name": "ly0",
+         "value": "0.4 + 0.3*sin(continuousSec() * 0.370010 + 0.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "s0",
+         "value": "sqrt(1 + @ly0*@ly0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "lz0",
+         "value": "cos(@a0)/@s0"
+        }
+       },
+       {
+        "variable": {
+         "name": "hl0",
+         "value": "sqrt(2 + 2*@lz0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "hx0",
+         "value": "sin(@a0)/@s0/@hl0"
+        }
+       },
+       {
+        "variable": {
+         "name": "hy0",
+         "value": "@ly0/@s0/@hl0"
+        }
+       },
+       {
+        "variable": {
+         "name": "hz0",
+         "value": "(@lz0 + 1)/@hl0"
+        }
+       },
+       {
+        "variable": {
+         "name": "a1",
+         "value": "continuousSec() * -0.410152 + 2.1"
+        }
+       },
+       {
+        "variable": {
+         "name": "ly1",
+         "value": "0.4 + 0.3*sin(continuousSec() * 0.289725 + 1.7)"
+        }
+       },
+       {
+        "variable": {
+         "name": "s1",
+         "value": "sqrt(1 + @ly1*@ly1)"
+        }
+       },
+       {
+        "variable": {
+         "name": "lz1",
+         "value": "cos(@a1)/@s1"
+        }
+       },
+       {
+        "variable": {
+         "name": "hl1",
+         "value": "sqrt(2 + 2*@lz1)"
+        }
+       },
+       {
+        "variable": {
+         "name": "hx1",
+         "value": "sin(@a1)/@s1/@hl1"
+        }
+       },
+       {
+        "variable": {
+         "name": "hy1",
+         "value": "@ly1/@s1/@hl1"
+        }
+       },
+       {
+        "variable": {
+         "name": "hz1",
+         "value": "(@lz1 + 1)/@hl1"
+        }
+       },
+       {
+        "variable": {
+         "name": "a2",
+         "value": "continuousSec() * 0.329867 + 4.2"
+        }
+       },
+       {
+        "variable": {
+         "name": "ly2",
+         "value": "0.4 + 0.3*sin(continuousSec() * 0.439823 + 3.4)"
+        }
+       },
+       {
+        "variable": {
+         "name": "s2",
+         "value": "sqrt(1 + @ly2*@ly2)"
+        }
+       },
+       {
+        "variable": {
+         "name": "lz2",
+         "value": "cos(@a2)/@s2"
+        }
+       },
+       {
+        "variable": {
+         "name": "hl2",
+         "value": "sqrt(2 + 2*@lz2)"
+        }
+       },
+       {
+        "variable": {
+         "name": "hx2",
+         "value": "sin(@a2)/@s2/@hl2"
+        }
+       },
+       {
+        "variable": {
+         "name": "hy2",
+         "value": "@ly2/@s2/@hl2"
+        }
+       },
+       {
+        "variable": {
+         "name": "hz2",
+         "value": "(@lz2 + 1)/@hl2"
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF0C0F16",
+         "style": "fill"
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 148.5
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF3B4658",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g0",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x0",
+            "value": "200.0 + 13.8403*cos(@g0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w0",
+            "value": "11.3652*max(sin(@g0), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x0 - @w0",
+            "top": 348.3115,
+            "right": "@x0 + @w0",
+            "bottom": 350.4088
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g1",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x1",
+            "value": "200.0 + 41.0494*cos(@g1)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w1",
+            "value": "11.3652*max(sin(@g1), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x1 - @w1",
+            "top": 341.1636,
+            "right": "@x1 + @w1",
+            "bottom": 347.3841
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g2",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x2",
+            "value": "200.0 + 66.8608*cos(@g2)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w2",
+            "value": "11.3652*max(sin(@g2), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x2 - @w2",
+            "top": 329.2086,
+            "right": "@x2 + @w2",
+            "bottom": 339.3404
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g3",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x3",
+            "value": "200.0 + 90.3952*cos(@g3)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w3",
+            "value": "11.3652*max(sin(@g3), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x3 - @w3",
+            "top": 312.8535,
+            "right": "@x3 + @w3",
+            "bottom": 326.5516
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g4",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x4",
+            "value": "200.0 + 110.8513*cos(@g4)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w4",
+            "value": "11.3652*max(sin(@g4), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x4 - @w4",
+            "top": 292.6554,
+            "right": "@x4 + @w4",
+            "bottom": 309.4533
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g5",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x5",
+            "value": "200.0 + 127.5326*cos(@g5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w5",
+            "value": "11.3652*max(sin(@g5), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x5 - @w5",
+            "top": 269.302,
+            "right": "@x5 + @w5",
+            "bottom": 288.6277
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g6",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x6",
+            "value": "200.0 + 139.8708*cos(@g6)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w6",
+            "value": "11.3652*max(sin(@g6), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x6 - @w6",
+            "top": 243.5885,
+            "right": "@x6 + @w6",
+            "bottom": 264.784
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g7",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x7",
+            "value": "200.0 + 147.4460*cos(@g7)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w7",
+            "value": "11.3652*max(sin(@g7), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x7 - @w7",
+            "top": 216.3908,
+            "right": "@x7 + @w7",
+            "bottom": 238.7341
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 34.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g8",
+            "value": "j * 0.184800 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x8",
+            "value": "200.0 + 150.0000*cos(@g8)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w8",
+            "value": "11.3652*max(sin(@g8), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x8 - @w8",
+            "top": 188.6348,
+            "right": "@x8 + @w8",
+            "bottom": 211.3652
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g9",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x9",
+            "value": "200.0 + 147.4460*cos(@g9)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w9",
+            "value": "11.3652*max(sin(@g9), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x9 - @w9",
+            "top": 161.2659,
+            "right": "@x9 + @w9",
+            "bottom": 183.6092
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g10",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x10",
+            "value": "200.0 + 139.8708*cos(@g10)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w10",
+            "value": "11.3652*max(sin(@g10), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x10 - @w10",
+            "top": 135.216,
+            "right": "@x10 + @w10",
+            "bottom": 156.4115
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g11",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x11",
+            "value": "200.0 + 127.5326*cos(@g11)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w11",
+            "value": "11.3652*max(sin(@g11), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x11 - @w11",
+            "top": 111.3723,
+            "right": "@x11 + @w11",
+            "bottom": 130.698
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g12",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x12",
+            "value": "200.0 + 110.8513*cos(@g12)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w12",
+            "value": "11.3652*max(sin(@g12), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x12 - @w12",
+            "top": 90.5467,
+            "right": "@x12 + @w12",
+            "bottom": 107.3446
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g13",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x13",
+            "value": "200.0 + 90.3952*cos(@g13)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w13",
+            "value": "11.3652*max(sin(@g13), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x13 - @w13",
+            "top": 73.4484,
+            "right": "@x13 + @w13",
+            "bottom": 87.1465
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g14",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x14",
+            "value": "200.0 + 66.8608*cos(@g14)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w14",
+            "value": "11.3652*max(sin(@g14), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x14 - @w14",
+            "top": 60.6596,
+            "right": "@x14 + @w14",
+            "bottom": 70.7914
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g15",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x15",
+            "value": "200.0 + 41.0494*cos(@g15)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w15",
+            "value": "11.3652*max(sin(@g15), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x15 - @w15",
+            "top": 52.6159,
+            "right": "@x15 + @w15",
+            "bottom": 58.8364
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "g16",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "x16",
+            "value": "200.0 + 13.8403*cos(@g16)"
+           }
+          },
+          {
+           "variable": {
+            "name": "w16",
+            "value": "11.3652*max(sin(@g16), 0)"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@x16 - @w16",
+            "top": 49.5912,
+            "right": "@x16 + @w16",
+            "bottom": 51.6885
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFD6E4FF",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg0",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx0",
+            "value": "200.0 + 13.8403*cos(@bg0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb0",
+            "value": "0.2 + 0.8*0.09227*max(sin(@bg0), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw0",
+            "value": "11.3652*max(sin(@bg0), 0)*@bb0"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh0",
+            "value": "1.0486*@bb0"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx0 - @bw0",
+            "top": "349.3601 - @bh0",
+            "right": "@bx0 + @bw0",
+            "bottom": "349.3601 + @bh0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg1",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx1",
+            "value": "200.0 + 41.0494*cos(@bg1)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb1",
+            "value": "0.2 + 0.8*0.27366*max(sin(@bg1), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw1",
+            "value": "11.3652*max(sin(@bg1), 0)*@bb1"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh1",
+            "value": "3.1102*@bb1"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx1 - @bw1",
+            "top": "344.2738 - @bh1",
+            "right": "@bx1 + @bw1",
+            "bottom": "344.2738 + @bh1"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg2",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx2",
+            "value": "200.0 + 66.8608*cos(@bg2)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb2",
+            "value": "0.2 + 0.8*0.44574*max(sin(@bg2), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw2",
+            "value": "11.3652*max(sin(@bg2), 0)*@bb2"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh2",
+            "value": "5.0659*@bb2"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx2 - @bw2",
+            "top": "334.2745 - @bh2",
+            "right": "@bx2 + @bw2",
+            "bottom": "334.2745 + @bh2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg3",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx3",
+            "value": "200.0 + 90.3952*cos(@bg3)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb3",
+            "value": "0.2 + 0.8*0.60263*max(sin(@bg3), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw3",
+            "value": "11.3652*max(sin(@bg3), 0)*@bb3"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh3",
+            "value": "6.8490*@bb3"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx3 - @bw3",
+            "top": "319.7026 - @bh3",
+            "right": "@bx3 + @bw3",
+            "bottom": "319.7026 + @bh3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg4",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx4",
+            "value": "200.0 + 110.8513*cos(@bg4)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb4",
+            "value": "0.2 + 0.8*0.73901*max(sin(@bg4), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw4",
+            "value": "11.3652*max(sin(@bg4), 0)*@bb4"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh4",
+            "value": "8.3990*@bb4"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx4 - @bw4",
+            "top": "301.0543 - @bh4",
+            "right": "@bx4 + @bw4",
+            "bottom": "301.0543 + @bh4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg5",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx5",
+            "value": "200.0 + 127.5326*cos(@bg5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb5",
+            "value": "0.2 + 0.8*0.85022*max(sin(@bg5), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw5",
+            "value": "11.3652*max(sin(@bg5), 0)*@bb5"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh5",
+            "value": "9.6629*@bb5"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx5 - @bw5",
+            "top": "278.9648 - @bh5",
+            "right": "@bx5 + @bw5",
+            "bottom": "278.9648 + @bh5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg6",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx6",
+            "value": "200.0 + 139.8708*cos(@bg6)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb6",
+            "value": "0.2 + 0.8*0.93247*max(sin(@bg6), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw6",
+            "value": "11.3652*max(sin(@bg6), 0)*@bb6"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh6",
+            "value": "10.5977*@bb6"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx6 - @bw6",
+            "top": "254.1862 - @bh6",
+            "right": "@bx6 + @bw6",
+            "bottom": "254.1862 + @bh6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg7",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx7",
+            "value": "200.0 + 147.4460*cos(@bg7)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb7",
+            "value": "0.2 + 0.8*0.98297*max(sin(@bg7), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw7",
+            "value": "11.3652*max(sin(@bg7), 0)*@bb7"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh7",
+            "value": "11.1717*@bb7"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx7 - @bw7",
+            "top": "227.5624 - @bh7",
+            "right": "@bx7 + @bw7",
+            "bottom": "227.5624 + @bh7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 34.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg8",
+            "value": "j * 0.184800 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx8",
+            "value": "200.0 + 150.0000*cos(@bg8)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb8",
+            "value": "0.2 + 0.8*1.00000*max(sin(@bg8), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw8",
+            "value": "11.3652*max(sin(@bg8), 0)*@bb8"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh8",
+            "value": "11.3652*@bb8"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx8 - @bw8",
+            "top": "200.0 - @bh8",
+            "right": "@bx8 + @bw8",
+            "bottom": "200.0 + @bh8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg9",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx9",
+            "value": "200.0 + 147.4460*cos(@bg9)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb9",
+            "value": "0.2 + 0.8*0.98297*max(sin(@bg9), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw9",
+            "value": "11.3652*max(sin(@bg9), 0)*@bb9"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh9",
+            "value": "11.1717*@bb9"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx9 - @bw9",
+            "top": "172.4376 - @bh9",
+            "right": "@bx9 + @bw9",
+            "bottom": "172.4376 + @bh9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg10",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx10",
+            "value": "200.0 + 139.8708*cos(@bg10)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb10",
+            "value": "0.2 + 0.8*0.93247*max(sin(@bg10), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw10",
+            "value": "11.3652*max(sin(@bg10), 0)*@bb10"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh10",
+            "value": "10.5977*@bb10"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx10 - @bw10",
+            "top": "145.8138 - @bh10",
+            "right": "@bx10 + @bw10",
+            "bottom": "145.8138 + @bh10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg11",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx11",
+            "value": "200.0 + 127.5326*cos(@bg11)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb11",
+            "value": "0.2 + 0.8*0.85022*max(sin(@bg11), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw11",
+            "value": "11.3652*max(sin(@bg11), 0)*@bb11"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh11",
+            "value": "9.6629*@bb11"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx11 - @bw11",
+            "top": "121.0352 - @bh11",
+            "right": "@bx11 + @bw11",
+            "bottom": "121.0352 + @bh11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg12",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx12",
+            "value": "200.0 + 110.8513*cos(@bg12)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb12",
+            "value": "0.2 + 0.8*0.73901*max(sin(@bg12), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw12",
+            "value": "11.3652*max(sin(@bg12), 0)*@bb12"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh12",
+            "value": "8.3990*@bb12"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx12 - @bw12",
+            "top": "98.9457 - @bh12",
+            "right": "@bx12 + @bw12",
+            "bottom": "98.9457 + @bh12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg13",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx13",
+            "value": "200.0 + 90.3952*cos(@bg13)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb13",
+            "value": "0.2 + 0.8*0.60263*max(sin(@bg13), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw13",
+            "value": "11.3652*max(sin(@bg13), 0)*@bb13"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh13",
+            "value": "6.8490*@bb13"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx13 - @bw13",
+            "top": "80.2974 - @bh13",
+            "right": "@bx13 + @bw13",
+            "bottom": "80.2974 + @bh13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg14",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx14",
+            "value": "200.0 + 66.8608*cos(@bg14)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb14",
+            "value": "0.2 + 0.8*0.44574*max(sin(@bg14), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw14",
+            "value": "11.3652*max(sin(@bg14), 0)*@bb14"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh14",
+            "value": "5.0659*@bb14"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx14 - @bw14",
+            "top": "65.7255 - @bh14",
+            "right": "@bx14 + @bw14",
+            "bottom": "65.7255 + @bh14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg15",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx15",
+            "value": "200.0 + 41.0494*cos(@bg15)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb15",
+            "value": "0.2 + 0.8*0.27366*max(sin(@bg15), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw15",
+            "value": "11.3652*max(sin(@bg15), 0)*@bb15"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh15",
+            "value": "3.1102*@bb15"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx15 - @bw15",
+            "top": "55.7262 - @bh15",
+            "right": "@bx15 + @bw15",
+            "bottom": "55.7262 + @bh15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "bg16",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "bx16",
+            "value": "200.0 + 13.8403*cos(@bg16)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bb16",
+            "value": "0.2 + 0.8*0.09227*max(sin(@bg16), 0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "bw16",
+            "value": "11.3652*max(sin(@bg16), 0)*@bb16"
+           }
+          },
+          {
+           "variable": {
+            "name": "bh16",
+            "value": "1.0486*@bb16"
+           }
+          },
+          {
+           "drawRect": {
+            "left": "@bx16 - @bw16",
+            "top": "50.6399 - @bh16",
+            "right": "@bx16 + @bw16",
+            "bottom": "50.6399 + @bh16"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFFFF0C8",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_0",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_0",
+            "value": "200.0 + 13.8403*cos(@fg0_0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_0",
+            "value": "@fg0_0 + 0.03491*(fract(j * 0.6180339 + 0.0000) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_0",
+            "value": "0.09227*(@hx0*cos(@fm0_0) + @hz0*sin(@fm0_0)) + -0.99573*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_0",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_0 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_0",
+            "cy": 349.3601,
+            "radius": "@fr0_0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_1",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_1",
+            "value": "200.0 + 41.0494*cos(@fg0_1)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_1",
+            "value": "@fg0_1 + 0.03491*(fract(j * 0.6180339 + 0.3770) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_1",
+            "value": "0.27366*(@hx0*cos(@fm0_1) + @hz0*sin(@fm0_1)) + -0.96183*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_1",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_1 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_1",
+            "cy": 344.2738,
+            "radius": "@fr0_1"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_2",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_2",
+            "value": "200.0 + 66.8608*cos(@fg0_2)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_2",
+            "value": "@fg0_2 + 0.03491*(fract(j * 0.6180339 + 0.7540) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_2",
+            "value": "0.44574*(@hx0*cos(@fm0_2) + @hz0*sin(@fm0_2)) + -0.89516*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_2",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_2 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_2",
+            "cy": 334.2745,
+            "radius": "@fr0_2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_3",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_3",
+            "value": "200.0 + 90.3952*cos(@fg0_3)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_3",
+            "value": "@fg0_3 + 0.03491*(fract(j * 0.6180339 + 0.1310) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_3",
+            "value": "0.60263*(@hx0*cos(@fm0_3) + @hz0*sin(@fm0_3)) + -0.79802*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_3",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_3 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_3",
+            "cy": 319.7026,
+            "radius": "@fr0_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_4",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_4",
+            "value": "200.0 + 110.8513*cos(@fg0_4)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_4",
+            "value": "@fg0_4 + 0.03491*(fract(j * 0.6180339 + 0.5080) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_4",
+            "value": "0.73901*(@hx0*cos(@fm0_4) + @hz0*sin(@fm0_4)) + -0.67370*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_4",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_4 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_4",
+            "cy": 301.0543,
+            "radius": "@fr0_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_5",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_5",
+            "value": "200.0 + 127.5326*cos(@fg0_5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_5",
+            "value": "@fg0_5 + 0.03491*(fract(j * 0.6180339 + 0.8850) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_5",
+            "value": "0.85022*(@hx0*cos(@fm0_5) + @hz0*sin(@fm0_5)) + -0.52643*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_5",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_5 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_5",
+            "cy": 278.9648,
+            "radius": "@fr0_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_6",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_6",
+            "value": "200.0 + 139.8708*cos(@fg0_6)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_6",
+            "value": "@fg0_6 + 0.03491*(fract(j * 0.6180339 + 0.2620) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_6",
+            "value": "0.93247*(@hx0*cos(@fm0_6) + @hz0*sin(@fm0_6)) + -0.36124*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_6",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_6 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_6",
+            "cy": 254.1862,
+            "radius": "@fr0_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_7",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_7",
+            "value": "200.0 + 147.4460*cos(@fg0_7)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_7",
+            "value": "@fg0_7 + 0.03491*(fract(j * 0.6180339 + 0.6390) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_7",
+            "value": "0.98297*(@hx0*cos(@fm0_7) + @hz0*sin(@fm0_7)) + -0.18375*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_7",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_7 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_7",
+            "cy": 227.5624,
+            "radius": "@fr0_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 34.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_8",
+            "value": "j * 0.184800 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_8",
+            "value": "200.0 + 150.0000*cos(@fg0_8)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_8",
+            "value": "@fg0_8 + 0.03491*(fract(j * 0.6180339 + 0.0160) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_8",
+            "value": "1.00000*(@hx0*cos(@fm0_8) + @hz0*sin(@fm0_8)) + 0.00000*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_8",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_8 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_8",
+            "cy": 200.0,
+            "radius": "@fr0_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_9",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_9",
+            "value": "200.0 + 147.4460*cos(@fg0_9)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_9",
+            "value": "@fg0_9 + 0.03491*(fract(j * 0.6180339 + 0.3930) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_9",
+            "value": "0.98297*(@hx0*cos(@fm0_9) + @hz0*sin(@fm0_9)) + 0.18375*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_9",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_9 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_9",
+            "cy": 172.4376,
+            "radius": "@fr0_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_10",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_10",
+            "value": "200.0 + 139.8708*cos(@fg0_10)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_10",
+            "value": "@fg0_10 + 0.03491*(fract(j * 0.6180339 + 0.7700) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_10",
+            "value": "0.93247*(@hx0*cos(@fm0_10) + @hz0*sin(@fm0_10)) + 0.36124*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_10",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_10 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_10",
+            "cy": 145.8138,
+            "radius": "@fr0_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_11",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_11",
+            "value": "200.0 + 127.5326*cos(@fg0_11)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_11",
+            "value": "@fg0_11 + 0.03491*(fract(j * 0.6180339 + 0.1470) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_11",
+            "value": "0.85022*(@hx0*cos(@fm0_11) + @hz0*sin(@fm0_11)) + 0.52643*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_11",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_11 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_11",
+            "cy": 121.0352,
+            "radius": "@fr0_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_12",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_12",
+            "value": "200.0 + 110.8513*cos(@fg0_12)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_12",
+            "value": "@fg0_12 + 0.03491*(fract(j * 0.6180339 + 0.5240) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_12",
+            "value": "0.73901*(@hx0*cos(@fm0_12) + @hz0*sin(@fm0_12)) + 0.67370*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_12",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_12 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_12",
+            "cy": 98.9457,
+            "radius": "@fr0_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_13",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_13",
+            "value": "200.0 + 90.3952*cos(@fg0_13)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_13",
+            "value": "@fg0_13 + 0.03491*(fract(j * 0.6180339 + 0.9010) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_13",
+            "value": "0.60263*(@hx0*cos(@fm0_13) + @hz0*sin(@fm0_13)) + 0.79802*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_13",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_13 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_13",
+            "cy": 80.2974,
+            "radius": "@fr0_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_14",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_14",
+            "value": "200.0 + 66.8608*cos(@fg0_14)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_14",
+            "value": "@fg0_14 + 0.03491*(fract(j * 0.6180339 + 0.2780) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_14",
+            "value": "0.44574*(@hx0*cos(@fm0_14) + @hz0*sin(@fm0_14)) + 0.89516*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_14",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_14 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_14",
+            "cy": 65.7255,
+            "radius": "@fr0_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_15",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_15",
+            "value": "200.0 + 41.0494*cos(@fg0_15)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_15",
+            "value": "@fg0_15 + 0.03491*(fract(j * 0.6180339 + 0.6550) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_15",
+            "value": "0.27366*(@hx0*cos(@fm0_15) + @hz0*sin(@fm0_15)) + 0.96183*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_15",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_15 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_15",
+            "cy": 55.7262,
+            "radius": "@fr0_15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg0_16",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx0_16",
+            "value": "200.0 + 13.8403*cos(@fg0_16)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm0_16",
+            "value": "@fg0_16 + 0.03491*(fract(j * 0.6180339 + 0.0320) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa0_16",
+            "value": "0.09227*(@hx0*cos(@fm0_16) + @hz0*sin(@fm0_16)) + 0.99573*@hy0"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr0_16",
+            "value": "17.1864*square(clamp(0, 1, (@fa0_16 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx0_16",
+            "cy": 50.6399,
+            "radius": "@fr0_16"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FF8FEFFF",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_0",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_0",
+            "value": "200.0 + 13.8403*cos(@fg1_0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_0",
+            "value": "@fg1_0 + 0.03491*(fract(j * 0.6180339 + 0.0000) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_0",
+            "value": "0.09227*(@hx1*cos(@fm1_0) + @hz1*sin(@fm1_0)) + -0.99573*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_0",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_0 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_0",
+            "cy": 349.3601,
+            "radius": "@fr1_0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_1",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_1",
+            "value": "200.0 + 41.0494*cos(@fg1_1)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_1",
+            "value": "@fg1_1 + 0.03491*(fract(j * 0.6180339 + 0.3770) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_1",
+            "value": "0.27366*(@hx1*cos(@fm1_1) + @hz1*sin(@fm1_1)) + -0.96183*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_1",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_1 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_1",
+            "cy": 344.2738,
+            "radius": "@fr1_1"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_2",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_2",
+            "value": "200.0 + 66.8608*cos(@fg1_2)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_2",
+            "value": "@fg1_2 + 0.03491*(fract(j * 0.6180339 + 0.7540) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_2",
+            "value": "0.44574*(@hx1*cos(@fm1_2) + @hz1*sin(@fm1_2)) + -0.89516*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_2",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_2 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_2",
+            "cy": 334.2745,
+            "radius": "@fr1_2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_3",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_3",
+            "value": "200.0 + 90.3952*cos(@fg1_3)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_3",
+            "value": "@fg1_3 + 0.03491*(fract(j * 0.6180339 + 0.1310) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_3",
+            "value": "0.60263*(@hx1*cos(@fm1_3) + @hz1*sin(@fm1_3)) + -0.79802*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_3",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_3 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_3",
+            "cy": 319.7026,
+            "radius": "@fr1_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_4",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_4",
+            "value": "200.0 + 110.8513*cos(@fg1_4)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_4",
+            "value": "@fg1_4 + 0.03491*(fract(j * 0.6180339 + 0.5080) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_4",
+            "value": "0.73901*(@hx1*cos(@fm1_4) + @hz1*sin(@fm1_4)) + -0.67370*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_4",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_4 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_4",
+            "cy": 301.0543,
+            "radius": "@fr1_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_5",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_5",
+            "value": "200.0 + 127.5326*cos(@fg1_5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_5",
+            "value": "@fg1_5 + 0.03491*(fract(j * 0.6180339 + 0.8850) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_5",
+            "value": "0.85022*(@hx1*cos(@fm1_5) + @hz1*sin(@fm1_5)) + -0.52643*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_5",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_5 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_5",
+            "cy": 278.9648,
+            "radius": "@fr1_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_6",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_6",
+            "value": "200.0 + 139.8708*cos(@fg1_6)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_6",
+            "value": "@fg1_6 + 0.03491*(fract(j * 0.6180339 + 0.2620) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_6",
+            "value": "0.93247*(@hx1*cos(@fm1_6) + @hz1*sin(@fm1_6)) + -0.36124*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_6",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_6 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_6",
+            "cy": 254.1862,
+            "radius": "@fr1_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_7",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_7",
+            "value": "200.0 + 147.4460*cos(@fg1_7)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_7",
+            "value": "@fg1_7 + 0.03491*(fract(j * 0.6180339 + 0.6390) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_7",
+            "value": "0.98297*(@hx1*cos(@fm1_7) + @hz1*sin(@fm1_7)) + -0.18375*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_7",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_7 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_7",
+            "cy": 227.5624,
+            "radius": "@fr1_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 34.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_8",
+            "value": "j * 0.184800 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_8",
+            "value": "200.0 + 150.0000*cos(@fg1_8)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_8",
+            "value": "@fg1_8 + 0.03491*(fract(j * 0.6180339 + 0.0160) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_8",
+            "value": "1.00000*(@hx1*cos(@fm1_8) + @hz1*sin(@fm1_8)) + 0.00000*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_8",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_8 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_8",
+            "cy": 200.0,
+            "radius": "@fr1_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_9",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_9",
+            "value": "200.0 + 147.4460*cos(@fg1_9)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_9",
+            "value": "@fg1_9 + 0.03491*(fract(j * 0.6180339 + 0.3930) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_9",
+            "value": "0.98297*(@hx1*cos(@fm1_9) + @hz1*sin(@fm1_9)) + 0.18375*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_9",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_9 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_9",
+            "cy": 172.4376,
+            "radius": "@fr1_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_10",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_10",
+            "value": "200.0 + 139.8708*cos(@fg1_10)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_10",
+            "value": "@fg1_10 + 0.03491*(fract(j * 0.6180339 + 0.7700) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_10",
+            "value": "0.93247*(@hx1*cos(@fm1_10) + @hz1*sin(@fm1_10)) + 0.36124*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_10",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_10 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_10",
+            "cy": 145.8138,
+            "radius": "@fr1_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_11",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_11",
+            "value": "200.0 + 127.5326*cos(@fg1_11)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_11",
+            "value": "@fg1_11 + 0.03491*(fract(j * 0.6180339 + 0.1470) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_11",
+            "value": "0.85022*(@hx1*cos(@fm1_11) + @hz1*sin(@fm1_11)) + 0.52643*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_11",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_11 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_11",
+            "cy": 121.0352,
+            "radius": "@fr1_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_12",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_12",
+            "value": "200.0 + 110.8513*cos(@fg1_12)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_12",
+            "value": "@fg1_12 + 0.03491*(fract(j * 0.6180339 + 0.5240) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_12",
+            "value": "0.73901*(@hx1*cos(@fm1_12) + @hz1*sin(@fm1_12)) + 0.67370*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_12",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_12 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_12",
+            "cy": 98.9457,
+            "radius": "@fr1_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_13",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_13",
+            "value": "200.0 + 90.3952*cos(@fg1_13)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_13",
+            "value": "@fg1_13 + 0.03491*(fract(j * 0.6180339 + 0.9010) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_13",
+            "value": "0.60263*(@hx1*cos(@fm1_13) + @hz1*sin(@fm1_13)) + 0.79802*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_13",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_13 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_13",
+            "cy": 80.2974,
+            "radius": "@fr1_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_14",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_14",
+            "value": "200.0 + 66.8608*cos(@fg1_14)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_14",
+            "value": "@fg1_14 + 0.03491*(fract(j * 0.6180339 + 0.2780) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_14",
+            "value": "0.44574*(@hx1*cos(@fm1_14) + @hz1*sin(@fm1_14)) + 0.89516*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_14",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_14 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_14",
+            "cy": 65.7255,
+            "radius": "@fr1_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_15",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_15",
+            "value": "200.0 + 41.0494*cos(@fg1_15)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_15",
+            "value": "@fg1_15 + 0.03491*(fract(j * 0.6180339 + 0.6550) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_15",
+            "value": "0.27366*(@hx1*cos(@fm1_15) + @hz1*sin(@fm1_15)) + 0.96183*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_15",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_15 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_15",
+            "cy": 55.7262,
+            "radius": "@fr1_15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg1_16",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx1_16",
+            "value": "200.0 + 13.8403*cos(@fg1_16)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm1_16",
+            "value": "@fg1_16 + 0.03491*(fract(j * 0.6180339 + 0.0320) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa1_16",
+            "value": "0.09227*(@hx1*cos(@fm1_16) + @hz1*sin(@fm1_16)) + 0.99573*@hy1"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr1_16",
+            "value": "17.1864*square(clamp(0, 1, (@fa1_16 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx1_16",
+            "cy": 50.6399,
+            "radius": "@fr1_16"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "color": "#FFFF9AE6",
+         "style": "fill"
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_0",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_0",
+            "value": "200.0 + 13.8403*cos(@fg2_0)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_0",
+            "value": "@fg2_0 + 0.03491*(fract(j * 0.6180339 + 0.0000) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_0",
+            "value": "0.09227*(@hx2*cos(@fm2_0) + @hz2*sin(@fm2_0)) + -0.99573*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_0",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_0 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_0",
+            "cy": 349.3601,
+            "radius": "@fr2_0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_1",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_1",
+            "value": "200.0 + 41.0494*cos(@fg2_1)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_1",
+            "value": "@fg2_1 + 0.03491*(fract(j * 0.6180339 + 0.3770) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_1",
+            "value": "0.27366*(@hx2*cos(@fm2_1) + @hz2*sin(@fm2_1)) + -0.96183*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_1",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_1 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_1",
+            "cy": 344.2738,
+            "radius": "@fr2_1"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_2",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_2",
+            "value": "200.0 + 66.8608*cos(@fg2_2)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_2",
+            "value": "@fg2_2 + 0.03491*(fract(j * 0.6180339 + 0.7540) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_2",
+            "value": "0.44574*(@hx2*cos(@fm2_2) + @hz2*sin(@fm2_2)) + -0.89516*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_2",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_2 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_2",
+            "cy": 334.2745,
+            "radius": "@fr2_2"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_3",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_3",
+            "value": "200.0 + 90.3952*cos(@fg2_3)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_3",
+            "value": "@fg2_3 + 0.03491*(fract(j * 0.6180339 + 0.1310) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_3",
+            "value": "0.60263*(@hx2*cos(@fm2_3) + @hz2*sin(@fm2_3)) + -0.79802*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_3",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_3 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_3",
+            "cy": 319.7026,
+            "radius": "@fr2_3"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_4",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_4",
+            "value": "200.0 + 110.8513*cos(@fg2_4)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_4",
+            "value": "@fg2_4 + 0.03491*(fract(j * 0.6180339 + 0.5080) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_4",
+            "value": "0.73901*(@hx2*cos(@fm2_4) + @hz2*sin(@fm2_4)) + -0.67370*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_4",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_4 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_4",
+            "cy": 301.0543,
+            "radius": "@fr2_4"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_5",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_5",
+            "value": "200.0 + 127.5326*cos(@fg2_5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_5",
+            "value": "@fg2_5 + 0.03491*(fract(j * 0.6180339 + 0.8850) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_5",
+            "value": "0.85022*(@hx2*cos(@fm2_5) + @hz2*sin(@fm2_5)) + -0.52643*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_5",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_5 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_5",
+            "cy": 278.9648,
+            "radius": "@fr2_5"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_6",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_6",
+            "value": "200.0 + 139.8708*cos(@fg2_6)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_6",
+            "value": "@fg2_6 + 0.03491*(fract(j * 0.6180339 + 0.2620) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_6",
+            "value": "0.93247*(@hx2*cos(@fm2_6) + @hz2*sin(@fm2_6)) + -0.36124*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_6",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_6 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_6",
+            "cy": 254.1862,
+            "radius": "@fr2_6"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_7",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_7",
+            "value": "200.0 + 147.4460*cos(@fg2_7)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_7",
+            "value": "@fg2_7 + 0.03491*(fract(j * 0.6180339 + 0.6390) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_7",
+            "value": "0.98297*(@hx2*cos(@fm2_7) + @hz2*sin(@fm2_7)) + -0.18375*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_7",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_7 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_7",
+            "cy": 227.5624,
+            "radius": "@fr2_7"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 34.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_8",
+            "value": "j * 0.184800 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_8",
+            "value": "200.0 + 150.0000*cos(@fg2_8)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_8",
+            "value": "@fg2_8 + 0.03491*(fract(j * 0.6180339 + 0.0160) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_8",
+            "value": "1.00000*(@hx2*cos(@fm2_8) + @hz2*sin(@fm2_8)) + 0.00000*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_8",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_8 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_8",
+            "cy": 200.0,
+            "radius": "@fr2_8"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 33.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_9",
+            "value": "j * 0.190400 + 0.095200 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_9",
+            "value": "200.0 + 147.4460*cos(@fg2_9)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_9",
+            "value": "@fg2_9 + 0.03491*(fract(j * 0.6180339 + 0.3930) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_9",
+            "value": "0.98297*(@hx2*cos(@fm2_9) + @hz2*sin(@fm2_9)) + 0.18375*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_9",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_9 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_9",
+            "cy": 172.4376,
+            "radius": "@fr2_9"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 32.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_10",
+            "value": "j * 0.196350 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_10",
+            "value": "200.0 + 139.8708*cos(@fg2_10)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_10",
+            "value": "@fg2_10 + 0.03491*(fract(j * 0.6180339 + 0.7700) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_10",
+            "value": "0.93247*(@hx2*cos(@fm2_10) + @hz2*sin(@fm2_10)) + 0.36124*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_10",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_10 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_10",
+            "cy": 145.8138,
+            "radius": "@fr2_10"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 29.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_11",
+            "value": "j * 0.216662 + 0.108331 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_11",
+            "value": "200.0 + 127.5326*cos(@fg2_11)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_11",
+            "value": "@fg2_11 + 0.03491*(fract(j * 0.6180339 + 0.1470) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_11",
+            "value": "0.85022*(@hx2*cos(@fm2_11) + @hz2*sin(@fm2_11)) + 0.52643*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_11",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_11 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_11",
+            "cy": 121.0352,
+            "radius": "@fr2_11"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 25.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_12",
+            "value": "j * 0.251327 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_12",
+            "value": "200.0 + 110.8513*cos(@fg2_12)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_12",
+            "value": "@fg2_12 + 0.03491*(fract(j * 0.6180339 + 0.5240) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_12",
+            "value": "0.73901*(@hx2*cos(@fm2_12) + @hz2*sin(@fm2_12)) + 0.67370*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_12",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_12 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_12",
+            "cy": 98.9457,
+            "radius": "@fr2_12"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 20.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_13",
+            "value": "j * 0.314159 + 0.157080 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_13",
+            "value": "200.0 + 90.3952*cos(@fg2_13)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_13",
+            "value": "@fg2_13 + 0.03491*(fract(j * 0.6180339 + 0.9010) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_13",
+            "value": "0.60263*(@hx2*cos(@fm2_13) + @hz2*sin(@fm2_13)) + 0.79802*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_13",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_13 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_13",
+            "cy": 80.2974,
+            "radius": "@fr2_13"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 15.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_14",
+            "value": "j * 0.418879 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_14",
+            "value": "200.0 + 66.8608*cos(@fg2_14)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_14",
+            "value": "@fg2_14 + 0.03491*(fract(j * 0.6180339 + 0.2780) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_14",
+            "value": "0.44574*(@hx2*cos(@fm2_14) + @hz2*sin(@fm2_14)) + 0.89516*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_14",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_14 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_14",
+            "cy": 65.7255,
+            "radius": "@fr2_14"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 9.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_15",
+            "value": "j * 0.698132 + 0.349066 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_15",
+            "value": "200.0 + 41.0494*cos(@fg2_15)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_15",
+            "value": "@fg2_15 + 0.03491*(fract(j * 0.6180339 + 0.6550) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_15",
+            "value": "0.27366*(@hx2*cos(@fm2_15) + @hz2*sin(@fm2_15)) + 0.96183*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_15",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_15 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_15",
+            "cy": 55.7262,
+            "radius": "@fr2_15"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "from": 0.0,
+         "until": 3.0,
+         "index": "j",
+         "commands": [
+          {
+           "variable": {
+            "name": "fg2_16",
+            "value": "j * 2.094395 + 0.000000 + @spin"
+           }
+          },
+          {
+           "variable": {
+            "name": "fx2_16",
+            "value": "200.0 + 13.8403*cos(@fg2_16)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fm2_16",
+            "value": "@fg2_16 + 0.03491*(fract(j * 0.6180339 + 0.0320) - 0.5)"
+           }
+          },
+          {
+           "variable": {
+            "name": "fa2_16",
+            "value": "0.09227*(@hx2*cos(@fm2_16) + @hz2*sin(@fm2_16)) + 0.99573*@hy2"
+           }
+          },
+          {
+           "variable": {
+            "name": "fr2_16",
+            "value": "17.1864*square(clamp(0, 1, (@fa2_16 - 0.96)*25.0000))"
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@fx2_16",
+            "cy": 50.6399,
+            "radius": "@fr2_16"
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

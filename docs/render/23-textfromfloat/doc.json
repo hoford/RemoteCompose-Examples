@@ -1,0 +1,44 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "text from float",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        {
+          "fillMaxSize": "NaN"
+        },
+        {
+          "background": "#FF101418"
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center",
+      "children": [
+        {
+          "text": {
+            "value": "CPU",
+            "fontSize": 40.0,
+            "color": "#FF8892B0"
+          }
+        },
+        {
+          "text": {
+            "textFromFloat": {
+              "value": 47.0,
+              "whole": 0,
+              "decimal": 0,
+              "flags": 0
+            },
+            "fontSize": 96.0,
+            "color": "#FF00E5FF"
+          }
+        }
+      ]
+    }
+  }
+}

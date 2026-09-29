@@ -1,0 +1,32 @@
+{
+  "id": "render/15-paint",
+  "sha256": "a2dc964584fec9e2ab2f386be1f5a539eb43d388da5f174c905ff7b25d4cdfaf",
+  "bytes": 292,
+  "ops": 18,
+  "distinctOps": 10,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/30-wine-fridge",
+  "sha256": "787b9ffc3e2edc1c59af2acc98af6a861a8037b2a6f661ac9f37950707038e9e",
+  "bytes": 2378,
+  "ops": 100,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 13,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 29,
+    "CONTAINER_END": 9,
+    "DRAW_LINE": 1,
+    "DRAW_OVAL": 1,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_CIRCLE": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

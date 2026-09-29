@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/36-smart-plug",
+  "sha256": "0317d34a6ab1b31aaaafddb26fa9c3b29ac966b742e30257b7c88f8fab6d7a6d",
+  "bytes": 2333,
+  "ops": 95,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 30,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 13,
+    "ANIMATED_FLOAT": 17,
+    "DRAW_CIRCLE": 5,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DATA_TEXT": 5,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 8,
+    "DRAW_PATH": 2,
+    "DRAW_OVAL": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

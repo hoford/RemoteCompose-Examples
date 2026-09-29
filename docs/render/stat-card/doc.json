@@ -1,0 +1,55 @@
+{
+  "name": "stat_card",
+  "description": "KPI/stat card: a big headline number with a label underneath, centered on a card. Use for a single key metric.",
+  "tags": [
+    "ui",
+    "card",
+    "kpi",
+    "stat",
+    "metric",
+    "text"
+  ],
+  "data_schema": "text fields: value, label",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 200,
+      "contentDescription": "stat",
+      "profiles": 513
+    },
+    "root": {
+      "column": {
+        "modifiers": [
+          "fillMaxSize",
+          {
+            "background": "#FF11181F"
+          },
+          {
+            "padding": 24
+          }
+        ],
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "text": {
+              "value": "1,284",
+              "fontSize": 72.0,
+              "color": "#FF42A5F5",
+              "fontWeight": 700.0
+            }
+          },
+          {
+            "text": {
+              "value": "ACTIVE USERS",
+              "fontSize": 18.0,
+              "color": "#FF90A4AE",
+              "fontWeight": 500.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

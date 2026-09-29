@@ -1,0 +1,35 @@
+{
+  "id": "render/ch-d3",
+  "sha256": "8d282997198eb707d84e8d5716d2e05fb4137f4daed0d4bff4f973c569f84579",
+  "bytes": 268,
+  "ops": 17,
+  "distinctOps": 10,
+  "width": 200,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 4,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

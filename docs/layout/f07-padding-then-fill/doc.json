@@ -1,0 +1,37 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "F07 does a filling child fill inside or outside the parent padding?"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      {
+        "padding": 50
+      },
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          "fillMaxWidth",
+          {
+            "height": 80
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

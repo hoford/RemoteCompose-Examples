@@ -1,0 +1,30 @@
+{
+  "id": "render/d03-rings",
+  "sha256": "4148f6f9bfef5c2338aef3f8d6264c9efe0b0380049733f266d44b77e208b1c9",
+  "bytes": 288,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 280,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

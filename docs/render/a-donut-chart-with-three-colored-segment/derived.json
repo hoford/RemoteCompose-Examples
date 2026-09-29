@@ -1,0 +1,30 @@
+{
+  "id": "render/a-donut-chart-with-three-colored-segment",
+  "sha256": "8c60ef1db3beb25fab8b1a09cd28f664fdc2e14efc0787130d164906a081c744",
+  "bytes": 290,
+  "ops": 17,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "DRAW_ARC": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

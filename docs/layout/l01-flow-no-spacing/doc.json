@@ -1,0 +1,76 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "L01 flow, four children that exactly fit one row with no spacing"
+  },
+  "root": {
+    "type": "flow",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FFFFB020"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 90
+          },
+          {
+            "height": 40
+          },
+          {
+            "background": "#FFFF4D6D"
+          }
+        ]
+      }
+    ]
+  }
+}

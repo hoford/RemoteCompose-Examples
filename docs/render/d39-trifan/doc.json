@@ -1,0 +1,79 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "trifan",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFF7043",
+            "style": "stroke",
+            "width": 1.5
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 24.0,
+            "index": "i",
+            "commands": [
+              {
+                "pathCreate": {
+                  "id": "t",
+                  "x": 150.0,
+                  "y": 150.0
+                }
+              },
+              {
+                "pathAppendLineTo": {
+                  "path": "t",
+                  "x": "150 + cos(i * 0.2618) * 130",
+                  "y": "150 + sin(i * 0.2618) * 130"
+                }
+              },
+              {
+                "pathAppendLineTo": {
+                  "path": "t",
+                  "x": "150 + cos((i + 1) * 0.2618) * 130",
+                  "y": "150 + sin((i + 1) * 0.2618) * 130"
+                }
+              },
+              {
+                "pathAppendClose": {
+                  "path": "t"
+                }
+              },
+              {
+                "drawPath": {
+                  "path": "t"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

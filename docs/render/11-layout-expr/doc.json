@@ -1,0 +1,57 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "contentDescription": "lt",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF202830"
+        },
+        {
+          "padding": "8 + 8"
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center",
+      "children": [
+        {
+          "text": {
+            "value": "sized by expr",
+            "fontSize": "12 + 16",
+            "color": "#FFFFFFFF"
+          }
+        },
+        {
+          "box": {
+            "modifiers": [
+              {
+                "width": "windowWidth / 2"
+              },
+              {
+                "height": "60 + 20"
+              },
+              {
+                "background": "#FF42A5F5"
+              }
+            ],
+            "children": [
+              {
+                "text": {
+                  "value": "half width",
+                  "color": "#FF000000",
+                  "fontSize": 18.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

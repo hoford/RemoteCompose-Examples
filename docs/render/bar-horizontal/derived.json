@@ -1,0 +1,38 @@
+{
+  "id": "render/bar-horizontal",
+  "sha256": "c894ca8d43da7fe8b9ac02244d7c370ac934ee835fcbb9375e34eeafd8ad1b34",
+  "bytes": 654,
+  "ops": 37,
+  "distinctOps": 12,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 10,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 11,
+    "DRAW_ROUND_RECT": 1
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

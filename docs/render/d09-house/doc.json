@@ -1,0 +1,116 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "house",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF87CEEB",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF7CB342"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 250,
+            "right": 300,
+            "bottom": 300,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFD54F"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 250,
+            "cy": 55,
+            "radius": 26
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF8D6E63"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 80,
+            "top": 150,
+            "right": 220,
+            "bottom": 260,
+            "rx": 6,
+            "ry": 6
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF5D4037",
+            "style": "stroke",
+            "width": 12.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "drawLine": {
+            "x1": 70,
+            "y1": 152,
+            "x2": 150,
+            "y2": 90
+          }
+        },
+        {
+          "drawLine": {
+            "x1": 150,
+            "y1": 90,
+            "x2": 230,
+            "y2": 152
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4E342E",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 135,
+            "top": 200,
+            "right": 175,
+            "bottom": 260,
+            "rx": 4,
+            "ry": 4
+          }
+        }
+      ]
+    }
+  }
+}

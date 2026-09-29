@@ -1,0 +1,30 @@
+{
+  "id": "render/07-box-canvas",
+  "sha256": "6c2d681344c6cc5cf62263653f3933d64da9f78cf3ff2751726245c37d88740d",
+  "bytes": 222,
+  "ops": 17,
+  "distinctOps": 10,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

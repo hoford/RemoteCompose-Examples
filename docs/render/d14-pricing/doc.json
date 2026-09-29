@@ -1,0 +1,99 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 420,
+    "contentDescription": "pricing",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "children": [
+        {
+          "text": {
+            "value": "PRO PLAN",
+            "fontSize": 16.0,
+            "color": "#FF8E24AA",
+            "fontWeight": 700.0
+          }
+        },
+        {
+          "text": {
+            "value": "29 USD",
+            "fontSize": 58.0,
+            "color": "#FF1A1A1A",
+            "fontWeight": 700.0
+          }
+        },
+        {
+          "text": {
+            "value": "per month",
+            "fontSize": 14.0,
+            "color": "#FF9E9E9E"
+          }
+        },
+        {
+          "text": {
+            "value": "Unlimited projects",
+            "fontSize": 16.0,
+            "color": "#FF424242",
+            "modifiers": [
+              {
+                "padding": [
+                  0,
+                  18,
+                  0,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": {
+            "value": "Priority support",
+            "fontSize": 16.0,
+            "color": "#FF424242",
+            "modifiers": [
+              {
+                "padding": [
+                  0,
+                  6,
+                  0,
+                  2
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "text": {
+            "value": "Custom domains",
+            "fontSize": 16.0,
+            "color": "#FF424242",
+            "modifiers": [
+              {
+                "padding": [
+                  0,
+                  6,
+                  0,
+                  2
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FFFFFFFF"
+        },
+        {
+          "padding": 28
+        }
+      ],
+      "horizontalAlignment": "center"
+    }
+  }
+}

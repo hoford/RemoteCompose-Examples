@@ -1,0 +1,36 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "A10 root has a fixed size smaller than the document"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      {
+        "width": 240
+      },
+      {
+        "height": 160
+      },
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          "fillMaxSize",
+          {
+            "background": "#FF4DA3FF"
+          }
+        ]
+      }
+    ]
+  }
+}

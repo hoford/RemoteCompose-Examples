@@ -1,0 +1,40 @@
+{
+  "id": "render/scatter-plot",
+  "sha256": "d69c225ac1a01b99b88b87051d85db99e9a6c2d8f0a4d8f560686a5d9dcbfa66",
+  "bytes": 454,
+  "ops": 23,
+  "distinctOps": 13,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_LINE": 2,
+    "DATA_TEXT": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

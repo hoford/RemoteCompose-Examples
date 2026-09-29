@@ -1,0 +1,36 @@
+{
+  "id": "render/21-floatarrays",
+  "sha256": "5a7f733cbdf9dc2fbcf4ed3095cd47ba0194c60f288ff69146c0cd37d7b5902e",
+  "bytes": 349,
+  "ops": 20,
+  "distinctOps": 11,
+  "width": 320,
+  "height": 220,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "ANIMATED_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 2,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "render/p02-new-draw",
+  "sha256": "cbc05900ba2f379acc494fe2111b38092f2dd5a259af5727ed958e859aec2116",
+  "bytes": 395,
+  "ops": 23,
+  "distinctOps": 13,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "COLOR_CONSTANT": 3,
+    "NAMED_VARIABLE": 3,
+    "DATA_FLOAT": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "DRAW_SECTOR": 1,
+    "DRAW_ARC": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

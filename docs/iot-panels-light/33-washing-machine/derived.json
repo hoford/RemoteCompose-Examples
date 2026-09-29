@@ -1,0 +1,49 @@
+{
+  "id": "iot-panels-light/33-washing-machine",
+  "sha256": "6b86baac1ca6237b726323ec7372ddc12c559b6aff04fe973016631c24d04181",
+  "bytes": 1963,
+  "ops": 95,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DRAW_CIRCLE": 8,
+    "MATRIX_SAVE": 3,
+    "ANIMATED_FLOAT": 14,
+    "MATRIX_ROTATE": 3,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 3,
+    "DRAW_OVAL": 1,
+    "DATA_TEXT": 5,
+    "CONTAINER_END": 9,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

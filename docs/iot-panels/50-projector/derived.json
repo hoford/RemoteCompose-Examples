@@ -1,0 +1,50 @@
+{
+  "id": "iot-panels/50-projector",
+  "sha256": "8e9e3aa180e0d679f22e2560561dc8adc40c9a73fcec2023a25164f68114e8c6",
+  "bytes": 2270,
+  "ops": 94,
+  "distinctOps": 19,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 25,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "ANIMATED_FLOAT": 20,
+    "DRAW_PATH": 2,
+    "DATA_TEXT": 5,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 9,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_LINE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

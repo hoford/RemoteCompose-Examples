@@ -1,0 +1,101 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 240,
+    "contentDescription": "histogram",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "floatArrays": [
+              {
+                "count": [
+                  5,
+                  20,
+                  45,
+                  80,
+                  60,
+                  30,
+                  10
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": [
+              "fillMaxSize"
+            ],
+            "commands": [
+              {
+                "paint": {
+                  "color": "#FF0E1116",
+                  "style": "fill"
+                }
+              },
+              {
+                "drawRect": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 320,
+                  "bottom": 240
+                }
+              },
+              {
+                "variable": {
+                  "name": "n",
+                  "value": "arrayLength(@count)",
+                  "commit": true
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FFFFB300",
+                  "style": "fill"
+                }
+              },
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": "@n",
+                  "index": "i",
+                  "commands": [
+                    {
+                      "drawRect": {
+                        "left": "20 + i * (280 / @n)",
+                        "top": "210 - arrayGet(@count, i)",
+                        "right": "20 + i * (280 / @n) + (280 / @n) - 2",
+                        "bottom": 210.0
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "paint": {
+                  "color": "#FF455A64",
+                  "style": "stroke",
+                  "width": 2.0
+                }
+              },
+              {
+                "drawLine": {
+                  "x1": 16,
+                  "y1": 211,
+                  "x2": 304,
+                  "y2": 211
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

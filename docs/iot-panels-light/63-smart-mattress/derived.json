@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/63-smart-mattress",
+  "sha256": "be1c3a21cca567d9ff588752484b3b835071b105e5185cb21b2efa496d2be994",
+  "bytes": 2066,
+  "ops": 94,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 16,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 17,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 7,
+    "MATRIX_SAVE": 1,
+    "MATRIX_TRANSLATE": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

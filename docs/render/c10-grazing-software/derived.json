@@ -1,0 +1,29 @@
+{
+  "id": "render/c10-grazing-software",
+  "sha256": "4823e40d82075ae4e1e67b428d2f6bb1fd28ddc971e40bbefd6ba671542858b3",
+  "bytes": 219,
+  "ops": 17,
+  "distinctOps": 9,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

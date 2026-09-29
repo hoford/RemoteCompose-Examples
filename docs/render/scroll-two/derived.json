@@ -1,0 +1,29 @@
+{
+  "id": "render/scroll-two",
+  "sha256": "c601ea3735a8546e021264cf75ff4954af7610664e696be603945bac4d76d061",
+  "bytes": 3400,
+  "ops": 237,
+  "distinctOps": 10,
+  "width": 600,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 27,
+    "MODIFIER_HEIGHT": 27,
+    "MODIFIER_BACKGROUND": 25,
+    "LAYOUT_COLUMN": 2,
+    "CONTAINER_END": 105,
+    "LAYOUT_BOX": 24,
+    "DATA_TEXT": 24
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

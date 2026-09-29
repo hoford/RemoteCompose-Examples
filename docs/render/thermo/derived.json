@@ -1,0 +1,41 @@
+{
+  "id": "render/thermo",
+  "sha256": "01e74f85d5f9ea3b59f23cf74fa545aa6e4a56be2a38f1b89971db2ffdb08086",
+  "bytes": 347,
+  "ops": 21,
+  "distinctOps": 14,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "DATA_FLOAT": 1,
+    "DRAW_ROUND_RECT": 2,
+    "DRAW_CIRCLE": 1,
+    "ANIMATED_FLOAT": 1,
+    "DATA_TEXT": 1,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,85 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 160,
+    "height": 380,
+    "contentDescription": "traffic",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF101418",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 0,
+            "top": 0,
+            "right": 160,
+            "bottom": 380,
+            "rx": 0,
+            "ry": 0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF2B2B2B"
+          }
+        },
+        {
+          "drawRoundRect": {
+            "left": 30,
+            "top": 20,
+            "right": 130,
+            "bottom": 360,
+            "rx": 36,
+            "ry": 36
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE53935"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 80,
+            "cy": 90,
+            "radius": 38
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFDD835"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 80,
+            "cy": 190,
+            "radius": 38
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF43A047"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 80,
+            "cy": 290,
+            "radius": 38
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "render/d23-starburst",
+  "sha256": "41e23b2f0b44cdf67ab2d13330fe4fd7cc26f7a0e99b186f59e95ac1db11617d",
+  "bytes": 248,
+  "ops": 19,
+  "distinctOps": 14,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

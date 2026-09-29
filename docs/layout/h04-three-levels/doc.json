@@ -1,0 +1,72 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H04 three levels of nesting, each inset"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "center",
+    "verticalAlignment": "center",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 260
+          },
+          {
+            "height": 200
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 160
+              },
+              {
+                "height": 120
+              },
+              {
+                "background": "#FF223049"
+              }
+            ],
+            "horizontalAlignment": "end",
+            "verticalAlignment": "bottom",
+            "children": [
+              {
+                "type": "box",
+                "modifiers": [
+                  {
+                    "width": 50
+                  },
+                  {
+                    "height": 40
+                  },
+                  {
+                    "background": "#FF4DA3FF"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

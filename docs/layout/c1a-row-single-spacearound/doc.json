@@ -1,0 +1,7 @@
+{
+  "header": { "apiLevel": 7, "width": 400, "height": 400, "profiles": 513,
+              "contentDescription": "C single child with spaceAround" },
+  "root": { "type": "row", "modifiers": ["fillMaxSize", {"background": "#FF101828"}],
+            "horizontalArrangement": "spaceAround", "verticalAlignment": "top",
+            "children": [ { "type": "box", "modifiers": [{"width":80},{"height":50},{"background":"#FF4DA3FF"}] } ] }
+}

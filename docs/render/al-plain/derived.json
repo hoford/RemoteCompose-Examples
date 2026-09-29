@@ -1,0 +1,35 @@
+{
+  "id": "render/al-plain",
+  "sha256": "90c3b433d33079547c64cc9df59e9afd1592053d51c0781557f63f9a742ac155",
+  "bytes": 196,
+  "ops": 14,
+  "distinctOps": 10,
+  "width": 200,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,1356 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "battlezone \u2014 vector world, no tank",
+  "orderedResources": true
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "scale": {
+         "sx": "width/480",
+         "sy": "height/360",
+         "pivotX": 0,
+         "pivotY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF000000"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 480,
+         "bottom": 360
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 392,
+         "cy": 62,
+         "radius": 21
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF000000"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 383,
+         "cy": 56,
+         "radius": 21
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1F7F3A"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.4
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "0 + fract(continuousSec()*0.005556)*540",
+         "y1": 196.0,
+         "x2": "30.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 173.8
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "30.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 173.8,
+         "x2": "60.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 194.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "60.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 194.3,
+         "x2": "90.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 158.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "90.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 158.5,
+         "x2": "120.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 185.4
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "120.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 185.4,
+         "x2": "150.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 168.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "150.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 168.7,
+         "x2": "180.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 194.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "180.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 194.3,
+         "x2": "210.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 165.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "210.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 165.0,
+         "x2": "240.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 184.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "240.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 184.3,
+         "x2": "270.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 168.4
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "270.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 168.4,
+         "x2": "300.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 184.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 184.5,
+         "x2": "330.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 147.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "330.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 147.6,
+         "x2": "360.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 193.9
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 193.9,
+         "x2": "390.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 152.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "390.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 152.7,
+         "x2": "420.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 189.1
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "420.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 189.1,
+         "x2": "450.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 157.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "450.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 157.7,
+         "x2": "480.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 180.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "480.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 180.6,
+         "x2": "510.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 170.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "510.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 170.5,
+         "x2": "540.0 + fract(continuousSec()*0.005556)*540",
+         "y2": 195.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "540.0 + fract(continuousSec()*0.005556)*540",
+         "y1": 195.7,
+         "x2": "540 + fract(continuousSec()*0.005556)*540",
+         "y2": 196.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 196.0,
+         "x2": "30.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 173.8
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "30.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 173.8,
+         "x2": "60.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 194.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "60.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 194.3,
+         "x2": "90.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 158.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "90.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 158.5,
+         "x2": "120.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 185.4
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "120.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 185.4,
+         "x2": "150.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 168.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "150.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 168.7,
+         "x2": "180.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 194.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "180.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 194.3,
+         "x2": "210.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 165.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "210.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 165.0,
+         "x2": "240.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 184.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "240.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 184.3,
+         "x2": "270.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 168.4
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "270.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 168.4,
+         "x2": "300.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 184.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 184.5,
+         "x2": "330.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 147.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "330.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 147.6,
+         "x2": "360.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 193.9
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 193.9,
+         "x2": "390.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 152.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "390.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 152.7,
+         "x2": "420.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 189.1
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "420.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 189.1,
+         "x2": "450.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 157.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "450.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 157.7,
+         "x2": "480.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 180.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "480.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 180.6,
+         "x2": "510.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 170.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "510.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 170.5,
+         "x2": "540.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 195.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "540.0 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y1": 195.7,
+         "x2": "540 + (fract(continuousSec()*0.005556)*540) - 540",
+         "y2": 196.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 96,
+         "y1": 196.0,
+         "x2": 150,
+         "y2": 96
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 150,
+         "y1": 96,
+         "x2": 176,
+         "y2": 96
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 176,
+         "y1": 96,
+         "x2": 228,
+         "y2": 196.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 150,
+         "y1": 96,
+         "x2": 163,
+         "y2": 104
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 163,
+         "y1": 104,
+         "x2": 176,
+         "y2": 96
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 0,
+         "y1": 196.0,
+         "x2": 480,
+         "y2": 196.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1F7F3A"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.4
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 232
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 232,
+         "x2": "53.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 232
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 232,
+         "x2": "53.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "62.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 199,
+         "x2": "96.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "96.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 199,
+         "x2": "96.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 223
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "62.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "96.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 232,
+         "x2": "96.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 223
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "233.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 228,
+         "x2": "267.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "267.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 228,
+         "x2": "250 + fract(continuousSec()*0.017000)*540",
+         "y2": 202
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "250 + fract(continuousSec()*0.017000)*540",
+         "y1": 202,
+         "x2": "233.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "243.88 + fract(continuousSec()*0.017000)*540",
+         "y1": 228,
+         "x2": "250 + fract(continuousSec()*0.017000)*540",
+         "y2": 202
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 216,
+         "x2": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 216
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 216,
+         "x2": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 236
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 236,
+         "x2": "385.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 236
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 236,
+         "x2": "385.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 216
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "393.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "423.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "423.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 208,
+         "x2": "423.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 216,
+         "x2": "393.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 216,
+         "x2": "423.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + fract(continuousSec()*0.017000)*540",
+         "y1": 236,
+         "x2": "423.0 + fract(continuousSec()*0.017000)*540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 232
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 232,
+         "x2": "53.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 232
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 232,
+         "x2": "53.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "62.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 199,
+         "x2": "96.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "96.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 199,
+         "x2": "96.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 223
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "53.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "62.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "96.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 199
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "87.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 232,
+         "x2": "96.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 223
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "233.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 228,
+         "x2": "267.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "267.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 228,
+         "x2": "250 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 202
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "250 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 202,
+         "x2": "233.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "243.88 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 228,
+         "x2": "250 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 202
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 216,
+         "x2": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 216
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 216,
+         "x2": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 236
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 236,
+         "x2": "385.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 236
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 236,
+         "x2": "385.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 216
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "393.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "423.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "423.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 208,
+         "x2": "423.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 228
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "385.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 216,
+         "x2": "393.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 216,
+         "x2": "423.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 208
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "415.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y1": 236,
+         "x2": "423.0 + (fract(continuousSec()*0.017000)*540) - 540",
+         "y2": 228
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.8
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "109.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 300,
+         "x2": "171.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 300
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "171.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 300,
+         "x2": "140 + fract(continuousSec()*0.034000)*540",
+         "y2": 254
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "140 + fract(continuousSec()*0.034000)*540",
+         "y1": 254,
+         "x2": "109.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 300
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "128.84 + fract(continuousSec()*0.034000)*540",
+         "y1": 300,
+         "x2": "140 + fract(continuousSec()*0.034000)*540",
+         "y2": 254
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 264,
+         "x2": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 264
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 264,
+         "x2": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 306
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 306,
+         "x2": "300.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 306
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 306,
+         "x2": "300.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 264
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "316.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 248,
+         "x2": "376.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "376.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 248,
+         "x2": "376.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 290
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 264,
+         "x2": "316.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 264,
+         "x2": "376.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 306,
+         "x2": "376.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 290
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "446.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 292,
+         "x2": "494.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 292
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "494.0 + fract(continuousSec()*0.034000)*540",
+         "y1": 292,
+         "x2": "470 + fract(continuousSec()*0.034000)*540",
+         "y2": 258
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "470 + fract(continuousSec()*0.034000)*540",
+         "y1": 258,
+         "x2": "446.0 + fract(continuousSec()*0.034000)*540",
+         "y2": 292
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "461.36 + fract(continuousSec()*0.034000)*540",
+         "y1": 292,
+         "x2": "470 + fract(continuousSec()*0.034000)*540",
+         "y2": 258
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "109.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 300,
+         "x2": "171.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 300
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "171.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 300,
+         "x2": "140 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 254
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "140 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 254,
+         "x2": "109.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 300
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "128.84 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 300,
+         "x2": "140 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 254
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 264,
+         "x2": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 264
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 264,
+         "x2": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 306
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 306,
+         "x2": "300.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 306
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 306,
+         "x2": "300.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 264
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "316.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 248,
+         "x2": "376.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "376.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 248,
+         "x2": "376.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 290
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "300.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 264,
+         "x2": "316.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 264,
+         "x2": "376.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 248
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "360.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 306,
+         "x2": "376.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 290
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "446.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 292,
+         "x2": "494.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 292
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "494.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 292,
+         "x2": "470 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 258
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "470 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 258,
+         "x2": "446.0 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 292
+        }
+       },
+       {
+        "drawLine": {
+         "x1": "461.36 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y1": 292,
+         "x2": "470 + (fract(continuousSec()*0.034000)*540) - 540",
+         "y2": 258
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 44.0,
+         "radius": 30.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 210.0,
+         "y1": 44.0,
+         "x2": 270.0,
+         "y2": 44.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 14.0,
+         "x2": 240.0,
+         "y2": 74.0
+        }
+       },
+       {
+        "variable": {
+         "name": "rsw",
+         "value": "continuousSec()*2.199115"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF8CFFB0"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.8
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 44.0,
+         "x2": "240.0 + 30.0*cos(@rsw)",
+         "y2": "44.0 + 30.0*sin(@rsw)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFFFDD"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(@rsw - 0.9)+1)*0.5, 6)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 255.0,
+         "cy": 30.0,
+         "radius": 3.2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3BFF6B"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 194.0,
+         "y1": 232.0,
+         "x2": 194.0,
+         "y2": 250.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 194.0,
+         "y1": 250.0,
+         "x2": 218.0,
+         "y2": 250.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 286.0,
+         "y1": 232.0,
+         "x2": 286.0,
+         "y2": 250.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 286.0,
+         "y1": 250.0,
+         "x2": 262.0,
+         "y2": 250.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 240.0,
+         "y1": 220.0,
+         "x2": 240.0,
+         "y2": 240.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 240.0,
+         "cy": 250.0,
+         "radius": 4
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "render/d37-spiralsq",
+  "sha256": "f4c5cd6741b86ad27d0af03ce88b84d708a2bd9d24d5ee3e94669fdf9e062f27",
+  "bytes": 399,
+  "ops": 23,
+  "distinctOps": 14,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 5,
+    "MATRIX_ROTATE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

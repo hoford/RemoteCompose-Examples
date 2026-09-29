@@ -1,0 +1,35 @@
+{
+  "id": "render/hash",
+  "sha256": "5c313492137aa7ca8434fc9320512c6468ed001d691c47b01c49a36393da150d",
+  "bytes": 564,
+  "ops": 26,
+  "distinctOps": 10,
+  "width": 420,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 3,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 8,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

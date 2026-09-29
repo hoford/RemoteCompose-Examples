@@ -1,0 +1,35 @@
+{
+  "id": "render/al-chain",
+  "sha256": "19a94ea5fe4d14d6cd6b622830f6ae3bf462f2633c78ba66e97117df36570b50",
+  "bytes": 290,
+  "ops": 16,
+  "distinctOps": 10,
+  "width": 200,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

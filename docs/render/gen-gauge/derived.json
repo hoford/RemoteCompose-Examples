@@ -1,0 +1,41 @@
+{
+  "id": "render/gen-gauge",
+  "sha256": "eff993debcef4992aa9321124824ebf0ea4bd950a1423d16c75adc580bf19d54",
+  "bytes": 291,
+  "ops": 20,
+  "distinctOps": 14,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "ANIMATED_FLOAT": 2,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

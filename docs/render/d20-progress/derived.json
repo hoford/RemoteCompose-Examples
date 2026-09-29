@@ -1,0 +1,28 @@
+{
+  "id": "render/d20-progress",
+  "sha256": "f0e03c8168ccdfbd74a939f532eecef1b805dbeebe124e3198de883b88052c2f",
+  "bytes": 397,
+  "ops": 23,
+  "distinctOps": 8,
+  "width": 320,
+  "height": 180,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_ROUND_RECT": 7,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

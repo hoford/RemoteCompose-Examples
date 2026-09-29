@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels-light/05-mood-lamp",
+  "sha256": "66dcc763a38c104aa329e545f48640782377f2a32d48b4c6b9e81e0607d064be",
+  "bytes": 1579,
+  "ops": 73,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 6,
+    "DATA_TEXT": 3,
+    "ANIMATED_FLOAT": 13,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 7,
+    "DRAW_OVAL": 3,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

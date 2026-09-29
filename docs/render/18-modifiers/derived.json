@@ -1,0 +1,32 @@
+{
+  "id": "render/18-modifiers",
+  "sha256": "d38395f985529a10f78558315cbb91cddcc9276c315ffcaa3ccfd6576258f808",
+  "bytes": 363,
+  "ops": 21,
+  "distinctOps": 13,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 2,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_BORDER": 1,
+    "MODIFIER_WIDTH_IN": 1,
+    "MODIFIER_HEIGHT_IN": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

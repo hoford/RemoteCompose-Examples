@@ -1,0 +1,58 @@
+{
+  "name": "stat_value",
+  "description": "A large single numeric statistic (KPI): one big number shown centered with a small caption label underneath — e.g. a percentage, temperature, heart rate, count, or score. The number uses textFromFloat so it is a formatted numeric value, with a units/label line beneath it.",
+  "tags": [
+    "stat",
+    "kpi",
+    "number",
+    "value",
+    "metric",
+    "readout",
+    "percent",
+    "count",
+    "big"
+  ],
+  "data_schema": "value: number — the statistic; label: short caption/units line; decimals: digits after the point (0 for an integer)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 320,
+      "height": 320,
+      "contentDescription": "stat",
+      "profiles": 513
+    },
+    "root": {
+      "column": {
+        "modifiers": [
+          "fillMaxSize",
+          {
+            "background": "#FF0E1116"
+          }
+        ],
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "text": {
+              "textFromFloat": {
+                "value": 47.0,
+                "whole": 0,
+                "decimal": 0,
+                "flags": 0
+              },
+              "fontSize": 128.0,
+              "color": "#FF00E5FF"
+            }
+          },
+          {
+            "text": {
+              "value": "CPU LOAD %",
+              "fontSize": 28.0,
+              "color": "#FF8892B0"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

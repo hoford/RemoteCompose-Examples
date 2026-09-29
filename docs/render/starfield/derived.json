@@ -1,0 +1,42 @@
+{
+  "id": "render/starfield",
+  "sha256": "6b3ccdc472a183a1e685b90512d4f39b49e12176a5b90072845733b706eccbc6",
+  "bytes": 2290,
+  "ops": 45,
+  "distinctOps": 14,
+  "width": 480,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 17,
+    "MATRIX_SCALE": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 2,
+    "DATA_TEXT": 1,
+    "DRAW_LINE": 3,
+    "CONTAINER_END": 7
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

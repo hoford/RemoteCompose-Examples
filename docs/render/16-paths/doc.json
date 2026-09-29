@@ -1,0 +1,81 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF101820",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "pathCreate": {
+            "id": "tri",
+            "x": 150.0,
+            "y": 40.0
+          }
+        },
+        {
+          "pathAppendLineTo": {
+            "path": "tri",
+            "x": "width - 40",
+            "y": 260.0
+          }
+        },
+        {
+          "pathAppendLineTo": {
+            "path": "tri",
+            "x": 40.0,
+            "y": 260.0
+          }
+        },
+        {
+          "pathAppendClose": {
+            "path": "tri"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFDD835",
+            "style": "fill"
+          }
+        },
+        {
+          "drawPath": {
+            "path": "tri"
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFE53935",
+            "style": "stroke",
+            "width": 5.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "drawPath": {
+            "path": "tri"
+          }
+        }
+      ]
+    }
+  }
+}

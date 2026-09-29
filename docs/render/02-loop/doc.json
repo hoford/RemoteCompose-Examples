@@ -1,0 +1,51 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 400,
+  "height": 400,
+  "profiles": 513,
+  "orderedResources": true,
+  "contentDescription": "36 radial bars whose lengths follow a wave travelling around the circle"
+ },
+ "root": [
+  {
+   "type": "canvas",
+   "modifiers": ["fillMaxSize"],
+   "commands": [
+
+   {"paint": {"ops": [{"color": "#FF0B1220"}, {"style": "fill"}]}},
+   {"drawRect": {"left": 0, "top": 0,
+                 "right": "componentWidth()", "bottom": "componentHeight()"}},
+
+   {"loop": {
+    "from": 0,
+    "until": 36,
+    "index": "i",
+    "commands": [
+
+     {"paint": {"ops": [
+       {"color": "#FF7BD88F"},
+       {"style": "fill"},
+       {"alpha": "0.30 + 0.70 * (0.5 + 0.5 * sin(i * 0.55 + continuousSec() * 1.5707963))"}
+     ]}},
+
+     {"save": {}},
+     {"rotate": {"angle": "i * 10", "pivotX": 200, "pivotY": 200}},
+     {"drawRoundRect": {
+       "left": 92,
+       "top": 196,
+       "right": "116 + 46 * (0.5 + 0.5 * sin(i * 0.55 + continuousSec() * 1.5707963))",
+       "bottom": 204,
+       "rx": 4, "ry": 4
+     }},
+     {"restore": {}}
+
+    ]}},
+
+   {"paint": {"ops": [{"color": "#FF6AA9FF"}, {"style": "fill"}]}},
+   {"drawCircle": {"cx": 200, "cy": 200, "radius": 26}}
+
+   ]
+  }
+ ]
+}

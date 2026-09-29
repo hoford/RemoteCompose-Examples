@@ -1,0 +1,138 @@
+{
+  "name": "line_chart",
+  "description": "Line chart: a polyline connecting a series of y-values evenly spaced on the x-axis, with a dot at each point. Use for trends/time series.",
+  "tags": [
+    "chart",
+    "line",
+    "trend",
+    "series",
+    "data"
+  ],
+  "data_schema": "value: number[]  — y values in pixels (~0..180), evenly spaced on x",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 320,
+      "height": 240,
+      "contentDescription": "line chart",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "value": [
+                    60,
+                    110,
+                    80,
+                    150,
+                    120,
+                    190,
+                    140,
+                    200
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 320,
+                    "bottom": 240
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@value)",
+                    "commit": true
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF455A64",
+                    "style": "stroke",
+                    "width": 2.0
+                  }
+                },
+                {
+                  "drawLine": {
+                    "x1": 30,
+                    "y1": 212,
+                    "x2": 300,
+                    "y2": 212
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF42A5F5",
+                    "style": "stroke",
+                    "width": 3.0,
+                    "strokeCap": "round"
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n - 1",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "drawLine": {
+                          "x1": "30 + i * (260 / (@n - 1))",
+                          "y1": "210 - arrayGet(@value, i)",
+                          "x2": "30 + (i + 1) * (260 / (@n - 1))",
+                          "y2": "210 - arrayGet(@value, i + 1)"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF90CAF9",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "drawCircle": {
+                          "cx": "30 + i * (260 / (@n - 1))",
+                          "cy": "210 - arrayGet(@value, i)",
+                          "radius": 4.0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

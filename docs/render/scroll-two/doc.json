@@ -1,0 +1,578 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 600,
+  "profiles": 513,
+  "contentDescription": "two independent scrollers: drag must lock to the press"
+ },
+ "root": {
+  "type": "row",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF101828"
+   }
+  ],
+  "children": [
+   {
+    "column": {
+     "modifiers": [
+      {
+       "weight": 1.0
+      },
+      "fillMaxHeight",
+      {
+       "verticalScroll": 0.0
+      }
+     ],
+     "children": [
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L0",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L1",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L2",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L3",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L4",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L5",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L6",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L7",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L8",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L9",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF4DA3FF"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L10",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FF1E5FA8"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "L11",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   },
+   {
+    "column": {
+     "modifiers": [
+      {
+       "weight": 1.0
+      },
+      "fillMaxHeight",
+      {
+       "verticalScroll": 0.0
+      }
+     ],
+     "children": [
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R0",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R1",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R2",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R3",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R4",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R5",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R6",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R7",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R8",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R9",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFFFB020"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R10",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      },
+      {
+       "box": {
+        "modifiers": [
+         {
+          "height": 200
+         },
+         "fillMaxWidth",
+         {
+          "background": "#FFA8701E"
+         }
+        ],
+        "children": [
+         {
+          "text": {
+           "text": "R11",
+           "fontSize": 40,
+           "color": "#FF101828"
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

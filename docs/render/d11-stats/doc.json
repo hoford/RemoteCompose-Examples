@@ -1,0 +1,127 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 480,
+    "height": 150,
+    "contentDescription": "stats",
+    "profiles": 513
+  },
+  "root": {
+    "row": {
+      "children": [
+        {
+          "column": {
+            "children": [
+              {
+                "text": {
+                  "value": "128",
+                  "fontSize": 44.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0,
+                  "textAlign": "center"
+                }
+              },
+              {
+                "text": {
+                  "value": "USERS",
+                  "fontSize": 15.0,
+                  "color": "#FFE0E0E0",
+                  "textAlign": "center"
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF1E88E5"
+              },
+              {
+                "padding": 16
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "column": {
+            "children": [
+              {
+                "text": {
+                  "value": "94%",
+                  "fontSize": 44.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0,
+                  "textAlign": "center"
+                }
+              },
+              {
+                "text": {
+                  "value": "UPTIME",
+                  "fontSize": 15.0,
+                  "color": "#FFE0E0E0",
+                  "textAlign": "center"
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF43A047"
+              },
+              {
+                "padding": 16
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        },
+        {
+          "column": {
+            "children": [
+              {
+                "text": {
+                  "value": "3.4k",
+                  "fontSize": 44.0,
+                  "color": "#FFFFFFFF",
+                  "fontWeight": 700.0,
+                  "textAlign": "center"
+                }
+              },
+              {
+                "text": {
+                  "value": "EVENTS",
+                  "fontSize": 15.0,
+                  "color": "#FFE0E0E0",
+                  "textAlign": "center"
+                }
+              }
+            ],
+            "modifiers": [
+              {
+                "weight": 1.0
+              },
+              {
+                "background": "#FF8E24AA"
+              },
+              {
+                "padding": 16
+              }
+            ],
+            "horizontalAlignment": "center",
+            "verticalAlignment": "center"
+          }
+        }
+      ],
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "verticalAlignment": "center"
+    }
+  }
+}

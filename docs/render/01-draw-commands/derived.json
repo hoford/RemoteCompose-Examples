@@ -1,0 +1,42 @@
+{
+  "id": "render/01-draw-commands",
+  "sha256": "c2409ec3bf2e3351c1b70e2f05973c1d34b003569176080f71cb3375ee98a14b",
+  "bytes": 480,
+  "ops": 27,
+  "distinctOps": 15,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 5,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 3,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_ARC": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

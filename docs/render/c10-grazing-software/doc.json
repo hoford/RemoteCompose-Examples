@@ -1,0 +1,171 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 320,
+  "height": 320,
+  "profiles": 513,
+  "contentDescription": "C10 grazing textured quad, software"
+ },
+ "resources": {
+  "bitmaps": [
+   {
+    "checker": {
+     "file": "textures/checker.png"
+    }
+   }
+  ]
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0A0C10"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 320,
+         "bottom": 320
+        }
+       },
+       {
+        "clearDepth3D": {}
+       },
+       {
+        "camera3D": {
+         "projection": "perspective",
+         "fovY": 1.0,
+         "aspect": 1.0,
+         "near": 0.05,
+         "far": 100.0,
+         "eye": [
+          0.0,
+          0.35,
+          0.0
+         ],
+         "center": [
+          0.0,
+          0.15,
+          -6.0
+         ],
+         "up": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "lights3D": {
+         "lights": [
+          {
+           "type": "directional",
+           "color": "#FFFFFFFF",
+           "dir": [
+            0.0,
+            -1.0,
+            -0.2
+           ],
+           "intensity": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "texture3D": {
+         "bitmap": "@checker"
+        }
+       },
+       {
+        "defineMesh3D": {
+         "id": 1,
+         "indices": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          3
+         ],
+         "verts": [
+          -2.0,
+          0.0,
+          -0.6,
+          2.0,
+          0.0,
+          -0.6,
+          2.0,
+          0.0,
+          -40.0,
+          -2.0,
+          0.0,
+          -40.0
+         ],
+         "normals": [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+         ],
+         "uv": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          }
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

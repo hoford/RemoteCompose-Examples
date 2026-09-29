@@ -1,0 +1,70 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H07 a weighted row inside a weighted column"
+  },
+  "root": {
+    "type": "column",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "start",
+    "verticalAlignment": "top",
+    "children": [
+      {
+        "type": "row",
+        "modifiers": [
+          {
+            "verticalWeight": 1
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "start",
+        "verticalAlignment": "top",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "weight": 1
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "weight": 2
+              },
+              {
+                "background": "#FFFFB020"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "verticalWeight": 2
+          },
+          {
+            "background": "#FF4FD6C0"
+          }
+        ]
+      }
+    ]
+  }
+}

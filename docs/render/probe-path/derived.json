@@ -1,0 +1,36 @@
+{
+  "id": "render/probe-path",
+  "sha256": "0c486268f05811ed60f8ab73d3978365f0f929ad54041f0d76e9c7c7f24b0b8d",
+  "bytes": 416,
+  "ops": 19,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_PATH": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

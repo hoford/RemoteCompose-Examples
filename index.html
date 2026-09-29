@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RemoteCompose Examples</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/player.js"></script>
+</head>
+<body>
+<header>
+  <h1>RemoteCompose Examples</h1>
+  <p class="tagline">
+    A browsable corpus of RemoteCompose documents. Every preview below is rendered in your
+    browser from the <code>.rc</code> itself — the site ships no thumbnails.
+  </p>
+</header>
+
+<main>
+  <aside id="sidebar">
+    <div class="counts">
+      <span id="count">loading…</span>
+      <button id="clear" hidden>clear filters</button>
+    </div>
+    <div id="facets"></div>
+    <footer class="sidebar-foot">
+      <a href="catalog/corpus.jsonl">corpus.jsonl</a> ·
+      <a href="AGENTS.md">for agents</a>
+    </footer>
+  </aside>
+
+  <div id="grid">
+    <div class="plane"></div>
+    <div id="spacer"></div>
+  </div>
+</main>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

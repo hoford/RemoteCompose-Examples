@@ -1,0 +1,43 @@
+{
+  "id": "render/perf-double",
+  "sha256": "0dac6812b7e31de75efa1f614b1e7ce3e43c89cb33cc0c9e77a31ad75a026f84",
+  "bytes": 1578,
+  "ops": 84,
+  "distinctOps": 17,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 8,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 11,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "DATA_TEXT": 7,
+    "MODIFIER_PADDING": 5,
+    "CONTAINER_END": 35,
+    "LAYOUT_ROW": 4,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "DRAW_PATH": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

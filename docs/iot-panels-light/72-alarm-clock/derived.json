@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels-light/72-alarm-clock",
+  "sha256": "83b0f7d1d9289e79b0ff6da5d073274d16c4ee4a6888af66e8edb181cb194e6b",
+  "bytes": 1980,
+  "ops": 84,
+  "distinctOps": 16,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 6,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 15,
+    "DRAW_OVAL": 4,
+    "CONTAINER_END": 7,
+    "DRAW_PATH": 1,
+    "DRAW_TEXT_ANCHOR": 6,
+    "DRAW_CIRCLE": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

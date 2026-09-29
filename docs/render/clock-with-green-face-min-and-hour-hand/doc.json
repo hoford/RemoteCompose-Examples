@@ -1,0 +1,112 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "green clock",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF1B5E20",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 130.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 4.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "save": [
+            {
+              "rotate": {
+                "angle": "time * 5",
+                "pivotX": 150.0,
+                "pivotY": 150.0
+              }
+            },
+            {
+              "drawLine": {
+                "x1": 150.0,
+                "y1": 150.0,
+                "x2": 150.0,
+                "y2": 90.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "stroke",
+            "width": 3.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "save": [
+            {
+              "rotate": {
+                "angle": "time * 60",
+                "pivotX": 150.0,
+                "pivotY": 150.0
+              }
+            },
+            {
+              "drawLine": {
+                "x1": 150.0,
+                "y1": 150.0,
+                "x2": 150.0,
+                "y2": 45.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 6.0
+          }
+        }
+      ]
+    }
+  }
+}

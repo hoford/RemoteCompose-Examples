@@ -1,0 +1,43 @@
+{
+  "id": "render/d31-clock",
+  "sha256": "3bddde02e8d8adbfed56dfe6a9bc3dfed25ffce95b9574123a8fe9749a16b429",
+  "bytes": 285,
+  "ops": 22,
+  "distinctOps": 15,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 2,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 6,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

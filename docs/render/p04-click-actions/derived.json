@@ -1,0 +1,38 @@
+{
+  "id": "render/p04-click-actions",
+  "sha256": "3900a342e902c5b39e544690c669c42a5f10bc2866c65cd03a605f8a32ae9d34",
+  "bytes": 477,
+  "ops": 31,
+  "distinctOps": 15,
+  "width": 320,
+  "height": 220,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "DATA_FLOAT": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 1,
+    "CONTAINER_END": 12,
+    "LAYOUT_BOX": 2,
+    "ANIMATED_FLOAT": 1,
+    "MODIFIER_RIPPLE": 1,
+    "MODIFIER_CLICK": 1,
+    "DATA_TEXT": 1
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

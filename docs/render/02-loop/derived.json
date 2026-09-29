@@ -1,0 +1,44 @@
+{
+  "id": "render/02-loop",
+  "sha256": "eb81e5d29aa672ff926add815d6f3332f17e52289b14b98c8695fabc621a1da0",
+  "bytes": 516,
+  "ops": 25,
+  "distinctOps": 16,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 1,
+    "ANIMATED_FLOAT": 3,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 5,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

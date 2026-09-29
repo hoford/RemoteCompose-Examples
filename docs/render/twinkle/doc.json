@@ -1,0 +1,2691 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "twinkling night sky",
+  "orderedResources": true
+ },
+ "root": [
+  {
+   "global": [
+    {
+     "canvas": {
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "scale": {
+         "sx": "width/480",
+         "sy": "height/360",
+         "pivotX": 0,
+         "pivotY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF04060D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 480,
+         "bottom": 360
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.071632 + 1.157)+1)*0.5, 3) * 0.35"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 55.9,
+         "cy": 135.8,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.797689 + 4.344)+1)*0.5, 3) * 0.35"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 293.2,
+         "cy": 53.3,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.595231 + 0.557)+1)*0.5, 3) * 0.35"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 310.6,
+         "cy": 224.1,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.652753 + 3.237)+1)*0.5, 3) * 0.351"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 153.3,
+         "cy": 350.8,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.776745 + 1.149)+1)*0.5, 3) * 0.351"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 214.0,
+         "cy": 291.0,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.024508 + 0.239)+1)*0.5, 3) * 0.351"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 451.3,
+         "cy": 47.2,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.799434 + 3.024)+1)*0.5, 3) * 0.351"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 103.4,
+         "cy": 348.4,
+         "radius": 0.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.619592 + 1.348)+1)*0.5, 3) * 0.352"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 15.7,
+         "cy": 246.3,
+         "radius": 0.71
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.984366 + 3.633)+1)*0.5, 3) * 0.352"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 411.3,
+         "cy": 171.7,
+         "radius": 0.71
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.300270 + 1.031)+1)*0.5, 3) * 0.356"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 378.4,
+         "cy": 335.0,
+         "radius": 0.72
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.520182 + 0.757)+1)*0.5, 3) * 0.358"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.2,
+         "cy": 172.2,
+         "radius": 0.73
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.354302 + 2.172)+1)*0.5, 3) * 0.358"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 140.1,
+         "cy": 139.2,
+         "radius": 0.73
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.851794 + 2.677)+1)*0.5, 3) * 0.359"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 469.2,
+         "cy": 108.2,
+         "radius": 0.73
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.719149 + 0.15)+1)*0.5, 3) * 0.359"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 100.0,
+         "cy": 189.3,
+         "radius": 0.73
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.750492 + 3.027)+1)*0.5, 3) * 0.361"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 174.1,
+         "cy": 171.3,
+         "radius": 0.74
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.506145 + 3.69)+1)*0.5, 3) * 0.361"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 251.1,
+         "cy": 328.6,
+         "radius": 0.74
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.623156 + 1.146)+1)*0.5, 3) * 0.362"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 28.2,
+         "cy": 329.1,
+         "radius": 0.74
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.223476 + 2.458)+1)*0.5, 3) * 0.362"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 293.5,
+         "cy": 146.4,
+         "radius": 0.74
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.415462 + 0.761)+1)*0.5, 3) * 0.362"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 177.6,
+         "cy": 306.8,
+         "radius": 0.74
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.619666 + 0.74)+1)*0.5, 3) * 0.369"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 257.1,
+         "cy": 272.0,
+         "radius": 0.77
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.766273 + 2.688)+1)*0.5, 3) * 0.369"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 367.2,
+         "cy": 10.0,
+         "radius": 0.77
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.596976 + 1.058)+1)*0.5, 3) * 0.372"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 251.3,
+         "cy": 50.9,
+         "radius": 0.78
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.656244 + 1.876)+1)*0.5, 3) * 0.372"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 33.9,
+         "cy": 296.9,
+         "radius": 0.78
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.422443 + 1.168)+1)*0.5, 3) * 0.372"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 49.8,
+         "cy": 254.8,
+         "radius": 0.78
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.848304 + 3.996)+1)*0.5, 3) * 0.375"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 59.6,
+         "cy": 328.7,
+         "radius": 0.79
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.542871 + 5.439)+1)*0.5, 3) * 0.375"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 287.6,
+         "cy": 346.8,
+         "radius": 0.79
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.513127 + 0.279)+1)*0.5, 3) * 0.376"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 21.0,
+         "cy": 10.2,
+         "radius": 0.79
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.649262 + 4.057)+1)*0.5, 3) * 0.377"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 252.9,
+         "cy": 26.6,
+         "radius": 0.8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.778491 + 0.567)+1)*0.5, 3) * 0.377"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 388.1,
+         "cy": 267.0,
+         "radius": 0.8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.474803 + 5.945)+1)*0.5, 3) * 0.377"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 345.1,
+         "cy": 296.9,
+         "radius": 0.8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.733038 + 4.464)+1)*0.5, 3) * 0.378"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 15.8,
+         "cy": 172.9,
+         "radius": 0.8
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.764454 + 1.365)+1)*0.5, 3) * 0.385"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 291.5,
+         "cy": 260.7,
+         "radius": 0.82
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.935496 + 0.526)+1)*0.5, 3) * 0.386"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 69.0,
+         "cy": 230.6,
+         "radius": 0.83
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.862266 + 4.506)+1)*0.5, 3) * 0.387"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 186.1,
+         "cy": 14.6,
+         "radius": 0.83
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.563815 + 3.769)+1)*0.5, 3) * 0.387"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 217.9,
+         "cy": 263.4,
+         "radius": 0.83
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.268854 + 3.395)+1)*0.5, 3) * 0.39"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 349.9,
+         "cy": 191.8,
+         "radius": 0.84
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.968658 + 5.534)+1)*0.5, 3) * 0.39"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 465.7,
+         "cy": 257.0,
+         "radius": 0.84
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.059415 + 5.419)+1)*0.5, 3) * 0.391"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 416.7,
+         "cy": 342.7,
+         "radius": 0.84
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.640609 + 3.412)+1)*0.5, 3) * 0.391"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 213.5,
+         "cy": 176.5,
+         "radius": 0.85
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.417207 + 6.253)+1)*0.5, 3) * 0.391"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 168.4,
+         "cy": 259.6,
+         "radius": 0.85
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.944223 + 4.277)+1)*0.5, 3) * 0.397"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 207.9,
+         "cy": 59.3,
+         "radius": 0.86
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.169371 + 3.466)+1)*0.5, 3) * 0.402"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 329.3,
+         "cy": 48.1,
+         "radius": 0.88
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.476475 + 2.796)+1)*0.5, 3) * 0.409"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 248.1,
+         "cy": 209.2,
+         "radius": 0.91
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.918043 + 3.731)+1)*0.5, 3) * 0.412"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 341.5,
+         "cy": 264.7,
+         "radius": 0.92
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.354375 + 1.577)+1)*0.5, 3) * 0.416"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 51.3,
+         "cy": 110.0,
+         "radius": 0.93
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.609194 + 0.607)+1)*0.5, 3) * 0.418"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 419.9,
+         "cy": 55.0,
+         "radius": 0.94
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.905826 + 4.3)+1)*0.5, 3) * 0.419"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 129.2,
+         "cy": 166.1,
+         "radius": 0.94
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.900590 + 1.072)+1)*0.5, 3) * 0.42"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 48.4,
+         "cy": 51.6,
+         "radius": 0.95
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.219985 + 2.827)+1)*0.5, 3) * 0.421"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 260.2,
+         "cy": 292.8,
+         "radius": 0.95
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.933751 + 0.543)+1)*0.5, 3) * 0.426"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 305.9,
+         "cy": 99.2,
+         "radius": 0.97
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.373500 + 4.432)+1)*0.5, 3) * 0.426"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 228.3,
+         "cy": 328.7,
+         "radius": 0.97
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.148427 + 1.227)+1)*0.5, 3) * 0.428"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 226.8,
+         "cy": 105.4,
+         "radius": 0.98
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.012291 + 4.352)+1)*0.5, 3) * 0.43"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 448.9,
+         "cy": 218.0,
+         "radius": 0.98
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.919789 + 5.939)+1)*0.5, 3) * 0.431"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 451.8,
+         "cy": 136.9,
+         "radius": 0.99
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.829031 + 3.31)+1)*0.5, 3) * 0.435"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 179.4,
+         "cy": 60.2,
+         "radius": 1.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.879646 + 5.005)+1)*0.5, 3) * 0.441"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 257.7,
+         "cy": 91.2,
+         "radius": 1.02
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.815142 + 3.547)+1)*0.5, 3) * 0.448"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 393.6,
+         "cy": 291.5,
+         "radius": 1.05
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.441642 + 2.492)+1)*0.5, 3) * 0.454"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 143.8,
+         "cy": 104.9,
+         "radius": 1.07
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.513200 + 5.418)+1)*0.5, 3) * 0.456"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 334.9,
+         "cy": 349.0,
+         "radius": 1.07
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.534144 + 2.455)+1)*0.5, 3) * 0.469"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 135.7,
+         "cy": 295.9,
+         "radius": 1.12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.432915 + 1.264)+1)*0.5, 3) * 0.469"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 46.1,
+         "cy": 313.3,
+         "radius": 1.12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.689479 + 2.631)+1)*0.5, 3) * 0.471"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 378.5,
+         "cy": 98.7,
+         "radius": 1.13
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.457350 + 3.547)+1)*0.5, 3) * 0.471"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 104.5,
+         "cy": 86.8,
+         "radius": 1.13
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.490438 + 2.464)+1)*0.5, 3) * 0.491"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 6.4,
+         "cy": 53.9,
+         "radius": 1.2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.776745 + 2.553)+1)*0.5, 3) * 0.504"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 219.5,
+         "cy": 132.8,
+         "radius": 1.25
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.059415 + 3.936)+1)*0.5, 3) * 0.515"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 336.2,
+         "cy": 105.1,
+         "radius": 1.29
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.829105 + 2.962)+1)*0.5, 3) * 0.516"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 393.4,
+         "cy": 58.4,
+         "radius": 1.29
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.743584 + 1.967)+1)*0.5, 3) * 0.516"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 135.7,
+         "cy": 256.2,
+         "radius": 1.29
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.825541 + 1.875)+1)*0.5, 3) * 0.519"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 101.4,
+         "cy": 216.8,
+         "radius": 1.3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.445133 + 2.522)+1)*0.5, 3) * 0.519"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 298.0,
+         "cy": 181.7,
+         "radius": 1.3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.595157 + 4.662)+1)*0.5, 3) * 0.522"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 50.9,
+         "cy": 8.7,
+         "radius": 1.31
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.935496 + 1.553)+1)*0.5, 3) * 0.53"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 229.9,
+         "cy": 17.1,
+         "radius": 1.34
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.877901 + 3.49)+1)*0.5, 3) * 0.552"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 24.6,
+         "cy": 215.1,
+         "radius": 1.41
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.633555 + 3.701)+1)*0.5, 3) * 0.559"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 385.1,
+         "cy": 167.3,
+         "radius": 1.44
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.886627 + 5.471)+1)*0.5, 3) * 0.567"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 182.0,
+         "cy": 340.7,
+         "radius": 1.47
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.197296 + 2.712)+1)*0.5, 3) * 0.578"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 390.7,
+         "cy": 229.1,
+         "radius": 1.51
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.841249 + 3.759)+1)*0.5, 3) * 0.588"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 286.9,
+         "cy": 292.5,
+         "radius": 1.54
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.417207 + 4.821)+1)*0.5, 3) * 0.594"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 126.3,
+         "cy": 16.2,
+         "radius": 1.56
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.068142 + 1.533)+1)*0.5, 3) * 0.61"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 96.5,
+         "cy": 153.2,
+         "radius": 1.62
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.844813 + 4.844)+1)*0.5, 3) * 0.61"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 380.6,
+         "cy": 139.5,
+         "radius": 1.62
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.260128 + 0.119)+1)*0.5, 3) * 0.615"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 412.8,
+         "cy": 251.4,
+         "radius": 1.64
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.179843 + 3.233)+1)*0.5, 3) * 0.618"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 264.1,
+         "cy": 139.1,
+         "radius": 1.65
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.719149 + 6.232)+1)*0.5, 3) * 0.637"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 416.7,
+         "cy": 300.6,
+         "radius": 1.71
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.207768 + 2.654)+1)*0.5, 3) * 0.651"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 430.3,
+         "cy": 138.2,
+         "radius": 1.76
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.996583 + 4.474)+1)*0.5, 3) * 0.663"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 11.5,
+         "cy": 144.3,
+         "radius": 1.81
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.593412 + 3.527)+1)*0.5, 3) * 0.682"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 106.9,
+         "cy": 8.2,
+         "radius": 1.88
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.596976 + 3.759)+1)*0.5, 3) * 0.686"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 293.7,
+         "cy": 15.3,
+         "radius": 1.89
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.666789 + 0.34)+1)*0.5, 3) * 0.688"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 187.5,
+         "cy": 103.8,
+         "radius": 1.89
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFCFE3FF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.886701 + 5.675)+1)*0.5, 3) * 0.704"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 469.2,
+         "cy": 22.6,
+         "radius": 1.95
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.740093 + 0.563)+1)*0.5, 3) * 0.722"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 8.0,
+         "cy": 98.1,
+         "radius": 2.02
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.466077 + 0.658)+1)*0.5, 3) * 0.739"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 91.4,
+         "cy": 70.3,
+         "radius": 2.08
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.876155 + 5.347)+1)*0.5, 3) * 0.74"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 459.3,
+         "cy": 346.8,
+         "radius": 2.08
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.956440 + 2.145)+1)*0.5, 3) * 0.741"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 262.7,
+         "cy": 193.3,
+         "radius": 2.08
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.082104 + 0.65)+1)*0.5, 3) * 0.742"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 327.8,
+         "cy": 218.3,
+         "radius": 2.09
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.481711 + 6.213)+1)*0.5, 3) * 0.744"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 328.6,
+         "cy": 25.2,
+         "radius": 2.09
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.788962 + 1.324)+1)*0.5, 3) * 0.747"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 464.7,
+         "cy": 181.3,
+         "radius": 2.11
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.759292 + 0.796)+1)*0.5, 3) * 0.77"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 219.7,
+         "cy": 222.7,
+         "radius": 2.19
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.783726 + 5.796)+1)*0.5, 3) * 0.771"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 407.9,
+         "cy": 95.0,
+         "radius": 2.19
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.766200 + 0.692)+1)*0.5, 3) * 0.787"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 87.3,
+         "cy": 268.0,
+         "radius": 2.24
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.973894 + 5.348)+1)*0.5, 3) * 0.79"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 174.6,
+         "cy": 136.5,
+         "radius": 2.26
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.530580 + 3.838)+1)*0.5, 3) * 0.79"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 176.9,
+         "cy": 222.1,
+         "radius": 2.26
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.607375 + 5.421)+1)*0.5, 3) * 0.791"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 340.1,
+         "cy": 126.7,
+         "radius": 2.26
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.855211 + 5.763)+1)*0.5, 3) * 0.819"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 94.6,
+         "cy": 286.3,
+         "radius": 2.36
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.497492 + 2.301)+1)*0.5, 3) * 0.856"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 412.5,
+         "cy": 223.5,
+         "radius": 2.49
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.848304 + 5.45)+1)*0.5, 3) * 0.884"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 425.4,
+         "cy": 13.9,
+         "radius": 2.59
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.584759 + 0.911)+1)*0.5, 3) * 0.929"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 458.2,
+         "cy": 311.1,
+         "radius": 2.75
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.722566 + 3.333)+1)*0.5, 3) * 0.95"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 140.1,
+         "cy": 210.0,
+         "radius": 2.82
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.031490 + 1.809)+1)*0.5, 3) * 0.969"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 131.8,
+         "cy": 72.2,
+         "radius": 2.89
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.031490 + 1.809)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 118.80000000000001,
+         "y1": 72.2,
+         "x2": 144.8,
+         "y2": 72.2
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 131.8,
+         "y1": 59.2,
+         "x2": 131.8,
+         "y2": 85.2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.722566 + 3.333)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 127.39999999999999,
+         "y1": 210.0,
+         "x2": 152.79999999999998,
+         "y2": 210.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 140.1,
+         "y1": 197.3,
+         "x2": 140.1,
+         "y2": 222.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.584759 + 0.911)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 445.8,
+         "y1": 311.1,
+         "x2": 470.59999999999997,
+         "y2": 311.1
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 458.2,
+         "y1": 298.70000000000005,
+         "x2": 458.2,
+         "y2": 323.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.848304 + 5.45)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 413.7,
+         "y1": 13.9,
+         "x2": 437.09999999999997,
+         "y2": 13.9
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 425.4,
+         "y1": 2.200000000000001,
+         "x2": 425.4,
+         "y2": 25.6
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*1.497492 + 2.301)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 401.3,
+         "y1": 223.5,
+         "x2": 423.7,
+         "y2": 223.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 412.5,
+         "y1": 212.3,
+         "x2": 412.5,
+         "y2": 234.7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.855211 + 5.763)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 84.0,
+         "y1": 286.3,
+         "x2": 105.19999999999999,
+         "y2": 286.3
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 94.6,
+         "y1": 275.7,
+         "x2": 94.6,
+         "y2": 296.90000000000003
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEAF2FF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": "pow((sin(continuousSec()*0.607375 + 5.421)+1)*0.5, 4) * 0.85"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 329.90000000000003,
+         "y1": 126.7,
+         "x2": 350.3,
+         "y2": 126.7
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 340.1,
+         "y1": 116.5,
+         "x2": 340.1,
+         "y2": 136.9
+        }
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

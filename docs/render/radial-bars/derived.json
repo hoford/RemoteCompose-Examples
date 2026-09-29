@@ -1,0 +1,42 @@
+{
+  "id": "render/radial-bars",
+  "sha256": "2c6c622a354fb7619ca47481f81995d1be9359d33a7456931fd5082d91f73e99",
+  "bytes": 692,
+  "ops": 39,
+  "distinctOps": 15,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 9,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 11,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,73 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        {
+          "padding": [
+            8,
+            16,
+            8,
+            16
+          ]
+        },
+        {
+          "background": "#FF223344"
+        }
+      ],
+      "horizontalAlignment": "end",
+      "verticalAlignment": "bottom",
+      "children": [
+        {
+          "text": {
+            "value": "A",
+            "textAlign": "center",
+            "fontSize": 12.0
+          }
+        },
+        {
+          "text": {
+            "value": "A",
+            "color": "#FF00FF00"
+          }
+        },
+        {
+          "row": {
+            "modifiers": [
+              {
+                "padding": {
+                  "start": 4,
+                  "top": 2,
+                  "end": 4,
+                  "bottom": 2
+                }
+              }
+            ],
+            "children": [
+              {
+                "text": {
+                  "value": "left",
+                  "modifiers": [
+                    {
+                      "weight": 2.0
+                    }
+                  ]
+                }
+              },
+              {
+                "text": {
+                  "value": "right"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

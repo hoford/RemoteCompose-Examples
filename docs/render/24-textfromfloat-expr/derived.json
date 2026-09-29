@@ -1,0 +1,30 @@
+{
+  "id": "render/24-textfromfloat-expr",
+  "sha256": "75865bc54db10b94276baa01a8c298f1e2a12f6d40db2a074666ac1a9107b154",
+  "bytes": 220,
+  "ops": 12,
+  "distinctOps": 8,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "expressions",
+    "layout"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

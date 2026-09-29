@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels-light/58-garage-door",
+  "sha256": "e473c0ce594ec1c3c086f904055749df01c5e3f14d1bc0dc119ec3da40617c3b",
+  "bytes": 1886,
+  "ops": 84,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 13,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 14,
+    "CONTAINER_END": 8,
+    "MATRIX_RESTORE": 1,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 6,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

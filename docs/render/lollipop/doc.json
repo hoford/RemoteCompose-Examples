@@ -1,0 +1,204 @@
+{
+  "name": "lollipop",
+  "description": "Lollipop chart: a thin stem plus a dot at the top for each value. A lighter alternative to a bar chart. Use for comparing values across categories.",
+  "tags": [
+    "chart",
+    "lollipop",
+    "compare",
+    "data"
+  ],
+  "data_schema": "value: number[]  — stem heights in pixels (~0..180)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 320,
+      "height": 240,
+      "contentDescription": "lollipop",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "value": [
+                    60,
+                    120,
+                    90,
+                    170,
+                    110,
+                    150,
+                    80
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 320,
+                    "bottom": 240
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@value)",
+                    "commit": true
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF607D8B",
+                    "style": "stroke",
+                    "width": 3.0
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "drawLine": {
+                          "x1": "26 + i * 42",
+                          "y1": 210.0,
+                          "x2": "26 + i * 42",
+                          "y2": "210 - arrayGet(@value, i)"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 0.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF2196F3",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 1.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF4CAF50",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 2.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFFFC107",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 3.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFE91E63",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 4.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF9C27B0",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 5.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF00BCD4",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "drawCircle": {
+                          "cx": "26 + i * 42",
+                          "cy": "210 - arrayGet(@value, i)",
+                          "radius": 9.0
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,638 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Soil Moisture Sensor \u2014 VWC \u00b7 capacitive"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "w",
+         "value": "fract(@t / 18.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "moist",
+         "value": "0.24 + 0.62 * pow(1.0 - @w, 2.0)"
+        }
+       },
+       {
+        "variable": {
+         "name": "vwc",
+         "value": "@moist * 100.0"
+        }
+       },
+       {
+        "variable": {
+         "name": "vwcText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@vwc",
+          "whole": 2,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "variable": {
+         "name": "pour",
+         "value": "clamp(0.0, 1.0, (0.14 - @w) * 12.0)"
+        }
+       },
+       {
+        "loop": {
+         "index": "r",
+         "from": 0.0,
+         "until": 10.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "rp",
+            "value": "fract(@t * 1.6 + r * 0.1)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#6FD68F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "@pour * 0.8 * (1.0 - @rp * 0.4)"
+             }
+            ]
+           }
+          },
+          {
+           "drawOval": {
+            "left": "132.0 + (r % 5.0) * 22.0",
+            "top": "72.0 + @rp * 84.0",
+            "right": "138.0 + (r % 5.0) * 22.0",
+            "bottom": "84.0 + @rp * 84.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 2.6
+          },
+          {
+           "strokeCap": "round"
+          },
+          {
+           "alpha": 0.7
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 180,
+         "y1": 168,
+         "x2": 180,
+         "y2": 128
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.55
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 150,
+         "top": 118,
+         "right": 184,
+         "bottom": 140
+        }
+       },
+       {
+        "drawOval": {
+         "left": 178,
+         "top": 128,
+         "right": 212,
+         "bottom": 148
+        }
+       },
+       {
+        "loop": {
+         "index": "s",
+         "from": 0.0,
+         "until": 6.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "sw",
+            "value": "clamp(0.0, 1.0, (@moist * 6.0) - s * 0.85)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#241C13"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawRect": {
+            "left": 62,
+            "top": "170.0 + s * 16.0",
+            "right": 298,
+            "bottom": "186.0 + s * 16.0"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#6FD68F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.06 + 0.30 * @sw"
+             }
+            ]
+           }
+          },
+          {
+           "drawRect": {
+            "left": 62,
+            "top": "170.0 + s * 16.0",
+            "right": 298,
+            "bottom": "186.0 + s * 16.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 62,
+         "top": 170,
+         "right": 298,
+         "bottom": 266
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 236,
+         "top": 120,
+         "right": 262,
+         "bottom": 176,
+         "rx": 5,
+         "ry": 5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": "M 240 176 L 258 176 L 252 246 L 246 246 Z"
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 0.65
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 244,
+         "y1": 196,
+         "x2": 254,
+         "y2": 196
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 244,
+         "y1": 214,
+         "x2": 254,
+         "y2": 214
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 245,
+         "y1": 232,
+         "x2": 253,
+         "y2": 232
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 240,
+         "top": 128,
+         "right": 258,
+         "bottom": 144,
+         "rx": 3,
+         "ry": 3
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@vwcText",
+         "x": 249,
+         "y": 136,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.15 + 0.7 * (0.5 + 0.5 * sin(@t * 3.1415927))"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 249,
+         "cy": 156,
+         "radius": 4
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#6FD68F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Soil Moisture Sensor",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "VWC \u00b7 capacitive",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

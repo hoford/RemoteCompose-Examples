@@ -1,0 +1,63 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "contentDescription": "wavefield",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 320
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF4FC3F7",
+            "style": "fill"
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 10.0,
+            "index": "i",
+            "commands": [
+              {
+                "loop": {
+                  "from": 0.0,
+                  "until": 10.0,
+                  "index": "j",
+                  "commands": [
+                    {
+                      "drawCircle": {
+                        "cx": "20 + j * 32",
+                        "cy": "20 + i * 32",
+                        "radius": "3 + (sin(i * 0.6 + j * 0.6) + 1) * 6"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

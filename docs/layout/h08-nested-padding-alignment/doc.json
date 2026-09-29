@@ -1,0 +1,60 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H08 padding at two levels with centring at both"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      {
+        "padding": 20
+      },
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "center",
+    "verticalAlignment": "center",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 240
+          },
+          {
+            "height": 180
+          },
+          {
+            "background": "#FF223049"
+          },
+          {
+            "padding": 30
+          }
+        ],
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 60
+              },
+              {
+                "height": 40
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

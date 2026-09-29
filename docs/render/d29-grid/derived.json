@@ -1,0 +1,35 @@
+{
+  "id": "render/d29-grid",
+  "sha256": "0ac5fd48dfac7f31b0b28bc537682d3c5dd73344e9acebba001b8e0849d6d5bd",
+  "bytes": 349,
+  "ops": 19,
+  "distinctOps": 10,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 1,
+    "DATA_TEXT": 2,
+    "ANIMATED_FLOAT": 4,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

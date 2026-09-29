@@ -1,0 +1,18 @@
+{
+  "header": { "apiLevel": 7, "width": 400, "height": 400, "profiles": 513,
+              "contentDescription": "K09 text inside a CollapsibleColumnLayout, as foo.rc does" },
+  "root": {
+    "type": "box", "modifiers": ["fillMaxSize", {"background": "#FF101828"}],
+    "horizontalAlignment": "start", "verticalAlignment": "top",
+    "children": [
+      { "type": "collapsibleColumn",
+        "modifiers": [{"width": 300}, {"height": 200}, {"background": "#FF223049"}],
+        "children": [
+          { "type": "text", "text": "Tokyo", "color": "#FF0B1020", "fontSize": 18,
+            "modifiers": [{"background": "#FF4DA3FF"}] },
+          { "type": "text", "text": "Sat, 1 Aug", "color": "#FF0B1020", "fontSize": 18,
+            "modifiers": ["fillMaxWidth", {"background": "#FFFFB020"}] }
+        ] }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "render/v-lazy",
+  "sha256": "b9161656687ce19c3943f9ffc26aa85ed4d0ed81a4a7002e3b9e52b266b98d17",
+  "bytes": 399,
+  "ops": 22,
+  "distinctOps": 11,
+  "width": 480,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 2,
+    "ANIMATED_FLOAT": 4,
+    "DRAW_CIRCLE": 3,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

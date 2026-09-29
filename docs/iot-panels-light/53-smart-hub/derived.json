@@ -1,0 +1,43 @@
+{
+  "id": "iot-panels-light/53-smart-hub",
+  "sha256": "94a1f5bb9db3295383a284ecc21596a9a3ca789b5555d82f733ff55086efae64",
+  "bytes": 1790,
+  "ops": 78,
+  "distinctOps": 15,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 21,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 3,
+    "DATA_TEXT": 6,
+    "ANIMATED_FLOAT": 16,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 10,
+    "CONTAINER_END": 9,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

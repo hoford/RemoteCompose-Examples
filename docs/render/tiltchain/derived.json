@@ -1,0 +1,36 @@
+{
+  "id": "render/tiltchain",
+  "sha256": "529e66727d2966b570e7c3431ed4a3f3e36ce03dea9858e25a2eafe9a2e54a69",
+  "bytes": 848,
+  "ops": 32,
+  "distinctOps": 11,
+  "width": 420,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 10,
+    "ANIMATED_FLOAT": 5,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

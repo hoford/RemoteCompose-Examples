@@ -1,0 +1,32 @@
+{
+  "id": "render/p01-new-modifiers",
+  "sha256": "34a6c14377b67e3c2c37a4898fa50a9e186c06335d2e49cb477379a294c30ccb",
+  "bytes": 655,
+  "ops": 36,
+  "distinctOps": 13,
+  "width": 320,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 4,
+    "MODIFIER_BACKGROUND": 3,
+    "MODIFIER_PADDING": 1,
+    "LAYOUT_BOX": 3,
+    "MODIFIER_ZINDEX": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 13,
+    "MODIFIER_OFFSET": 1,
+    "MODIFIER_BORDER": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

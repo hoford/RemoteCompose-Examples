@@ -1,0 +1,32 @@
+{
+  "id": "render/d10-constellation",
+  "sha256": "fbcf9fff3d0e492764199588ad8e9f54dbc9223b9a7cd553ebe1fcd8fd924013",
+  "bytes": 428,
+  "ops": 29,
+  "distinctOps": 10,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_LINE": 8,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

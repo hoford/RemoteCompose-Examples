@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels-light/77-mailbox-sensor",
+  "sha256": "44206ab8fa700d34bc4b9c5db27e78df4932e8bff28cb10117121aee263992fd",
+  "bytes": 2301,
+  "ops": 97,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 15,
+    "DRAW_PATH": 2,
+    "MATRIX_SAVE": 3,
+    "ANIMATED_FLOAT": 20,
+    "MATRIX_ROTATE": 3,
+    "MATRIX_RESTORE": 3,
+    "DRAW_CIRCLE": 4,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 7,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

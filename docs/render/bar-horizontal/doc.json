@@ -1,0 +1,183 @@
+{
+  "name": "bar_horizontal",
+  "description": "Horizontal bar chart: one colored bar per value, growing left-to-right, length proportional to the value. Good for ranked lists / long labels.",
+  "tags": [
+    "chart",
+    "bar",
+    "horizontal",
+    "ranking",
+    "data"
+  ],
+  "data_schema": "value: number[]  — bar lengths in pixels (~0..290)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 320,
+      "height": 240,
+      "contentDescription": "horizontal bars",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "value": [
+                    160,
+                    120,
+                    90,
+                    200,
+                    70,
+                    140
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 320,
+                    "bottom": 240
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@value)",
+                    "commit": true
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 0.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF2196F3",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 1.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF4CAF50",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 2.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFFFC107",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 3.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFE91E63",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 4.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF9C27B0",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 5.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF00BCD4",
+                                "style": "fill"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "drawRoundRect": {
+                          "left": 16.0,
+                          "top": "20 + i * 36",
+                          "right": "16 + arrayGet(@value, i)",
+                          "bottom": "20 + i * 36 + 24",
+                          "rx": 5,
+                          "ry": 5
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

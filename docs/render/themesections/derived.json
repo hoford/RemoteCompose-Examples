@@ -1,0 +1,27 @@
+{
+  "id": "render/themesections",
+  "sha256": "a6bf38bc7dc52474b27b4729dafed79b08248ab2f3f891bafa770b2906f64cd9",
+  "bytes": 192,
+  "ops": 14,
+  "distinctOps": 6,
+  "width": 480,
+  "height": 620,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 4,
+    "THEME": 3
+  },
+  "apis": [
+    "drawRect",
+    "paint",
+    "text",
+    "theming"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

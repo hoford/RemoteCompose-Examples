@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels-light/56-smart-blinds",
+  "sha256": "b209db50cbce3a0ec369b212053cb603deb9061a2385b54d25b4055947cb5c88",
+  "bytes": 2116,
+  "ops": 92,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 3,
+    "DRAW_ROUND_RECT": 11,
+    "ANIMATED_FLOAT": 24,
+    "DATA_TEXT": 5,
+    "CONTAINER_END": 9,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_LINE": 2,
+    "DRAW_CIRCLE": 3,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

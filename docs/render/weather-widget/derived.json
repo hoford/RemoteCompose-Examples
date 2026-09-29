@@ -1,0 +1,40 @@
+{
+  "id": "render/weather-widget",
+  "sha256": "16582f332c1cb7325ba135f74bd32ef24664cc66a08627b2a962e20f06605c90",
+  "bytes": 1685,
+  "ops": 76,
+  "distinctOps": 15,
+  "width": 380,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 6,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 3,
+    "LAYOUT_CANVAS": 1,
+    "DATA_TEXT": 11,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1,
+    "CONTAINER_END": 38,
+    "LAYOUT_COLUMN": 3,
+    "LAYOUT_ROW": 3
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

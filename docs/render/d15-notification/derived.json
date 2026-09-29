@@ -1,0 +1,30 @@
+{
+  "id": "render/d15-notification",
+  "sha256": "efb9903954b5765421cc0f834267066a7d7b4ce43d62ddc3af2daa9fda86e184",
+  "bytes": 476,
+  "ops": 30,
+  "distinctOps": 11,
+  "width": 380,
+  "height": 120,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 2,
+    "LAYOUT_BOX": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 13,
+    "LAYOUT_COLUMN": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/15-contact-sensor",
+  "sha256": "07e2b4b0cc4c178d12fd5845871bdf07a5f5144f6ac5c27bda7d3a934b384672",
+  "bytes": 1894,
+  "ops": 84,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 2,
+    "DRAW_ROUND_RECT": 14,
+    "ANIMATED_FLOAT": 13,
+    "MATRIX_SAVE": 1,
+    "MATRIX_TRANSLATE": 1,
+    "DRAW_CIRCLE": 5,
+    "MATRIX_RESTORE": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 7,
+    "DRAW_LINE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

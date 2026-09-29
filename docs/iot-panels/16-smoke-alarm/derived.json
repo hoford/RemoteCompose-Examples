@@ -1,0 +1,45 @@
+{
+  "id": "iot-panels/16-smoke-alarm",
+  "sha256": "933328d963f2d3e49b1493715cb26597ffdb16a3c7c5194511f81a99e0d42b68",
+  "bytes": 1829,
+  "ops": 85,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 4,
+    "DATA_TEXT": 5,
+    "ANIMATED_FLOAT": 16,
+    "DRAW_CIRCLE": 14,
+    "CONTAINER_END": 9,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

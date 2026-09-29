@@ -1,0 +1,147 @@
+{
+  "name": "area_chart",
+  "description": "Area chart: a filled region under a series of y-values. Like a line chart but shaded to the baseline. Use for cumulative/volume-over-time feel.",
+  "tags": [
+    "chart",
+    "area",
+    "filled",
+    "series",
+    "data"
+  ],
+  "data_schema": "value: number[]  — y values in pixels (~0..180)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 320,
+      "height": 240,
+      "contentDescription": "area chart",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "value": [
+                    60,
+                    110,
+                    80,
+                    150,
+                    120,
+                    190,
+                    140,
+                    200
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 320,
+                    "bottom": 240
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@value)",
+                    "commit": true
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF1E88E5",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "pathCreate": {
+                    "id": "area",
+                    "x": 30.0,
+                    "y": 210.0
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "pathAppendLineTo": {
+                          "path": "area",
+                          "x": "30 + i * (260 / (@n - 1))",
+                          "y": "210 - arrayGet(@value, i)"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "pathAppendLineTo": {
+                    "path": "area",
+                    "x": 290.0,
+                    "y": 210.0
+                  }
+                },
+                {
+                  "pathAppendClose": {
+                    "path": "area"
+                  }
+                },
+                {
+                  "drawPath": {
+                    "path": "area"
+                  }
+                },
+                {
+                  "paint": {
+                    "color": "#FF90CAF9",
+                    "style": "stroke",
+                    "width": 3.0,
+                    "strokeCap": "round"
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n - 1",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "drawLine": {
+                          "x1": "30 + i * (260 / (@n - 1))",
+                          "y1": "210 - arrayGet(@value, i)",
+                          "x2": "30 + (i + 1) * (260 / (@n - 1))",
+                          "y2": "210 - arrayGet(@value, i + 1)"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

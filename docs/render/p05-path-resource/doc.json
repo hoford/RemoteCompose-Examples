@@ -1,0 +1,52 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 220,
+    "height": 220,
+    "contentDescription": "paths resource — regression fixture for the ResourceParser encoding fix",
+    "profiles": 513,
+    "orderedResources": true
+  },
+  "root": [
+    {
+      "global": [
+        {
+          "resources": {
+            "colors": [{ "ink": "#FF0E1116" }, { "fill": "#FF4DA3FF" }, { "line": "#FFFF6B6B" }],
+            "paths": [
+              {
+                "tri": [
+                  { "type": "moveTo", "x": 30, "y": 30 },
+                  { "type": "lineTo", "x": 190, "y": 30 },
+                  { "type": "lineTo", "x": 110, "y": 120 },
+                  { "type": "close" }
+                ]
+              },
+              {
+                "curve": [
+                  { "type": "moveTo", "x": 30, "y": 200 },
+                  { "type": "quadTo", "x1": 110, "y1": 130, "x2": 190, "y2": 200 },
+                  { "type": "cubicTo", "x1": 160, "y1": 175, "x2": 80, "y2": 175, "x3": 30, "y3": 200 },
+                  { "type": "close" }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "canvas": {
+            "modifiers": ["fillMaxSize"],
+            "commands": [
+              { "paint": { "color": "$colors.ink", "style": "fill" } },
+              { "drawRect": { "left": 0, "top": 0, "right": 220, "bottom": 220 } },
+              { "paint": { "color": "$colors.fill", "style": "fill" } },
+              { "drawPath": { "path": "$paths.tri" } },
+              { "paint": { "color": "$colors.line", "style": "fill" } },
+              { "drawPath": { "path": "$paths.curve" } }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

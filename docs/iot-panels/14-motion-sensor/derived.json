@@ -1,0 +1,48 @@
+{
+  "id": "iot-panels/14-motion-sensor",
+  "sha256": "cd0827ff19b29543aa775f6edc05d0fa4e2794e0a4232bf0484906c0ce979f3b",
+  "bytes": 1719,
+  "ops": 69,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 18,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 3,
+    "DATA_TEXT": 4,
+    "ANIMATED_FLOAT": 15,
+    "DRAW_SECTOR": 1,
+    "CONTAINER_END": 8,
+    "DRAW_ARC": 1,
+    "DRAW_CIRCLE": 5,
+    "DRAW_PATH": 2,
+    "DRAW_OVAL": 1,
+    "DRAW_TEXT_ANCHOR": 2
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

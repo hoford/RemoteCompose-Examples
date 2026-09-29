@@ -1,0 +1,204 @@
+{
+  "name": "radial_bars",
+  "description": "Radial/polar bar chart: bars radiating from the center, one per value, length proportional to value, evenly spaced around the circle.",
+  "tags": [
+    "chart",
+    "radial",
+    "polar",
+    "bars",
+    "data"
+  ],
+  "data_schema": "value: number[]  — radial bar lengths in pixels (~0..110)",
+  "json": {
+    "header": {
+      "apiLevel": 7,
+      "width": 300,
+      "height": 300,
+      "contentDescription": "radial bars",
+      "profiles": 513,
+      "orderedResources": true
+    },
+    "root": [
+      {
+        "global": [
+          {
+            "resources": {
+              "floatArrays": [
+                {
+                  "value": [
+                    40,
+                    70,
+                    55,
+                    95,
+                    60,
+                    80,
+                    50,
+                    100,
+                    65,
+                    85,
+                    45,
+                    75
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "canvas": {
+              "modifiers": [
+                "fillMaxSize"
+              ],
+              "commands": [
+                {
+                  "paint": {
+                    "color": "#FF0E1116",
+                    "style": "fill"
+                  }
+                },
+                {
+                  "drawRect": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 300,
+                    "bottom": 300
+                  }
+                },
+                {
+                  "variable": {
+                    "name": "n",
+                    "value": "arrayLength(@value)",
+                    "commit": true
+                  }
+                },
+                {
+                  "loop": {
+                    "from": 0.0,
+                    "until": "@n",
+                    "index": "i",
+                    "commands": [
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 0.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF2196F3",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 1.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF4CAF50",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 2.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFFFC107",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 3.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FFE91E63",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 4.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF9C27B0",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "conditionalOperations": {
+                          "condition": "eq",
+                          "v1": "i % 6",
+                          "v2": 5.0,
+                          "commands": [
+                            {
+                              "paint": {
+                                "color": "#FF00BCD4",
+                                "style": "stroke",
+                                "width": 10.0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "save": [
+                          {
+                            "rotate": {
+                              "angle": "i * (360 / @n)",
+                              "pivotX": 150.0,
+                              "pivotY": 150.0
+                            }
+                          },
+                          {
+                            "drawLine": {
+                              "x1": 150.0,
+                              "y1": 110.0,
+                              "x2": 150.0,
+                              "y2": "110 - arrayGet(@value, i)"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

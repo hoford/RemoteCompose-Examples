@@ -1,0 +1,38 @@
+{
+  "id": "render/a-bar-chart-with-five-colorful-bars",
+  "sha256": "d449d1afc9516aa24c3ea6a1662afbbea863ac4b6afc06ff7a5ddd3944a451a3",
+  "bytes": 595,
+  "ops": 34,
+  "distinctOps": 12,
+  "width": 320,
+  "height": 240,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 9,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 10,
+    "DRAW_ROUND_RECT": 1
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

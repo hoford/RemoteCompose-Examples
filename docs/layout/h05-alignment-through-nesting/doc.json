@@ -1,0 +1,54 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 400,
+    "height": 400,
+    "profiles": 513,
+    "contentDescription": "H05 outer centres, inner pushes to the end - alignment does not inherit"
+  },
+  "root": {
+    "type": "box",
+    "modifiers": [
+      "fillMaxSize",
+      {
+        "background": "#FF101828"
+      }
+    ],
+    "horizontalAlignment": "center",
+    "verticalAlignment": "center",
+    "children": [
+      {
+        "type": "box",
+        "modifiers": [
+          {
+            "width": 200
+          },
+          {
+            "height": 150
+          },
+          {
+            "background": "#FF223049"
+          }
+        ],
+        "horizontalAlignment": "end",
+        "verticalAlignment": "bottom",
+        "children": [
+          {
+            "type": "box",
+            "modifiers": [
+              {
+                "width": 40
+              },
+              {
+                "height": 40
+              },
+              {
+                "background": "#FF4DA3FF"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "render/96-perf-limit",
+  "sha256": "1a77ccb8576bbeafff4a88928bfc4ce62f9bf1469cd56e2f87bb2b67914fcdb7",
+  "bytes": 1651,
+  "ops": 78,
+  "distinctOps": 22,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 4,
+    "DATA_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 4,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_ROW": 2,
+    "MODIFIER_PADDING": 5,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 25,
+    "ANIMATED_FLOAT": 11,
+    "LAYOUT_BOX": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "COMPONENT_VALUE": 2,
+    "DRAW_PATH": 1,
+    "DRAW_CIRCLE": 1,
+    "RUN_ACTION": 1,
+    "MODIFIER_CLICK": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

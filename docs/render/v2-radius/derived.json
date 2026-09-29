@@ -1,0 +1,33 @@
+{
+  "id": "render/v2-radius",
+  "sha256": "3931309fb4630ead2a72678d7c645c2fe3ab8df035d8122a81c63ecb35a62cde",
+  "bytes": 185,
+  "ops": 13,
+  "distinctOps": 9,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "PAINT_VALUES": 1,
+    "ANIMATED_FLOAT": 2,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,113 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 360,
+    "height": 360,
+    "contentDescription": "c",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF202830"
+        },
+        {
+          "padding": 12
+        }
+      ],
+      "children": [
+        {
+          "row": [
+            {
+              "text": {
+                "value": "left"
+              }
+            },
+            {
+              "spacer": {}
+            },
+            {
+              "text": {
+                "value": "right",
+                "color": "#FF88CCFF"
+              }
+            }
+          ]
+        },
+        {
+          "flow": {
+            "modifiers": [
+              "fillMaxWidth"
+            ],
+            "maxColumns": 3,
+            "children": [
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "size": 40.0
+                    },
+                    {
+                      "background": "#FFE53935"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "text": {
+                        "value": "1",
+                        "color": "#FFFFFFFF"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "box": {
+                  "modifiers": [
+                    {
+                      "size": 40.0
+                    },
+                    {
+                      "background": "#FF43A047"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "text": {
+                        "value": "2",
+                        "color": "#FFFFFFFF"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "fitBox": {
+            "modifiers": [
+              {
+                "size": 80.0
+              },
+              {
+                "background": "#FF3949AB"
+              }
+            ],
+            "children": [
+              {
+                "text": {
+                  "value": "fit",
+                  "color": "#FFFFFFFF",
+                  "fontSize": 40.0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

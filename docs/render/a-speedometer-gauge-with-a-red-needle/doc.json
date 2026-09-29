@@ -1,0 +1,132 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 300,
+    "contentDescription": "speedometer",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 300
+          }
+        },
+        {
+          "variable": {
+            "name": "val",
+            "value": 65.0,
+            "commit": true
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF37474F",
+            "style": "stroke",
+            "width": 14.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "drawArc": {
+            "left": 40,
+            "top": 40,
+            "right": 260,
+            "bottom": 260,
+            "startAngle": 135,
+            "sweepAngle": 270
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFB0BEC5",
+            "style": "stroke",
+            "width": 3.0
+          }
+        },
+        {
+          "loop": {
+            "from": 0.0,
+            "until": 11.0,
+            "index": "i",
+            "commands": [
+              {
+                "save": [
+                  {
+                    "rotate": {
+                      "angle": "135 + i * 27",
+                      "pivotX": 150.0,
+                      "pivotY": 150.0
+                    }
+                  },
+                  {
+                    "drawLine": {
+                      "x1": 150.0,
+                      "y1": 270.0,
+                      "x2": 150.0,
+                      "y2": 250.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFC10735",
+            "style": "stroke",
+            "width": 5.0,
+            "strokeCap": "round"
+          }
+        },
+        {
+          "save": [
+            {
+              "rotate": {
+                "angle": "225 + @val / 100 * 270",
+                "pivotX": 150.0,
+                "pivotY": 150.0
+              }
+            },
+            {
+              "drawLine": {
+                "x1": 150.0,
+                "y1": 150.0,
+                "x2": 150.0,
+                "y2": 70.0
+              }
+            }
+          ]
+        },
+        {
+          "paint": {
+            "color": "#FF37474F",
+            "style": "fill"
+          }
+        },
+        {
+          "drawCircle": {
+            "cx": 150.0,
+            "cy": 150.0,
+            "radius": 10.0
+          }
+        }
+      ]
+    }
+  }
+}

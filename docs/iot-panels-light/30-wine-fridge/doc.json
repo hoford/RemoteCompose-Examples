@@ -1,0 +1,705 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 360,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Wine Fridge \u2014 cellar \u00b7 12\u00b0C \u00b7 18 bottles"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#080B10"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 360.0,
+         "bottom": 360.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#111823"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.4
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 10,
+         "top": 10,
+         "right": 350.0,
+         "bottom": 350.0,
+         "rx": 18,
+         "ry": 18
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 74,
+         "top": 10.6,
+         "right": 286.0,
+         "bottom": 12.6,
+         "rx": 1,
+         "ry": 1
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()"
+        }
+       },
+       {
+        "variable": {
+         "name": "temp",
+         "value": "11.6 + 0.7 * sin(@t * 0.3926991)"
+        }
+       },
+       {
+        "variable": {
+         "name": "tempText",
+         "value": {
+          "type": "textFromFloat",
+          "value": "@temp",
+          "whole": 2,
+          "decimal": 0
+         }
+        }
+       },
+       {
+        "variable": {
+         "name": "walk",
+         "value": "fract(@t / 9.0) * 6.0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#2C3A4B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 94,
+         "top": 58,
+         "right": 266,
+         "bottom": 276,
+         "rx": 12,
+         "ry": 12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.6
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 94,
+         "top": 58,
+         "right": 266,
+         "bottom": 276,
+         "rx": 12,
+         "ry": 12
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A0F16"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 106,
+         "top": 82,
+         "right": 254,
+         "bottom": 262,
+         "rx": 7,
+         "ry": 7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.05
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 106,
+         "top": 82,
+         "right": 254,
+         "bottom": 262,
+         "rx": 7,
+         "ry": 7
+        }
+       },
+       {
+        "loop": {
+         "index": "r",
+         "from": 0.0,
+         "until": 3.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "loop": {
+            "index": "b",
+            "from": 0.0,
+            "until": 6.0,
+            "step": 1.0,
+            "commands": [
+             {
+              "variable": {
+               "name": "idx",
+               "value": "r * 6.0 + b"
+              }
+             },
+             {
+              "variable": {
+               "name": "by",
+               "value": "104.0 + r * 56.0"
+              }
+             },
+             {
+              "variable": {
+               "name": "bx",
+               "value": "122.0 + b * 22.0"
+              }
+             },
+             {
+              "variable": {
+               "name": "lit",
+               "value": "clamp(0.0, 1.0, 1.0 - abs(@walk - b) * 1.3) * clamp(0.0, 1.0, 1.4 - abs(@walk / 2.0 - r))"
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#3A4B60"
+                },
+                {
+                 "style": "fill"
+                },
+                {
+                 "alpha": 0.8
+                }
+               ]
+              }
+             },
+             {
+              "drawRoundRect": {
+               "left": "@bx - 8.0",
+               "top": "@by - 2.0",
+               "right": "@bx + 8.0",
+               "bottom": "@by + 34.0",
+               "rx": 6,
+               "ry": 6
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#3A4B60"
+                },
+                {
+                 "style": "fill"
+                },
+                {
+                 "alpha": 0.8
+                }
+               ]
+              }
+             },
+             {
+              "drawRoundRect": {
+               "left": "@bx - 3.5",
+               "top": "@by - 14.0",
+               "right": "@bx + 3.5",
+               "bottom": "@by + 2.0",
+               "rx": 2,
+               "ry": 2
+              }
+             },
+             {
+              "paint": {
+               "ops": [
+                {
+                 "color": "#B18CFF"
+                },
+                {
+                 "style": "fill"
+                },
+                {
+                 "alpha": "0.10 + 0.65 * @lit"
+                }
+               ]
+              }
+             },
+             {
+              "drawRoundRect": {
+               "left": "@bx - 8.0",
+               "top": "@by + 6.0",
+               "right": "@bx + 8.0",
+               "bottom": "@by + 22.0",
+               "rx": 3,
+               "ry": 3
+              }
+             }
+            ]
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#1B2534"
+             },
+             {
+              "style": "stroke"
+             },
+             {
+              "strokeWidth": 2.0
+             },
+             {
+              "alpha": 1.0
+             }
+            ]
+           }
+          },
+          {
+           "drawLine": {
+            "x1": 112,
+            "y1": "142.0 + r * 56.0",
+            "x2": 248,
+            "y2": "142.0 + r * 56.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "loop": {
+         "index": "c",
+         "from": 0.0,
+         "until": 10.0,
+         "step": 1.0,
+         "commands": [
+          {
+           "variable": {
+            "name": "cp",
+            "value": "fract(@t * 0.2 + c * 0.1)"
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#B18CFF"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "alpha": "0.11 * @cp * (1.0 - @cp) * 4.0"
+             }
+            ]
+           }
+          },
+          {
+           "drawOval": {
+            "left": "116.0 + (c % 5.0) * 28.0",
+            "top": "88.0 + @cp * 156.0",
+            "right": "126.0 + (c % 5.0) * 28.0",
+            "bottom": "94.0 + @cp * 156.0"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#243141"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "strokeWidth": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 106,
+         "top": 82,
+         "right": 254,
+         "bottom": 262,
+         "rx": 7,
+         "ry": 7
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#3A4B60"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 256,
+         "top": 140,
+         "right": 264,
+         "bottom": 200,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#0A1018"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 106,
+         "top": 62,
+         "right": 176,
+         "bottom": 78,
+         "rx": 4,
+         "ry": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.95
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "@tempText",
+         "x": 128,
+         "y": 70,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.9
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "\u00b0C",
+         "x": 148,
+         "y": 71,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "_pulse",
+         "value": "0.5 + 0.5 * sin(continuousSec() * 3.1415927)"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.16 + 0.20 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 8.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#B18CFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "0.55 + 0.45 * @_pulse"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 30,
+         "cy": 30,
+         "radius": 4.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#EAF0F8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 19.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Wine Fridge",
+         "x": 180,
+         "y": 306,
+         "panX": 0,
+         "panY": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#78899D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "textSize": 12.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "cellar \u00b7 12\u00b0C \u00b7 18 bottles",
+         "x": 180,
+         "y": 330,
+         "panX": 0,
+         "panY": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

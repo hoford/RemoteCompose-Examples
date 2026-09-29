@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels/80-smart-bin",
+  "sha256": "6f17e55f0e5284587ee586a00cb5f1318d4a1fd796b92f8b05ede93db6378125",
+  "bytes": 2681,
+  "ops": 103,
+  "distinctOps": 18,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 2,
+    "DRAW_ROUND_RECT": 13,
+    "DRAW_PATH": 3,
+    "ANIMATED_FLOAT": 25,
+    "DATA_TEXT": 5,
+    "CONTAINER_END": 8,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_CIRCLE": 5,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

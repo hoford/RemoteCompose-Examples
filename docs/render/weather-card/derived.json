@@ -1,0 +1,28 @@
+{
+  "id": "render/weather-card",
+  "sha256": "c0cd63086681b038128327b17375bf418501cbda7b27a318867150110c965871",
+  "bytes": 331,
+  "ops": 19,
+  "distinctOps": 9,
+  "width": 300,
+  "height": 320,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 9
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

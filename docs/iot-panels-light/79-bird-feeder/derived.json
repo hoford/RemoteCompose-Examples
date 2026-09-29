@@ -1,0 +1,47 @@
+{
+  "id": "iot-panels-light/79-bird-feeder",
+  "sha256": "20e64be43a54eeef534aaf1666d5a9c3e32f73ccfca7999ffaa6068e62d2088b",
+  "bytes": 2670,
+  "ops": 111,
+  "distinctOps": 17,
+  "width": 360,
+  "height": 360,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 30,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 11,
+    "DRAW_LINE": 2,
+    "DRAW_PATH": 1,
+    "ANIMATED_FLOAT": 34,
+    "DATA_TEXT": 4,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 7,
+    "DRAW_OVAL": 3,
+    "DRAW_TEXT_ANCHOR": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawPath",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

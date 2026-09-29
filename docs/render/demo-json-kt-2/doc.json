@@ -1,0 +1,61 @@
+{
+  "header": {},
+  "root": {
+    "box": {
+      "modifiers": [
+        {
+          "fillMaxSize": 1.0
+        },
+        {
+          "background": "#000000"
+        }
+      ],
+      "children": [
+        {
+          "canvas": {
+            "modifiers": [
+              {
+                "fillMaxSize": 1.0
+              }
+            ],
+            "commands": [
+              {
+                "drawCircle": {
+                  "cx": "width / 2",
+                  "cy": "height / 2",
+                  "radius": "min(width, height) / 3 * (0.8 + 0.2 * sin(time * 3))",
+                  "color": "#00FF00"
+                }
+              },
+              {
+                "drawRoundRect": {
+                  "left": "width / 4",
+                  "top": "height / 4",
+                  "right": "width * 3 / 4",
+                  "bottom": "height * 3 / 4",
+                  "rx": 20,
+                  "ry": 20,
+                  "color": "#55FFFFFF"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": {
+            "value": "Dynamic Visuals",
+            "color": "#FFFFFF",
+            "fontSize": 30,
+            "modifiers": [
+              {
+                "padding": {
+                  "top": 50
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

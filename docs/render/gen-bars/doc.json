@@ -1,0 +1,102 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 200,
+    "contentDescription": "bar chart",
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF0E1116",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 300,
+            "bottom": 200
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF5722",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0.0,
+            "top": 0.0,
+            "right": 60.0,
+            "bottom": 120.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#4CAF50",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 60.0,
+            "top": 0.0,
+            "right": 120.0,
+            "bottom": 180.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFC107",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 120.0,
+            "top": 0.0,
+            "right": 180.0,
+            "bottom": 90.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#2196F3",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 180.0,
+            "top": 0.0,
+            "right": 240.0,
+            "bottom": 150.0
+          }
+        },
+        {
+          "paint": {
+            "color": "#9C27B0",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 240.0,
+            "top": 0.0,
+            "right": 300.0,
+            "bottom": 70.0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 300,
+    "height": 320,
+    "contentDescription": "weather",
+    "profiles": 513
+  },
+  "root": {
+    "column": {
+      "modifiers": [
+        "fillMaxSize",
+        {
+          "background": "#FF42A5D5"
+        },
+        {
+          "padding": 24
+        }
+      ],
+      "horizontalAlignment": "center",
+      "verticalAlignment": "center",
+      "children": [
+        {
+          "text": {
+            "value": "London",
+            "fontSize": 22.0,
+            "color": "#FFFFFFFF",
+            "fontWeight": 600.0
+          }
+        },
+        {
+          "text": {
+            "value": "12°",
+            "fontSize": 84.0,
+            "color": "#FFFFFFFF",
+            "fontWeight": 300.0
+          }
+        },
+        {
+          "text": {
+            "value": "Rainy",
+            "fontSize": 18.0,
+            "color": "#FFBBDEFB"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "header": {
+    "apiLevel": 7,
+    "width": 320,
+    "height": 320,
+    "profiles": 513
+  },
+  "root": {
+    "canvas": {
+      "modifiers": [
+        "fillMaxSize"
+      ],
+      "commands": [
+        {
+          "paint": {
+            "color": "#FF263238",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 0,
+            "top": 0,
+            "right": 320,
+            "bottom": 320
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFEF5350",
+            "style": "fill"
+          }
+        },
+        {
+          "drawRect": {
+            "left": 30,
+            "top": 30,
+            "right": 150,
+            "bottom": 120
+          }
+        },
+        {
+          "paint": {
+            "color": "#FF42A5F5",
+            "style": "fill"
+          }
+        },
+        {
+          "drawOval": {
+            "left": 170,
+            "top": 30,
+            "right": 290,
+            "bottom": 120
+          }
+        },
+        {
+          "paint": {
+            "color": "#FFFFFFFF",
+            "style": "fill"
+          }
+        },
+        {
+          "drawTextAnchored": {
+            "text": "Hello Canvas",
+            "x": "width / 2",
+            "y": 230.0,
+            "panX": 0.0,
+            "panY": 0.0,
+            "flags": 0
+          }
+        }
+      ]
+    }
+  }
+}
