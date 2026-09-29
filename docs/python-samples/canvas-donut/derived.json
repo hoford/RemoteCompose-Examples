@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/canvas-donut",
+  "sha256": "ba0a4485544a38556fd37ff4a8a0750c98952dfeb0670dc732be8002b0635c36",
+  "bytes": 884,
+  "ops": 45,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 7,
+    "DRAW_TEXT_ANCHOR": 7,
+    "DRAW_ARC": 5,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

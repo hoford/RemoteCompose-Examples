@@ -1,0 +1,42 @@
+{
+  "id": "androidx-demos/procedure-simple6",
+  "sha256": "cd67ce0b0b4f1175aeeaac7c16b3913baf3df93ee78bfd25c673b1efdccba946",
+  "bytes": 1002,
+  "ops": 36,
+  "distinctOps": 15,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "PAINT_VALUES": 5,
+    "ANIMATED_FLOAT": 8,
+    "COLOR_CONSTANT": 1,
+    "NAMED_VARIABLE": 1,
+    "MATRIX_SAVE": 4,
+    "MATRIX_TRANSLATE": 1,
+    "MATRIX_SCALE": 1,
+    "DRAW_PATH": 1,
+    "MATRIX_RESTORE": 4,
+    "MATRIX_ROTATE": 3,
+    "DRAW_LINE": 3,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

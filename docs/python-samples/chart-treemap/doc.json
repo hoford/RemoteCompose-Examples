@@ -1,0 +1,58 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Treemap chart showing disk usage by file category"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFF5F5F5"},
+          "children": [
+            {"type": "paint", "color": "#FF263238", "style": "fill", "stroke_width": 0, "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Disk Usage", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 10, "top": 50, "right": 200, "bottom": 225},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "Videos 35%", "x": 105, "y": 137, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF388E3C", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 200, "top": 50, "right": 390, "bottom": 175},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "Photos 20%", "x": 295, "y": 112, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFF57C00", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 200, "top": 175, "right": 390, "bottom": 280},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "Music 15%", "x": 295, "y": 227, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFD32F2F", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 10, "top": 225, "right": 200, "bottom": 320},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Documents 10%", "x": 105, "y": 272, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF7B1FA2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 200, "top": 280, "right": 390, "bottom": 345},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Apps 8%", "x": 295, "y": 312, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF00838F", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 10, "top": 320, "right": 140, "bottom": 390},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Cache 7%", "x": 75, "y": 355, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF5D4037", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 140, "top": 320, "right": 265, "bottom": 390},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Other 3%", "x": 202, "y": 355, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF546E7A", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 265, "top": 345, "right": 390, "bottom": 390},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "System 2%", "x": 327, "y": 367, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

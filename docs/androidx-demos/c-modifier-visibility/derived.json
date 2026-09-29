@@ -1,0 +1,31 @@
+{
+  "id": "androidx-demos/c-modifier-visibility",
+  "sha256": "8fd223d8ad7b2104dfeab4ec40487413171e16c1af534697082f523a64c02e17",
+  "bytes": 154,
+  "ops": 10,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "ANIMATED_FLOAT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_VISIBILITY": 1,
+    "CONTAINER_END": 2
+  },
+  "apis": [
+    "expressions",
+    "layout"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

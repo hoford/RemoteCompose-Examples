@@ -1,0 +1,43 @@
+{
+  "id": "python-samples/demo-new-syntax",
+  "sha256": "ddd4c1601bf515c3c4ff82b932e2752afb571318d2fcc52d5133445c3ef6152d",
+  "bytes": 722,
+  "ops": 41,
+  "distinctOps": 16,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_PADDING": 3,
+    "MODIFIER_BACKGROUND": 3,
+    "LAYOUT_COLUMN": 1,
+    "DATA_TEXT": 1,
+    "CONTAINER_END": 9,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 10,
+    "PAINT_VALUES": 4,
+    "DRAW_CIRCLE": 1,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

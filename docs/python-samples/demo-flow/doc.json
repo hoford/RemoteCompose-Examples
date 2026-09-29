@@ -1,0 +1,27 @@
+{
+  "_comment": "Port of DemoFlow.kt — children wrapping to next line",
+  "header": { "width": 500, "height": 500, "description": "DemoFlow" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "flow",
+          "modifier": { "fill_max_width": true, "background": "#FFCCCCCC" },
+          "children": [
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "padding": 5, "background": "#FFFF0000" } }
+          ]
+        }
+      ]
+    }
+  ]
+}

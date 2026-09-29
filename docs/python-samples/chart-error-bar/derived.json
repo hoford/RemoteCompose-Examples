@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-error-bar",
+  "sha256": "21392906917fb67cbd5bd2d8e1ab066a471c9481501b10060489e16a7b0b8e16",
+  "bytes": 1337,
+  "ops": 67,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 7,
+    "DATA_TEXT": 13,
+    "DRAW_TEXT_ANCHOR": 13,
+    "DRAW_LINE": 20,
+    "DRAW_RECT": 5,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

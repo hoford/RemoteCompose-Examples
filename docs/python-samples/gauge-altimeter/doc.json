@@ -1,0 +1,435 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Altimeter Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF0E1118"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "altitude",
+              "expr": "sin(time.seconds * 0.1) * 5000 + 10000"
+            },
+            {
+              "type": "float_expression",
+              "label": "thousands",
+              "expr": "(sin(time.seconds * 0.1) * 5000 + 10000) / 1000"
+            },
+            {
+              "type": "float_expression",
+              "label": "hundreds",
+              "expr": "(sin(time.seconds * 0.1) * 5000 + 10000) % 1000 / 100"
+            },
+            {
+              "type": "float_expression",
+              "label": "longHandAngle",
+              "expr": "((sin(time.seconds * 0.1) * 5000 + 10000) % 1000) / 1000 * 360"
+            },
+            {
+              "type": "float_expression",
+              "label": "shortHandAngle",
+              "expr": "((sin(time.seconds * 0.1) * 5000 + 10000) % 10000) / 10000 * 360"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 190,
+              "paint": {
+                "color": "#FF1C2030",
+                "style": "fill"
+              },
+              "_comment": "Outer case"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 190,
+              "paint": {
+                "color": "#FF7B8CA8",
+                "style": "stroke",
+                "stroke_width": 4
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 180,
+              "paint": {
+                "color": "#FF0A0E16",
+                "style": "fill"
+              },
+              "_comment": "Inner ring"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 1,
+              "until": 10,
+              "label": "num",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "numAngle",
+                  "expr": "$num * 36"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$numAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "text_from_float",
+                  "label": "numLabel",
+                  "value": "$num",
+                  "before": 1,
+                  "after": 0,
+                  "flags": 1
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text_id": "$numLabel",
+                  "x": 200,
+                  "y": 40,
+                  "pan_x": 0,
+                  "pan_y": 0,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "text_size": 22
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Altitude number ring labels 0-9"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 36,
+              "until": 360,
+              "label": "mtick",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$mtick",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 22,
+                  "x2": 200,
+                  "y2": 34,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2.5
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Major ticks"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 18,
+              "until": 360,
+              "label": "stick",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$stick",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 24,
+                  "x2": 200,
+                  "y2": 32,
+                  "paint": {
+                    "color": "#66FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Minor ticks every 18 degrees (20 sub-divisions per digit)"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 80,
+              "paint": {
+                "color": "#111C2030",
+                "style": "fill"
+              },
+              "_comment": "Inner decorative circle"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 80,
+              "paint": {
+                "color": "#337B8CA8",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 170,
+              "y1": 200,
+              "x2": 230,
+              "y2": 200,
+              "paint": {
+                "color": "#227B8CA8",
+                "style": "stroke",
+                "stroke_width": 0.5
+              },
+              "_comment": "Crosshair pattern in center"
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 170,
+              "x2": 200,
+              "y2": 230,
+              "paint": {
+                "color": "#227B8CA8",
+                "style": "stroke",
+                "stroke_width": 0.5
+              }
+            },
+            {
+              "type": "save",
+              "_comment": "Long hand (hundreds)"
+            },
+            {
+              "type": "rotate",
+              "angle": "$longHandAngle",
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 50,
+              "x2": 200,
+              "y2": 210,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 193,
+              "y1": 65,
+              "x2": 200,
+              "y2": 50,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 207,
+              "y1": 65,
+              "x2": 200,
+              "y2": 50,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Short hand (thousands)"
+            },
+            {
+              "type": "rotate",
+              "angle": "$shortHandAngle",
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 110,
+              "x2": 200,
+              "y2": 210,
+              "paint": {
+                "color": "#FF7B8CA8",
+                "style": "stroke",
+                "stroke_width": 5
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 192,
+              "y1": 125,
+              "x2": 200,
+              "y2": 110,
+              "paint": {
+                "color": "#FF7B8CA8",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 208,
+              "y1": 125,
+              "x2": 200,
+              "y2": 110,
+              "paint": {
+                "color": "#FF7B8CA8",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 10,
+              "paint": {
+                "color": "#FF7B8CA8",
+                "style": "fill"
+              },
+              "_comment": "Center hub"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 5,
+              "paint": {
+                "color": "#FF0A0E16",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 130,
+              "top": 310,
+              "right": 270,
+              "bottom": 350,
+              "rx": 6,
+              "ry": 6,
+              "paint": {
+                "color": "#FF1C2030",
+                "style": "fill"
+              },
+              "_comment": "Altitude readout window"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 130,
+              "top": 310,
+              "right": 270,
+              "bottom": 350,
+              "rx": 6,
+              "ry": 6,
+              "paint": {
+                "color": "#447B8CA8",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "altText",
+              "value": "$altitude",
+              "before": 5,
+              "after": 0,
+              "flags": 1
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$altText",
+              "x": 195,
+              "y": 330,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "FT",
+              "x": 200,
+              "y": 368,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#667B8CA8",
+                "text_size": 14
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "ALTIMETER",
+              "x": 200,
+              "y": 388,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#447B8CA8",
+                "text_size": 12
+              },
+              "_comment": "ALT label"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/canvas-line-chart",
+  "sha256": "931949388a78719cd03431e9bac7b135f15f1723fbc0a1989ef20e3213ec549b",
+  "bytes": 1375,
+  "ops": 78,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 10,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 11,
+    "DRAW_CIRCLE": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

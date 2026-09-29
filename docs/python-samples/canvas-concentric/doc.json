@@ -1,0 +1,43 @@
+{
+  "_comment": "Concentric circles with alternating fill colors",
+  "header": { "width": 400, "height": 400, "description": "CanvasConcentric" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFF0F0F0" },
+          "children": [
+            { "type": "paint", "color": "#FF1A237E", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 180 },
+
+            { "type": "paint", "color": "#FF4FC3F7", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 160 },
+
+            { "type": "paint", "color": "#FF283593", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 140 },
+
+            { "type": "paint", "color": "#FF81D4FA", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 120 },
+
+            { "type": "paint", "color": "#FF303F9F", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 100 },
+
+            { "type": "paint", "color": "#FFB3E5FC", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 80 },
+
+            { "type": "paint", "color": "#FF3949AB", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 60 },
+
+            { "type": "paint", "color": "#FFE1F5FE", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 40 },
+
+            { "type": "paint", "color": "#FF5C6BC0", "style": "fill" },
+            { "type": "draw_circle", "cx": 200, "cy": 200, "radius": 20 }
+          ]
+        }
+      ]
+    }
+  ]
+}

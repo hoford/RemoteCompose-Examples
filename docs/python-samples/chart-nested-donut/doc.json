@@ -1,0 +1,108 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Nested donut chart showing budget allocation with outer categories and inner subcategories"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Budget Allocation", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "stroke", "stroke_width": 35, "text_size": 10},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 0, "sweep_angle": 144, "use_center": false},
+
+            {"type": "paint", "color": "#FF43A047", "style": "stroke", "stroke_width": 35, "text_size": 10},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 144, "sweep_angle": 90, "use_center": false},
+
+            {"type": "paint", "color": "#FFEF6C00", "style": "stroke", "stroke_width": 35, "text_size": 10},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 234, "sweep_angle": 72, "use_center": false},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "stroke", "stroke_width": 35, "text_size": 10},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 306, "sweep_angle": 54, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2, "text_size": 10},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 143.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 233.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 65, "top": 55, "right": 335, "bottom": 325, "start_angle": 305.5, "sweep_angle": 1, "use_center": false},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 0, "sweep_angle": 72, "use_center": false},
+
+            {"type": "paint", "color": "#FF90CAF9", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 72, "sweep_angle": 72, "use_center": false},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 144, "sweep_angle": 45, "use_center": false},
+
+            {"type": "paint", "color": "#FFA5D6A7", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 189, "sweep_angle": 45, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFA726", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 234, "sweep_angle": 36, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFCC80", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 270, "sweep_angle": 36, "use_center": false},
+
+            {"type": "paint", "color": "#FFAB47BC", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 306, "sweep_angle": 27, "use_center": false},
+
+            {"type": "paint", "color": "#FFCE93D8", "style": "stroke", "stroke_width": 25, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 333, "sweep_angle": 27, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 1.5, "text_size": 10},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 71.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 143.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 188.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 233.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 269.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 305.5, "sweep_angle": 1, "use_center": false},
+            {"type": "draw_arc", "left": 110, "top": 100, "right": 290, "bottom": 280, "start_angle": 332.5, "sweep_angle": 1, "use_center": false},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_text_anchored", "text": "2026", "x": 200, "y": 183, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Total: $2.4M", "x": 200, "y": 200, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Engineering 40%", "x": 340, "y": 120, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Marketing 25%", "x": 85, "y": 300, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEF6C00", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Operations 20%", "x": 110, "y": 100, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "HR 15%", "x": 310, "y": 65, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 30, "top": 345, "right": 45, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Eng", "x": 50, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 80, "top": 345, "right": 95, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Mkt", "x": 100, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEF6C00", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 130, "top": 345, "right": 145, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Ops", "x": 150, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 180, "top": 345, "right": 195, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "HR", "x": 200, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Outer: Categories  |  Inner: Subcategories", "x": 200, "y": 385, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

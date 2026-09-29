@@ -1,0 +1,42 @@
+{
+  "id": "androidx-demos/path-demo-path-tween-demo",
+  "sha256": "b94826812d71ebd90ea43e9131b996d5b78d506a39b033e488916629723cd041",
+  "bytes": 4153,
+  "ops": 42,
+  "distinctOps": 16,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 4,
+    "COMPONENT_VALUE": 2,
+    "PATH_TWEEN": 2,
+    "MATRIX_TRANSLATE": 6,
+    "PAINT_VALUES": 5,
+    "DRAW_PATH": 5,
+    "COLOR_EXPRESSIONS": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

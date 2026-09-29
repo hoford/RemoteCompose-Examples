@@ -1,0 +1,42 @@
+{
+  "id": "python-samples/widget-timer",
+  "sha256": "f6757ffcfad37986452ad5aa4d535c020188388d45e0d666c53b9bd76217fbb9",
+  "bytes": 1275,
+  "ops": 62,
+  "distinctOps": 15,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 27,
+    "PAINT_VALUES": 8,
+    "DRAW_CIRCLE": 2,
+    "DRAW_ARC": 1,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DATA_TEXT": 2,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

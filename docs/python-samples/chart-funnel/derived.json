@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-funnel",
+  "sha256": "2dd930e894c8cd37332b9ca0912b3266322348cdfb3b662bbeea1fc4849286b2",
+  "bytes": 1218,
+  "ops": 52,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 16,
+    "DATA_TEXT": 11,
+    "DRAW_TEXT_ANCHOR": 11,
+    "DRAW_RECT": 5,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

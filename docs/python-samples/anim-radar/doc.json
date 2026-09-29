@@ -1,0 +1,250 @@
+{
+  "_comment": "Radar sweep: circle outline + rotating line from center using save/rotate/restore",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimRadar"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "r",
+                  "expr": "min($w, $h) / 2 - 30"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Radar range rings",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#3000E676",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#2000E676",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": {
+                    "expr": "$r * 0.66"
+                  }
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#1800E676",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": {
+                    "expr": "$r * 0.33"
+                  }
+                },
+                {
+                  "_comment": "Crosshair lines",
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#1800E676",
+                    "stroke_width": 1.0
+                  },
+                  "x1": {
+                    "expr": "$cx - $r"
+                  },
+                  "y1": "$cy",
+                  "x2": {
+                    "expr": "$cx + $r"
+                  },
+                  "y2": "$cy"
+                },
+                {
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#1800E676",
+                    "stroke_width": 1.0
+                  },
+                  "x1": "$cx",
+                  "y1": {
+                    "expr": "$cy - $r"
+                  },
+                  "x2": "$cx",
+                  "y2": {
+                    "expr": "$cy + $r"
+                  }
+                },
+                {
+                  "_comment": "Sweep line \u2014 rotating",
+                  "type": "float_expression",
+                  "label": "sweep_deg",
+                  "expr": "time.seconds * 45 % 360"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$sweep_deg",
+                  "cx": "$cx",
+                  "cy": "$cy"
+                },
+                {
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#CC00E676",
+                    "style": "stroke",
+                    "stroke_width": 2.0
+                  },
+                  "x1": "$cx",
+                  "y1": "$cy",
+                  "x2": "$cx",
+                  "y2": {
+                    "expr": "$cy - $r"
+                  }
+                },
+                {
+                  "type": "restore"
+                },
+                {
+                  "_comment": "Sweep trail arc \u2014 fading wedge behind the sweep line",
+                  "type": "float_expression",
+                  "label": "trail_start",
+                  "expr": "$sweep_deg - 60"
+                },
+                {
+                  "type": "draw_sector",
+                  "paint": {
+                    "color": "#2000E676",
+                    "style": "fill"
+                  },
+                  "left": {
+                    "expr": "$cx - $r"
+                  },
+                  "top": {
+                    "expr": "$cy - $r"
+                  },
+                  "right": {
+                    "expr": "$cx + $r"
+                  },
+                  "bottom": {
+                    "expr": "$cy + $r"
+                  },
+                  "start_angle": {
+                    "expr": "$trail_start - 90"
+                  },
+                  "sweep_angle": 60
+                },
+                {
+                  "_comment": "Fake blips \u2014 fixed positions, always visible",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00E676",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$cx + $r * 0.4"
+                  },
+                  "cy": {
+                    "expr": "$cy - $r * 0.3"
+                  },
+                  "radius": 4
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00E676",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$cx - $r * 0.55"
+                  },
+                  "cy": {
+                    "expr": "$cy + $r * 0.2"
+                  },
+                  "radius": 3
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00E676",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$cx + $r * 0.15"
+                  },
+                  "cy": {
+                    "expr": "$cy + $r * 0.6"
+                  },
+                  "radius": 3.5
+                },
+                {
+                  "_comment": "Center dot",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00E676",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

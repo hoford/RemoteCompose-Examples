@@ -1,0 +1,177 @@
+{
+  "_comment": "Stats bar: 4 equal-weight stat boxes with value, label, and mini sparkline canvas",
+  "header": { "width": 500, "height": 200, "description": "WidgetStats" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFF8F9FA", "padding": 8 },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "_comment": "Revenue stat",
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "fill_max_height": true,
+                    "background": "#FFFFFFFF",
+                    "border": { "width": 1, "corner": 10, "color": "#FFE8EAF6", "shape": 0 },
+                    "clip": { "radii": [10, 10, 10, 10] },
+                    "padding": 10
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "modifier": { "fill_max_size": true },
+                      "children": [
+                        { "type": "text", "value": "Revenue", "font_size": 10, "color": "#FF9E9E9E" },
+                        { "type": "text", "value": "12.4k", "font_size": 22, "color": "#FF1A237E" },
+                        {
+                          "type": "canvas",
+                          "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                          "children": [
+                            { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                            { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                            { "type": "paint", "color": "#FF3F51B5", "style": "stroke", "stroke_width": 2.0 },
+                            { "type": "draw_line", "x1": 0, "y1": { "expr": "$h * 0.8" }, "x2": { "expr": "$w * 0.2" }, "y2": { "expr": "$h * 0.6" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.2" }, "y1": { "expr": "$h * 0.6" }, "x2": { "expr": "$w * 0.4" }, "y2": { "expr": "$h * 0.7" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.4" }, "y1": { "expr": "$h * 0.7" }, "x2": { "expr": "$w * 0.6" }, "y2": { "expr": "$h * 0.3" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.6" }, "y1": { "expr": "$h * 0.3" }, "x2": { "expr": "$w * 0.8" }, "y2": { "expr": "$h * 0.4" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.8" }, "y1": { "expr": "$h * 0.4" }, "x2": "$w", "y2": { "expr": "$h * 0.15" } }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Users stat",
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "fill_max_height": true,
+                    "background": "#FFFFFFFF",
+                    "border": { "width": 1, "corner": 10, "color": "#FFE8F5E9", "shape": 0 },
+                    "clip": { "radii": [10, 10, 10, 10] },
+                    "padding": 10
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "modifier": { "fill_max_size": true },
+                      "children": [
+                        { "type": "text", "value": "Users", "font_size": 10, "color": "#FF9E9E9E" },
+                        { "type": "text", "value": "3,842", "font_size": 22, "color": "#FF1B5E20" },
+                        {
+                          "type": "canvas",
+                          "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                          "children": [
+                            { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                            { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                            { "type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 2.0 },
+                            { "type": "draw_line", "x1": 0, "y1": { "expr": "$h * 0.5" }, "x2": { "expr": "$w * 0.2" }, "y2": { "expr": "$h * 0.4" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.2" }, "y1": { "expr": "$h * 0.4" }, "x2": { "expr": "$w * 0.4" }, "y2": { "expr": "$h * 0.6" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.4" }, "y1": { "expr": "$h * 0.6" }, "x2": { "expr": "$w * 0.6" }, "y2": { "expr": "$h * 0.35" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.6" }, "y1": { "expr": "$h * 0.35" }, "x2": { "expr": "$w * 0.8" }, "y2": { "expr": "$h * 0.25" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.8" }, "y1": { "expr": "$h * 0.25" }, "x2": "$w", "y2": { "expr": "$h * 0.2" } }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Orders stat",
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "fill_max_height": true,
+                    "background": "#FFFFFFFF",
+                    "border": { "width": 1, "corner": 10, "color": "#FFFFF3E0", "shape": 0 },
+                    "clip": { "radii": [10, 10, 10, 10] },
+                    "padding": 10
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "modifier": { "fill_max_size": true },
+                      "children": [
+                        { "type": "text", "value": "Orders", "font_size": 10, "color": "#FF9E9E9E" },
+                        { "type": "text", "value": "568", "font_size": 22, "color": "#FFE65100" },
+                        {
+                          "type": "canvas",
+                          "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                          "children": [
+                            { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                            { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                            { "type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 2.0 },
+                            { "type": "draw_line", "x1": 0, "y1": { "expr": "$h * 0.3" }, "x2": { "expr": "$w * 0.2" }, "y2": { "expr": "$h * 0.5" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.2" }, "y1": { "expr": "$h * 0.5" }, "x2": { "expr": "$w * 0.4" }, "y2": { "expr": "$h * 0.2" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.4" }, "y1": { "expr": "$h * 0.2" }, "x2": { "expr": "$w * 0.6" }, "y2": { "expr": "$h * 0.45" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.6" }, "y1": { "expr": "$h * 0.45" }, "x2": { "expr": "$w * 0.8" }, "y2": { "expr": "$h * 0.3" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.8" }, "y1": { "expr": "$h * 0.3" }, "x2": "$w", "y2": { "expr": "$h * 0.35" } }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Conversion stat",
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "fill_max_height": true,
+                    "background": "#FFFFFFFF",
+                    "border": { "width": 1, "corner": 10, "color": "#FFFCE4EC", "shape": 0 },
+                    "clip": { "radii": [10, 10, 10, 10] },
+                    "padding": 10
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "modifier": { "fill_max_size": true },
+                      "children": [
+                        { "type": "text", "value": "Conv %", "font_size": 10, "color": "#FF9E9E9E" },
+                        { "type": "text", "value": "14.8%", "font_size": 22, "color": "#FFC62828" },
+                        {
+                          "type": "canvas",
+                          "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                          "children": [
+                            { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                            { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                            { "type": "paint", "color": "#FFE91E63", "style": "stroke", "stroke_width": 2.0 },
+                            { "type": "draw_line", "x1": 0, "y1": { "expr": "$h * 0.7" }, "x2": { "expr": "$w * 0.2" }, "y2": { "expr": "$h * 0.6" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.2" }, "y1": { "expr": "$h * 0.6" }, "x2": { "expr": "$w * 0.4" }, "y2": { "expr": "$h * 0.5" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.4" }, "y1": { "expr": "$h * 0.5" }, "x2": { "expr": "$w * 0.6" }, "y2": { "expr": "$h * 0.55" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.6" }, "y1": { "expr": "$h * 0.55" }, "x2": { "expr": "$w * 0.8" }, "y2": { "expr": "$h * 0.3" } },
+                            { "type": "draw_line", "x1": { "expr": "$w * 0.8" }, "y1": { "expr": "$h * 0.3" }, "x2": "$w", "y2": { "expr": "$h * 0.25" } }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

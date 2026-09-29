@@ -260,6 +260,10 @@ def find_sidecars(rc: Path) -> dict[str, Path]:
     take(rc.parent)
     parent = rc.parent.parent
     if parent.exists():
+        # The parent directory itself, not just its subdirectories: a common layout puts
+        # compiled output one level below the source, so samples/output/x.rc pairs with
+        # samples/x.json. Checking only sibling directories misses that entirely.
+        take(parent)
         for sib in sorted(x for x in parent.iterdir() if x.is_dir()):
             if sib == rc.parent or sib.name.startswith(("preview", "out", "build", "web")):
                 continue
@@ -410,9 +414,12 @@ def cmd_catalog(args):
 
         dec = decode(rc)
         ops = dec[0] if dec else None
+        # No fallback to rc2json here. It mislabels the HEADER op (see parse_header), so using
+        # it when the native parse finds nothing just substitutes garbage - a document with no
+        # size tags was reported as 2 x 917508. Not every document declares DOC_WIDTH and
+        # DOC_HEIGHT; for those the honest answer is "unknown", recorded as 0 and rendered as
+        # a dash. The player sizes them from their root layout at playback.
         w, h = parse_header(data)
-        if not w and dec:
-            w, h = dec[1], dec[2]
         content = dec[3] if dec else set()
         hist = {}
         for n in ops or []:

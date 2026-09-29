@@ -1,0 +1,29 @@
+{
+  "_comment": "Port of DemoFitBox.kt — content scaled to fit bounds",
+  "header": { "width": 500, "height": 500, "description": "DemoFitBox" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "fit_box",
+          "modifier": { "fill_max_size": true, "background": "#FFCCCCCC" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": { "size": 1000, "background": "#FF0000FF" },
+              "children": [
+                {
+                  "type": "text",
+                  "value": "SCALED",
+                  "font_size": 150.0,
+                  "color": "#FFFFFFFF"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

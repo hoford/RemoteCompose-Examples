@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-pie",
+  "sha256": "a54a66cea7c8e75171d8207516c4fa8a06e86f76967bea214ab9b6e7291fe194",
+  "bytes": 1989,
+  "ops": 83,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 27,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_ARC": 5,
+    "DRAW_LINE": 5,
+    "DRAW_RECT": 5,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

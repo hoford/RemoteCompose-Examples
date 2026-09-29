@@ -1,0 +1,29 @@
+{
+  "id": "advanced-samples/check-touch-x",
+  "sha256": "65b1532acb15b2bb33124030adb8866b5d6f7c100216068f249d2f847655a4cf",
+  "bytes": 184,
+  "ops": 16,
+  "distinctOps": 9,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,167 @@
+{
+  "_comment": "Line swinging like a pendulum from top-center using sin for angle",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimPendulum"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Pivot point at top center",
+                  "type": "float_expression",
+                  "label": "pivot_y",
+                  "expr": "30"
+                },
+                {
+                  "_comment": "Pendulum angle: swings +/- 45 degrees",
+                  "type": "float_expression",
+                  "label": "pend_angle",
+                  "expr": "sin(time.seconds * 2.5) * 45"
+                },
+                {
+                  "_comment": "Pendulum arm length",
+                  "type": "float_expression",
+                  "label": "arm_len",
+                  "expr": "$h * 0.7"
+                },
+                {
+                  "_comment": "Bob position computed from angle",
+                  "type": "float_expression",
+                  "label": "bob_x",
+                  "expr": "$cx + sin(time.seconds * 2.5) * 45 * 3.14159 / 180 * $arm_len"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bob_y",
+                  "expr": "$pivot_y + cos(sin(time.seconds * 2.5) * 45 * 3.14159 / 180) * $arm_len"
+                },
+                {
+                  "_comment": "Motion trail arcs",
+                  "type": "draw_arc",
+                  "paint": {
+                    "color": "#20FFAB40",
+                    "style": "stroke",
+                    "stroke_width": 2.0
+                  },
+                  "left": {
+                    "expr": "$cx - $arm_len"
+                  },
+                  "top": {
+                    "expr": "$pivot_y - $arm_len"
+                  },
+                  "right": {
+                    "expr": "$cx + $arm_len"
+                  },
+                  "bottom": {
+                    "expr": "$pivot_y + $arm_len"
+                  },
+                  "start_angle": 45,
+                  "sweep_angle": 90
+                },
+                {
+                  "_comment": "Pendulum arm",
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#FFFFAB40",
+                    "style": "stroke",
+                    "stroke_width": 3.0
+                  },
+                  "x1": "$cx",
+                  "y1": "$pivot_y",
+                  "x2": "$bob_x",
+                  "y2": "$bob_y"
+                },
+                {
+                  "_comment": "Bob",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFAB40",
+                    "style": "fill"
+                  },
+                  "cx": "$bob_x",
+                  "cy": "$bob_y",
+                  "radius": 20
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#80FFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$bob_x - 5"
+                  },
+                  "cy": {
+                    "expr": "$bob_y - 5"
+                  },
+                  "radius": 6
+                },
+                {
+                  "_comment": "Pivot mount",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF888888",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$pivot_y",
+                  "radius": 8
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$pivot_y",
+                  "radius": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Range bar chart showing project timeline like a Gantt chart"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF263238", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Project Timeline", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 110, "y1": 50, "x2": 110, "y2": 340},
+            {"type": "draw_line", "x1": 110, "y1": 340, "x2": 385, "y2": 340},
+
+            {"type": "paint", "color": "#FFF5F5F5", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 110, "top": 50, "right": 385, "bottom": 90},
+            {"type": "draw_rect", "left": 110, "top": 140, "right": 385, "bottom": 185},
+            {"type": "draw_rect", "left": 110, "top": 235, "right": 385, "bottom": 280},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 165, "y1": 50, "x2": 165, "y2": 340},
+            {"type": "draw_line", "x1": 220, "y1": 50, "x2": 220, "y2": 340},
+            {"type": "draw_line", "x1": 275, "y1": 50, "x2": 275, "y2": 340},
+            {"type": "draw_line", "x1": 330, "y1": 50, "x2": 330, "y2": 340},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jan", "x": 110, "y": 352, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar", "x": 165, "y": 352, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "May", "x": 220, "y": 352, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Jul", "x": 275, "y": 352, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Sep", "x": 330, "y": 352, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Nov", "x": 385, "y": 352, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF37474F", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Research", "x": 105, "y": 70, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Design", "x": 105, "y": 117, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Backend", "x": 105, "y": 162, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Frontend", "x": 105, "y": 210, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Testing", "x": 105, "y": 257, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Deploy", "x": 105, "y": 305, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 110, "top": 58, "right": 185, "bottom": 82, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FF00897B", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 148, "top": 105, "right": 248, "bottom": 129, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FFE65100", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 200, "top": 150, "right": 330, "bottom": 174, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FF7B1FA2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 230, "top": 198, "right": 345, "bottom": 222, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FFC62828", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 300, "top": 245, "right": 370, "bottom": 269, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FF2E7D32", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_round_rect", "left": 350, "top": 293, "right": 385, "bottom": 317, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jan-Feb", "x": 147, "y": 70, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Feb-Apr", "x": 198, "y": 117, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Apr-Aug", "x": 265, "y": 162, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "May-Sep", "x": 287, "y": 210, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Sep-Oct", "x": 335, "y": 257, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Nov", "x": 367, "y": 305, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "2026 Project Schedule", "x": 200, "y": 385, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "androidx-demos/touch1",
+  "sha256": "6ba9ca97c980c4912cb8d67050a50a8d4dcacdd6f838cceca09ddc4fb282ce26",
+  "bytes": 757,
+  "ops": 42,
+  "distinctOps": 16,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 3,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 6,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 11,
+    "DEBUG_MESSAGE": 1,
+    "DRAW_ROUND_RECT": 2,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

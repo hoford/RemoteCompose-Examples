@@ -1,0 +1,38 @@
+{
+  "id": "androidx-demos/player-info",
+  "sha256": "8a6bb8d969a2de6d42a2d54e801f7e5040904dbcbf4a8cee412ec6fba4c4ccce",
+  "bytes": 3603,
+  "ops": 141,
+  "distinctOps": 14,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "ANIMATED_FLOAT": 35,
+    "DATA_TEXT": 30,
+    "DEBUG_MESSAGE": 2,
+    "LAYOUT_COLUMN": 1,
+    "DATA_FLOAT": 1,
+    "CONTAINER_END": 7,
+    "MODIFIER_WIDTH": 2,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_TEXT_ANCHOR": 57
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

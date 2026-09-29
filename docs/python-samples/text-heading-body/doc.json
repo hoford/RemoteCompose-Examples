@@ -1,0 +1,62 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Heading Body" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "padding": 24, "background": "#FFFFFFFF" },
+          "children": [
+            {
+              "type": "text",
+              "value": "RemoteCompose",
+              "font_size": 36.0,
+              "font_weight": 700.0,
+              "color": "#FF1A237E"
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 8 }
+            },
+            {
+              "type": "text",
+              "value": "A Binary UI Protocol",
+              "font_size": 22.0,
+              "font_weight": 500.0,
+              "color": "#FF5C6BC0"
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 20 }
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "height": 2, "background": "#FFE0E0E0" }
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 20 }
+            },
+            {
+              "type": "text",
+              "value": "RemoteCompose serializes UI trees and drawing commands into a compact binary format for playback on remote devices. It supports dynamic expressions, animations, layout, and interactivity without requiring full re-serialization.",
+              "font_size": 15.0,
+              "color": "#FF424242"
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 16 }
+            },
+            {
+              "type": "text",
+              "value": "The system is organized into three layers: Creation handles the host-side API and DSL, the Wire Format defines the binary protocol and opcodes, and Playback manages rendering and interaction on the client device.",
+              "font_size": 15.0,
+              "color": "#FF616161"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

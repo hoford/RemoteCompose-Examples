@@ -1,0 +1,70 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Dumbbell chart showing before vs after comparison for 6 items"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Before vs After", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 1, "text_size": 9},
+            {"type": "draw_circle", "cx": 140, "cy": 48, "radius": 5},
+            {"type": "draw_text_anchored", "text": "Before", "x": 150, "y": 48, "pan_x": -1, "pan_y": 0},
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 9},
+            {"type": "draw_circle", "cx": 210, "cy": 48, "radius": 5},
+            {"type": "draw_text_anchored", "text": "After", "x": 220, "y": 48, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 120, "y1": 60, "x2": 120, "y2": 370},
+            {"type": "draw_line", "x1": 190, "y1": 60, "x2": 190, "y2": 370},
+            {"type": "draw_line", "x1": 260, "y1": 60, "x2": 260, "y2": 370},
+            {"type": "draw_line", "x1": 330, "y1": 60, "x2": 330, "y2": 370},
+
+            {"type": "paint", "color": "#FF888888", "style": "fill", "stroke_width": 1, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "0", "x": 120, "y": 380, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "25", "x": 190, "y": 380, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "50", "x": 260, "y": 380, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "75", "x": 330, "y": 380, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "100", "x": 400, "y": 380, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Revenue", "x": 115, "y": 90, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Retention", "x": 115, "y": 140, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Satisfaction", "x": 115, "y": 190, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Efficiency", "x": 115, "y": 240, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Coverage", "x": 115, "y": 290, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Growth", "x": 115, "y": 340, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3, "text_size": 12},
+            {"type": "draw_line", "x1": 190, "y1": 90, "x2": 330, "y2": 90},
+            {"type": "draw_line", "x1": 172, "y1": 140, "x2": 302, "y2": 140},
+            {"type": "draw_line", "x1": 214, "y1": 190, "x2": 358, "y2": 190},
+            {"type": "draw_line", "x1": 158, "y1": 240, "x2": 274, "y2": 240},
+            {"type": "draw_line", "x1": 200, "y1": 290, "x2": 316, "y2": 290},
+            {"type": "draw_line", "x1": 144, "y1": 340, "x2": 344, "y2": 340},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_circle", "cx": 190, "cy": 90, "radius": 7},
+            {"type": "draw_circle", "cx": 172, "cy": 140, "radius": 7},
+            {"type": "draw_circle", "cx": 214, "cy": 190, "radius": 7},
+            {"type": "draw_circle", "cx": 158, "cy": 240, "radius": 7},
+            {"type": "draw_circle", "cx": 200, "cy": 290, "radius": 7},
+            {"type": "draw_circle", "cx": 144, "cy": 340, "radius": 7},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_circle", "cx": 330, "cy": 90, "radius": 7},
+            {"type": "draw_circle", "cx": 302, "cy": 140, "radius": 7},
+            {"type": "draw_circle", "cx": 358, "cy": 190, "radius": 7},
+            {"type": "draw_circle", "cx": 274, "cy": 240, "radius": 7},
+            {"type": "draw_circle", "cx": 316, "cy": 290, "radius": 7},
+            {"type": "draw_circle", "cx": 344, "cy": 340, "radius": 7}
+          ]
+        }
+      ]
+    }
+  ]
+}

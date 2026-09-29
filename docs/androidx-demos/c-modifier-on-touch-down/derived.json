@@ -1,0 +1,30 @@
+{
+  "id": "androidx-demos/c-modifier-on-touch-down",
+  "sha256": "d8072cc16840ac529f7b2d5fea590005e03e21ebe84b09ee31adaecbd944a813",
+  "bytes": 225,
+  "ops": 16,
+  "distinctOps": 11,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "DATA_INT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_TOUCH_DOWN": 1,
+    "VALUE_INTEGER_CHANGE_ACTION": 1,
+    "CONTAINER_END": 6,
+    "DATA_TEXT": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

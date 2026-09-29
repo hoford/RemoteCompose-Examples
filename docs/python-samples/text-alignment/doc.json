@@ -1,0 +1,48 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Alignment" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "padding": 20, "background": "#FFF5F5F5" },
+          "children": [
+            {
+              "type": "core_text",
+              "text": "Left Aligned Text",
+              "font_size": 24.0,
+              "color": "#FFD32F2F",
+              "text_align": "left",
+              "modifier": { "fill_max_width": true, "padding": 12, "background": "#FFFFCDD2" }
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 16 }
+            },
+            {
+              "type": "core_text",
+              "text": "Center Aligned Text",
+              "font_size": 24.0,
+              "color": "#FF1565C0",
+              "text_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 12, "background": "#FFBBDEFB" }
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 16 }
+            },
+            {
+              "type": "core_text",
+              "text": "Right Aligned Text",
+              "font_size": 24.0,
+              "color": "#FF2E7D32",
+              "text_align": "right",
+              "modifier": { "fill_max_width": true, "padding": 12, "background": "#FFC8E6C9" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Area chart showing website traffic over a week"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Website Traffic", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 45, "x2": 55, "y2": 340},
+            {"type": "draw_line", "x1": 55, "y1": 340, "x2": 380, "y2": 340},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 281, "x2": 380, "y2": 281},
+            {"type": "draw_line", "x1": 55, "y1": 222, "x2": 380, "y2": 222},
+            {"type": "draw_line", "x1": 55, "y1": 163, "x2": 380, "y2": 163},
+            {"type": "draw_line", "x1": 55, "y1": 104, "x2": 380, "y2": 104},
+            {"type": "draw_line", "x1": 55, "y1": 45, "x2": 380, "y2": 45},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 50, "y": 340, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "5K", "x": 50, "y": 281, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "10K", "x": 50, "y": 222, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "15K", "x": 50, "y": 163, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20K", "x": 50, "y": 104, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25K", "x": 50, "y": 45, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Mon", "x": 82, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Tue", "x": 136, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Wed", "x": 190, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Thu", "x": 244, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Fri", "x": 298, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Sat", "x": 352, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Sun", "x": 380, "y": 355, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#331976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 82, "top": 222, "right": 136, "bottom": 340},
+            {"type": "draw_rect", "left": 136, "top": 187, "right": 190, "bottom": 340},
+            {"type": "draw_rect", "left": 190, "top": 140, "right": 244, "bottom": 340},
+            {"type": "draw_rect", "left": 244, "top": 116, "right": 298, "bottom": 340},
+            {"type": "draw_rect", "left": 298, "top": 104, "right": 352, "bottom": 340},
+            {"type": "draw_rect", "left": 352, "top": 163, "right": 380, "bottom": 340},
+
+            {"type": "paint", "color": "#551976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 55, "top": 258, "right": 82, "bottom": 340},
+            {"type": "draw_rect", "left": 82, "top": 222, "right": 136, "bottom": 340},
+            {"type": "draw_rect", "left": 136, "top": 187, "right": 190, "bottom": 340},
+            {"type": "draw_rect", "left": 190, "top": 140, "right": 244, "bottom": 340},
+            {"type": "draw_rect", "left": 244, "top": 116, "right": 298, "bottom": 340},
+            {"type": "draw_rect", "left": 298, "top": 104, "right": 352, "bottom": 340},
+            {"type": "draw_rect", "left": 352, "top": 163, "right": 380, "bottom": 340},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "stroke", "stroke_width": 2.5, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 258, "x2": 82, "y2": 258},
+            {"type": "draw_line", "x1": 82, "y1": 258, "x2": 136, "y2": 222},
+            {"type": "draw_line", "x1": 136, "y1": 222, "x2": 190, "y2": 187},
+            {"type": "draw_line", "x1": 190, "y1": 187, "x2": 244, "y2": 140},
+            {"type": "draw_line", "x1": 244, "y1": 140, "x2": 298, "y2": 116},
+            {"type": "draw_line", "x1": 298, "y1": 116, "x2": 352, "y2": 104},
+            {"type": "draw_line", "x1": 352, "y1": 104, "x2": 380, "y2": 163},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 82, "cy": 258, "radius": 4},
+            {"type": "draw_circle", "cx": 136, "cy": 222, "radius": 4},
+            {"type": "draw_circle", "cx": 190, "cy": 187, "radius": 4},
+            {"type": "draw_circle", "cx": 244, "cy": 140, "radius": 4},
+            {"type": "draw_circle", "cx": 298, "cy": 116, "radius": 4},
+            {"type": "draw_circle", "cx": 352, "cy": 104, "radius": 4},
+            {"type": "draw_circle", "cx": 380, "cy": 163, "radius": 4},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "7K", "x": 82, "y": 250, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "10K", "x": 136, "y": 214, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "13K", "x": 190, "y": 179, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "17K", "x": 244, "y": 132, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "19K", "x": 298, "y": 108, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "20K", "x": 352, "y": 96, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "15K", "x": 380, "y": 155, "pan_x": 0, "pan_y": 1}
+          ]
+        }
+      ]
+    }
+  ]
+}

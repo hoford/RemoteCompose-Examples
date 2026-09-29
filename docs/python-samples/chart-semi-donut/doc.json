@@ -1,0 +1,55 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Semi-circle donut chart showing goal progress at 73 percent"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Goal Progress", "x": 200, "y": 30, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 40, "text_size": 10},
+            {"type": "draw_arc", "left": 60, "top": 80, "right": 340, "bottom": 360, "start_angle": 180, "sweep_angle": 180, "use_center": false},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "stroke", "stroke_width": 40, "text_size": 10},
+            {"type": "draw_arc", "left": 60, "top": 80, "right": 340, "bottom": 360, "start_angle": 180, "sweep_angle": 131.4, "use_center": false},
+
+            {"type": "paint", "color": "#FF0D47A1", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 60, "cy": 220, "radius": 6},
+            {"type": "draw_circle", "cx": 340, "cy": 220, "radius": 6},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 52},
+            {"type": "draw_text_anchored", "text": "73%", "x": 200, "y": 230, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_text_anchored", "text": "of annual target reached", "x": 200, "y": 265, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "0%", "x": 55, "y": 245, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "100%", "x": 345, "y": 245, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "50%", "x": 200, "y": 85, "pan_x": 0, "pan_y": 1},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "730K of 1M", "x": 200, "y": 300, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "+12% vs last year", "x": 200, "y": 325, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 80, "top": 350, "right": 190, "bottom": 385, "rx": 8, "ry": 8},
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Achieved: 730K", "x": 135, "y": 367, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 210, "top": 350, "right": 320, "bottom": 385, "rx": 8, "ry": 8},
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Remaining: 270K", "x": 265, "y": 367, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

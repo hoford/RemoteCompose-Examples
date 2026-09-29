@@ -1,0 +1,42 @@
+{
+  "id": "androidx-demos/color-list",
+  "sha256": "ec899830090d85afae65620e5fdcc43aa1199c9e27c987d6cca3fb81852b9541",
+  "bytes": 70053,
+  "ops": 4960,
+  "distinctOps": 18,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_FLOAT": 4,
+    "ANIMATED_FLOAT": 2,
+    "COLOR_CONSTANT": 188,
+    "NAMED_VARIABLE": 188,
+    "THEME": 282,
+    "COLOR_EXPRESSIONS": 188,
+    "CONTAINER_END": 1900,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 290,
+    "MODIFIER_BACKGROUND": 384,
+    "MODIFIER_WIDTH": 385,
+    "MODIFIER_HEIGHT": 291,
+    "LAYOUT_COLUMN": 95,
+    "DATA_TEXT": 102,
+    "DEBUG_MESSAGE": 1,
+    "LAYOUT_ROW": 282,
+    "MODIFIER_PADDING": 376
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text",
+    "theming"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

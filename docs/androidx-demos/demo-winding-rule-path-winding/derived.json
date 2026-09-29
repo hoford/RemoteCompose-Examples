@@ -1,0 +1,45 @@
+{
+  "id": "androidx-demos/demo-winding-rule-path-winding",
+  "sha256": "d16883697279ba94912f77aee1c1906f1023952d7fce32468c22e5c8ddd1a667",
+  "bytes": 8864,
+  "ops": 60,
+  "distinctOps": 17,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 12,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_CIRCLE": 5,
+    "MATRIX_SAVE": 4,
+    "MATRIX_TRANSLATE": 4,
+    "MATRIX_SCALE": 8,
+    "CLIP_RECT": 4,
+    "DRAW_PATH": 4,
+    "MATRIX_RESTORE": 4,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

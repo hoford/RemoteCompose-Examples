@@ -1,0 +1,37 @@
+{
+  "id": "python-samples/anim-pulse",
+  "sha256": "53ad8fb9d090007c2a8974340f01b3be84ac43d4c140d0e51b650501678886ff",
+  "bytes": 580,
+  "ops": 29,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 9,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 4,
+    "DRAW_TEXT_ANCHOR": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

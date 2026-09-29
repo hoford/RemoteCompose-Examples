@@ -1,0 +1,44 @@
+{
+  "id": "python-samples/anim-metronome",
+  "sha256": "460457b8ad560e53e65236398e7e2fa3c501322eddd14a58bc79ce0d2d5c319c",
+  "bytes": 1044,
+  "ops": 60,
+  "distinctOps": 16,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 24,
+    "PAINT_VALUES": 10,
+    "DRAW_RECT": 4,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 2,
+    "MATRIX_RESTORE": 2,
+    "CONTAINER_END": 4,
+    "DRAW_CIRCLE": 3,
+    "DATA_TEXT": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

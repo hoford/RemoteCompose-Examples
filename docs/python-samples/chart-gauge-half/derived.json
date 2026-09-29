@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-gauge-half",
+  "sha256": "8f439728ac7dcef2ef0e11d8b057613b44bf96ad9349652d85a462b6a53e49e4",
+  "bytes": 915,
+  "ops": 39,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 6,
+    "DRAW_ARC": 5,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

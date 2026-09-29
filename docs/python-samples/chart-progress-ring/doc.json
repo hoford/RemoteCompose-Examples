@@ -1,0 +1,43 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Daily Goals - Three concentric progress rings"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF1A1A2E"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 22},
+            {"type": "draw_text_anchored", "text": "Daily Goals", "x": 200, "y": 30, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#33FF4081", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 100, "top": 80, "right": 300, "bottom": 280, "start_angle": 0, "sweep_angle": 360, "use_center": false},
+            {"type": "paint", "color": "#FFFF4081", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 100, "top": 80, "right": 300, "bottom": 280, "start_angle": -90, "sweep_angle": 270, "use_center": false},
+
+            {"type": "paint", "color": "#3300E676", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 125, "top": 105, "right": 275, "bottom": 255, "start_angle": 0, "sweep_angle": 360, "use_center": false},
+            {"type": "paint", "color": "#FF00E676", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 125, "top": 105, "right": 275, "bottom": 255, "start_angle": -90, "sweep_angle": 216, "use_center": false},
+
+            {"type": "paint", "color": "#3340C4FF", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 150, "top": 130, "right": 250, "bottom": 230, "start_angle": 0, "sweep_angle": 360, "use_center": false},
+            {"type": "paint", "color": "#FF40C4FF", "style": "stroke", "stroke_width": 20},
+            {"type": "draw_arc", "left": 150, "top": 130, "right": 250, "bottom": 230, "start_angle": -90, "sweep_angle": 130, "use_center": false},
+
+            {"type": "paint", "color": "#FFFF4081", "style": "fill", "text_size": 14},
+            {"type": "draw_text_anchored", "text": "Move 75%", "x": 200, "y": 300, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF00E676", "style": "fill", "text_size": 14},
+            {"type": "draw_text_anchored", "text": "Exercise 60%", "x": 200, "y": 325, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF40C4FF", "style": "fill", "text_size": 14},
+            {"type": "draw_text_anchored", "text": "Stand 36%", "x": 200, "y": 350, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 28},
+            {"type": "draw_text_anchored", "text": "75%", "x": 200, "y": 180, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

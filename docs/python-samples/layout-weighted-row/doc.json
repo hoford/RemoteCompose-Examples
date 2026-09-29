@@ -1,0 +1,60 @@
+{
+  "header": { "width": 600, "height": 400, "description": "Weighted Row 1:2:1" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "row",
+          "h_align": "start",
+          "v_align": "top",
+          "modifier": { "fill_max_size": true, "padding": 10, "background": "#FFFAFAFA" },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": {
+                "horizontal_weight": 1.0,
+                "fill_max_height": true,
+                "background": "#FFE91E63",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "Weight 1", "font_size": 18, "color": "#FFFFFFFF" }
+              ]
+            },
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": {
+                "horizontal_weight": 2.0,
+                "fill_max_height": true,
+                "background": "#FF9C27B0",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "Weight 2", "font_size": 22, "color": "#FFFFFFFF" }
+              ]
+            },
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": {
+                "horizontal_weight": 1.0,
+                "fill_max_height": true,
+                "background": "#FF673AB7",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "Weight 1", "font_size": 18, "color": "#FFFFFFFF" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

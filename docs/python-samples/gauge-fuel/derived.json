@@ -1,0 +1,47 @@
+{
+  "id": "python-samples/gauge-fuel",
+  "sha256": "25016573be788f24ae38f90a99030360608ea2eccc6ce942104072b1092636c2",
+  "bytes": 1428,
+  "ops": 82,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 4,
+    "PAINT_VALUES": 21,
+    "DRAW_CIRCLE": 4,
+    "DATA_TEXT": 7,
+    "DRAW_TEXT_ANCHOR": 8,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 5,
+    "DRAW_ARC": 3,
+    "MATRIX_SAVE": 6,
+    "MATRIX_ROTATE": 6,
+    "MATRIX_RESTORE": 6,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

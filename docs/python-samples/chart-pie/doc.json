@@ -1,0 +1,90 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Pie chart showing market share distribution"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Market Share", "x": 200, "y": 25, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_sector", "left": 70, "top": 60, "right": 330, "bottom": 320, "start_angle": 0, "sweep_angle": 126},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_sector", "left": 70, "top": 60, "right": 330, "bottom": 320, "start_angle": 126, "sweep_angle": 79.2},
+
+            {"type": "paint", "color": "#FFFDD835", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_sector", "left": 70, "top": 60, "right": 330, "bottom": 320, "start_angle": 205.2, "sweep_angle": 57.6},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_sector", "left": 70, "top": 60, "right": 330, "bottom": 320, "start_angle": 262.8, "sweep_angle": 50.4},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_sector", "left": 70, "top": 60, "right": 330, "bottom": 320, "start_angle": 313.2, "sweep_angle": 46.8},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2, "text_size": 10},
+            {"type": "draw_line", "x1": 200, "y1": 190, "x2": 330, "y2": 190},
+            {"type": "draw_line", "x1": 200, "y1": 190, "x2": 250, "y2": 310},
+            {"type": "draw_line", "x1": 200, "y1": 190, "x2": 110, "y2": 285},
+            {"type": "draw_line", "x1": 200, "y1": 190, "x2": 95, "y2": 140},
+            {"type": "draw_line", "x1": 200, "y1": 190, "x2": 250, "y2": 65},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Company A", "x": 295, "y": 140, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "35%", "x": 270, "y": 160, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Company B", "x": 260, "y": 275, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "22%", "x": 240, "y": 255, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFDD835", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Company C", "x": 135, "y": 295, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "16%", "x": 145, "y": 265, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Company D", "x": 95, "y": 190, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "14%", "x": 115, "y": 170, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Others", "x": 210, "y": 80, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "13%", "x": 210, "y": 100, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 50, "top": 345, "right": 65, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "A: 35%", "x": 70, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 120, "top": 345, "right": 135, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "B: 22%", "x": 140, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFDD835", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 190, "top": 345, "right": 205, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "C: 16%", "x": 210, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 260, "top": 345, "right": 275, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "D: 14%", "x": 280, "y": 350, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 330, "top": 345, "right": 345, "bottom": 355},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Other", "x": 350, "y": 350, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

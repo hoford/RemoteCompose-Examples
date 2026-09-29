@@ -1,0 +1,39 @@
+{
+  "id": "python-samples/demo-canvas-shapes",
+  "sha256": "1c4e116fcbffa85069b1062c593a59a627054c9495e36773c9798cee077b2e68",
+  "bytes": 396,
+  "ops": 23,
+  "distinctOps": 14,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "DRAW_OVAL": 1,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_ARC": 1,
+    "DRAW_LINE": 3,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

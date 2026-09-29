@@ -1,0 +1,130 @@
+{
+  "_comment": "Music player widget: album art area, song info, playback controls as canvas shapes",
+  "header": { "width": 400, "height": 200, "description": "WidgetMusic" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FF121212", "clip": { "radii": [16, 16, 16, 16] } },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "_comment": "Album art area with gradient-like layered background",
+                  "type": "box",
+                  "modifier": {
+                    "size": [160, 0],
+                    "fill_max_height": true
+                  },
+                  "children": [
+                    {
+                      "type": "canvas",
+                      "modifier": { "fill_max_size": true },
+                      "children": [
+                        { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                        { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                        { "type": "draw_rect",
+                          "paint": { "color": "#FF1A237E", "style": "fill" },
+                          "left": 0, "top": 0, "right": "$w", "bottom": "$h" },
+                        { "type": "draw_rect",
+                          "paint": { "color": "#FF283593", "style": "fill" },
+                          "left": 0, "top": { "expr": "$h * 0.3" }, "right": "$w", "bottom": "$h" },
+                        { "type": "draw_rect",
+                          "paint": { "color": "#FF3949AB", "style": "fill" },
+                          "left": 0, "top": { "expr": "$h * 0.6" }, "right": "$w", "bottom": "$h" },
+                        { "_comment": "Music note icon",
+                          "type": "draw_circle",
+                          "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                          "cx": 60, "cy": 110, "radius": 14 },
+                        { "type": "draw_circle", "cx": 100, "cy": 100, "radius": 14 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 4.0 },
+                          "x1": 74, "y1": 110, "x2": 74, "y2": 50 },
+                        { "type": "draw_line", "x1": 114, "y1": 100, "x2": 114, "y2": 40 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 5.0 },
+                          "x1": 74, "y1": 50, "x2": 114, "y2": 40 }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Song info and controls",
+                  "type": "column",
+                  "h_align": "start",
+                  "v_align": "center",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "padding": 16 },
+                  "children": [
+                    { "type": "text", "value": "Midnight Dreams", "font_size": 18, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "Luna Sterling", "font_size": 13, "color": "#FF9E9E9E" },
+                    { "type": "text", "value": "Echoes of Tomorrow", "font_size": 11, "color": "#FF616161" },
+                    {
+                      "_comment": "Progress bar",
+                      "type": "canvas",
+                      "modifier": { "fill_max_width": true, "size": [0, 16] },
+                      "children": [
+                        { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                        { "type": "float_expression", "label": "prog", "expr": "time.seconds % 60 / 60" },
+                        { "type": "draw_round_rect",
+                          "paint": { "color": "#FF333333", "style": "fill" },
+                          "left": 0, "top": 5, "right": "$w", "bottom": 11, "rx": 3, "ry": 3 },
+                        { "type": "draw_round_rect",
+                          "paint": { "color": "#FF1DB954", "style": "fill" },
+                          "left": 0, "top": 5, "right": { "expr": "$w * $prog" }, "bottom": 11, "rx": 3, "ry": 3 },
+                        { "type": "draw_circle",
+                          "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                          "cx": { "expr": "$w * $prog" }, "cy": 8, "radius": 5 }
+                      ]
+                    },
+                    {
+                      "_comment": "Control buttons: prev, pause, next",
+                      "type": "canvas",
+                      "modifier": { "fill_max_width": true, "size": [0, 40] },
+                      "children": [
+                        { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                        { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                        { "_comment": "Previous button - left triangle",
+                          "type": "draw_line",
+                          "paint": { "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": { "expr": "$cx - 50" }, "y1": 20,
+                          "x2": { "expr": "$cx - 38" }, "y2": 12 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": { "expr": "$cx - 50" }, "y1": 20,
+                          "x2": { "expr": "$cx - 38" }, "y2": 28 },
+                        { "_comment": "Pause button - two rectangles",
+                          "type": "draw_rect",
+                          "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                          "left": { "expr": "$cx - 8" }, "top": 10,
+                          "right": { "expr": "$cx - 3" }, "bottom": 30 },
+                        { "type": "draw_rect",
+                          "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                          "left": { "expr": "$cx + 3" }, "top": 10,
+                          "right": { "expr": "$cx + 8" }, "bottom": 30 },
+                        { "_comment": "Next button - right triangle",
+                          "type": "draw_line",
+                          "paint": { "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": { "expr": "$cx + 38" }, "y1": 20,
+                          "x2": { "expr": "$cx + 50" }, "y2": 12 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": { "expr": "$cx + 38" }, "y1": 20,
+                          "x2": { "expr": "$cx + 50" }, "y2": 28 }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

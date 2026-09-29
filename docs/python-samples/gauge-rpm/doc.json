@@ -1,0 +1,538 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "RPM Tachometer Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF0D0D14"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "rpm",
+              "expr": "sin(time.seconds * 0.7) * 3000 + 4000"
+            },
+            {
+              "type": "float_expression",
+              "label": "needleAngle",
+              "expr": "(sin(time.seconds * 0.7) * 3000 + 4000) / 8000 * 270 - 225"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 190,
+              "paint": {
+                "color": "#FF1A1A24",
+                "style": "fill"
+              },
+              "_comment": "Outer bezel"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 190,
+              "paint": {
+                "color": "#FF444455",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 175,
+              "paint": {
+                "color": "#FF0A0A12",
+                "style": "fill"
+              },
+              "_comment": "Inner face"
+            },
+            {
+              "type": "draw_arc",
+              "left": 40,
+              "top": 40,
+              "right": 360,
+              "bottom": 360,
+              "start_angle": 135,
+              "sweep_angle": 270,
+              "use_center": false,
+              "paint": {
+                "color": "#22FFFFFF",
+                "style": "stroke",
+                "stroke_width": 14
+              },
+              "_comment": "Main arc track"
+            },
+            {
+              "type": "draw_arc",
+              "left": 40,
+              "top": 40,
+              "right": 360,
+              "bottom": 360,
+              "start_angle": 337.5,
+              "sweep_angle": 67.5,
+              "use_center": false,
+              "paint": {
+                "color": "#88FF1744",
+                "style": "stroke",
+                "stroke_width": 14
+              },
+              "_comment": "Red zone (6000-8000 RPM = last 67.5 degrees of sweep)"
+            },
+            {
+              "type": "loop",
+              "from": 6,
+              "step": 1,
+              "until": 9,
+              "label": "rz",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "rzAngle",
+                  "expr": "$rz / 8 * 270 + 135"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$rzAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 20,
+                  "x2": 200,
+                  "y2": 55,
+                  "paint": {
+                    "color": "#44FF1744",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Red zone fill pattern lines"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 1,
+              "until": 9,
+              "label": "k",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "kAngle",
+                  "expr": "$k / 8 * 270 + 135"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$kAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 28,
+                  "x2": 200,
+                  "y2": 52,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2.5
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Major ticks every 1000 RPM"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 1,
+              "until": 16,
+              "label": "half",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "halfAngle",
+                  "expr": "($half * 0.5 + 0.5) / 8 * 270 + 135"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$halfAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 34,
+                  "x2": 200,
+                  "y2": 48,
+                  "paint": {
+                    "color": "#88FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Minor ticks every 500 RPM"
+            },
+            {
+              "type": "save",
+              "_comment": "Number labels"
+            },
+            {
+              "type": "rotate",
+              "angle": 135,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "0",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 168.75,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "1",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 202.5,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "2",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 236.25,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "3",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 270,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "4",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 303.75,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "5",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 337.5,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "6",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF1744",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 371.25,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "7",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF1744",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 405,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "8",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF1744",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Animated needle"
+            },
+            {
+              "type": "rotate",
+              "angle": "$needleAngle",
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 55,
+              "x2": 200,
+              "y2": 215,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 14,
+              "paint": {
+                "color": "#FF333340",
+                "style": "fill"
+              },
+              "_comment": "Center hub"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 7,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "rpmText",
+              "value": "$rpm",
+              "before": 4,
+              "after": 0,
+              "flags": 1,
+              "_comment": "RPM text display"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 140,
+              "top": 270,
+              "right": 260,
+              "bottom": 305,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF1A1A24",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 140,
+              "top": 270,
+              "right": 260,
+              "bottom": 305,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#44444455",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$rpmText",
+              "x": 200,
+              "y": 288,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "x1000 RPM",
+              "x": 200,
+              "y": 325,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#66FFFFFF",
+                "text_size": 12
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

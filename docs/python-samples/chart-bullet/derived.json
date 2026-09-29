@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-bullet",
+  "sha256": "7ef9764347b96c2308ae8381715a909b33371510fb4f14b07fcd47b07b5e1c20",
+  "bytes": 1756,
+  "ops": 73,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 26,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_RECT": 16,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

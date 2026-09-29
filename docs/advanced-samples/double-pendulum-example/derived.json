@@ -1,0 +1,34 @@
+{
+  "id": "advanced-samples/double-pendulum-example",
+  "sha256": "846c89ec9e146c14b5614786ef69fb92f6b97f354ce4cf17606b40c8ac7c7ac2",
+  "bytes": 2461,
+  "ops": 102,
+  "distinctOps": 8,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 80,
+    "DRAW_LINE": 2,
+    "DRAW_CIRCLE": 10
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

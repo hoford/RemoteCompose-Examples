@@ -1,0 +1,30 @@
+{
+  "id": "androidx-demos/c-modifier-dynamic-border",
+  "sha256": "991b21e40b4e9ac21ead483f587078fd21a1301c85ef0df497e6ed893f5927b4",
+  "bytes": 157,
+  "ops": 9,
+  "distinctOps": 8,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "COLOR_EXPRESSIONS": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BORDER": 1,
+    "CONTAINER_END": 2
+  },
+  "apis": [
+    "expressions",
+    "layout"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

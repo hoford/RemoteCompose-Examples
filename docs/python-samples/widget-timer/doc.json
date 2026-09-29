@@ -1,0 +1,80 @@
+{
+  "_comment": "Countdown timer: circular progress ring with animated time display in center",
+  "header": { "width": 300, "height": 300, "description": "WidgetTimer" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FF0D1117" },
+          "children": [
+            {
+              "type": "canvas",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                { "type": "float_expression", "label": "cy", "expr": "$h / 2" },
+                { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 20" },
+
+                { "_comment": "Outer decorative ring",
+                  "type": "draw_circle",
+                  "paint": { "color": "#FF1A2332", "style": "stroke", "stroke_width": 16.0 },
+                  "cx": "$cx", "cy": "$cy", "radius": "$r" },
+
+                { "_comment": "Progress calculation: 5-minute countdown cycle",
+                  "type": "float_expression", "label": "total_sec", "expr": "time.seconds" },
+                { "type": "float_expression", "label": "remain", "expr": "300 - ($total_sec % 300)" },
+                { "type": "float_expression", "label": "progress", "expr": "$remain / 300" },
+                { "type": "float_expression", "label": "sweep", "expr": "$progress * 360" },
+
+                { "_comment": "Progress arc",
+                  "type": "draw_arc",
+                  "paint": { "color": "#FF00E676", "style": "stroke", "stroke_width": 12.0 },
+                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                  "start_angle": -90, "sweep_angle": "$sweep", "use_center": false },
+
+                { "_comment": "Inner subtle ring",
+                  "type": "draw_circle",
+                  "paint": { "color": "#FF1A2332", "style": "stroke", "stroke_width": 2.0 },
+                  "cx": "$cx", "cy": "$cy", "radius": { "expr": "$r - 16" } },
+
+                { "_comment": "Minutes and seconds calculation",
+                  "type": "float_expression", "label": "minutes", "expr": "floor($remain / 60)" },
+                { "type": "float_expression", "label": "seconds", "expr": "$remain % 60" },
+
+                { "_comment": "Minutes display",
+                  "type": "text_from_float", "label": "min_txt", "value": "$minutes", "before": 2, "after": 0, "flags": 1 },
+                { "type": "paint", "color": "#FFFFFFFF", "text_size": 56.0, "style": "fill" },
+                { "type": "draw_text_anchored", "text_id": "$min_txt", "x": { "expr": "$cx - 24" }, "y": "$cy", "pan_x": 1, "pan_y": 0 },
+
+                { "_comment": "Colon separator",
+                  "type": "paint", "color": "#FF00E676", "text_size": 56.0 },
+                { "type": "draw_text_anchored", "text": ":", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 0 },
+
+                { "_comment": "Seconds display",
+                  "type": "text_from_float", "label": "sec_txt", "value": "$seconds", "before": 2, "after": 0, "flags": 1 },
+                { "type": "paint", "color": "#FFFFFFFF", "text_size": 56.0 },
+                { "type": "draw_text_anchored", "text_id": "$sec_txt", "x": { "expr": "$cx + 24" }, "y": "$cy", "pan_x": -1, "pan_y": 0 },
+
+                { "_comment": "Label below time",
+                  "type": "paint", "color": "#FF546E7A", "text_size": 14.0 },
+                { "type": "draw_text_anchored", "text": "REMAINING", "x": "$cx", "y": { "expr": "$cy + 40" }, "pan_x": 0, "pan_y": 0 },
+
+                { "_comment": "Tick marks at 12, 3, 6, 9 positions",
+                  "type": "paint", "color": "#FF37474F", "style": "stroke", "stroke_width": 2.0 },
+                { "type": "draw_line", "x1": "$cx", "y1": { "expr": "$cy - $r + 20" }, "x2": "$cx", "y2": { "expr": "$cy - $r + 28" } },
+                { "type": "draw_line", "x1": { "expr": "$cx + $r - 20" }, "y1": "$cy", "x2": { "expr": "$cx + $r - 28" }, "y2": "$cy" },
+                { "type": "draw_line", "x1": "$cx", "y1": { "expr": "$cy + $r - 20" }, "x2": "$cx", "y2": { "expr": "$cy + $r - 28" } },
+                { "type": "draw_line", "x1": { "expr": "$cx - $r + 20" }, "y1": "$cy", "x2": { "expr": "$cx - $r + 28" }, "y2": "$cy" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

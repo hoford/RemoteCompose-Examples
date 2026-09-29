@@ -1,0 +1,131 @@
+{
+  "_comment": "Game score display: Home vs Away with large canvas-drawn score numbers",
+  "header": { "width": 400, "height": 200, "description": "WidgetScore" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FF1B2631", "clip": { "radii": [16, 16, 16, 16] } },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "fill_max_size": true, "padding": 12 },
+              "children": [
+                {
+                  "_comment": "League header",
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "background": "#FF263D50", "clip": { "radii": [8, 8, 0, 0] }, "padding": 6 },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "center",
+                      "children": [
+                        { "type": "text", "value": "PREMIER LEAGUE", "font_size": 10, "color": "#FF80CBC4" },
+                        { "type": "text", "value": "Matchday 28", "font_size": 9, "color": "#FF546E7A" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Score row",
+                  "type": "row",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                  "children": [
+                    {
+                      "_comment": "Home team",
+                      "type": "column",
+                      "h_align": "center",
+                      "v_align": "center",
+                      "modifier": { "horizontal_weight": 1.0 },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [40, 40], "background": "#FFD32F2F", "clip": { "radii": [20, 20, 20, 20] } },
+                          "children": [
+                            {
+                              "type": "column",
+                              "h_align": "center",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "text", "value": "H", "font_size": 18, "color": "#FFFFFFFF" }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "Arsenal", "font_size": 13, "color": "#FFFFFFFF" }
+                      ]
+                    },
+                    {
+                      "_comment": "Score canvas with large numbers",
+                      "type": "canvas",
+                      "modifier": { "size": [140, 80] },
+                      "children": [
+                        { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                        { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+
+                        { "_comment": "Home score",
+                          "type": "float_expression", "label": "home_score", "expr": "floor(sin(time.seconds * 0.05) * 2 + 3)" },
+                        { "type": "text_from_float", "label": "home_txt", "value": "$home_score", "before": 1, "after": 0, "flags": 1 },
+                        { "type": "paint", "color": "#FFFFFFFF", "text_size": 52.0, "style": "fill" },
+                        { "type": "draw_text_anchored", "text_id": "$home_txt", "x": { "expr": "$cx - 28" }, "y": 42, "pan_x": 0, "pan_y": 0 },
+
+                        { "_comment": "VS divider",
+                          "type": "paint", "color": "#FF546E7A", "text_size": 16.0 },
+                        { "type": "draw_text_anchored", "text": "-", "x": "$cx", "y": 42, "pan_x": 0, "pan_y": 0 },
+
+                        { "_comment": "Away score",
+                          "type": "float_expression", "label": "away_score", "expr": "floor(cos(time.seconds * 0.07) * 1.5 + 2)" },
+                        { "type": "text_from_float", "label": "away_txt", "value": "$away_score", "before": 1, "after": 0, "flags": 1 },
+                        { "type": "paint", "color": "#FFFFFFFF", "text_size": 52.0 },
+                        { "type": "draw_text_anchored", "text_id": "$away_txt", "x": { "expr": "$cx + 28" }, "y": 42, "pan_x": 0, "pan_y": 0 },
+
+                        { "_comment": "Match time indicator",
+                          "type": "float_expression", "label": "match_min", "expr": "time.seconds % 90" },
+                        { "type": "text_from_float", "label": "min_txt", "value": "$match_min", "before": 2, "after": 0, "flags": 1 },
+                        { "type": "paint", "color": "#FF00E676", "text_size": 12.0 },
+                        { "type": "draw_text_anchored", "text_id": "$min_txt", "x": "$cx", "y": 72, "pan_x": 1, "pan_y": 0 },
+                        { "type": "draw_text_anchored", "text": "'", "x": { "expr": "$cx + 8" }, "y": 72, "pan_x": -1, "pan_y": 0 }
+                      ]
+                    },
+                    {
+                      "_comment": "Away team",
+                      "type": "column",
+                      "h_align": "center",
+                      "v_align": "center",
+                      "modifier": { "horizontal_weight": 1.0 },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [40, 40], "background": "#FF1565C0", "clip": { "radii": [20, 20, 20, 20] } },
+                          "children": [
+                            {
+                              "type": "column",
+                              "h_align": "center",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "text", "value": "C", "font_size": 18, "color": "#FFFFFFFF" }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "Chelsea", "font_size": 13, "color": "#FFFFFFFF" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

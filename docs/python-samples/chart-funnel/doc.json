@@ -1,0 +1,53 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Funnel chart showing sales pipeline stages"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF263238"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Sales Funnel", "x": 200, "y": 25, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 30, "top": 55, "right": 370, "bottom": 115},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 15},
+            {"type": "draw_text_anchored", "text": "Visitors", "x": 200, "y": 78, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#CCFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "10,000", "x": 200, "y": 100, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 65, "top": 120, "right": 335, "bottom": 180},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 15},
+            {"type": "draw_text_anchored", "text": "Leads", "x": 200, "y": 143, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#CCFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "5,200", "x": 200, "y": 165, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFFB74D", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 185, "right": 300, "bottom": 245},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 15},
+            {"type": "draw_text_anchored", "text": "Qualified", "x": 200, "y": 208, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#CCFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "2,100", "x": 200, "y": 230, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFF7043", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 135, "top": 250, "right": 265, "bottom": 310},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 15},
+            {"type": "draw_text_anchored", "text": "Proposals", "x": 200, "y": 273, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#CCFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "800", "x": 200, "y": 295, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 165, "top": 315, "right": 235, "bottom": 375},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 15},
+            {"type": "draw_text_anchored", "text": "Closed", "x": 200, "y": 338, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#CCFFFFFF", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "320", "x": 200, "y": 360, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

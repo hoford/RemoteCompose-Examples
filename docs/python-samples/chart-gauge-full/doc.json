@@ -1,0 +1,68 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Full circle gauge showing temperature like a speedometer"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF212121"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Temperature", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 14, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": 135, "sweep_angle": 90, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFEB3B", "style": "stroke", "stroke_width": 14, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": 225, "sweep_angle": 90, "use_center": false},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 14, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": 315, "sweep_angle": 45, "use_center": false},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 14, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": 0, "sweep_angle": 45, "use_center": false},
+
+            {"type": "paint", "color": "#99FFFFFF", "style": "stroke", "stroke_width": 2, "text_size": 0},
+            {"type": "draw_line", "x1": 90, "y1": 308, "x2": 102, "y2": 296},
+            {"type": "draw_line", "x1": 68, "y1": 230, "x2": 82, "y2": 230},
+            {"type": "draw_line", "x1": 80, "y1": 150, "x2": 93, "y2": 158},
+            {"type": "draw_line", "x1": 140, "y1": 90, "x2": 148, "y2": 103},
+            {"type": "draw_line", "x1": 200, "y1": 68, "x2": 200, "y2": 82},
+            {"type": "draw_line", "x1": 260, "y1": 90, "x2": 252, "y2": 103},
+            {"type": "draw_line", "x1": 320, "y1": 150, "x2": 307, "y2": 158},
+            {"type": "draw_line", "x1": 332, "y1": 230, "x2": 318, "y2": 230},
+            {"type": "draw_line", "x1": 310, "y1": 308, "x2": 298, "y2": 296},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "0", "x": 82, "y": 320, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30", "x": 55, "y": 230, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60", "x": 130, "y": 80, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "90", "x": 270, "y": 80, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "120", "x": 345, "y": 230, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFF5722", "style": "stroke", "stroke_width": 3, "text_size": 0},
+            {"type": "draw_line", "x1": 200, "y1": 210, "x2": 268, "y2": 128},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 12},
+            {"type": "paint", "color": "#FFFF5722", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 6},
+
+            {"type": "paint", "color": "#FF00E5FF", "style": "fill", "stroke_width": 0, "text_size": 40},
+            {"type": "draw_text_anchored", "text": "72", "x": 200, "y": 280, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#99FFFFFF", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "degrees C", "x": 200, "y": 315, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "NORMAL", "x": 120, "y": 370, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFFFEB3B", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "WARM", "x": 200, "y": 370, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "HOT", "x": 280, "y": 370, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

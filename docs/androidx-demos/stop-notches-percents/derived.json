@@ -1,0 +1,51 @@
+{
+  "id": "androidx-demos/stop-notches-percents",
+  "sha256": "b499ce40c7912dcb350b87ac684378afc175b5532ba4b7ea67da8a367186d684",
+  "bytes": 1157,
+  "ops": 78,
+  "distinctOps": 22,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 10,
+    "PAINT_VALUES": 8,
+    "COMPONENT_VALUE": 2,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_SAVE": 9,
+    "MATRIX_SCALE": 1,
+    "MATRIX_RESTORE": 9,
+    "DRAW_ARC": 1,
+    "MATRIX_ROTATE": 8,
+    "DRAW_LINE": 7,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ANCHOR": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,86 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Business Dashboard - KPI dashboard with 4 mini-charts"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFF5F5F5"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Business Dashboard", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_round_rect", "left": 10, "top": 50, "right": 195, "bottom": 215, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 205, "top": 50, "right": 390, "bottom": 215, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 10, "top": 225, "right": 195, "bottom": 390, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 205, "top": 225, "right": 390, "bottom": 390, "rx": 10, "ry": 10},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_round_rect", "left": 10, "top": 50, "right": 195, "bottom": 215, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 205, "top": 50, "right": 390, "bottom": 215, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 10, "top": 225, "right": 195, "bottom": 390, "rx": 10, "ry": 10},
+            {"type": "draw_round_rect", "left": 205, "top": 225, "right": 390, "bottom": 390, "rx": 10, "ry": 10},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Revenue", "x": 102, "y": 65, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 28},
+            {"type": "draw_text_anchored", "text": "84.2K", "x": 102, "y": 105, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "text_size": 14},
+            {"type": "draw_text_anchored", "text": "+12.5%", "x": 102, "y": 135, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 80, "y1": 160, "x2": 90, "y2": 150},
+            {"type": "draw_line", "x1": 90, "y1": 150, "x2": 100, "y2": 155},
+            {"type": "draw_line", "x1": 100, "y1": 155, "x2": 110, "y2": 145},
+            {"type": "draw_line", "x1": 110, "y1": 145, "x2": 125, "y2": 140},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill"},
+            {"type": "draw_text_anchored", "text": "^", "x": 130, "y": 136, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Weekly Sales", "x": 297, "y": 65, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill"},
+            {"type": "draw_rect", "left": 220, "top": 150, "right": 238, "bottom": 195},
+            {"type": "draw_rect", "left": 243, "top": 130, "right": 261, "bottom": 195},
+            {"type": "draw_rect", "left": 266, "top": 110, "right": 284, "bottom": 195},
+            {"type": "draw_rect", "left": 289, "top": 140, "right": 307, "bottom": 195},
+            {"type": "draw_rect", "left": 312, "top": 100, "right": 330, "bottom": 195},
+            {"type": "draw_rect", "left": 335, "top": 85, "right": 353, "bottom": 195},
+            {"type": "draw_rect", "left": 358, "top": 120, "right": 376, "bottom": 195},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 8},
+            {"type": "draw_text_anchored", "text": "M T W T F S S", "x": 297, "y": 205, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Completion", "x": 102, "y": 240, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#33FF9800", "style": "stroke", "stroke_width": 14},
+            {"type": "draw_arc", "left": 52, "top": 275, "right": 152, "bottom": 375, "start_angle": 0, "sweep_angle": 360, "use_center": false},
+            {"type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 14},
+            {"type": "draw_arc", "left": 52, "top": 275, "right": 152, "bottom": 375, "start_angle": -90, "sweep_angle": 252, "use_center": false},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 18},
+            {"type": "draw_text_anchored", "text": "70%", "x": 102, "y": 325, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Users (30d)", "x": 297, "y": 240, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 22},
+            {"type": "draw_text_anchored", "text": "2,847", "x": 297, "y": 275, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FFAB47BC", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 220, "y1": 340, "x2": 235, "y2": 335},
+            {"type": "draw_line", "x1": 235, "y1": 335, "x2": 250, "y2": 345},
+            {"type": "draw_line", "x1": 250, "y1": 345, "x2": 265, "y2": 330},
+            {"type": "draw_line", "x1": 265, "y1": 330, "x2": 280, "y2": 325},
+            {"type": "draw_line", "x1": 280, "y1": 325, "x2": 295, "y2": 335},
+            {"type": "draw_line", "x1": 295, "y1": 335, "x2": 310, "y2": 320},
+            {"type": "draw_line", "x1": 310, "y1": 320, "x2": 325, "y2": 310},
+            {"type": "draw_line", "x1": 325, "y1": 310, "x2": 340, "y2": 315},
+            {"type": "draw_line", "x1": 340, "y1": 315, "x2": 355, "y2": 300},
+            {"type": "draw_line", "x1": 355, "y1": 300, "x2": 375, "y2": 295},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill"},
+            {"type": "draw_circle", "cx": 375, "cy": 295, "radius": 3},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "-3.2%", "x": 297, "y": 375, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

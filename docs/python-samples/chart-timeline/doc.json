@@ -1,0 +1,100 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Project Milestones - Horizontal timeline with 6 events"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFAFAFA"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Project Milestones", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 3},
+            {"type": "draw_line", "x1": 40, "y1": 200, "x2": 360, "y2": 200},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_circle", "cx": 55, "cy": 200, "radius": 8},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 55, "cy": 200, "radius": 4},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 55, "y1": 192, "x2": 55, "y2": 130},
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Kickoff", "x": 55, "y": 120, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jan 15", "x": 55, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill"},
+            {"type": "draw_circle", "cx": 115, "cy": 200, "radius": 8},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 115, "cy": 200, "radius": 4},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 115, "y1": 208, "x2": 115, "y2": 270},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Design", "x": 115, "y": 280, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Complete", "x": 115, "y": 295, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Mar 1", "x": 115, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_circle", "cx": 175, "cy": 200, "radius": 8},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 175, "cy": 200, "radius": 4},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 175, "y1": 192, "x2": 175, "y2": 130},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Alpha", "x": 175, "y": 120, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Release", "x": 175, "y": 107, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "May 10", "x": 175, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill"},
+            {"type": "draw_circle", "cx": 235, "cy": 200, "radius": 8},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 235, "cy": 200, "radius": 4},
+
+            {"type": "paint", "color": "#FFAB47BC", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 235, "y1": 208, "x2": 235, "y2": 270},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Beta", "x": 235, "y": 280, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Release", "x": 235, "y": 295, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jul 20", "x": 235, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill"},
+            {"type": "draw_circle", "cx": 295, "cy": 200, "radius": 8},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 295, "cy": 200, "radius": 4},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 295, "y1": 192, "x2": 295, "y2": 130},
+            {"type": "paint", "color": "#FFEF5350", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Code", "x": 295, "y": 120, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Freeze", "x": 295, "y": 107, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Sep 5", "x": 295, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF26C6DA", "style": "fill"},
+            {"type": "draw_circle", "cx": 350, "cy": 200, "radius": 10},
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill"},
+            {"type": "draw_circle", "cx": 350, "cy": 200, "radius": 5},
+
+            {"type": "paint", "color": "#FF26C6DA", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 350, "y1": 208, "x2": 350, "y2": 270},
+            {"type": "paint", "color": "#FF26C6DA", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Launch!", "x": 350, "y": 282, "pan_x": 0, "pan_y": -1},
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Nov 1", "x": 350, "y": 218, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "text_size": 10},
+            {"type": "draw_text_anchored", "text": "2024 Project Timeline", "x": 200, "y": 370, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

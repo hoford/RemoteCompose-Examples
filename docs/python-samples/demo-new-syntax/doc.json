@@ -1,0 +1,72 @@
+{
+  "_comment": "Demonstrates new JSON format features: infix expressions, inline paint, inline expression refs, readable var names, ordered modifiers",
+  "header": { "width": 400, "height": 400, "description": "NewSyntaxDemo" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "_comment": "Layered border box using ordered modifiers",
+          "type": "box",
+          "h_align": "center",
+          "v_align": "center",
+          "modifier": [
+            { "padding": 12 },
+            { "background": "#FF2196F3" },
+            { "padding": 8 },
+            { "background": "#FF1565C0" },
+            { "padding": 16 },
+            { "background": "#FF0D47A1" }
+          ],
+          "children": [
+            {
+              "type": "column",
+              "h_align": "center",
+              "children": [
+                { "type": "text", "value": "New Syntax", "font_size": 32.0, "color": "#FFFFFFFF" },
+                {
+                  "type": "canvas",
+                  "modifier": { "size": [300, 300] },
+                  "children": [
+                    { "_comment": "Infix expressions with readable aliases",
+                      "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                    { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                    { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                    { "type": "float_expression", "label": "cy", "expr": "$h / 2" },
+                    { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 20" },
+
+                    { "_comment": "Animated angle using readable time alias",
+                      "type": "float_expression", "label": "angle",
+                      "expr": "time.seconds * 90 % 360" },
+
+                    { "_comment": "Draw circle with inline paint (no separate paint op needed)",
+                      "type": "draw_circle",
+                      "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 3.0 },
+                      "cx": "$cx", "cy": "$cy", "radius": "$r" },
+
+                    { "_comment": "Draw rect with inline expression refs for position",
+                      "type": "draw_rect",
+                      "paint": { "color": "#FFFF5722", "style": "fill" },
+                      "left": { "expr": "$cx - 30" },
+                      "top": { "expr": "$cy - 30" },
+                      "right": { "expr": "$cx + 30" },
+                      "bottom": { "expr": "$cy + 30" }
+                    },
+
+                    { "_comment": "Crosshair lines",
+                      "type": "draw_line",
+                      "paint": { "color": "#80FFFFFF", "stroke_width": 1.0 },
+                      "x1": "$cx", "y1": 0, "x2": "$cx", "y2": "$h" },
+                    { "type": "draw_line",
+                      "paint": { "color": "#80FFFFFF", "stroke_width": 1.0 },
+                      "x1": 0, "y1": "$cy", "x2": "$w", "y2": "$cy" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

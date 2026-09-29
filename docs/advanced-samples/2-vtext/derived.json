@@ -1,0 +1,37 @@
+{
+  "id": "advanced-samples/2-vtext",
+  "sha256": "a9cdbc775fefbde6dfc09c430b926d5a6e744ea49c6e6463b4629f53b8d1ce05",
+  "bytes": 19915,
+  "ops": 1245,
+  "distinctOps": 14,
+  "width": 600,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 3,
+    "DATA_TEXT": 102,
+    "MODIFIER_BACKGROUND": 106,
+    "CONTAINER_END": 619,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 103,
+    "MODIFIER_PADDING": 2,
+    "MODIFIER_HEIGHT": 103,
+    "DATA_FLOAT": 1,
+    "ANIMATED_FLOAT": 1,
+    "LAYOUT_BOX": 101,
+    "MODIFIER_BORDER": 101
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

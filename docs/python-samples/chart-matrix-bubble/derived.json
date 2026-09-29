@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-matrix-bubble",
+  "sha256": "2d052e4c47bf0d8de6f820943a0b43f81eed30824c7cd0d4fd0e75d24eb1a704",
+  "bytes": 1557,
+  "ops": 87,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 16,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 14,
+    "DRAW_LINE": 12,
+    "DRAW_CIRCLE": 27,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

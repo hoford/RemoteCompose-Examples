@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-pareto",
+  "sha256": "77784a45f6c62b4f9ff0beb0b63fd76d383ffb72effc450608bbd14b71871e49",
+  "bytes": 1722,
+  "ops": 87,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 21,
+    "DRAW_TEXT_ANCHOR": 22,
+    "DRAW_LINE": 10,
+    "DRAW_RECT": 7,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

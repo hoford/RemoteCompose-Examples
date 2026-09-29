@@ -1,0 +1,67 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Comparison Bar Chart - Budget vs Actual"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Budget vs Actual", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "0", "x": 72, "y": 320, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20K", "x": 72, "y": 266, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40K", "x": 72, "y": 212, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60K", "x": 72, "y": 158, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "80K", "x": 72, "y": 104, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100K", "x": 72, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 78, "y1": 320, "x2": 385, "y2": 320},
+            {"type": "draw_line", "x1": 78, "y1": 266, "x2": 385, "y2": 266},
+            {"type": "draw_line", "x1": 78, "y1": 212, "x2": 385, "y2": 212},
+            {"type": "draw_line", "x1": 78, "y1": 158, "x2": 385, "y2": 158},
+            {"type": "draw_line", "x1": 78, "y1": 104, "x2": 385, "y2": 104},
+
+            {"type": "paint", "color": "#FFBBDEFB", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 85, "top": 104, "right": 133, "bottom": 320},
+            {"type": "draw_rect", "left": 140, "top": 158, "right": 188, "bottom": 320},
+            {"type": "draw_rect", "left": 195, "top": 131, "right": 243, "bottom": 320},
+            {"type": "draw_rect", "left": 250, "top": 185, "right": 298, "bottom": 320},
+            {"type": "draw_rect", "left": 305, "top": 212, "right": 353, "bottom": 320},
+            {"type": "draw_rect", "left": 355, "top": 158, "right": 385, "bottom": 320},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 93, "top": 120, "right": 125, "bottom": 320},
+            {"type": "draw_rect", "left": 148, "top": 180, "right": 180, "bottom": 320},
+            {"type": "draw_rect", "left": 203, "top": 112, "right": 235, "bottom": 320},
+            {"type": "draw_rect", "left": 258, "top": 200, "right": 290, "bottom": 320},
+            {"type": "draw_rect", "left": 313, "top": 190, "right": 345, "bottom": 320},
+            {"type": "draw_rect", "left": 360, "top": 175, "right": 380, "bottom": 320},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Mktg", "x": 109, "y": 333, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "R&D", "x": 164, "y": 333, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Sales", "x": 219, "y": 333, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Ops", "x": 274, "y": 333, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "IT", "x": 329, "y": 333, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "HR", "x": 370, "y": 333, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBBDEFB", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 110, "top": 365, "right": 122, "bottom": 377},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Budget", "x": 126, "y": 371, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 185, "top": 365, "right": 197, "bottom": 377},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Actual", "x": 201, "y": 371, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

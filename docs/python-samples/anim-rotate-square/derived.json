@@ -1,0 +1,41 @@
+{
+  "id": "python-samples/anim-rotate-square",
+  "sha256": "64e30fc3816a831eae8a32fab400e16e220b61f97b570f3f7bc21a1a64252283",
+  "bytes": 631,
+  "ops": 38,
+  "distinctOps": 14,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 13,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 3,
+    "DRAW_LINE": 2,
+    "DRAW_CIRCLE": 2,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

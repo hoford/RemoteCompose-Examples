@@ -1,0 +1,42 @@
+{
+  "id": "python-samples/widget-notification",
+  "sha256": "10042f55fca5b1a5d81dff3ee9a19a67e1d52c183b3a805517b45d7646389596",
+  "bytes": 961,
+  "ops": 58,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 120,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 3,
+    "MODIFIER_WIDTH": 6,
+    "MODIFIER_HEIGHT": 4,
+    "MODIFIER_BACKGROUND": 3,
+    "MODIFIER_PADDING": 4,
+    "MODIFIER_BORDER": 1,
+    "LAYOUT_ROW": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 5,
+    "DRAW_CIRCLE": 2,
+    "DRAW_ARC": 1,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 19,
+    "LAYOUT_COLUMN": 1,
+    "DATA_TEXT": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

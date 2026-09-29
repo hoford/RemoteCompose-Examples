@@ -85,7 +85,9 @@ async function main() {
         ['source', entry.source],
         ['authored in', (entry.authoring || []).join(', ') || '—'],
         ['size', `${derived.bytes} bytes`],
-        ['native dimensions', `${derived.width}×${derived.height}`],
+        ['native dimensions', derived.width
+            ? `${derived.width}×${derived.height}`
+            : '— (no size declared in the header; the player sizes it from its root layout)'],
         ['operations', `${derived.ops} (${derived.distinctOps} distinct)`],
         ['APIs', (derived.apis || []).join(', ') || '—'],
         ['features', (derived.flags || []).join(', ') || '—'],

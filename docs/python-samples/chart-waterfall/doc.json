@@ -1,0 +1,74 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Waterfall chart showing profit analysis"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF424242"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Profit Analysis", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF616161", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 50, "y1": 50, "x2": 50, "y2": 330},
+            {"type": "draw_line", "x1": 50, "y1": 330, "x2": 385, "y2": 330},
+            {"type": "draw_line", "x1": 50, "y1": 260, "x2": 385, "y2": 260},
+            {"type": "draw_line", "x1": 50, "y1": 190, "x2": 385, "y2": 190},
+            {"type": "draw_line", "x1": 50, "y1": 120, "x2": 385, "y2": 120},
+            {"type": "draw_line", "x1": 50, "y1": 50, "x2": 385, "y2": 50},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 45, "y": 330, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50K", "x": 45, "y": 260, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100K", "x": 45, "y": 190, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "150K", "x": 45, "y": 120, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "200K", "x": 45, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 60, "top": 120, "right": 110, "bottom": 330},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 120, "top": 78, "right": 170, "bottom": 120},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 180, "top": 50, "right": 230, "bottom": 78},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 240, "top": 50, "right": 290, "bottom": 134},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 300, "top": 134, "right": 350, "bottom": 176},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 360, "top": 176, "right": 390, "bottom": 330},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 110, "y1": 120, "x2": 125, "y2": 120},
+            {"type": "draw_line", "x1": 170, "y1": 78, "x2": 185, "y2": 78},
+            {"type": "draw_line", "x1": 230, "y1": 50, "x2": 245, "y2": 50},
+            {"type": "draw_line", "x1": 290, "y1": 134, "x2": 305, "y2": 134},
+            {"type": "draw_line", "x1": 350, "y1": 176, "x2": 365, "y2": 176},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Revenue", "x": 85, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "+Service", "x": 145, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "+Licensing", "x": 205, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "-COGS", "x": 265, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "-OpEx", "x": 325, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Profit", "x": 375, "y": 345, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "150K", "x": 85, "y": 115, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "+$30K", "x": 145, "y": 73, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "+$20K", "x": 205, "y": 45, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "-$60K", "x": 265, "y": 139, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "-$30K", "x": 325, "y": 181, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "110K", "x": 375, "y": 171, "pan_x": 0, "pan_y": 1}
+          ]
+        }
+      ]
+    }
+  ]
+}

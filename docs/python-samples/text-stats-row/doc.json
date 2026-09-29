@@ -1,0 +1,89 @@
+{
+  "header": { "width": 500, "height": 400, "description": "Text Stats Row" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "padding": 20, "background": "#FF37474F" },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "padding": 20,
+                    "background": "#FFE53935",
+                    "clip": { "radii": [12, 12, 12, 12] }
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "center",
+                      "children": [
+                        { "type": "text", "value": "1,284", "font_size": 36.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                        { "type": "text", "value": "Users", "font_size": 14.0, "color": "#CCFFFFFF" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "width": 12 }
+                },
+                {
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "padding": 20,
+                    "background": "#FF1E88E5",
+                    "clip": { "radii": [12, 12, 12, 12] }
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "center",
+                      "children": [
+                        { "type": "text", "value": "847", "font_size": 36.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                        { "type": "text", "value": "Active", "font_size": 14.0, "color": "#CCFFFFFF" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "width": 12 }
+                },
+                {
+                  "type": "box",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "padding": 20,
+                    "background": "#FF43A047",
+                    "clip": { "radii": [12, 12, 12, 12] }
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "center",
+                      "children": [
+                        { "type": "text", "value": "99.7%", "font_size": 36.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                        { "type": "text", "value": "Uptime", "font_size": 14.0, "color": "#CCFFFFFF" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

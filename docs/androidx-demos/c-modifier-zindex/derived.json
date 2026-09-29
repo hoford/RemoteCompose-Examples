@@ -1,0 +1,27 @@
+{
+  "id": "androidx-demos/c-modifier-zindex",
+  "sha256": "80bcf1bf6af18cd9be08057f0fe99a32f424228c0e020ee71e187162a81ae002",
+  "bytes": 265,
+  "ops": 20,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 3,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "CONTAINER_END": 5,
+    "MODIFIER_PADDING": 1,
+    "MODIFIER_ZINDEX": 1
+  },
+  "apis": [
+    "layout"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

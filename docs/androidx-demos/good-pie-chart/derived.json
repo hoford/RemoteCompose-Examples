@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/good-pie-chart",
+  "sha256": "0ed0352fefab814df243c9cd28f6ec4865a5138bd4a340e2ff0aeb84cbea3dec",
+  "bytes": 944,
+  "ops": 47,
+  "distinctOps": 18,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "DATA_TEXT": 5,
+    "MATRIX_SAVE": 1,
+    "ANIMATED_FLOAT": 14,
+    "MATRIX_ROTATE": 2,
+    "TEXT_LOOKUP": 1,
+    "COLOR_EXPRESSIONS": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_SECTOR": 2,
+    "CONTAINER_END": 7,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawArc",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,408 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Fuel Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF161622"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "fuel",
+              "expr": "sin(time.seconds * 0.2) * 40 + 60"
+            },
+            {
+              "type": "float_expression",
+              "label": "needleAngle",
+              "expr": "(sin(time.seconds * 0.2) * 40 + 60) / 100 * 180 - 90"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 220,
+              "radius": 175,
+              "paint": {
+                "color": "#FF222236",
+                "style": "fill"
+              },
+              "_comment": "Background plate"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 220,
+              "radius": 175,
+              "paint": {
+                "color": "#FFFF9800",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "FUEL",
+              "x": 200,
+              "y": 68,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88FF9800",
+                "text_size": 18
+              },
+              "_comment": "Title"
+            },
+            {
+              "type": "draw_rect",
+              "left": 185,
+              "top": 80,
+              "right": 205,
+              "bottom": 100,
+              "paint": {
+                "color": "#66FF9800",
+                "style": "stroke",
+                "stroke_width": 2
+              },
+              "_comment": "Fuel pump icon simplified"
+            },
+            {
+              "type": "draw_line",
+              "x1": 205,
+              "y1": 84,
+              "x2": 212,
+              "y2": 84,
+              "paint": {
+                "color": "#66FF9800",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 212,
+              "y1": 84,
+              "x2": 212,
+              "y2": 96,
+              "paint": {
+                "color": "#66FF9800",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_arc",
+              "left": 55,
+              "top": 75,
+              "right": 345,
+              "bottom": 365,
+              "start_angle": 180,
+              "sweep_angle": 180,
+              "use_center": false,
+              "paint": {
+                "color": "#33FFFFFF",
+                "style": "stroke",
+                "stroke_width": 10
+              },
+              "_comment": "Gauge arc background"
+            },
+            {
+              "type": "draw_arc",
+              "left": 55,
+              "top": 75,
+              "right": 345,
+              "bottom": 365,
+              "start_angle": 180,
+              "sweep_angle": 36,
+              "use_center": false,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "stroke",
+                "stroke_width": 10
+              },
+              "_comment": "Red warning zone (E side, 0-20%)"
+            },
+            {
+              "type": "draw_arc",
+              "left": 55,
+              "top": 75,
+              "right": 345,
+              "bottom": 365,
+              "start_angle": 288,
+              "sweep_angle": 72,
+              "use_center": false,
+              "paint": {
+                "color": "#FF4CAF50",
+                "style": "stroke",
+                "stroke_width": 10
+              },
+              "_comment": "Green good zone (60-100%)"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 10,
+              "until": 110,
+              "label": "ftick",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "fAngle",
+                  "expr": "$ftick / 100 * 180 + 180"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$fAngle",
+                  "cx": 200,
+                  "cy": 220
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 55,
+                  "x2": 200,
+                  "y2": 72,
+                  "paint": {
+                    "color": "#CCFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Tick marks"
+            },
+            {
+              "type": "loop",
+              "from": 5,
+              "step": 10,
+              "until": 105,
+              "label": "fmtick",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "fmAngle",
+                  "expr": "$fmtick / 100 * 180 + 180"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$fmAngle",
+                  "cx": 200,
+                  "cy": 220
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 58,
+                  "x2": 200,
+                  "y2": 68,
+                  "paint": {
+                    "color": "#66FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Minor ticks"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "E",
+              "x": 72,
+              "y": 235,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF1744",
+                "text_size": 24
+              },
+              "_comment": "E and F labels"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "F",
+              "x": 328,
+              "y": 235,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF4CAF50",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "save",
+              "_comment": "1/4, 1/2, 3/4 labels"
+            },
+            {
+              "type": "rotate",
+              "angle": 225,
+              "cx": 200,
+              "cy": 220
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "1/4",
+              "x": 200,
+              "y": 82,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88FFFFFF",
+                "text_size": 12
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 270,
+              "cx": 200,
+              "cy": 220
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "1/2",
+              "x": 200,
+              "y": 82,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88FFFFFF",
+                "text_size": 12
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 315,
+              "cx": 200,
+              "cy": 220
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "3/4",
+              "x": 200,
+              "y": 82,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88FFFFFF",
+                "text_size": 12
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Needle"
+            },
+            {
+              "type": "rotate",
+              "angle": "$needleAngle",
+              "cx": 200,
+              "cy": 220
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 80,
+              "x2": 200,
+              "y2": 230,
+              "paint": {
+                "color": "#FFFF9800",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 220,
+              "radius": 10,
+              "paint": {
+                "color": "#FFFF9800",
+                "style": "fill"
+              },
+              "_comment": "Center hub"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 220,
+              "radius": 5,
+              "paint": {
+                "color": "#FF161622",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "fuelText",
+              "value": "$fuel",
+              "before": 3,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Fuel level text"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$fuelText",
+              "x": 190,
+              "y": 290,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 28
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "%",
+              "x": 225,
+              "y": 290,
+              "pan_x": -1,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88FF9800",
+                "text_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

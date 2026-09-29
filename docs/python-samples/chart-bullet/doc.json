@@ -1,0 +1,80 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Bullet chart showing 4 performance metrics with ranges and targets"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Performance Metrics", "x": 200, "y": 25, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Revenue", "x": 95, "y": 80, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 55, "right": 380, "bottom": 105},
+            {"type": "paint", "color": "#FFDDDDDD", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 55, "right": 310, "bottom": 105},
+            {"type": "paint", "color": "#FFCCCCCC", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 55, "right": 220, "bottom": 105},
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 68, "right": 295, "bottom": 92},
+            {"type": "paint", "color": "#FF333333", "style": "stroke", "stroke_width": 3, "text_size": 12},
+            {"type": "draw_line", "x1": 330, "y1": 55, "x2": 330, "y2": 105},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Profit", "x": 95, "y": 170, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 145, "right": 380, "bottom": 195},
+            {"type": "paint", "color": "#FFDDDDDD", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 145, "right": 300, "bottom": 195},
+            {"type": "paint", "color": "#FFCCCCCC", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 145, "right": 200, "bottom": 195},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 158, "right": 340, "bottom": 182},
+            {"type": "paint", "color": "#FF333333", "style": "stroke", "stroke_width": 3, "text_size": 12},
+            {"type": "draw_line", "x1": 310, "y1": 145, "x2": 310, "y2": 195},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Satisfaction", "x": 95, "y": 260, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 235, "right": 380, "bottom": 285},
+            {"type": "paint", "color": "#FFDDDDDD", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 235, "right": 290, "bottom": 285},
+            {"type": "paint", "color": "#FFCCCCCC", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 235, "right": 190, "bottom": 285},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 248, "right": 250, "bottom": 272},
+            {"type": "paint", "color": "#FF333333", "style": "stroke", "stroke_width": 3, "text_size": 12},
+            {"type": "draw_line", "x1": 280, "y1": 235, "x2": 280, "y2": 285},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Orders", "x": 95, "y": 350, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 325, "right": 380, "bottom": 375},
+            {"type": "paint", "color": "#FFDDDDDD", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 325, "right": 320, "bottom": 375},
+            {"type": "paint", "color": "#FFCCCCCC", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 325, "right": 210, "bottom": 375},
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 338, "right": 200, "bottom": 362},
+            {"type": "paint", "color": "#FF333333", "style": "stroke", "stroke_width": 3, "text_size": 12},
+            {"type": "draw_line", "x1": 300, "y1": 325, "x2": 300, "y2": 375},
+
+            {"type": "paint", "color": "#FF888888", "style": "fill", "stroke_width": 1, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "Poor", "x": 155, "y": 395, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "OK", "x": 250, "y": 395, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Good", "x": 340, "y": 395, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "| Target", "x": 345, "y": 110, "pan_x": -1, "pan_y": -1}
+          ]
+        }
+      ]
+    }
+  ]
+}

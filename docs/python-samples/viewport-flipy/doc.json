@@ -1,0 +1,46 @@
+{
+  "_comment": "Viewport with flip_y: y=0 at bottom, bars grow upward naturally",
+  "header": { "width": 400, "height": 300, "description": "ViewportFlipY" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF1B2838" },
+          "children": [
+            {
+              "type": "viewport",
+              "vw": 500,
+              "vh": 400,
+              "flip_y": true,
+              "children": [
+                { "_comment": "X axis at y=0 (bottom)",
+                  "type": "paint", "color": "#40FFFFFF", "style": "stroke", "screen_stroke_width": 1.5 },
+                { "type": "draw_line", "x1": 40, "y1": 0, "x2": 480, "y2": 0 },
+                { "type": "draw_line", "x1": 40, "y1": 0, "x2": 40, "y2": 350 },
+
+                { "_comment": "Bars growing up from y=0",
+                  "type": "paint", "color": "#FF42A5F5", "style": "fill" },
+                { "type": "draw_rect", "left": 60, "top": 0, "right": 130, "bottom": 180 },
+                { "type": "paint", "color": "#FF66BB6A", "style": "fill" },
+                { "type": "draw_rect", "left": 150, "top": 0, "right": 220, "bottom": 280 },
+                { "type": "paint", "color": "#FFFFCA28", "style": "fill" },
+                { "type": "draw_rect", "left": 240, "top": 0, "right": 310, "bottom": 350 },
+                { "type": "paint", "color": "#FFEF5350", "style": "fill" },
+                { "type": "draw_rect", "left": 330, "top": 0, "right": 400, "bottom": 120 },
+
+                { "_comment": "Value labels above bars",
+                  "type": "paint", "color": "#FFFFFFFF", "screen_text_size": 13.0, "style": "fill" },
+                { "type": "draw_text_anchored", "text": "180", "x": 95, "y": 195, "pan_x": 0, "pan_y": 0 },
+                { "type": "draw_text_anchored", "text": "280", "x": 185, "y": 295, "pan_x": 0, "pan_y": 0 },
+                { "type": "draw_text_anchored", "text": "350", "x": 275, "y": 365, "pan_x": 0, "pan_y": 0 },
+                { "type": "draw_text_anchored", "text": "120", "x": 365, "y": 135, "pan_x": 0, "pan_y": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

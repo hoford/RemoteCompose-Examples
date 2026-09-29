@@ -1,0 +1,39 @@
+{
+  "id": "androidx-demos/procedure-text-path-effects",
+  "sha256": "2b53e3b457dd435a5c2bfe3b4e8a7ef5c389623feb7268ca02f2485b1f8f093b",
+  "bytes": 8986,
+  "ops": 25,
+  "distinctOps": 13,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "ANIMATED_FLOAT": 6,
+    "COLOR_EXPRESSIONS": 1,
+    "PAINT_VALUES": 4,
+    "MATRIX_SAVE": 2,
+    "MATRIX_SCALE": 1,
+    "DRAW_OVAL": 1,
+    "MATRIX_RESTORE": 2,
+    "MATRIX_TRANSLATE": 1,
+    "DRAW_PATH": 2,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawOval",
+    "drawPath",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

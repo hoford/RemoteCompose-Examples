@@ -1,0 +1,40 @@
+{
+  "id": "androidx-demos/color-table",
+  "sha256": "6e3f736fea15a44e26b2342bee8755508887d07ddd8e95189d7d18efbe3a40dd",
+  "bytes": 81385,
+  "ops": 4355,
+  "distinctOps": 17,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_FLOAT": 4,
+    "ANIMATED_FLOAT": 2,
+    "COLOR_CONSTANT": 195,
+    "NAMED_VARIABLE": 195,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 203,
+    "MODIFIER_BACKGROUND": 593,
+    "MODIFIER_WIDTH": 399,
+    "MODIFIER_HEIGHT": 204,
+    "LAYOUT_COLUMN": 1,
+    "CONTAINER_END": 1580,
+    "DATA_TEXT": 196,
+    "DEBUG_MESSAGE": 1,
+    "LAYOUT_ROW": 195,
+    "MODIFIER_PADDING": 390,
+    "LAYOUT_TEXT": 195
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,381 @@
+{
+  "_comment": "Settings panel: 5 rows with icon box, label, and toggle indicator",
+  "header": { "width": 400, "height": 400, "description": "WidgetSettings" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FFF5F5F5",
+            "padding": 16
+          },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                { "type": "text", "value": "Settings", "font_size": 24, "color": "#FF212121" },
+                {
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "size": [0, 1], "background": "#FFE0E0E0" },
+                  "children": []
+                },
+                {
+                  "_comment": "WiFi setting - ON",
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FFFFFFFF",
+                    "clip": { "radii": [12, 12, 12, 12] },
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "fill_max_width": true },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [36, 36], "background": "#FF2196F3", "clip": { "radii": [8, 8, 8, 8] } },
+                          "children": [
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "left": 6, "top": 6, "right": 30, "bottom": 30,
+                                  "start_angle": 225, "sweep_angle": 90, "use_center": false },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "left": 11, "top": 11, "right": 25, "bottom": 25,
+                                  "start_angle": 225, "sweep_angle": 90, "use_center": false },
+                                { "type": "draw_circle",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "cx": 18, "cy": 22, "radius": 3 }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "  Wi-Fi", "font_size": 15, "color": "#FF424242" },
+                        {
+                          "type": "box",
+                          "modifier": { "horizontal_weight": 1.0 },
+                          "children": []
+                        },
+                        {
+                          "_comment": "Toggle ON",
+                          "type": "box",
+                          "modifier": { "size": [44, 24], "background": "#FF4CAF50", "clip": { "radii": [12, 12, 12, 12] } },
+                          "children": [
+                            {
+                              "type": "row",
+                              "h_align": "end",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true, "padding": 2 },
+                              "children": [
+                                {
+                                  "type": "box",
+                                  "modifier": { "size": [20, 20], "background": "#FFFFFFFF", "clip": { "radii": [50, 50, 50, 50] } },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Bluetooth setting - ON",
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FFFFFFFF",
+                    "clip": { "radii": [12, 12, 12, 12] },
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "fill_max_width": true },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [36, 36], "background": "#FF5C6BC0", "clip": { "radii": [8, 8, 8, 8] } },
+                          "children": [
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "x1": 18, "y1": 8, "x2": 18, "y2": 28 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "x1": 18, "y1": 8, "x2": 24, "y2": 14 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "x1": 24, "y1": 14, "x2": 12, "y2": 22 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "x1": 18, "y1": 28, "x2": 24, "y2": 22 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.5 },
+                                  "x1": 24, "y1": 22, "x2": 12, "y2": 14 }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "  Bluetooth", "font_size": 15, "color": "#FF424242" },
+                        {
+                          "type": "box",
+                          "modifier": { "horizontal_weight": 1.0 },
+                          "children": []
+                        },
+                        {
+                          "type": "box",
+                          "modifier": { "size": [44, 24], "background": "#FF4CAF50", "clip": { "radii": [12, 12, 12, 12] } },
+                          "children": [
+                            {
+                              "type": "row",
+                              "h_align": "end",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true, "padding": 2 },
+                              "children": [
+                                {
+                                  "type": "box",
+                                  "modifier": { "size": [20, 20], "background": "#FFFFFFFF", "clip": { "radii": [50, 50, 50, 50] } },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Notifications setting - OFF",
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FFFFFFFF",
+                    "clip": { "radii": [12, 12, 12, 12] },
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "fill_max_width": true },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [36, 36], "background": "#FFFF7043", "clip": { "radii": [8, 8, 8, 8] } },
+                          "children": [
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "left": 10, "top": 8, "right": 26, "bottom": 24,
+                                  "start_angle": 180, "sweep_angle": 180, "use_center": true },
+                                { "type": "draw_rect",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "left": 10, "top": 16, "right": 26, "bottom": 24 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 2.0 },
+                                  "x1": 8, "y1": 24, "x2": 28, "y2": 24 },
+                                { "type": "draw_circle",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "cx": 18, "cy": 27, "radius": 3 }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "  Notifications", "font_size": 15, "color": "#FF424242" },
+                        {
+                          "type": "box",
+                          "modifier": { "horizontal_weight": 1.0 },
+                          "children": []
+                        },
+                        {
+                          "_comment": "Toggle OFF",
+                          "type": "box",
+                          "modifier": { "size": [44, 24], "background": "#FFBDBDBD", "clip": { "radii": [12, 12, 12, 12] } },
+                          "children": [
+                            {
+                              "type": "row",
+                              "h_align": "start",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true, "padding": 2 },
+                              "children": [
+                                {
+                                  "type": "box",
+                                  "modifier": { "size": [20, 20], "background": "#FFFFFFFF", "clip": { "radii": [50, 50, 50, 50] } },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Dark Mode setting - OFF",
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FFFFFFFF",
+                    "clip": { "radii": [12, 12, 12, 12] },
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "fill_max_width": true },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [36, 36], "background": "#FF37474F", "clip": { "radii": [8, 8, 8, 8] } },
+                          "children": [
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "left": 8, "top": 8, "right": 28, "bottom": 28,
+                                  "start_angle": 40, "sweep_angle": 280, "use_center": true },
+                                { "type": "draw_circle",
+                                  "paint": { "color": "#FF37474F", "style": "fill" },
+                                  "cx": 22, "cy": 14, "radius": 8 }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "  Dark Mode", "font_size": 15, "color": "#FF424242" },
+                        {
+                          "type": "box",
+                          "modifier": { "horizontal_weight": 1.0 },
+                          "children": []
+                        },
+                        {
+                          "type": "box",
+                          "modifier": { "size": [44, 24], "background": "#FFBDBDBD", "clip": { "radii": [12, 12, 12, 12] } },
+                          "children": [
+                            {
+                              "type": "row",
+                              "h_align": "start",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true, "padding": 2 },
+                              "children": [
+                                {
+                                  "type": "box",
+                                  "modifier": { "size": [20, 20], "background": "#FFFFFFFF", "clip": { "radii": [50, 50, 50, 50] } },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Location setting - ON",
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FFFFFFFF",
+                    "clip": { "radii": [12, 12, 12, 12] },
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "row",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "fill_max_width": true },
+                      "children": [
+                        {
+                          "type": "box",
+                          "modifier": { "size": [36, 36], "background": "#FF26A69A", "clip": { "radii": [8, 8, 8, 8] } },
+                          "children": [
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_size": true },
+                              "children": [
+                                { "_comment": "Location pin",
+                                  "type": "draw_circle",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "cx": 18, "cy": 14, "radius": 7 },
+                                { "type": "draw_circle",
+                                  "paint": { "color": "#FF26A69A", "style": "fill" },
+                                  "cx": 18, "cy": 14, "radius": 3 },
+                                { "type": "draw_line",
+                                  "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 3.0 },
+                                  "x1": 18, "y1": 20, "x2": 18, "y2": 28 },
+                                { "type": "draw_circle",
+                                  "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                                  "cx": 18, "cy": 28, "radius": 2 }
+                              ]
+                            }
+                          ]
+                        },
+                        { "type": "text", "value": "  Location", "font_size": 15, "color": "#FF424242" },
+                        {
+                          "type": "box",
+                          "modifier": { "horizontal_weight": 1.0 },
+                          "children": []
+                        },
+                        {
+                          "type": "box",
+                          "modifier": { "size": [44, 24], "background": "#FF4CAF50", "clip": { "radii": [12, 12, 12, 12] } },
+                          "children": [
+                            {
+                              "type": "row",
+                              "h_align": "end",
+                              "v_align": "center",
+                              "modifier": { "fill_max_size": true, "padding": 2 },
+                              "children": [
+                                {
+                                  "type": "box",
+                                  "modifier": { "size": [20, 20], "background": "#FFFFFFFF", "clip": { "radii": [50, 50, 50, 50] } },
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

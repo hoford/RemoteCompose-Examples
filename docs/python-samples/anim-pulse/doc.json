@@ -1,0 +1,150 @@
+{
+  "_comment": "Circle pulsing in size using sin modulation",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimPulse"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF2D2D44",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Outer glow ring \u2014 pulsing with slight offset",
+                  "type": "float_expression",
+                  "label": "r_glow",
+                  "expr": "sin(time.seconds * 2 - 0.3) * 40 + 120"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#20E040FB",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r_glow"
+                },
+                {
+                  "_comment": "Middle ring",
+                  "type": "float_expression",
+                  "label": "r_mid",
+                  "expr": "sin(time.seconds * 2 - 0.15) * 35 + 100"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#40E040FB",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r_mid"
+                },
+                {
+                  "_comment": "Main pulsing circle",
+                  "type": "float_expression",
+                  "label": "r_main",
+                  "expr": "sin(time.seconds * 2) * 30 + 80"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFE040FB",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r_main"
+                },
+                {
+                  "_comment": "Inner highlight",
+                  "type": "float_expression",
+                  "label": "r_inner",
+                  "expr": "sin(time.seconds * 2) * 15 + 35"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#60FFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r_inner"
+                },
+                {
+                  "_comment": "Radius text display",
+                  "type": "paint",
+                  "color": "#FFFFFFFF",
+                  "text_size": 20.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "text_from_float",
+                  "label": "r_txt",
+                  "value": "$r_main",
+                  "before": 3,
+                  "after": 1,
+                  "flags": 1
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text_id": "$r_txt",
+                  "x": "$cx",
+                  "y": {
+                    "expr": "$h - 30"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

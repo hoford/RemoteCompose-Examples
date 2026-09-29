@@ -1,0 +1,37 @@
+{
+  "id": "advanced-samples/cube3d",
+  "sha256": "ec065b0b02a5b8c5aee9c3ff7a4b5abfd5b3f05b8c4fa5caa195a98ba5d3b8b1",
+  "bytes": 2738,
+  "ops": 79,
+  "distinctOps": 12,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 30,
+    "PAINT_VALUES": 9,
+    "DRAW_CIRCLE": 1,
+    "DRAW_PATH": 12,
+    "CONTAINER_END": 17
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

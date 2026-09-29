@@ -1,0 +1,46 @@
+{
+  "id": "androidx-demos/touch-wrap",
+  "sha256": "0ef119cfb47f85fb17234407ed184f55b4cb37d8a9d9bb57087f853bfff14cff",
+  "bytes": 787,
+  "ops": 45,
+  "distinctOps": 19,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 8,
+    "PAINT_VALUES": 7,
+    "COMPONENT_VALUE": 2,
+    "DRAW_ROUND_RECT": 2,
+    "MATRIX_SAVE": 2,
+    "MATRIX_SCALE": 1,
+    "MATRIX_RESTORE": 2,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "DRAW_TEXT_ANCHOR": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "androidx-demos/texture-demo-basic-texture",
+  "sha256": "cd96a72101c8974bcf0e15cf930c385f215fb6350e0c1224e76cec5e7de3c8a7",
+  "bytes": 3466,
+  "ops": 22,
+  "distinctOps": 13,
+  "width": 300,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "DATA_BITMAP": 2,
+    "DATA_TEXT": 1,
+    "DRAW_BITMAP_SCALED": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "expressions",
+    "images",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

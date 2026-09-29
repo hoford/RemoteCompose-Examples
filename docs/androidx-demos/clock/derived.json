@@ -1,0 +1,53 @@
+{
+  "id": "androidx-demos/clock",
+  "sha256": "9bf7783fd73bd5c4d5a450f1a7286798ae131e67ccd0371ddd5bf3cef5490f3f",
+  "bytes": 2050,
+  "ops": 114,
+  "distinctOps": 24,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 10,
+    "COLOR_CONSTANT": 10,
+    "THEME": 15,
+    "COLOR_EXPRESSIONS": 10,
+    "CONTAINER_END": 16,
+    "LAYOUT_ROOT": 1,
+    "DATA_TEXT": 7,
+    "ANIMATED_FLOAT": 14,
+    "TEXT_LOOKUP": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 5,
+    "DRAW_PATH": 1,
+    "MATRIX_SAVE": 3,
+    "MATRIX_ROTATE": 4,
+    "DRAW_LINE": 2,
+    "MATRIX_RESTORE": 3,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ON_PATH": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "theming",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

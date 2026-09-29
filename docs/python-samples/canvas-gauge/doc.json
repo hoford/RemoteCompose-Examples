@@ -1,0 +1,119 @@
+{
+  "_comment": "Semi-circular gauge with needle and scale marks",
+  "header": { "width": 400, "height": 400, "description": "CanvasGauge" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF263238" },
+          "children": [
+            { "type": "float_expression", "label": "w", "expr": ["COMPONENT_WIDTH"] },
+            { "type": "float_expression", "label": "h", "expr": ["COMPONENT_HEIGHT"] },
+            { "type": "float_expression", "label": "cx", "expr": ["$w", 2, "DIV"] },
+            { "type": "float_expression", "label": "cy", "expr": ["$h", 0.6, "MUL"] },
+            { "type": "float_expression", "label": "r", "expr": ["$w", 0.4, "MUL"] },
+
+            { "_comment": "Gauge title",
+              "type": "paint", "color": "#FFFFFFFF", "text_size": 18.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "SPEED", "x": "$cx", "y": 30, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Outer arc background - gray track",
+              "type": "paint", "color": "#FF37474F", "stroke_width": 20.0, "style": "stroke" },
+            { "type": "draw_arc", "left": 40, "top": 80, "right": 360, "bottom": 400, "start_angle": 180, "sweep_angle": 180, "use_center": false },
+
+            { "_comment": "Green zone (0-60) = 0-108 degrees from 180",
+              "type": "paint", "color": "#FF4CAF50", "stroke_width": 20.0, "style": "stroke" },
+            { "type": "draw_arc", "left": 40, "top": 80, "right": 360, "bottom": 400, "start_angle": 180, "sweep_angle": 108, "use_center": false },
+
+            { "_comment": "Yellow zone (60-80) = 108-144 degrees from 180",
+              "type": "paint", "color": "#FFFFC107", "stroke_width": 20.0, "style": "stroke" },
+            { "type": "draw_arc", "left": 40, "top": 80, "right": 360, "bottom": 400, "start_angle": 288, "sweep_angle": 36, "use_center": false },
+
+            { "_comment": "Red zone (80-100) = 144-180 degrees from 180",
+              "type": "paint", "color": "#FFF44336", "stroke_width": 20.0, "style": "stroke" },
+            { "type": "draw_arc", "left": 40, "top": 80, "right": 360, "bottom": 400, "start_angle": 324, "sweep_angle": 36, "use_center": false },
+
+            { "_comment": "Tick marks around the arc",
+              "type": "paint", "color": "#FFFFFFFF", "stroke_width": 2.0, "style": "stroke" },
+            { "type": "save" },
+            { "type": "rotate", "angle": -90, "cx": "$cx", "cy": "$cy" },
+            {
+              "type": "loop",
+              "from": 0, "step": 18, "until": 198,
+              "label": "tick",
+              "children": [
+                { "type": "rotate", "angle": 18, "cx": "$cx", "cy": "$cy" },
+                {
+                  "type": "float_expression", "label": "t_start",
+                  "expr": ["$cy", "$r", "SUB", 12, "SUB"]
+                },
+                {
+                  "type": "float_expression", "label": "t_end",
+                  "expr": ["$cy", "$r", "SUB", 2, "ADD"]
+                },
+                { "type": "draw_line", "x1": "$cx", "y1": "$t_start", "x2": "$cx", "y2": "$t_end" }
+              ]
+            },
+            { "type": "restore" },
+
+            { "_comment": "Scale labels",
+              "type": "paint", "color": "#FFB0BEC5", "text_size": 14.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "0", "x": 55, "y": 255, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "20", "x": 68, "y": 165, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "40", "x": 120, "y": 100, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "60", "x": 200, "y": 72, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "80", "x": 280, "y": 100, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "100", "x": 332, "y": 165, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Animated needle - oscillates between 20 and 80",
+              "type": "float_expression", "label": "speed",
+              "expr": ["CONTINUOUS_SEC", 0.5, "MUL", "SIN", 30, "MUL", 50, "ADD"] },
+            { "type": "float_expression", "label": "needle_angle",
+              "expr": ["$speed", 100, "DIV", 180, "MUL", 180, "SUB"] },
+
+            { "_comment": "Needle shadow",
+              "type": "paint", "color": "#44000000", "stroke_width": 5.0, "style": "stroke" },
+            { "type": "save" },
+            { "type": "rotate", "angle": "$needle_angle", "cx": "$cx", "cy": "$cy" },
+            {
+              "type": "float_expression", "label": "needle_tip",
+              "expr": ["$cy", "$r", "SUB", 15, "ADD"]
+            },
+            { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$needle_tip" },
+            { "type": "restore" },
+
+            { "_comment": "Needle",
+              "type": "paint", "color": "#FFFFFFFF", "stroke_width": 3.0, "style": "stroke" },
+            { "type": "save" },
+            { "type": "rotate", "angle": "$needle_angle", "cx": "$cx", "cy": "$cy" },
+            { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$needle_tip" },
+            { "type": "restore" },
+
+            { "_comment": "Center hub",
+              "type": "paint", "color": "#FF455A64", "style": "fill" },
+            { "type": "draw_circle", "cx": "$cx", "cy": "$cy", "radius": 12 },
+            { "type": "paint", "color": "#FFFFFFFF", "style": "fill" },
+            { "type": "draw_circle", "cx": "$cx", "cy": "$cy", "radius": 5 },
+
+            { "_comment": "Digital readout",
+              "type": "paint", "color": "#FFFFFFFF", "text_size": 36.0, "style": "fill" },
+            {
+              "type": "text_from_float",
+              "label": "speed_text",
+              "value": "$speed",
+              "before": 2,
+              "after": 0,
+              "flags": 1
+            },
+            { "type": "draw_text_anchored", "text_id": "$speed_text", "x": "$cx", "y": 310, "pan_x": 0, "pan_y": 0 },
+
+            { "type": "paint", "color": "#FFB0BEC5", "text_size": 16.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "km/h", "x": "$cx", "y": 340, "pan_x": 0, "pan_y": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

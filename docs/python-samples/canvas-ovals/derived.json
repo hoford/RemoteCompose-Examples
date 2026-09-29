@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/canvas-ovals",
+  "sha256": "54f5c45777cd53e3abcdd0ecd1d241c0f26f5b3e29dfa617331760abdfa3ab51",
+  "bytes": 333,
+  "ops": 21,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 6,
+    "DRAW_OVAL": 6,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawOval",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "androidx-demos/procedure-simple-clock-fast",
+  "sha256": "be4ee2f8c441e95ca4d2e598ddb0d8f04b1f46829d996971fdee49f674178f7a",
+  "bytes": 230,
+  "ops": 11,
+  "distinctOps": 8,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "ANIMATED_FLOAT": 3,
+    "PAINT_VALUES": 2,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

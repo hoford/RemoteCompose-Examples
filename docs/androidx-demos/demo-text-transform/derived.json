@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/demo-text-transform",
+  "sha256": "cf9d37019b6816b28523aecb6dac21afb186cad5f3e35e799327a27fd3e324e8",
+  "bytes": 1678,
+  "ops": 84,
+  "distinctOps": 18,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 8,
+    "COLOR_EXPRESSIONS": 1,
+    "DATA_TEXT": 7,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 9,
+    "MODIFIER_HEIGHT": 9,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_BACKGROUND": 8,
+    "LAYOUT_TEXT": 7,
+    "CONTAINER_END": 22,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 3,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

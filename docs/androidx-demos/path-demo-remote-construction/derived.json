@@ -1,0 +1,41 @@
+{
+  "id": "androidx-demos/path-demo-remote-construction",
+  "sha256": "17805237191c0e4d6247f70be29b0a40d45e2a0138fd561762cb5b0a2e660e5d",
+  "bytes": 477,
+  "ops": 30,
+  "distinctOps": 15,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 6,
+    "PAINT_VALUES": 2,
+    "DRAW_CIRCLE": 1,
+    "PATH_CREATE": 1,
+    "CONTAINER_END": 7,
+    "DRAW_PATH": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

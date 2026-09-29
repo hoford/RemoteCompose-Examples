@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/canvas-arcs",
+  "sha256": "436761dbf9aff13f6615f735629c858d9a98676b60a30a916c6ae5fab87ba58c",
+  "bytes": 548,
+  "ops": 29,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 10,
+    "DRAW_ARC": 10,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

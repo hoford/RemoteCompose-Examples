@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-lollipop",
+  "sha256": "367a18b4b4d1da0099f4d96ce6ae85a106d2dcba99173c43eb67c4d69a01d635",
+  "bytes": 1642,
+  "ops": 83,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 9,
+    "DATA_TEXT": 21,
+    "DRAW_TEXT_ANCHOR": 22,
+    "DRAW_LINE": 14,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

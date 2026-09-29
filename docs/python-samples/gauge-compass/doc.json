@@ -1,0 +1,423 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Compass Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF1B2838"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "heading",
+              "expr": "time.seconds * 30 % 360"
+            },
+            {
+              "type": "float_expression",
+              "label": "negHeading",
+              "expr": "0 - (time.seconds * 30 % 360)"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 185,
+              "paint": {
+                "color": "#FF263545",
+                "style": "fill"
+              },
+              "_comment": "Outer ring"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 185,
+              "paint": {
+                "color": "#FF5C8A9E",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 170,
+              "paint": {
+                "color": "#FF0F1923",
+                "style": "fill"
+              },
+              "_comment": "Inner dial face"
+            },
+            {
+              "type": "save",
+              "_comment": "Rotating compass card"
+            },
+            {
+              "type": "rotate",
+              "angle": "$negHeading",
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 10,
+              "until": 360,
+              "label": "deg",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$deg",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 35,
+                  "x2": 200,
+                  "y2": 50,
+                  "paint": {
+                    "color": "#88FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Degree ticks every 10 degrees"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 30,
+              "until": 360,
+              "label": "mdeg",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$mdeg",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 30,
+                  "x2": 200,
+                  "y2": 55,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Major ticks every 30 degrees"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "N",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF4444",
+                "text_size": 28
+              },
+              "_comment": "Cardinal direction labels"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 90,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "E",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 180,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "S",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 270,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "W",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Intercardinal labels"
+            },
+            {
+              "type": "rotate",
+              "angle": 45,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "NE",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA5C8A9E",
+                "text_size": 14
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 135,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "SE",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA5C8A9E",
+                "text_size": 14
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 225,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "SW",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA5C8A9E",
+                "text_size": 14
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 315,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "NW",
+              "x": 200,
+              "y": 72,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA5C8A9E",
+                "text_size": 14
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_line",
+              "x1": 190,
+              "y1": 18,
+              "x2": 200,
+              "y2": 5,
+              "paint": {
+                "color": "#FFFF4444",
+                "style": "stroke",
+                "stroke_width": 3
+              },
+              "_comment": "Fixed heading pointer triangle (top)"
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 5,
+              "x2": 210,
+              "y2": 18,
+              "paint": {
+                "color": "#FFFF4444",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 190,
+              "y1": 18,
+              "x2": 210,
+              "y2": 18,
+              "paint": {
+                "color": "#FFFF4444",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 5,
+              "paint": {
+                "color": "#FF5C8A9E",
+                "style": "fill"
+              },
+              "_comment": "Center dot"
+            },
+            {
+              "type": "text_from_float",
+              "label": "headingText",
+              "value": "$heading",
+              "before": 3,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Heading value display"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 155,
+              "top": 345,
+              "right": 245,
+              "bottom": 380,
+              "rx": 6,
+              "ry": 6,
+              "paint": {
+                "color": "#FF263545",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$headingText",
+              "x": 192,
+              "y": 362,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 22
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "°",
+              "x": 220,
+              "y": 362,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 22
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

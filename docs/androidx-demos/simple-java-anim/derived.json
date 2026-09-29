@@ -1,0 +1,43 @@
+{
+  "id": "androidx-demos/simple-java-anim",
+  "sha256": "8cf0f01e9845df529c5214c9d2d273097f479fb8bc450dd01a5433c9f4999739",
+  "bytes": 408,
+  "ops": 27,
+  "distinctOps": 17,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 1,
+    "ANIMATED_FLOAT": 4,
+    "COLOR_EXPRESSIONS": 1,
+    "PAINT_VALUES": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "DRAW_OVAL": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawOval",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

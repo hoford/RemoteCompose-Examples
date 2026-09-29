@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-radar-filled",
+  "sha256": "d74cfbb0f2e8871ea1591cb3cfab3b63f1d564fb0ebab5fa737abe6c60cbc1bb",
+  "bytes": 1708,
+  "ops": 86,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 9,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_LINE": 48,
+    "DRAW_RECT": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

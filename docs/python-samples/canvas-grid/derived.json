@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/canvas-grid",
+  "sha256": "a3a3bcad23f0ef4f02d33177524f0f821c270877116382edefb471d938cb2c5c",
+  "bytes": 386,
+  "ops": 23,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 2,
+    "PAINT_VALUES": 3,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 7,
+    "DRAW_RECT": 1
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "androidx-demos/shader-calendar",
+  "sha256": "bad76d66b237e0c8293517557f740e9d1d38a6bd9e4dee7772da3c9cfd76f4f8",
+  "bytes": 7816,
+  "ops": 204,
+  "distinctOps": 6,
+  "width": 1000,
+  "height": 6739,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 57,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 1,
+    "DRAW_ROUND_RECT": 13,
+    "DRAW_TEXT_RUN": 104
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

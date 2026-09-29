@@ -1,0 +1,142 @@
+{
+  "_comment": "Circle bouncing up and down with a sin wave against a dark background",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimBounce"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "_comment": "Dark background",
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Floor line",
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#40FFFFFF",
+                    "stroke_width": 1.0
+                  },
+                  "x1": 20,
+                  "y1": {
+                    "expr": "$h - 40"
+                  },
+                  "x2": {
+                    "expr": "$w - 20"
+                  },
+                  "y2": {
+                    "expr": "$h - 40"
+                  }
+                },
+                {
+                  "_comment": "Bouncing ball Y position: sin wave mapped to vertical range",
+                  "type": "float_expression",
+                  "label": "bounce_y",
+                  "expr": "abs(sin(time.seconds * 3)) * ($h * 0.55) + 40"
+                },
+                {
+                  "_comment": "Shadow \u2014 wider and more transparent when ball is higher",
+                  "type": "float_expression",
+                  "label": "shadow_rx",
+                  "expr": "30 + abs(sin(time.seconds * 3)) * 15"
+                },
+                {
+                  "type": "draw_oval",
+                  "paint": {
+                    "color": "#30FFFFFF",
+                    "style": "fill"
+                  },
+                  "left": {
+                    "expr": "$cx - $shadow_rx"
+                  },
+                  "top": {
+                    "expr": "$h - 48"
+                  },
+                  "right": {
+                    "expr": "$cx + $shadow_rx"
+                  },
+                  "bottom": {
+                    "expr": "$h - 32"
+                  }
+                },
+                {
+                  "_comment": "Ball",
+                  "type": "float_expression",
+                  "label": "ball_y",
+                  "expr": "$h - $bounce_y"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00E5FF",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$ball_y",
+                  "radius": 30
+                },
+                {
+                  "_comment": "Highlight on ball",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#60FFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$cx - 8"
+                  },
+                  "cy": {
+                    "expr": "$ball_y - 8"
+                  },
+                  "radius": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

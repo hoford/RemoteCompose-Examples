@@ -1,0 +1,73 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Badges" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "padding": 20, "background": "#FF263238" },
+          "children": [
+            {
+              "type": "flow",
+              "h_gap": 8,
+              "v_gap": 8,
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FFE53935", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Kotlin", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF1E88E5", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Java", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF43A047", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Android", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF8E24AA", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Compose", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FFFB8C00", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Material", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF00ACC1", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "RemoteCompose", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF5C6BC0", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Layout", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FFD81B60", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Canvas", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF00897B", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Binary Protocol", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "padding": 8, "background": "#FF6D4C41", "clip": { "radii": [16, 16, 16, 16] } },
+                  "children": [{ "type": "text", "value": "Expressions", "font_size": 14.0, "color": "#FFFFFFFF" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

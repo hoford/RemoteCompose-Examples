@@ -1,0 +1,50 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Half-circle gauge showing CPU usage at 65%"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF1A1A2E"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 20},
+            {"type": "draw_text_anchored", "text": "CPU Usage", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 18, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 100, "right": 340, "bottom": 380, "start_angle": 180, "sweep_angle": 54, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFEB3B", "style": "stroke", "stroke_width": 18, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 100, "right": 340, "bottom": 380, "start_angle": 234, "sweep_angle": 54, "use_center": false},
+
+            {"type": "paint", "color": "#FFFF5722", "style": "stroke", "stroke_width": 18, "text_size": 0},
+            {"type": "draw_arc", "left": 60, "top": 100, "right": 340, "bottom": 380, "start_angle": 288, "sweep_angle": 72, "use_center": false},
+
+            {"type": "paint", "color": "#FF2A2A4A", "style": "stroke", "stroke_width": 12, "text_size": 0},
+            {"type": "draw_arc", "left": 70, "top": 110, "right": 330, "bottom": 370, "start_angle": 180, "sweep_angle": 180, "use_center": false},
+
+            {"type": "paint", "color": "#FF00E5FF", "style": "stroke", "stroke_width": 8, "text_size": 0},
+            {"type": "draw_arc", "left": 70, "top": 110, "right": 330, "bottom": 370, "start_angle": 180, "sweep_angle": 117, "use_center": false},
+
+            {"type": "paint", "color": "#FFCCCCCC", "style": "stroke", "stroke_width": 2, "text_size": 0},
+            {"type": "draw_line", "x1": 200, "y1": 240, "x2": 112, "y2": 175},
+
+            {"type": "paint", "color": "#FF00E5FF", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 200, "cy": 240, "radius": 8},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "0%", "x": 55, "y": 250, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50%", "x": 200, "y": 100, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100%", "x": 345, "y": 250, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF00E5FF", "style": "fill", "stroke_width": 0, "text_size": 48},
+            {"type": "draw_text_anchored", "text": "65%", "x": 200, "y": 310, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#99FFFFFF", "style": "fill", "stroke_width": 0, "text_size": 13},
+            {"type": "draw_text_anchored", "text": "Current Load", "x": 200, "y": 345, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

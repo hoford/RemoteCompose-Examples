@@ -1,0 +1,35 @@
+{
+  "id": "python-samples/anim-orbit",
+  "sha256": "bfd5758f37651f985a2d3ada18ff16d680b956aea732d6274a89636c80f6d376",
+  "bytes": 809,
+  "ops": 43,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 17,
+    "PAINT_VALUES": 9,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,52 @@
+{
+  "id": "androidx-demos/text-refresh-bug",
+  "sha256": "ee3cdf2a2e15d0309dbf28c9e28ef47a88f4039d50065bb4af40bb27b35e7c1b",
+  "bytes": 2943,
+  "ops": 160,
+  "distinctOps": 24,
+  "width": 475,
+  "height": 260,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 4,
+    "NAMED_VARIABLE": 10,
+    "COLOR_CONSTANT": 10,
+    "THEME": 15,
+    "COLOR_EXPRESSIONS": 11,
+    "CONTAINER_END": 47,
+    "DATA_TEXT": 4,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 6,
+    "MODIFIER_WIDTH": 16,
+    "MODIFIER_HEIGHT": 13,
+    "LAYOUT_CANVAS": 3,
+    "PAINT_VALUES": 3,
+    "DRAW_RECT": 1,
+    "MODIFIER_PADDING": 2,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_CLICK": 1,
+    "HOST_ACTION": 1,
+    "LAYOUT_COLUMN": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "MATRIX_SCALE": 2,
+    "DRAW_PATH": 2,
+    "MATRIX_TRANSLATE": 1
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "theming",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

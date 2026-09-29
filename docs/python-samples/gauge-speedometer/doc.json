@@ -1,0 +1,466 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Speedometer Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF1A1A2E"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "speed",
+              "expr": "sin(time.seconds) * 60 + 120"
+            },
+            {
+              "type": "float_expression",
+              "label": "needleAngle",
+              "expr": "(sin(time.seconds) * 60 + 120) / 240 * 270 - 225"
+            },
+            {
+              "type": "float_expression",
+              "label": "cx",
+              "expr": "COMPONENT_WIDTH / 2"
+            },
+            {
+              "type": "float_expression",
+              "label": "cy",
+              "expr": "COMPONENT_HEIGHT / 2"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 180,
+              "paint": {
+                "color": "#FF2A2A3E",
+                "style": "fill"
+              },
+              "_comment": "Outer bezel ring"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 180,
+              "paint": {
+                "color": "#FF4A90D9",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 165,
+              "paint": {
+                "color": "#FF0D0D1A",
+                "style": "fill"
+              },
+              "_comment": "Inner dark face"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 50,
+              "right": 350,
+              "bottom": 350,
+              "start_angle": 135,
+              "sweep_angle": 270,
+              "use_center": false,
+              "paint": {
+                "color": "#33FFFFFF",
+                "style": "stroke",
+                "stroke_width": 8
+              },
+              "_comment": "Arc track background"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 50,
+              "right": 350,
+              "bottom": 350,
+              "start_angle": 135,
+              "sweep_angle": 90,
+              "use_center": false,
+              "paint": {
+                "color": "#FF00C853",
+                "style": "stroke",
+                "stroke_width": 8
+              },
+              "_comment": "Green zone 0-80"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 50,
+              "right": 350,
+              "bottom": 350,
+              "start_angle": 225,
+              "sweep_angle": 112.5,
+              "use_center": false,
+              "paint": {
+                "color": "#FFFFD600",
+                "style": "stroke",
+                "stroke_width": 8
+              },
+              "_comment": "Yellow zone 80-180"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 50,
+              "right": 350,
+              "bottom": 350,
+              "start_angle": 337.5,
+              "sweep_angle": 67.5,
+              "use_center": false,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "stroke",
+                "stroke_width": 8
+              },
+              "_comment": "Red zone 180-240"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 20,
+              "until": 260,
+              "label": "spd",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "tickAngle",
+                  "expr": "$spd / 240 * 270 + 135"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$tickAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 35,
+                  "x2": 200,
+                  "y2": 55,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2.5
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Major tick marks every 20 km/h"
+            },
+            {
+              "type": "loop",
+              "from": 10,
+              "step": 20,
+              "until": 250,
+              "label": "mspd",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "mTickAngle",
+                  "expr": "$mspd / 240 * 270 + 135"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$mTickAngle",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 40,
+                  "x2": 200,
+                  "y2": 52,
+                  "paint": {
+                    "color": "#AAFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1.5
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Minor tick marks every 10 km/h"
+            },
+            {
+              "type": "save",
+              "_comment": "Speed number labels at key positions"
+            },
+            {
+              "type": "rotate",
+              "angle": 135,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "0",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 180,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "40",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 225,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "80",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 270,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "120",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 315,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "160",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 360,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "200",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 405,
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "240",
+              "x": 200,
+              "y": 70,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFF1744",
+                "text_size": 16
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Animated needle"
+            },
+            {
+              "type": "rotate",
+              "angle": "$needleAngle",
+              "cx": 200,
+              "cy": 200
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 60,
+              "x2": 200,
+              "y2": 210,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 12,
+              "paint": {
+                "color": "#FFFF1744",
+                "style": "fill"
+              },
+              "_comment": "Center hub"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 6,
+              "paint": {
+                "color": "#FF1A1A2E",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "speedText",
+              "value": "$speed",
+              "before": 3,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Speed value text"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$speedText",
+              "x": 200,
+              "y": 290,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 42
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "km/h",
+              "x": 200,
+              "y": 320,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA4A90D9",
+                "text_size": 16
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

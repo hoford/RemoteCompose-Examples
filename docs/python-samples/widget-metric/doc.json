@@ -1,0 +1,112 @@
+{
+  "_comment": "Single metric card: large animated number, label, trend arrow drawn in canvas",
+  "header": { "width": 300, "height": 200, "description": "WidgetMetric" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FFFFFFFF",
+            "border": { "width": 2, "corner": 16, "color": "#FFE8EAF6", "shape": 0 },
+            "clip": { "radii": [16, 16, 16, 16] },
+            "padding": 20
+          },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                { "type": "text", "value": "Active Users", "font_size": 13, "color": "#FF9E9E9E" },
+                {
+                  "_comment": "Large animated metric number",
+                  "type": "canvas",
+                  "modifier": { "fill_max_width": true, "size": [0, 70] },
+                  "children": [
+                    { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                    { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                    { "type": "float_expression", "label": "metric", "expr": "sin(time.seconds * 0.3) * 150 + 2847" },
+                    { "type": "text_from_float", "label": "metric_txt", "value": "$metric", "before": 4, "after": 0, "flags": 1 },
+                    { "type": "paint", "color": "#FF1A237E", "text_size": 48.0, "style": "fill" },
+                    { "type": "draw_text_anchored", "text_id": "$metric_txt", "x": "$cx", "y": 40, "pan_x": 0, "pan_y": 0 }
+                  ]
+                },
+                {
+                  "_comment": "Trend indicator row: arrow + percentage",
+                  "type": "row",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "children": [
+                    {
+                      "_comment": "Up arrow triangle",
+                      "type": "canvas",
+                      "modifier": { "size": [24, 24] },
+                      "children": [
+                        { "type": "draw_line",
+                          "paint": { "color": "#FF00C853", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": 12, "y1": 4, "x2": 4, "y2": 18 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FF00C853", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": 12, "y1": 4, "x2": 20, "y2": 18 },
+                        { "type": "draw_line",
+                          "paint": { "color": "#FF00C853", "style": "stroke", "stroke_width": 3.0 },
+                          "x1": 4, "y1": 18, "x2": 20, "y2": 18 }
+                      ]
+                    },
+                    { "type": "text", "value": "+12.3%", "font_size": 16, "color": "#FF00C853" },
+                    { "type": "text", "value": "  vs last week", "font_size": 11, "color": "#FFBDBDBD" }
+                  ]
+                },
+                {
+                  "_comment": "Mini bar chart",
+                  "type": "canvas",
+                  "modifier": { "fill_max_width": true, "size": [0, 30] },
+                  "children": [
+                    { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                    { "type": "float_expression", "label": "bw", "expr": "$w / 9" },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FFC5CAE9", "style": "fill" },
+                      "left": { "expr": "$bw * 0.5" }, "top": 18,
+                      "right": { "expr": "$bw * 1.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FFC5CAE9", "style": "fill" },
+                      "left": { "expr": "$bw * 1.5" }, "top": 12,
+                      "right": { "expr": "$bw * 2.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FFC5CAE9", "style": "fill" },
+                      "left": { "expr": "$bw * 2.5" }, "top": 14,
+                      "right": { "expr": "$bw * 3.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FF9FA8DA", "style": "fill" },
+                      "left": { "expr": "$bw * 3.5" }, "top": 8,
+                      "right": { "expr": "$bw * 4.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FF9FA8DA", "style": "fill" },
+                      "left": { "expr": "$bw * 4.5" }, "top": 10,
+                      "right": { "expr": "$bw * 5.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FF7986CB", "style": "fill" },
+                      "left": { "expr": "$bw * 5.5" }, "top": 6,
+                      "right": { "expr": "$bw * 6.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FF5C6BC0", "style": "fill" },
+                      "left": { "expr": "$bw * 6.5" }, "top": 4,
+                      "right": { "expr": "$bw * 7.3" }, "bottom": 28, "rx": 2, "ry": 2 },
+                    { "type": "draw_round_rect",
+                      "paint": { "color": "#FF3F51B5", "style": "fill" },
+                      "left": { "expr": "$bw * 7.5" }, "top": 2,
+                      "right": { "expr": "$bw * 8.3" }, "bottom": 28, "rx": 2, "ry": 2 }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

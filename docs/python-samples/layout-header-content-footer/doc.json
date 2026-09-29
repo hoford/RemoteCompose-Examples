@@ -1,0 +1,111 @@
+{
+  "header": { "width": 600, "height": 400, "description": "Header Content Footer" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "h_align": "center",
+          "v_align": "top",
+          "modifier": { "fill_max_size": true },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": {
+                "fill_max_width": true,
+                "background": "#FF0D47A1",
+                "padding": 16
+              },
+              "children": [
+                { "type": "text", "value": "MyApp", "font_size": 24, "color": "#FFFFFFFF" },
+                {
+                  "type": "row",
+                  "h_align": "end",
+                  "v_align": "center",
+                  "modifier": { "horizontal_weight": 1.0 },
+                  "children": [
+                    {
+                      "type": "box",
+                      "modifier": { "padding": 8 },
+                      "children": [
+                        { "type": "text", "value": "Home", "font_size": 14, "color": "#B3FFFFFF" }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "modifier": { "padding": 8 },
+                      "children": [
+                        { "type": "text", "value": "About", "font_size": 14, "color": "#B3FFFFFF" }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "modifier": { "padding": 8 },
+                      "children": [
+                        { "type": "text", "value": "Contact", "font_size": 14, "color": "#B3FFFFFF" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": {
+                "fill_max_width": true,
+                "fill_max_height": true,
+                "vertical_weight": 1.0,
+                "background": "#FFFFFFFF",
+                "padding": 24
+              },
+              "children": [
+                { "type": "text", "value": "Welcome", "font_size": 32, "color": "#FF0D47A1" },
+                { "type": "text", "value": "This is the main content area.", "font_size": 18, "color": "#FF616161" },
+                {
+                  "type": "row",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "modifier": { "padding": 16 },
+                  "children": [
+                    {
+                      "type": "box",
+                      "modifier": { "background": "#FF0D47A1", "padding": 12, "clip": { "radii": [8, 8, 8, 8] } },
+                      "children": [
+                        { "type": "text", "value": "Get Started", "font_size": 16, "color": "#FFFFFFFF" }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "modifier": { "border": { "width": 2, "corner": 8, "color": "#FF0D47A1", "shape": 0 }, "padding": 12 },
+                      "children": [
+                        { "type": "text", "value": "Learn More", "font_size": 16, "color": "#FF0D47A1" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": {
+                "fill_max_width": true,
+                "background": "#FF263238",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "2026 MyApp. Built with RemoteCompose.", "font_size": 12, "color": "#FF90A4AE" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/path-demo-path2",
+  "sha256": "74d4de9c0c4cecbaa63c729015120d1537a3897980924ed82babc48cdbccabde",
+  "bytes": 4367,
+  "ops": 50,
+  "distinctOps": 17,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 9,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 6,
+    "DRAW_LINE": 2,
+    "PATH_TWEEN": 2,
+    "MATRIX_TRANSLATE": 6,
+    "DRAW_PATH": 5,
+    "COLOR_EXPRESSIONS": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

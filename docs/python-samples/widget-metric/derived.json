@@ -1,0 +1,44 @@
+{
+  "id": "python-samples/widget-metric",
+  "sha256": "10c35851ad2ebe9232e676b1d184187964a6ade68df39670502fb2368be77ee3",
+  "bytes": 1508,
+  "ops": 88,
+  "distinctOps": 18,
+  "width": 300,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 5,
+    "MODIFIER_HEIGHT": 5,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_BORDER": 1,
+    "MODIFIER_PADDING": 1,
+    "LAYOUT_COLUMN": 1,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 19,
+    "LAYOUT_CANVAS": 3,
+    "ANIMATED_FLOAT": 21,
+    "PAINT_VALUES": 12,
+    "DRAW_TEXT_ANCHOR": 1,
+    "LAYOUT_ROW": 1,
+    "DRAW_LINE": 3,
+    "DRAW_ROUND_RECT": 8
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

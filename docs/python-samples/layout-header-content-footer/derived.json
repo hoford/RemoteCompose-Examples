@@ -1,0 +1,31 @@
+{
+  "id": "python-samples/layout-header-content-footer",
+  "sha256": "d75d05ce9e6f72f1deb425c9b17ef3c68b5ebbff3c88e4f4640c2d9bd3a1f5a3",
+  "bytes": 1230,
+  "ops": 84,
+  "distinctOps": 12,
+  "width": 600,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 2,
+    "MODIFIER_WIDTH": 5,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_ROW": 4,
+    "MODIFIER_BACKGROUND": 4,
+    "MODIFIER_PADDING": 9,
+    "DATA_TEXT": 9,
+    "CONTAINER_END": 41,
+    "LAYOUT_BOX": 5,
+    "MODIFIER_BORDER": 1
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

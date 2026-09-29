@@ -1,0 +1,36 @@
+{
+  "id": "androidx-demos/procedure-gradient3",
+  "sha256": "7e64cbf4baa7f0fd8bea175ccbfb13f5f7fa0b8a03b27f2e6e319a0cc26253b7",
+  "bytes": 313,
+  "ops": 15,
+  "distinctOps": 11,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "ANIMATED_FLOAT": 4,
+    "COLOR_EXPRESSIONS": 1,
+    "PAINT_VALUES": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "DRAW_OVAL": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawOval",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

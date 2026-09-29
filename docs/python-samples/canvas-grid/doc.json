@@ -1,0 +1,61 @@
+{
+  "_comment": "Grid pattern using loops for horizontal and vertical lines",
+  "header": { "width": 400, "height": 400, "description": "CanvasGrid" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFFAFAFA" },
+          "children": [
+            { "type": "float_expression", "label": "w", "expr": ["COMPONENT_WIDTH"] },
+            { "type": "float_expression", "label": "h", "expr": ["COMPONENT_HEIGHT"] },
+
+            { "_comment": "Minor grid lines - light gray",
+              "type": "paint", "color": "#FFE0E0E0", "stroke_width": 1.0, "style": "stroke" },
+            {
+              "type": "loop",
+              "from": 20, "step": 20, "until": 400,
+              "label": "gx",
+              "children": [
+                { "type": "draw_line", "x1": "$gx", "y1": 0, "x2": "$gx", "y2": "$h" }
+              ]
+            },
+            {
+              "type": "loop",
+              "from": 20, "step": 20, "until": 400,
+              "label": "gy",
+              "children": [
+                { "type": "draw_line", "x1": 0, "y1": "$gy", "x2": "$w", "y2": "$gy" }
+              ]
+            },
+
+            { "_comment": "Major grid lines - darker gray, every 100px",
+              "type": "paint", "color": "#FF9E9E9E", "stroke_width": 2.0, "style": "stroke" },
+            {
+              "type": "loop",
+              "from": 100, "step": 100, "until": 400,
+              "label": "mx",
+              "children": [
+                { "type": "draw_line", "x1": "$mx", "y1": 0, "x2": "$mx", "y2": "$h" }
+              ]
+            },
+            {
+              "type": "loop",
+              "from": 100, "step": 100, "until": 400,
+              "label": "my",
+              "children": [
+                { "type": "draw_line", "x1": 0, "y1": "$my", "x2": "$w", "y2": "$my" }
+              ]
+            },
+
+            { "_comment": "Border",
+              "type": "paint", "color": "#FF424242", "stroke_width": 3.0, "style": "stroke" },
+            { "type": "draw_rect", "left": 0, "top": 0, "right": "$w", "bottom": "$h" }
+          ]
+        }
+      ]
+    }
+  ]
+}

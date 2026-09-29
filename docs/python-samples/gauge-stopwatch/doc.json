@@ -1,0 +1,442 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Stopwatch Face"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF101018"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "seconds",
+              "expr": "time.seconds % 60"
+            },
+            {
+              "type": "float_expression",
+              "label": "secondHandAngle",
+              "expr": "(time.seconds % 60) / 60 * 360"
+            },
+            {
+              "type": "float_expression",
+              "label": "minutes",
+              "expr": "time.seconds / 60 % 60"
+            },
+            {
+              "type": "float_expression",
+              "label": "minuteHandAngle",
+              "expr": "(time.seconds / 60 % 60) / 60 * 360"
+            },
+            {
+              "type": "float_expression",
+              "label": "totalSeconds",
+              "expr": "time.seconds"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 185,
+              "paint": {
+                "color": "#FF1E1E2A",
+                "style": "fill"
+              },
+              "_comment": "Watch case"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 185,
+              "paint": {
+                "color": "#FFC0C0C0",
+                "style": "stroke",
+                "stroke_width": 4
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 178,
+              "paint": {
+                "color": "#FF888888",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 192,
+              "top": 10,
+              "right": 208,
+              "bottom": 30,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FFC0C0C0",
+                "style": "fill"
+              },
+              "_comment": "Crown button at top"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 370,
+              "top": 165,
+              "right": 392,
+              "bottom": 185,
+              "rx": 3,
+              "ry": 3,
+              "paint": {
+                "color": "#FFC0C0C0",
+                "style": "fill"
+              },
+              "_comment": "Side button"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 170,
+              "paint": {
+                "color": "#FF0C0C16",
+                "style": "fill"
+              },
+              "_comment": "Inner face"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 6,
+              "until": 360,
+              "label": "stk",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$stk",
+                  "cx": 200,
+                  "cy": 210
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 42,
+                  "x2": 200,
+                  "y2": 50,
+                  "paint": {
+                    "color": "#66FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "60 second tick marks"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 30,
+              "until": 360,
+              "label": "maj",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "secNum",
+                  "expr": "$maj / 6"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$maj",
+                  "cx": 200,
+                  "cy": 210
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 38,
+                  "x2": 200,
+                  "y2": 55,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2.5
+                  }
+                },
+                {
+                  "type": "text_from_float",
+                  "label": "secLabel",
+                  "value": "$secNum",
+                  "before": 2,
+                  "after": 0,
+                  "flags": 1
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text_id": "$secLabel",
+                  "x": 200,
+                  "y": 72,
+                  "pan_x": 0,
+                  "pan_y": 0,
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "text_size": 18
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "5-second major ticks with numbers"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 290,
+              "radius": 35,
+              "paint": {
+                "color": "#FF1E1E2A",
+                "style": "fill"
+              },
+              "_comment": "Sub-dial for minutes at 6 o'clock position"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 290,
+              "radius": 35,
+              "paint": {
+                "color": "#44FFFFFF",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 30,
+              "until": 360,
+              "label": "mtk",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$mtk",
+                  "cx": 200,
+                  "cy": 290
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 258,
+                  "x2": 200,
+                  "y2": 263,
+                  "paint": {
+                    "color": "#88FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Sub-dial minute ticks"
+            },
+            {
+              "type": "save",
+              "_comment": "Sub-dial minute hand"
+            },
+            {
+              "type": "rotate",
+              "angle": "$minuteHandAngle",
+              "cx": 200,
+              "cy": 290
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 262,
+              "x2": 200,
+              "y2": 293,
+              "paint": {
+                "color": "#FF40C4FF",
+                "style": "stroke",
+                "stroke_width": 1.5
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "MIN",
+              "x": 200,
+              "y": 306,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#4440C4FF",
+                "text_size": 8
+              }
+            },
+            {
+              "type": "save",
+              "_comment": "Main second hand"
+            },
+            {
+              "type": "rotate",
+              "angle": "$secondHandAngle",
+              "cx": 200,
+              "cy": 210
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 45,
+              "x2": 200,
+              "y2": 225,
+              "paint": {
+                "color": "#FFFF3D00",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 230,
+              "radius": 4,
+              "paint": {
+                "color": "#FFFF3D00",
+                "style": "fill"
+              },
+              "_comment": "Counterweight"
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 8,
+              "paint": {
+                "color": "#FFC0C0C0",
+                "style": "fill"
+              },
+              "_comment": "Center hub"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 210,
+              "radius": 4,
+              "paint": {
+                "color": "#FFFF3D00",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "elapsedMin",
+              "value": "$minutes",
+              "before": 2,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Elapsed time display"
+            },
+            {
+              "type": "text_from_float",
+              "label": "elapsedSec",
+              "value": "$seconds",
+              "before": 2,
+              "after": 1,
+              "flags": 1
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 120,
+              "top": 140,
+              "right": 280,
+              "bottom": 170,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#221E1E2A",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$elapsedMin",
+              "x": 175,
+              "y": 155,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF40C4FF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": ":",
+              "x": 200,
+              "y": 153,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF40C4FF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$elapsedSec",
+              "x": 230,
+              "y": 155,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF40C4FF",
+                "text_size": 20
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "CHRONOGRAPH",
+              "x": 200,
+              "y": 125,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#33FFFFFF",
+                "text_size": 10
+              },
+              "_comment": "STOPWATCH label"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "_comment": "Port of ExampleClock.kt basicClock() — animated clock with hour/minute/second hands",
+  "header": { "width": 500, "height": 500, "description": "BasicClock" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true },
+          "children": [
+            {
+              "type": "canvas",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "_comment": "Component dimensions and derived center/radius",
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": ["COMPONENT_WIDTH"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": ["COMPONENT_HEIGHT"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": ["$w", 2, "DIV"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": ["$h", 2, "DIV"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "rad",
+                  "expr": ["$cx", "$cy", "MIN"]
+                },
+
+                { "_comment": "Blue background rounded rect",
+                  "type": "paint", "color": "#FF0000FF" },
+                { "type": "draw_round_rect",
+                  "left": 0, "top": 0, "right": "$w", "bottom": "$h",
+                  "rx": "$rad", "ry": "$rad" },
+
+                { "_comment": "Minute hand — gray, thick, rounded",
+                  "type": "paint", "color": "#FF888888", "stroke_width": 32.0, "style": "stroke" },
+                { "type": "save" },
+                {
+                  "type": "float_expression",
+                  "label": "min_angle",
+                  "expr": ["TIME_IN_MIN", 6, "MUL"]
+                },
+                { "type": "rotate", "angle": "$min_angle", "cx": "$cx", "cy": "$cy" },
+                {
+                  "type": "float_expression",
+                  "label": "min_end",
+                  "expr": ["$cy", "$rad", 0.8, "MUL", "SUB"]
+                },
+                { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$min_end" },
+                { "type": "restore" },
+
+                { "_comment": "Hour hand — light gray, thick",
+                  "type": "paint", "color": "#FFCCCCCC", "stroke_width": 16.0, "style": "stroke" },
+                { "type": "save" },
+                {
+                  "type": "float_expression",
+                  "label": "hr_angle",
+                  "expr": ["TIME_IN_HR", 30, "MUL"]
+                },
+                { "type": "rotate", "angle": "$hr_angle", "cx": "$cx", "cy": "$cy" },
+                {
+                  "type": "float_expression",
+                  "label": "hr_end",
+                  "expr": ["$cy", "$rad", 2, "DIV", "SUB"]
+                },
+                { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$hr_end" },
+                { "type": "restore" },
+
+                { "_comment": "Second hand — white, thin, computed endpoint using sin/cos",
+                  "type": "paint", "color": "#FFFFFFFF", "stroke_width": 4.0, "style": "stroke" },
+                {
+                  "type": "float_expression",
+                  "label": "sec_rad",
+                  "expr": ["CONTINUOUS_SEC", 0.10471975511966, "MUL"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "sec_x",
+                  "expr": ["$w", 2, "DIV", "$rad", "$sec_rad", "SIN", "MUL", "ADD"]
+                },
+                {
+                  "type": "float_expression",
+                  "label": "sec_y",
+                  "expr": ["$h", 2, "DIV", "$rad", "$sec_rad", "COS", "MUL", "SUB"]
+                },
+                { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$sec_x", "y2": "$sec_y" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

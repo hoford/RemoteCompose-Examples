@@ -1,0 +1,31 @@
+{
+  "id": "python-samples/demo-nested-layout",
+  "sha256": "56614af286357a32e8461d1b2e470a60a2af07f771ab665a54892f0f34bd9196",
+  "bytes": 858,
+  "ops": 56,
+  "distinctOps": 12,
+  "width": 600,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 3,
+    "DATA_TEXT": 6,
+    "MODIFIER_BACKGROUND": 5,
+    "CONTAINER_END": 25,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 4,
+    "MODIFIER_PADDING": 2,
+    "MODIFIER_HEIGHT": 4,
+    "LAYOUT_BOX": 2,
+    "MODIFIER_BORDER": 2
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

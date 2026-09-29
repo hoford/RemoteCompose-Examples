@@ -1,0 +1,40 @@
+{
+  "id": "python-samples/demo-clock",
+  "sha256": "85575712d4861105c99f79baeaef779de1f56ee2b597225afdbadc83e3789305",
+  "bytes": 619,
+  "ops": 39,
+  "distinctOps": 14,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 12,
+    "PAINT_VALUES": 4,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 3,
+    "MATRIX_RESTORE": 2,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

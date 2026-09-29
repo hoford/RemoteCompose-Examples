@@ -1,0 +1,219 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Progress Ring Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF0A0A1A"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "progress",
+              "expr": "fract(time.seconds / 5) * 100"
+            },
+            {
+              "type": "float_expression",
+              "label": "sweepAngle",
+              "expr": "fract(time.seconds / 5) * 360"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 185,
+              "paint": {
+                "color": "#FF151530",
+                "style": "fill"
+              },
+              "_comment": "Outer decorative ring"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 185,
+              "paint": {
+                "color": "#33448AFF",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "draw_arc",
+              "left": 40,
+              "top": 40,
+              "right": 360,
+              "bottom": 360,
+              "start_angle": -90,
+              "sweep_angle": 360,
+              "use_center": false,
+              "paint": {
+                "color": "#22448AFF",
+                "style": "stroke",
+                "stroke_width": 22
+              },
+              "_comment": "Track ring (background)"
+            },
+            {
+              "type": "draw_arc",
+              "left": 40,
+              "top": 40,
+              "right": 360,
+              "bottom": 360,
+              "start_angle": -90,
+              "sweep_angle": "$sweepAngle",
+              "use_center": false,
+              "paint": {
+                "color": "#FF448AFF",
+                "style": "stroke",
+                "stroke_width": 22
+              },
+              "_comment": "Progress arc (animated)"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 200,
+              "radius": 135,
+              "paint": {
+                "color": "#FF0A0A1A",
+                "style": "fill"
+              },
+              "_comment": "Inner shadow circle"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 36,
+              "until": 360,
+              "label": "tick",
+              "children": [
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$tick",
+                  "cx": 200,
+                  "cy": 200
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 22,
+                  "x2": 200,
+                  "y2": 32,
+                  "paint": {
+                    "color": "#66448AFF",
+                    "style": "stroke",
+                    "stroke_width": 2
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Tick marks around the ring"
+            },
+            {
+              "type": "text_from_float",
+              "label": "pctText",
+              "value": "$progress",
+              "before": 2,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Percentage value"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$pctText",
+              "x": 195,
+              "y": 195,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 64
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "%",
+              "x": 245,
+              "y": 185,
+              "pan_x": -1,
+              "pan_y": 0,
+              "paint": {
+                "color": "#88448AFF",
+                "text_size": 24
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "LOADING",
+              "x": 200,
+              "y": 245,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#66448AFF",
+                "text_size": 16
+              },
+              "_comment": "Label"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 18,
+              "radius": 4,
+              "paint": {
+                "color": "#FF448AFF",
+                "style": "fill"
+              },
+              "_comment": "Decorative dots at quarters"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 382,
+              "cy": 200,
+              "radius": 4,
+              "paint": {
+                "color": "#FF448AFF",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 382,
+              "radius": 4,
+              "paint": {
+                "color": "#FF448AFF",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 18,
+              "cy": 200,
+              "radius": 4,
+              "paint": {
+                "color": "#FF448AFF",
+                "style": "fill"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

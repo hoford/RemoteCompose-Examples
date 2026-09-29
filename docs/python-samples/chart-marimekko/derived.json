@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-marimekko",
+  "sha256": "4c3b6cd0dda1671164f8d05dcb5ba505f8b845100f0d5427baa1c060d022a3d1",
+  "bytes": 2157,
+  "ops": 95,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 20,
+    "DATA_TEXT": 22,
+    "DRAW_TEXT_ANCHOR": 30,
+    "DRAW_LINE": 2,
+    "DRAW_RECT": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

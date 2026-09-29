@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/canvas-round-rects",
+  "sha256": "f75efe36fd3963342c9f4566deca7ca683ecd1f402542eae96046f22f0f4c76a",
+  "bytes": 806,
+  "ops": 41,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 16,
+    "DRAW_ROUND_RECT": 16,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawRoundRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

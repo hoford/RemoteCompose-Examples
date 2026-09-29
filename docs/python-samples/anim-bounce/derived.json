@@ -1,0 +1,39 @@
+{
+  "id": "python-samples/anim-bounce",
+  "sha256": "9a2358b41a50487b5e5b1e3e2d43ab25338e75809b45767d9c535f3526b78121",
+  "bytes": 633,
+  "ops": 34,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 16,
+    "PAINT_VALUES": 5,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 1,
+    "DRAW_OVAL": 1,
+    "DRAW_CIRCLE": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

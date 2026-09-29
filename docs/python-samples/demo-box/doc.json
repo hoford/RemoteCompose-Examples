@@ -1,0 +1,15 @@
+{
+  "_comment": "Port of DemoBox.kt — simple container with a red background",
+  "header": { "width": 400, "height": 400, "description": "DemoBox" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "size": 200, "background": "#FFFF0000" }
+        }
+      ]
+    }
+  ]
+}

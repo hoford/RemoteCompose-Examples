@@ -1,0 +1,93 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Marimekko chart showing market segments with variable-width columns"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF263238", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Market Segments", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 30, "y1": 50, "x2": 30, "y2": 340},
+            {"type": "draw_line", "x1": 30, "y1": 340, "x2": 385, "y2": 340},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "100%", "x": 26, "y": 50, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "75%", "x": 26, "y": 122, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50%", "x": 26, "y": 195, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25%", "x": 26, "y": 267, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "0%", "x": 26, "y": 340, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 32, "top": 50, "right": 142, "bottom": 166},
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 32, "top": 166, "right": 142, "bottom": 253},
+            {"type": "paint", "color": "#FF90CAF9", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 32, "top": 253, "right": 142, "bottom": 340},
+
+            {"type": "paint", "color": "#FF2E7D32", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 144, "top": 50, "right": 224, "bottom": 195},
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 144, "top": 195, "right": 224, "bottom": 282},
+            {"type": "paint", "color": "#FFA5D6A7", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 144, "top": 282, "right": 224, "bottom": 340},
+
+            {"type": "paint", "color": "#FFE65100", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 226, "top": 50, "right": 316, "bottom": 137},
+            {"type": "paint", "color": "#FFFFA726", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 226, "top": 137, "right": 316, "bottom": 224},
+            {"type": "paint", "color": "#FFFFCC80", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 226, "top": 224, "right": 316, "bottom": 340},
+
+            {"type": "paint", "color": "#FF6A1B9A", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 318, "top": 50, "right": 383, "bottom": 224},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 318, "top": 224, "right": 383, "bottom": 311},
+            {"type": "paint", "color": "#FFCE93D8", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 318, "top": 311, "right": 383, "bottom": 340},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Enterprise", "x": 87, "y": 105, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40%", "x": 87, "y": 120, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "SMB", "x": 87, "y": 205, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30%", "x": 87, "y": 220, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Consumer", "x": 87, "y": 292, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30%", "x": 87, "y": 307, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "50%", "x": 184, "y": 120, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30%", "x": 184, "y": 236, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20%", "x": 184, "y": 308, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "30%", "x": 271, "y": 90, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30%", "x": 271, "y": 178, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40%", "x": 271, "y": 278, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "60%", "x": 350, "y": 135, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30%", "x": 350, "y": 265, "pan_x": 0, "pan_y": 0},
+            {"type": "paint", "color": "#FF6A1B9A", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "10%", "x": 350, "y": 325, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF37474F", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "North Am.", "x": 87, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Europe", "x": 184, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Asia", "x": 271, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Other", "x": 350, "y": 355, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "31%", "x": 87, "y": 370, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "22%", "x": 184, "y": 370, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "25%", "x": 271, "y": 370, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "18%", "x": 350, "y": 370, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Column width = market share", "x": 200, "y": 390, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

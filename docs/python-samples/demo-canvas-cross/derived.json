@@ -1,0 +1,31 @@
+{
+  "id": "python-samples/demo-canvas-cross",
+  "sha256": "b1ca9794dfa54032b64fa7d6154a8fc40ac6c1bd8541a5bfba7821a37ac66c59",
+  "bytes": 288,
+  "ops": 19,
+  "distinctOps": 11,
+  "width": 600,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 1,
+    "LAYOUT_CANVAS": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_LINE": 2,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawLine",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

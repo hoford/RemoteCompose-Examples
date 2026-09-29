@@ -1,0 +1,28 @@
+{
+  "id": "python-samples/layout-clip-circle",
+  "sha256": "93f63f4b1212455a4624a806831ca931b5692ed5d73250eedfe4daa8db84bab2",
+  "bytes": 365,
+  "ops": 26,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 2,
+    "MODIFIER_WIDTH": 3,
+    "MODIFIER_HEIGHT": 3,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_COLUMN": 1,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 11
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

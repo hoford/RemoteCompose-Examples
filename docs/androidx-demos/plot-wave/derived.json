@@ -1,0 +1,43 @@
+{
+  "id": "androidx-demos/plot-wave",
+  "sha256": "47bbb9ee70803dabd92f06c1aa52f6a0fb7453f7516d8589984d6e7045a48f8d",
+  "bytes": 2192,
+  "ops": 82,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 16,
+    "DRAW_ROUND_RECT": 1,
+    "ANIMATED_FLOAT": 21,
+    "DRAW_LINE": 6,
+    "CONTAINER_END": 10,
+    "DRAW_TEXT_ANCHOR": 6,
+    "COLOR_EXPRESSIONS": 4,
+    "DATA_TEXT": 4,
+    "DRAW_PATH": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

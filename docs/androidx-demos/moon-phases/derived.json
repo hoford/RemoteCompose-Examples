@@ -1,0 +1,43 @@
+{
+  "id": "androidx-demos/moon-phases",
+  "sha256": "eef3a8840521ea7bb76409027d8024fda4bd9c2bba58443bed8895673d8a44c6",
+  "bytes": 2281,
+  "ops": 70,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 5,
+    "ANIMATED_FLOAT": 33,
+    "DRAW_CIRCLE": 1,
+    "DRAW_SECTOR": 2,
+    "DRAW_OVAL": 4,
+    "CONTAINER_END": 12,
+    "DATA_TEXT": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawOval",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

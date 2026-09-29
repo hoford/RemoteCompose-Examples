@@ -1,0 +1,43 @@
+{
+  "id": "python-samples/anim-clock-simple",
+  "sha256": "4df57ca04735c3b4468351c652f56e8b1745906970f343d997bdff5d47a467b5",
+  "bytes": 880,
+  "ops": 50,
+  "distinctOps": 15,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 14,
+    "PAINT_VALUES": 9,
+    "DRAW_RECT": 1,
+    "DRAW_CIRCLE": 4,
+    "MATRIX_SAVE": 3,
+    "MATRIX_ROTATE": 3,
+    "DRAW_LINE": 3,
+    "MATRIX_RESTORE": 3,
+    "CONTAINER_END": 4,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

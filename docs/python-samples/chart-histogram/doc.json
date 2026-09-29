@@ -1,0 +1,76 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Histogram - Test Score Distribution"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Test Score Distribution", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Frequency", "x": 15, "y": 185, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "0", "x": 52, "y": 320, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "5", "x": 52, "y": 275, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "10", "x": 52, "y": 230, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "15", "x": 52, "y": 185, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20", "x": 52, "y": 140, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25", "x": 52, "y": 95, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30", "x": 52, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 58, "y1": 320, "x2": 380, "y2": 320},
+            {"type": "draw_line", "x1": 58, "y1": 275, "x2": 380, "y2": 275},
+            {"type": "draw_line", "x1": 58, "y1": 230, "x2": 380, "y2": 230},
+            {"type": "draw_line", "x1": 58, "y1": 185, "x2": 380, "y2": 185},
+            {"type": "draw_line", "x1": 58, "y1": 140, "x2": 380, "y2": 140},
+            {"type": "draw_line", "x1": 58, "y1": 95, "x2": 380, "y2": 95},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 58, "top": 302, "right": 90, "bottom": 320},
+            {"type": "draw_rect", "left": 90, "top": 284, "right": 122, "bottom": 320},
+            {"type": "draw_rect", "left": 122, "top": 248, "right": 154, "bottom": 320},
+            {"type": "draw_rect", "left": 154, "top": 203, "right": 186, "bottom": 320},
+            {"type": "draw_rect", "left": 186, "top": 95, "right": 218, "bottom": 320},
+            {"type": "draw_rect", "left": 218, "top": 77, "right": 250, "bottom": 320},
+            {"type": "draw_rect", "left": 250, "top": 131, "right": 282, "bottom": 320},
+            {"type": "draw_rect", "left": 282, "top": 212, "right": 314, "bottom": 320},
+            {"type": "draw_rect", "left": 314, "top": 275, "right": 346, "bottom": 320},
+            {"type": "draw_rect", "left": 346, "top": 302, "right": 378, "bottom": 320},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_rect", "left": 58, "top": 302, "right": 90, "bottom": 320},
+            {"type": "draw_rect", "left": 90, "top": 284, "right": 122, "bottom": 320},
+            {"type": "draw_rect", "left": 122, "top": 248, "right": 154, "bottom": 320},
+            {"type": "draw_rect", "left": 154, "top": 203, "right": 186, "bottom": 320},
+            {"type": "draw_rect", "left": 186, "top": 95, "right": 218, "bottom": 320},
+            {"type": "draw_rect", "left": 218, "top": 77, "right": 250, "bottom": 320},
+            {"type": "draw_rect", "left": 250, "top": 131, "right": 282, "bottom": 320},
+            {"type": "draw_rect", "left": 282, "top": 212, "right": 314, "bottom": 320},
+            {"type": "draw_rect", "left": 314, "top": 275, "right": 346, "bottom": 320},
+            {"type": "draw_rect", "left": 346, "top": 302, "right": 378, "bottom": 320},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0-10", "x": 74, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "10-20", "x": 106, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "20-30", "x": 138, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "30-40", "x": 170, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "40-50", "x": 202, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "50-60", "x": 234, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "60-70", "x": 266, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "70-80", "x": 298, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "80-90", "x": 330, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "90-100", "x": 362, "y": 332, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Score Range", "x": 218, "y": 355, "pan_x": 0, "pan_y": -1}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "python-samples/gauge-level",
+  "sha256": "27a3af874f047afc6a480289a8ab5686dd2d70c9cc763f4cc27c053d6f112309",
+  "bytes": 1151,
+  "ops": 56,
+  "distinctOps": 14,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 5,
+    "PAINT_VALUES": 19,
+    "DATA_TEXT": 3,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_ROUND_RECT": 5,
+    "DRAW_LINE": 3,
+    "CONTAINER_END": 4,
+    "DRAW_CIRCLE": 7
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

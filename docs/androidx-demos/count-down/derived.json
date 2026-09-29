@@ -1,0 +1,35 @@
+{
+  "id": "androidx-demos/count-down",
+  "sha256": "f0bdbd5cb58b6539f244b9a7bb51b348a8a2043f0f259e403bfcb7d529b46e2e",
+  "bytes": 705,
+  "ops": 35,
+  "distinctOps": 10,
+  "width": 600,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "PAINT_VALUES": 11,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_CIRCLE": 8,
+    "COLOR_EXPRESSIONS": 7,
+    "DATA_TEXT": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "DRAW_TEXT_ANCHOR": 1,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawCircle",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

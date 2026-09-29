@@ -1,0 +1,31 @@
+{
+  "_comment": "Port of DemoText.kt — text with bold and italic styles",
+  "header": { "width": 500, "height": 500, "description": "DemoText" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "padding": 20, "background": "#FFFFFFFF" },
+          "children": [
+            {
+              "type": "text",
+              "value": "Basic Text",
+              "font_size": 40.0,
+              "font_weight": 700.0,
+              "color": "#FF000000"
+            },
+            {
+              "type": "text",
+              "value": "Italic Blue",
+              "font_size": 30.0,
+              "font_style": 1,
+              "color": "#FF0000FF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

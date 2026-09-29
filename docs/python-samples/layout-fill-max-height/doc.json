@@ -1,0 +1,53 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Fill Max Height Column" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "h_align": "center",
+          "v_align": "top",
+          "modifier": { "fill_max_size": true, "background": "#FFE8EAF6" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": [300, 60],
+                "background": "#FF3F51B5",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "Header", "font_size": 22, "color": "#FFFFFFFF" }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "fill_max_height": true,
+                "fill_max_width": true,
+                "vertical_weight": 1.0,
+                "background": "#FFC5CAE9",
+                "padding": 16
+              },
+              "children": [
+                { "type": "text", "value": "This box fills remaining height", "font_size": 18, "color": "#FF1A237E" }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "size": [300, 50],
+                "background": "#FF283593",
+                "padding": 10
+              },
+              "children": [
+                { "type": "text", "value": "Footer", "font_size": 18, "color": "#FFFFFFFF" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

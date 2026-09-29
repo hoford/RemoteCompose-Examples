@@ -1,0 +1,41 @@
+{
+  "id": "androidx-demos/color",
+  "sha256": "82f5a5376a26bfc3bb617e84266a12ffabd7472e63a8abe1ebcbc019b5ea9b00",
+  "bytes": 880,
+  "ops": 55,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "ANIMATED_FLOAT": 2,
+    "COLOR_EXPRESSIONS": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 6,
+    "MODIFIER_WIDTH": 7,
+    "MODIFIER_HEIGHT": 7,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_BACKGROUND": 6,
+    "CONTAINER_END": 13,
+    "MODIFIER_BORDER": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 2,
+    "DRAW_ROUND_RECT": 1,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

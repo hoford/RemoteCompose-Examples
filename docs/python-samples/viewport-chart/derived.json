@@ -1,0 +1,43 @@
+{
+  "id": "python-samples/viewport-chart",
+  "sha256": "d060424f31b1c3b87d7efba3a00d584d88702e6b8ea25b971e486eadda3676cc",
+  "bytes": 2294,
+  "ops": 123,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 14,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 39,
+    "DRAW_CIRCLE": 9,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

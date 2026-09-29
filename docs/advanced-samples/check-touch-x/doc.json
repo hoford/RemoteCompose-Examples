@@ -1,0 +1,177 @@
+{
+  "rc": {
+    "ops": [
+      {
+        "kind": "op",
+        "name": "HEADER",
+        "opcode": 0,
+        "fields": [
+          { "name": "major", "type": "INT", "value": "1" },
+          { "name": "minor", "type": "INT", "value": "1" },
+          { "name": "patch", "type": "INT", "value": "0" },
+          { "name": "width", "type": "INT", "value": "300" },
+          { "name": "height", "type": "INT", "value": "300" },
+          { "name": "capabilities", "type": "LONG", "value": "0" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "LAYOUT_ROOT",
+        "opcode": 200,
+        "fields": [{ "name": "componentId", "type": "INT", "value": "-2" }],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "LAYOUT_BOX",
+        "opcode": 202,
+        "fields": [
+          { "name": "componentId", "type": "INT", "value": "-3" },
+          { "name": "animationId", "type": "INT", "value": "-1" },
+          { "name": "horizontal", "type": "INT", "value": "1" },
+          { "name": "vertical", "type": "INT", "value": "1" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "MODIFIER_WIDTH",
+        "opcode": 16,
+        "fields": [
+          { "name": "type", "type": "INT", "value": "1" },
+          { "name": "width", "type": "FLOAT", "value": "NaN" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "MODIFIER_HEIGHT",
+        "opcode": 67,
+        "fields": [
+          { "name": "type", "type": "INT", "value": "1" },
+          { "name": "height", "type": "FLOAT", "value": "NaN" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "opaque",
+        "name": "LayoutComponentContent",
+        "opcode": 201,
+        "payloadBase64": "/////A=="
+      },
+      {
+        "kind": "op",
+        "name": "LAYOUT_CANVAS",
+        "opcode": 205,
+        "fields": [
+          { "name": "componentId", "type": "INT", "value": "-5" },
+          { "name": "animationId", "type": "INT", "value": "-1" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "MODIFIER_WIDTH",
+        "opcode": 16,
+        "fields": [
+          { "name": "type", "type": "INT", "value": "1" },
+          { "name": "width", "type": "FLOAT", "value": "NaN" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "MODIFIER_HEIGHT",
+        "opcode": 67,
+        "fields": [
+          { "name": "type", "type": "INT", "value": "1" },
+          { "name": "height", "type": "FLOAT", "value": "NaN" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "opaque",
+        "name": "LayoutComponentContent",
+        "opcode": 201,
+        "payloadBase64": "////+g=="
+      },
+      {
+        "kind": "opaque",
+        "name": "CanvasContent",
+        "opcode": 207,
+        "payloadBase64": "////+Q=="
+      },
+      {
+        "kind": "opaque",
+        "name": "TouchExpression",
+        "opcode": 157,
+        "payloadBase64": "AAAAKgAAAAAAAAAAQ5YAAAAAAAAAAAAAAAAAAf+AAA0AAQAAAAAAAA=="
+      },
+      {
+        "kind": "op",
+        "name": "PAINT_VALUES",
+        "opcode": 40,
+        "fields": [{ "name": "length", "type": "INT", "value": "2" }],
+        "payloadBase64": "AAAAAgAAAAT/QGD/"
+      },
+      {
+        "kind": "op",
+        "name": "DRAW_CIRCLE",
+        "opcode": 46,
+        "fields": [
+          { "name": "cx", "type": "FLOAT", "value": "NaN(42)" },
+          { "name": "cy", "type": "FLOAT", "value": "100.0" },
+          { "name": "radius", "type": "FLOAT", "value": "30.0" }
+        ],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      },
+      {
+        "kind": "op",
+        "name": "CONTAINER_END",
+        "opcode": 214,
+        "fields": [],
+        "reconstructFromFields": true
+      }
+    ],
+    "profiles": 0,
+    "apiLevel": 7
+  },
+  "format": "androidx.compose.remote.rc.json",
+  "version": 1
+}

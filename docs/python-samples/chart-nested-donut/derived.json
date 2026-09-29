@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-nested-donut",
+  "sha256": "f1e16df0b190275ffc45087391a5666a23854407d9e58c0c21c45daed903e50c",
+  "bytes": 2358,
+  "ops": 89,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 30,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 12,
+    "DRAW_ARC": 22,
+    "DRAW_RECT": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

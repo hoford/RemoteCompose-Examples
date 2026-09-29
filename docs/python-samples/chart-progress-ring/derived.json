@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-progress-ring",
+  "sha256": "be9e4739fe2e13449f6c99b530690dec6454e8df80be019c46de896235db0717",
+  "bytes": 801,
+  "ops": 36,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DRAW_ARC": 6,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

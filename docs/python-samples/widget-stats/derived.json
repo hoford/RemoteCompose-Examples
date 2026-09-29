@@ -1,0 +1,41 @@
+{
+  "id": "python-samples/widget-stats",
+  "sha256": "4321a07f8eb2b3a00d62768328979ece6679dc71daad9cf091f04961c70f581b",
+  "bytes": 3554,
+  "ops": 215,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 5,
+    "MODIFIER_WIDTH": 14,
+    "MODIFIER_HEIGHT": 14,
+    "MODIFIER_BACKGROUND": 5,
+    "MODIFIER_PADDING": 5,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_BORDER": 4,
+    "LAYOUT_COLUMN": 4,
+    "DATA_TEXT": 8,
+    "CONTAINER_END": 45,
+    "LAYOUT_CANVAS": 4,
+    "ANIMATED_FLOAT": 80,
+    "PAINT_VALUES": 4,
+    "DRAW_LINE": 20
+  },
+  "apis": [
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

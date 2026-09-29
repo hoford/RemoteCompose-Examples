@@ -1,0 +1,39 @@
+{
+  "id": "androidx-demos/calendar-heatmap-grid",
+  "sha256": "c11d39046499e6db42f53ad4acd938de31ebb0cd89f2764880070b446f408663",
+  "bytes": 3728,
+  "ops": 122,
+  "distinctOps": 14,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 67,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 8,
+    "DRAW_TEXT_ANCHOR": 10,
+    "COLOR_EXPRESSIONS": 6,
+    "DRAW_ROUND_RECT": 7,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

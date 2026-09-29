@@ -1,0 +1,86 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Stacked Area Chart - Revenue Streams"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Revenue Streams", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "0", "x": 52, "y": 310, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25K", "x": 52, "y": 245, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50K", "x": 52, "y": 180, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "75K", "x": 52, "y": 115, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100K", "x": 52, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 58, "y1": 310, "x2": 380, "y2": 310},
+            {"type": "draw_line", "x1": 58, "y1": 245, "x2": 380, "y2": 245},
+            {"type": "draw_line", "x1": 58, "y1": 180, "x2": 380, "y2": 180},
+            {"type": "draw_line", "x1": 58, "y1": 115, "x2": 380, "y2": 115},
+
+            {"type": "paint", "color": "#FF90CAF9", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 58, "top": 258, "right": 98, "bottom": 310},
+            {"type": "draw_rect", "left": 98, "top": 245, "right": 138, "bottom": 310},
+            {"type": "draw_rect", "left": 138, "top": 232, "right": 178, "bottom": 310},
+            {"type": "draw_rect", "left": 178, "top": 219, "right": 218, "bottom": 310},
+            {"type": "draw_rect", "left": 218, "top": 206, "right": 258, "bottom": 310},
+            {"type": "draw_rect", "left": 258, "top": 193, "right": 298, "bottom": 310},
+            {"type": "draw_rect", "left": 298, "top": 180, "right": 338, "bottom": 310},
+            {"type": "draw_rect", "left": 338, "top": 167, "right": 378, "bottom": 310},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 58, "top": 219, "right": 98, "bottom": 258},
+            {"type": "draw_rect", "left": 98, "top": 200, "right": 138, "bottom": 245},
+            {"type": "draw_rect", "left": 138, "top": 180, "right": 178, "bottom": 232},
+            {"type": "draw_rect", "left": 178, "top": 164, "right": 218, "bottom": 219},
+            {"type": "draw_rect", "left": 218, "top": 148, "right": 258, "bottom": 206},
+            {"type": "draw_rect", "left": 258, "top": 131, "right": 298, "bottom": 193},
+            {"type": "draw_rect", "left": 298, "top": 115, "right": 338, "bottom": 180},
+            {"type": "draw_rect", "left": 338, "top": 98, "right": 378, "bottom": 167},
+
+            {"type": "paint", "color": "#FFFFB74D", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 58, "top": 193, "right": 98, "bottom": 219},
+            {"type": "draw_rect", "left": 98, "top": 174, "right": 138, "bottom": 200},
+            {"type": "draw_rect", "left": 138, "top": 148, "right": 178, "bottom": 180},
+            {"type": "draw_rect", "left": 178, "top": 131, "right": 218, "bottom": 164},
+            {"type": "draw_rect", "left": 218, "top": 115, "right": 258, "bottom": 148},
+            {"type": "draw_rect", "left": 258, "top": 95, "right": 298, "bottom": 131},
+            {"type": "draw_rect", "left": 298, "top": 78, "right": 338, "bottom": 115},
+            {"type": "draw_rect", "left": 338, "top": 58, "right": 378, "bottom": 98},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Q1'23", "x": 78, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q2'23", "x": 118, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q3'23", "x": 158, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q4'23", "x": 198, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q1'24", "x": 238, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q2'24", "x": 278, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q3'24", "x": 318, "y": 322, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q4'24", "x": 358, "y": 322, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFFFB74D", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 80, "top": 358, "right": 92, "bottom": 370},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Services", "x": 96, "y": 364, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 160, "top": 358, "right": 172, "bottom": 370},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Subscriptions", "x": 176, "y": 364, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF90CAF9", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 268, "top": 358, "right": 280, "bottom": 370},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Products", "x": 284, "y": 364, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "_comment": "8 dots arranged in circle, with rotating arc sweep to simulate spinner",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimSpinner"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "ring_r",
+                  "expr": "60"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF2D2D44",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Static dots at 8 positions around circle",
+                  "type": "loop",
+                  "from": 0,
+                  "step": 45,
+                  "until": 360,
+                  "label": "dot_angle",
+                  "children": [
+                    {
+                      "type": "float_expression",
+                      "label": "dot_rad",
+                      "expr": "$dot_angle * 3.14159 / 180"
+                    },
+                    {
+                      "type": "float_expression",
+                      "label": "dx",
+                      "expr": "$cx + cos($dot_rad) * $ring_r"
+                    },
+                    {
+                      "type": "float_expression",
+                      "label": "dy",
+                      "expr": "$cy + sin($dot_rad) * $ring_r"
+                    },
+                    {
+                      "type": "draw_circle",
+                      "paint": {
+                        "color": "#40FFFFFF",
+                        "style": "fill"
+                      },
+                      "cx": "$dx",
+                      "cy": "$dy",
+                      "radius": 8
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Rotating highlight arc \u2014 sweeps around the ring",
+                  "type": "float_expression",
+                  "label": "sweep_angle",
+                  "expr": "time.seconds * 180 % 360"
+                },
+                {
+                  "type": "draw_arc",
+                  "paint": {
+                    "color": "#FF7C4DFF",
+                    "style": "stroke",
+                    "stroke_width": 6.0
+                  },
+                  "left": {
+                    "expr": "$cx - $ring_r"
+                  },
+                  "top": {
+                    "expr": "$cy - $ring_r"
+                  },
+                  "right": {
+                    "expr": "$cx + $ring_r"
+                  },
+                  "bottom": {
+                    "expr": "$cy + $ring_r"
+                  },
+                  "start_angle": "$sweep_angle",
+                  "sweep_angle": 90
+                },
+                {
+                  "_comment": "Bright leading dot",
+                  "type": "float_expression",
+                  "label": "lead_rad",
+                  "expr": "($sweep_angle + 90) * 3.14159 / 180"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "lead_x",
+                  "expr": "$cx + cos($lead_rad) * $ring_r"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "lead_y",
+                  "expr": "$cy + sin($lead_rad) * $ring_r"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": "$lead_x",
+                  "cy": "$lead_y",
+                  "radius": 10
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF7C4DFF",
+                    "style": "fill"
+                  },
+                  "cx": "$lead_x",
+                  "cy": "$lead_y",
+                  "radius": 6
+                },
+                {
+                  "_comment": "Loading label",
+                  "type": "paint",
+                  "color": "#80FFFFFF",
+                  "text_size": 14.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text": "LOADING",
+                  "x": "$cx",
+                  "y": "$cy",
+                  "pan_x": 0,
+                  "pan_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-radial-bar",
+  "sha256": "bccdc05b93b811ee8a100e113ba87a5cfc8f4bb28050916be8240432ca853b6f",
+  "bytes": 1076,
+  "ops": 46,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 7,
+    "DRAW_TEXT_ANCHOR": 7,
+    "DRAW_ARC": 10,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

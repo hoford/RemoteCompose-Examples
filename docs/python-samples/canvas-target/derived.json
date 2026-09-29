@@ -1,0 +1,31 @@
+{
+  "id": "python-samples/canvas-target",
+  "sha256": "e71e0aa620aec7d8c049013f25363739f79281c396a118a39e3c596d5c2575da",
+  "bytes": 429,
+  "ops": 28,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 9,
+    "DRAW_CIRCLE": 8,
+    "DRAW_LINE": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

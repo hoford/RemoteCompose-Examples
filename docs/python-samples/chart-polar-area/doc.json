@@ -1,0 +1,58 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Polar area (Nightingale) chart showing wind direction data"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFF5F5F5"},
+          "children": [
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Wind Direction", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFDDDDDD", "style": "stroke", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 40},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 80},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 120},
+            {"type": "draw_circle", "cx": 200, "cy": 210, "radius": 160},
+
+            {"type": "paint", "color": "#CCE53935", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": -90, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CCFF9800", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 90, "top": 100, "right": 310, "bottom": 320, "start_angle": -45, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CCFDD835", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 75, "top": 85, "right": 325, "bottom": 335, "start_angle": 0, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CC4CAF50", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 110, "top": 120, "right": 290, "bottom": 300, "start_angle": 45, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CC2196F3", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 50, "top": 60, "right": 350, "bottom": 360, "start_angle": 90, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CC9C27B0", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 100, "top": 110, "right": 300, "bottom": 310, "start_angle": 135, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CC00BCD4", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 80, "top": 90, "right": 320, "bottom": 330, "start_angle": 180, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#CCFF5722", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_sector", "left": 120, "top": 130, "right": 280, "bottom": 290, "start_angle": 225, "sweep_angle": 45},
+
+            {"type": "paint", "color": "#FF555555", "style": "fill", "stroke_width": 1, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "N", "x": 200, "y": 42, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "NE", "x": 330, "y": 95, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "E", "x": 370, "y": 210, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "SE", "x": 330, "y": 325, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "S", "x": 200, "y": 385, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "SW", "x": 70, "y": 325, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "W", "x": 30, "y": 210, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "NW", "x": 70, "y": 95, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

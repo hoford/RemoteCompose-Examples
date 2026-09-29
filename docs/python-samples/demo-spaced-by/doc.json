@@ -1,0 +1,20 @@
+{
+  "_comment": "Port of DemoModifierSpacedBy.kt — automatic spacing between items",
+  "header": { "width": 400, "height": 400, "description": "DemoModifierSpacedBy" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "spaced_by": 20 },
+          "children": [
+            { "type": "box", "modifier": { "size": 60, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 60, "background": "#FF00FF00" } },
+            { "type": "box", "modifier": { "size": 60, "background": "#FF0000FF" } }
+          ]
+        }
+      ]
+    }
+  ]
+}

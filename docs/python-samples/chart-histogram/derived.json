@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-histogram",
+  "sha256": "1f314020f6f5d39e6f66c333c40b206e2377feb1c93a5c9f2b98198be0560ce7",
+  "bytes": 1611,
+  "ops": 82,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 7,
+    "DATA_TEXT": 20,
+    "DRAW_TEXT_ANCHOR": 20,
+    "DRAW_LINE": 6,
+    "DRAW_RECT": 20,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

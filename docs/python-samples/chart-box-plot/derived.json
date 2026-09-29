@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-box-plot",
+  "sha256": "3e1dc2181d5c4f6612229d7bd95f38e8da0efc76f843fcb689ae45e6f78c24f3",
+  "bytes": 1876,
+  "ops": 88,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 19,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 12,
+    "DRAW_LINE": 26,
+    "DRAW_RECT": 10,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

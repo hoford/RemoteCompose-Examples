@@ -1,0 +1,45 @@
+{
+  "id": "python-samples/gauge-stopwatch",
+  "sha256": "42ca62529c6c932478316eae89547cf1128cb74c7072f50c54faf5555674c819",
+  "bytes": 1426,
+  "ops": 82,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 6,
+    "PAINT_VALUES": 23,
+    "DRAW_CIRCLE": 9,
+    "DRAW_ROUND_RECT": 3,
+    "MATRIX_SAVE": 5,
+    "MATRIX_ROTATE": 5,
+    "DRAW_LINE": 5,
+    "MATRIX_RESTORE": 5,
+    "CONTAINER_END": 6,
+    "DRAW_TEXT_ANCHOR": 6,
+    "DATA_TEXT": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

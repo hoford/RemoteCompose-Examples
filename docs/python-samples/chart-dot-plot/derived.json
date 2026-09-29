@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-dot-plot",
+  "sha256": "54dd91843246ffc89e2bb9d31564e7756039eb830db04a1c77d38037635f1ef7",
+  "bytes": 1632,
+  "ops": 90,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 13,
+    "DRAW_TEXT_ANCHOR": 13,
+    "DRAW_LINE": 2,
+    "DRAW_RECT": 3,
+    "DRAW_CIRCLE": 39,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

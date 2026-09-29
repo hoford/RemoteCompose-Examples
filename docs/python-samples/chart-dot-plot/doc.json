@@ -1,0 +1,94 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Dot plot showing response time distributions across 5 categories"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF263238", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Response Times (ms)", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 90, "y1": 50, "x2": 90, "y2": 350},
+            {"type": "draw_line", "x1": 90, "y1": 350, "x2": 380, "y2": 350},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 90, "top": 50, "right": 380, "bottom": 110},
+            {"type": "draw_rect", "left": 90, "top": 170, "right": 380, "bottom": 230},
+            {"type": "draw_rect", "left": 90, "top": 290, "right": 380, "bottom": 350},
+
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "API", "x": 85, "y": 80, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "DB", "x": 85, "y": 140, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Cache", "x": 85, "y": 200, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Auth", "x": 85, "y": 260, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "CDN", "x": 85, "y": 320, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 90, "y": 365, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "50", "x": 148, "y": 365, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "100", "x": 206, "y": 365, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "150", "x": 264, "y": 365, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "200", "x": 322, "y": 365, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "250", "x": 380, "y": 365, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 155, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 172, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 190, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 200, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 215, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 230, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 260, "cy": 80, "radius": 5},
+            {"type": "draw_circle", "cx": 310, "cy": 80, "radius": 5},
+
+            {"type": "paint", "color": "#FF388E3C", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 120, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 140, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 150, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 165, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 180, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 210, "cy": 140, "radius": 5},
+            {"type": "draw_circle", "cx": 245, "cy": 140, "radius": 5},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 100, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 108, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 115, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 125, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 132, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 145, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 160, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 180, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 200, "cy": 200, "radius": 5},
+
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 170, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 195, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 210, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 230, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 250, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 275, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 320, "cy": 260, "radius": 5},
+            {"type": "draw_circle", "cx": 350, "cy": 260, "radius": 5},
+
+            {"type": "paint", "color": "#FF7B1FA2", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_circle", "cx": 98, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 105, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 112, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 120, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 130, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 140, "cy": 320, "radius": 5},
+            {"type": "draw_circle", "cx": 155, "cy": 320, "radius": 5},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "ms", "x": 385, "y": 380, "pan_x": 1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

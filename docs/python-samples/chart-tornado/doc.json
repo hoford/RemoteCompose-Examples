@@ -1,0 +1,83 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Sensitivity Analysis - Tornado butterfly chart with 8 parameter pairs"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFAFAFA"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Sensitivity Analysis", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 200, "y1": 50, "x2": 200, "y2": 380},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Low Impact", "x": 60, "y": 48, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "High Impact", "x": 340, "y": 48, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Base", "x": 200, "y": 48, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 50, "top": 58, "right": 200, "bottom": 84, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 58, "right": 380, "bottom": 84, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 65, "top": 96, "right": 200, "bottom": 122, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 96, "right": 365, "bottom": 122, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 80, "top": 134, "right": 200, "bottom": 160, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 134, "right": 340, "bottom": 160, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 95, "top": 172, "right": 200, "bottom": 198, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 172, "right": 320, "bottom": 198, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 110, "top": 210, "right": 200, "bottom": 236, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 210, "right": 305, "bottom": 236, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 130, "top": 248, "right": 200, "bottom": 274, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 248, "right": 285, "bottom": 274, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 145, "top": 286, "right": 200, "bottom": 312, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 286, "right": 265, "bottom": 312, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill"},
+            {"type": "draw_round_rect", "left": 160, "top": 324, "right": 200, "bottom": 350, "rx": 2, "ry": 2},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_round_rect", "left": 200, "top": 324, "right": 248, "bottom": 350, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Price", "x": 125, "y": 71, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Volume", "x": 132, "y": 109, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Cost", "x": 140, "y": 147, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Growth", "x": 147, "y": 185, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Rate", "x": 155, "y": 223, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Tax", "x": 165, "y": 261, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "FX", "x": 172, "y": 299, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Other", "x": 180, "y": 337, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "text_size": 10},
+            {"type": "draw_circle", "cx": 15, "cy": 378, "radius": 5},
+            {"type": "draw_text_anchored", "text": "Decrease", "x": 25, "y": 378, "pan_x": -1, "pan_y": 0},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "text_size": 10},
+            {"type": "draw_circle", "cx": 100, "cy": 378, "radius": 5},
+            {"type": "draw_text_anchored", "text": "Increase", "x": 110, "y": 378, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

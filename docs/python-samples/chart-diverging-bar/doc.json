@@ -1,0 +1,64 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Survey Results - Diverging bar chart with positive and negative responses"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFAFAFA"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Survey Results", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 230, "y1": 55, "x2": 230, "y2": 370},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Disagree", "x": 140, "y": 50, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Agree", "x": 320, "y": 50, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Quality", "x": 50, "y": 85, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Price", "x": 50, "y": 135, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Service", "x": 50, "y": 185, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Speed", "x": 50, "y": 235, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Design", "x": 50, "y": 285, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Support", "x": 50, "y": 335, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill"},
+            {"type": "draw_round_rect", "left": 230, "top": 72, "right": 360, "bottom": 98, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 230, "top": 122, "right": 290, "bottom": 148, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 230, "top": 172, "right": 340, "bottom": 198, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 230, "top": 222, "right": 310, "bottom": 248, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 230, "top": 272, "right": 370, "bottom": 298, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 230, "top": 322, "right": 280, "bottom": 348, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FFF44336", "style": "fill"},
+            {"type": "draw_round_rect", "left": 180, "top": 72, "right": 230, "bottom": 98, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 120, "top": 122, "right": 230, "bottom": 148, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 160, "top": 172, "right": 230, "bottom": 198, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 100, "top": 222, "right": 230, "bottom": 248, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 190, "top": 272, "right": 230, "bottom": 298, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 110, "top": 322, "right": 230, "bottom": 348, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 9},
+            {"type": "draw_text_anchored", "text": "72%", "x": 295, "y": 85, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "33%", "x": 260, "y": 135, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "61%", "x": 285, "y": 185, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "44%", "x": 270, "y": 235, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "78%", "x": 300, "y": 285, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "28%", "x": 255, "y": 335, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "28%", "x": 205, "y": 85, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "67%", "x": 175, "y": 135, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "39%", "x": 195, "y": 185, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "56%", "x": 165, "y": 235, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "22%", "x": 210, "y": 285, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "72%", "x": 170, "y": 335, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

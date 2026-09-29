@@ -1,0 +1,64 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Traffic Sources - Simplified Sankey flow diagram"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF1A1A2E"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Traffic Sources", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill"},
+            {"type": "draw_rect", "left": 20, "top": 60, "right": 60, "bottom": 160},
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill"},
+            {"type": "draw_rect", "left": 20, "top": 175, "right": 60, "bottom": 255},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_rect", "left": 20, "top": 270, "right": 60, "bottom": 370},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill"},
+            {"type": "draw_rect", "left": 340, "top": 60, "right": 380, "bottom": 170},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill"},
+            {"type": "draw_rect", "left": 340, "top": 185, "right": 380, "bottom": 275},
+            {"type": "paint", "color": "#FF26C6DA", "style": "fill"},
+            {"type": "draw_rect", "left": 340, "top": 290, "right": 380, "bottom": 370},
+
+            {"type": "paint", "color": "#5542A5F5", "style": "fill"},
+            {"type": "draw_rect", "left": 60, "top": 70, "right": 340, "bottom": 100},
+            {"type": "draw_rect", "left": 60, "top": 105, "right": 340, "bottom": 130},
+            {"type": "paint", "color": "#4442A5F5", "style": "fill"},
+            {"type": "draw_rect", "left": 60, "top": 135, "right": 340, "bottom": 155},
+
+            {"type": "paint", "color": "#5566BB6A", "style": "fill"},
+            {"type": "draw_rect", "left": 60, "top": 185, "right": 340, "bottom": 210},
+            {"type": "draw_rect", "left": 60, "top": 215, "right": 340, "bottom": 250},
+
+            {"type": "paint", "color": "#55FF9800", "style": "fill"},
+            {"type": "draw_rect", "left": 60, "top": 275, "right": 340, "bottom": 310},
+            {"type": "draw_rect", "left": 60, "top": 315, "right": 340, "bottom": 340},
+            {"type": "draw_rect", "left": 60, "top": 345, "right": 340, "bottom": 365},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Organic", "x": 15, "y": 110, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Social", "x": 15, "y": 215, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Paid Ads", "x": 15, "y": 320, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Signups", "x": 385, "y": 115, "pan_x": -1, "pan_y": 0},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Purchases", "x": 385, "y": 230, "pan_x": -1, "pan_y": 0},
+            {"type": "paint", "color": "#FF26C6DA", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Bounced", "x": 385, "y": 330, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#88FFFFFF", "style": "fill", "text_size": 10},
+            {"type": "draw_text_anchored", "text": "3 sources -> 3 destinations", "x": 200, "y": 390, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

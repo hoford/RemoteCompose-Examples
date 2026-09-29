@@ -1,0 +1,127 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Form Layout" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "h_align": "center",
+          "v_align": "top",
+          "modifier": { "fill_max_size": true, "background": "#FFFAFAFA", "padding": 20 },
+          "children": [
+            { "type": "text", "value": "User Profile", "font_size": 24, "color": "#FF212121" },
+            {
+              "type": "box",
+              "modifier": { "size": [360, 1], "background": "#FFE0E0E0" },
+              "children": []
+            },
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 8 },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "size": [100, 30] },
+                  "children": [
+                    { "type": "text", "value": "Name:", "font_size": 16, "color": "#FF757575" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "background": "#FFFFFFFF", "border": { "width": 1, "corner": 4, "color": "#FFBDBDBD", "shape": 0 }, "padding": 8 },
+                  "children": [
+                    { "type": "text", "value": "Jane Doe", "font_size": 16, "color": "#FF212121" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 8 },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "size": [100, 30] },
+                  "children": [
+                    { "type": "text", "value": "Email:", "font_size": 16, "color": "#FF757575" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "background": "#FFFFFFFF", "border": { "width": 1, "corner": 4, "color": "#FFBDBDBD", "shape": 0 }, "padding": 8 },
+                  "children": [
+                    { "type": "text", "value": "jane@example.com", "font_size": 16, "color": "#FF212121" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 8 },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "size": [100, 30] },
+                  "children": [
+                    { "type": "text", "value": "Role:", "font_size": 16, "color": "#FF757575" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "background": "#FFFFFFFF", "border": { "width": 1, "corner": 4, "color": "#FFBDBDBD", "shape": 0 }, "padding": 8 },
+                  "children": [
+                    { "type": "text", "value": "Developer", "font_size": 16, "color": "#FF212121" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 8 },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "size": [100, 30] },
+                  "children": [
+                    { "type": "text", "value": "Status:", "font_size": 16, "color": "#FF757575" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "background": "#FF4CAF50", "padding": 6, "clip": { "radii": [12, 12, 12, 12] } },
+                  "children": [
+                    { "type": "text", "value": "Active", "font_size": 14, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "end",
+              "v_align": "center",
+              "modifier": { "fill_max_width": true, "padding": 12 },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "background": "#FF1976D2", "padding": 10, "clip": { "radii": [6, 6, 6, 6] } },
+                  "children": [
+                    { "type": "text", "value": "Save", "font_size": 16, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

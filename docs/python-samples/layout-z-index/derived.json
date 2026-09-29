@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/layout-z-index",
+  "sha256": "f5699c0dcc7657153e31a8b1cafe566744f5762afd7b47df763ac41e9f5d262c",
+  "bytes": 587,
+  "ops": 42,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 4,
+    "MODIFIER_WIDTH": 4,
+    "MODIFIER_HEIGHT": 4,
+    "MODIFIER_BACKGROUND": 4,
+    "MODIFIER_ZINDEX": 3,
+    "MODIFIER_PADDING": 3,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 15
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

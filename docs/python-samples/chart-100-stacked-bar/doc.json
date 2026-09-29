@@ -1,0 +1,99 @@
+{
+  "header": {"width": 400, "height": 400, "description": "100% Stacked Bar Chart - Browser Market Share"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Browser Market Share", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "0%", "x": 55, "y": 45, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25%", "x": 55, "y": 107, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50%", "x": 55, "y": 170, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "75%", "x": 55, "y": 232, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100%", "x": 55, "y": 295, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 11},
+            {"type": "draw_line", "x1": 60, "y1": 45, "x2": 370, "y2": 45},
+            {"type": "draw_line", "x1": 60, "y1": 107, "x2": 370, "y2": 107},
+            {"type": "draw_line", "x1": 60, "y1": 170, "x2": 370, "y2": 170},
+            {"type": "draw_line", "x1": 60, "y1": 232, "x2": 370, "y2": 232},
+            {"type": "draw_line", "x1": 60, "y1": 295, "x2": 370, "y2": 295},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "2020", "x": 107, "y": 308, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "2021", "x": 169, "y": 308, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "2022", "x": 231, "y": 308, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "2023", "x": 293, "y": 308, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "2024", "x": 355, "y": 308, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_rect", "left": 82, "top": 45, "right": 132, "bottom": 195},
+            {"type": "draw_rect", "left": 144, "top": 45, "right": 194, "bottom": 207},
+            {"type": "draw_rect", "left": 206, "top": 45, "right": 256, "bottom": 212},
+            {"type": "draw_rect", "left": 268, "top": 45, "right": 318, "bottom": 215},
+            {"type": "draw_rect", "left": 330, "top": 45, "right": 380, "bottom": 220},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_rect", "left": 82, "top": 195, "right": 132, "bottom": 232},
+            {"type": "draw_rect", "left": 144, "top": 207, "right": 194, "bottom": 237},
+            {"type": "draw_rect", "left": 206, "top": 212, "right": 256, "bottom": 237},
+            {"type": "draw_rect", "left": 268, "top": 215, "right": 318, "bottom": 237},
+            {"type": "draw_rect", "left": 330, "top": 220, "right": 380, "bottom": 240},
+
+            {"type": "paint", "color": "#FF009688", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_rect", "left": 82, "top": 232, "right": 132, "bottom": 262},
+            {"type": "draw_rect", "left": 144, "top": 237, "right": 194, "bottom": 262},
+            {"type": "draw_rect", "left": 206, "top": 237, "right": 256, "bottom": 265},
+            {"type": "draw_rect", "left": 268, "top": 237, "right": 318, "bottom": 267},
+            {"type": "draw_rect", "left": 330, "top": 240, "right": 380, "bottom": 268},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_rect", "left": 82, "top": 262, "right": 132, "bottom": 277},
+            {"type": "draw_rect", "left": 144, "top": 262, "right": 194, "bottom": 280},
+            {"type": "draw_rect", "left": 206, "top": 265, "right": 256, "bottom": 282},
+            {"type": "draw_rect", "left": 268, "top": 267, "right": 318, "bottom": 285},
+            {"type": "draw_rect", "left": 330, "top": 268, "right": 380, "bottom": 285},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_rect", "left": 82, "top": 277, "right": 132, "bottom": 295},
+            {"type": "draw_rect", "left": 144, "top": 280, "right": 194, "bottom": 295},
+            {"type": "draw_rect", "left": 206, "top": 282, "right": 256, "bottom": 295},
+            {"type": "draw_rect", "left": 268, "top": 285, "right": 318, "bottom": 295},
+            {"type": "draw_rect", "left": 330, "top": 285, "right": 380, "bottom": 295},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 60, "top": 335, "right": 72, "bottom": 347},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Chrome", "x": 76, "y": 341, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 122, "top": 335, "right": 134, "bottom": 347},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Firefox", "x": 138, "y": 341, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF009688", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 184, "top": 335, "right": 196, "bottom": 347},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Safari", "x": 200, "y": 341, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 242, "top": 335, "right": 254, "bottom": 347},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Edge", "x": 258, "y": 341, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 296, "top": 335, "right": 308, "bottom": 347},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Other", "x": 312, "y": 341, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

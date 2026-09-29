@@ -1,0 +1,23 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Sizes" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "padding": 20, "background": "#FF1A1A2E" },
+          "children": [
+            { "type": "text", "value": "Size 12", "font_size": 12.0, "color": "#FFFF6B6B" },
+            { "type": "text", "value": "Size 16", "font_size": 16.0, "color": "#FFFFA500" },
+            { "type": "text", "value": "Size 20", "font_size": 20.0, "color": "#FFFFDD57" },
+            { "type": "text", "value": "Size 24", "font_size": 24.0, "color": "#FF69F0AE" },
+            { "type": "text", "value": "Size 32", "font_size": 32.0, "color": "#FF40C4FF" },
+            { "type": "text", "value": "Size 48", "font_size": 48.0, "color": "#FFB388FF" },
+            { "type": "text", "value": "Size 64", "font_size": 64.0, "color": "#FFFF80AB" }
+          ]
+        }
+      ]
+    }
+  ]
+}

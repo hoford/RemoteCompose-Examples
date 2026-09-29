@@ -1,0 +1,34 @@
+{
+  "id": "androidx-demos/procedure-simple5",
+  "sha256": "1f5275910869f63f112b308c6c6053a9679298777ed62d0a60838c02c6a67f52",
+  "bytes": 185,
+  "ops": 11,
+  "distinctOps": 9,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "PAINT_VALUES": 1,
+    "ANIMATED_FLOAT": 3,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "DRAW_OVAL": 1,
+    "MATRIX_RESTORE": 1
+  },
+  "apis": [
+    "drawOval",
+    "expressions",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

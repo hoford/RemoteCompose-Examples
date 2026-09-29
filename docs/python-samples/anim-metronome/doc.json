@@ -1,0 +1,263 @@
+{
+  "_comment": "Metronome arm swinging side to side, with pivot at bottom",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimMetronome"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Pivot at bottom center",
+                  "type": "float_expression",
+                  "label": "pivot_y",
+                  "expr": "$h - 60"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "arm_len",
+                  "expr": "$h * 0.65"
+                },
+                {
+                  "_comment": "Metronome swing angle: +/- 30 degrees from center",
+                  "type": "float_expression",
+                  "label": "swing",
+                  "expr": "sin(time.seconds * 2.8) * 30"
+                },
+                {
+                  "_comment": "Base trapezoid shape \u2014 two triangles approximated with lines",
+                  "type": "paint",
+                  "color": "#FF5D4037",
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_rect",
+                  "left": {
+                    "expr": "$cx - 50"
+                  },
+                  "top": {
+                    "expr": "$pivot_y - 10"
+                  },
+                  "right": {
+                    "expr": "$cx + 50"
+                  },
+                  "bottom": {
+                    "expr": "$pivot_y + 30"
+                  }
+                },
+                {
+                  "_comment": "Base top",
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF795548",
+                    "style": "fill"
+                  },
+                  "left": {
+                    "expr": "$cx - 40"
+                  },
+                  "top": {
+                    "expr": "$pivot_y - 20"
+                  },
+                  "right": {
+                    "expr": "$cx + 40"
+                  },
+                  "bottom": {
+                    "expr": "$pivot_y - 10"
+                  }
+                },
+                {
+                  "_comment": "Scale marks on the background",
+                  "type": "paint",
+                  "color": "#20FFFFFF",
+                  "style": "stroke",
+                  "stroke_width": 1.0
+                },
+                {
+                  "type": "loop",
+                  "from": -25,
+                  "step": 5,
+                  "until": 30,
+                  "label": "mark_deg",
+                  "children": [
+                    {
+                      "type": "save"
+                    },
+                    {
+                      "type": "rotate",
+                      "angle": "$mark_deg",
+                      "cx": "$cx",
+                      "cy": "$pivot_y"
+                    },
+                    {
+                      "type": "float_expression",
+                      "label": "m_y1",
+                      "expr": "$pivot_y - $arm_len + 20"
+                    },
+                    {
+                      "type": "float_expression",
+                      "label": "m_y2",
+                      "expr": "$pivot_y - $arm_len + 35"
+                    },
+                    {
+                      "type": "draw_line",
+                      "x1": "$cx",
+                      "y1": "$m_y1",
+                      "x2": "$cx",
+                      "y2": "$m_y2"
+                    },
+                    {
+                      "type": "restore"
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Arm \u2014 swinging from pivot",
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$swing",
+                  "cx": "$cx",
+                  "cy": "$pivot_y"
+                },
+                {
+                  "_comment": "Arm shaft",
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#FFFFCC80",
+                    "style": "stroke",
+                    "stroke_width": 5.0
+                  },
+                  "x1": "$cx",
+                  "y1": "$pivot_y",
+                  "x2": "$cx",
+                  "y2": {
+                    "expr": "$pivot_y - $arm_len"
+                  }
+                },
+                {
+                  "_comment": "Weight on the arm",
+                  "type": "float_expression",
+                  "label": "weight_y",
+                  "expr": "$pivot_y - $arm_len * 0.6"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FFFFAB40",
+                    "style": "fill"
+                  },
+                  "left": {
+                    "expr": "$cx - 12"
+                  },
+                  "top": {
+                    "expr": "$weight_y - 15"
+                  },
+                  "right": {
+                    "expr": "$cx + 12"
+                  },
+                  "bottom": {
+                    "expr": "$weight_y + 15"
+                  }
+                },
+                {
+                  "_comment": "Tip indicator",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": {
+                    "expr": "$pivot_y - $arm_len"
+                  },
+                  "radius": 5
+                },
+                {
+                  "type": "restore"
+                },
+                {
+                  "_comment": "Pivot screw",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF9E9E9E",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$pivot_y",
+                  "radius": 8
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF616161",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$pivot_y",
+                  "radius": 4
+                },
+                {
+                  "_comment": "BPM display",
+                  "type": "paint",
+                  "color": "#80FFFFFF",
+                  "text_size": 14.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text": "METRONOME",
+                  "x": "$cx",
+                  "y": {
+                    "expr": "$h - 20"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

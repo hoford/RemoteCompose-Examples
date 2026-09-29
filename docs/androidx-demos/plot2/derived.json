@@ -1,0 +1,38 @@
+{
+  "id": "androidx-demos/plot2",
+  "sha256": "7df91d0a0d43f736059cf7e1fc55665ea3412b3a08b9215cbce4c73d8ca43a54",
+  "bytes": 572,
+  "ops": 23,
+  "distinctOps": 13,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 2,
+    "COMPONENT_VALUE": 2,
+    "DRAW_PATH": 1,
+    "ANIMATED_FLOAT": 2,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

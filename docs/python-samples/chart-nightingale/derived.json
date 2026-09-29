@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-nightingale",
+  "sha256": "72ec93d39f166b86e684c7cd0ddd96ad3e21e2c088f9ef2b23f6226490b8cf31",
+  "bytes": 1304,
+  "ops": 64,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 15,
+    "DATA_TEXT": 14,
+    "DRAW_TEXT_ANCHOR": 14,
+    "DRAW_ARC": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

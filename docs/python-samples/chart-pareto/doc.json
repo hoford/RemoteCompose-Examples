@@ -1,0 +1,83 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Pareto Chart - Defect Analysis"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Defect Analysis", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Count", "x": 15, "y": 185, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "%", "x": 390, "y": 185, "pan_x": 0, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "0", "x": 48, "y": 320, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20", "x": 48, "y": 266, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40", "x": 48, "y": 212, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60", "x": 48, "y": 158, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "80", "x": 48, "y": 104, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100", "x": 48, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "draw_text_anchored", "text": "0%", "x": 365, "y": 320, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "25%", "x": 365, "y": 252, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50%", "x": 365, "y": 185, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "75%", "x": 365, "y": 117, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100%", "x": 365, "y": 50, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 50, "x2": 360, "y2": 50},
+            {"type": "draw_line", "x1": 55, "y1": 117, "x2": 360, "y2": 117},
+            {"type": "draw_line", "x1": 55, "y1": 185, "x2": 360, "y2": 185},
+            {"type": "draw_line", "x1": 55, "y1": 252, "x2": 360, "y2": 252},
+            {"type": "draw_line", "x1": 55, "y1": 320, "x2": 360, "y2": 320},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 60, "top": 95, "right": 108, "bottom": 320},
+            {"type": "draw_rect", "left": 112, "top": 158, "right": 160, "bottom": 320},
+            {"type": "draw_rect", "left": 164, "top": 212, "right": 212, "bottom": 320},
+            {"type": "draw_rect", "left": 216, "top": 252, "right": 264, "bottom": 320},
+            {"type": "draw_rect", "left": 268, "top": 279, "right": 316, "bottom": 320},
+            {"type": "draw_rect", "left": 320, "top": 293, "right": 360, "bottom": 320},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Wiring", "x": 84, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Solder", "x": 136, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mount", "x": 188, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Label", "x": 240, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Crack", "x": 292, "y": 332, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Other", "x": 340, "y": 332, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFE53935", "style": "stroke", "stroke_width": 2.5, "text_size": 10},
+            {"type": "draw_line", "x1": 84, "y1": 185, "x2": 136, "y2": 117},
+            {"type": "draw_line", "x1": 136, "y1": 117, "x2": 188, "y2": 82},
+            {"type": "draw_line", "x1": 188, "y1": 82, "x2": 240, "y2": 63},
+            {"type": "draw_line", "x1": 240, "y1": 63, "x2": 292, "y2": 54},
+            {"type": "draw_line", "x1": 292, "y1": 54, "x2": 340, "y2": 50},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 84, "cy": 185, "radius": 4},
+            {"type": "draw_circle", "cx": 136, "cy": 117, "radius": 4},
+            {"type": "draw_circle", "cx": 188, "cy": 82, "radius": 4},
+            {"type": "draw_circle", "cx": 240, "cy": 63, "radius": 4},
+            {"type": "draw_circle", "cx": 292, "cy": 54, "radius": 4},
+            {"type": "draw_circle", "cx": 340, "cy": 50, "radius": 4},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 80, "top": 365, "right": 92, "bottom": 377},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Count", "x": 96, "y": 371, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 170, "cy": 371, "radius": 5},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Cumulative %", "x": 180, "y": 371, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

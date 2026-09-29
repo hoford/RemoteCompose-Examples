@@ -1,0 +1,39 @@
+{
+  "id": "python-samples/anim-pendulum",
+  "sha256": "1021488cca876a29a130e624070cdc6d324e1929c8145a2f0bd3fb3a13cb43ad",
+  "bytes": 713,
+  "ops": 36,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 14,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 1,
+    "DRAW_ARC": 1,
+    "DRAW_LINE": 1,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

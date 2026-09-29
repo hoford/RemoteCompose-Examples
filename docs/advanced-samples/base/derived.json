@@ -1,0 +1,38 @@
+{
+  "id": "advanced-samples/base",
+  "sha256": "9d48b7a7c571d6f1c1b01051a15de7bff327d9a21954d56dd71d9644240d28f3",
+  "bytes": 1395,
+  "ops": 63,
+  "distinctOps": 14,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "DATA_TEXT": 11,
+    "DEBUG_MESSAGE": 1,
+    "PAINT_VALUES": 11,
+    "ANIMATED_FLOAT": 12,
+    "DRAW_TEXT_ANCHOR": 11,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

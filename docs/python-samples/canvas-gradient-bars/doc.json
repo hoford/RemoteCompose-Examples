@@ -1,0 +1,64 @@
+{
+  "_comment": "Horizontal bars with progressively shifting colors creating a gradient effect",
+  "header": { "width": 400, "height": 400, "description": "CanvasGradientBars" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF121212" },
+          "children": [
+            { "type": "paint", "color": "#FF0D47A1", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 10, "right": 380, "bottom": 30 },
+
+            { "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 35, "right": 380, "bottom": 55 },
+
+            { "type": "paint", "color": "#FF1976D2", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 60, "right": 380, "bottom": 80 },
+
+            { "type": "paint", "color": "#FF1E88E5", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 85, "right": 380, "bottom": 105 },
+
+            { "type": "paint", "color": "#FF2196F3", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 110, "right": 380, "bottom": 130 },
+
+            { "type": "paint", "color": "#FF42A5F5", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 135, "right": 380, "bottom": 155 },
+
+            { "type": "paint", "color": "#FF64B5F6", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 160, "right": 380, "bottom": 180 },
+
+            { "type": "paint", "color": "#FF90CAF9", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 185, "right": 380, "bottom": 205 },
+
+            { "type": "paint", "color": "#FFBBDEFB", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 210, "right": 380, "bottom": 230 },
+
+            { "type": "paint", "color": "#FFE3F2FD", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 235, "right": 380, "bottom": 255 },
+
+            { "type": "paint", "color": "#FFFFF3E0", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 260, "right": 380, "bottom": 280 },
+
+            { "type": "paint", "color": "#FFFFE0B2", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 285, "right": 380, "bottom": 305 },
+
+            { "type": "paint", "color": "#FFFFCC80", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 310, "right": 380, "bottom": 330 },
+
+            { "type": "paint", "color": "#FFFFB74D", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 335, "right": 380, "bottom": 355 },
+
+            { "type": "paint", "color": "#FFFFA726", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 360, "right": 380, "bottom": 380 },
+
+            { "type": "paint", "color": "#FFFF9800", "style": "fill" },
+            { "type": "draw_rect", "left": 20, "top": 385, "right": 380, "bottom": 400 }
+          ]
+        }
+      ]
+    }
+  ]
+}

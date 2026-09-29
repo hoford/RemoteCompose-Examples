@@ -1,0 +1,89 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Layered Borders" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFE0E0E0" },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": [
+                    { "padding": 12 },
+                    { "background": "#FF1565C0" },
+                    { "padding": 12 },
+                    { "background": "#FF43A047" },
+                    { "padding": 12 },
+                    { "background": "#FFFDD835" },
+                    { "padding": 16 },
+                    { "background": "#FFFFFFFF" }
+                  ],
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "center",
+                      "children": [
+                        { "type": "text", "value": "Layered", "font_size": 24.0, "font_weight": 700.0, "color": "#FF1A1A1A" },
+                        { "type": "text", "value": "Borders", "font_size": 18.0, "color": "#FF757575" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "height": 30 }
+                },
+                {
+                  "type": "box",
+                  "modifier": [
+                    { "padding": 6 },
+                    { "background": "#FFE53935" },
+                    { "padding": 6 },
+                    { "background": "#FFFFFFFF" },
+                    { "padding": 6 },
+                    { "background": "#FFE53935" },
+                    { "padding": 12 },
+                    { "background": "#FFFFFFFF" }
+                  ],
+                  "children": [
+                    { "type": "text", "value": "Double Border", "font_size": 18.0, "font_weight": 700.0, "color": "#FFE53935" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "height": 30 }
+                },
+                {
+                  "type": "box",
+                  "modifier": [
+                    { "padding": 4 },
+                    { "background": "#FF000000" },
+                    { "padding": 4 },
+                    { "background": "#FF444444" },
+                    { "padding": 4 },
+                    { "background": "#FF888888" },
+                    { "padding": 4 },
+                    { "background": "#FFCCCCCC" },
+                    { "padding": 12 },
+                    { "background": "#FFFFFFFF" }
+                  ],
+                  "children": [
+                    { "type": "text", "value": "Gradient Effect", "font_size": 18.0, "font_weight": 700.0, "color": "#FF333333" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

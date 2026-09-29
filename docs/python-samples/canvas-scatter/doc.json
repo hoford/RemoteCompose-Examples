@@ -1,0 +1,72 @@
+{
+  "_comment": "Scatter plot with dots (small filled circles) and axis lines",
+  "header": { "width": 400, "height": 400, "description": "CanvasScatter" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFFFFFFF" },
+          "children": [
+            { "_comment": "Title",
+              "type": "paint", "color": "#FF212121", "text_size": 16.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Height vs Weight", "x": 220, "y": 20, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Axes",
+              "type": "paint", "color": "#FF424242", "stroke_width": 2.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 40, "x2": 60, "y2": 340 },
+            { "type": "draw_line", "x1": 60, "y1": 340, "x2": 380, "y2": 340 },
+
+            { "_comment": "Grid lines",
+              "type": "paint", "color": "#FFEEEEEE", "stroke_width": 1.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 100, "x2": 380, "y2": 100 },
+            { "type": "draw_line", "x1": 60, "y1": 160, "x2": 380, "y2": 160 },
+            { "type": "draw_line", "x1": 60, "y1": 220, "x2": 380, "y2": 220 },
+            { "type": "draw_line", "x1": 60, "y1": 280, "x2": 380, "y2": 280 },
+            { "type": "draw_line", "x1": 140, "y1": 40, "x2": 140, "y2": 340 },
+            { "type": "draw_line", "x1": 220, "y1": 40, "x2": 220, "y2": 340 },
+            { "type": "draw_line", "x1": 300, "y1": 40, "x2": 300, "y2": 340 },
+
+            { "_comment": "Data points - cluster 1 (blue)",
+              "type": "paint", "color": "#CC1976D2", "style": "fill" },
+            { "type": "draw_circle", "cx": 95, "cy": 290, "radius": 5 },
+            { "type": "draw_circle", "cx": 110, "cy": 270, "radius": 5 },
+            { "type": "draw_circle", "cx": 130, "cy": 260, "radius": 5 },
+            { "type": "draw_circle", "cx": 125, "cy": 245, "radius": 5 },
+            { "type": "draw_circle", "cx": 150, "cy": 230, "radius": 5 },
+            { "type": "draw_circle", "cx": 165, "cy": 210, "radius": 5 },
+            { "type": "draw_circle", "cx": 175, "cy": 225, "radius": 5 },
+
+            { "_comment": "Data points - cluster 2 (teal)",
+              "type": "paint", "color": "#CC00897B", "style": "fill" },
+            { "type": "draw_circle", "cx": 190, "cy": 195, "radius": 5 },
+            { "type": "draw_circle", "cx": 210, "cy": 180, "radius": 5 },
+            { "type": "draw_circle", "cx": 230, "cy": 170, "radius": 5 },
+            { "type": "draw_circle", "cx": 245, "cy": 155, "radius": 5 },
+            { "type": "draw_circle", "cx": 220, "cy": 200, "radius": 5 },
+            { "type": "draw_circle", "cx": 255, "cy": 175, "radius": 5 },
+
+            { "_comment": "Data points - cluster 3 (orange)",
+              "type": "paint", "color": "#CCEF6C00", "style": "fill" },
+            { "type": "draw_circle", "cx": 280, "cy": 140, "radius": 5 },
+            { "type": "draw_circle", "cx": 300, "cy": 120, "radius": 5 },
+            { "type": "draw_circle", "cx": 310, "cy": 105, "radius": 5 },
+            { "type": "draw_circle", "cx": 330, "cy": 90, "radius": 5 },
+            { "type": "draw_circle", "cx": 295, "cy": 130, "radius": 5 },
+            { "type": "draw_circle", "cx": 350, "cy": 75, "radius": 5 },
+            { "type": "draw_circle", "cx": 340, "cy": 110, "radius": 5 },
+
+            { "_comment": "Axis labels",
+              "type": "paint", "color": "#FF757575", "text_size": 11.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Weight (kg)", "x": 220, "y": 365, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "50", "x": 50, "y": 280, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "100", "x": 50, "y": 220, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "150", "x": 50, "y": 160, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "200", "x": 50, "y": 100, "pan_x": 1, "pan_y": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "androidx-demos/stop-ends",
+  "sha256": "5f8ee9bf41cb652af931e5ec753f28c391b715fa1684a9d5b0dca9e447027f47",
+  "bytes": 893,
+  "ops": 50,
+  "distinctOps": 21,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 10,
+    "PAINT_VALUES": 8,
+    "COMPONENT_VALUE": 2,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_SAVE": 2,
+    "MATRIX_SCALE": 1,
+    "MATRIX_RESTORE": 2,
+    "DRAW_ARC": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ANCHOR": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/canvas-concentric",
+  "sha256": "781122dbf8747b9fe98e66f45b6ec0ba67c2afcddd269596b00d6ce1f41ddbb5",
+  "bytes": 404,
+  "ops": 27,
+  "distinctOps": 9,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 9,
+    "DRAW_CIRCLE": 9,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

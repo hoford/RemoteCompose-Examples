@@ -1,0 +1,64 @@
+{
+  "_comment": "Grid of rounded rectangles with varying corner radii",
+  "header": { "width": 400, "height": 400, "description": "CanvasRoundRects" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFE8EAF6" },
+          "children": [
+            { "type": "paint", "color": "#FF3F51B5", "style": "fill" },
+            { "type": "draw_round_rect", "left": 20, "top": 20, "right": 110, "bottom": 110, "rx": 2, "ry": 2 },
+
+            { "type": "paint", "color": "#FF5C6BC0", "style": "fill" },
+            { "type": "draw_round_rect", "left": 120, "top": 20, "right": 210, "bottom": 110, "rx": 8, "ry": 8 },
+
+            { "type": "paint", "color": "#FF7986CB", "style": "fill" },
+            { "type": "draw_round_rect", "left": 220, "top": 20, "right": 310, "bottom": 110, "rx": 16, "ry": 16 },
+
+            { "type": "paint", "color": "#FF9FA8DA", "style": "fill" },
+            { "type": "draw_round_rect", "left": 320, "top": 20, "right": 390, "bottom": 110, "rx": 24, "ry": 24 },
+
+            { "type": "paint", "color": "#FFFF5722", "style": "fill" },
+            { "type": "draw_round_rect", "left": 20, "top": 120, "right": 110, "bottom": 210, "rx": 4, "ry": 4 },
+
+            { "type": "paint", "color": "#FFFF7043", "style": "fill" },
+            { "type": "draw_round_rect", "left": 120, "top": 120, "right": 210, "bottom": 210, "rx": 12, "ry": 12 },
+
+            { "type": "paint", "color": "#FFFF8A65", "style": "fill" },
+            { "type": "draw_round_rect", "left": 220, "top": 120, "right": 310, "bottom": 210, "rx": 20, "ry": 20 },
+
+            { "type": "paint", "color": "#FFFFAB91", "style": "fill" },
+            { "type": "draw_round_rect", "left": 320, "top": 120, "right": 390, "bottom": 210, "rx": 35, "ry": 35 },
+
+            { "type": "paint", "color": "#FF009688", "style": "fill" },
+            { "type": "draw_round_rect", "left": 20, "top": 220, "right": 110, "bottom": 310, "rx": 6, "ry": 6 },
+
+            { "type": "paint", "color": "#FF26A69A", "style": "fill" },
+            { "type": "draw_round_rect", "left": 120, "top": 220, "right": 210, "bottom": 310, "rx": 14, "ry": 14 },
+
+            { "type": "paint", "color": "#FF4DB6AC", "style": "fill" },
+            { "type": "draw_round_rect", "left": 220, "top": 220, "right": 310, "bottom": 310, "rx": 22, "ry": 22 },
+
+            { "type": "paint", "color": "#FF80CBC4", "style": "fill" },
+            { "type": "draw_round_rect", "left": 320, "top": 220, "right": 390, "bottom": 310, "rx": 35, "ry": 35 },
+
+            { "type": "paint", "color": "#FFFFC107", "style": "fill" },
+            { "type": "draw_round_rect", "left": 20, "top": 320, "right": 110, "bottom": 390, "rx": 3, "ry": 3 },
+
+            { "type": "paint", "color": "#FFFFCA28", "style": "fill" },
+            { "type": "draw_round_rect", "left": 120, "top": 320, "right": 210, "bottom": 390, "rx": 10, "ry": 10 },
+
+            { "type": "paint", "color": "#FFFFD54F", "style": "fill" },
+            { "type": "draw_round_rect", "left": 220, "top": 320, "right": 310, "bottom": 390, "rx": 18, "ry": 18 },
+
+            { "type": "paint", "color": "#FFFFE082", "style": "fill" },
+            { "type": "draw_round_rect", "left": 320, "top": 320, "right": 390, "bottom": 390, "rx": 35, "ry": 35 }
+          ]
+        }
+      ]
+    }
+  ]
+}

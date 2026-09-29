@@ -1,0 +1,79 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Population pyramid with back-to-back horizontal bars for age distribution"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Age Distribution", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF555555", "style": "stroke", "stroke_width": 2, "text_size": 12},
+            {"type": "draw_line", "x1": 200, "y1": 50, "x2": 200, "y2": 360},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 50, "y1": 360, "x2": 350, "y2": 360},
+
+            {"type": "paint", "color": "#FF888888", "style": "fill", "stroke_width": 1, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Male", "x": 100, "y": 46, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "Female", "x": 300, "y": 46, "pan_x": 0, "pan_y": 1},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 80, "top": 60, "right": 195, "bottom": 100},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 60, "right": 330, "bottom": 100},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "0-14", "x": 200, "y": 80, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 60, "top": 110, "right": 195, "bottom": 150},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 110, "right": 340, "bottom": 150},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "15-24", "x": 200, "y": 130, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 50, "top": 160, "right": 195, "bottom": 200},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 160, "right": 350, "bottom": 200},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "25-39", "x": 200, "y": 180, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 70, "top": 210, "right": 195, "bottom": 250},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 210, "right": 330, "bottom": 250},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "40-54", "x": 200, "y": 230, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 100, "top": 260, "right": 195, "bottom": 300},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 260, "right": 310, "bottom": 300},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "55-69", "x": 200, "y": 280, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 130, "top": 310, "right": 195, "bottom": 350},
+            {"type": "paint", "color": "#FFE91E63", "style": "fill", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_rect", "left": 205, "top": 310, "right": 290, "bottom": 350},
+            {"type": "paint", "color": "#FF333333", "style": "fill", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "70+", "x": 200, "y": 330, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF888888", "style": "fill", "stroke_width": 1, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "15%", "x": 50, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "10%", "x": 100, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "5%", "x": 150, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "0", "x": 200, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "5%", "x": 250, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "10%", "x": 300, "y": 375, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "15%", "x": 350, "y": 375, "pan_x": 0, "pan_y": -1}
+          ]
+        }
+      ]
+    }
+  ]
+}

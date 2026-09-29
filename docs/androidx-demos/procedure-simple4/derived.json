@@ -1,0 +1,30 @@
+{
+  "id": "androidx-demos/procedure-simple4",
+  "sha256": "0baba937fde032c895c0e993e747ddeff61ff3a811b1921f1e5edf534b5d0642",
+  "bytes": 144,
+  "ops": 6,
+  "distinctOps": 6,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "PAINT_VALUES": 1,
+    "ANIMATED_FLOAT": 1,
+    "DRAW_ROUND_RECT": 1
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

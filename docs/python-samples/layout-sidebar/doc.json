@@ -1,0 +1,116 @@
+{
+  "header": { "width": 600, "height": 400, "description": "Sidebar Layout" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "row",
+          "h_align": "start",
+          "v_align": "top",
+          "modifier": { "fill_max_size": true },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": {
+                "size": [150, 0],
+                "fill_max_height": true,
+                "background": "#FF1B5E20",
+                "padding": 12
+              },
+              "children": [
+                { "type": "text", "value": "Sidebar", "font_size": 20, "color": "#FFFFFFFF" },
+                {
+                  "type": "box",
+                  "modifier": { "size": [126, 1], "background": "#FF388E3C" },
+                  "children": []
+                },
+                {
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "background": "#FF2E7D32", "padding": 10, "clip": { "radii": [6, 6, 6, 6] } },
+                  "children": [
+                    { "type": "text", "value": "Dashboard", "font_size": 14, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "padding": 10 },
+                  "children": [
+                    { "type": "text", "value": "Settings", "font_size": 14, "color": "#FFA5D6A7" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "padding": 10 },
+                  "children": [
+                    { "type": "text", "value": "Profile", "font_size": 14, "color": "#FFA5D6A7" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "fill_max_width": true, "padding": 10 },
+                  "children": [
+                    { "type": "text", "value": "Help", "font_size": 14, "color": "#FFA5D6A7" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "column",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": {
+                "horizontal_weight": 1.0,
+                "fill_max_height": true,
+                "background": "#FFFAFAFA",
+                "padding": 20
+              },
+              "children": [
+                { "type": "text", "value": "Main Content Area", "font_size": 24, "color": "#FF212121" },
+                { "type": "text", "value": "Welcome to the dashboard.", "font_size": 16, "color": "#FF757575" },
+                {
+                  "type": "row",
+                  "h_align": "start",
+                  "v_align": "top",
+                  "modifier": { "fill_max_width": true, "padding": 10 },
+                  "children": [
+                    {
+                      "type": "box",
+                      "modifier": { "horizontal_weight": 1.0, "background": "#FFE8F5E9", "padding": 16, "clip": { "radii": [8, 8, 8, 8] } },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "children": [
+                            { "type": "text", "value": "42", "font_size": 28, "color": "#FF2E7D32" },
+                            { "type": "text", "value": "Items", "font_size": 12, "color": "#FF66BB6A" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "modifier": { "horizontal_weight": 1.0, "background": "#FFE3F2FD", "padding": 16, "clip": { "radii": [8, 8, 8, 8] } },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "children": [
+                            { "type": "text", "value": "87", "font_size": 28, "color": "#FF1565C0" },
+                            { "type": "text", "value": "Tasks", "font_size": 12, "color": "#FF42A5F5" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "python-samples/widget-music",
+  "sha256": "e3de960bcb7596e8bc7fcd95eb3c467ed41588001475e44d01f49c05f5da8c56",
+  "bytes": 1601,
+  "ops": 103,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 200,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 2,
+    "MODIFIER_WIDTH": 7,
+    "MODIFIER_HEIGHT": 7,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_ROW": 1,
+    "LAYOUT_CANVAS": 3,
+    "ANIMATED_FLOAT": 22,
+    "PAINT_VALUES": 15,
+    "DRAW_RECT": 5,
+    "DRAW_CIRCLE": 3,
+    "DRAW_LINE": 7,
+    "CONTAINER_END": 21,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_PADDING": 1,
+    "DATA_TEXT": 3,
+    "DRAW_ROUND_RECT": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

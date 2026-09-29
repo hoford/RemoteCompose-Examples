@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-candlestick",
+  "sha256": "b19b707b52d9fefd8464118ae696a10f9931801eef1e3480926301535c6b7da1",
+  "bytes": 2227,
+  "ops": 101,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 26,
+    "DATA_TEXT": 19,
+    "DRAW_TEXT_ANCHOR": 19,
+    "DRAW_LINE": 16,
+    "DRAW_RECT": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

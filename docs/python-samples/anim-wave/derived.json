@@ -1,0 +1,35 @@
+{
+  "id": "python-samples/anim-wave",
+  "sha256": "ca6392f0c1af0d26e7e75607da51be6ecc92fe206a2e4ef7b7c5d42f389103cb",
+  "bytes": 864,
+  "ops": 36,
+  "distinctOps": 10,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "ANIMATED_FLOAT": 15,
+    "PAINT_VALUES": 5,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

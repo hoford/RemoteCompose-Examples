@@ -1,0 +1,32 @@
+{
+  "id": "androidx-demos/c-modifier-compute-position",
+  "sha256": "ae2cdaffc778685744f9ef38e58cc62a32eea1c172e148556d8ac4f51190b18e",
+  "bytes": 370,
+  "ops": 20,
+  "distinctOps": 10,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 2,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_COMPUTE": 1,
+    "ANIMATED_FLOAT": 2,
+    "UPDATE_DYNAMIC_FLOAT_LIST": 2,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "expressions",
+    "layout"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

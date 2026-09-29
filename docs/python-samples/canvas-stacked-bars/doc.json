@@ -1,0 +1,84 @@
+{
+  "_comment": "Stacked bar chart with 3 categories across 4 groups",
+  "header": { "width": 400, "height": 400, "description": "CanvasStackedBars" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFFFFFFF" },
+          "children": [
+            { "_comment": "Title",
+              "type": "paint", "color": "#FF212121", "text_size": 16.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Expenses by Category", "x": 220, "y": 22, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Axes",
+              "type": "paint", "color": "#FF616161", "stroke_width": 2.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 45, "x2": 60, "y2": 320 },
+            { "type": "draw_line", "x1": 60, "y1": 320, "x2": 380, "y2": 320 },
+
+            { "_comment": "Guide lines",
+              "type": "paint", "color": "#FFEEEEEE", "stroke_width": 1.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 95, "x2": 380, "y2": 95 },
+            { "type": "draw_line", "x1": 60, "y1": 145, "x2": 380, "y2": 145 },
+            { "type": "draw_line", "x1": 60, "y1": 195, "x2": 380, "y2": 195 },
+            { "type": "draw_line", "x1": 60, "y1": 245, "x2": 380, "y2": 245 },
+
+            { "_comment": "Group 1 (2021) - Housing (bottom), Food (mid), Transport (top)",
+              "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 75, "top": 170, "right": 135, "bottom": 320 },
+            { "type": "paint", "color": "#FF43A047", "style": "fill" },
+            { "type": "draw_rect", "left": 75, "top": 120, "right": 135, "bottom": 170 },
+            { "type": "paint", "color": "#FFFFA000", "style": "fill" },
+            { "type": "draw_rect", "left": 75, "top": 90, "right": 135, "bottom": 120 },
+
+            { "_comment": "Group 2 (2022)",
+              "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 150, "top": 150, "right": 210, "bottom": 320 },
+            { "type": "paint", "color": "#FF43A047", "style": "fill" },
+            { "type": "draw_rect", "left": 150, "top": 95, "right": 210, "bottom": 150 },
+            { "type": "paint", "color": "#FFFFA000", "style": "fill" },
+            { "type": "draw_rect", "left": 150, "top": 60, "right": 210, "bottom": 95 },
+
+            { "_comment": "Group 3 (2023)",
+              "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 225, "top": 140, "right": 285, "bottom": 320 },
+            { "type": "paint", "color": "#FF43A047", "style": "fill" },
+            { "type": "draw_rect", "left": 225, "top": 100, "right": 285, "bottom": 140 },
+            { "type": "paint", "color": "#FFFFA000", "style": "fill" },
+            { "type": "draw_rect", "left": 225, "top": 65, "right": 285, "bottom": 100 },
+
+            { "_comment": "Group 4 (2024)",
+              "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 300, "top": 130, "right": 360, "bottom": 320 },
+            { "type": "paint", "color": "#FF43A047", "style": "fill" },
+            { "type": "draw_rect", "left": 300, "top": 80, "right": 360, "bottom": 130 },
+            { "type": "paint", "color": "#FFFFA000", "style": "fill" },
+            { "type": "draw_rect", "left": 300, "top": 50, "right": 360, "bottom": 80 },
+
+            { "_comment": "X labels",
+              "type": "paint", "color": "#FF424242", "text_size": 12.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "2021", "x": 105, "y": 337, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "2022", "x": 180, "y": 337, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "2023", "x": 255, "y": 337, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "2024", "x": 330, "y": 337, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Legend",
+              "type": "paint", "color": "#FF1565C0", "style": "fill" },
+            { "type": "draw_rect", "left": 80, "top": 365, "right": 96, "bottom": 379 },
+            { "type": "paint", "color": "#FF43A047", "style": "fill" },
+            { "type": "draw_rect", "left": 175, "top": 365, "right": 191, "bottom": 379 },
+            { "type": "paint", "color": "#FFFFA000", "style": "fill" },
+            { "type": "draw_rect", "left": 270, "top": 365, "right": 286, "bottom": 379 },
+
+            { "type": "paint", "color": "#FF424242", "text_size": 11.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Housing", "x": 100, "y": 372, "pan_x": -1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "Food", "x": 195, "y": 372, "pan_x": -1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "Transport", "x": 290, "y": 372, "pan_x": -1, "pan_y": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

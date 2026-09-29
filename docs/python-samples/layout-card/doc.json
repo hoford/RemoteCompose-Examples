@@ -1,0 +1,94 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Card Layout" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFEEEEEE", "padding": 24 },
+          "children": [
+            {
+              "type": "column",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": {
+                "fill_max_width": true,
+                "background": "#FFFFFFFF",
+                "border": { "width": 1, "corner": 12, "color": "#FFE0E0E0", "shape": 0 },
+                "clip": { "radii": [12, 12, 12, 12] }
+              },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "background": "#FF1565C0",
+                    "padding": 16
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "children": [
+                        { "type": "text", "value": "Card Title", "font_size": 22, "color": "#FFFFFFFF" },
+                        { "type": "text", "value": "Subtitle text", "font_size": 14, "color": "#B3FFFFFF" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "padding": 16
+                  },
+                  "children": [
+                    {
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "top",
+                      "children": [
+                        { "type": "text", "value": "This is the card body content.", "font_size": 16, "color": "#FF424242" },
+                        { "type": "text", "value": "It can contain multiple lines", "font_size": 16, "color": "#FF424242" },
+                        { "type": "text", "value": "of descriptive text.", "font_size": 16, "color": "#FF424242" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": {
+                    "size": [0, 1],
+                    "fill_max_width": true,
+                    "background": "#FFE0E0E0"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "row",
+                  "h_align": "end",
+                  "v_align": "center",
+                  "modifier": {
+                    "fill_max_width": true,
+                    "padding": 12
+                  },
+                  "children": [
+                    {
+                      "type": "box",
+                      "modifier": { "background": "#FF1565C0", "padding": 8, "clip": { "radii": [6, 6, 6, 6] } },
+                      "children": [
+                        { "type": "text", "value": "ACTION", "font_size": 14, "color": "#FFFFFFFF" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-semi-donut",
+  "sha256": "71b04ef1266b4cd837f76bc37d47d95741dc3b56ae28a40b9a0e4bd5e10a8cfc",
+  "bytes": 1177,
+  "ops": 48,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 10,
+    "DRAW_ARC": 2,
+    "DRAW_CIRCLE": 2,
+    "DRAW_ROUND_RECT": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

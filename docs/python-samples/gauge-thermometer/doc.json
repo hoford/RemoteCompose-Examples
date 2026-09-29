@@ -1,0 +1,257 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Thermometer Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF1A1A2E"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "temp",
+              "expr": "sin(time.seconds * 0.5) * 20 + 22"
+            },
+            {
+              "type": "float_expression",
+              "label": "mercuryHeight",
+              "expr": "(sin(time.seconds * 0.5) * 20 + 22 + 10) / 60 * 260"
+            },
+            {
+              "type": "float_expression",
+              "label": "mercuryTop",
+              "expr": "320 - (sin(time.seconds * 0.5) * 20 + 22 + 10) / 60 * 260"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 120,
+              "top": 20,
+              "right": 280,
+              "bottom": 385,
+              "rx": 20,
+              "ry": 20,
+              "paint": {
+                "color": "#FF252540",
+                "style": "fill"
+              },
+              "_comment": "Background panel"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "TEMPERATURE",
+              "x": 200,
+              "y": 42,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA8888CC",
+                "text_size": 14
+              },
+              "_comment": "Title"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 182,
+              "top": 55,
+              "right": 218,
+              "bottom": 325,
+              "rx": 18,
+              "ry": 18,
+              "paint": {
+                "color": "#FF3A3A55",
+                "style": "fill"
+              },
+              "_comment": "Thermometer tube outline"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 182,
+              "top": 55,
+              "right": 218,
+              "bottom": 325,
+              "rx": 18,
+              "ry": 18,
+              "paint": {
+                "color": "#FF5555AA",
+                "style": "stroke",
+                "stroke_width": 1.5
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 340,
+              "radius": 28,
+              "paint": {
+                "color": "#FF3A3A55",
+                "style": "fill"
+              },
+              "_comment": "Mercury bulb at bottom"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 340,
+              "radius": 28,
+              "paint": {
+                "color": "#FF5555AA",
+                "style": "stroke",
+                "stroke_width": 1.5
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 340,
+              "radius": 20,
+              "paint": {
+                "color": "#FFFF3355",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_rect",
+              "left": 190,
+              "top": "$mercuryTop",
+              "right": 210,
+              "bottom": 325,
+              "paint": {
+                "color": "#FFFF3355",
+                "style": "fill"
+              },
+              "_comment": "Mercury column (animated)"
+            },
+            {
+              "type": "loop",
+              "from": -10,
+              "step": 5,
+              "until": 55,
+              "label": "t",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "markY",
+                  "expr": "320 - ($t + 10) / 60 * 260"
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 220,
+                  "y1": "$markY",
+                  "x2": 232,
+                  "y2": "$markY",
+                  "paint": {
+                    "color": "#88FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                }
+              ],
+              "_comment": "Scale markings on the right side"
+            },
+            {
+              "type": "loop",
+              "from": -10,
+              "step": 10,
+              "until": 55,
+              "label": "mt",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "majorY",
+                  "expr": "320 - ($mt + 10) / 60 * 260"
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 220,
+                  "y1": "$majorY",
+                  "x2": 240,
+                  "y2": "$majorY",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2
+                  }
+                },
+                {
+                  "type": "text_from_float",
+                  "label": "scaleLabel",
+                  "value": "$mt",
+                  "before": 3,
+                  "after": 0,
+                  "flags": 1
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text_id": "$scaleLabel",
+                  "x": 252,
+                  "y": "$majorY",
+                  "pan_x": -1,
+                  "pan_y": 0,
+                  "paint": {
+                    "color": "#CCFFFFFF",
+                    "text_size": 12
+                  }
+                }
+              ],
+              "_comment": "Major scale markings with labels every 10 degrees"
+            },
+            {
+              "type": "text_from_float",
+              "label": "tempText",
+              "value": "$temp",
+              "before": 2,
+              "after": 1,
+              "flags": 1,
+              "_comment": "Current temperature display"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 130,
+              "top": 182,
+              "right": 175,
+              "bottom": 218,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#44FF3355",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$tempText",
+              "x": 152,
+              "y": 200,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 18
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "°C",
+              "x": 200,
+              "y": 375,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AA8888CC",
+                "text_size": 18
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

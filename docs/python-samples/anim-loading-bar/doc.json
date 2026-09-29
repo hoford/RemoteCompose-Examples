@@ -1,0 +1,295 @@
+{
+  "_comment": "Horizontal loading bar that fills left-to-right then resets, using fract",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimLoadingBar"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Progress fraction: repeats 0..1 every 3 seconds",
+                  "type": "float_expression",
+                  "label": "progress",
+                  "expr": "fract(time.seconds / 3)"
+                },
+                {
+                  "_comment": "Bar dimensions",
+                  "type": "float_expression",
+                  "label": "bar_left",
+                  "expr": "40"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar_right",
+                  "expr": "$w - 40"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar_width",
+                  "expr": "$bar_right - $bar_left"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar_top",
+                  "expr": "$cy - 15"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar_bottom",
+                  "expr": "$cy + 15"
+                },
+                {
+                  "_comment": "Bar background track",
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#40FFFFFF",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar_top",
+                  "right": "$bar_right",
+                  "bottom": "$bar_bottom",
+                  "rx": 15,
+                  "ry": 15
+                },
+                {
+                  "_comment": "Filled portion",
+                  "type": "float_expression",
+                  "label": "fill_right",
+                  "expr": "$bar_left + $bar_width * $progress"
+                },
+                {
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#FF448AFF",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar_top",
+                  "right": "$fill_right",
+                  "bottom": "$bar_bottom",
+                  "rx": 15,
+                  "ry": 15
+                },
+                {
+                  "_comment": "Glow highlight on the leading edge",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#4082B1FF",
+                    "style": "fill"
+                  },
+                  "cx": "$fill_right",
+                  "cy": "$cy",
+                  "radius": 20
+                },
+                {
+                  "_comment": "Percentage text",
+                  "type": "float_expression",
+                  "label": "pct",
+                  "expr": "$progress * 100"
+                },
+                {
+                  "type": "text_from_float",
+                  "label": "pct_txt",
+                  "value": "$pct",
+                  "before": 3,
+                  "after": 0,
+                  "flags": 1
+                },
+                {
+                  "type": "paint",
+                  "color": "#FFFFFFFF",
+                  "text_size": 28.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text_id": "$pct_txt",
+                  "x": "$cx",
+                  "y": {
+                    "expr": "$cy - 50"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                },
+                {
+                  "type": "paint",
+                  "color": "#80FFFFFF",
+                  "text_size": 16.0
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text": "%",
+                  "x": {
+                    "expr": "$cx + 40"
+                  },
+                  "y": {
+                    "expr": "$cy - 50"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                },
+                {
+                  "_comment": "Secondary bar \u2014 thinner, different speed",
+                  "type": "float_expression",
+                  "label": "progress2",
+                  "expr": "fract(time.seconds / 5)"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar2_top",
+                  "expr": "$cy + 40"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar2_bottom",
+                  "expr": "$cy + 52"
+                },
+                {
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#30FFFFFF",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar2_top",
+                  "right": "$bar_right",
+                  "bottom": "$bar2_bottom",
+                  "rx": 6,
+                  "ry": 6
+                },
+                {
+                  "type": "float_expression",
+                  "label": "fill2_right",
+                  "expr": "$bar_left + $bar_width * $progress2"
+                },
+                {
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#FF00E676",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar2_top",
+                  "right": "$fill2_right",
+                  "bottom": "$bar2_bottom",
+                  "rx": 6,
+                  "ry": 6
+                },
+                {
+                  "_comment": "Third bar \u2014 different color, different speed",
+                  "type": "float_expression",
+                  "label": "progress3",
+                  "expr": "fract(time.seconds / 7)"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar3_top",
+                  "expr": "$cy + 62"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "bar3_bottom",
+                  "expr": "$cy + 74"
+                },
+                {
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#30FFFFFF",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar3_top",
+                  "right": "$bar_right",
+                  "bottom": "$bar3_bottom",
+                  "rx": 6,
+                  "ry": 6
+                },
+                {
+                  "type": "float_expression",
+                  "label": "fill3_right",
+                  "expr": "$bar_left + $bar_width * $progress3"
+                },
+                {
+                  "type": "draw_round_rect",
+                  "paint": {
+                    "color": "#FFFF5252",
+                    "style": "fill"
+                  },
+                  "left": "$bar_left",
+                  "top": "$bar3_top",
+                  "right": "$fill3_right",
+                  "bottom": "$bar3_bottom",
+                  "rx": 6,
+                  "ry": 6
+                },
+                {
+                  "_comment": "Loading label",
+                  "type": "paint",
+                  "color": "#60FFFFFF",
+                  "text_size": 12.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text": "LOADING",
+                  "x": "$cx",
+                  "y": {
+                    "expr": "$cy + 100"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

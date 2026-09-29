@@ -1,0 +1,80 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Pictorial Bar Chart - Fruit Count"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Fruit Count", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Each circle = 1 unit", "x": 200, "y": 48, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_text_anchored", "text": "Apples", "x": 80, "y": 95, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Bananas", "x": 80, "y": 145, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Oranges", "x": 80, "y": 195, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Grapes", "x": 80, "y": 245, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Mangos", "x": 80, "y": 295, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_circle", "cx": 110, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 135, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 160, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 185, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 210, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 235, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 260, "cy": 95, "radius": 10},
+            {"type": "draw_circle", "cx": 285, "cy": 95, "radius": 10},
+
+            {"type": "paint", "color": "#FFFFB300", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_circle", "cx": 110, "cy": 145, "radius": 10},
+            {"type": "draw_circle", "cx": 135, "cy": 145, "radius": 10},
+            {"type": "draw_circle", "cx": 160, "cy": 145, "radius": 10},
+            {"type": "draw_circle", "cx": 185, "cy": 145, "radius": 10},
+            {"type": "draw_circle", "cx": 210, "cy": 145, "radius": 10},
+            {"type": "draw_circle", "cx": 235, "cy": 145, "radius": 10},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_circle", "cx": 110, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 135, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 160, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 185, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 210, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 235, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 260, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 285, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 310, "cy": 195, "radius": 10},
+            {"type": "draw_circle", "cx": 335, "cy": 195, "radius": 10},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_circle", "cx": 110, "cy": 245, "radius": 10},
+            {"type": "draw_circle", "cx": 135, "cy": 245, "radius": 10},
+            {"type": "draw_circle", "cx": 160, "cy": 245, "radius": 10},
+            {"type": "draw_circle", "cx": 185, "cy": 245, "radius": 10},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 14},
+            {"type": "draw_circle", "cx": 110, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 135, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 160, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 185, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 210, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 235, "cy": 295, "radius": 10},
+            {"type": "draw_circle", "cx": 260, "cy": 295, "radius": 10},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "8", "x": 300, "y": 95, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "6", "x": 250, "y": 145, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "10", "x": 350, "y": 195, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "4", "x": 200, "y": 245, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "7", "x": 275, "y": 295, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

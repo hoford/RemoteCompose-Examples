@@ -1,0 +1,25 @@
+{
+  "_comment": "Port of DemoModifierBackground.kt — ARGB int and float backgrounds",
+  "header": { "width": 400, "height": 400, "description": "DemoModifierBackground" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true },
+          "children": [
+            {
+              "type": "box",
+              "modifier": { "size": 100, "background": "#FFFF0000" }
+            },
+            {
+              "type": "box",
+              "modifier": { "size": 100, "background_rgba": [0, 0, 1, 1] }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

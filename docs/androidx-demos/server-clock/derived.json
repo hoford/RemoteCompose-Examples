@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/server-clock",
+  "sha256": "1657d6fdb60aa41a22ef8f81f1f61d0d0c54aae6120ee33cd31585924004c7a9",
+  "bytes": 733,
+  "ops": 41,
+  "distinctOps": 17,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 4,
+    "ANIMATED_FLOAT": 9,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_SAVE": 2,
+    "MATRIX_ROTATE": 2,
+    "DRAW_LINE": 3,
+    "MATRIX_RESTORE": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

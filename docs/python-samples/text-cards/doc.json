@@ -1,0 +1,78 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text Cards" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "padding": 16, "background": "#FFE8E8E8" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "fill_max_width": true,
+                "padding": 16,
+                "background": "#FF1565C0",
+                "clip": { "radii": [12, 12, 12, 12] }
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "children": [
+                    { "type": "text", "value": "Getting Started", "font_size": 22.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "Learn the basics of RemoteCompose and build your first layout.", "font_size": 14.0, "color": "#CCFFFFFF" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 12 }
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "fill_max_width": true,
+                "padding": 16,
+                "background": "#FF2E7D32",
+                "clip": { "radii": [12, 12, 12, 12] }
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "children": [
+                    { "type": "text", "value": "Components", "font_size": 22.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "Explore reusable components like Box, Row, Column, and Text.", "font_size": 14.0, "color": "#CCFFFFFF" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": { "height": 12 }
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "fill_max_width": true,
+                "padding": 16,
+                "background": "#FFC62828",
+                "clip": { "radii": [12, 12, 12, 12] }
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "children": [
+                    { "type": "text", "value": "Advanced Topics", "font_size": 22.0, "font_weight": 700.0, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "Dive into expressions, animations, and dynamic layouts.", "font_size": 14.0, "color": "#CCFFFFFF" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

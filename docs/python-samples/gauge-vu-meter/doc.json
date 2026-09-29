@@ -1,0 +1,412 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "VU Meter Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF1A1008"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "level",
+              "expr": "abs(sin(time.seconds * 3)) * 90"
+            },
+            {
+              "type": "float_expression",
+              "label": "needleAngle",
+              "expr": "abs(sin(time.seconds * 3)) * 90 / 90 * 80 - 40"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 20,
+              "top": 40,
+              "right": 380,
+              "bottom": 340,
+              "rx": 16,
+              "ry": 16,
+              "paint": {
+                "color": "#FFF5ECD5",
+                "style": "fill"
+              },
+              "_comment": "Meter housing"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 20,
+              "top": 40,
+              "right": 380,
+              "bottom": 340,
+              "rx": 16,
+              "ry": 16,
+              "paint": {
+                "color": "#FF8B7355",
+                "style": "stroke",
+                "stroke_width": 4
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 35,
+              "top": 55,
+              "right": 365,
+              "bottom": 325,
+              "rx": 10,
+              "ry": 10,
+              "paint": {
+                "color": "#FFFFFBE6",
+                "style": "fill"
+              },
+              "_comment": "Inner face"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "VU",
+              "x": 200,
+              "y": 85,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF333333",
+                "text_size": 28
+              },
+              "_comment": "VU label"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 80,
+              "right": 350,
+              "bottom": 380,
+              "start_angle": 220,
+              "sweep_angle": 55,
+              "use_center": false,
+              "paint": {
+                "color": "#FF2E7D32",
+                "style": "stroke",
+                "stroke_width": 12
+              },
+              "_comment": "Green zone arc (-20 to 0 VU)"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 80,
+              "right": 350,
+              "bottom": 380,
+              "start_angle": 275,
+              "sweep_angle": 15,
+              "use_center": false,
+              "paint": {
+                "color": "#FFFFC107",
+                "style": "stroke",
+                "stroke_width": 12
+              },
+              "_comment": "Yellow zone arc (0 to +1 VU)"
+            },
+            {
+              "type": "draw_arc",
+              "left": 50,
+              "top": 80,
+              "right": 350,
+              "bottom": 380,
+              "start_angle": 290,
+              "sweep_angle": 30,
+              "use_center": false,
+              "paint": {
+                "color": "#FFC62828",
+                "style": "stroke",
+                "stroke_width": 12
+              },
+              "_comment": "Red zone arc (+1 to +3 VU)"
+            },
+            {
+              "type": "loop",
+              "from": 0,
+              "step": 8,
+              "until": 88,
+              "label": "vtick",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "vAngle",
+                  "expr": "$vtick / 90 * 80 + 220"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$vAngle",
+                  "cx": 200,
+                  "cy": 280
+                },
+                {
+                  "type": "draw_line",
+                  "x1": 200,
+                  "y1": 97,
+                  "x2": 200,
+                  "y2": 110,
+                  "paint": {
+                    "color": "#FF333333",
+                    "style": "stroke",
+                    "stroke_width": 1.5
+                  }
+                },
+                {
+                  "type": "restore"
+                }
+              ],
+              "_comment": "Scale tick marks"
+            },
+            {
+              "type": "save",
+              "_comment": "Scale labels"
+            },
+            {
+              "type": "rotate",
+              "angle": 220,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "-20",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF333333",
+                "text_size": 11
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 240,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "-10",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF333333",
+                "text_size": 11
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 260,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "-7",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FF333333",
+                "text_size": 11
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 275,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "0",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFC62828",
+                "text_size": 13
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 295,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "+1",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFC62828",
+                "text_size": 11
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save"
+            },
+            {
+              "type": "rotate",
+              "angle": 315,
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "+3",
+              "x": 200,
+              "y": 120,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFC62828",
+                "text_size": 11
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "save",
+              "_comment": "Needle"
+            },
+            {
+              "type": "rotate",
+              "angle": "$needleAngle",
+              "cx": 200,
+              "cy": 280
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 100,
+              "x2": 200,
+              "y2": 275,
+              "paint": {
+                "color": "#FF1A1A1A",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "restore"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 280,
+              "radius": 8,
+              "paint": {
+                "color": "#FF333333",
+                "style": "fill"
+              },
+              "_comment": "Center pivot"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 280,
+              "radius": 4,
+              "paint": {
+                "color": "#FFFFFBE6",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "dbText",
+              "value": "$level",
+              "before": 2,
+              "after": 0,
+              "flags": 1,
+              "_comment": "dB readout"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 140,
+              "top": 350,
+              "right": 260,
+              "bottom": 385,
+              "rx": 6,
+              "ry": 6,
+              "paint": {
+                "color": "#FF2A2010",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$dbText",
+              "x": 190,
+              "y": 368,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFC107",
+                "text_size": 22
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "dB",
+              "x": 230,
+              "y": 368,
+              "pan_x": -1,
+              "pan_y": 0,
+              "paint": {
+                "color": "#AAFFC107",
+                "text_size": 14
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

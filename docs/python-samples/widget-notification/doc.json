@@ -1,0 +1,81 @@
+{
+  "_comment": "Notification card: icon circle, title + message, colored left accent via ordered modifiers",
+  "header": { "width": 400, "height": 120, "description": "WidgetNotification" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFF5F5F5", "padding": 8 },
+          "children": [
+            {
+              "type": "box",
+              "modifier": [
+                { "fill_max_width": true },
+                { "background": "#FF2979FF" },
+                { "padding": [0, 0, 0, 4] },
+                { "background": "#FFFFFFFF" },
+                { "clip": { "radii": [12, 12, 12, 12] } },
+                { "border": { "width": 1, "corner": 12, "color": "#FFE0E0E0", "shape": 0 } }
+              ],
+              "children": [
+                {
+                  "type": "row",
+                  "h_align": "start",
+                  "v_align": "center",
+                  "modifier": { "fill_max_size": true, "padding": 12 },
+                  "children": [
+                    {
+                      "_comment": "Icon circle with bell shape",
+                      "type": "box",
+                      "modifier": { "size": [48, 48] },
+                      "children": [
+                        {
+                          "type": "canvas",
+                          "modifier": { "fill_max_size": true },
+                          "children": [
+                            { "type": "draw_circle",
+                              "paint": { "color": "#FF2979FF", "style": "fill" },
+                              "cx": 24, "cy": 24, "radius": 22 },
+                            { "_comment": "Bell body",
+                              "type": "draw_arc",
+                              "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                              "left": 11, "top": 10, "right": 37, "bottom": 34,
+                              "start_angle": 180, "sweep_angle": 180, "use_center": true },
+                            { "type": "draw_rect",
+                              "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                              "left": 11, "top": 22, "right": 37, "bottom": 32 },
+                            { "_comment": "Bell bottom",
+                              "type": "draw_line",
+                              "paint": { "color": "#FFFFFFFF", "style": "stroke", "stroke_width": 3.0 },
+                              "x1": 8, "y1": 32, "x2": 40, "y2": 32 },
+                            { "type": "draw_circle",
+                              "paint": { "color": "#FFFFFFFF", "style": "fill" },
+                              "cx": 24, "cy": 35, "radius": 4 }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_comment": "Title and message",
+                      "type": "column",
+                      "h_align": "start",
+                      "v_align": "center",
+                      "modifier": { "horizontal_weight": 1.0, "padding": [12, 0, 0, 0] },
+                      "children": [
+                        { "type": "text", "value": "New Message Received", "font_size": 15, "color": "#FF212121" },
+                        { "type": "text", "value": "Hey! Just wanted to check in and see how the project is going. Let me know if you need any help.", "font_size": 12, "color": "#FF757575" },
+                        { "type": "text", "value": "2 minutes ago", "font_size": 10, "color": "#FFBDBDBD" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

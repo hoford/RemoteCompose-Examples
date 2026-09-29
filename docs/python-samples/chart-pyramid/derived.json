@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-pyramid",
+  "sha256": "3c4f43dbd5b0fb751191777e578b7ebef6ce72a40c36d6d81ce9d3cb0271247e",
+  "bytes": 1767,
+  "ops": 75,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 23,
+    "DATA_TEXT": 13,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_LINE": 2,
+    "DRAW_RECT": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

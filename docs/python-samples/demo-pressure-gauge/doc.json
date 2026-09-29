@@ -1,0 +1,104 @@
+{
+  "_comment": "Port of PressureGauge.kt — animated circular gauge with tick marks, needle, and text",
+  "header": { "width": 500, "height": 500, "description": "PressureGauge" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF4A6DA7" },
+          "children": [
+            { "type": "float_expression", "label": "w", "expr": ["COMPONENT_WIDTH"] },
+            { "type": "float_expression", "label": "h", "expr": ["COMPONENT_HEIGHT"] },
+            { "type": "float_expression", "label": "cx", "expr": ["$w", 2, "DIV"] },
+            { "type": "float_expression", "label": "cy", "expr": ["$h", 2, "DIV"] },
+            { "type": "float_expression", "label": "radius", "expr": ["$w", "$h", "MIN", 2, "DIV"] },
+
+            { "_comment": "pressure = sin(t)*50 + 750",
+              "type": "float_expression", "label": "pressure",
+              "expr": ["CONTINUOUS_SEC", "SIN", 50, "MUL", 750, "ADD"] },
+
+            { "type": "float_expression", "label": "dialY",
+              "expr": ["$cy", "$radius", 0.1, "MUL", "ADD"] },
+            { "type": "float_expression", "label": "dialRadius",
+              "expr": ["$radius", 0.8, "MUL"] },
+            { "type": "float_expression", "label": "tickLength",
+              "expr": ["$radius", 0.2, "MUL"] },
+
+            { "_comment": "Title text",
+              "type": "paint", "color": "#FF6A8DC7", "text_size": 24.0 },
+            { "type": "draw_text_anchored", "text": "PRESSURE", "x": 50, "y": 40, "pan_x": -1, "pan_y": 1 },
+
+            { "_comment": "Tick marks",
+              "type": "paint", "color": "#FF6A8DC7", "stroke_width": 6.0, "style": "stroke" },
+            { "type": "save" },
+            { "type": "rotate", "angle": -135, "cx": "$cx", "cy": "$dialY" },
+            {
+              "type": "loop",
+              "from": 0, "step": 5, "until": 265,
+              "label": "tick_angle",
+              "children": [
+                { "type": "rotate", "angle": 5, "cx": "$cx", "cy": "$dialY" },
+                {
+                  "type": "float_expression", "label": "tick_start",
+                  "expr": ["$dialY", "$dialRadius", "SUB", "$tickLength", "ADD"]
+                },
+                {
+                  "type": "float_expression", "label": "tick_end",
+                  "expr": ["$dialY", "$dialRadius", "SUB"]
+                },
+                { "type": "draw_line", "x1": "$cx", "y1": "$tick_start", "x2": "$cx", "y2": "$tick_end" }
+              ]
+            },
+            { "type": "restore" },
+
+            { "_comment": "Needle — pressure angle = (pressure-700)/(800-700)*270 - 135",
+              "type": "float_expression", "label": "pressureAngle",
+              "expr": ["$pressure", 700, "SUB", 100, "DIV", 270, "MUL", 135, "SUB"] },
+
+            { "type": "paint", "color": "#FFFFFFFF", "stroke_width": 8.0, "style": "stroke" },
+            { "type": "save" },
+            { "type": "rotate", "angle": "$pressureAngle", "cx": "$cx", "cy": "$dialY" },
+            {
+              "type": "float_expression", "label": "needle_start",
+              "expr": ["$dialY", "$dialRadius", "SUB", "$tickLength", "ADD"]
+            },
+            {
+              "type": "float_expression", "label": "needle_end",
+              "expr": ["$dialY", "$dialRadius", "SUB"]
+            },
+            { "type": "draw_line", "x1": "$cx", "y1": "$needle_start", "x2": "$cx", "y2": "$needle_end" },
+            { "type": "restore" },
+
+            { "_comment": "Pressure value text",
+              "type": "paint", "color": "#FFFFFFFF", "text_size": 64.0, "style": "fill", "stroke_width": 0 },
+            {
+              "type": "text_from_float",
+              "label": "pressure_text",
+              "value": "$pressure",
+              "before": 3,
+              "after": 0,
+              "flags": 1
+            },
+            { "type": "draw_text_anchored", "text_id": "$pressure_text", "x": "$cx", "y": "$dialY", "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Unit label",
+              "type": "paint", "text_size": 32.0 },
+            { "type": "draw_text_anchored", "text": "mmHg", "x": "$cx", "y": "$dialY", "pan_x": 0, "pan_y": 4 },
+
+            { "_comment": "Low/High labels",
+              "type": "float_expression", "label": "lowX",
+              "expr": ["$cx", "$dialRadius", 0.6, "MUL", "SUB"] },
+            { "type": "float_expression", "label": "highX",
+              "expr": ["$cx", "$dialRadius", 0.6, "MUL", "ADD"] },
+            { "type": "float_expression", "label": "labelY",
+              "expr": ["$dialY", "$dialRadius", 0.9, "MUL", "ADD"] },
+            { "type": "draw_text_anchored", "text": "Low", "x": "$lowX", "y": "$labelY", "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "High", "x": "$highX", "y": "$labelY", "pan_x": 0, "pan_y": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

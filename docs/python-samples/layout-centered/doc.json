@@ -1,0 +1,46 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Centered with Borders" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFF3E5F5" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": [280, 180],
+                "background": "#FFFFFFFF",
+                "border": { "width": 3, "corner": 16, "color": "#FF7B1FA2", "shape": 0 },
+                "padding": 24
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "modifier": { "fill_max_size": true },
+                  "children": [
+                    { "type": "text", "value": "Centered", "font_size": 30, "color": "#FF4A148C" },
+                    { "type": "text", "value": "with decorative border", "font_size": 16, "color": "#FF9C27B0" },
+                    {
+                      "type": "box",
+                      "modifier": {
+                        "size": [120, 4],
+                        "background": "#FFE1BEE7"
+                      },
+                      "children": []
+                    },
+                    { "type": "text", "value": "RemoteCompose", "font_size": 14, "color": "#FFBA68C8" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

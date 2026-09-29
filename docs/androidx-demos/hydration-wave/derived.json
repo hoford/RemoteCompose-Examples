@@ -1,0 +1,46 @@
+{
+  "id": "androidx-demos/hydration-wave",
+  "sha256": "92b726aa9b8e1ee148db6d0f41a403113bc88d9548eae565b09e2c14b50d5468",
+  "bytes": 1796,
+  "ops": 67,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 450,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 30,
+    "PAINT_VALUES": 8,
+    "DRAW_ROUND_RECT": 1,
+    "PATH_CREATE": 1,
+    "CONTAINER_END": 5,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "DRAW_PATH": 1,
+    "MATRIX_RESTORE": 1,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DATA_TEXT": 5
+  },
+  "apis": [
+    "clip",
+    "drawPath",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

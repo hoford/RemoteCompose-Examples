@@ -1,0 +1,37 @@
+{
+  "id": "androidx-demos/flow-control-checks-flow-control-checks2",
+  "sha256": "9433e632b1589587b4e6d654eafff2ebad17ffc2e0c0616bbf35c32574588de1",
+  "bytes": 330,
+  "ops": 27,
+  "distinctOps": 13,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 3,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "DRAW_ROUND_RECT": 1,
+    "DEBUG_MESSAGE": 2,
+    "ANIMATED_FLOAT": 2,
+    "CONTAINER_END": 8
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

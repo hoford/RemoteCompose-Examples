@@ -1,0 +1,39 @@
+{
+  "id": "androidx-demos/stock-sparkline",
+  "sha256": "a2ba819f18111129dbc8d5258eaf6f2594c306be525613562b280bfc3a5e7f87",
+  "bytes": 1656,
+  "ops": 55,
+  "distinctOps": 14,
+  "width": 500,
+  "height": 350,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 24,
+    "PAINT_VALUES": 7,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DATA_TEXT": 3,
+    "PATH_CREATE": 1,
+    "CONTAINER_END": 5,
+    "DRAW_PATH": 2
+  },
+  "apis": [
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

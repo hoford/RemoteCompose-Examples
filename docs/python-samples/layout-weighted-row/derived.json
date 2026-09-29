@@ -1,0 +1,29 @@
+{
+  "id": "python-samples/layout-weighted-row",
+  "sha256": "71bb40909014dad19d044a7e275e698d38d5131931820d44a0d588ad7aaad2a6",
+  "bytes": 586,
+  "ops": 39,
+  "distinctOps": 10,
+  "width": 600,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_ROW": 1,
+    "MODIFIER_WIDTH": 4,
+    "MODIFIER_HEIGHT": 4,
+    "MODIFIER_PADDING": 4,
+    "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_COLUMN": 3,
+    "DATA_TEXT": 2,
+    "CONTAINER_END": 15
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

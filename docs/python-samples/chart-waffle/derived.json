@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-waffle",
+  "sha256": "42a164ea8c812018c3267cf1b42928713f4002ca17c9527c8a7d34b961dc5cf8",
+  "bytes": 2262,
+  "ops": 124,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 7,
+    "DATA_TEXT": 3,
+    "DRAW_TEXT_ANCHOR": 3,
+    "DRAW_RECT": 102,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

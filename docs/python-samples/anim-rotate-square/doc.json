@@ -1,0 +1,165 @@
+{
+  "_comment": "Square rotating around canvas center at constant speed",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimRotateSquare"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "_comment": "Dark background",
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Subtle grid lines for depth",
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#20FFFFFF",
+                    "stroke_width": 1.0
+                  },
+                  "x1": "$cx",
+                  "y1": 0,
+                  "x2": "$cx",
+                  "y2": "$h"
+                },
+                {
+                  "type": "draw_line",
+                  "paint": {
+                    "color": "#20FFFFFF",
+                    "stroke_width": 1.0
+                  },
+                  "x1": 0,
+                  "y1": "$cy",
+                  "x2": "$w",
+                  "y2": "$cy"
+                },
+                {
+                  "_comment": "Reference circle",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#30FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": 85
+                },
+                {
+                  "_comment": "Rotating square \u2014 60 degrees per second",
+                  "type": "float_expression",
+                  "label": "angle",
+                  "expr": "time.seconds * 60 % 360"
+                },
+                {
+                  "type": "save"
+                },
+                {
+                  "type": "rotate",
+                  "angle": "$angle",
+                  "cx": "$cx",
+                  "cy": "$cy"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FFFF6E40",
+                    "style": "fill"
+                  },
+                  "left": {
+                    "expr": "$cx - 60"
+                  },
+                  "top": {
+                    "expr": "$cy - 60"
+                  },
+                  "right": {
+                    "expr": "$cx + 60"
+                  },
+                  "bottom": {
+                    "expr": "$cy + 60"
+                  }
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 2.0
+                  },
+                  "left": {
+                    "expr": "$cx - 60"
+                  },
+                  "top": {
+                    "expr": "$cy - 60"
+                  },
+                  "right": {
+                    "expr": "$cx + 60"
+                  },
+                  "bottom": {
+                    "expr": "$cy + 60"
+                  }
+                },
+                {
+                  "type": "restore"
+                },
+                {
+                  "_comment": "Center dot",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

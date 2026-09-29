@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-diverging-bar",
+  "sha256": "cc2805b114adce1c96b100a6794b6310f4458bd1e537c189a25fe5262695a002",
+  "bytes": 1457,
+  "ops": 69,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 7,
+    "DATA_TEXT": 19,
+    "DRAW_TEXT_ANCHOR": 21,
+    "DRAW_LINE": 1,
+    "DRAW_ROUND_RECT": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

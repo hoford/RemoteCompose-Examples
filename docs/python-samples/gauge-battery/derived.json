@@ -1,0 +1,39 @@
+{
+  "id": "python-samples/gauge-battery",
+  "sha256": "fae4e94f60ff861a98d45a07fd60ac74798e057020dbdbb572bf94d3bdcafa82",
+  "bytes": 971,
+  "ops": 43,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 4,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 3,
+    "DRAW_TEXT_ANCHOR": 4,
+    "DRAW_ROUND_RECT": 5,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

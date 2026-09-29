@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-stacked-area",
+  "sha256": "b0bcf3bb3f939f5dd11c79bf3455a548b647dbf8cbe8b499f2ce92be41ee7ba6",
+  "bytes": 1786,
+  "ops": 87,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 17,
+    "DRAW_TEXT_ANCHOR": 17,
+    "DRAW_LINE": 4,
+    "DRAW_RECT": 27,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

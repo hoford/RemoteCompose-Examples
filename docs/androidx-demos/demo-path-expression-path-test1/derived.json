@@ -1,0 +1,38 @@
+{
+  "id": "androidx-demos/demo-path-expression-path-test1",
+  "sha256": "4af441af58bfdc31531ce1217464113ff782650507727535e199ed1792b3526f",
+  "bytes": 1344,
+  "ops": 41,
+  "distinctOps": 12,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 10,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 11,
+    "DRAW_CIRCLE": 1,
+    "DRAW_PATH": 7,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

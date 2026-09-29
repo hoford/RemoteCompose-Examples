@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-timeline",
+  "sha256": "7cf4237a9b840c3aa2be7c4127260f9d68d02044c6ad9cd596b9a23caba09874",
+  "bytes": 1905,
+  "ops": 96,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 33,
+    "DATA_TEXT": 17,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 7,
+    "DRAW_CIRCLE": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

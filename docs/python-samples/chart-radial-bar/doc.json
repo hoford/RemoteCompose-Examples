@@ -1,0 +1,54 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Department Scores - Radial bar chart with 5 categories"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF1A1A2E"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Department Scores", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#44FFFFFF", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": -180, "sweep_angle": 180, "use_center": false},
+            {"type": "draw_arc", "left": 80, "top": 90, "right": 320, "bottom": 330, "start_angle": -180, "sweep_angle": 180, "use_center": false},
+            {"type": "draw_arc", "left": 100, "top": 110, "right": 300, "bottom": 310, "start_angle": -180, "sweep_angle": 180, "use_center": false},
+            {"type": "draw_arc", "left": 120, "top": 130, "right": 280, "bottom": 290, "start_angle": -180, "sweep_angle": 180, "use_center": false},
+            {"type": "draw_arc", "left": 140, "top": 150, "right": 260, "bottom": 270, "start_angle": -180, "sweep_angle": 180, "use_center": false},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 60, "top": 70, "right": 340, "bottom": 350, "start_angle": -180, "sweep_angle": 162, "use_center": false},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 80, "top": 90, "right": 320, "bottom": 330, "start_angle": -180, "sweep_angle": 144, "use_center": false},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 100, "top": 110, "right": 300, "bottom": 310, "start_angle": -180, "sweep_angle": 126, "use_center": false},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 120, "top": 130, "right": 280, "bottom": 290, "start_angle": -180, "sweep_angle": 108, "use_center": false},
+
+            {"type": "paint", "color": "#FFAB47BC", "style": "stroke", "stroke_width": 18},
+            {"type": "draw_arc", "left": 140, "top": 150, "right": 260, "bottom": 270, "start_angle": -180, "sweep_angle": 90, "use_center": false},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Sales 90%", "x": 45, "y": 210, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Marketing 80%", "x": 45, "y": 230, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Engineering 70%", "x": 45, "y": 250, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Design 60%", "x": 45, "y": 270, "pan_x": 1, "pan_y": 0},
+            {"type": "paint", "color": "#FFAB47BC", "style": "fill", "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Support 50%", "x": 45, "y": 290, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#88FFFFFF", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Score out of 100", "x": 200, "y": 380, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

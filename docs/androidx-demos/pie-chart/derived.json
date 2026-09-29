@@ -1,0 +1,41 @@
+{
+  "id": "androidx-demos/pie-chart",
+  "sha256": "5cad76efe075608965632a3d7351c1348a4b24e2774ea96723c42436e9f744e9",
+  "bytes": 3936,
+  "ops": 127,
+  "distinctOps": 15,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 25,
+    "ANIMATED_FLOAT": 50,
+    "DRAW_SECTOR": 10,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 10,
+    "DRAW_RECT": 5,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

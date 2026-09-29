@@ -1,0 +1,32 @@
+{
+  "id": "python-samples/chart-sankey-simple",
+  "sha256": "4422151b1d26d6ce47df959242d1d78fd32ef16cee20e38a392ba2da34826359",
+  "bytes": 1132,
+  "ops": 57,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 18,
+    "DATA_TEXT": 8,
+    "DRAW_TEXT_ANCHOR": 8,
+    "DRAW_RECT": 14,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

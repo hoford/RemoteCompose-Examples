@@ -1,0 +1,51 @@
+{
+  "id": "androidx-demos/fancy-clocks-fancy-clock1",
+  "sha256": "bbb0cb071817e2305b7d510e2d2f25f7dd8e51df9fe09708b70fa57a56a74f76",
+  "bytes": 2474,
+  "ops": 122,
+  "distinctOps": 22,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 57,
+    "PATH_CREATE": 1,
+    "CONTAINER_END": 10,
+    "CLIP_PATH": 1,
+    "MATRIX_SAVE": 6,
+    "MATRIX_ROTATE": 7,
+    "COLOR_EXPRESSIONS": 4,
+    "PAINT_VALUES": 8,
+    "DRAW_CIRCLE": 4,
+    "MATRIX_RESTORE": 6,
+    "MATRIX_SCALE": 2,
+    "DRAW_TEXT_ANCHOR": 1,
+    "DRAW_LINE": 3
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

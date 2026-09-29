@@ -1,0 +1,64 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Horizontal bar chart showing top programming languages"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Top Programming Languages", "x": 200, "y": 25, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFB0BEC5", "style": "stroke", "stroke_width": 1, "text_size": 12},
+            {"type": "draw_line", "x1": 130, "y1": 50, "x2": 130, "y2": 370},
+            {"type": "draw_line", "x1": 130, "y1": 370, "x2": 380, "y2": 370},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 192, "y1": 50, "x2": 192, "y2": 370},
+            {"type": "draw_line", "x1": 255, "y1": 50, "x2": 255, "y2": 370},
+            {"type": "draw_line", "x1": 317, "y1": 50, "x2": 317, "y2": 370},
+            {"type": "draw_line", "x1": 380, "y1": 50, "x2": 380, "y2": 370},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 130, "y": 382, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "25", "x": 192, "y": 382, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "50", "x": 255, "y": 382, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "75", "x": 317, "y": 382, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "100", "x": 380, "y": 382, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_text_anchored", "text": "Python", "x": 125, "y": 85, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "JavaScript", "x": 125, "y": 135, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Java", "x": 125, "y": 185, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "C++", "x": 125, "y": 235, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Go", "x": 125, "y": 285, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Rust", "x": 125, "y": 335, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 65, "right": 370, "bottom": 105, "rx": 4, "ry": 4},
+            {"type": "paint", "color": "#FFF9A825", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 115, "right": 345, "bottom": 155, "rx": 4, "ry": 4},
+            {"type": "paint", "color": "#FFE64A19", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 165, "right": 310, "bottom": 205, "rx": 4, "ry": 4},
+            {"type": "paint", "color": "#FF7B1FA2", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 215, "right": 280, "bottom": 255, "rx": 4, "ry": 4},
+            {"type": "paint", "color": "#FF00ACC1", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 265, "right": 240, "bottom": 305, "rx": 4, "ry": 4},
+            {"type": "paint", "color": "#FFD84315", "style": "fill", "stroke_width": 0, "text_size": 12},
+            {"type": "draw_round_rect", "left": 130, "top": 315, "right": 210, "bottom": 355, "rx": 4, "ry": 4},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "96", "x": 365, "y": 85, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "86", "x": 340, "y": 135, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "72", "x": 305, "y": 185, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60", "x": 275, "y": 235, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "44", "x": 235, "y": 285, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "32", "x": 205, "y": 335, "pan_x": 1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

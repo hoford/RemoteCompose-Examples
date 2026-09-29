@@ -1,0 +1,40 @@
+{
+  "id": "androidx-demos/attribute-string",
+  "sha256": "c23283863e905e1723acedc23f5b4ebd4307b431ce58ab229a1b037d26cf8723",
+  "bytes": 2459,
+  "ops": 186,
+  "distinctOps": 16,
+  "width": 500,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 8,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "MODIFIER_PADDING": 1,
+    "LAYOUT_COLUMN": 1,
+    "LAYOUT_ROW": 6,
+    "DATA_TEXT": 18,
+    "LAYOUT_TEXT": 24,
+    "MODIFIER_ALIGN_BY": 24,
+    "CONTAINER_END": 89,
+    "COMPONENT_VALUE": 4,
+    "ANIMATED_FLOAT": 2,
+    "DRAW_LINE": 2
+  },
+  "apis": [
+    "drawLine",
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

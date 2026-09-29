@@ -1,0 +1,76 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Grouped bar chart showing sales by product"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Sales by Product", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 45, "x2": 55, "y2": 330},
+            {"type": "draw_line", "x1": 55, "y1": 330, "x2": 385, "y2": 330},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 273, "x2": 385, "y2": 273},
+            {"type": "draw_line", "x1": 55, "y1": 216, "x2": 385, "y2": 216},
+            {"type": "draw_line", "x1": 55, "y1": 159, "x2": 385, "y2": 159},
+            {"type": "draw_line", "x1": 55, "y1": 102, "x2": 385, "y2": 102},
+            {"type": "draw_line", "x1": 55, "y1": 45, "x2": 385, "y2": 45},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 50, "y": 330, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20", "x": 50, "y": 273, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40", "x": 50, "y": 216, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60", "x": 50, "y": 159, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "80", "x": 50, "y": 102, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100", "x": 50, "y": 45, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Electronics", "x": 117, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Clothing", "x": 199, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Food", "x": 281, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Books", "x": 363, "y": 345, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 72, "top": 102, "right": 97, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 154, "top": 159, "right": 179, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 236, "top": 188, "right": 261, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 318, "top": 216, "right": 343, "bottom": 330, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 99, "top": 131, "right": 124, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 181, "top": 102, "right": 206, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 263, "top": 216, "right": 288, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 345, "top": 159, "right": 370, "bottom": 330, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FFEF6C00", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 126, "top": 188, "right": 151, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 208, "top": 245, "right": 233, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 290, "top": 131, "right": 315, "bottom": 330, "rx": 2, "ry": 2},
+            {"type": "draw_round_rect", "left": 372, "top": 273, "right": 397, "bottom": 330, "rx": 2, "ry": 2},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 80, "top": 370, "right": 95, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Online", "x": 100, "y": 375, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 160, "top": 370, "right": 175, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "In-Store", "x": 180, "y": 375, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFEF6C00", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 255, "top": 370, "right": 270, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Wholesale", "x": 275, "y": 375, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

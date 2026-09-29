@@ -1,0 +1,247 @@
+{
+  "_comment": "2x2 dashboard grid with four mini-gauge panels: speed, temp, fuel, battery",
+  "header": { "width": 600, "height": 400, "description": "WidgetDashboard" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FF1A1A2E", "padding": 8 },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "start",
+              "v_align": "top",
+              "modifier": { "fill_max_size": true },
+              "children": [
+                {
+                  "_comment": "Left column: speed + fuel",
+                  "type": "column",
+                  "h_align": "center",
+                  "v_align": "top",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "padding": 4 },
+                  "children": [
+                    {
+                      "_comment": "Speed gauge panel",
+                      "type": "box",
+                      "modifier": {
+                        "vertical_weight": 1.0,
+                        "fill_max_width": true,
+                        "background": "#FF162447",
+                        "border": { "width": 1, "corner": 12, "color": "#FF3F51B5", "shape": 0 },
+                        "clip": { "radii": [12, 12, 12, 12] },
+                        "padding": 8
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "v_align": "top",
+                          "modifier": { "fill_max_size": true },
+                          "children": [
+                            { "type": "text", "value": "SPEED", "font_size": 11, "color": "#FF7986CB" },
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                              "children": [
+                                { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                                { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                                { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                                { "type": "float_expression", "label": "cy", "expr": "$h / 2 + 10" },
+                                { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 8" },
+                                { "type": "float_expression", "label": "speed", "expr": "sin(time.seconds * 0.5) * 40 + 60" },
+                                { "type": "float_expression", "label": "sweep", "expr": "$speed / 120 * 240" },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF263238", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": 240, "use_center": false },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF448AFF", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": "$sweep", "use_center": false },
+                                { "type": "text_from_float", "label": "spd_txt", "value": "$speed", "before": 3, "after": 0, "flags": 1 },
+                                { "type": "paint", "color": "#FFFFFFFF", "text_size": 22.0, "style": "fill" },
+                                { "type": "draw_text_anchored", "text_id": "$spd_txt", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 0 },
+                                { "type": "paint", "color": "#FF7986CB", "text_size": 10.0 },
+                                { "type": "draw_text_anchored", "text": "km/h", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 3 }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_comment": "Fuel gauge panel",
+                      "type": "box",
+                      "modifier": {
+                        "vertical_weight": 1.0,
+                        "fill_max_width": true,
+                        "background": "#FF1B2A1B",
+                        "border": { "width": 1, "corner": 12, "color": "#FF4CAF50", "shape": 0 },
+                        "clip": { "radii": [12, 12, 12, 12] },
+                        "padding": 8
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "v_align": "top",
+                          "modifier": { "fill_max_size": true },
+                          "children": [
+                            { "type": "text", "value": "FUEL", "font_size": 11, "color": "#FF81C784" },
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                              "children": [
+                                { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                                { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                                { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                                { "type": "float_expression", "label": "cy", "expr": "$h / 2 + 10" },
+                                { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 8" },
+                                { "type": "float_expression", "label": "fuel", "expr": "sin(time.seconds * 0.2) * 15 + 65" },
+                                { "type": "float_expression", "label": "sweep", "expr": "$fuel / 100 * 240" },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF263238", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": 240, "use_center": false },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF66BB6A", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": "$sweep", "use_center": false },
+                                { "type": "text_from_float", "label": "fuel_txt", "value": "$fuel", "before": 2, "after": 0, "flags": 1 },
+                                { "type": "paint", "color": "#FFFFFFFF", "text_size": 22.0, "style": "fill" },
+                                { "type": "draw_text_anchored", "text_id": "$fuel_txt", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 0 },
+                                { "type": "paint", "color": "#FF81C784", "text_size": 10.0 },
+                                { "type": "draw_text_anchored", "text": "%", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 3 }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "_comment": "Right column: temp + battery",
+                  "type": "column",
+                  "h_align": "center",
+                  "v_align": "top",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "padding": 4 },
+                  "children": [
+                    {
+                      "_comment": "Temperature gauge panel",
+                      "type": "box",
+                      "modifier": {
+                        "vertical_weight": 1.0,
+                        "fill_max_width": true,
+                        "background": "#FF2A1515",
+                        "border": { "width": 1, "corner": 12, "color": "#FFEF5350", "shape": 0 },
+                        "clip": { "radii": [12, 12, 12, 12] },
+                        "padding": 8
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "v_align": "top",
+                          "modifier": { "fill_max_size": true },
+                          "children": [
+                            { "type": "text", "value": "TEMP", "font_size": 11, "color": "#FFEF9A9A" },
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                              "children": [
+                                { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                                { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                                { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                                { "type": "float_expression", "label": "cy", "expr": "$h / 2 + 10" },
+                                { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 8" },
+                                { "type": "float_expression", "label": "temp", "expr": "sin(time.seconds * 0.3) * 10 + 85" },
+                                { "type": "float_expression", "label": "sweep", "expr": "$temp / 120 * 240" },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF263238", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": 240, "use_center": false },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFEF5350", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": "$sweep", "use_center": false },
+                                { "type": "text_from_float", "label": "temp_txt", "value": "$temp", "before": 2, "after": 0, "flags": 1 },
+                                { "type": "paint", "color": "#FFFFFFFF", "text_size": 22.0, "style": "fill" },
+                                { "type": "draw_text_anchored", "text_id": "$temp_txt", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 0 },
+                                { "type": "paint", "color": "#FFEF9A9A", "text_size": 10.0 },
+                                { "type": "draw_text_anchored", "text": "C", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 3 }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "_comment": "Battery gauge panel",
+                      "type": "box",
+                      "modifier": {
+                        "vertical_weight": 1.0,
+                        "fill_max_width": true,
+                        "background": "#FF1A2030",
+                        "border": { "width": 1, "corner": 12, "color": "#FFFFB74D", "shape": 0 },
+                        "clip": { "radii": [12, 12, 12, 12] },
+                        "padding": 8
+                      },
+                      "children": [
+                        {
+                          "type": "column",
+                          "h_align": "center",
+                          "v_align": "top",
+                          "modifier": { "fill_max_size": true },
+                          "children": [
+                            { "type": "text", "value": "BATTERY", "font_size": 11, "color": "#FFFFCC80" },
+                            {
+                              "type": "canvas",
+                              "modifier": { "fill_max_width": true, "vertical_weight": 1.0 },
+                              "children": [
+                                { "type": "float_expression", "label": "w", "expr": "COMPONENT_WIDTH" },
+                                { "type": "float_expression", "label": "h", "expr": "COMPONENT_HEIGHT" },
+                                { "type": "float_expression", "label": "cx", "expr": "$w / 2" },
+                                { "type": "float_expression", "label": "cy", "expr": "$h / 2 + 10" },
+                                { "type": "float_expression", "label": "r", "expr": "min($w, $h) / 2 - 8" },
+                                { "type": "float_expression", "label": "batt", "expr": "sin(time.seconds * 0.15) * 20 + 72" },
+                                { "type": "float_expression", "label": "sweep", "expr": "$batt / 100 * 240" },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FF263238", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": 240, "use_center": false },
+                                { "type": "draw_arc",
+                                  "paint": { "color": "#FFFFB74D", "style": "stroke", "stroke_width": 8.0 },
+                                  "left": { "expr": "$cx - $r" }, "top": { "expr": "$cy - $r" },
+                                  "right": { "expr": "$cx + $r" }, "bottom": { "expr": "$cy + $r" },
+                                  "start_angle": 150, "sweep_angle": "$sweep", "use_center": false },
+                                { "type": "text_from_float", "label": "batt_txt", "value": "$batt", "before": 2, "after": 0, "flags": 1 },
+                                { "type": "paint", "color": "#FFFFFFFF", "text_size": 22.0, "style": "fill" },
+                                { "type": "draw_text_anchored", "text_id": "$batt_txt", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 0 },
+                                { "type": "paint", "color": "#FFFFCC80", "text_size": 10.0 },
+                                { "type": "draw_text_anchored", "text": "%", "x": "$cx", "y": "$cy", "pan_x": 0, "pan_y": 3 }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

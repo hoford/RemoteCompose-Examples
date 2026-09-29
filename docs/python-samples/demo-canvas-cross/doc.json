@@ -1,0 +1,26 @@
+{
+  "_comment": "Port of RcCanvasComponents1 — canvas with X cross and centered text box",
+  "header": { "width": 600, "height": 600, "description": "CanvasCross" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "background": "#FFFFFF00", "padding": 16 },
+          "children": [
+            {
+              "type": "canvas",
+              "modifier": { "fill_max_size": true, "background": "#FF0000FF" },
+              "children": [
+                { "type": "paint", "color": "#FFFF0000", "stroke_width": 4.0, "style": "stroke" },
+                { "type": "draw_line", "x1": 0, "y1": 0, "x2": 600, "y2": 600 },
+                { "type": "draw_line", "x1": 0, "y1": 600, "x2": 600, "y2": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

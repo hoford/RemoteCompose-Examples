@@ -1,0 +1,30 @@
+{
+  "id": "python-samples/layout-deep-nesting",
+  "sha256": "f16558651c0a738b70dde508567ac6be1d477175e097d14a29f3f7bff56d57d8",
+  "bytes": 1175,
+  "ops": 77,
+  "distinctOps": 11,
+  "width": 600,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 3,
+    "MODIFIER_WIDTH": 6,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 10,
+    "MODIFIER_PADDING": 10,
+    "DATA_TEXT": 3,
+    "CONTAINER_END": 35,
+    "LAYOUT_ROW": 3,
+    "LAYOUT_BOX": 4
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

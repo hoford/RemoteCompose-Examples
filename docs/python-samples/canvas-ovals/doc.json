@@ -1,0 +1,34 @@
+{
+  "_comment": "Several overlapping ovals in different colors",
+  "header": { "width": 400, "height": 400, "description": "CanvasOvals" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFF5F5F5" },
+          "children": [
+            { "type": "paint", "color": "#88E53935", "style": "fill" },
+            { "type": "draw_oval", "left": 30, "top": 80, "right": 220, "bottom": 200 },
+
+            { "type": "paint", "color": "#881E88E5", "style": "fill" },
+            { "type": "draw_oval", "left": 100, "top": 50, "right": 300, "bottom": 180 },
+
+            { "type": "paint", "color": "#8843A047", "style": "fill" },
+            { "type": "draw_oval", "left": 60, "top": 140, "right": 260, "bottom": 280 },
+
+            { "type": "paint", "color": "#88F9A825", "style": "fill" },
+            { "type": "draw_oval", "left": 150, "top": 120, "right": 370, "bottom": 260 },
+
+            { "type": "paint", "color": "#888E24AA", "style": "fill" },
+            { "type": "draw_oval", "left": 80, "top": 220, "right": 320, "bottom": 370 },
+
+            { "type": "paint", "color": "#88FF6F00", "style": "fill" },
+            { "type": "draw_oval", "left": 180, "top": 250, "right": 380, "bottom": 380 }
+          ]
+        }
+      ]
+    }
+  ]
+}

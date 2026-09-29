@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/thumb-wheel1",
+  "sha256": "394751c29f8c51e33cf9e196ea5b31c9d8683b8c538b6f23599224fd004df4c8",
+  "bytes": 749,
+  "ops": 37,
+  "distinctOps": 18,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 8,
+    "PAINT_VALUES": 3,
+    "DRAW_TEXT_ANCHOR": 2,
+    "MATRIX_SAVE": 1,
+    "MATRIX_SCALE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 7,
+    "DRAW_ROUND_RECT": 1
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

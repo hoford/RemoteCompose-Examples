@@ -1,0 +1,45 @@
+{
+  "id": "androidx-demos/sensor-demo-compass",
+  "sha256": "d2d7a7c47fdab62aa433354066c1ab022e5720d48c6290f9ae760a61b7fd583f",
+  "bytes": 432,
+  "ops": 31,
+  "distinctOps": 18,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 4,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 3,
+    "DRAW_CIRCLE": 1,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DRAW_LINE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 6,
+    "DRAW_TEXT_ANCHOR": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

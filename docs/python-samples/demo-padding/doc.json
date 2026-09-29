@@ -1,0 +1,25 @@
+{
+  "_comment": "Port of DemoModifierPadding.kt — uniform and per-side padding",
+  "header": { "width": 400, "height": 400, "description": "DemoModifierPadding" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "background": "#FFFFFFFF" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": { "padding": 20, "size": 100, "background": "#FFFF0000" }
+            },
+            {
+              "type": "box",
+              "modifier": { "padding": [40, 5, 0, 10], "size": 100, "background": "#FF0000FF" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

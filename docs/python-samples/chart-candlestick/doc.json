@@ -1,0 +1,103 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Candlestick chart showing 10 days of stock price data"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FF1A1A2E"},
+          "children": [
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Stock Price", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#33FFFFFF", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 55, "y1": 50, "x2": 55, "y2": 340},
+            {"type": "draw_line", "x1": 55, "y1": 340, "x2": 385, "y2": 340},
+            {"type": "draw_line", "x1": 55, "y1": 108, "x2": 385, "y2": 108},
+            {"type": "draw_line", "x1": 55, "y1": 166, "x2": 385, "y2": 166},
+            {"type": "draw_line", "x1": 55, "y1": 224, "x2": 385, "y2": 224},
+            {"type": "draw_line", "x1": 55, "y1": 282, "x2": 385, "y2": 282},
+
+            {"type": "paint", "color": "#99FFFFFF", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "180", "x": 50, "y": 50, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "170", "x": 50, "y": 108, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "160", "x": 50, "y": 166, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "150", "x": 50, "y": 224, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "140", "x": 50, "y": 282, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "130", "x": 50, "y": 340, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 82, "y1": 282, "x2": 82, "y2": 195},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 72, "top": 253, "right": 92, "bottom": 224},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 115, "y1": 253, "x2": 115, "y2": 185},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 105, "top": 205, "right": 125, "bottom": 237},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 148, "y1": 270, "x2": 148, "y2": 200},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 138, "top": 224, "right": 158, "bottom": 253},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 181, "y1": 282, "x2": 181, "y2": 185},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 171, "top": 253, "right": 191, "bottom": 205},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 214, "y1": 224, "x2": 214, "y2": 130},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 204, "top": 195, "right": 224, "bottom": 150},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 247, "y1": 195, "x2": 247, "y2": 108},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 237, "top": 130, "right": 257, "bottom": 175},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 280, "y1": 195, "x2": 280, "y2": 95},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 270, "top": 166, "right": 290, "bottom": 120},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 313, "y1": 166, "x2": 313, "y2": 80},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 303, "top": 108, "right": 323, "bottom": 150},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 346, "y1": 166, "x2": 346, "y2": 70},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 336, "top": 140, "right": 356, "bottom": 95},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 1, "text_size": 0},
+            {"type": "draw_line", "x1": 370, "y1": 150, "x2": 370, "y2": 75},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 0},
+            {"type": "draw_rect", "left": 362, "top": 95, "right": 380, "bottom": 130},
+
+            {"type": "paint", "color": "#99FFFFFF", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Mar1", "x": 82, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar2", "x": 115, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar3", "x": 148, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar4", "x": 181, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar5", "x": 214, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar6", "x": 247, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar7", "x": 280, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar8", "x": 313, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar9", "x": 346, "y": 355, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar10", "x": 370, "y": 355, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 100, "top": 378, "right": 112, "bottom": 388},
+            {"type": "draw_text_anchored", "text": "Up", "x": 117, "y": 383, "pan_x": -1, "pan_y": 0},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 160, "top": 378, "right": 172, "bottom": 388},
+            {"type": "draw_text_anchored", "text": "Down", "x": 177, "y": 383, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_comment": "Viewport test: shapes drawn in 1000x1000 virtual space, rendered at any size",
+  "header": { "width": 400, "height": 400, "description": "ViewportBasic" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF263238" },
+          "children": [
+            {
+              "type": "viewport",
+              "vw": 1000,
+              "vh": 1000,
+              "children": [
+                { "type": "paint", "color": "#FF42A5F5", "style": "fill" },
+                { "type": "draw_rect", "left": 50, "top": 50, "right": 950, "bottom": 950 },
+
+                { "type": "paint", "color": "#FF263238", "style": "fill" },
+                { "type": "draw_rect", "left": 100, "top": 100, "right": 900, "bottom": 900 },
+
+                { "type": "paint", "color": "#FFFF8A65", "style": "fill" },
+                { "type": "draw_circle", "cx": 500, "cy": 500, "radius": 300 },
+
+                { "type": "paint", "color": "#FF66BB6A", "style": "stroke", "screen_stroke_width": 3.0 },
+                { "type": "draw_circle", "cx": 500, "cy": 500, "radius": 350 },
+
+                { "type": "paint", "color": "#FFFFFFFF", "screen_text_size": 18.0, "style": "fill" },
+                { "type": "draw_text_anchored", "text": "1000x1000 virtual", "x": 500, "y": 500, "pan_x": 0, "pan_y": 0 },
+
+                { "type": "paint", "color": "#80FFFFFF", "screen_text_size": 12.0, "style": "fill" },
+                { "type": "draw_text_anchored", "text": "screen_text_size stays constant", "x": 500, "y": 560, "pan_x": 0, "pan_y": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "python-samples/canvas-gauge",
+  "sha256": "2a926543eebf9e4c0f1f7954dea8fa8cca62e6eec584c1aa77cc59ff85394787",
+  "bytes": 1280,
+  "ops": 69,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "ANIMATED_FLOAT": 10,
+    "PAINT_VALUES": 13,
+    "DATA_TEXT": 8,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_ARC": 4,
+    "MATRIX_SAVE": 3,
+    "MATRIX_ROTATE": 4,
+    "DRAW_LINE": 3,
+    "CONTAINER_END": 4,
+    "MATRIX_RESTORE": 3,
+    "DRAW_CIRCLE": 2
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

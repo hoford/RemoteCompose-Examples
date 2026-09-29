@@ -1,0 +1,20 @@
+{
+  "_comment": "Port of DemoColumn.kt — vertical stacking of colored boxes",
+  "header": { "width": 400, "height": 400, "description": "DemoColumn" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_height": true, "background": "#FFCCCCCC" },
+          "children": [
+            { "type": "box", "modifier": { "size": 50, "background": "#FFFF0000" } },
+            { "type": "box", "modifier": { "size": 50, "background": "#FF00FF00" } },
+            { "type": "box", "modifier": { "size": 50, "background": "#FF0000FF" } }
+          ]
+        }
+      ]
+    }
+  ]
+}

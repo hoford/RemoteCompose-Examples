@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/moon-phase-dial",
+  "sha256": "8e9253858078af7e0d2b39c15a444db9c37087685cf860e5f79e7d81a8dc318d",
+  "bytes": 1875,
+  "ops": 87,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "COMPONENT_VALUE": 2,
+    "DATA_TEXT": 10,
+    "ANIMATED_FLOAT": 38,
+    "PAINT_VALUES": 8,
+    "DRAW_CIRCLE": 7,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "TEXT_LOOKUP": 1,
+    "DRAW_TEXT_ANCHOR": 8,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "python-samples/chart-dumbbell",
+  "sha256": "3e3f60047d5b13727646c6afd2c40c9b52539c87d1b89b3c53672b85514c686a",
+  "bytes": 1392,
+  "ops": 70,
+  "distinctOps": 12,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 9,
+    "DATA_TEXT": 14,
+    "DRAW_TEXT_ANCHOR": 14,
+    "DRAW_CIRCLE": 14,
+    "DRAW_LINE": 10,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

@@ -1,0 +1,56 @@
+{
+  "header": { "width": 400, "height": 600, "description": "Text List" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "fill_max_size": true, "background": "#FFFAFAFA" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFFFFFFF" },
+              "children": [{ "type": "text", "value": "1. Set up your environment", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFF5F5F5" },
+              "children": [{ "type": "text", "value": "2. Create a new project", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFFFFFFF" },
+              "children": [{ "type": "text", "value": "3. Add dependencies", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFF5F5F5" },
+              "children": [{ "type": "text", "value": "4. Define your layout tree", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFFFFFFF" },
+              "children": [{ "type": "text", "value": "5. Serialize to binary format", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFF5F5F5" },
+              "children": [{ "type": "text", "value": "6. Send to remote player", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFFFFFFF" },
+              "children": [{ "type": "text", "value": "7. Handle user interactions", "font_size": 16.0, "color": "#FF212121" }]
+            },
+            {
+              "type": "box",
+              "modifier": { "fill_max_width": true, "padding": 14, "background": "#FFF5F5F5" },
+              "children": [{ "type": "text", "value": "8. Deploy and iterate", "font_size": 16.0, "color": "#FF212121" }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

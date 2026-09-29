@@ -1,0 +1,74 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Thick Donut Chart - Energy Sources"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Energy Sources", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 0, "sweep_angle": 108, "use_center": false},
+
+            {"type": "paint", "color": "#FF43A047", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 110, "sweep_angle": 72, "use_center": false},
+
+            {"type": "paint", "color": "#FFFFB300", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 184, "sweep_angle": 54, "use_center": false},
+
+            {"type": "paint", "color": "#FFE53935", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 240, "sweep_angle": 43, "use_center": false},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 285, "sweep_angle": 36, "use_center": false},
+
+            {"type": "paint", "color": "#FF00ACC1", "style": "stroke", "stroke_width": 55, "text_size": 10},
+            {"type": "draw_arc", "left": 95, "top": 85, "right": 305, "bottom": 295, "start_angle": 323, "sweep_angle": 35, "use_center": false},
+
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "30%", "x": 330, "y": 155, "pan_x": -1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20%", "x": 115, "y": 290, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "15%", "x": 68, "y": 175, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "12%", "x": 105, "y": 90, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "10%", "x": 240, "y": 68, "pan_x": 0, "pan_y": 1},
+            {"type": "draw_text_anchored", "text": "13%", "x": 330, "y": 260, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 60, "top": 330, "right": 72, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Solar", "x": 76, "y": 336, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 115, "top": 330, "right": 127, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Wind", "x": 131, "y": 336, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFFB300", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 170, "top": 330, "right": 182, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Gas", "x": 186, "y": 336, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 216, "top": 330, "right": 228, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Coal", "x": 232, "y": 336, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 265, "top": 330, "right": 277, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Nuclear", "x": 281, "y": 336, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF00ACC1", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 328, "top": 330, "right": 340, "bottom": 342},
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Hydro", "x": 344, "y": 336, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

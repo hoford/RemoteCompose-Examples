@@ -139,7 +139,7 @@ async function hydrate(i, entry) {
     entry.el.href = `doc.html?id=${encodeURIComponent(r.id)}`;
     entry.el.querySelector('.meta').innerHTML =
         `<div class="t">${esc(r.t)}</div>
-         <div class="sub">${esc(r.s)} · ${r.w}×${r.h} · ${(r.b / 1024).toFixed(1)} KB</div>
+         <div class="sub">${esc(r.s)}${r.w ? ` · ${r.w}×${r.h}` : ''} · ${(r.b / 1024).toFixed(1)} KB</div>
          <div class="chips">${r.f.map((f) => `<span class="chip">${esc(f)}</span>`).join('')}</div>`;
     entry.cancel = preview(r.id, entry.el.querySelector('img'), 320);
 }

@@ -1,0 +1,71 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Bar Chart with Error Bars - Experiment Results"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Experiment Results", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "0", "x": 52, "y": 320, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20", "x": 52, "y": 266, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40", "x": 52, "y": 212, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "60", "x": 52, "y": 158, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "80", "x": 52, "y": 104, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100", "x": 52, "y": 50, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 58, "y1": 320, "x2": 380, "y2": 320},
+            {"type": "draw_line", "x1": 58, "y1": 266, "x2": 380, "y2": 266},
+            {"type": "draw_line", "x1": 58, "y1": 212, "x2": 380, "y2": 212},
+            {"type": "draw_line", "x1": 58, "y1": 158, "x2": 380, "y2": 158},
+            {"type": "draw_line", "x1": 58, "y1": 104, "x2": 380, "y2": 104},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 72, "top": 131, "right": 128, "bottom": 320},
+            {"type": "draw_rect", "left": 138, "top": 185, "right": 194, "bottom": 320},
+            {"type": "draw_rect", "left": 204, "top": 104, "right": 260, "bottom": 320},
+            {"type": "draw_rect", "left": 270, "top": 158, "right": 326, "bottom": 320},
+            {"type": "draw_rect", "left": 336, "top": 212, "right": 380, "bottom": 320},
+
+            {"type": "paint", "color": "#FF212121", "style": "stroke", "stroke_width": 2, "text_size": 10},
+            {"type": "draw_line", "x1": 100, "y1": 109, "x2": 100, "y2": 153},
+            {"type": "draw_line", "x1": 92, "y1": 109, "x2": 108, "y2": 109},
+            {"type": "draw_line", "x1": 92, "y1": 153, "x2": 108, "y2": 153},
+
+            {"type": "draw_line", "x1": 166, "y1": 163, "x2": 166, "y2": 207},
+            {"type": "draw_line", "x1": 158, "y1": 163, "x2": 174, "y2": 163},
+            {"type": "draw_line", "x1": 158, "y1": 207, "x2": 174, "y2": 207},
+
+            {"type": "draw_line", "x1": 232, "y1": 77, "x2": 232, "y2": 131},
+            {"type": "draw_line", "x1": 224, "y1": 77, "x2": 240, "y2": 77},
+            {"type": "draw_line", "x1": 224, "y1": 131, "x2": 240, "y2": 131},
+
+            {"type": "draw_line", "x1": 298, "y1": 131, "x2": 298, "y2": 185},
+            {"type": "draw_line", "x1": 290, "y1": 131, "x2": 306, "y2": 131},
+            {"type": "draw_line", "x1": 290, "y1": 185, "x2": 306, "y2": 185},
+
+            {"type": "draw_line", "x1": 358, "y1": 190, "x2": 358, "y2": 234},
+            {"type": "draw_line", "x1": 350, "y1": 190, "x2": 366, "y2": 190},
+            {"type": "draw_line", "x1": 350, "y1": 234, "x2": 366, "y2": 234},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Trial A", "x": 100, "y": 335, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Trial B", "x": 166, "y": 335, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Trial C", "x": 232, "y": 335, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Trial D", "x": 298, "y": 335, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Trial E", "x": 358, "y": 335, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Mean Value", "x": 200, "y": 365, "pan_x": 0, "pan_y": -1}
+          ]
+        }
+      ]
+    }
+  ]
+}

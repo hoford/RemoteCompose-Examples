@@ -1,0 +1,299 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Horizontal Level Indicator"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF1A2030"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "offset",
+              "expr": "sin(time.seconds) * 80"
+            },
+            {
+              "type": "float_expression",
+              "label": "bubbleX",
+              "expr": "200 + sin(time.seconds) * 80"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "SPIRIT LEVEL",
+              "x": 200,
+              "y": 60,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#6600E676",
+                "text_size": 16
+              },
+              "_comment": "Title"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 30,
+              "top": 155,
+              "right": 370,
+              "bottom": 245,
+              "rx": 45,
+              "ry": 45,
+              "paint": {
+                "color": "#FF253040",
+                "style": "fill"
+              },
+              "_comment": "Outer housing"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 30,
+              "top": 155,
+              "right": 370,
+              "bottom": 245,
+              "rx": 45,
+              "ry": 45,
+              "paint": {
+                "color": "#FF3A5060",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 55,
+              "top": 170,
+              "right": 345,
+              "bottom": 230,
+              "rx": 30,
+              "ry": 30,
+              "paint": {
+                "color": "#FF00C853",
+                "style": "fill"
+              },
+              "_comment": "Glass tube"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 55,
+              "top": 170,
+              "right": 345,
+              "bottom": 230,
+              "rx": 30,
+              "ry": 30,
+              "paint": {
+                "color": "#2200E676",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "loop",
+              "from": -4,
+              "step": 1,
+              "until": 5,
+              "label": "mark",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "markX",
+                  "expr": "200 + $mark * 20"
+                },
+                {
+                  "type": "draw_line",
+                  "x1": "$markX",
+                  "y1": 230,
+                  "x2": "$markX",
+                  "y2": 246,
+                  "paint": {
+                    "color": "#88FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1
+                  }
+                }
+              ],
+              "_comment": "Scale marks"
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 230,
+              "x2": 200,
+              "y2": 250,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 2.5
+              },
+              "_comment": "Center reference mark (larger)"
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 150,
+              "x2": 200,
+              "y2": 170,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 2.5
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": "$bubbleX",
+              "cy": 200,
+              "radius": 22,
+              "paint": {
+                "color": "#CC88FFB0",
+                "style": "fill"
+              },
+              "_comment": "Animated bubble"
+            },
+            {
+              "type": "draw_circle",
+              "cx": "$bubbleX",
+              "cy": 200,
+              "radius": 22,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "style": "stroke",
+                "stroke_width": 2
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "highlightX",
+              "expr": "200 + sin(time.seconds) * 80 - 6",
+              "_comment": "Bubble highlight"
+            },
+            {
+              "type": "draw_circle",
+              "cx": "$highlightX",
+              "cy": 193,
+              "radius": 6,
+              "paint": {
+                "color": "#44FFFFFF",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "offsetText",
+              "value": "$offset",
+              "before": 2,
+              "after": 1,
+              "flags": 1,
+              "_comment": "Offset value display"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 155,
+              "top": 280,
+              "right": 245,
+              "bottom": 315,
+              "rx": 8,
+              "ry": 8,
+              "paint": {
+                "color": "#FF253040",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$offsetText",
+              "x": 200,
+              "y": 297,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 22
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "L",
+              "x": 55,
+              "y": 260,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#663A5060",
+                "text_size": 18
+              },
+              "_comment": "Left and Right labels"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "R",
+              "x": 345,
+              "y": 260,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#663A5060",
+                "text_size": 18
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 355,
+              "radius": 25,
+              "paint": {
+                "color": "#FF253040",
+                "style": "fill"
+              },
+              "_comment": "Circular level indicator below"
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 355,
+              "radius": 25,
+              "paint": {
+                "color": "#FF3A5060",
+                "style": "stroke",
+                "stroke_width": 1.5
+              }
+            },
+            {
+              "type": "draw_circle",
+              "cx": 200,
+              "cy": 355,
+              "radius": 12,
+              "paint": {
+                "color": "#333A5060",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "dotX",
+              "expr": "200 + sin(time.seconds) * 10"
+            },
+            {
+              "type": "draw_circle",
+              "cx": "$dotX",
+              "cy": 355,
+              "radius": 6,
+              "paint": {
+                "color": "#FF00E676",
+                "style": "fill"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

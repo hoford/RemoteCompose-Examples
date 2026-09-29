@@ -1,0 +1,209 @@
+{
+  "_comment": "Small circle orbiting around center using sin/cos",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimOrbit"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Orbit radius",
+                  "type": "float_expression",
+                  "label": "orbit_r",
+                  "expr": "min($w, $h) / 2 - 60"
+                },
+                {
+                  "_comment": "Orbit path ring",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#30FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$orbit_r"
+                },
+                {
+                  "_comment": "Inner orbit ring",
+                  "type": "float_expression",
+                  "label": "orbit_r2",
+                  "expr": "$orbit_r * 0.5"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#20FFFFFF",
+                    "style": "stroke",
+                    "stroke_width": 1.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$orbit_r2"
+                },
+                {
+                  "_comment": "Central body \u2014 sun-like",
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#40FFD740",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": 30
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFFFD740",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": 20
+                },
+                {
+                  "_comment": "Outer orbiting body \u2014 planet 1",
+                  "type": "float_expression",
+                  "label": "t1",
+                  "expr": "time.seconds * 1.5"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "p1x",
+                  "expr": "$cx + cos($t1) * $orbit_r"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "p1y",
+                  "expr": "$cy + sin($t1) * $orbit_r"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF42A5F5",
+                    "style": "fill"
+                  },
+                  "cx": "$p1x",
+                  "cy": "$p1y",
+                  "radius": 14
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#80FFFFFF",
+                    "style": "fill"
+                  },
+                  "cx": {
+                    "expr": "$p1x - 3"
+                  },
+                  "cy": {
+                    "expr": "$p1y - 3"
+                  },
+                  "radius": 4
+                },
+                {
+                  "_comment": "Inner orbiting body \u2014 planet 2, faster and smaller",
+                  "type": "float_expression",
+                  "label": "t2",
+                  "expr": "time.seconds * 3"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "p2x",
+                  "expr": "$cx + cos($t2) * $orbit_r2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "p2y",
+                  "expr": "$cy + sin($t2) * $orbit_r2"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFEF5350",
+                    "style": "fill"
+                  },
+                  "cx": "$p2x",
+                  "cy": "$p2y",
+                  "radius": 9
+                },
+                {
+                  "_comment": "Moon orbiting planet 1",
+                  "type": "float_expression",
+                  "label": "tm",
+                  "expr": "time.seconds * 6"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "mx",
+                  "expr": "$p1x + cos($tm) * 25"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "my",
+                  "expr": "$p1y + sin($tm) * 25"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FFBDBDBD",
+                    "style": "fill"
+                  },
+                  "cx": "$mx",
+                  "cy": "$my",
+                  "radius": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

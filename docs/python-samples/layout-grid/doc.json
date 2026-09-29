@@ -1,0 +1,105 @@
+{
+  "header": { "width": 400, "height": 400, "description": "3x3 Grid" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "h_align": "center",
+          "v_align": "center",
+          "modifier": { "fill_max_size": true, "background": "#FF37474F", "padding": 8 },
+          "children": [
+            {
+              "type": "row",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "vertical_weight": 1.0, "fill_max_width": true },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FFE53935", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "1", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FFD81B60", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "2", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF8E24AA", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "3", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "vertical_weight": 1.0, "fill_max_width": true },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF5E35B1", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "4", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF3949AB", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "5", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF1E88E5", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "6", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "h_align": "center",
+              "v_align": "center",
+              "modifier": { "vertical_weight": 1.0, "fill_max_width": true },
+              "children": [
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF039BE5", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "7", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF00ACC1", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "8", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "modifier": { "horizontal_weight": 1.0, "fill_max_height": true, "background": "#FF00897B", "padding": 4 },
+                  "children": [
+                    { "type": "text", "value": "9", "font_size": 24, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Network Graph - Team Connections"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Team Connections", "x": 200, "y": 22, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1.5, "text_size": 10},
+            {"type": "draw_line", "x1": 200, "y1": 100, "x2": 120, "y2": 170},
+            {"type": "draw_line", "x1": 200, "y1": 100, "x2": 280, "y2": 170},
+            {"type": "draw_line", "x1": 200, "y1": 100, "x2": 200, "y2": 200},
+            {"type": "draw_line", "x1": 120, "y1": 170, "x2": 80, "y2": 260},
+            {"type": "draw_line", "x1": 120, "y1": 170, "x2": 200, "y2": 200},
+            {"type": "draw_line", "x1": 280, "y1": 170, "x2": 330, "y2": 260},
+            {"type": "draw_line", "x1": 280, "y1": 170, "x2": 200, "y2": 200},
+            {"type": "draw_line", "x1": 200, "y1": 200, "x2": 80, "y2": 260},
+            {"type": "draw_line", "x1": 200, "y1": 200, "x2": 330, "y2": 260},
+            {"type": "draw_line", "x1": 200, "y1": 200, "x2": 200, "y2": 310},
+            {"type": "draw_line", "x1": 80, "y1": 260, "x2": 140, "y2": 330},
+            {"type": "draw_line", "x1": 330, "y1": 260, "x2": 270, "y2": 330},
+            {"type": "draw_line", "x1": 200, "y1": 310, "x2": 140, "y2": 330},
+            {"type": "draw_line", "x1": 200, "y1": 310, "x2": 270, "y2": 330},
+
+            {"type": "paint", "color": "#FF1976D2", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 200, "cy": 100, "radius": 22},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 120, "cy": 170, "radius": 18},
+            {"type": "draw_circle", "cx": 280, "cy": 170, "radius": 18},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 200, "cy": 200, "radius": 20},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 80, "cy": 260, "radius": 16},
+            {"type": "draw_circle", "cx": 330, "cy": 260, "radius": 16},
+
+            {"type": "paint", "color": "#FF8E24AA", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 200, "cy": 310, "radius": 15},
+
+            {"type": "paint", "color": "#FF00ACC1", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 140, "cy": 330, "radius": 14},
+            {"type": "draw_circle", "cx": 270, "cy": 330, "radius": 14},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Alice", "x": 200, "y": 100, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Bob", "x": 120, "y": 170, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Carol", "x": 280, "y": 170, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Dave", "x": 200, "y": 200, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Eve", "x": 80, "y": 260, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Frank", "x": 330, "y": 260, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Grace", "x": 200, "y": 310, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFFFFFF", "style": "fill", "stroke_width": 0, "text_size": 8},
+            {"type": "draw_text_anchored", "text": "Hank", "x": 140, "y": 330, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "Iris", "x": 270, "y": 330, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

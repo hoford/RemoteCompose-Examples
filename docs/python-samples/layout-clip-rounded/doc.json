@@ -1,0 +1,37 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Rounded Corner Clip" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFE0E0E0" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": [300, 200],
+                "background": "#FFFF5722",
+                "clip": { "radii": [24, 24, 24, 24] },
+                "padding": 20
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "modifier": { "fill_max_size": true },
+                  "children": [
+                    { "type": "text", "value": "Rounded Box", "font_size": 26, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "24px corners", "font_size": 16, "color": "#80FFFFFF" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

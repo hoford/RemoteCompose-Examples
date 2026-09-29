@@ -1,0 +1,36 @@
+{
+  "id": "python-samples/chart-grouped-bar",
+  "sha256": "9f3585c38e243eb8f4475f7a0041ee5c3671727e53a69fd72cd387cccf56c0eb",
+  "bytes": 1647,
+  "ops": 73,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "PAINT_VALUES": 14,
+    "DATA_TEXT": 14,
+    "DRAW_TEXT_ANCHOR": 14,
+    "DRAW_LINE": 7,
+    "DRAW_ROUND_RECT": 12,
+    "DRAW_RECT": 3,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

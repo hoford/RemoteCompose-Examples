@@ -1,0 +1,83 @@
+{
+  "_comment": "Nested layout demo — column with header text, row of weighted columns with bordered items (inspired by CanvasComponents5)",
+  "header": { "width": 600, "height": 600, "description": "NestedLayout" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "children": [
+            {
+              "type": "text",
+              "value": "Hello World",
+              "font_size": 48.0,
+              "modifier": { "background": "#FF0000FF" },
+              "color": "#FFFFFFFF"
+            },
+            {
+              "type": "row",
+              "children": [
+                {
+                  "type": "column",
+                  "h_align": "center",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "background": "#FFFFFF00",
+                    "padding": 16,
+                    "fill_max_height": true
+                  },
+                  "children": [
+                    { "type": "text", "value": "A1", "font_size": 32.0 },
+                    { "type": "text", "value": "A2", "font_size": 32.0 },
+                    { "type": "text", "value": "A3", "font_size": 32.0 }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "h_align": "center",
+                  "modifier": {
+                    "horizontal_weight": 1.0,
+                    "background": "#FFCCCCCC",
+                    "padding": 16,
+                    "fill_max_height": true
+                  },
+                  "children": [
+                    {
+                      "type": "box",
+                      "h_align": "center",
+                      "v_align": "center",
+                      "modifier": {
+                        "size": [200, 50],
+                        "background": "#FFFF0000",
+                        "border": { "width": 2, "corner": 0, "color": "#FF0000FF", "shape": 0 },
+                        "clip": { "radii": [8, 8, 8, 8] }
+                      },
+                      "children": [
+                        { "type": "text", "value": "B1", "font_size": 32.0 }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "h_align": "center",
+                      "v_align": "center",
+                      "modifier": {
+                        "size": [200, 50],
+                        "background": "#FFFF0000",
+                        "border": { "width": 2, "corner": 0, "color": "#FF0000FF", "shape": 0 },
+                        "clip": { "radii": [8, 8, 8, 8] }
+                      },
+                      "children": [
+                        { "type": "text", "value": "B2", "font_size": 32.0 }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

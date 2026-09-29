@@ -1,0 +1,44 @@
+{
+  "id": "androidx-demos/texture-demo-texture-clock",
+  "sha256": "46858d95afea5944a3fde2cf35bfe7d855b8be49eee7b539a341368df3ab1900",
+  "bytes": 44480,
+  "ops": 60,
+  "distinctOps": 17,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 1,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "ANIMATED_FLOAT": 25,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "COMPONENT_VALUE": 2,
+    "DATA_BITMAP": 4,
+    "PAINT_VALUES": 4,
+    "DRAW_CIRCLE": 2,
+    "MATRIX_SAVE": 3,
+    "MATRIX_ROTATE": 3,
+    "DRAW_ROUND_RECT": 3,
+    "MATRIX_RESTORE": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

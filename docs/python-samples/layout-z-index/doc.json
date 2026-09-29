@@ -1,0 +1,52 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Z-Index Stacking" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FFF5F5F5" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": [200, 200],
+                "background": "#FFE53935",
+                "z_index": 1,
+                "padding": 10
+              },
+              "children": [
+                { "type": "text", "value": "Z=1 (Red)", "font_size": 18, "color": "#FFFFFFFF" }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "size": [200, 200],
+                "background": "#FF1E88E5",
+                "z_index": 3,
+                "padding": 60
+              },
+              "children": [
+                { "type": "text", "value": "Z=3 (Blue, on top)", "font_size": 16, "color": "#FFFFFFFF" }
+              ]
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "size": [200, 200],
+                "background": "#FF43A047",
+                "z_index": 2,
+                "padding": 35
+              },
+              "children": [
+                { "type": "text", "value": "Z=2 (Green)", "font_size": 16, "color": "#FFFFFFFF" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

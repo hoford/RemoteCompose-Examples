@@ -1,0 +1,74 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Rankings 2023 vs 2024 - Slope chart showing rank changes"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFAFAFA"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "text_size": 20},
+            {"type": "draw_text_anchored", "text": "Rankings 2023 vs 2024", "x": 200, "y": 25, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "stroke", "stroke_width": 1},
+            {"type": "draw_line", "x1": 100, "y1": 70, "x2": 100, "y2": 350},
+            {"type": "draw_line", "x1": 300, "y1": 70, "x2": 300, "y2": 350},
+
+            {"type": "paint", "color": "#FF616161", "style": "fill", "text_size": 14},
+            {"type": "draw_text_anchored", "text": "2023", "x": 100, "y": 58, "pan_x": 0, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "2024", "x": 300, "y": 58, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 100, "y1": 150, "x2": 300, "y2": 100},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill"},
+            {"type": "draw_circle", "cx": 100, "cy": 150, "radius": 5},
+            {"type": "draw_circle", "cx": 300, "cy": 100, "radius": 5},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Alpha #3", "x": 85, "y": 150, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "#1 Alpha", "x": 315, "y": 100, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 100, "y1": 100, "x2": 300, "y2": 200},
+            {"type": "paint", "color": "#FFF44336", "style": "fill"},
+            {"type": "draw_circle", "cx": 100, "cy": 100, "radius": 5},
+            {"type": "draw_circle", "cx": 300, "cy": 200, "radius": 5},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Beta #1", "x": 85, "y": 100, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "#3 Beta", "x": 315, "y": 200, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF4CAF50", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 100, "y1": 250, "x2": 300, "y2": 150},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill"},
+            {"type": "draw_circle", "cx": 100, "cy": 250, "radius": 5},
+            {"type": "draw_circle", "cx": 300, "cy": 150, "radius": 5},
+            {"type": "paint", "color": "#FF4CAF50", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Gamma #4", "x": 85, "y": 250, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "#2 Gamma", "x": 315, "y": 150, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 100, "y1": 200, "x2": 300, "y2": 250},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill"},
+            {"type": "draw_circle", "cx": 100, "cy": 200, "radius": 5},
+            {"type": "draw_circle", "cx": 300, "cy": 250, "radius": 5},
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Delta #2", "x": 85, "y": 200, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "#4 Delta", "x": 315, "y": 250, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFF44336", "style": "stroke", "stroke_width": 2},
+            {"type": "draw_line", "x1": 100, "y1": 300, "x2": 300, "y2": 320},
+            {"type": "paint", "color": "#FFF44336", "style": "fill"},
+            {"type": "draw_circle", "cx": 100, "cy": 300, "radius": 5},
+            {"type": "draw_circle", "cx": 300, "cy": 320, "radius": 5},
+            {"type": "paint", "color": "#FFF44336", "style": "fill", "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Epsilon #5", "x": 85, "y": 300, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "#5 Epsilon", "x": 315, "y": 320, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF9E9E9E", "style": "fill", "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Green = improved | Red = declined", "x": 200, "y": 385, "pan_x": 0, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

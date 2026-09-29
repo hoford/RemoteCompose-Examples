@@ -1,0 +1,119 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Multi-line chart showing stock performance of three companies"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Stock Performance", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 50, "y1": 45, "x2": 50, "y2": 330},
+            {"type": "draw_line", "x1": 50, "y1": 330, "x2": 385, "y2": 330},
+
+            {"type": "paint", "color": "#FFEEEEEE", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 50, "y1": 273, "x2": 385, "y2": 273},
+            {"type": "draw_line", "x1": 50, "y1": 216, "x2": 385, "y2": 216},
+            {"type": "draw_line", "x1": 50, "y1": 159, "x2": 385, "y2": 159},
+            {"type": "draw_line", "x1": 50, "y1": 102, "x2": 385, "y2": 102},
+            {"type": "draw_line", "x1": 50, "y1": 45, "x2": 385, "y2": 45},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 45, "y": 330, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50", "x": 45, "y": 273, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100", "x": 45, "y": 216, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "150", "x": 45, "y": 159, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "200", "x": 45, "y": 102, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "250", "x": 45, "y": 45, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jan", "x": 73, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Feb", "x": 121, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar", "x": 169, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Apr", "x": 217, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "May", "x": 265, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Jun", "x": 313, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Jul", "x": 361, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Aug", "x": 385, "y": 345, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "stroke", "stroke_width": 2.5, "text_size": 10},
+            {"type": "draw_line", "x1": 73, "y1": 216, "x2": 121, "y2": 193},
+            {"type": "draw_line", "x1": 121, "y1": 193, "x2": 169, "y2": 170},
+            {"type": "draw_line", "x1": 169, "y1": 170, "x2": 217, "y2": 148},
+            {"type": "draw_line", "x1": 217, "y1": 148, "x2": 265, "y2": 125},
+            {"type": "draw_line", "x1": 265, "y1": 125, "x2": 313, "y2": 102},
+            {"type": "draw_line", "x1": 313, "y1": 102, "x2": 361, "y2": 91},
+            {"type": "draw_line", "x1": 361, "y1": 91, "x2": 385, "y2": 79},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 73, "cy": 216, "radius": 3.5},
+            {"type": "draw_circle", "cx": 121, "cy": 193, "radius": 3.5},
+            {"type": "draw_circle", "cx": 169, "cy": 170, "radius": 3.5},
+            {"type": "draw_circle", "cx": 217, "cy": 148, "radius": 3.5},
+            {"type": "draw_circle", "cx": 265, "cy": 125, "radius": 3.5},
+            {"type": "draw_circle", "cx": 313, "cy": 102, "radius": 3.5},
+            {"type": "draw_circle", "cx": 361, "cy": 91, "radius": 3.5},
+            {"type": "draw_circle", "cx": 385, "cy": 79, "radius": 3.5},
+
+            {"type": "paint", "color": "#FF43A047", "style": "stroke", "stroke_width": 2.5, "text_size": 10},
+            {"type": "draw_line", "x1": 73, "y1": 273, "x2": 121, "y2": 250},
+            {"type": "draw_line", "x1": 121, "y1": 250, "x2": 169, "y2": 261},
+            {"type": "draw_line", "x1": 169, "y1": 261, "x2": 217, "y2": 227},
+            {"type": "draw_line", "x1": 217, "y1": 227, "x2": 265, "y2": 193},
+            {"type": "draw_line", "x1": 265, "y1": 193, "x2": 313, "y2": 170},
+            {"type": "draw_line", "x1": 313, "y1": 170, "x2": 361, "y2": 159},
+            {"type": "draw_line", "x1": 361, "y1": 159, "x2": 385, "y2": 148},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 73, "cy": 273, "radius": 3.5},
+            {"type": "draw_circle", "cx": 121, "cy": 250, "radius": 3.5},
+            {"type": "draw_circle", "cx": 169, "cy": 261, "radius": 3.5},
+            {"type": "draw_circle", "cx": 217, "cy": 227, "radius": 3.5},
+            {"type": "draw_circle", "cx": 265, "cy": 193, "radius": 3.5},
+            {"type": "draw_circle", "cx": 313, "cy": 170, "radius": 3.5},
+            {"type": "draw_circle", "cx": 361, "cy": 159, "radius": 3.5},
+            {"type": "draw_circle", "cx": 385, "cy": 148, "radius": 3.5},
+
+            {"type": "paint", "color": "#FFE53935", "style": "stroke", "stroke_width": 2.5, "text_size": 10},
+            {"type": "draw_line", "x1": 73, "y1": 159, "x2": 121, "y2": 182},
+            {"type": "draw_line", "x1": 121, "y1": 182, "x2": 169, "y2": 216},
+            {"type": "draw_line", "x1": 169, "y1": 216, "x2": 217, "y2": 193},
+            {"type": "draw_line", "x1": 217, "y1": 193, "x2": 265, "y2": 227},
+            {"type": "draw_line", "x1": 265, "y1": 227, "x2": 313, "y2": 250},
+            {"type": "draw_line", "x1": 313, "y1": 250, "x2": 361, "y2": 238},
+            {"type": "draw_line", "x1": 361, "y1": 238, "x2": 385, "y2": 261},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_circle", "cx": 73, "cy": 159, "radius": 3.5},
+            {"type": "draw_circle", "cx": 121, "cy": 182, "radius": 3.5},
+            {"type": "draw_circle", "cx": 169, "cy": 216, "radius": 3.5},
+            {"type": "draw_circle", "cx": 217, "cy": 193, "radius": 3.5},
+            {"type": "draw_circle", "cx": 265, "cy": 227, "radius": 3.5},
+            {"type": "draw_circle", "cx": 313, "cy": 250, "radius": 3.5},
+            {"type": "draw_circle", "cx": 361, "cy": 238, "radius": 3.5},
+            {"type": "draw_circle", "cx": 385, "cy": 261, "radius": 3.5},
+
+            {"type": "paint", "color": "#FF1E88E5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 80, "top": 372, "right": 95, "bottom": 382},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "ACME Inc", "x": 100, "y": 377, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 175, "top": 372, "right": 190, "bottom": 382},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Beta Corp", "x": 195, "y": 377, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE53935", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 275, "top": 372, "right": 290, "bottom": 382},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Gamma Ltd", "x": 295, "y": 377, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

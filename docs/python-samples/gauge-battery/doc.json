@@ -1,0 +1,231 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Battery Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF121212"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "level",
+              "expr": "(sin(time.seconds * 0.3) + 1) * 50"
+            },
+            {
+              "type": "float_expression",
+              "label": "fillWidth",
+              "expr": "(sin(time.seconds * 0.3) + 1) * 50 / 100 * 220"
+            },
+            {
+              "type": "float_expression",
+              "label": "fillRight",
+              "expr": "80 + (sin(time.seconds * 0.3) + 1) * 50 / 100 * 220"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "BATTERY",
+              "x": 200,
+              "y": 60,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#66FFFFFF",
+                "text_size": 16
+              },
+              "_comment": "Title"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 65,
+              "top": 140,
+              "right": 315,
+              "bottom": 260,
+              "rx": 12,
+              "ry": 12,
+              "paint": {
+                "color": "#FF333333",
+                "style": "fill"
+              },
+              "_comment": "Battery body outline"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 65,
+              "top": 140,
+              "right": 315,
+              "bottom": 260,
+              "rx": 12,
+              "ry": 12,
+              "paint": {
+                "color": "#FF4CAF50",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 315,
+              "top": 175,
+              "right": 330,
+              "bottom": 225,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF4CAF50",
+                "style": "fill"
+              },
+              "_comment": "Battery terminal (positive end)"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 75,
+              "top": 150,
+              "right": 305,
+              "bottom": 250,
+              "rx": 6,
+              "ry": 6,
+              "paint": {
+                "color": "#FF1A1A1A",
+                "style": "fill"
+              },
+              "_comment": "Fill level segments background"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 80,
+              "top": 155,
+              "right": "$fillRight",
+              "bottom": 245,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF4CAF50",
+                "style": "fill"
+              },
+              "_comment": "Animated fill"
+            },
+            {
+              "type": "loop",
+              "from": 1,
+              "step": 1,
+              "until": 5,
+              "label": "seg",
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "segX",
+                  "expr": "80 + $seg * 46"
+                },
+                {
+                  "type": "draw_line",
+                  "x1": "$segX",
+                  "y1": 150,
+                  "x2": "$segX",
+                  "y2": 250,
+                  "paint": {
+                    "color": "#FF121212",
+                    "style": "stroke",
+                    "stroke_width": 3
+                  }
+                }
+              ],
+              "_comment": "Segment dividers for battery look"
+            },
+            {
+              "type": "text_from_float",
+              "label": "pctText",
+              "value": "$level",
+              "before": 3,
+              "after": 0,
+              "flags": 1,
+              "_comment": "Percentage text"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$pctText",
+              "x": 185,
+              "y": 310,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 48
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "%",
+              "x": 230,
+              "y": 310,
+              "pan_x": -1,
+              "pan_y": 0,
+              "paint": {
+                "color": "#884CAF50",
+                "text_size": 28
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "CHARGING",
+              "x": 200,
+              "y": 355,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#664CAF50",
+                "text_size": 14
+              },
+              "_comment": "Status label"
+            },
+            {
+              "type": "draw_line",
+              "x1": 200,
+              "y1": 85,
+              "x2": 188,
+              "y2": 108,
+              "paint": {
+                "color": "#FFFFEB3B",
+                "style": "stroke",
+                "stroke_width": 3
+              },
+              "_comment": "Lightning bolt icon (charging)"
+            },
+            {
+              "type": "draw_line",
+              "x1": 188,
+              "y1": 108,
+              "x2": 205,
+              "y2": 108,
+              "paint": {
+                "color": "#FFFFEB3B",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            },
+            {
+              "type": "draw_line",
+              "x1": 205,
+              "y1": 108,
+              "x2": 195,
+              "y2": 128,
+              "paint": {
+                "color": "#FFFFEB3B",
+                "style": "stroke",
+                "stroke_width": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

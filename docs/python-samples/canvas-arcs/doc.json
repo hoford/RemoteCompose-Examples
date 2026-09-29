@@ -1,0 +1,46 @@
+{
+  "_comment": "Fan of arc segments in rainbow colors",
+  "header": { "width": 400, "height": 400, "description": "CanvasArcs" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF1A1A2E" },
+          "children": [
+            { "type": "paint", "color": "#FFFF0000", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 0, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FFFF7F00", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 35, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FFFFFF00", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 70, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FF00FF00", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 105, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FF0000FF", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 140, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FF4B0082", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 175, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FF9400D3", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 210, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FFFF1493", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 245, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FF00CED1", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 280, "sweep_angle": 30 },
+
+            { "type": "paint", "color": "#FFFF4500", "style": "fill" },
+            { "type": "draw_sector", "left": 50, "top": 50, "right": 350, "bottom": 350, "start_angle": 315, "sweep_angle": 30 }
+          ]
+        }
+      ]
+    }
+  ]
+}

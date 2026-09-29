@@ -1,0 +1,36 @@
+{
+  "header": { "width": 400, "height": 400, "description": "Circular Clip" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "box",
+          "modifier": { "fill_max_size": true, "background": "#FF263238" },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": [200, 200],
+                "background": "#FFFF4081",
+                "clip": { "radii": [100, 100, 100, 100] }
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "h_align": "center",
+                  "v_align": "center",
+                  "modifier": { "fill_max_size": true },
+                  "children": [
+                    { "type": "text", "value": "Circle", "font_size": 28, "color": "#FFFFFFFF" },
+                    { "type": "text", "value": "Clipped", "font_size": 16, "color": "#FFFFFFFF" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

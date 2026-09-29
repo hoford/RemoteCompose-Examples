@@ -1,0 +1,51 @@
+{
+  "id": "androidx-demos/stop-notches-even",
+  "sha256": "41577beae715a0cc64d03ed2dd47eaadf3347708ffedc8b72b2aa04f092dec39",
+  "bytes": 1257,
+  "ops": 94,
+  "distinctOps": 22,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_TEXT": 2,
+    "ROOT_CONTENT_DESCRIPTION": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CANVAS": 1,
+    "ANIMATED_FLOAT": 10,
+    "PAINT_VALUES": 8,
+    "COMPONENT_VALUE": 2,
+    "DRAW_ROUND_RECT": 1,
+    "MATRIX_SAVE": 13,
+    "MATRIX_SCALE": 1,
+    "MATRIX_RESTORE": 13,
+    "DRAW_ARC": 1,
+    "MATRIX_ROTATE": 12,
+    "DRAW_LINE": 11,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ANCHOR": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "src": []
+}

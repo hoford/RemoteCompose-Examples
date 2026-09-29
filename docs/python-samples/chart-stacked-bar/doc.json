@@ -1,0 +1,74 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Stacked bar chart showing quarterly revenue by region"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFF5F5F5"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 16},
+            {"type": "draw_text_anchored", "text": "Quarterly Revenue by Region", "x": 200, "y": 22, "pan_x": 0, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFBDBDBD", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 60, "y1": 45, "x2": 60, "y2": 330},
+            {"type": "draw_line", "x1": 60, "y1": 330, "x2": 370, "y2": 330},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 0.5, "text_size": 10},
+            {"type": "draw_line", "x1": 60, "y1": 259, "x2": 370, "y2": 259},
+            {"type": "draw_line", "x1": 60, "y1": 188, "x2": 370, "y2": 188},
+            {"type": "draw_line", "x1": 60, "y1": 117, "x2": 370, "y2": 117},
+            {"type": "draw_line", "x1": 60, "y1": 45, "x2": 370, "y2": 45},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "0", "x": 55, "y": 330, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "50M", "x": 55, "y": 259, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "100M", "x": 55, "y": 188, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "150M", "x": 55, "y": 117, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "200M", "x": 55, "y": 45, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF616161", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Q1", "x": 118, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q2", "x": 195, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q3", "x": 272, "y": 345, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Q4", "x": 349, "y": 345, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 85, "top": 216, "right": 151, "bottom": 330},
+            {"type": "draw_rect", "left": 162, "top": 202, "right": 228, "bottom": 330},
+            {"type": "draw_rect", "left": 239, "top": 188, "right": 305, "bottom": 330},
+            {"type": "draw_rect", "left": 316, "top": 173, "right": 382, "bottom": 330},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 85, "top": 145, "right": 151, "bottom": 216},
+            {"type": "draw_rect", "left": 162, "top": 117, "right": 228, "bottom": 202},
+            {"type": "draw_rect", "left": 239, "top": 102, "right": 305, "bottom": 188},
+            {"type": "draw_rect", "left": 316, "top": 88, "right": 382, "bottom": 173},
+
+            {"type": "paint", "color": "#FFFDD835", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 85, "top": 102, "right": 151, "bottom": 145},
+            {"type": "draw_rect", "left": 162, "top": 67, "right": 228, "bottom": 117},
+            {"type": "draw_rect", "left": 239, "top": 52, "right": 305, "bottom": 102},
+            {"type": "draw_rect", "left": 316, "top": 45, "right": 382, "bottom": 88},
+
+            {"type": "paint", "color": "#FF1565C0", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 70, "top": 370, "right": 85, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Americas", "x": 90, "y": 375, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FF43A047", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 165, "top": 370, "right": 180, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Europe", "x": 185, "y": 375, "pan_x": -1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFFDD835", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_rect", "left": 255, "top": 370, "right": 270, "bottom": 380},
+            {"type": "paint", "color": "#FF424242", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "Asia", "x": 275, "y": 375, "pan_x": -1, "pan_y": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

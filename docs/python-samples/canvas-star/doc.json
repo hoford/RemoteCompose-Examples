@@ -1,0 +1,53 @@
+{
+  "_comment": "Star shape using rotated lines from center",
+  "header": { "width": 400, "height": 400, "description": "CanvasStar" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FF0D1B2A" },
+          "children": [
+            { "type": "float_expression", "label": "cx", "expr": ["COMPONENT_WIDTH", 2, "DIV"] },
+            { "type": "float_expression", "label": "cy", "expr": ["COMPONENT_HEIGHT", 2, "DIV"] },
+            { "type": "float_expression", "label": "r", "expr": ["$cx", "$cy", "MIN", 0.85, "MUL"] },
+            { "type": "float_expression", "label": "tip", "expr": ["$cy", "$r", "SUB"] },
+
+            { "_comment": "Outer glow lines",
+              "type": "paint", "color": "#44FFD700", "stroke_width": 8.0, "style": "stroke" },
+            { "type": "save" },
+            {
+              "type": "loop",
+              "from": 0, "step": 15, "until": 360,
+              "label": "a1",
+              "children": [
+                { "type": "rotate", "angle": 15, "cx": "$cx", "cy": "$cy" },
+                { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$tip" }
+              ]
+            },
+            { "type": "restore" },
+
+            { "_comment": "Main star rays - golden yellow",
+              "type": "paint", "color": "#FFFFD700", "stroke_width": 3.0, "style": "stroke" },
+            { "type": "save" },
+            {
+              "type": "loop",
+              "from": 0, "step": 30, "until": 360,
+              "label": "a2",
+              "children": [
+                { "type": "rotate", "angle": 30, "cx": "$cx", "cy": "$cy" },
+                { "type": "draw_line", "x1": "$cx", "y1": "$cy", "x2": "$cx", "y2": "$tip" }
+              ]
+            },
+            { "type": "restore" },
+
+            { "_comment": "Center dot",
+              "type": "paint", "color": "#FFFFFFFF", "style": "fill" },
+            { "type": "draw_circle", "cx": "$cx", "cy": "$cy", "radius": 8 }
+          ]
+        }
+      ]
+    }
+  ]
+}

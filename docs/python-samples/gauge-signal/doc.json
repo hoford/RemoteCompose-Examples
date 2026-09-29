@@ -1,0 +1,280 @@
+{
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "Signal Strength Gauge"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true,
+            "background": "#FF101020"
+          },
+          "children": [
+            {
+              "type": "float_expression",
+              "label": "signalLevel",
+              "expr": "(sin(time.seconds * 0.5) + 1) * 2.5"
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "SIGNAL STRENGTH",
+              "x": 200,
+              "y": 50,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#6600BCD4",
+                "text_size": 16
+              },
+              "_comment": "Title"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 40,
+              "top": 80,
+              "right": 360,
+              "bottom": 320,
+              "rx": 16,
+              "ry": 16,
+              "paint": {
+                "color": "#FF181830",
+                "style": "fill"
+              },
+              "_comment": "Background panel"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 40,
+              "top": 80,
+              "right": 360,
+              "bottom": 320,
+              "rx": 16,
+              "ry": 16,
+              "paint": {
+                "color": "#3300BCD4",
+                "style": "stroke",
+                "stroke_width": 1
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 72,
+              "top": 260,
+              "right": 112,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF00BCD4",
+                "style": "fill"
+              },
+              "_comment": "Bar 1 (shortest)"
+            },
+            {
+              "type": "float_expression",
+              "label": "bar2alpha",
+              "expr": "min(max(((sin(time.seconds * 0.5) + 1) * 2.5 - 1) * 255, 30), 255)",
+              "_comment": "Bar 2"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 132,
+              "top": 220,
+              "right": 172,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF00BCD4",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 132,
+              "top": 220,
+              "right": 172,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#DD101020",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "bar2vis",
+              "expr": "min(max((sin(time.seconds * 0.5) + 1) * 2.5 - 1, 0), 1)"
+            },
+            {
+              "type": "float_expression",
+              "label": "bar2top",
+              "expr": "300 - min(max((sin(time.seconds * 0.5) + 1) * 2.5 - 1, 0), 1) * 80"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 132,
+              "top": "$bar2top",
+              "right": 172,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF00BCD4",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "bar3top",
+              "expr": "300 - min(max((sin(time.seconds * 0.5) + 1) * 2.5 - 2, 0), 1) * 120",
+              "_comment": "Bar 3"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 192,
+              "top": 180,
+              "right": 232,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#3300BCD4",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 192,
+              "top": "$bar3top",
+              "right": 232,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF00BCD4",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "bar4top",
+              "expr": "300 - min(max((sin(time.seconds * 0.5) + 1) * 2.5 - 3, 0), 1) * 160",
+              "_comment": "Bar 4"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 252,
+              "top": 140,
+              "right": 292,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#33FFAB00",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 252,
+              "top": "$bar4top",
+              "right": 292,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FFFFAB00",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "float_expression",
+              "label": "bar5top",
+              "expr": "300 - min(max((sin(time.seconds * 0.5) + 1) * 2.5 - 4, 0), 1) * 200",
+              "_comment": "Bar 5 (tallest)"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 312,
+              "top": 100,
+              "right": 348,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#3300E676",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 312,
+              "top": "$bar5top",
+              "right": 348,
+              "bottom": 300,
+              "rx": 4,
+              "ry": 4,
+              "paint": {
+                "color": "#FF00E676",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "text_from_float",
+              "label": "sigText",
+              "value": "$signalLevel",
+              "before": 1,
+              "after": 1,
+              "flags": 1,
+              "_comment": "Signal level text"
+            },
+            {
+              "type": "draw_round_rect",
+              "left": 145,
+              "top": 340,
+              "right": 255,
+              "bottom": 380,
+              "rx": 8,
+              "ry": 8,
+              "paint": {
+                "color": "#FF181830",
+                "style": "fill"
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text_id": "$sigText",
+              "x": 188,
+              "y": 360,
+              "pan_x": 0,
+              "pan_y": 0,
+              "paint": {
+                "color": "#FFFFFFFF",
+                "text_size": 26
+              }
+            },
+            {
+              "type": "draw_text_anchored",
+              "text": "/ 5",
+              "x": 222,
+              "y": 360,
+              "pan_x": -1,
+              "pan_y": 0,
+              "paint": {
+                "color": "#6600BCD4",
+                "text_size": 18
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

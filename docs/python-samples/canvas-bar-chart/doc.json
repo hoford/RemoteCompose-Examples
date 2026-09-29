@@ -1,0 +1,67 @@
+{
+  "_comment": "Simple 5-bar chart with labels",
+  "header": { "width": 400, "height": 400, "description": "CanvasBarChart" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": { "fill_max_size": true, "background": "#FFFFFFFF" },
+          "children": [
+            { "_comment": "Chart title",
+              "type": "paint", "color": "#FF212121", "text_size": 20.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Monthly Sales", "x": 200, "y": 25, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Axis lines",
+              "type": "paint", "color": "#FF616161", "stroke_width": 2.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 50, "x2": 60, "y2": 340 },
+            { "type": "draw_line", "x1": 60, "y1": 340, "x2": 380, "y2": 340 },
+
+            { "_comment": "Horizontal guide lines",
+              "type": "paint", "color": "#FFE0E0E0", "stroke_width": 1.0, "style": "stroke" },
+            { "type": "draw_line", "x1": 60, "y1": 108, "x2": 380, "y2": 108 },
+            { "type": "draw_line", "x1": 60, "y1": 166, "x2": 380, "y2": 166 },
+            { "type": "draw_line", "x1": 60, "y1": 224, "x2": 380, "y2": 224 },
+            { "type": "draw_line", "x1": 60, "y1": 282, "x2": 380, "y2": 282 },
+
+            { "_comment": "Bar 1 - Jan (height 200)",
+              "type": "paint", "color": "#FF1976D2", "style": "fill" },
+            { "type": "draw_rect", "left": 80, "top": 140, "right": 130, "bottom": 340 },
+
+            { "_comment": "Bar 2 - Feb (height 250)",
+              "type": "paint", "color": "#FF388E3C", "style": "fill" },
+            { "type": "draw_rect", "left": 140, "top": 90, "right": 190, "bottom": 340 },
+
+            { "_comment": "Bar 3 - Mar (height 150)",
+              "type": "paint", "color": "#FFF57C00", "style": "fill" },
+            { "type": "draw_rect", "left": 200, "top": 190, "right": 250, "bottom": 340 },
+
+            { "_comment": "Bar 4 - Apr (height 280)",
+              "type": "paint", "color": "#FFD32F2F", "style": "fill" },
+            { "type": "draw_rect", "left": 260, "top": 60, "right": 310, "bottom": 340 },
+
+            { "_comment": "Bar 5 - May (height 220)",
+              "type": "paint", "color": "#FF7B1FA2", "style": "fill" },
+            { "type": "draw_rect", "left": 320, "top": 120, "right": 370, "bottom": 340 },
+
+            { "_comment": "Labels",
+              "type": "paint", "color": "#FF424242", "text_size": 14.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "Jan", "x": 105, "y": 358, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "Feb", "x": 165, "y": 358, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "Mar", "x": 225, "y": 358, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "Apr", "x": 285, "y": 358, "pan_x": 0, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "May", "x": 345, "y": 358, "pan_x": 0, "pan_y": 0 },
+
+            { "_comment": "Y-axis labels",
+              "type": "paint", "color": "#FF757575", "text_size": 11.0, "style": "fill" },
+            { "type": "draw_text_anchored", "text": "100", "x": 50, "y": 282, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "200", "x": 50, "y": 224, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "300", "x": 50, "y": 166, "pan_x": 1, "pan_y": 0 },
+            { "type": "draw_text_anchored", "text": "400", "x": 50, "y": 108, "pan_x": 1, "pan_y": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}

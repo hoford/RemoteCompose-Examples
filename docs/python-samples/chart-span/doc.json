@@ -1,0 +1,73 @@
+{
+  "header": {"width": 400, "height": 400, "description": "Span/Range Chart - Temperature Range"},
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {"fill_max_size": true, "background": "#FFFFFFFF"},
+          "children": [
+            {"type": "paint", "color": "#FF212121", "style": "fill", "stroke_width": 0, "text_size": 18},
+            {"type": "draw_text_anchored", "text": "Temperature Range", "x": 200, "y": 20, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_text_anchored", "text": "-10\u00b0", "x": 48, "y": 310, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "0\u00b0", "x": 48, "y": 275, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "10\u00b0", "x": 48, "y": 240, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "20\u00b0", "x": 48, "y": 205, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "30\u00b0", "x": 48, "y": 170, "pan_x": 1, "pan_y": 0},
+            {"type": "draw_text_anchored", "text": "40\u00b0C", "x": 48, "y": 135, "pan_x": 1, "pan_y": 0},
+
+            {"type": "paint", "color": "#FFE0E0E0", "style": "stroke", "stroke_width": 1, "text_size": 10},
+            {"type": "draw_line", "x1": 55, "y1": 310, "x2": 385, "y2": 310},
+            {"type": "draw_line", "x1": 55, "y1": 275, "x2": 385, "y2": 275},
+            {"type": "draw_line", "x1": 55, "y1": 240, "x2": 385, "y2": 240},
+            {"type": "draw_line", "x1": 55, "y1": 205, "x2": 385, "y2": 205},
+            {"type": "draw_line", "x1": 55, "y1": 170, "x2": 385, "y2": 170},
+            {"type": "draw_line", "x1": 55, "y1": 135, "x2": 385, "y2": 135},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 60, "top": 296, "right": 82, "bottom": 268, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 87, "top": 289, "right": 109, "bottom": 258, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 114, "top": 275, "right": 136, "bottom": 240, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FF66BB6A", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 141, "top": 254, "right": 163, "bottom": 205, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 168, "top": 233, "right": 190, "bottom": 177, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 195, "top": 219, "right": 217, "bottom": 156, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FFEF5350", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 222, "top": 205, "right": 244, "bottom": 142, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 249, "top": 212, "right": 271, "bottom": 149, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 276, "top": 226, "right": 298, "bottom": 163, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FFFF9800", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 303, "top": 247, "right": 325, "bottom": 198, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FF42A5F5", "style": "fill", "stroke_width": 0, "text_size": 10},
+            {"type": "draw_round_rect", "left": 330, "top": 272, "right": 352, "bottom": 240, "rx": 3, "ry": 3},
+            {"type": "draw_round_rect", "left": 357, "top": 293, "right": 379, "bottom": 265, "rx": 3, "ry": 3},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 9},
+            {"type": "draw_text_anchored", "text": "Jan", "x": 71, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Feb", "x": 98, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Mar", "x": 125, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Apr", "x": 152, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "May", "x": 179, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Jun", "x": 206, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Jul", "x": 233, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Aug", "x": 260, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Sep", "x": 287, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Oct", "x": 314, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Nov", "x": 341, "y": 325, "pan_x": 0, "pan_y": -1},
+            {"type": "draw_text_anchored", "text": "Dec", "x": 368, "y": 325, "pan_x": 0, "pan_y": -1},
+
+            {"type": "paint", "color": "#FF757575", "style": "fill", "stroke_width": 0, "text_size": 11},
+            {"type": "draw_text_anchored", "text": "Month", "x": 220, "y": 350, "pan_x": 0, "pan_y": -1}
+          ]
+        }
+      ]
+    }
+  ]
+}

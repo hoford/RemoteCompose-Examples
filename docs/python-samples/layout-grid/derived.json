@@ -1,0 +1,30 @@
+{
+  "id": "python-samples/layout-grid",
+  "sha256": "23a8fa32c7d47cad07457f57e6196a138507d141b4c6abc4f1a8653d328eace9",
+  "bytes": 1508,
+  "ops": 115,
+  "distinctOps": 11,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 13,
+    "MODIFIER_HEIGHT": 13,
+    "MODIFIER_BACKGROUND": 10,
+    "MODIFIER_PADDING": 10,
+    "LAYOUT_ROW": 3,
+    "LAYOUT_BOX": 9,
+    "DATA_TEXT": 9,
+    "CONTAINER_END": 45
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "src": []
+}

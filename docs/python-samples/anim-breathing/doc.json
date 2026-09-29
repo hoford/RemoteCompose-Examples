@@ -1,0 +1,202 @@
+{
+  "_comment": "Concentric circles that slowly expand and contract \u2014 breathing effect",
+  "header": {
+    "width": 400,
+    "height": 400,
+    "description": "AnimBreathing"
+  },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "canvas",
+          "modifier": {
+            "fill_max_size": true
+          },
+          "children": [
+            {
+              "type": "viewport",
+              "width": 400,
+              "height": 400,
+              "children": [
+                {
+                  "type": "float_expression",
+                  "label": "w",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "h",
+                  "expr": "400"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cx",
+                  "expr": "$w / 2"
+                },
+                {
+                  "type": "float_expression",
+                  "label": "cy",
+                  "expr": "$h / 2"
+                },
+                {
+                  "type": "draw_rect",
+                  "paint": {
+                    "color": "#FF1A1A2E",
+                    "style": "fill"
+                  },
+                  "left": 0,
+                  "top": 0,
+                  "right": "$w",
+                  "bottom": "$h"
+                },
+                {
+                  "_comment": "Slow breathing time base",
+                  "type": "float_expression",
+                  "label": "breath",
+                  "expr": "sin(time.seconds * 0.8)"
+                },
+                {
+                  "_comment": "Ring 6 \u2014 outermost, faintest",
+                  "type": "float_expression",
+                  "label": "r6",
+                  "expr": "150 + $breath * 30"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#1500BFA5",
+                    "style": "stroke",
+                    "stroke_width": 2.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r6"
+                },
+                {
+                  "_comment": "Ring 5",
+                  "type": "float_expression",
+                  "label": "r5",
+                  "expr": "125 + $breath * 25"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#2500BFA5",
+                    "style": "stroke",
+                    "stroke_width": 2.5
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r5"
+                },
+                {
+                  "_comment": "Ring 4",
+                  "type": "float_expression",
+                  "label": "r4",
+                  "expr": "100 + $breath * 20"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#4000BFA5",
+                    "style": "stroke",
+                    "stroke_width": 3.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r4"
+                },
+                {
+                  "_comment": "Ring 3",
+                  "type": "float_expression",
+                  "label": "r3",
+                  "expr": "75 + $breath * 15"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#6000BFA5",
+                    "style": "stroke",
+                    "stroke_width": 3.5
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r3"
+                },
+                {
+                  "_comment": "Ring 2",
+                  "type": "float_expression",
+                  "label": "r2",
+                  "expr": "50 + $breath * 10"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#9000BFA5",
+                    "style": "stroke",
+                    "stroke_width": 4.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r2"
+                },
+                {
+                  "_comment": "Ring 1 \u2014 innermost, brightest",
+                  "type": "float_expression",
+                  "label": "r1",
+                  "expr": "25 + $breath * 5"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#CC00BFA5",
+                    "style": "stroke",
+                    "stroke_width": 5.0
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$r1"
+                },
+                {
+                  "_comment": "Core glow",
+                  "type": "float_expression",
+                  "label": "core_r",
+                  "expr": "12 + $breath * 4"
+                },
+                {
+                  "type": "draw_circle",
+                  "paint": {
+                    "color": "#FF00BFA5",
+                    "style": "fill"
+                  },
+                  "cx": "$cx",
+                  "cy": "$cy",
+                  "radius": "$core_r"
+                },
+                {
+                  "_comment": "Breathe label",
+                  "type": "paint",
+                  "color": "#8000BFA5",
+                  "text_size": 16.0,
+                  "style": "fill"
+                },
+                {
+                  "type": "draw_text_anchored",
+                  "text": "BREATHE",
+                  "x": "$cx",
+                  "y": {
+                    "expr": "$h - 30"
+                  },
+                  "pan_x": 0,
+                  "pan_y": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

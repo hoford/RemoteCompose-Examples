@@ -1,0 +1,31 @@
+{
+  "_comment": "Port of DemoModifierBorder.kt — rectangular and rounded borders",
+  "header": { "width": 400, "height": 400, "description": "DemoModifierBorder" },
+  "ops": [
+    {
+      "type": "root",
+      "children": [
+        {
+          "type": "column",
+          "modifier": { "padding": 20, "spaced_by": 20 },
+          "children": [
+            {
+              "type": "box",
+              "modifier": {
+                "size": 100,
+                "border": { "width": 4, "corner": 0.1, "color": "#FFFF0000", "shape": 2 }
+              }
+            },
+            {
+              "type": "box",
+              "modifier": {
+                "size": 100,
+                "border": { "width": 4, "corner": 0.1, "color": "#FF0000FF", "shape": 2 }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
