@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-rpm",
   "sha256": "08dc352014a2211329d1772047084a04820b0b571106830e6c4e998f8b3789af",
   "bytes": 1769,
-  "ops": 114,
-  "distinctOps": 18,
+  "ops": 119,
+  "distinctOps": 21,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,10 +13,12 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 5,
     "PAINT_VALUES": 24,
     "DRAW_CIRCLE": 5,
     "DRAW_ARC": 2,
+    "LOOP_START": 3,
     "MATRIX_SAVE": 13,
     "MATRIX_ROTATE": 13,
     "DRAW_LINE": 4,
@@ -24,6 +26,7 @@
     "CONTAINER_END": 6,
     "DATA_TEXT": 10,
     "DRAW_TEXT_ANCHOR": 11,
+    "TEXT_FROM_FLOAT": 1,
     "DRAW_ROUND_RECT": 2
   },
   "apis": [
@@ -33,6 +36,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

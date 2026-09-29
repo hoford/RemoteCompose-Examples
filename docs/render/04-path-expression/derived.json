@@ -2,8 +2,8 @@
   "id": "render/04-path-expression",
   "sha256": "6966d20745143cca4f8290bac8965f156acf827665e74aaa2852fe4aa12fc5d2",
   "bytes": 656,
-  "ops": 19,
-  "distinctOps": 10,
+  "ops": 24,
+  "distinctOps": 13,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -12,9 +12,12 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 4,
     "COMPONENT_VALUE": 2,
     "DRAW_RECT": 1,
+    "PATH_EXPRESSION": 3,
     "DRAW_PATH": 3,
     "CONTAINER_END": 4
   },

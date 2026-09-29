@@ -2,31 +2,39 @@
   "id": "render/probe-parr",
   "sha256": "bc89244e9ff7025b86afb010d804242ab80a6e0ddea73c972f1c60673f4f2dfc",
   "bytes": 451,
-  "ops": 23,
-  "distinctOps": 10,
+  "ops": 28,
+  "distinctOps": 15,
   "width": 400,
   "height": 200,
   "histogram": {
     "HEADER": 3,
+    "FLOAT_LIST": 1,
     "NAMED_VARIABLE": 1,
     "LAYOUT_ROOT": 1,
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 3,
     "DRAW_RECT": 3,
+    "IMPULSE_START": 1,
+    "PARTICLE_DEFINE": 1,
     "ANIMATED_FLOAT": 2,
     "CONTAINER_END": 7
   },
   "apis": [
+    "animation",
     "drawRect",
     "expressions",
     "layout",
-    "paint"
+    "paint",
+    "particles"
   ],
   "flags": [
     "animated",
-    "expressions"
+    "expressions",
+    "particles"
   ],
   "decoded": true,
   "hasJson": false,

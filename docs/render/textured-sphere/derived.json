@@ -2,8 +2,8 @@
   "id": "render/textured-sphere",
   "sha256": "3f95b5dc407e96dabb37d39a24aa14b0c3e2707fa18ea2817100a076ca73665b",
   "bytes": 236,
-  "ops": 17,
-  "distinctOps": 9,
+  "ops": 20,
+  "distinctOps": 11,
   "width": 256,
   "height": 256,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
     "CONTAINER_END": 6

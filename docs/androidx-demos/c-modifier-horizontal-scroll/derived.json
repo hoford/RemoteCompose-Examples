@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-modifier-horizontal-scroll",
   "sha256": "83b55e9b16730330e955438de4405a53d556ab31e9402c50bb6ada5740a78037",
   "bytes": 2954,
-  "ops": 211,
-  "distinctOps": 11,
+  "ops": 275,
+  "distinctOps": 16,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -12,14 +12,20 @@
     "LAYOUT_ROW": 1,
     "MODIFIER_WIDTH": 21,
     "MODIFIER_HEIGHT": 21,
+    "MODIFIER_CLIP_RECT": 1,
     "DATA_FLOAT": 1,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1,
     "CONTAINER_END": 84,
     "MODIFIER_BACKGROUND": 21,
+    "LAYOUT_CONTENT": 41,
     "LAYOUT_BOX": 20,
     "MODIFIER_PADDING": 20,
-    "DATA_TEXT": 20
+    "DATA_TEXT": 20,
+    "CORE_TEXT": 20
   },
   "apis": [
+    "interaction",
     "layout",
     "text"
   ],

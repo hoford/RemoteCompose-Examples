@@ -2,8 +2,8 @@
   "id": "python-samples/layout-fill-max-height",
   "sha256": "8a2e126329b4c8c64123a5ba9b437f6fadbaf2255ce9566647bfd3e4bad9af4e",
   "bytes": 597,
-  "ops": 39,
-  "distinctOps": 10,
+  "ops": 49,
+  "distinctOps": 12,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,9 +13,11 @@
     "MODIFIER_WIDTH": 4,
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_CONTENT": 7,
     "LAYOUT_BOX": 3,
     "MODIFIER_PADDING": 3,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 15
   },
   "apis": [

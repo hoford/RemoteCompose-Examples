@@ -2,8 +2,8 @@
   "id": "render/iso-width",
   "sha256": "8ca0f6186c6c1ca626de2fb7a52684b9fe48041a4c0252d05df31804c35cc79c",
   "bytes": 163,
-  "ops": 12,
-  "distinctOps": 7,
+  "ops": 15,
+  "distinctOps": 9,
   "width": 200,
   "height": 200,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 2,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [

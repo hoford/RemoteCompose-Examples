@@ -2,8 +2,8 @@
   "id": "python-samples/layout-sidebar",
   "sha256": "5689fa189fafa24f714da2d03440acc3d5dfaa35abeebfe7a70b9c8e3c8fdc39",
   "bytes": 1462,
-  "ops": 105,
-  "distinctOps": 11,
+  "ops": 143,
+  "distinctOps": 14,
   "width": 600,
   "height": 400,
   "histogram": {
@@ -12,12 +12,15 @@
     "LAYOUT_ROW": 2,
     "MODIFIER_WIDTH": 11,
     "MODIFIER_HEIGHT": 4,
+    "LAYOUT_CONTENT": 24,
     "LAYOUT_COLUMN": 4,
     "MODIFIER_BACKGROUND": 6,
     "MODIFIER_PADDING": 9,
     "DATA_TEXT": 11,
+    "CORE_TEXT": 11,
     "CONTAINER_END": 49,
-    "LAYOUT_BOX": 7
+    "LAYOUT_BOX": 7,
+    "MODIFIER_ROUNDED_CLIP_RECT": 3
   },
   "apis": [
     "layout",

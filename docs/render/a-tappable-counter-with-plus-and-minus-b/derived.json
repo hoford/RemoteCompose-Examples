@@ -2,8 +2,8 @@
   "id": "render/a-tappable-counter-with-plus-and-minus-b",
   "sha256": "50a697fbef669694f45e374765645e023243eb4d3b08466b5ab788a2c5ebb125",
   "bytes": 328,
-  "ops": 20,
-  "distinctOps": 11,
+  "ops": 28,
+  "distinctOps": 14,
   "width": 320,
   "height": 160,
   "histogram": {
@@ -16,8 +16,11 @@
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 4,
     "DATA_TEXT": 2,
-    "CONTAINER_END": 9
+    "CORE_TEXT": 3,
+    "CONTAINER_END": 9,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "layout",

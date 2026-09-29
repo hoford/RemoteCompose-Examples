@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-text-auto-size",
   "sha256": "8b5669d835f2d1232ac0205f2d9655e3fe122988d40103f13bb40f4dba6ee226",
   "bytes": 236,
-  "ops": 14,
-  "distinctOps": 8,
+  "ops": 17,
+  "distinctOps": 10,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -13,7 +13,9 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 2,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [

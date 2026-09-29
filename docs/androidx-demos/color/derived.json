@@ -2,8 +2,8 @@
   "id": "androidx-demos/color",
   "sha256": "82f5a5376a26bfc3bb617e84266a12ffabd7472e63a8abe1ebcbc019b5ea9b00",
   "bytes": 880,
-  "ops": 55,
-  "distinctOps": 16,
+  "ops": 60,
+  "distinctOps": 19,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -14,14 +14,17 @@
     "LAYOUT_BOX": 6,
     "MODIFIER_WIDTH": 7,
     "MODIFIER_HEIGHT": 7,
+    "LAYOUT_CONTENT": 3,
     "LAYOUT_COLUMN": 1,
     "MODIFIER_BACKGROUND": 6,
     "CONTAINER_END": 13,
     "MODIFIER_BORDER": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "COMPONENT_VALUE": 2,
     "PAINT_VALUES": 2,
     "DRAW_ROUND_RECT": 1,
+    "TEXT_FROM_FLOAT": 1,
     "DRAW_TEXT_ANCHOR": 1
   },
   "apis": [

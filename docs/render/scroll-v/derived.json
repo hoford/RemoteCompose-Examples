@@ -2,8 +2,8 @@
   "id": "render/scroll-v",
   "sha256": "3857ff31b2421c3461ecfb0a6db3ccae2a2dc451e8328ac8e67ba2e89264dbea",
   "bytes": 1706,
-  "ops": 118,
-  "distinctOps": 9,
+  "ops": 158,
+  "distinctOps": 14,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -13,11 +13,17 @@
     "MODIFIER_WIDTH": 13,
     "MODIFIER_HEIGHT": 13,
     "MODIFIER_BACKGROUND": 13,
+    "MODIFIER_CLIP_RECT": 1,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1,
     "CONTAINER_END": 52,
+    "LAYOUT_CONTENT": 25,
     "LAYOUT_BOX": 12,
-    "DATA_TEXT": 12
+    "DATA_TEXT": 12,
+    "CORE_TEXT": 12
   },
   "apis": [
+    "interaction",
     "layout",
     "text"
   ],

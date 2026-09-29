@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-vu-meter",
   "sha256": "fdf801ac75429b632d772acffbc27da7ed11fa494eec045a5c4e6be9d8fbfad7",
   "bytes": 1395,
-  "ops": 85,
-  "distinctOps": 18,
+  "ops": 88,
+  "distinctOps": 21,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,18 +13,21 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 3,
     "PAINT_VALUES": 20,
     "DRAW_ROUND_RECT": 4,
     "DATA_TEXT": 8,
     "DRAW_TEXT_ANCHOR": 9,
     "DRAW_ARC": 3,
+    "LOOP_START": 1,
     "MATRIX_SAVE": 8,
     "MATRIX_ROTATE": 8,
     "DRAW_LINE": 2,
     "MATRIX_RESTORE": 8,
     "CONTAINER_END": 4,
-    "DRAW_CIRCLE": 2
+    "DRAW_CIRCLE": 2,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "drawArc",
@@ -33,6 +36,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

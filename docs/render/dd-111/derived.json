@@ -2,8 +2,8 @@
   "id": "render/dd-111",
   "sha256": "df7be7d842b35ca45a633d5e2a55fbf9c95376ff1978b68e35e94a75adc77c60",
   "bytes": 156,
-  "ops": 11,
-  "distinctOps": 8,
+  "ops": 13,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "DATA_TEXT": 1,
     "DRAW_TEXT_ANCHOR": 1,
     "CONTAINER_END": 4

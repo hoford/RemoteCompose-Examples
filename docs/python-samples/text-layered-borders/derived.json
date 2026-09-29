@@ -2,8 +2,8 @@
   "id": "python-samples/text-layered-borders",
   "sha256": "929fba1f267cd950c534840ed8561ddbb06e2c897ba52dc6d7f656f1c2edfa31",
   "bytes": 1269,
-  "ops": 72,
-  "distinctOps": 10,
+  "ops": 88,
+  "distinctOps": 12,
   "width": 400,
   "height": 600,
   "histogram": {
@@ -13,9 +13,11 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_BACKGROUND": 14,
+    "LAYOUT_CONTENT": 12,
     "LAYOUT_COLUMN": 2,
     "MODIFIER_PADDING": 13,
     "DATA_TEXT": 4,
+    "CORE_TEXT": 4,
     "CONTAINER_END": 25
   },
   "apis": [

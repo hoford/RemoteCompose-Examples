@@ -2,8 +2,8 @@
   "id": "python-samples/layout-clip-rounded",
   "sha256": "8a8b5d826a55cc73c3a8cab840222e97069c1bcd468c72866976ee6ef1f862c0",
   "bytes": 398,
-  "ops": 27,
-  "distinctOps": 10,
+  "ops": 35,
+  "distinctOps": 13,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,9 +13,12 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CONTENT": 5,
+    "MODIFIER_ROUNDED_CLIP_RECT": 1,
     "MODIFIER_PADDING": 1,
     "LAYOUT_COLUMN": 1,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 11
   },
   "apis": [

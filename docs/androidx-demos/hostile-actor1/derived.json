@@ -2,14 +2,16 @@
   "id": "androidx-demos/hostile-actor1",
   "sha256": "c964a5595bf0e61a61a9c3c41e64c6ba2ad8897dbdcabaa1b44463cfd0f70cb6",
   "bytes": 1388,
-  "ops": 15,
-  "distinctOps": 11,
+  "ops": 18,
+  "distinctOps": 14,
   "width": 0,
   "height": 0,
   "histogram": {
     "HEADER": 1,
+    "ROOT_CONTENT_BEHAVIOR": 1,
     "ANIMATED_FLOAT": 4,
     "PAINT_VALUES": 2,
+    "LOOP_START": 1,
     "MATRIX_SAVE": 1,
     "MATRIX_TRANSLATE": 1,
     "DATA_BITMAP": 1,
@@ -17,12 +19,14 @@
     "DRAW_BITMAP_SCALED": 1,
     "MATRIX_RESTORE": 1,
     "CONTAINER_END": 1,
+    "TEXT_FROM_FLOAT": 1,
     "DRAW_TEXT_ANCHOR": 1
   },
   "apis": [
     "expressions",
     "images",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

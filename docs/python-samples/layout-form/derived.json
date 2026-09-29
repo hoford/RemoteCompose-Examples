@@ -2,8 +2,8 @@
   "id": "python-samples/layout-form",
   "sha256": "6d0eca0e0e2c4823de8423025c65d37b711dd05bdd36a5c151d2334d659c0beb",
   "bytes": 1679,
-  "ops": 122,
-  "distinctOps": 12,
+  "ops": 160,
+  "distinctOps": 15,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -14,11 +14,14 @@
     "MODIFIER_HEIGHT": 6,
     "MODIFIER_BACKGROUND": 7,
     "MODIFIER_PADDING": 11,
+    "LAYOUT_CONTENT": 26,
     "DATA_TEXT": 10,
+    "CORE_TEXT": 10,
     "CONTAINER_END": 53,
     "LAYOUT_BOX": 10,
     "LAYOUT_ROW": 5,
-    "MODIFIER_BORDER": 3
+    "MODIFIER_BORDER": 3,
+    "MODIFIER_ROUNDED_CLIP_RECT": 2
   },
   "apis": [
     "layout",

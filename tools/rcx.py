@@ -193,19 +193,34 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
             return None
         d = json.loads(tmp.read_text())
         ops = d["rc"]["ops"]
-        names = [o["name"] for o in ops if o.get("kind") == "op"]
+        # Every entry, not just kind == "op".
+        #
+        # rc2json emits two kinds. "op" entries are decoded and named in SCREAMING_SNAKE;
+        # "opaque" entries are ones it carries through without decoding, named after the C++
+        # class in CamelCase - PathData, RootContentBehavior. Filtering to kind == "op" drops
+        # them silently, and the result looks plausible: 147 documents reported DRAW_PATH while
+        # DATA_PATH appeared in none, because the path payload is always opaque.
+        #
+        # Both kinds carry `opcode`, so names are resolved through Operations.java rather than
+        # from the two different conventions. PathData and DATA_PATH are the same opcode 123.
+        names = []
+        for o in ops:
+            if o.get("kind") not in ("op", "opaque"):
+                continue
+            n = opcode_names().get(o.get("opcode")) or o.get("name")
+            if n:
+                names.append(n)
         w = h = 0
         content = set()
         for o in ops:
-            n = o.get("name")
-            if n == "HEADER" and not w:
+            if o.get("name") == "HEADER" and not w:
                 f = {x["name"]: x["value"] for x in o.get("fields", [])}
                 w, h = int(f.get("width", 0)), int(f.get("height", 0))
             # A shader is not an opcode. Its AGSL source is carried as a DATA_TEXT payload and
             # applied through paint, so op names alone can never reveal one - tagging purely
             # from opcodes leaves the "shaders" facet permanently empty while shader documents
             # sit in the corpus. Detect it from the text itself.
-            elif n == "DATA_TEXT":
+            elif o.get("name") == "DATA_TEXT":
                 for f in o.get("fields", []):
                     v = f.get("value")
                     if isinstance(v, str) and SHADER_RE.search(v):
@@ -539,12 +554,16 @@ def cmd_catalog(args):
             "height": h,
             "hasJson": (d / "doc.json").exists(),
             "jsonReproduces": derived["jsonReproduces"],
+            "_hist": hist,
+            "_decoded": ops is not None,
             "src": sorted(p.name for p in (d / "src").glob("*")) if (d / "src").exists() else [],
         })
 
     records.sort(key=lambda r: r["id"])
     for i, r in enumerate(records):
         r["i"] = i
+
+    write_op_index(records)
 
     # Facets: tag -> {count, postings}. One file drives the whole filter bar.
     facets: dict[str, dict[str, list[int]]] = {
@@ -590,7 +609,10 @@ def cmd_catalog(args):
     with (CATALOG / "corpus.jsonl").open("w") as fh:
         for r in records:
             fh.write(json.dumps({
-                **{k: v for k, v in r.items() if k != "i"},
+                # Skip "i" (a shard-local index) and any _private field: the full operation
+                # histogram is carried on the record for the coverage pass and would otherwise
+                # be duplicated into every line here.
+                **{k: v for k, v in r.items() if k != "i" and not k.startswith("_")},
                 "rc": f"docs/{r['id']}/doc.rc",
                 "json": f"docs/{r['id']}/doc.json" if r["hasJson"] else None,
             }, separators=(",", ":")) + "\n")
@@ -610,6 +632,98 @@ def cmd_catalog(args):
           f"({sum(len(v) for v in facet_out.values())} distinct facet values)")
     if undec:
         print(f"  WARNING: {undec} documents could not be decoded")
+
+
+
+# ── Operation index and coverage ──────────────────────────────────────────────
+
+OPERATIONS_JAVA = os.environ.get(
+    "OPERATIONS_JAVA",
+    "/Users/john/code/androidx-main3/frameworks/support/compose/remote/remote-core/"
+    "src/main/java/androidx/compose/remote/core/Operations.java",
+)
+OP_CONST_RE = re.compile(r"public static final int ([A-Z0-9_]+)\s*=\s*(-?\d+)")
+EXAMPLES_PER_OP = 25
+
+
+_OPCODE_NAMES = None
+
+
+def opcode_names() -> dict[int, str]:
+    """opcode -> canonical Operations.java name, cached for the run."""
+    global _OPCODE_NAMES
+    if _OPCODE_NAMES is None:
+        _OPCODE_NAMES = {v: k for k, v in known_operations().items()}
+    return _OPCODE_NAMES
+
+
+def known_operations() -> dict[str, int]:
+    """Every operation the engine defines, from upstream Operations.java.
+
+    Read from source rather than hardcoded so the coverage report tracks the format as it
+    grows; a new opcode upstream shows up as uncovered instead of silently not existing.
+    """
+    try:
+        return {m.group(1): int(m.group(2))
+                for m in OP_CONST_RE.finditer(Path(OPERATIONS_JAVA).read_text())}
+    except Exception:
+        return {}
+
+
+def write_op_index(records: list[dict]) -> None:
+    """catalog/by-op.json and catalog/coverage.json.
+
+    by-op maps each operation to documents that use it, fewest-operations first, so the head
+    of each list is the smallest thing that demonstrates it - which is what you want when the
+    question is "show me how to use X".
+
+    coverage names the operations with no example at all. That matters in both directions: it
+    tells a contributor where to aim, and stops a reader concluding an operation does not
+    exist merely because nothing here uses it.
+    """
+    known = known_operations()
+    usage: dict[str, list[tuple[int, str]]] = {}
+    undecodable = 0
+    for r in records:
+        hist = r.get("_hist") or {}
+        if not r.get("_decoded"):
+            undecodable += 1
+            continue
+        for op in hist:
+            usage.setdefault(op, []).append((r["ops"], r["id"]))
+
+    by_op = {}
+    for op, lst in sorted(usage.items()):
+        lst.sort()                       # fewest total operations first = simplest example
+        by_op[op] = {
+            "opcode": known.get(op),
+            "documents": len(lst),
+            "examples": [i for _, i in lst[:EXAMPLES_PER_OP]],
+        }
+    (CATALOG / "by-op.json").write_text(json.dumps(by_op, separators=(",", ":")) + "\n")
+
+    seen = set(usage)
+    uncovered = sorted(set(known) - seen)
+    unknown = sorted(seen - set(known))
+    coverage = {
+        "knownOperations": len(known),
+        "covered": len(seen & set(known)),
+        "uncovered": uncovered,
+        # Names the decoder emits that are not opcode constants - structural markers rather
+        # than operations. Listed so they are not mistaken for undocumented features.
+        "notOpcodeConstants": unknown,
+        # Operations used by these documents are invisible to this report, so a name listed as
+        # uncovered may still have an example among them.
+        "undecodableDocuments": undecodable,
+        "operationsSource": OPERATIONS_JAVA,
+    }
+    (CATALOG / "coverage.json").write_text(json.dumps(coverage, indent=2) + "\n")
+    if known:
+        pct = len(seen & set(known)) / len(known) * 100
+        print(f"  operation coverage: {len(seen & set(known))}/{len(known)} ({pct:.0f}%), "
+              f"{len(uncovered)} with no example")
+    else:
+        print("  operation coverage: Operations.java not found, coverage.json is empty")
 
 
 # ── Verify ────────────────────────────────────────────────────────────────────

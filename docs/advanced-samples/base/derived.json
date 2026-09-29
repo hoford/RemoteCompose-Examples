@@ -2,8 +2,8 @@
   "id": "advanced-samples/base",
   "sha256": "9d48b7a7c571d6f1c1b01051a15de7bff327d9a21954d56dd71d9644240d28f3",
   "bytes": 1395,
-  "ops": 63,
-  "distinctOps": 14,
+  "ops": 67,
+  "distinctOps": 17,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -13,8 +13,11 @@
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "COMPONENT_VALUE": 2,
+    "TOUCH_EXPRESSION": 1,
     "DATA_TEXT": 11,
     "DEBUG_MESSAGE": 1,
     "PAINT_VALUES": 11,
@@ -24,6 +27,7 @@
   },
   "apis": [
     "expressions",
+    "interaction",
     "layout",
     "paint",
     "text"

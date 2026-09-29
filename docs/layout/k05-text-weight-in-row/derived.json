@@ -2,8 +2,8 @@
   "id": "layout/k05-text-weight-in-row",
   "sha256": "40a16c140a4ece0e70626bcd932ca11625b0347aa519ab96ac56869f772d9fe7",
   "bytes": 384,
-  "ops": 19,
-  "distinctOps": 9,
+  "ops": 22,
+  "distinctOps": 11,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,9 +13,11 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 3,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_BOX": 1,
     "CONTAINER_END": 6,
-    "DATA_TEXT": 1
+    "DATA_TEXT": 1,
+    "CORE_TEXT": 1
   },
   "apis": [
     "layout",

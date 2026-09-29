@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-compass",
   "sha256": "b4ee95302692a8402064b6d5c7492276a7296f36d553ebfff79db7c772f45a14",
   "bytes": 1335,
-  "ops": 92,
-  "distinctOps": 17,
+  "ops": 96,
+  "distinctOps": 20,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,16 +13,19 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 2,
     "PAINT_VALUES": 20,
     "DRAW_CIRCLE": 4,
     "MATRIX_SAVE": 10,
     "MATRIX_ROTATE": 10,
+    "LOOP_START": 2,
     "DRAW_LINE": 5,
     "MATRIX_RESTORE": 10,
     "CONTAINER_END": 5,
     "DATA_TEXT": 9,
     "DRAW_TEXT_ANCHOR": 10,
+    "TEXT_FROM_FLOAT": 1,
     "DRAW_ROUND_RECT": 1
   },
   "apis": [
@@ -31,6 +34,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

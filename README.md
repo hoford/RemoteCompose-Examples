@@ -33,6 +33,14 @@ Filtering never touches the documents:
 Within a facet, values are alternatives (OR). Across facets they are constraints (AND) — so
 "drawCircle or drawPath, but only from droidkaigi26" is expressible.
 
+## Finding your way in
+
+`ops.html` — every operation the engine defines, the documents using it, and the ones with no
+example. Each list is ordered smallest-example-first, so the top entry is the least code that
+demonstrates the operation. 115 of 176 operations are covered today.
+
+Backed by `catalog/by-op.json` and `catalog/coverage.json`, both derived.
+
 ## Curated vs derived
 
 ```

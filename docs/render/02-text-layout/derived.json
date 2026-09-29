@@ -2,8 +2,8 @@
   "id": "render/02-text-layout",
   "sha256": "f538d230c24562b9b31b69fd4cc9d03ac260d05dae75a7a56a0945d2ad1ff47f",
   "bytes": 720,
-  "ops": 42,
-  "distinctOps": 11,
+  "ops": 56,
+  "distinctOps": 13,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -13,8 +13,10 @@
     "MODIFIER_BACKGROUND": 4,
     "MODIFIER_PADDING": 2,
     "MODIFIER_WIDTH": 4,
+    "LAYOUT_CONTENT": 9,
     "LAYOUT_COLUMN": 2,
     "DATA_TEXT": 5,
+    "CORE_TEXT": 5,
     "CONTAINER_END": 19,
     "MODIFIER_HEIGHT": 2,
     "LAYOUT_BOX": 1

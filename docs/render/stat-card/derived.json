@@ -2,8 +2,8 @@
   "id": "render/stat-card",
   "sha256": "5d911b90cc6b32420aece8c96037d41954146deaa1dacf547a6fa514805d580f",
   "bytes": 272,
-  "ops": 16,
-  "distinctOps": 9,
+  "ops": 21,
+  "distinctOps": 11,
   "width": 300,
   "height": 200,
   "histogram": {
@@ -14,7 +14,9 @@
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 7
   },
   "apis": [

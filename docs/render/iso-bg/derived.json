@@ -2,8 +2,8 @@
   "id": "render/iso-bg",
   "sha256": "4ba1629263577fabe212e24e7b31030d9a3cc424c0d306bc48ee7b47bc19d002",
   "bytes": 151,
-  "ops": 11,
-  "distinctOps": 7,
+  "ops": 14,
+  "distinctOps": 9,
   "width": 200,
   "height": 200,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 2,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [

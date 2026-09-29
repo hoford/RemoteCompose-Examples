@@ -2,8 +2,8 @@
   "id": "render/w-unguard",
   "sha256": "36aab97ee5fac39343419a127ff8bb42ad3e1f6fc672c291da2156d8fb84ab1b",
   "bytes": 242,
-  "ops": 13,
-  "distinctOps": 8,
+  "ops": 15,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 3,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

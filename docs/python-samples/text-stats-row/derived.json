@@ -2,8 +2,8 @@
   "id": "python-samples/text-stats-row",
   "sha256": "c1a2c1d78f171b12abba00ea590ec5762597ae34351c0578143d61b1bf1121d7",
   "bytes": 938,
-  "ops": 68,
-  "distinctOps": 11,
+  "ops": 93,
+  "distinctOps": 14,
   "width": 500,
   "height": 400,
   "histogram": {
@@ -14,9 +14,12 @@
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_PADDING": 4,
     "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_CONTENT": 16,
     "LAYOUT_ROW": 1,
+    "MODIFIER_ROUNDED_CLIP_RECT": 3,
     "LAYOUT_COLUMN": 3,
     "DATA_TEXT": 6,
+    "CORE_TEXT": 6,
     "CONTAINER_END": 33
   },
   "apis": [

@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-level",
   "sha256": "27a3af874f047afc6a480289a8ab5686dd2d70c9cc763f4cc27c053d6f112309",
   "bytes": 1151,
-  "ops": 56,
-  "distinctOps": 14,
+  "ops": 59,
+  "distinctOps": 17,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,14 +13,17 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 5,
     "PAINT_VALUES": 19,
     "DATA_TEXT": 3,
     "DRAW_TEXT_ANCHOR": 4,
     "DRAW_ROUND_RECT": 5,
+    "LOOP_START": 1,
     "DRAW_LINE": 3,
     "CONTAINER_END": 4,
-    "DRAW_CIRCLE": 7
+    "DRAW_CIRCLE": 7,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "drawCircle",
@@ -28,6 +31,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

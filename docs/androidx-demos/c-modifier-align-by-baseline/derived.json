@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-modifier-align-by-baseline",
   "sha256": "d399d86aaa7d5816feb4c5fe5725b16930dfbf7856e21110af5328738a34aade",
   "bytes": 250,
-  "ops": 16,
-  "distinctOps": 8,
+  "ops": 21,
+  "distinctOps": 10,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_ROW": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "MODIFIER_ALIGN_BY": 2,
     "CONTAINER_END": 7
   },

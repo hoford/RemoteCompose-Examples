@@ -2,8 +2,8 @@
   "id": "layout/k02-text-in-fixed-box",
   "sha256": "b07310c8e0f4c824a2901b22b390837739d14dbdc0434fade925b38356ad5d1a",
   "bytes": 397,
-  "ops": 19,
-  "distinctOps": 8,
+  "ops": 23,
+  "distinctOps": 10,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,7 +13,9 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 3,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 7
   },
   "apis": [

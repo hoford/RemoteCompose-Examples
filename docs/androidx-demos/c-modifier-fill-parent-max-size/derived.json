@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-modifier-fill-parent-max-size",
   "sha256": "e196b9d49d1085d37505daf2c4efe7cc132bbd475a94655e88f78b39e992e338",
   "bytes": 251,
-  "ops": 15,
-  "distinctOps": 9,
+  "ops": 19,
+  "distinctOps": 13,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -12,12 +12,17 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "MODIFIER_CLIP_RECT": 1,
     "DATA_FLOAT": 1,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1,
     "CONTAINER_END": 5,
+    "LAYOUT_CONTENT": 1,
     "LAYOUT_BOX": 1,
     "MODIFIER_BACKGROUND": 1
   },
   "apis": [
+    "interaction",
     "layout"
   ],
   "flags": [],

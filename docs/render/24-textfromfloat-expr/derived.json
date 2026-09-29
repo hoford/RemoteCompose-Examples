@@ -2,8 +2,8 @@
   "id": "render/24-textfromfloat-expr",
   "sha256": "75865bc54db10b94276baa01a8c298f1e2a12f6d40db2a074666ac1a9107b154",
   "bytes": 220,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 16,
+  "distinctOps": 11,
   "width": 300,
   "height": 300,
   "histogram": {
@@ -13,12 +13,16 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 2,
     "ANIMATED_FLOAT": 1,
+    "TEXT_FROM_FLOAT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [
     "expressions",
-    "layout"
+    "layout",
+    "text"
   ],
   "flags": [
     "animated",

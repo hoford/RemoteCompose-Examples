@@ -2,8 +2,8 @@
   "id": "render/var-nosensor",
   "sha256": "ab6210a011b97d70c69a5959aa9137e2a2bf3235bf5f7cf9d54c92e92f49e085",
   "bytes": 214,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 14,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 2,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

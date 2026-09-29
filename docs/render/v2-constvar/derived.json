@@ -2,8 +2,8 @@
   "id": "render/v2-constvar",
   "sha256": "de3e930879a291492a315f3ca22710137de1a3eb0c5edb564e48b5da48a3c861",
   "bytes": 203,
-  "ops": 13,
-  "distinctOps": 8,
+  "ops": 15,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 3,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

@@ -2,8 +2,8 @@
   "id": "render/d20-progress",
   "sha256": "f0e03c8168ccdfbd74a939f532eecef1b805dbeebe124e3198de883b88052c2f",
   "bytes": 397,
-  "ops": 23,
-  "distinctOps": 8,
+  "ops": 25,
+  "distinctOps": 10,
   "width": 320,
   "height": 180,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 7,
     "DRAW_ROUND_RECT": 7,
     "CONTAINER_END": 4

@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-signal",
   "sha256": "9028855e337987373f0a74a6975d7fc136b4741529b1567603fb6ae9a4a1fda1",
   "bytes": 1387,
-  "ops": 50,
-  "distinctOps": 12,
+  "ops": 52,
+  "distinctOps": 14,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,11 +13,13 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 7,
     "PAINT_VALUES": 16,
     "DATA_TEXT": 2,
     "DRAW_TEXT_ANCHOR": 3,
     "DRAW_ROUND_RECT": 13,
+    "TEXT_FROM_FLOAT": 1,
     "CONTAINER_END": 3
   },
   "apis": [

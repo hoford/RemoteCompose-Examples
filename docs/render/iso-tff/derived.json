@@ -2,8 +2,8 @@
   "id": "render/iso-tff",
   "sha256": "76c433c8561cf1cfcede3863c0f7d81edb288e62054f4c9912ecba0a6b09e69a",
   "bytes": 159,
-  "ops": 10,
-  "distinctOps": 6,
+  "ops": 14,
+  "distinctOps": 9,
   "width": 200,
   "height": 200,
   "histogram": {
@@ -12,10 +12,14 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 2,
+    "TEXT_FROM_FLOAT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [
-    "layout"
+    "layout",
+    "text"
   ],
   "flags": [],
   "decoded": true,

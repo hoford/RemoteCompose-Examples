@@ -2,8 +2,8 @@
   "id": "render/hash2",
   "sha256": "b5dcfc9a9d015043195378b702ede97070fb01f2a708d38f98431a7f96dbfc05",
   "bytes": 974,
-  "ops": 40,
-  "distinctOps": 10,
+  "ops": 46,
+  "distinctOps": 13,
   "width": 420,
   "height": 788,
   "histogram": {
@@ -12,9 +12,12 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 5,
     "DRAW_RECT": 5,
     "DATA_TEXT": 1,
+    "LOOP_START": 4,
     "ANIMATED_FLOAT": 16,
     "CONTAINER_END": 8
   },
@@ -22,6 +25,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

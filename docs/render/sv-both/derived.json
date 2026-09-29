@@ -2,8 +2,8 @@
   "id": "render/sv-both",
   "sha256": "7df5a350b2fb48e48bebe5c1d23535f5acdb56d2fd5319016448401155967454",
   "bytes": 581,
-  "ops": 37,
-  "distinctOps": 17,
+  "ops": 50,
+  "distinctOps": 22,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -15,15 +15,20 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 6,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 15,
+    "TEXT_FROM_FLOAT": 2,
     "LAYOUT_BOX": 1,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 1,
     "ANIMATED_FLOAT": 2,
     "DRAW_CIRCLE": 1,
     "RUN_ACTION": 1,
-    "VALUE_FLOAT_CHANGE_ACTION": 1
+    "VALUE_FLOAT_CHANGE_ACTION": 1,
+    "VALUE_FLOAT_EXPRESSION_CHANGE_ACTION": 1
   },
   "apis": [
     "drawCircle",

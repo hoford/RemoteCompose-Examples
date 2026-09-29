@@ -2,8 +2,8 @@
   "id": "render/scroll-nested",
   "sha256": "ed92809e13b3a8961cc06edabe034139dc634b401b9c1782f3c277c00bedbc20",
   "bytes": 1912,
-  "ops": 125,
-  "distinctOps": 9,
+  "ops": 169,
+  "distinctOps": 14,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -13,11 +13,17 @@
     "MODIFIER_WIDTH": 14,
     "MODIFIER_HEIGHT": 14,
     "MODIFIER_BACKGROUND": 14,
+    "MODIFIER_CLIP_RECT": 2,
+    "MODIFIER_SCROLL": 2,
+    "TOUCH_EXPRESSION": 2,
     "CONTAINER_END": 55,
+    "LAYOUT_CONTENT": 26,
     "LAYOUT_BOX": 12,
-    "DATA_TEXT": 12
+    "DATA_TEXT": 12,
+    "CORE_TEXT": 12
   },
   "apis": [
+    "interaction",
     "layout",
     "text"
   ],

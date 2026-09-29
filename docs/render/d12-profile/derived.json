@@ -2,8 +2,8 @@
   "id": "render/d12-profile",
   "sha256": "48dfeedc16dbc2e436b2a34f615e43e40fdedab22975deff678f0d45e72b7a75",
   "bytes": 424,
-  "ops": 27,
-  "distinctOps": 10,
+  "ops": 35,
+  "distinctOps": 12,
   "width": 300,
   "height": 380,
   "histogram": {
@@ -13,8 +13,10 @@
     "MODIFIER_WIDTH": 4,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CONTENT": 5,
     "LAYOUT_BOX": 1,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 11,
     "MODIFIER_PADDING": 1
   },

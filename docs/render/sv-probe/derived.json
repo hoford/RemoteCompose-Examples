@@ -2,8 +2,8 @@
   "id": "render/sv-probe",
   "sha256": "b9be8686674e1681c8c7b9540e4e1c9ca2eb692803bab12def701fcac102c8c8",
   "bytes": 602,
-  "ops": 37,
-  "distinctOps": 16,
+  "ops": 51,
+  "distinctOps": 21,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -15,14 +15,19 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 6,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 15,
+    "TEXT_FROM_FLOAT": 2,
     "LAYOUT_BOX": 1,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 1,
     "ANIMATED_FLOAT": 3,
     "DRAW_CIRCLE": 1,
-    "RUN_ACTION": 1
+    "RUN_ACTION": 1,
+    "VALUE_FLOAT_EXPRESSION_CHANGE_ACTION": 2
   },
   "apis": [
     "drawCircle",

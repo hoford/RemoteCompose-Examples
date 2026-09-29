@@ -2,8 +2,8 @@
   "id": "render/paths",
   "sha256": "64a9ce466027d4db05debca761eff1f56067c2c3ce5c70550adf31323f13d0e4",
   "bytes": 437,
-  "ops": 19,
-  "distinctOps": 10,
+  "ops": 24,
+  "distinctOps": 14,
   "width": 400,
   "height": 200,
   "histogram": {
@@ -12,10 +12,14 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
+    "DATA_PATH": 1,
     "DRAW_PATH": 2,
+    "PATH_EXPRESSION": 1,
     "CONTAINER_END": 6
   },
   "apis": [

@@ -2,8 +2,8 @@
   "id": "androidx-demos/flow-control-checks-flow-control-checks2",
   "sha256": "9433e632b1589587b4e6d654eafff2ebad17ffc2e0c0616bbf35c32574588de1",
   "bytes": 330,
-  "ops": 27,
-  "distinctOps": 13,
+  "ops": 32,
+  "distinctOps": 17,
   "width": 0,
   "height": 0,
   "histogram": {
@@ -14,17 +14,23 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "COMPONENT_VALUE": 2,
     "DRAW_ROUND_RECT": 1,
     "DEBUG_MESSAGE": 2,
+    "LOOP_START": 1,
     "ANIMATED_FLOAT": 2,
+    "CONDITIONAL_OPERATIONS": 1,
     "CONTAINER_END": 8
   },
   "apis": [
+    "conditionals",
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "text"
   ],
   "flags": [

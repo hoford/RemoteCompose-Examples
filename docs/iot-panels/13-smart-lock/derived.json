@@ -2,8 +2,8 @@
   "id": "iot-panels/13-smart-lock",
   "sha256": "9e9cd59cc151fdf7939ba86e490ef15890faa62606897d2443004bf9347c2b28",
   "bytes": 2200,
-  "ops": 96,
-  "distinctOps": 18,
+  "ops": 100,
+  "distinctOps": 21,
   "width": 360,
   "height": 360,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 31,
     "DRAW_RECT": 2,
     "DRAW_ROUND_RECT": 16,
@@ -23,6 +25,7 @@
     "MATRIX_ROTATE": 1,
     "MATRIX_RESTORE": 1,
     "DATA_TEXT": 3,
+    "LOOP_START": 1,
     "CONTAINER_END": 7,
     "DRAW_TEXT_ANCHOR": 2
   },
@@ -33,6 +36,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

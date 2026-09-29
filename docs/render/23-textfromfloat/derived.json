@@ -2,8 +2,8 @@
   "id": "render/23-textfromfloat",
   "sha256": "b57fe3b606691f40929c7cd95a28fdb41b4ce0c9252931f62fe79cf819378f53",
   "bytes": 250,
-  "ops": 14,
-  "distinctOps": 8,
+  "ops": 20,
+  "distinctOps": 11,
   "width": 300,
   "height": 300,
   "histogram": {
@@ -13,8 +13,11 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 1,
-    "CONTAINER_END": 7
+    "CORE_TEXT": 2,
+    "CONTAINER_END": 7,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "layout",

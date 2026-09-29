@@ -2,8 +2,8 @@
   "id": "render/a2-orbit",
   "sha256": "552c53e8fdc2a93747bca0f6f7640cc62edeb80a604dbe7b7dd82866883c3f31",
   "bytes": 350,
-  "ops": 18,
-  "distinctOps": 11,
+  "ops": 21,
+  "distinctOps": 14,
   "width": 300,
   "height": 300,
   "histogram": {
@@ -12,9 +12,12 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
     "DATA_TEXT": 1,
+    "LOOP_START": 1,
     "ANIMATED_FLOAT": 3,
     "DRAW_CIRCLE": 1,
     "CONTAINER_END": 5
@@ -24,6 +27,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

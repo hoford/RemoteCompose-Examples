@@ -2,8 +2,8 @@
   "id": "render/v4-sens-c",
   "sha256": "2e755a036d8823675ff6ecdd9f24900bdb111f53f39137a793c48b3780f2f0b1",
   "bytes": 196,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 14,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 2,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

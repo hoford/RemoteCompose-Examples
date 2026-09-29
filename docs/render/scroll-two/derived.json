@@ -2,8 +2,8 @@
   "id": "render/scroll-two",
   "sha256": "c601ea3735a8546e021264cf75ff4954af7610664e696be603945bac4d76d061",
   "bytes": 3400,
-  "ops": 237,
-  "distinctOps": 10,
+  "ops": 318,
+  "distinctOps": 15,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -13,12 +13,18 @@
     "MODIFIER_WIDTH": 27,
     "MODIFIER_HEIGHT": 27,
     "MODIFIER_BACKGROUND": 25,
+    "LAYOUT_CONTENT": 51,
     "LAYOUT_COLUMN": 2,
+    "MODIFIER_CLIP_RECT": 2,
+    "MODIFIER_SCROLL": 2,
+    "TOUCH_EXPRESSION": 2,
     "CONTAINER_END": 105,
     "LAYOUT_BOX": 24,
-    "DATA_TEXT": 24
+    "DATA_TEXT": 24,
+    "CORE_TEXT": 24
   },
   "apis": [
+    "interaction",
     "layout",
     "text"
   ],

@@ -2,8 +2,8 @@
   "id": "layout/k09-text-in-collapsible-column",
   "sha256": "90cb6216d9824299c78975df9485432e247ba6d20c45cff964d23fbbd4e7ae60",
   "bytes": 458,
-  "ops": 23,
-  "distinctOps": 8,
+  "ops": 30,
+  "distinctOps": 11,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,7 +13,10 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_CONTENT": 4,
+    "LAYOUT_COLLAPSIBLE_COLUMN": 1,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 9
   },
   "apis": [

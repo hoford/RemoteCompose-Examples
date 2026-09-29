@@ -2,8 +2,8 @@
   "id": "render/11-layout-expr",
   "sha256": "4d5413b7163719b68774c74965d8962a3fe2fb79d53c291fa0faf53ae37c04fb",
   "bytes": 424,
-  "ops": 26,
-  "distinctOps": 11,
+  "ops": 32,
+  "distinctOps": 13,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -15,7 +15,9 @@
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 2,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 4,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 9,
     "LAYOUT_BOX": 1
   },

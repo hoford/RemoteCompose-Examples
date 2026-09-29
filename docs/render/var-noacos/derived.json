@@ -2,8 +2,8 @@
   "id": "render/var-noacos",
   "sha256": "07602f3e2341e9e4abbc4c53162eadfc2d5a0a04da3dccaea7b838391f9788d6",
   "bytes": 245,
-  "ops": 13,
-  "distinctOps": 8,
+  "ops": 15,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 3,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

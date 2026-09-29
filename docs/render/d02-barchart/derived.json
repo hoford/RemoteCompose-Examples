@@ -2,8 +2,8 @@
   "id": "render/d02-barchart",
   "sha256": "1c7b562546c7001054990ce9fead7082a7ab0dd14a6f351531d4954717a23926",
   "bytes": 393,
-  "ops": 23,
-  "distinctOps": 8,
+  "ops": 25,
+  "distinctOps": 10,
   "width": 320,
   "height": 240,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 7,
     "DRAW_ROUND_RECT": 7,
     "CONTAINER_END": 4

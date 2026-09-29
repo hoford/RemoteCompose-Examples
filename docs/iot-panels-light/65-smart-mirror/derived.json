@@ -2,8 +2,8 @@
   "id": "iot-panels-light/65-smart-mirror",
   "sha256": "4ca8bc2c2e49b11f8a2c77d78a3286c336f820a116d8c3d87699c8297b851630",
   "bytes": 1919,
-  "ops": 87,
-  "distinctOps": 15,
+  "ops": 91,
+  "distinctOps": 18,
   "width": 360,
   "height": 360,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 26,
     "DRAW_RECT": 1,
     "DRAW_ROUND_RECT": 7,
@@ -21,6 +23,7 @@
     "DATA_TEXT": 6,
     "DRAW_TEXT_ANCHOR": 5,
     "DRAW_OVAL": 2,
+    "LOOP_START": 1,
     "CONTAINER_END": 7
   },
   "apis": [
@@ -30,6 +33,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

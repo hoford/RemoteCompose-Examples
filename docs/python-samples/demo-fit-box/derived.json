@@ -2,18 +2,21 @@
   "id": "python-samples/demo-fit-box",
   "sha256": "722f604f232be1e9d301dbf0d5d820656a68c8aa65f22f7bccdb493d57f8ce22",
   "bytes": 259,
-  "ops": 17,
-  "distinctOps": 8,
+  "ops": 22,
+  "distinctOps": 11,
   "width": 500,
   "height": 500,
   "histogram": {
     "HEADER": 1,
     "LAYOUT_ROOT": 1,
+    "LAYOUT_FIT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CONTENT": 3,
     "LAYOUT_BOX": 1,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 7
   },
   "apis": [

@@ -2,8 +2,8 @@
   "id": "python-samples/layout-weighted-column",
   "sha256": "8d3fef170164bba97bcaf31e4f1f993b680da6260520487354fef8a69c72905b",
   "bytes": 609,
-  "ops": 40,
-  "distinctOps": 10,
+  "ops": 50,
+  "distinctOps": 12,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -14,8 +14,10 @@
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_PADDING": 4,
     "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_CONTENT": 7,
     "LAYOUT_ROW": 3,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 15
   },
   "apis": [

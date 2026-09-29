@@ -2,8 +2,8 @@
   "id": "render/pulsing-concentric-blue-rings-animation",
   "sha256": "20372ecb1ba7c7c8ec0865c94c6c86ca3005a2aae5c655b9ac88c44a74cf1189",
   "bytes": 294,
-  "ops": 16,
-  "distinctOps": 11,
+  "ops": 19,
+  "distinctOps": 14,
   "width": 300,
   "height": 300,
   "histogram": {
@@ -12,9 +12,12 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
     "DATA_TEXT": 1,
+    "LOOP_START": 1,
     "ANIMATED_FLOAT": 1,
     "DRAW_CIRCLE": 1,
     "CONTAINER_END": 5
@@ -24,6 +27,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

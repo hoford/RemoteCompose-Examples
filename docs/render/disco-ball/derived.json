@@ -2,8 +2,8 @@
   "id": "render/disco-ball",
   "sha256": "ec9b539a6b1bcde3d6102f457bc2a11bad0d97cf06c377352b45013291eb7473",
   "bytes": 16095,
-  "ops": 420,
-  "distinctOps": 11,
+  "ops": 493,
+  "distinctOps": 14,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -12,10 +12,13 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 22,
     "DRAW_RECT": 30,
     "DRAW_CIRCLE": 43,
     "DATA_TEXT": 1,
+    "LOOP_START": 71,
     "ANIMATED_FLOAT": 244,
     "CONTAINER_END": 75
   },
@@ -24,6 +27,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

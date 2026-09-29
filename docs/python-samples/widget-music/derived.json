@@ -2,8 +2,8 @@
   "id": "python-samples/widget-music",
   "sha256": "e3de960bcb7596e8bc7fcd95eb3c467ed41588001475e44d01f49c05f5da8c56",
   "bytes": 1601,
-  "ops": 103,
-  "distinctOps": 18,
+  "ops": 117,
+  "distinctOps": 21,
   "width": 400,
   "height": 200,
   "histogram": {
@@ -13,6 +13,8 @@
     "MODIFIER_WIDTH": 7,
     "MODIFIER_HEIGHT": 7,
     "MODIFIER_BACKGROUND": 1,
+    "MODIFIER_ROUNDED_CLIP_RECT": 1,
+    "LAYOUT_CONTENT": 10,
     "LAYOUT_ROW": 1,
     "LAYOUT_CANVAS": 3,
     "ANIMATED_FLOAT": 22,
@@ -24,6 +26,7 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_PADDING": 1,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "DRAW_ROUND_RECT": 2
   },
   "apis": [

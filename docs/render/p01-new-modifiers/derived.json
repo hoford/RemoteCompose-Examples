@@ -2,8 +2,8 @@
   "id": "render/p01-new-modifiers",
   "sha256": "34a6c14377b67e3c2c37a4898fa50a9e186c06335d2e49cb477379a294c30ccb",
   "bytes": 655,
-  "ops": 36,
-  "distinctOps": 13,
+  "ops": 47,
+  "distinctOps": 18,
   "width": 320,
   "height": 320,
   "histogram": {
@@ -14,12 +14,17 @@
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_BACKGROUND": 3,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 6,
     "LAYOUT_BOX": 3,
+    "MODIFIER_ROUNDED_CLIP_RECT": 1,
+    "MODIFIER_GRAPHICS_LAYER": 1,
     "MODIFIER_ZINDEX": 1,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 13,
     "MODIFIER_OFFSET": 1,
-    "MODIFIER_BORDER": 1
+    "MODIFIER_BORDER": 1,
+    "ACCESSIBILITY_SEMANTICS": 1
   },
   "apis": [
     "layout",

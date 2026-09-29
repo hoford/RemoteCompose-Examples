@@ -2,8 +2,8 @@
   "id": "python-samples/layout-clip-circle",
   "sha256": "93f63f4b1212455a4624a806831ca931b5692ed5d73250eedfe4daa8db84bab2",
   "bytes": 365,
-  "ops": 26,
-  "distinctOps": 9,
+  "ops": 34,
+  "distinctOps": 12,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,8 +13,11 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CONTENT": 5,
+    "MODIFIER_ROUNDED_CLIP_RECT": 1,
     "LAYOUT_COLUMN": 1,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 11
   },
   "apis": [

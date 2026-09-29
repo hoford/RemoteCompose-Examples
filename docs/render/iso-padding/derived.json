@@ -2,8 +2,8 @@
   "id": "render/iso-padding",
   "sha256": "b0187fff3c70311cd4f8140b1e3aa9cd4e0e3bdfa453eaa534d963449fca04d9",
   "bytes": 173,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 15,
+  "distinctOps": 10,
   "width": 200,
   "height": 200,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_COLUMN": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 2,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "MODIFIER_PADDING": 1,
     "CONTAINER_END": 5
   },

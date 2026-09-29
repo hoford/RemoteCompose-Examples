@@ -2,8 +2,8 @@
   "id": "render/d40-cards",
   "sha256": "e8d149d22b01ed81bf8164e7f84324b09a4e7871aaf3b41f81b46e312de1a112",
   "bytes": 820,
-  "ops": 59,
-  "distinctOps": 13,
+  "ops": 78,
+  "distinctOps": 15,
   "width": 480,
   "height": 180,
   "histogram": {
@@ -14,11 +14,13 @@
     "LAYOUT_ROW": 1,
     "MODIFIER_WIDTH": 4,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 13,
     "LAYOUT_BOX": 3,
     "MODIFIER_BACKGROUND": 3,
     "MODIFIER_PADDING": 3,
     "LAYOUT_COLUMN": 3,
     "DATA_TEXT": 6,
+    "CORE_TEXT": 6,
     "CONTAINER_END": 27
   },
   "apis": [

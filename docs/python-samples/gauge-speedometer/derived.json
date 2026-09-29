@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-speedometer",
   "sha256": "b4d55a6de4f1e81e9017ac936e675eb9d40a3ef19f845805e606a9e5321bea56",
   "bytes": 1535,
-  "ops": 97,
-  "distinctOps": 17,
+  "ops": 101,
+  "distinctOps": 20,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,17 +13,20 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 6,
     "PAINT_VALUES": 21,
     "DRAW_CIRCLE": 5,
     "DRAW_ARC": 4,
+    "LOOP_START": 2,
     "MATRIX_SAVE": 10,
     "MATRIX_ROTATE": 10,
     "DRAW_LINE": 3,
     "MATRIX_RESTORE": 10,
     "CONTAINER_END": 5,
     "DATA_TEXT": 8,
-    "DRAW_TEXT_ANCHOR": 9
+    "DRAW_TEXT_ANCHOR": 9,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "drawArc",
@@ -31,6 +34,7 @@
     "drawLine",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

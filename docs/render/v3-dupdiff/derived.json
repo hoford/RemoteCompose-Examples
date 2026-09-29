@@ -2,8 +2,8 @@
   "id": "render/v3-dupdiff",
   "sha256": "e3075085f50bc7f103655f6206185c9558b835b0c866773f9a68e58e6da787f8",
   "bytes": 189,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 14,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 2,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

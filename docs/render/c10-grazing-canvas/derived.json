@@ -2,8 +2,8 @@
   "id": "render/c10-grazing-canvas",
   "sha256": "20e0b1dc2e5e85976c869da4c7ebd0e044a42e04684d7e4f4845c9d6b98e5c1c",
   "bytes": 217,
-  "ops": 17,
-  "distinctOps": 9,
+  "ops": 20,
+  "distinctOps": 11,
   "width": 320,
   "height": 320,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
     "CONTAINER_END": 6

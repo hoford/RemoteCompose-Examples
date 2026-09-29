@@ -2,8 +2,8 @@
   "id": "render/v4-fn-min",
   "sha256": "3c8c154d03824f9c4c996d1af17d2296e10ff5b4e78dedbcb134230baee0154e",
   "bytes": 188,
-  "ops": 12,
-  "distinctOps": 8,
+  "ops": 14,
+  "distinctOps": 10,
   "width": 480,
   "height": 480,
   "histogram": {
@@ -12,6 +12,8 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "ANIMATED_FLOAT": 2,
     "PAINT_VALUES": 1,
     "CONTAINER_END": 4

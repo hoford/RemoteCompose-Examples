@@ -2,8 +2,8 @@
   "id": "python-samples/layout-fill-max-width",
   "sha256": "04aafdec936530d99d9388fd1a178a2192f0b03c6bb79d799083801a819e9198",
   "bytes": 567,
-  "ops": 39,
-  "distinctOps": 10,
+  "ops": 49,
+  "distinctOps": 12,
   "width": 600,
   "height": 400,
   "histogram": {
@@ -13,9 +13,11 @@
     "MODIFIER_WIDTH": 4,
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_BACKGROUND": 4,
+    "LAYOUT_CONTENT": 7,
     "LAYOUT_BOX": 3,
     "MODIFIER_PADDING": 3,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 15
   },
   "apis": [

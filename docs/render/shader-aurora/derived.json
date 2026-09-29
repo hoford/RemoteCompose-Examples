@@ -2,8 +2,8 @@
   "id": "render/shader-aurora",
   "sha256": "69834bdcfd2b9b603fd49558928f73660bfaaee622cf0347090f127e39f7bf0b",
   "bytes": 1096,
-  "ops": 44,
-  "distinctOps": 14,
+  "ops": 55,
+  "distinctOps": 18,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -14,13 +14,17 @@
     "MODIFIER_HEIGHT": 5,
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_PADDING": 3,
+    "LAYOUT_CONTENT": 7,
     "LAYOUT_COLUMN": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "DATA_TEXT": 3,
     "COMPONENT_VALUE": 2,
+    "DATA_SHADER": 1,
     "PAINT_VALUES": 1,
     "DRAW_RECT": 1,
-    "CONTAINER_END": 16
+    "CONTAINER_END": 16,
+    "CORE_TEXT": 2
   },
   "apis": [
     "drawRect",

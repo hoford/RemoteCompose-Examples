@@ -2,8 +2,8 @@
   "id": "androidx-demos/base",
   "sha256": "71ed485c5de5e6d18ae751b98f7c5b9023ce5f248a2f6ed81e0496f66860287d",
   "bytes": 1427,
-  "ops": 64,
-  "distinctOps": 14,
+  "ops": 68,
+  "distinctOps": 17,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -13,8 +13,11 @@
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "COMPONENT_VALUE": 2,
+    "TOUCH_EXPRESSION": 1,
     "DATA_TEXT": 12,
     "DEBUG_MESSAGE": 1,
     "PAINT_VALUES": 11,
@@ -24,6 +27,7 @@
   },
   "apis": [
     "expressions",
+    "interaction",
     "layout",
     "paint",
     "text"

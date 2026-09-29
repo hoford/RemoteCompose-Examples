@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-text",
   "sha256": "075f8d5369d23cc7ffe2370e64bb5e0cd6664f3592e210bfa37994ea967c9881",
   "bytes": 265,
-  "ops": 16,
-  "distinctOps": 9,
+  "ops": 21,
+  "distinctOps": 11,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -14,7 +14,9 @@
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_PADDING": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 7
   },
   "apis": [

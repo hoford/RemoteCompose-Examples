@@ -2,8 +2,8 @@
   "id": "python-samples/demo-pressure-gauge",
   "sha256": "e288ccfc8ecc19b3d84d61dac901b32b42a355cb4fa3b6227af8a9b5301b6c32",
   "bytes": 973,
-  "ops": 50,
-  "distinctOps": 15,
+  "ops": 53,
+  "distinctOps": 18,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -13,20 +13,24 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 17,
     "PAINT_VALUES": 5,
     "DATA_TEXT": 4,
     "DRAW_TEXT_ANCHOR": 5,
     "MATRIX_SAVE": 2,
     "MATRIX_ROTATE": 3,
+    "LOOP_START": 1,
     "DRAW_LINE": 2,
     "CONTAINER_END": 4,
-    "MATRIX_RESTORE": 2
+    "MATRIX_RESTORE": 2,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "drawLine",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

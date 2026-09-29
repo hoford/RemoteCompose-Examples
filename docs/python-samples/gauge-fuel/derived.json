@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-fuel",
   "sha256": "25016573be788f24ae38f90a99030360608ea2eccc6ce942104072b1092636c2",
   "bytes": 1428,
-  "ops": 82,
-  "distinctOps": 18,
+  "ops": 86,
+  "distinctOps": 21,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,6 +13,7 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 4,
     "PAINT_VALUES": 21,
     "DRAW_CIRCLE": 4,
@@ -21,10 +22,12 @@
     "DRAW_RECT": 1,
     "DRAW_LINE": 5,
     "DRAW_ARC": 3,
+    "LOOP_START": 2,
     "MATRIX_SAVE": 6,
     "MATRIX_ROTATE": 6,
     "MATRIX_RESTORE": 6,
-    "CONTAINER_END": 5
+    "CONTAINER_END": 5,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "drawArc",
@@ -33,6 +36,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"

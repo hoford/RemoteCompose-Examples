@@ -2,8 +2,8 @@
   "id": "render/weather-card",
   "sha256": "c0cd63086681b038128327b17375bf418501cbda7b27a318867150110c965871",
   "bytes": 331,
-  "ops": 19,
-  "distinctOps": 9,
+  "ops": 26,
+  "distinctOps": 11,
   "width": 300,
   "height": 320,
   "histogram": {
@@ -14,7 +14,9 @@
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 4,
     "DATA_TEXT": 3,
+    "CORE_TEXT": 3,
     "CONTAINER_END": 9
   },
   "apis": [

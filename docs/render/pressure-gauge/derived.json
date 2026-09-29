@@ -2,8 +2,8 @@
   "id": "render/pressure-gauge",
   "sha256": "fb9d8f308722967dc36779809362ea2a5355cbc574aacefa8c33e518a85abeb6",
   "bytes": 1395,
-  "ops": 58,
-  "distinctOps": 15,
+  "ops": 80,
+  "distinctOps": 19,
   "width": 360,
   "height": 360,
   "histogram": {
@@ -14,13 +14,17 @@
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 1,
     "MODIFIER_PADDING": 2,
+    "LAYOUT_CONTENT": 13,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "DATA_TEXT": 8,
     "COMPONENT_VALUE": 2,
+    "DATA_SHADER": 1,
     "PAINT_VALUES": 1,
     "DRAW_RECT": 1,
     "CONTAINER_END": 28,
     "LAYOUT_COLUMN": 3,
+    "CORE_TEXT": 7,
     "LAYOUT_ROW": 1
   },
   "apis": [

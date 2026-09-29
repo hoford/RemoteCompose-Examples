@@ -2,8 +2,8 @@
   "id": "python-samples/layout-card",
   "sha256": "a7c3069de2d12720a84e74b8f0605a0bc618a447b0c1d6c89fbb3a39ce8d03bf",
   "bytes": 1032,
-  "ops": 67,
-  "distinctOps": 12,
+  "ops": 90,
+  "distinctOps": 15,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -14,9 +14,12 @@
     "MODIFIER_HEIGHT": 2,
     "MODIFIER_BACKGROUND": 5,
     "MODIFIER_PADDING": 5,
+    "LAYOUT_CONTENT": 15,
     "LAYOUT_COLUMN": 3,
     "MODIFIER_BORDER": 1,
+    "MODIFIER_ROUNDED_CLIP_RECT": 2,
     "DATA_TEXT": 6,
+    "CORE_TEXT": 6,
     "CONTAINER_END": 31,
     "LAYOUT_ROW": 1
   },

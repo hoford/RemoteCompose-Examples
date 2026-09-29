@@ -2,8 +2,8 @@
   "id": "python-samples/demo-text",
   "sha256": "a5783ad54c8ce0e9defd4d14c6f8cfbaee7c53d6793af866cdfa25750fe1aeec",
   "bytes": 257,
-  "ops": 16,
-  "distinctOps": 9,
+  "ops": 21,
+  "distinctOps": 11,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -14,7 +14,9 @@
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_PADDING": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 2,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 7
   },
   "apis": [

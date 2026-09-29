@@ -2,8 +2,8 @@
   "id": "render/d11-stats",
   "sha256": "d5fc27054f9e8cd1331d683cf44dea5fed605ce5527d8df9ce1269f732e5a561",
   "bytes": 679,
-  "ops": 44,
-  "distinctOps": 10,
+  "ops": 60,
+  "distinctOps": 12,
   "width": 480,
   "height": 150,
   "histogram": {
@@ -12,10 +12,12 @@
     "LAYOUT_ROW": 1,
     "MODIFIER_WIDTH": 4,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 10,
     "LAYOUT_COLUMN": 3,
     "MODIFIER_BACKGROUND": 3,
     "MODIFIER_PADDING": 3,
     "DATA_TEXT": 6,
+    "CORE_TEXT": 6,
     "CONTAINER_END": 21
   },
   "apis": [

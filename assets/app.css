@@ -125,3 +125,31 @@ table.kv td:first-child { color: var(--dim); white-space: nowrap; }
 .ops-grid div { display: flex; justify-content: space-between;
                 border-bottom: 1px solid var(--line); padding: 3px 0; }
 .dim { color: var(--dim); }
+
+/* ── operations page ── */
+/* display:block overrides the global `main { display:flex }`, which is a row and would lay
+   the summary, search box, list and uncovered section out as four columns. */
+.ops-page { display: block; flex: 1; overflow-y: auto; padding: 18px 28px 48px; max-width: 1100px; }
+.ops-summary { font-size: 13px; color: var(--dim); margin-bottom: 14px; }
+#q {
+  width: 100%; max-width: 380px; margin-bottom: 18px; font: inherit;
+  background: var(--panel); color: var(--fg);
+  border: 1px solid var(--line); border-radius: 8px; padding: 7px 11px;
+}
+#q:focus { outline: none; border-color: var(--accent); }
+.op-row { border-bottom: 1px solid var(--line); padding: 9px 0; }
+.op-head { display: flex; gap: 12px; align-items: baseline; }
+.op-name { font-family: ui-monospace, monospace; font-size: 12.5px; font-weight: 600; }
+.op-meta { font-size: 11.5px; color: var(--dim); }
+.op-examples { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+.op-examples a {
+  font-size: 11.5px; color: var(--fg); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 5px; padding: 1px 7px;
+}
+.op-examples a:hover { border-color: var(--accent); }
+#uncovered-sec { margin-top: 30px; }
+#uncovered-sec h3 { font-size: 11px; text-transform: uppercase; letter-spacing: .07em;
+                    color: var(--dim); margin: 0 0 6px; }
+#uncovered .facet { cursor: default; font-family: ui-monospace, monospace; font-size: 11px; }
+#uncovered .facet:hover { border-color: var(--line); }
+.ops-page + footer, header .back { display: inline-block; margin-bottom: 8px; }

@@ -2,8 +2,8 @@
   "id": "render/counter",
   "sha256": "ff593d8b663a2f721ec6e1a40d2bb84382bb55379465add237875bf5cbe9e2ae",
   "bytes": 375,
-  "ops": 26,
-  "distinctOps": 13,
+  "ops": 34,
+  "distinctOps": 18,
   "width": 400,
   "height": 200,
   "histogram": {
@@ -15,15 +15,21 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 4,
+    "TEXT_FROM_FLOAT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 11,
     "LAYOUT_BOX": 1,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "RUN_ACTION": 1,
-    "ANIMATED_FLOAT": 1
+    "ANIMATED_FLOAT": 1,
+    "VALUE_FLOAT_EXPRESSION_CHANGE_ACTION": 1
   },
   "apis": [
     "expressions",
-    "layout"
+    "layout",
+    "text"
   ],
   "flags": [
     "animated",

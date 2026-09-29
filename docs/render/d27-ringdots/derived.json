@@ -2,8 +2,8 @@
   "id": "render/d27-ringdots",
   "sha256": "773dc7a436eecba51f5e3b86ddd509691e0d4c2776ebc46fc3fa14e04bc368e4",
   "bytes": 277,
-  "ops": 17,
-  "distinctOps": 11,
+  "ops": 20,
+  "distinctOps": 14,
   "width": 300,
   "height": 300,
   "histogram": {
@@ -12,9 +12,12 @@
     "LAYOUT_CANVAS": 1,
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 2,
     "DRAW_RECT": 1,
     "DATA_TEXT": 1,
+    "LOOP_START": 1,
     "ANIMATED_FLOAT": 2,
     "DRAW_CIRCLE": 1,
     "CONTAINER_END": 5
@@ -24,6 +27,7 @@
     "drawRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

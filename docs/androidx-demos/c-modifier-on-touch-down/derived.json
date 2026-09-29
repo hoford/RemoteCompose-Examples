@@ -2,8 +2,8 @@
   "id": "androidx-demos/c-modifier-on-touch-down",
   "sha256": "d8072cc16840ac529f7b2d5fea590005e03e21ebe84b09ee31adaecbd944a813",
   "bytes": 225,
-  "ops": 16,
-  "distinctOps": 11,
+  "ops": 19,
+  "distinctOps": 13,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -17,7 +17,9 @@
     "MODIFIER_TOUCH_DOWN": 1,
     "VALUE_INTEGER_CHANGE_ACTION": 1,
     "CONTAINER_END": 6,
-    "DATA_TEXT": 1
+    "LAYOUT_CONTENT": 2,
+    "DATA_TEXT": 1,
+    "CORE_TEXT": 1
   },
   "apis": [
     "layout",

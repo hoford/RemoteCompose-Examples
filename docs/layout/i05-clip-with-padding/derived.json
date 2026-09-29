@@ -2,8 +2,8 @@
   "id": "layout/i05-clip-with-padding",
   "sha256": "c11683af5b3bc91e53fbdfe78e36a861014b3cee003ccafef041159313e66f6d",
   "bytes": 334,
-  "ops": 21,
-  "distinctOps": 8,
+  "ops": 24,
+  "distinctOps": 10,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,7 +13,9 @@
     "MODIFIER_WIDTH": 3,
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 3,
+    "LAYOUT_CONTENT": 2,
     "MODIFIER_PADDING": 1,
+    "MODIFIER_CLIP_RECT": 1,
     "CONTAINER_END": 6
   },
   "apis": [

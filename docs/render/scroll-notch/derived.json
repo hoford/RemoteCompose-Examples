@@ -2,8 +2,8 @@
   "id": "render/scroll-notch",
   "sha256": "09abc261ff749ef81c2700a933a7899428f762f748de3503cc3709963a631813",
   "bytes": 1719,
-  "ops": 119,
-  "distinctOps": 10,
+  "ops": 159,
+  "distinctOps": 15,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -13,12 +13,18 @@
     "MODIFIER_WIDTH": 13,
     "MODIFIER_HEIGHT": 13,
     "MODIFIER_BACKGROUND": 13,
+    "MODIFIER_CLIP_RECT": 1,
     "DATA_FLOAT": 1,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1,
     "CONTAINER_END": 52,
+    "LAYOUT_CONTENT": 25,
     "LAYOUT_BOX": 12,
-    "DATA_TEXT": 12
+    "DATA_TEXT": 12,
+    "CORE_TEXT": 12
   },
   "apis": [
+    "interaction",
     "layout",
     "text"
   ],

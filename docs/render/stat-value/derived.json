@@ -2,8 +2,8 @@
   "id": "render/stat-value",
   "sha256": "32fbbad81bd3b0e819536f1b3f14da847289a8160360616bf0350a832e48299a",
   "bytes": 246,
-  "ops": 14,
-  "distinctOps": 8,
+  "ops": 20,
+  "distinctOps": 11,
   "width": 320,
   "height": 320,
   "histogram": {
@@ -13,6 +13,9 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 3,
+    "TEXT_FROM_FLOAT": 1,
+    "CORE_TEXT": 2,
     "CONTAINER_END": 7,
     "DATA_TEXT": 1
   },

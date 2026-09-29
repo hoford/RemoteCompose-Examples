@@ -32,6 +32,22 @@ read if you want to search the corpus.
 `apis` is the field to filter on. It is **derived from the compiled document**, not written by
 hand, so it cannot drift from what the document actually does.
 
+## Finding an example of a specific operation
+
+`catalog/by-op.json` maps every operation to documents that use it:
+
+```jsonc
+{ "DRAW_ARC": { "opcode": 62, "documents": 86,
+                "examples": ["render/a-donut-chart-…", "…"] } }
+```
+
+Examples are ordered **fewest operations first**, so `examples[0]` is the smallest document
+that demonstrates the operation — usually what you want when the question is "how do I use X".
+
+`catalog/coverage.json` lists operations with no example at all, which is how you tell "this
+corpus has no example" apart from "this operation does not exist". Both are browsable at
+`ops.html`.
+
 ## Per document
 
 | path | contents |
@@ -54,6 +70,10 @@ summary when you need to know exactly which opcodes a document uses.
 **`shaders` is detected from content, not opcodes.** A shader is carried as AGSL source inside a
 `DATA_TEXT` payload and applied through paint; there is no shader opcode to look for. Tagging
 purely from opcode names finds no shader documents at all.
+
+**Coverage is measured only over decodable documents.** `coverage.uncovered` may overstate
+what is missing, because operations used solely by the documents in `undecodableDocuments`
+are invisible to it.
 
 **Some documents cannot be fully decoded.** `derived.json.decoded` is `false` for those, and
 their histogram is empty, so they carry no `apis`. They are still valid documents that play

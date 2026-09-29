@@ -2,8 +2,8 @@
   "id": "render/05-box-sizes",
   "sha256": "a2fdfff73f3106bfda07b4d644ba21824c77b77df9e2522fdfc5162909417d59",
   "bytes": 241,
-  "ops": 17,
-  "distinctOps": 8,
+  "ops": 21,
+  "distinctOps": 10,
   "width": 200,
   "height": 200,
   "histogram": {
@@ -12,8 +12,10 @@
     "LAYOUT_BOX": 2,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 3,
     "MODIFIER_BACKGROUND": 1,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 7
   },
   "apis": [

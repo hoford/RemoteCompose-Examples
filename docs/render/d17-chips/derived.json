@@ -2,8 +2,8 @@
   "id": "render/d17-chips",
   "sha256": "e9481809cb1122823f23f4cd4be2c87129ab1312e16a3e6f69ec19a9646551db",
   "bytes": 950,
-  "ops": 64,
-  "distinctOps": 10,
+  "ops": 83,
+  "distinctOps": 12,
   "width": 280,
   "height": 360,
   "histogram": {
@@ -14,8 +14,10 @@
     "MODIFIER_HEIGHT": 7,
     "MODIFIER_BACKGROUND": 7,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 13,
     "LAYOUT_BOX": 6,
     "DATA_TEXT": 6,
+    "CORE_TEXT": 6,
     "CONTAINER_END": 27
   },
   "apis": [

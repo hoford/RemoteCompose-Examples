@@ -2,8 +2,8 @@
   "id": "render/arrprobe",
   "sha256": "5a13397e22fceb7568b5b1d6516a641bfd6c0339e0013953397a7c5f0341e50a",
   "bytes": 475,
-  "ops": 29,
-  "distinctOps": 13,
+  "ops": 39,
+  "distinctOps": 18,
   "width": 400,
   "height": 220,
   "histogram": {
@@ -13,13 +13,18 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 5,
     "LAYOUT_BOX": 1,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "DYNAMIC_FLOAT_LIST": 1,
     "RUN_ACTION": 1,
     "ANIMATED_FLOAT": 2,
     "UPDATE_DYNAMIC_FLOAT_LIST": 1,
     "CONTAINER_END": 13,
-    "DATA_TEXT": 1
+    "DATA_TEXT": 1,
+    "CORE_TEXT": 2,
+    "TEXT_FROM_FLOAT": 1
   },
   "apis": [
     "expressions",

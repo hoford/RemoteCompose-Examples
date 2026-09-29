@@ -2,8 +2,8 @@
   "id": "render/material-toggle-button",
   "sha256": "f4e7560d16a264e9c0944f4c2efd9354d8a15912d5d17dd1445274fa772bf3d0",
   "bytes": 751,
-  "ops": 46,
-  "distinctOps": 15,
+  "ops": 59,
+  "distinctOps": 20,
   "width": 400,
   "height": 450,
   "histogram": {
@@ -16,12 +16,17 @@
     "MODIFIER_HEIGHT": 4,
     "MODIFIER_BACKGROUND": 3,
     "MODIFIER_PADDING": 2,
+    "LAYOUT_CONTENT": 8,
     "LAYOUT_BOX": 3,
+    "MODIFIER_ROUNDED_CLIP_RECT": 2,
+    "LAYOUT_STATE": 1,
     "DATA_TEXT": 3,
     "LAYOUT_TEXT": 3,
     "CONTAINER_END": 18,
+    "INTEGER_EXPRESSION": 1,
     "MODIFIER_RIPPLE": 1,
-    "MODIFIER_CLICK": 1
+    "MODIFIER_CLICK": 1,
+    "VALUE_INTEGER_EXPRESSION_CHANGE_ACTION": 1
   },
   "apis": [
     "layout",

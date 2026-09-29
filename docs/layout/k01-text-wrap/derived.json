@@ -2,8 +2,8 @@
   "id": "layout/k01-text-wrap",
   "sha256": "1b54b94aaa9cacb070dc39274edc01247bbadeb0d4f872f8e899e571ab61d360",
   "bytes": 286,
-  "ops": 13,
-  "distinctOps": 8,
+  "ops": 16,
+  "distinctOps": 10,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,7 +13,9 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 2,
+    "LAYOUT_CONTENT": 2,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 5
   },
   "apis": [

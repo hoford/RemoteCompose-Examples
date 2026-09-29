@@ -2,8 +2,8 @@
   "id": "python-samples/gauge-thermometer",
   "sha256": "c3a680c2972bf3108f79fff27271288f000448edb49b3a92f456304e5b115361",
   "bytes": 1082,
-  "ops": 46,
-  "distinctOps": 15,
+  "ops": 51,
+  "distinctOps": 18,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,6 +13,7 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
     "ANIMATED_FLOAT": 5,
     "PAINT_VALUES": 14,
     "DRAW_ROUND_RECT": 4,
@@ -20,8 +21,10 @@
     "DRAW_TEXT_ANCHOR": 4,
     "DRAW_CIRCLE": 3,
     "DRAW_RECT": 1,
+    "LOOP_START": 2,
     "DRAW_LINE": 2,
-    "CONTAINER_END": 5
+    "CONTAINER_END": 5,
+    "TEXT_FROM_FLOAT": 2
   },
   "apis": [
     "drawCircle",
@@ -30,6 +33,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text"
   ],

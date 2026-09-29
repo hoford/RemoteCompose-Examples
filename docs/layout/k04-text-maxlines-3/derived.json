@@ -2,8 +2,8 @@
   "id": "layout/k04-text-maxlines-3",
   "sha256": "01cc93c96be1354b334bc36c8a5526accb7366bde7a9a3e3b5ef2082ff8901d3",
   "bytes": 392,
-  "ops": 18,
-  "distinctOps": 8,
+  "ops": 22,
+  "distinctOps": 10,
   "width": 400,
   "height": 400,
   "histogram": {
@@ -13,7 +13,9 @@
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 3,
+    "LAYOUT_CONTENT": 3,
     "DATA_TEXT": 1,
+    "CORE_TEXT": 1,
     "CONTAINER_END": 7
   },
   "apis": [

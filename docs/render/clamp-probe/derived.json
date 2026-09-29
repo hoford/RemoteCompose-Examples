@@ -2,8 +2,8 @@
   "id": "render/clamp-probe",
   "sha256": "2abed7155938fa849439497cd4c9c4730e84dd02b2971b653bd557737e6694c3",
   "bytes": 797,
-  "ops": 33,
-  "distinctOps": 9,
+  "ops": 54,
+  "distinctOps": 12,
   "width": 400,
   "height": 300,
   "histogram": {
@@ -13,9 +13,12 @@
     "MODIFIER_WIDTH": 1,
     "MODIFIER_HEIGHT": 1,
     "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 9,
     "DATA_TEXT": 4,
+    "CORE_TEXT": 8,
     "CONTAINER_END": 19,
-    "ANIMATED_FLOAT": 4
+    "ANIMATED_FLOAT": 4,
+    "TEXT_FROM_FLOAT": 4
   },
   "apis": [
     "expressions",

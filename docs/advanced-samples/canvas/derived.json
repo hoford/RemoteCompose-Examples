@@ -2,8 +2,8 @@
   "id": "advanced-samples/canvas",
   "sha256": "8a2c33fc4211fe0234517110fb93329323032ba60af337c0589ec5f9c7953c47",
   "bytes": 605,
-  "ops": 38,
-  "distinctOps": 17,
+  "ops": 44,
+  "distinctOps": 20,
   "width": 600,
   "height": 600,
   "histogram": {
@@ -14,16 +14,19 @@
     "MODIFIER_HEIGHT": 3,
     "MODIFIER_BACKGROUND": 3,
     "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 4,
     "LAYOUT_CANVAS": 1,
     "COMPONENT_VALUE": 2,
     "PAINT_VALUES": 1,
     "DRAW_LINE": 2,
     "LAYOUT_BOX": 1,
     "LAYOUT_COMPUTE": 1,
+    "DYNAMIC_FLOAT_LIST": 1,
     "ANIMATED_FLOAT": 4,
     "UPDATE_DYNAMIC_FLOAT_LIST": 2,
     "CONTAINER_END": 10,
-    "DATA_TEXT": 1
+    "DATA_TEXT": 1,
+    "CORE_TEXT": 1
   },
   "apis": [
     "drawLine",

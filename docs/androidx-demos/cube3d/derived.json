@@ -2,8 +2,8 @@
   "id": "androidx-demos/cube3d",
   "sha256": "6a6ecfa8b3afb9a53ba7af0f8ca27b1c2e0f5eb7aa928242d6fe2096ff7c5f79",
   "bytes": 2767,
-  "ops": 80,
-  "distinctOps": 12,
+  "ops": 119,
+  "distinctOps": 18,
   "width": 0,
   "height": 0,
   "histogram": {
@@ -12,20 +12,28 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "COMPONENT_VALUE": 2,
     "ANIMATED_FLOAT": 30,
     "PAINT_VALUES": 9,
     "DRAW_CIRCLE": 1,
+    "MATRIX_EXPRESSION": 2,
+    "MATRIX_VECTOR_MATH": 16,
+    "DATA_PATH": 6,
+    "CONDITIONAL_OPERATIONS": 12,
     "DRAW_PATH": 12,
     "CONTAINER_END": 18
   },
   "apis": [
+    "conditionals",
     "drawCircle",
     "drawPath",
     "expressions",
     "layout",
-    "paint"
+    "paint",
+    "transforms"
   ],
   "flags": [
     "animated",

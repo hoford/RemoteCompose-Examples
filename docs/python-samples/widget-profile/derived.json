@@ -2,8 +2,8 @@
   "id": "python-samples/widget-profile",
   "sha256": "ce8217d2394c3be8cad56e1ca0323a79833b85905dd9dc02a356b90da90f1724",
   "bytes": 1184,
-  "ops": 88,
-  "distinctOps": 12,
+  "ops": 119,
+  "distinctOps": 15,
   "width": 400,
   "height": 200,
   "histogram": {
@@ -14,10 +14,13 @@
     "MODIFIER_HEIGHT": 6,
     "MODIFIER_BACKGROUND": 4,
     "MODIFIER_BORDER": 1,
+    "MODIFIER_ROUNDED_CLIP_RECT": 2,
     "MODIFIER_PADDING": 3,
+    "LAYOUT_CONTENT": 20,
     "LAYOUT_ROW": 2,
     "LAYOUT_COLUMN": 5,
     "DATA_TEXT": 9,
+    "CORE_TEXT": 9,
     "CONTAINER_END": 41
   },
   "apis": [

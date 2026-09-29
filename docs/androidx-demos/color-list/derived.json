@@ -2,8 +2,8 @@
   "id": "androidx-demos/color-list",
   "sha256": "ec899830090d85afae65620e5fdcc43aa1199c9e27c987d6cca3fb81852b9541",
   "bytes": 70053,
-  "ops": 4960,
-  "distinctOps": 18,
+  "ops": 6193,
+  "distinctOps": 23,
   "width": 500,
   "height": 500,
   "histogram": {
@@ -13,6 +13,7 @@
     "COLOR_CONSTANT": 188,
     "NAMED_VARIABLE": 188,
     "THEME": 282,
+    "LOOP_START": 188,
     "COLOR_EXPRESSIONS": 188,
     "CONTAINER_END": 1900,
     "LAYOUT_ROOT": 1,
@@ -20,15 +21,21 @@
     "MODIFIER_BACKGROUND": 384,
     "MODIFIER_WIDTH": 385,
     "MODIFIER_HEIGHT": 291,
+    "LAYOUT_CONTENT": 855,
     "LAYOUT_COLUMN": 95,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1,
     "DATA_TEXT": 102,
     "DEBUG_MESSAGE": 1,
     "LAYOUT_ROW": 282,
-    "MODIFIER_PADDING": 376
+    "MODIFIER_PADDING": 376,
+    "CORE_TEXT": 188
   },
   "apis": [
     "expressions",
+    "interaction",
     "layout",
+    "loop",
     "text",
     "theming"
   ],

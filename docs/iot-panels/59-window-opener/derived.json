@@ -2,8 +2,8 @@
   "id": "iot-panels/59-window-opener",
   "sha256": "d81c193796d5918523a6a1d69c6b2163059d747c4b10d590663911650f34721b",
   "bytes": 2209,
-  "ops": 95,
-  "distinctOps": 18,
+  "ops": 99,
+  "distinctOps": 21,
   "width": 360,
   "height": 360,
   "histogram": {
@@ -12,7 +12,9 @@
     "LAYOUT_BOX": 1,
     "MODIFIER_WIDTH": 2,
     "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
     "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
     "PAINT_VALUES": 31,
     "DRAW_RECT": 1,
     "DRAW_ROUND_RECT": 19,
@@ -23,6 +25,7 @@
     "DRAW_CIRCLE": 6,
     "MATRIX_RESTORE": 1,
     "DATA_TEXT": 3,
+    "LOOP_START": 1,
     "CONTAINER_END": 7,
     "DRAW_TEXT_ANCHOR": 2
   },
@@ -33,6 +36,7 @@
     "drawRoundRect",
     "expressions",
     "layout",
+    "loop",
     "paint",
     "text",
     "transforms"
