@@ -4,12 +4,17 @@
   "description": "Pet Camera \u2014 1080p \u00b7 treat toss",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "3ba8c1a14cab7b21522b80955bf14e5fcfe8f69748473bf411700e3a08f64b1f",
   "provenance": "github/rcJson/iot-panels/out-light/68_pet_camera.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

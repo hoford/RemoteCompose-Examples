@@ -4,12 +4,17 @@
   "description": "Smart Bulb \u2014 warm white \u00b7 82%",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "904152b6e95be839df702850e4e46c1a72b0ddb3c0ab490733b183dfc397bf1d",
   "provenance": "github/rcJson/iot-panels/out-light/01_smart_bulb.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

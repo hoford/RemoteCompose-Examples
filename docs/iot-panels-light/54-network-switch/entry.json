@@ -4,12 +4,17 @@
   "description": "Network Switch \u2014 8-port gigabit \u00b7 PoE",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "01fecadb6e7a50a0100edc51916886991922e54b45024fb19219bfdf9aac9726",
   "provenance": "github/rcJson/iot-panels/out-light/54_network_switch.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

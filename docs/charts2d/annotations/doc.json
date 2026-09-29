@@ -1,0 +1,913 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 900,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Annotated KPI line chart"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 900,
+         "bottom": 560
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF202124"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 34
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Weekly Active Users",
+         "x": 76,
+         "y": 46,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Annotated KPIs",
+         "x": 76,
+         "y": 70,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 447.0,
+         "x2": 872,
+         "y2": 447.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "30",
+         "x": 66,
+         "y": 453.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 349.0,
+         "x2": 872,
+         "y2": 349.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "40",
+         "x": 66,
+         "y": 355.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 251.0,
+         "x2": 872,
+         "y2": 251.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "50",
+         "x": 66,
+         "y": 257.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 153.0,
+         "x2": 872,
+         "y2": 153.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "60",
+         "x": 66,
+         "y": 159.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Users (k)",
+         "x": 76,
+         "y": 92,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF54A24B"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.14
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 76,
+         "top": 202.0,
+         "right": 872,
+         "bottom": 300.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9AA0A6"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 104,
+         "x2": 76,
+         "y2": 496
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 496,
+         "x2": 872,
+         "y2": 496
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 115.14754098360655,
+         "y1": 437.2,
+         "x2": 180.3934426229508,
+         "y2": 407.8
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 180.3934426229508,
+         "y1": 407.8,
+         "x2": 245.63934426229508,
+         "y2": 417.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 245.63934426229508,
+         "y1": 417.6,
+         "x2": 310.8852459016394,
+         "y2": 368.6
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 310.8852459016394,
+         "y1": 368.6,
+         "x2": 376.13114754098365,
+         "y2": 339.2
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 376.13114754098365,
+         "y1": 339.2,
+         "x2": 441.3770491803279,
+         "y2": 280.4
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 441.3770491803279,
+         "y1": 280.4,
+         "x2": 506.6229508196722,
+         "y2": 231.39999999999998
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 506.6229508196722,
+         "y1": 231.39999999999998,
+         "x2": 571.8688524590165,
+         "y2": 172.60000000000002
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 571.8688524590165,
+         "y1": 172.60000000000002,
+         "x2": 637.1147540983608,
+         "y2": 211.8
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 637.1147540983608,
+         "y1": 211.8,
+         "x2": 702.3606557377051,
+         "y2": 260.8
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 702.3606557377051,
+         "y1": 260.8,
+         "x2": 767.6065573770492,
+         "y2": 241.2
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 767.6065573770492,
+         "y1": 241.2,
+         "x2": 832.8524590163935,
+         "y2": 192.2
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 115.14754098360655,
+         "cy": 437.2,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 180.3934426229508,
+         "cy": 407.8,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 245.63934426229508,
+         "cy": 417.6,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 310.8852459016394,
+         "cy": 368.6,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 376.13114754098365,
+         "cy": 339.2,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 441.3770491803279,
+         "cy": 280.4,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 506.6229508196722,
+         "cy": 231.39999999999998,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 571.8688524590165,
+         "cy": 172.60000000000002,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 637.1147540983608,
+         "cy": 211.8,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 702.3606557377051,
+         "cy": 260.8,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 767.6065573770492,
+         "cy": 241.2,
+         "radius": 4
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 832.8524590163935,
+         "cy": 192.2,
+         "radius": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE45756"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 76,
+         "y1": 251.0,
+         "x2": 872,
+         "y2": 251.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE45756"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Target",
+         "x": 868,
+         "y": 243.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 441.3770491803279,
+         "y1": 104,
+         "x2": 441.3770491803279,
+         "y2": 496
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "v2 launch",
+         "x": 447.3770491803279,
+         "y": 120,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 571.8688524590165,
+         "y1": 162.60000000000002,
+         "x2": 605.8688524590165,
+         "y2": 132.60000000000002
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "All-time high",
+         "x": 609.8688524590165,
+         "y": 136.60000000000002,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jan",
+         "x": 115.14754098360655,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Feb",
+         "x": 180.3934426229508,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Mar",
+         "x": 245.63934426229508,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Apr",
+         "x": 310.8852459016394,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "May",
+         "x": 376.13114754098365,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jun",
+         "x": 441.3770491803279,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jul",
+         "x": 506.6229508196722,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Aug",
+         "x": 571.8688524590165,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Sep",
+         "x": 637.1147540983608,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Oct",
+         "x": 702.3606557377051,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Nov",
+         "x": 767.6065573770492,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Dec",
+         "x": 832.8524590163935,
+         "y": 522,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

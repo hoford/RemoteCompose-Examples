@@ -4,12 +4,17 @@
   "description": "Smart Vent \u2014 zone 4 \u00b7 62% open",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "2ae16b2cdab16742779d9d8759ab956d76d3793d4d886e4fd13738d038645de7",
   "provenance": "github/rcJson/iot-panels/out-light/78_smart_vent.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

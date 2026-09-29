@@ -4,12 +4,17 @@
   "description": "Water Fountain \u2014 circulating \u00b7 filtered",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "f45f614ee0f28633bfd42208e0c45d9f468bc4dbc2cf930743eda5fa7a9c95b7",
   "provenance": "github/rcJson/iot-panels/out/67_water_fountain.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

@@ -1,0 +1,2015 @@
+{
+ "//": "A library of 3D shapes. Each block is self-contained: copy the meshPrimitive3D + drawMesh3D pair and change its center.",
+ "header": {
+  "apiLevel": 7,
+  "width": 1000,
+  "height": 820,
+  "profiles": 513,
+  "orderedResources": true,
+  "contentDescription": "A gallery of twenty 3D primitives"
+ },
+ "root": [
+  {
+   "type": "canvas",
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "//": "background",
+      "ops": [
+       {
+        "color": "#FFF3F4F6"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 1000,
+      "bottom": 820
+     }
+    },
+    {
+     "clearDepth3D": {
+      "//": "clear the depth buffer before any 3D in the frame"
+     }
+    },
+    {
+     "camera3D": {
+      "//": "one camera for the whole grid; each shape places itself",
+      "projection": "perspective",
+      "fovY": 0.62,
+      "aspect": 1.2195,
+      "near": 0.5,
+      "far": 60.0,
+      "eye": [
+       0,
+       0.9,
+       16.0
+      ],
+      "center": [
+       0,
+       -0.1,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "//": "a key light and a cool fill, so faces read as planes",
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFAF0",
+        "dir": [
+         -0.45,
+         -0.7,
+         -0.6
+        ],
+        "intensity": 1.05
+       },
+       {
+        "type": "point",
+        "color": "#FFBFD4FF",
+        "pos": [
+         -5.0,
+         3.5,
+         6.0
+        ],
+        "intensity": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "material3D": {
+      "specular": 0.28,
+      "shininess": 30
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 1,
+      "//": "cube — dimX/dimY/dimZ, the plainest box",
+      "primitive": "cube",
+      "dimX": 1.0,
+      "dimY": 1.0,
+      "dimZ": 1.0,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4A6FD4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -4.6,
+      "y": 3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 2,
+      "//": "roundedCube — a cube plus cornerRadius; raise segments for a smoother fillet",
+      "primitive": "roundedCube",
+      "dimX": 1.05,
+      "dimY": 1.05,
+      "dimZ": 1.05,
+      "cornerRadius": 0.22,
+      "segments": 16,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8DE8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -2.3,
+      "y": 3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 2,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 3,
+      "//": "sphere — radius only. icosphere is the same shape with even triangles",
+      "primitive": "sphere",
+      "radius": 0.6,
+      "segments": 26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF17A398"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0,
+      "y": 3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 3,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 4,
+      "//": "sphericalDome — a sphere cut by angle; angle pi/2 is a hemisphere",
+      "primitive": "sphericalDome",
+      "radius": 0.62,
+      "angle": 1.5707963,
+      "segments": 26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF56C0DC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 2.3,
+      "y": 3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 4,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 5,
+      "//": "cone — radius, height. segments 4 gives a pyramid, 6 a hex spire",
+      "primitive": "cone",
+      "radius": 0.6,
+      "height": 1.25,
+      "segments": 28,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6EC5A4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 4.6,
+      "y": 3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 5,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 6,
+      "//": "cylinder — from/to are endpoints, so it can lean without a transform",
+      "primitive": "cylinder",
+      "radius": 0.55,
+      "segments": 28,
+      "from": [
+       0,
+       -0.6,
+       0
+      ],
+      "to": [
+       0,
+       0.6,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A97DE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -4.6,
+      "y": 1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 6,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 7,
+      "//": "pyramid — no primitive of its own: a cone with segments 4",
+      "primitive": "cone",
+      "radius": 0.75,
+      "height": 1.15,
+      "segments": 4,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE9B23C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -2.3,
+      "y": 1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 7,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 8,
+      "//": "cuboid — cube with unequal dims",
+      "primitive": "cube",
+      "dimX": 1.5,
+      "dimY": 0.62,
+      "dimZ": 0.62,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8735A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0,
+      "y": 1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 8,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 9,
+      "//": "slab — the same primitive stood on end",
+      "primitive": "cube",
+      "dimX": 0.5,
+      "dimY": 1.35,
+      "dimZ": 0.5,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCFC9BE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 2.3,
+      "y": 1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 9,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 10,
+      "//": "torus — majorRadius is the ring, minorRadius the tube",
+      "primitive": "torus",
+      "majorRadius": 0.55,
+      "minorRadius": 0.23,
+      "segments": 26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3B4A5A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 4.6,
+      "y": 1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 10,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 11,
+      "//": "capsule — lathe revolving a pill outline. capTube looks like the obvious choice and gives a flat-ended cylinder instead",
+      "primitive": "lathe",
+      "segments": 26,
+      "profile": [
+       [
+        0.0,
+        -0.72
+       ],
+       [
+        0.0501,
+        -0.7161
+       ],
+       [
+        0.0989,
+        -0.7043
+       ],
+       [
+        0.1453,
+        -0.6851
+       ],
+       [
+        0.1881,
+        -0.6589
+       ],
+       [
+        0.2263,
+        -0.6263
+       ],
+       [
+        0.2589,
+        -0.5881
+       ],
+       [
+        0.2851,
+        -0.5453
+       ],
+       [
+        0.3043,
+        -0.4989
+       ],
+       [
+        0.3161,
+        -0.4501
+       ],
+       [
+        0.32,
+        -0.4
+       ],
+       [
+        0.3161,
+        0.4501
+       ],
+       [
+        0.3043,
+        0.4989
+       ],
+       [
+        0.2851,
+        0.5453
+       ],
+       [
+        0.2589,
+        0.5881
+       ],
+       [
+        0.2263,
+        0.6263
+       ],
+       [
+        0.1881,
+        0.6589
+       ],
+       [
+        0.1453,
+        0.6851
+       ],
+       [
+        0.0989,
+        0.7043
+       ],
+       [
+        0.0501,
+        0.7161
+       ],
+       [
+        0.0,
+        0.72
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2F0EC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -4.6,
+      "y": -1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 11,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 12,
+      "//": "wedge — extrudePath over a triangle. Any 2D outline extrudes this way",
+      "primitive": "extrudePath",
+      "depth": 0.85,
+      "bevel": 0.0,
+      "contours": [
+       [
+        [
+         -0.62,
+         -0.45
+        ],
+        [
+         0.62,
+         -0.45
+        ],
+        [
+         -0.62,
+         0.5
+        ]
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4A6FD4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -2.3,
+      "y": -1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 12,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 13,
+      "//": "hexagonal prism — a cylinder with segments 6",
+      "primitive": "cylinder",
+      "radius": 0.62,
+      "segments": 6,
+      "from": [
+       0,
+       -0.6,
+       0
+      ],
+      "to": [
+       0,
+       0.6,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7DC9B0"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0,
+      "y": -1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 13,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 14,
+      "//": "ring — extrudeArc swept a full turn, inner and outer radius",
+      "primitive": "extrudeArc",
+      "innerRadius": 0.38,
+      "outerRadius": 0.6,
+      "startAngle": 0.0,
+      "sweepAngle": 6.2831853,
+      "depth": 0.26,
+      "segments": 40,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEBE6"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 2.3,
+      "y": -1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 14,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 15,
+      "//": "arrow — extrudePath; the contour is the arrow outline",
+      "primitive": "extrudePath",
+      "depth": 0.34,
+      "bevel": 0.0,
+      "contours": [
+       [
+        [
+         -0.72,
+         -0.2
+        ],
+        [
+         0.08,
+         -0.2
+        ],
+        [
+         0.08,
+         -0.48
+        ],
+        [
+         0.74,
+         0.0
+        ],
+        [
+         0.08,
+         0.48
+        ],
+        [
+         0.08,
+         0.2
+        ],
+        [
+         -0.72,
+         0.2
+        ]
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8735A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 4.6,
+      "y": -1.075,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.26,
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 15,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 16,
+      "//": "speech bubble — extrudePath, body and tail in one contour",
+      "primitive": "extrudePath",
+      "depth": 0.34,
+      "bevel": 0.0,
+      "contours": [
+       [
+        [
+         -0.68,
+         -0.08
+        ],
+        [
+         -0.42,
+         -0.08
+        ],
+        [
+         -0.5,
+         -0.62
+        ],
+        [
+         -0.12,
+         -0.08
+        ],
+        [
+         0.68,
+         -0.08
+        ],
+        [
+         0.68,
+         0.5
+        ],
+        [
+         -0.68,
+         0.5
+        ]
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9B6BD6"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -4.6,
+      "y": -3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.26,
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 16,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 17,
+      "//": "tray — a flattened roundedCube",
+      "primitive": "roundedCube",
+      "dimX": 1.3,
+      "dimY": 0.32,
+      "dimZ": 1.3,
+      "cornerRadius": 0.13,
+      "segments": 14,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9CDB8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -2.3,
+      "y": -3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 17,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 18,
+      "//": "knot — capTube following a trefoil; spline smooths the path",
+      "primitive": "capTube",
+      "radius": 0.13,
+      "spline": true,
+      "ringsPerSpan": 3,
+      "points": [
+       [
+        0.0,
+        -0.2,
+        -0.0
+       ],
+       [
+        0.1296,
+        -0.1881,
+        -0.0765
+       ],
+       [
+        0.2518,
+        -0.1532,
+        -0.1414
+       ],
+       [
+        0.3594,
+        -0.0981,
+        -0.1848
+       ],
+       [
+        0.4464,
+        -0.0268,
+        -0.2
+       ],
+       [
+        0.5081,
+        0.0551,
+        -0.1848
+       ],
+       [
+        0.5414,
+        0.1414,
+        -0.1414
+       ],
+       [
+        0.545,
+        0.2253,
+        -0.0765
+       ],
+       [
+        0.5196,
+        0.3,
+        -0.0
+       ],
+       [
+        0.4676,
+        0.3594,
+        0.0765
+       ],
+       [
+        0.3932,
+        0.3982,
+        0.1414
+       ],
+       [
+        0.3018,
+        0.4125,
+        0.1848
+       ],
+       [
+        0.2,
+        0.4,
+        0.2
+       ],
+       [
+        0.0948,
+        0.3603,
+        0.1848
+       ],
+       [
+        -0.0068,
+        0.2946,
+        0.1414
+       ],
+       [
+        -0.0981,
+        0.2063,
+        0.0765
+       ],
+       [
+        -0.1732,
+        0.1,
+        0.0
+       ],
+       [
+        -0.2277,
+        -0.0182,
+        -0.0765
+       ],
+       [
+        -0.2586,
+        -0.1414,
+        -0.1414
+       ],
+       [
+        -0.2646,
+        -0.2622,
+        -0.1848
+       ],
+       [
+        -0.2464,
+        -0.3732,
+        -0.2
+       ],
+       [
+        -0.2063,
+        -0.4676,
+        -0.1848
+       ],
+       [
+        -0.1482,
+        -0.5396,
+        -0.1414
+       ],
+       [
+        -0.0774,
+        -0.5847,
+        -0.0765
+       ],
+       [
+        -0.0,
+        -0.6,
+        -0.0
+       ],
+       [
+        0.0774,
+        -0.5847,
+        0.0765
+       ],
+       [
+        0.1482,
+        -0.5396,
+        0.1414
+       ],
+       [
+        0.2063,
+        -0.4676,
+        0.1848
+       ],
+       [
+        0.2464,
+        -0.3732,
+        0.2
+       ],
+       [
+        0.2646,
+        -0.2622,
+        0.1848
+       ],
+       [
+        0.2586,
+        -0.1414,
+        0.1414
+       ],
+       [
+        0.2277,
+        -0.0182,
+        0.0765
+       ],
+       [
+        0.1732,
+        0.1,
+        0.0
+       ],
+       [
+        0.0981,
+        0.2063,
+        -0.0765
+       ],
+       [
+        0.0068,
+        0.2946,
+        -0.1414
+       ],
+       [
+        -0.0948,
+        0.3603,
+        -0.1848
+       ],
+       [
+        -0.2,
+        0.4,
+        -0.2
+       ],
+       [
+        -0.3018,
+        0.4125,
+        -0.1848
+       ],
+       [
+        -0.3932,
+        0.3982,
+        -0.1414
+       ],
+       [
+        -0.4676,
+        0.3594,
+        -0.0765
+       ],
+       [
+        -0.5196,
+        0.3,
+        -0.0
+       ],
+       [
+        -0.545,
+        0.2253,
+        0.0765
+       ],
+       [
+        -0.5414,
+        0.1414,
+        0.1414
+       ],
+       [
+        -0.5081,
+        0.0551,
+        0.1848
+       ],
+       [
+        -0.4464,
+        -0.0268,
+        0.2
+       ],
+       [
+        -0.3594,
+        -0.0981,
+        0.1848
+       ],
+       [
+        -0.2518,
+        -0.1532,
+        0.1414
+       ],
+       [
+        -0.1296,
+        -0.1881,
+        0.0765
+       ]
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3F5570"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0,
+      "y": -3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.62,
+      "axis": [
+       0.34,
+       1.0,
+       0.12
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 18,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 19,
+      "//": "wave — extrudePath over a sine band",
+      "primitive": "extrudePath",
+      "depth": 0.55,
+      "bevel": 0.0,
+      "contours": [
+       [
+        [
+         -0.78,
+         0.34
+        ],
+        [
+         -0.715,
+         0.428
+        ],
+        [
+         -0.65,
+         0.51
+        ],
+        [
+         -0.585,
+         0.5804
+        ],
+        [
+         -0.52,
+         0.6344
+        ],
+        [
+         -0.455,
+         0.6684
+        ],
+        [
+         -0.39,
+         0.68
+        ],
+        [
+         -0.325,
+         0.6684
+        ],
+        [
+         -0.26,
+         0.6344
+        ],
+        [
+         -0.195,
+         0.5804
+        ],
+        [
+         -0.13,
+         0.51
+        ],
+        [
+         -0.065,
+         0.428
+        ],
+        [
+         -0.0,
+         0.34
+        ],
+        [
+         0.065,
+         0.252
+        ],
+        [
+         0.13,
+         0.17
+        ],
+        [
+         0.195,
+         0.0996
+        ],
+        [
+         0.26,
+         0.0456
+        ],
+        [
+         0.325,
+         0.0116
+        ],
+        [
+         0.39,
+         0.0
+        ],
+        [
+         0.455,
+         0.0116
+        ],
+        [
+         0.52,
+         0.0456
+        ],
+        [
+         0.585,
+         0.0996
+        ],
+        [
+         0.65,
+         0.17
+        ],
+        [
+         0.715,
+         0.252
+        ],
+        [
+         0.78,
+         0.34
+        ],
+        [
+         0.78,
+         -0.28
+        ],
+        [
+         0.715,
+         -0.368
+        ],
+        [
+         0.65,
+         -0.45
+        ],
+        [
+         0.585,
+         -0.5204
+        ],
+        [
+         0.52,
+         -0.5744
+        ],
+        [
+         0.455,
+         -0.6084
+        ],
+        [
+         0.39,
+         -0.62
+        ],
+        [
+         0.325,
+         -0.6084
+        ],
+        [
+         0.26,
+         -0.5744
+        ],
+        [
+         0.195,
+         -0.5204
+        ],
+        [
+         0.13,
+         -0.45
+        ],
+        [
+         0.065,
+         -0.368
+        ],
+        [
+         -0.0,
+         -0.28
+        ],
+        [
+         -0.065,
+         -0.192
+        ],
+        [
+         -0.13,
+         -0.11
+        ],
+        [
+         -0.195,
+         -0.0396
+        ],
+        [
+         -0.26,
+         0.0144
+        ],
+        [
+         -0.325,
+         0.0484
+        ],
+        [
+         -0.39,
+         0.06
+        ],
+        [
+         -0.455,
+         0.0484
+        ],
+        [
+         -0.52,
+         0.0144
+        ],
+        [
+         -0.585,
+         -0.0396
+        ],
+        [
+         -0.65,
+         -0.11
+        ],
+        [
+         -0.715,
+         -0.192
+        ],
+        [
+         -0.78,
+         -0.28
+        ]
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0EFEB"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 2.3,
+      "y": -3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.26,
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 19,
+      "mode": "canvas-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 20,
+      "//": "arch — extrudePath; outer arc out, inner arc back",
+      "primitive": "extrudePath",
+      "depth": 0.4,
+      "bevel": 0.0,
+      "contours": [
+       [
+        [
+         -0.62,
+         -0.62
+        ],
+        [
+         -0.62,
+         0.0
+        ],
+        [
+         -0.6081,
+         0.121
+        ],
+        [
+         -0.5728,
+         0.2373
+        ],
+        [
+         -0.5155,
+         0.3445
+        ],
+        [
+         -0.4384,
+         0.4384
+        ],
+        [
+         -0.3445,
+         0.5155
+        ],
+        [
+         -0.2373,
+         0.5728
+        ],
+        [
+         -0.121,
+         0.6081
+        ],
+        [
+         0.0,
+         0.62
+        ],
+        [
+         0.121,
+         0.6081
+        ],
+        [
+         0.2373,
+         0.5728
+        ],
+        [
+         0.3445,
+         0.5155
+        ],
+        [
+         0.4384,
+         0.4384
+        ],
+        [
+         0.5155,
+         0.3445
+        ],
+        [
+         0.5728,
+         0.2373
+        ],
+        [
+         0.6081,
+         0.121
+        ],
+        [
+         0.62,
+         0.0
+        ],
+        [
+         0.62,
+         -0.62
+        ],
+        [
+         0.34,
+         -0.62
+        ],
+        [
+         0.34,
+         0.0
+        ],
+        [
+         0.3335,
+         0.0663
+        ],
+        [
+         0.3141,
+         0.1301
+        ],
+        [
+         0.2827,
+         0.1889
+        ],
+        [
+         0.2404,
+         0.2404
+        ],
+        [
+         0.1889,
+         0.2827
+        ],
+        [
+         0.1301,
+         0.3141
+        ],
+        [
+         0.0663,
+         0.3335
+        ],
+        [
+         0.0,
+         0.34
+        ],
+        [
+         -0.0663,
+         0.3335
+        ],
+        [
+         -0.1301,
+         0.3141
+        ],
+        [
+         -0.1889,
+         0.2827
+        ],
+        [
+         -0.2404,
+         0.2404
+        ],
+        [
+         -0.2827,
+         0.1889
+        ],
+        [
+         -0.3141,
+         0.1301
+        ],
+        [
+         -0.3335,
+         0.0663
+        ],
+        [
+         -0.34,
+         0.0
+        ],
+        [
+         -0.34,
+         -0.62
+        ]
+       ]
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE7A9C4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 4.6,
+      "y": -3.225,
+      "z": 0
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": 0.26,
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 20,
+      "mode": "canvas-smooth"
+     }
+    }
+   ]
+  }
+ ]
+}

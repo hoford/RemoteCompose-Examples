@@ -4,12 +4,17 @@
   "description": "Ceiling Fan \u2014 speed 3 \u00b7 reverse off",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "793bd68094b34f1057d03afcbe677a5b2a6a517426cd5b199f78fb085bb776f2",
   "provenance": "github/rcJson/iot-panels/out/10_ceiling_fan.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

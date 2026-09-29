@@ -4,12 +4,17 @@
   "description": "Sous-Vide \u2014 circulator \u00b7 56.5\u00b0C",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "a6639358ea166c805fe7d80160774fc014afbfbcf700fd10728242b3ded95b70",
   "provenance": "github/rcJson/iot-panels/out-light/27_sous_vide.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

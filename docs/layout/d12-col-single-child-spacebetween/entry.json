@@ -4,12 +4,16 @@
   "description": "D12 spaceBetween with one child - degenerate case",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "6217df675e33e9969d3cde75df3246d0043974d67666981da7ee0cbf5d38917e",
   "provenance": "github/rcJson/layout/rc/d12_col_single_child_spacebetween.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

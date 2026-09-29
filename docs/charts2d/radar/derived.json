@@ -1,0 +1,41 @@
+{
+  "id": "charts2d/radar",
+  "sha256": "8ba657cafe16be4d604bfc2518177f12e6da1e9cabe1c9da542f3bcd584e1f8b",
+  "bytes": 1955,
+  "ops": 108,
+  "distinctOps": 15,
+  "width": 680,
+  "height": 680,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 16,
+    "DRAW_RECT": 3,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_LINE": 42,
+    "DRAW_CIRCLE": 12,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

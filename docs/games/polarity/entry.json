@@ -4,12 +4,16 @@
   "description": "Polarity: tap to switch between attract and repel and ride the magnetic field to the goal",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "fe7d242bf21dc6bb2f02fff713f8c28338bc918f80b23a43462afcaeef53c1db",
   "provenance": "github/rcJson/games/rc/polarity.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

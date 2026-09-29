@@ -4,12 +4,17 @@
   "description": "Soil Moisture Sensor \u2014 VWC \u00b7 capacitive",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "3e6c44a983257361bd255f4bc0741b0bc47ed38632d5936f299340859dc97e79",
   "provenance": "github/rcJson/iot-panels/out/42_soil_moisture.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

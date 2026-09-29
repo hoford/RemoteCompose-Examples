@@ -4,12 +4,17 @@
   "description": "Air Quality Monitor \u2014 PM2.5 \u00b7 laser",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "6ffc8f2e2e5cb1bac84b8feafc55187612911d6d2f4d89dc3ef8e7e4ce23dd30",
   "provenance": "github/rcJson/iot-panels/out-light/64_air_quality.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

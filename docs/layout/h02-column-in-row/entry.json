@@ -4,12 +4,16 @@
   "description": "H02 a column nested inside a row",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "c96ad9ddb4f7be853e3425dae677364712c2e4bd229e5a51b747976c0327415b",
   "provenance": "github/rcJson/layout/rc/h02_column_in_row.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

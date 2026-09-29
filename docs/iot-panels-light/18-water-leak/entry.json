@@ -4,12 +4,17 @@
   "description": "Water Leak Sensor \u2014 probe pair \u00b7 alarm",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "897c7b75373248bdf098fe63935e2f703283401b2be9c34453150cb58d9e6af6",
   "provenance": "github/rcJson/iot-panels/out-light/18_water_leak.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

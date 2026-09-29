@@ -4,12 +4,17 @@
   "description": "Alarm Clock \u2014 sunrise \u00b7 alarm 07:00",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "74fe312ebd05e4faef315f509b65037888094cbc1a058691d8790221cff888ed",
   "provenance": "github/rcJson/iot-panels/out/72_alarm_clock.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

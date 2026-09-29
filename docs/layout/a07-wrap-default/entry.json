@@ -4,12 +4,16 @@
   "description": "A07 no size modifier anywhere: everything wraps",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "fbfc872e311cfcd7639ce5dcaed4cae55775232433b6482df74fb6de5c219652",
   "provenance": "github/rcJson/layout/rc/a07_wrap_default.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

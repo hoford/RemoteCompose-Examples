@@ -1,0 +1,39 @@
+{
+  "id": "charts2d/bullet",
+  "sha256": "afb0962aadd69a58e8f59b5b4765849056a7e31a13764d82573b0584e45b4062",
+  "bytes": 1672,
+  "ops": 85,
+  "distinctOps": 14,
+  "width": 760,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 17,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 10,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

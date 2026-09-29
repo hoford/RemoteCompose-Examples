@@ -4,12 +4,17 @@
   "description": "Motion Sensor \u2014 PIR \u00b7 7 zones \u00b7 12m",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "cd0827ff19b29543aa775f6edc05d0fa4e2794e0a4232bf0484906c0ce979f3b",
   "provenance": "github/rcJson/iot-panels/out/14_motion_sensor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

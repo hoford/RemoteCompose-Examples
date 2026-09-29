@@ -4,12 +4,16 @@
   "description": "K03 maxLines 1 in a narrow box - height should be one line",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "b55a202174aec4e54da32efd5271361391b738142ee6ab9edc99c5cff5ffcc8b",
   "provenance": "github/rcJson/layout/rc/k03_text_maxlines_1.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

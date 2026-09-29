@@ -4,12 +4,17 @@
   "description": "Radiator Valve \u2014 TRV \u00b7 opening to 60%",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "fd1ce6bc2e9a1e1b0a841d894d79cd36c94a388abfa8bb3238241f378cae4281",
   "provenance": "github/rcJson/iot-panels/out/07_radiator_valve.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

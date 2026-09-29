@@ -4,12 +4,16 @@
   "description": "D column horizontalAlignment=center",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "91f8b3797618d259d8949c62534bbc9a246fec0390df6579164d9e9f66063ff4",
   "provenance": "github/rcJson/layout/rc/d08_col_halign_center.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

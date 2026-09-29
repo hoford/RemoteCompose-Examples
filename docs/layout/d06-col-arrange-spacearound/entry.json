@@ -4,12 +4,16 @@
   "description": "D column verticalArrangement=spaceAround",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "754f8c93a2b581b47e758f4eee60b60d9f455a9f1034596d1507e6095b602309",
   "provenance": "github/rcJson/layout/rc/d06_col_arrange_spacearound.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

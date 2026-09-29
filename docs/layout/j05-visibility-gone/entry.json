@@ -4,12 +4,16 @@
   "description": "J05 a GONE child in a row - does it still take space?",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "a89b415dc98d6cc41db011524b15336413e1a54975eacb19222e90a8e393fe60",
   "provenance": "github/rcJson/layout/rc/j05_visibility_gone.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

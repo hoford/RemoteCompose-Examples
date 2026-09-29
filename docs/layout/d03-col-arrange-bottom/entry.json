@@ -4,12 +4,16 @@
   "description": "D column verticalArrangement=bottom",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0f5cdc1ae3f4c5be920189a1cf260bf86385cbdb0a12912e2c03f6aa58603fed",
   "provenance": "github/rcJson/layout/rc/d03_col_arrange_bottom.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

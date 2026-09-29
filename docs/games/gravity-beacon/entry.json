@@ -4,12 +4,16 @@
   "description": "Gravity Beacon: tap to place a gravity well and curve the ball into the goal",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "f7e75cb1fee43cbd15830e2f883185bab9e4f15080592b485f49e89fb2172718",
   "provenance": "github/rcJson/games/rc/gravity_beacon.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

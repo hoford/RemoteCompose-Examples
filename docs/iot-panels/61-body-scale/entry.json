@@ -4,12 +4,17 @@
   "description": "Body Scale \u2014 bio-impedance \u00b7 settling",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "9e4becee7b3ce89099c04dc60fe316e052e6e8ce38f28c1120d721e904cd463a",
   "provenance": "github/rcJson/iot-panels/out/61_body_scale.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

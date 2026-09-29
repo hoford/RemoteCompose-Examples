@@ -4,12 +4,16 @@
   "description": "J09 control: same row with no visibility modifier",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0754b2d08ff8257dc62e99904849ca46c9d00cd5ed651fd11d2eab55cf4eed94",
   "provenance": "github/rcJson/layout/rc/j09_visibility_control.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

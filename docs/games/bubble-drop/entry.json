@@ -4,12 +4,16 @@
   "description": "Bubble Drop: tap to release bubbles and land all three in the bin",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "ac91ab4c18b70a12bc4407d057f73abc0e693cd870ea30dbe0253ae3554778bb",
   "provenance": "github/rcJson/games/rc/bubble_drop.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

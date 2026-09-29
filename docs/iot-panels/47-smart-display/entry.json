@@ -4,12 +4,17 @@
   "description": "Smart Display \u2014 ambient \u00b7 7in",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "259d7688a324e6ede8b468f1195cb72beda29c87f73ea398083b6b6c7ed1e684",
   "provenance": "github/rcJson/iot-panels/out/47_smart_display.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

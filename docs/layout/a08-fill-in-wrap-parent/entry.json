@@ -4,12 +4,16 @@
   "description": "A08 fillMaxSize child inside a WRAP parent - no maximum to fill",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "599b4631771806accc59f6e320879bd5bb32aeb71eed08b56efa3ebc4726278e",
   "provenance": "github/rcJson/layout/rc/a08_fill_in_wrap_parent.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

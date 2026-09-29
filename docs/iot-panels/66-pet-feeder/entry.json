@@ -4,12 +4,17 @@
   "description": "Pet Feeder \u2014 auger \u00b7 1 portion",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "451d6d113c8bcdb2f28426874a7d11ea225475518077b5e4894dcc908f52ae6f",
   "provenance": "github/rcJson/iot-panels/out/66_pet_feeder.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

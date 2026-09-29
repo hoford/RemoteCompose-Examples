@@ -4,12 +4,16 @@
   "description": "H09 a wrapping box inside a filling one",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "1bba75fbfcde7144c00327876553be0770f27507103403a9e8ce9429c91523d2",
   "provenance": "github/rcJson/layout/rc/h09_wrap_inside_fill.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

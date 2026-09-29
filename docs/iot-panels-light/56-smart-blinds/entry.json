@@ -4,12 +4,17 @@
   "description": "Smart Blinds \u2014 tilt 60\u00b0 \u00b7 lift 30%",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "b209db50cbce3a0ec369b212053cb603deb9061a2385b54d25b4055947cb5c88",
   "provenance": "github/rcJson/iot-panels/out-light/56_smart_blinds.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

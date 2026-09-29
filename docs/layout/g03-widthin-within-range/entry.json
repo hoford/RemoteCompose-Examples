@@ -4,12 +4,16 @@
   "description": "G03 requested width already inside the range",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0d3798ddfd5b7065b195b2a2d9317549c55cdfe1c095291ed4f18ca08920a5c4",
   "provenance": "github/rcJson/layout/rc/g03_widthin_within_range.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

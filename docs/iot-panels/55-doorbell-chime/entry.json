@@ -4,12 +4,17 @@
   "description": "Doorbell Chime \u2014 two-tone \u00b7 indoor",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "d06643e4e32a383ad75f194701f4de442a87dec7928f20cd7f3ccc0dc61313e6",
   "provenance": "github/rcJson/iot-panels/out/55_doorbell_chime.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

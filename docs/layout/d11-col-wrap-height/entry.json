@@ -4,12 +4,16 @@
   "description": "D11 column that wraps its height - arrangement has no slack",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "18de523615d86d0d445dcc5a8be23770fb674413ef76871abaf99b212cb8fa35",
   "provenance": "github/rcJson/layout/rc/d11_col_wrap_height.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

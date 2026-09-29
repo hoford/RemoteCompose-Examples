@@ -1,0 +1,39 @@
+{
+  "id": "charts2d/bar-grouped",
+  "sha256": "bbacde583de1eabebcd708ba5ce6fab1ab75b763ccf30650590a181549c3f76a",
+  "bytes": 1991,
+  "ops": 99,
+  "distinctOps": 14,
+  "width": 900,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 32,
+    "DRAW_RECT": 19,
+    "DATA_TEXT": 13,
+    "DRAW_TEXT_ANCHOR": 13,
+    "DRAW_LINE": 5,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

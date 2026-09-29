@@ -4,12 +4,17 @@
   "description": "Smart Mirror \u2014 presence \u00b7 widgets",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "4ca8bc2c2e49b11f8a2c77d78a3286c336f820a116d8c3d87699c8297b851630",
   "provenance": "github/rcJson/iot-panels/out-light/65_smart_mirror.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

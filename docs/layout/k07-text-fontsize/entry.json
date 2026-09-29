@@ -4,12 +4,16 @@
   "description": "K07 two font sizes stacked - relative heights should track the sizes",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "c7625f57763019a7e1a79cbd52a8e96187669a001daf21562d8830128489129e",
   "provenance": "github/rcJson/layout/rc/k07_text_fontsize.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

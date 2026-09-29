@@ -4,12 +4,17 @@
   "description": "Energy Monitor \u2014 whole home \u00b7 live",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "cbf306c99a9490eaa22eaa5ed10868acf09cd11c4d55a1bb8b9baa8535ccc9a1",
   "provenance": "github/rcJson/iot-panels/out/37_energy_monitor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

@@ -4,12 +4,16 @@
   "description": "F06 padding at two levels",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "9514fcac7eaa720544c70f43e1a0264a03768cb0d0066b51fcea4371b2ad1654",
   "provenance": "github/rcJson/layout/rc/f06_padding_nested.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

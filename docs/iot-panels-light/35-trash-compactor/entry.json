@@ -4,12 +4,17 @@
   "description": "Trash Compactor \u2014 4:1 \u00b7 ram down",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "61a798c2482b75ee842ad9b2c1e890e043c664a667852a5fd6aa5d5bd9fed54e",
   "provenance": "github/rcJson/iot-panels/out-light/35_trash_compactor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

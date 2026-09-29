@@ -4,12 +4,16 @@
   "description": "G05 widthIn max applied to a filling child",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "459d76a1375072d279810383656d298d4907856b429a90db7fab6c2a35ffa2f7",
   "provenance": "github/rcJson/layout/rc/g05_widthin_on_fill.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

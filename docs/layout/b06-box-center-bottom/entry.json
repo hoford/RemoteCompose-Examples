@@ -4,12 +4,16 @@
   "description": "B box alignment center/bottom",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "4bcd57b647ace1825b098e58eef18724251018e412a9405daeaf0f84f375cc55",
   "provenance": "github/rcJson/layout/rc/b06_box_center_bottom.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

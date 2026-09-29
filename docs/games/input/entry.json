@@ -4,12 +4,16 @@
   "description": "input probe 2",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "e22f3348e57c7aa2963d2191870c11ebe7c1436dd51095ee182508e63ad05930",
   "provenance": "github/rcJson/games/rc/input.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

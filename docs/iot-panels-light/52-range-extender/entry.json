@@ -4,12 +4,17 @@
   "description": "Range Extender \u2014 repeater \u00b7 5 GHz",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "981d258237ed2d3140c91138fa02a89c6c2b948297abb303d69a77c8321a2f54",
   "provenance": "github/rcJson/iot-panels/out-light/52_range_extender.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

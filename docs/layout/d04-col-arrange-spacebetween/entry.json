@@ -4,12 +4,16 @@
   "description": "D column verticalArrangement=spaceBetween",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "fe82dbbd689d5a9be5a1b56a1b61fdb6f80dd034b856230e962735c08f05e16e",
   "provenance": "github/rcJson/layout/rc/d04_col_arrange_spacebetween.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

@@ -4,12 +4,17 @@
   "description": "Projector \u2014 lamp 78% \u00b7 1080p",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "646b5990c62e3d387b9e8b37940ee9bf40a72a40e798e95aa8a55906446f424f",
   "provenance": "github/rcJson/iot-panels/out-light/50_projector.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

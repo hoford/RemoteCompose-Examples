@@ -4,12 +4,17 @@
   "description": "Humidifier \u2014 ultrasonic \u00b7 48% RH",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "e207cda692e5e063af789e3f27e928b08311752fd886e0c27f504a9cc397cedd",
   "provenance": "github/rcJson/iot-panels/out/09_humidifier.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

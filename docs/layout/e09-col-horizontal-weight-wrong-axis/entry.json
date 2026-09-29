@@ -4,12 +4,16 @@
   "description": "E09 horizontalWeight used in a column - weight on the cross axis",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "6c6c8e30532976f440a0b7934e2ac1f1b9fa67297cfcf1bde2bc4f8232087ca6",
   "provenance": "github/rcJson/layout/rc/e09_col_horizontal_weight_wrong_axis.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

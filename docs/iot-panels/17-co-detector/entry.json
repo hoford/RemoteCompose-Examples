@@ -4,12 +4,17 @@
   "description": "CO Detector \u2014 electrochemical \u00b7 ppm",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "435bc3f92282ca1feeb6daae084ccae6ba19c424463cdb71accceb8ccf1f3ada",
   "provenance": "github/rcJson/iot-panels/out/17_co_detector.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

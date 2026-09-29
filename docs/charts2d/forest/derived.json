@@ -1,0 +1,41 @@
+{
+  "id": "charts2d/forest",
+  "sha256": "e7b5a5fabbccab32384d558860d1b8257c09eb35bb2396255517c78227038c84",
+  "bytes": 2140,
+  "ops": 102,
+  "distinctOps": 15,
+  "width": 820,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 29,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 21,
+    "DRAW_TEXT_ANCHOR": 21,
+    "DRAW_LINE": 7,
+    "DRAW_CIRCLE": 6,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

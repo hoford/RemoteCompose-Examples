@@ -4,12 +4,16 @@
   "description": "L02 same flow with spacedBy 30 - the spacing alone must force a wrap",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "e7d068193ffdc55159bc3d476c212165e7d6463d537cdfaf312ba5719cf798b4",
   "provenance": "github/rcJson/layout/rc/l02_flow_spacedby_wraps.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

@@ -4,12 +4,16 @@
   "description": "C11 row that wraps its width - arrangement has no slack to distribute",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0420823929df01a81552a8622105dd476a7439e6e874849041005252b9284033",
   "provenance": "github/rcJson/layout/rc/c11_row_wrap_width.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

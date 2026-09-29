@@ -4,12 +4,17 @@
   "description": "Rain Sensor \u2014 tipping bucket \u00b7 mm",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "1b0335ac93ee25f088fb4c09fbd463bb01b418a1a2279cef195b96425c6ee990",
   "provenance": "github/rcJson/iot-panels/out-light/45_rain_sensor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

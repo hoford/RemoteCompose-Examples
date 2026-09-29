@@ -4,12 +4,16 @@
   "description": "I02 column whose children total more than its height",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "8882c5b924c11a25da54a8bedf75e52f89eefa50aab3278e31ba93d1fc2bf9d4",
   "provenance": "github/rcJson/layout/rc/i02_column_children_overflow.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

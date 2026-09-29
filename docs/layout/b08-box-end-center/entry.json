@@ -4,12 +4,16 @@
   "description": "B box alignment end/center",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "32a76735b6b1841b784472d2dc712538e1654f511d46141c69df2e2d56e82593",
   "provenance": "github/rcJson/layout/rc/b08_box_end_center.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

@@ -4,12 +4,17 @@
   "description": "Home Battery \u2014 13.5 kWh \u00b7 cycling",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "1863752c68c116274ef389344ce783d99e465265907d109cd538e86d53489c6d",
   "provenance": "github/rcJson/iot-panels/out-light/39_home_battery.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

@@ -1,0 +1,819 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 640,
+  "height": 640,
+  "profiles": 513,
+  "contentDescription": "Rose / polar area chart of monthly rainfall"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 640,
+         "bottom": 640
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF202124"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 34
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Monthly Rainfall (mm)",
+         "x": 40,
+         "y": 46,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 262.5,
+         "top": 282.5,
+         "right": 377.5,
+         "bottom": 397.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 205.0,
+         "top": 225.0,
+         "right": 435.0,
+         "bottom": 455.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 147.5,
+         "top": 167.5,
+         "right": 492.5,
+         "bottom": 512.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFECEEF1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawOval": {
+         "left": 90.0,
+         "top": 110.0,
+         "right": 550.0,
+         "bottom": 570.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF64A0AE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 183.93016498870884,
+         "top": 203.93016498870884,
+         "right": 456.06983501129116,
+         "bottom": 476.06983501129116,
+         "startAngle": -89.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jan",
+         "x": 385.22239936583526,
+         "y": 102.58669177515478,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF65A3AE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 190.57177020963832,
+         "top": 210.57177020963832,
+         "right": 449.4282297903617,
+         "bottom": 469.4282297903617,
+         "startAngle": -59.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Feb",
+         "x": 498.19090885901,
+         "y": 167.80909114099003,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF609AAD"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 164.2892639111441,
+         "top": 184.2892639111441,
+         "right": 475.7107360888559,
+         "bottom": 495.7107360888559,
+         "startAngle": -29.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Mar",
+         "x": 563.4133082248452,
+         "y": 280.77760063416474,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B92AC"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 144.33459836002612,
+         "top": 164.33459836002612,
+         "right": 495.6654016399739,
+         "bottom": 515.6654016399739,
+         "startAngle": 1.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Apr",
+         "x": 563.4133082248452,
+         "y": 411.22239936583526,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5688AA"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 123.0397671271347,
+         "top": 143.0397671271347,
+         "right": 516.9602328728653,
+         "bottom": 536.9602328728653,
+         "startAngle": 31.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "May",
+         "x": 498.19090885901,
+         "y": 524.1909088590099,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4F7DA8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 99.79176521604222,
+         "top": 119.79176521604222,
+         "right": 540.2082347839578,
+         "bottom": 560.2082347839578,
+         "startAngle": 61.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jun",
+         "x": 385.22239936583526,
+         "y": 589.4133082248452,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 90.0,
+         "top": 110.0,
+         "right": 550.0,
+         "bottom": 570.0,
+         "startAngle": 91.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Jul",
+         "x": 254.77760063416474,
+         "y": 589.4133082248452,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF507FA9"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 104.85470026049836,
+         "top": 124.85470026049836,
+         "right": 535.1452997395016,
+         "bottom": 555.1452997395016,
+         "startAngle": 121.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Aug",
+         "x": 141.80909114099003,
+         "y": 524.19090885901,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF588BAB"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 129.87284956289557,
+         "top": 149.87284956289557,
+         "right": 510.12715043710443,
+         "bottom": 530.1271504371044,
+         "startAngle": 151.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Sep",
+         "x": 76.5866917751548,
+         "y": 411.2223993658353,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F97AD"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 157.36544032709406,
+         "top": 177.36544032709406,
+         "right": 482.63455967290594,
+         "bottom": 502.63455967290594,
+         "startAngle": 181.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Oct",
+         "x": 76.58669177515478,
+         "y": 280.77760063416474,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF629DAE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 174.53522763225456,
+         "top": 194.53522763225456,
+         "right": 465.46477236774547,
+         "bottom": 485.46477236774547,
+         "startAngle": 211.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Nov",
+         "x": 141.80909114098998,
+         "y": 167.80909114099003,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF65A2AE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawSector": {
+         "left": 187.2094380863861,
+         "top": 207.2094380863861,
+         "right": 452.79056191361394,
+         "bottom": 472.79056191361394,
+         "startAngle": 241.0,
+         "sweepAngle": 28.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Dec",
+         "x": 254.7776006341648,
+         "y": 102.58669177515478,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

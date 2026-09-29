@@ -4,12 +4,16 @@
   "description": "A10 root has a fixed size smaller than the document",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "4d4d45d1d3c6b8809b973248a245084fb9b5bcd84720f65f2e082bc403871bda",
   "provenance": "github/rcJson/layout/rc/a10_root_fixed_size.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

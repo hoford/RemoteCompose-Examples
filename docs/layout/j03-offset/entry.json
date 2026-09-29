@@ -4,12 +4,16 @@
   "description": "J03 offset modifier on a child",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0c9f04c7269cc76fcb8d5055a3938c0e473a07aa3e832779eddac31a320338ae",
   "provenance": "github/rcJson/layout/rc/j03_offset.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

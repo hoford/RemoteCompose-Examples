@@ -4,12 +4,16 @@
   "description": "A03 child fillMaxWidth, fixed height",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "823898ef6a7b645e06c13621dae88987827f0151a6b0a5cde139fc129d8a24f9",
   "provenance": "github/rcJson/layout/rc/a03_child_fillmaxwidth.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

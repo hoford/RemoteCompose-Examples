@@ -4,12 +4,16 @@
   "description": "K09 text inside a CollapsibleColumnLayout, as foo.rc does",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "90cb6216d9824299c78975df9485432e247ba6d20c45cff964d23fbbd4e7ae60",
   "provenance": "github/rcJson/layout/rc/k09_text_in_collapsible_column.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

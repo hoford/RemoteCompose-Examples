@@ -4,12 +4,16 @@
   "description": "K08 text filling the width - the box is logic, the wrapping is metrics",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "699c1a28372b38e340d9e86fac15105b5b52a7e4d689d6a0b8a3913fafa9c5f1",
   "provenance": "github/rcJson/layout/rc/k08_text_fill_width.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

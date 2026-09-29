@@ -4,12 +4,17 @@
   "description": "Litter Box \u2014 rake cycle \u00b7 drawer",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "72fb9712dd69bcb69fabfe81a6d416e3f23452ed0b8a355f7f4b4d3487e496de",
   "provenance": "github/rcJson/iot-panels/out/69_litter_box.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

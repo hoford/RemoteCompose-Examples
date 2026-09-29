@@ -4,12 +4,17 @@
   "description": "Smart Mattress \u2014 zones \u00b7 dual climate",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "be1c3a21cca567d9ff588752484b3b835071b105e5185cb21b2efa496d2be994",
   "provenance": "github/rcJson/iot-panels/out-light/63_smart_mattress.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

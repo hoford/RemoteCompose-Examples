@@ -4,12 +4,17 @@
   "description": "Wine Fridge \u2014 cellar \u00b7 12\u00b0C \u00b7 18 bottles",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "787b9ffc3e2edc1c59af2acc98af6a861a8037b2a6f661ac9f37950707038e9e",
   "provenance": "github/rcJson/iot-panels/out-light/30_wine_fridge.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

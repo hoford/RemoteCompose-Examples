@@ -4,12 +4,17 @@
   "description": "Mailbox Sensor \u2014 post detected \u00b7 flag up",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "44206ab8fa700d34bc4b9c5db27e78df4932e8bff28cb10117121aee263992fd",
   "provenance": "github/rcJson/iot-panels/out-light/77_mailbox_sensor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

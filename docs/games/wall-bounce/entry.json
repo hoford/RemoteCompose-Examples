@@ -4,12 +4,16 @@
   "description": "Wall Bounce: tap to place bumpers and steer the ball through the checkpoints",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "7ded0ff74a6ea3a95b31568b0d12a99c8a33e8ec3e510564790d22878d666fbf",
   "provenance": "github/rcJson/games/rc/wall_bounce.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

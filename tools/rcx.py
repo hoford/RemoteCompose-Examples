@@ -1077,6 +1077,110 @@ def cmd_describe(args):
               f"(ids written to /tmp/rcx_no_description.txt)")
 
 
+
+def cmd_generators(args):
+    """Attach a collection's generator sources to its documents, as illustrative context.
+
+    `add` only attaches sources whose stem matches the document, which is right for a strict
+    provenance claim but leaves most collections with nothing: a directory of forty documents
+    is usually produced by one make.py, not forty. These are educational - "this is the kind
+    of code that produced this" - so they are attached to every document from the same source
+    directory and flagged illustrative:true, keeping them distinguishable from an exact match.
+
+    A directory with more than GENERATOR_LIMIT candidate sources is skipped: at that point the
+    files are probably a library rather than the thing that generated these documents.
+    """
+    GENERATOR_LIMIT = 6
+    # A file only counts as a generator if it actually builds documents. Proximity alone is
+    # not enough: searching by location attached verify.py to 391 documents, verify_samples.py
+    # to 141, and two unrelated widget helpers to documents that already carried their exact
+    # Kotlin. A verifier sitting beside the generator is not the code that produced anything.
+    # Accepted by NAME, not by content.
+    #
+    # Content is the wrong discriminator here and two attempts proved it. Matching files that
+    # mention ".rc" accepted verify.py onto 391 documents, because reading .rc files is what a
+    # verifier does. Requiring a creation-API call then rejected the real generators, because
+    # several of them emit JSON and never touch that API - charts2d/make.py and
+    # surface_plot3d/make.py both build documents without importing anything RemoteCompose.
+    #
+    # What actually identifies one in this corpus is its name sitting beside the output.
+    GENERATOR_NAME = re.compile(
+        r"^(make|gen|generate\d*|build|create|emit|mk)[\w-]*$", re.I)
+
+    def is_generator(f: Path) -> bool:
+        return bool(GENERATOR_NAME.match(f.stem))
+
+    by_dir: dict[Path, list[Path]] = {}
+    attached = coll = 0
+    for ep in sorted(DOCS.glob("*/*/entry.json")):
+        d = ep.parent
+        entry = json.loads(ep.read_text())
+        prov = entry.get("provenance") or ""
+        if not prov:
+            continue
+        srcdir = (CODE_ROOT / prov).parent
+        if srcdir not in by_dir:
+            # Nearest first: the document's own directory, then its parent, then siblings.
+            # Compiled documents usually sit in an out/ or rc/ directory with the generator a
+            # level up, so searching only the document's directory finds nothing for most
+            # collections.
+            # Own directory, then parent, then ONLY siblings that are plainly source
+            # directories. An arbitrary sibling is a different sample, and taking its
+            # generator is actively wrong: architecture3d and shapes3d were both handed
+            # charts2d's make.py that way, byte-identical, from next door. But iot-panels
+            # keeps its documents in out/ and its generators in the sibling gen/, so siblings
+            # cannot be dropped entirely.
+            SOURCE_DIRS = {"gen", "src", "source", "sources", "tools", "scripts", "make"}
+            places = [srcdir, srcdir.parent]
+            if srcdir.parent.exists():
+                try:
+                    places += [x for x in sorted(srcdir.parent.iterdir())
+                               if x.is_dir() and x != srcdir and x.name.lower() in SOURCE_DIRS]
+                except Exception:
+                    pass
+            chosen = []
+            for place in places:
+                try:
+                    cands = sorted([f for suf in ("*.py", "*.kt", "*.kts")
+                                    for f in place.glob(suf)]) if place.exists() else []
+                except Exception:
+                    cands = []
+                # Skip a location holding more than the limit: at that size it is a library,
+                # and attaching all of it to every document would say nothing about any of them.
+                cands = [c for c in cands if is_generator(c)]
+                if 0 < len(cands) <= GENERATOR_LIMIT:
+                    chosen = cands
+                    break
+            by_dir[srcdir] = chosen
+            if chosen:
+                coll += 1
+        gens = by_dir[srcdir]
+        if not gens:
+            continue
+        # A document with an exact, stem-matched source already says precisely what produced
+        # it; adding neighbouring files can only dilute that.
+        if (d / "src").exists() and any(
+                f.name not in (entry.get("illustrativeSources") or [])
+                for f in (d / "src").glob("*")):
+            continue
+        existing = {f.name for f in (d / "src").glob("*")} if (d / "src").exists() else set()
+        added_here = []
+        for g in gens:
+            if g.name in existing:
+                continue
+            (d / "src").mkdir(exist_ok=True)
+            shutil.copy2(g, d / "src" / g.name)
+            added_here.append(g.name)
+        if added_here:
+            kinds = {g.suffix.lstrip(".").replace("kts", "kt") for g in gens}
+            entry["authoring"] = sorted(set(entry.get("authoring") or []) | kinds)
+            entry["illustrativeSources"] = sorted(
+                set(entry.get("illustrativeSources") or []) | set(added_here))
+            ep.write_text(json.dumps(entry, indent=2) + "\n")
+            attached += 1
+    print(f"  attached generators to {attached} documents from {coll} source director(y/ies)")
+
+
 def cmd_serve(args):
     os.chdir(ROOT)
     import http.server, socketserver
@@ -1124,6 +1228,10 @@ def main():
     de.add_argument("--force", action="store_true",
                     help="re-derive even where a description already exists")
     de.set_defaults(fn=cmd_describe)
+
+    g = sub.add_parser("generators",
+                       help="attach collection generator sources as illustrative context")
+    g.set_defaults(fn=cmd_generators)
 
     s = sub.add_parser("serve", help="preview the site")
     s.add_argument("--port", type=int, default=8000)

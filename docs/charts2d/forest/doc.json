@@ -1,0 +1,845 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 820,
+  "height": 520,
+  "profiles": 513,
+  "contentDescription": "Forest plot of a meta-analysis"
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 820,
+         "bottom": 520
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF202124"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 34
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Treatment Effect (meta-analysis)",
+         "x": 130,
+         "y": 46,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBDC1C6"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 342.1428571428571,
+         "y1": 104,
+         "x2": 342.1428571428571,
+         "y2": 456
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 384.57142857142856,
+         "y1": 133.33333333333334,
+         "x2": 554.2857142857142,
+         "y2": 133.33333333333334
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 469.4285714285715,
+         "cy": 133.33333333333334,
+         "radius": 8.919349550499538
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Study A",
+         "x": 118,
+         "y": 139.33333333333334,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "+0.30",
+         "x": 730,
+         "y": 139.33333333333334,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 172.42857142857142,
+         "y1": 192.0,
+         "x2": 427.0,
+         "y2": 192.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 299.7142857142858,
+         "cy": 192.0,
+         "radius": 8.26028168082816
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Study B",
+         "x": 118,
+         "y": 198.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "-0.10",
+         "x": 730,
+         "y": 198.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 427.0,
+         "y1": 250.66666666666666,
+         "x2": 681.5714285714287,
+         "y2": 250.66666666666666
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 554.2857142857142,
+         "cy": 250.66666666666666,
+         "radius": 7.478505426185218
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Study C",
+         "x": 118,
+         "y": 256.66666666666663,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "+0.50",
+         "x": 730,
+         "y": 256.66666666666663,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 363.3571428571429,
+         "y1": 309.3333333333333,
+         "x2": 490.64285714285717,
+         "y2": 309.3333333333333
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 427.0,
+         "cy": 309.3333333333333,
+         "radius": 10.024948132556828
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Study D",
+         "x": 118,
+         "y": 315.3333333333333,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "+0.20",
+         "x": 730,
+         "y": 315.3333333333333,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 257.2857142857143,
+         "y1": 368.0,
+         "x2": 427.0,
+         "y2": 368.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4C78A8"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 342.1428571428571,
+         "cy": 368.0,
+         "radius": 7.11126983722081
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Study E",
+         "x": 118,
+         "y": 374.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "+0.00",
+         "x": 730,
+         "y": 374.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE45756"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 393.0571428571429,
+         "y1": 426.66666666666663,
+         "x2": 477.9142857142857,
+         "y2": 426.66666666666663
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE45756"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 435.4857142857143,
+         "cy": 426.66666666666663,
+         "radius": 11.379024325749306
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Pooled",
+         "x": 118,
+         "y": 432.66666666666663,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 18
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "+0.22",
+         "x": 730,
+         "y": 432.66666666666663,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5F6368"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 20
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "-0.4",
+         "x": 172.42857142857142,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "-0.2",
+         "x": 257.2857142857143,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0",
+         "x": 342.1428571428571,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0.2",
+         "x": 427.0,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0.4",
+         "x": 511.8571428571429,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0.6",
+         "x": 596.7142857142858,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0.8",
+         "x": 681.5714285714287,
+         "y": 482,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3C4043"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 22
+          },
+          {
+           "alpha": 1.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "Effect size (log OR)",
+         "x": 427.0,
+         "y": 510,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "charts2d/bubble",
+  "sha256": "7bcde5772713611355484f504fd7d9fffea8b44203101815dc44cacd8514d10d",
+  "bytes": 2169,
+  "ops": 101,
+  "distinctOps": 15,
+  "width": 720,
+  "height": 560,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 37,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 15,
+    "DRAW_LINE": 14,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

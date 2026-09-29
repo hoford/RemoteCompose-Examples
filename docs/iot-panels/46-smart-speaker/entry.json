@@ -4,12 +4,17 @@
   "description": "Smart Speaker \u2014 listening \u00b7 far-field",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "7be79d586cddde4ee5bd26e480fc7d4998359623ef06ff082480f948bed5dc50",
   "provenance": "github/rcJson/iot-panels/out/46_smart_speaker.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

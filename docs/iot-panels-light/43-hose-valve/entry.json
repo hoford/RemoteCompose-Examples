@@ -4,12 +4,17 @@
   "description": "Hose Valve \u2014 flow \u00b7 9.2 L/min",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "18c354f688a5ebfd0556ec1c367f321c857c08235b5c0bcc28c633c2b1d697ae",
   "provenance": "github/rcJson/iot-panels/out-light/43_hose_valve.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

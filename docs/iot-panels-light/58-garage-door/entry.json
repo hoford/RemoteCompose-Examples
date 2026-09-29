@@ -4,12 +4,17 @@
   "description": "Garage Door \u2014 sectional \u00b7 opening",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "e473c0ce594ec1c3c086f904055749df01c5e3f14d1bc0dc119ec3da40617c3b",
   "provenance": "github/rcJson/iot-panels/out-light/58_garage_door.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

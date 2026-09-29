@@ -4,12 +4,16 @@
   "description": "F01 uniform padding on the root",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "3b96300970613ce48b04be412b4090986284d5e3166f42d27bd951c48b9981c1",
   "provenance": "github/rcJson/layout/rc/f01_padding_uniform.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

@@ -4,12 +4,16 @@
   "description": "D10 column with spacedBy 20",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "eca258c98cf06ea33ea50c006aaca4d7de2e4656ed767216439c5426842b45f3",
   "provenance": "github/rcJson/layout/rc/d10_col_spacedby.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

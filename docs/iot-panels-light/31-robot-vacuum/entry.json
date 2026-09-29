@@ -4,12 +4,17 @@
   "description": "Robot Vacuum \u2014 mapping \u00b7 5 passes",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "bae6938e4a591e9ed6f3c3847a97e88e4a49b0cc06201c2fa1cf311aee542681",
   "provenance": "github/rcJson/iot-panels/out-light/31_robot_vacuum.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

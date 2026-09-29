@@ -4,12 +4,17 @@
   "description": "Smart Bin \u2014 proximity lid \u00b7 64% full",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "8f5bdf10b8e05c0ea796303fef7dc630ca59d7f2c27180811cd931146ac8d090",
   "provenance": "github/rcJson/iot-panels/out-light/80_smart_bin.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

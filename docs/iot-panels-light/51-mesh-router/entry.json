@@ -4,12 +4,17 @@
   "description": "Mesh Router \u2014 Wi-Fi 6E \u00b7 12 clients",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "5ed8457c575a967947901ddfb7635778de6f9ce3cbb4b3e6497b2486d60de7a4",
   "provenance": "github/rcJson/iot-panels/out-light/51_mesh_router.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

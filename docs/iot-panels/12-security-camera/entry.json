@@ -4,12 +4,17 @@
   "description": "Security Camera \u2014 PTZ \u00b7 night vision \u00b7 REC",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "9fc940f4d5af887790560ddc5fb8daf0bbecf77c267fc67d057f9c02314a49ca",
   "provenance": "github/rcJson/iot-panels/out/12_security_camera.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

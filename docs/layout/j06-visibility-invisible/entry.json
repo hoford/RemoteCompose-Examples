@@ -4,12 +4,16 @@
   "description": "J06 an INVISIBLE child in a row - space should be kept",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "0f624a63cc01555e8fb22c1f9d4686c1a2964c4ab8b705c2b168f348e18911bf",
   "provenance": "github/rcJson/layout/rc/j06_visibility_invisible.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

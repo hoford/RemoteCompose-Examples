@@ -4,12 +4,17 @@
   "description": "Video Doorbell \u2014 1440p \u00b7 chime \u00b7 motion",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "e257c7a81886a3ad5203957ee55193824cb0a9b14dc94e43807d0fac5485c6db",
   "provenance": "github/rcJson/iot-panels/out/11_video_doorbell.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

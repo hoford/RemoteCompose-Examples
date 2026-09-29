@@ -4,12 +4,16 @@
   "description": "G06 requiredWidthIn - required constraints ignore the incoming ones",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "07c748fb37de899c677b0ea125cc4cd760d1c48b3b2c559c33384c73f08eea3b",
   "provenance": "github/rcJson/layout/rc/g06_required_widthin.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

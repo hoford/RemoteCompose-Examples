@@ -4,12 +4,16 @@
   "description": "A06 size modifier as a pair",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "6fbbb76cb4f108b96163f69a5f7cc9a0dc7d1a2893728b2e04c6e78b2e56d800",
   "provenance": "github/rcJson/layout/rc/a06_size_modifier.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

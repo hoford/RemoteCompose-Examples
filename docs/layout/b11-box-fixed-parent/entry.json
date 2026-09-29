@@ -4,12 +4,16 @@
   "description": "B11 alignment inside a fixed-size box, not the root",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "f210d9a61688943ff87a34bc86042705227e2a73f9544e6adb4030f6d76eb104",
   "provenance": "github/rcJson/layout/rc/b11_box_fixed_parent.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

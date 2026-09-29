@@ -4,12 +4,16 @@
   "description": "equation order probe",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "3b0a763801d569dcb743a55fa1424324a0a075673e38171f5d1bf8c7138f8f55",
   "provenance": "github/rcJson/games/rc/order.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

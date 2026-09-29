@@ -4,12 +4,17 @@
   "description": "EV Charger \u2014 7.4 kW \u00b7 62%",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "650ab20712d5378c9f3a41ebdb021f59431636a95edee378bf938c6ab4b0659a",
   "provenance": "github/rcJson/iot-panels/out-light/40_ev_charger.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

@@ -4,12 +4,16 @@
   "description": "H03 a box inside a row, aligned within its own bounds",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "3c394b0df1b51c53ce3e4d8399a579827f33d9eb211e45140b4d7005ec3b4ba2",
   "provenance": "github/rcJson/layout/rc/h03_box_in_row_aligned.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

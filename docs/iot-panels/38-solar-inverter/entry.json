@@ -4,12 +4,17 @@
   "description": "Solar Inverter \u2014 string \u00b7 MPPT",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "6251413d626d249cd929d90c9ea65380aa0d7f3144dffa747204092a15c0fdf9",
   "provenance": "github/rcJson/iot-panels/out/38_solar_inverter.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

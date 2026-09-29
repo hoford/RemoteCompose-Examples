@@ -4,12 +4,17 @@
   "description": "Streaming Box \u2014 buffering \u00b7 adaptive",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "45bfe7c42d4da8bf92056e8cd08191c0424b7c3bea1d03572ac36bc8ba28e801",
   "provenance": "github/rcJson/iot-panels/out/49_streaming_box.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

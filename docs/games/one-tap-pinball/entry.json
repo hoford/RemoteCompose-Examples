@@ -4,12 +4,16 @@
   "description": "One-Tap Pinball: tap to fire the bumpers, hit the rings in order",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "1c526a5991ec5a0ac5a9e250a36ef968bf1ba8b1b3c207d18471207310ad50b1",
   "provenance": "github/rcJson/games/rc/one_tap_pinball.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

@@ -1,0 +1,41 @@
+{
+  "id": "charts2d/annotations",
+  "sha256": "96865cd8b551879af0202076f494064041f1bc0891f90b269d5c6cf72cb0789a",
+  "bytes": 2288,
+  "ops": 118,
+  "distinctOps": 15,
+  "width": 900,
+  "height": 560,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 2,
+    "DATA_TEXT": 22,
+    "DRAW_TEXT_ANCHOR": 22,
+    "DRAW_LINE": 20,
+    "DRAW_CIRCLE": 12,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

@@ -4,12 +4,17 @@
   "description": "Smart TV \u2014 4K HDR \u00b7 playing",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "54bfb6004241cc4ddfdd47d3ffd7b73b07d2b7f106dd2ecb1b8b6b4748c3b861",
   "provenance": "github/rcJson/iot-panels/out-light/48_smart_tv.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

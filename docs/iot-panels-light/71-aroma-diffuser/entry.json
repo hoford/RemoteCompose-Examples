@@ -4,12 +4,17 @@
   "description": "Aroma Diffuser \u2014 ultrasonic \u00b7 4h",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "99c4bd058958d6c71184fc114a288ac179980015c5a160b8b842503d330876a8",
   "provenance": "github/rcJson/iot-panels/out-light/71_aroma_diffuser.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

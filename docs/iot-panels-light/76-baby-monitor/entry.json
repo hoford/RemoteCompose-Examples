@@ -4,12 +4,17 @@
   "description": "Baby Monitor \u2014 night vision \u00b7 20.4\u00b0C",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "4540576e548ed965df4b09388bff0504fe76f650cf3b2e364c981acc877d0c39",
   "provenance": "github/rcJson/iot-panels/out-light/76_baby_monitor.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

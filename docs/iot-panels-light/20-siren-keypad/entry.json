@@ -4,12 +4,17 @@
   "description": "Siren Keypad \u2014 entry delay \u00b7 arming",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "013d9ea169bd7f488db17ca5a9aaf1f4023840c5626514ac77de2c35905a2eac",
   "provenance": "github/rcJson/iot-panels/out-light/20_siren_keypad.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

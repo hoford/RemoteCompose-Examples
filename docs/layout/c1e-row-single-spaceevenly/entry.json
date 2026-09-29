@@ -4,12 +4,16 @@
   "description": "C single child with spaceEvenly",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "a0917137bc8101fcaf8deaaedb95f86e96f48f529fb4bddb72300c24c5ccc3b1",
   "provenance": "github/rcJson/layout/rc/c1e_row_single_spaceevenly.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

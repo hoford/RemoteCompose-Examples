@@ -4,12 +4,16 @@
   "description": "G01 widthIn min larger than the requested width",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "146adc872109d07115c2af44bac96ddc4f69f119001fb01266756e8b84731f37",
   "provenance": "github/rcJson/layout/rc/g01_widthin_min_forces_growth.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

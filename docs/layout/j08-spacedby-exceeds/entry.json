@@ -4,12 +4,16 @@
   "description": "J08 spacedBy larger than the space left over",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "cba385b6f6f61b6a99c6d99618fe1465633bd4e5ab51c74b0e892d759e10139d",
   "provenance": "github/rcJson/layout/rc/j08_spacedby_exceeds.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

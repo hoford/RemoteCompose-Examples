@@ -4,12 +4,16 @@
   "description": "Safe Zone: tap to shield the drifters from incoming projectiles",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "game"
   ],
   "sha256": "ace111b0c7cc14f44c89c8d6caae5a487d9b320358443a44459d7bd96a8b1b42",
   "provenance": "github/rcJson/games/rc/safe_zone.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "build.py"
+  ]
 }

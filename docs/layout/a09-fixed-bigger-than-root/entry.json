@@ -4,12 +4,16 @@
   "description": "A09 child larger than the root",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "9a7a29bdd148230ee2b609fdd282c88369a3651f4d1a46c8cbb072303e11957a",
   "provenance": "github/rcJson/layout/rc/a09_fixed_bigger_than_root.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

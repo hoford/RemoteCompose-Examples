@@ -4,12 +4,17 @@
   "description": "Bird Feeder \u2014 camera \u00b7 species ID",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "fa99eda928e7697299859ad093492357b060d5520dc9d34a86f2aa1b09b32ea3",
   "provenance": "github/rcJson/iot-panels/out/79_bird_feeder.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

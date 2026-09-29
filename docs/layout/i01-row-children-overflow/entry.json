@@ -4,12 +4,16 @@
   "description": "I01 row whose children total more than its width",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "029f7877b79072c1a3e13143aa975c369d360a99522fe726d824dc971827d9d1",
   "provenance": "github/rcJson/layout/rc/i01_row_children_overflow.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

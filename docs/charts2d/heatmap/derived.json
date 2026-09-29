@@ -1,0 +1,37 @@
+{
+  "id": "charts2d/heatmap",
+  "sha256": "0f504f2d4797b3e150ef85cad7f9368cfd425645658042335677d67673fbbf46",
+  "bytes": 4475,
+  "ops": 206,
+  "distinctOps": 13,
+  "width": 820,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 73,
+    "DRAW_RECT": 36,
+    "DATA_TEXT": 32,
+    "DRAW_TEXT_ANCHOR": 48,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

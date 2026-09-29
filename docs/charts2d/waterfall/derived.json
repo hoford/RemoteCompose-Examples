@@ -1,0 +1,39 @@
+{
+  "id": "charts2d/waterfall",
+  "sha256": "c365ae1b6488b8c5032580eaa10c61873cc572978073cb9481807e90060abd2f",
+  "bytes": 1896,
+  "ops": 91,
+  "distinctOps": 14,
+  "width": 820,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 27,
+    "DRAW_RECT": 6,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_LINE": 10,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

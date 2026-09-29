@@ -4,12 +4,17 @@
   "description": "Tumble Dryer \u2014 heat pump \u00b7 46 min",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "9e3d9adaa0236c96963471a60c0d27c848630130c9daa4216712c43c72bcb3d9",
   "provenance": "github/rcJson/iot-panels/out/34_tumble_dryer.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

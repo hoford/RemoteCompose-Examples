@@ -1,0 +1,39 @@
+{
+  "id": "charts2d/waffle",
+  "sha256": "674715f4f60cfc66fbe47144e5985c8dec7a5dd46a10df578dd71b398a1b0514",
+  "bytes": 5873,
+  "ops": 247,
+  "distinctOps": 14,
+  "width": 640,
+  "height": 680,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 112,
+    "DRAW_RECT": 6,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 6,
+    "DRAW_ROUND_RECT": 100,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

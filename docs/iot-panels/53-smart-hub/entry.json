@@ -4,12 +4,17 @@
   "description": "Smart Hub \u2014 Thread \u00b7 24 paired",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "fbe1996f9510affd3e6a40d144a56c654043ebedb89873124cca1bb3875eae36",
   "provenance": "github/rcJson/iot-panels/out/53_smart_hub.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

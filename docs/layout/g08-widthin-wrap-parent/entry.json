@@ -4,12 +4,16 @@
   "description": "G08 widthIn min inside a wrapping parent",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "d5962bfd3722561438c7392178cf2c477339c4d36b1de92ea6480ca9251b271a",
   "provenance": "github/rcJson/layout/rc/g08_widthin_wrap_parent.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

@@ -4,12 +4,17 @@
   "description": "Smart Oven \u2014 fan bake \u00b7 190\u00b0C",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "58782cce753c156ec49de0c23ffd528508e657348f67cb9f4e62740e0cc22166",
   "provenance": "github/rcJson/iot-panels/out-light/22_smart_oven.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

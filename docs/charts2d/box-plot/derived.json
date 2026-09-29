@@ -1,0 +1,39 @@
+{
+  "id": "charts2d/box-plot",
+  "sha256": "381f5529b1e72920f65dc140816e1eb55fbe8a56992d047c53f0258e469a19f7",
+  "bytes": 1755,
+  "ops": 88,
+  "distinctOps": 14,
+  "width": 800,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 9,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_LINE": 21,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make.py"
+  ]
+}

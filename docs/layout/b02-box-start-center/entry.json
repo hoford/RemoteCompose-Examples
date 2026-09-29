@@ -4,12 +4,16 @@
   "description": "B box alignment start/center",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "a4226907dee49dbfe79fa13311e87135a5af0d895454c925546b63d8ba95d371",
   "provenance": "github/rcJson/layout/rc/b02_box_start_center.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }

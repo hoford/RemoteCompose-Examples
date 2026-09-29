@@ -4,12 +4,17 @@
   "description": "Toaster \u2014 medium \u00b7 2 slice",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "cf0506b8632da95a49368cd85c91733a77d3b420ac835ca5eb5e5e9ad268e9b0",
   "provenance": "github/rcJson/iot-panels/out/29_toaster.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

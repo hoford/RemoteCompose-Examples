@@ -4,12 +4,17 @@
   "description": "Gate Opener \u2014 rack & pinion \u00b7 sliding",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "iot"
   ],
   "sha256": "91ca1adaf4e32611fa24ebf84765660f95defdbb9347170cf302e2d9194f9c61",
   "provenance": "github/rcJson/iot-panels/out/60_gate_opener.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "emit.py",
+    "mkindex.py"
+  ]
 }

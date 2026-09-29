@@ -4,12 +4,16 @@
   "description": "C row horizontalArrangement=end",
   "source": "rcjson",
   "authoring": [
-    "json"
+    "json",
+    "py"
   ],
   "tags": [
     "layout"
   ],
   "sha256": "86c6303d837048e05cdac84752a53ce3e83a1625a1a00a0f4445cadcdfc406ce",
   "provenance": "github/rcJson/layout/rc/c03_row_arrange_end.rc",
-  "descriptionSource": "json:header.contentDescription"
+  "descriptionSource": "json:header.contentDescription",
+  "illustrativeSources": [
+    "gen.py"
+  ]
 }
