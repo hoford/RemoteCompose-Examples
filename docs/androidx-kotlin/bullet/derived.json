@@ -1,0 +1,43 @@
+{
+  "id": "androidx-kotlin/bullet",
+  "sha256": "3973b91b3786cc5bdd5068d277529602fd06e6206a2f081892910125b7ed37a2",
+  "bytes": 4985,
+  "ops": 151,
+  "distinctOps": 14,
+  "width": 760,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 26,
+    "DRAW_RECT": 17,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 5,
+    "ANIMATED_FLOAT": 83,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dFinancialDemos.kt"
+  ]
+}

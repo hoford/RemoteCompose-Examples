@@ -1,0 +1,43 @@
+{
+  "id": "androidx-kotlin/gauge",
+  "sha256": "bebddf2b920d5fdc9cb021753d63f236e3bd946bdc9913b846629524dd8903ba",
+  "bytes": 1009,
+  "ops": 45,
+  "distinctOps": 14,
+  "width": 560,
+  "height": 560,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 8,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 5,
+    "ANIMATED_FLOAT": 13,
+    "DRAW_ARC": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dPolarDemos.kt"
+  ]
+}

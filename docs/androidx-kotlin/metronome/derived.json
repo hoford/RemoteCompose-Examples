@@ -1,0 +1,45 @@
+{
+  "id": "androidx-kotlin/metronome",
+  "sha256": "53b87a1af3c552578ba4dc5c11beb82fa8e2f3f4c53244b1e3274a9528a5bc70",
+  "bytes": 615,
+  "ops": 30,
+  "distinctOps": 16,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "SOUND_EXPRESSION": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 3,
+    "ANIMATED_FLOAT": 8,
+    "DRAW_LINE": 2,
+    "CONDITIONAL_OPERATIONS": 1,
+    "PLAY_SOUND": 1,
+    "CONTAINER_END": 4,
+    "DRAW_CIRCLE": 1
+  },
+  "apis": [
+    "conditionals",
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslMetronome.kt"
+  ]
+}

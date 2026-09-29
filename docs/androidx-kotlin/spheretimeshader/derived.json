@@ -1,0 +1,33 @@
+{
+  "id": "androidx-kotlin/spheretimeshader",
+  "sha256": "9aff3c0eab283caf40f2f8c6fc16c2f17085c26d0eeeaf177e4e99fdfbb252d3",
+  "bytes": 15253,
+  "ops": 6,
+  "distinctOps": 6,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_BITMAP": 1,
+    "DATA_TEXT": 1,
+    "DATA_SHADER": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1
+  },
+  "apis": [
+    "drawRect",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "SphereTimeShader.kt"
+  ]
+}

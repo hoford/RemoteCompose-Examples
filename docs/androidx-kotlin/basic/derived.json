@@ -1,0 +1,54 @@
+{
+  "id": "androidx-kotlin/basic",
+  "sha256": "e61fb07e914386958b0f968cee66527eec7d092690a8fdeeade88c3c1390065a",
+  "bytes": 4297,
+  "ops": 180,
+  "distinctOps": 22,
+  "width": 800,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 61,
+    "PAINT_VALUES": 37,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 15,
+    "DRAW_LINE": 19,
+    "FLOAT_LIST": 1,
+    "PATH_CREATE": 1,
+    "PATH_ADD": 7,
+    "DRAW_PATH": 1,
+    "DRAW_CIRCLE": 8,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dLineDemos.kt"
+  ]
+}

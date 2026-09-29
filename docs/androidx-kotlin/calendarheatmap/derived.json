@@ -1,0 +1,46 @@
+{
+  "id": "androidx-kotlin/calendarheatmap",
+  "sha256": "f64b23ed10f59512d3b28c2b0b2b890f3911e706278f4c62e08f4c682e3890a9",
+  "bytes": 3744,
+  "ops": 125,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "ANIMATED_FLOAT": 67,
+    "PAINT_VALUES": 11,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 10,
+    "LOOP_START": 1,
+    "COLOR_EXPRESSIONS": 6,
+    "DRAW_ROUND_RECT": 7,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizCalendarHeatmap.kt"
+  ]
+}

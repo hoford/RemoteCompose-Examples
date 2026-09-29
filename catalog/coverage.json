@@ -1,6 +1,6 @@
 {
   "knownOperations": 176,
-  "covered": 115,
+  "covered": 117,
   "uncovered": [
     "ADD_MESH_2D",
     "ANIMATION_SPEC",
@@ -52,11 +52,9 @@
     "PARTICLE_LOOP",
     "PARTICLE_PROCESS",
     "PATH_COMBINE",
-    "PLAY_SOUND",
     "REFERENCED_OPERATIONS",
     "REM",
     "SKIP",
-    "SOUND_EXPRESSION",
     "TEXT_LENGTH",
     "TEXT_LOOKUP_INT",
     "TEXT_STYLE",
@@ -65,6 +63,6 @@
     "VALUE_STRING_CHANGE_ACTION"
   ],
   "notOpcodeConstants": [],
-  "undecodableDocuments": 140,
+  "undecodableDocuments": 146,
   "operationsSource": "/Users/john/code/androidx-main3/frameworks/support/compose/remote/remote-core/src/main/java/androidx/compose/remote/core/Operations.java"
 }

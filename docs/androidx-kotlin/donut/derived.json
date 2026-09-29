@@ -1,0 +1,43 @@
+{
+  "id": "androidx-kotlin/donut",
+  "sha256": "21af9e73e7ef4946f4eae55150753a9e0839c0a1dac7a09fc15f0a000d1af22b",
+  "bytes": 3223,
+  "ops": 126,
+  "distinctOps": 14,
+  "width": 640,
+  "height": 640,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 6,
+    "DATA_TEXT": 11,
+    "DRAW_TEXT_ANCHOR": 11,
+    "ANIMATED_FLOAT": 60,
+    "DRAW_ARC": 5,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dRelationDemos.kt"
+  ]
+}

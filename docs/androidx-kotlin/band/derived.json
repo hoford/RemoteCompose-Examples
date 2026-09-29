@@ -1,0 +1,52 @@
+{
+  "id": "androidx-kotlin/band",
+  "sha256": "ca7743b8bd1c0daebedca31cfbe35f0e6f6729ef7b55e8da991c022b2f184879",
+  "bytes": 5062,
+  "ops": 206,
+  "distinctOps": 21,
+  "width": 820,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 77,
+    "PAINT_VALUES": 37,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 15,
+    "DRAW_LINE": 19,
+    "FLOAT_LIST": 1,
+    "PATH_CREATE": 2,
+    "PATH_ADD": 23,
+    "DRAW_PATH": 2,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dIntervalDemos.kt"
+  ]
+}

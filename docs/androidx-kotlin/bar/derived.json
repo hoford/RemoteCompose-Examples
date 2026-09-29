@@ -1,0 +1,45 @@
+{
+  "id": "androidx-kotlin/bar",
+  "sha256": "adbd5e34f0e3551a266e42b5f749042534d19c6530fb86df350c8a576adcb729",
+  "bytes": 2790,
+  "ops": 116,
+  "distinctOps": 15,
+  "width": 640,
+  "height": 640,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 19,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "ANIMATED_FLOAT": 55,
+    "DRAW_CIRCLE": 4,
+    "DRAW_SECTOR": 8,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dPolarDemos.kt"
+  ]
+}

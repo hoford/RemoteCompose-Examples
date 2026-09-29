@@ -1,0 +1,62 @@
+{
+  "id": "androidx-kotlin/01dslclock",
+  "sha256": "a28751cd567a4dace2927679ccef7579d4d3348e29ecd1d70ab075f669b5b978",
+  "bytes": 2146,
+  "ops": 129,
+  "distinctOps": 29,
+  "width": 0,
+  "height": 0,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 10,
+    "COLOR_CONSTANT": 10,
+    "THEME": 15,
+    "LOOP_START": 10,
+    "COLOR_EXPRESSIONS": 10,
+    "CONTAINER_END": 15,
+    "LAYOUT_ROOT": 1,
+    "DATA_TEXT": 8,
+    "ID_LIST": 1,
+    "ANIMATED_FLOAT": 12,
+    "TEXT_LOOKUP": 1,
+    "TEXT_FROM_FLOAT": 1,
+    "TEXT_MERGE": 2,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 5,
+    "PATH_EXPRESSION": 2,
+    "DRAW_PATH": 1,
+    "MATRIX_SAVE": 3,
+    "MATRIX_ROTATE": 4,
+    "DRAW_LINE": 2,
+    "MATRIX_RESTORE": 3,
+    "DRAW_CIRCLE": 1,
+    "DRAW_TEXT_ON_PATH": 1
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text",
+    "theming",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "RcDslClock.kt"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "androidx-kotlin/moonphasedial",
+  "sha256": "d6c19aba35b0a387e65a90d2d28a0f09c8791a2ca0e622dd2bbe4e652fb2e373",
+  "bytes": 1877,
+  "ops": 91,
+  "distinctOps": 22,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "DATA_TEXT": 10,
+    "ID_LIST": 1,
+    "ANIMATED_FLOAT": 38,
+    "PAINT_VALUES": 8,
+    "DRAW_CIRCLE": 7,
+    "MATRIX_SAVE": 1,
+    "CLIP_RECT": 1,
+    "MATRIX_RESTORE": 1,
+    "TEXT_LOOKUP": 1,
+    "DRAW_TEXT_ANCHOR": 8,
+    "TEXT_FROM_FLOAT": 1,
+    "TEXT_MERGE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "clip",
+    "drawCircle",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizMoonPhaseDial.kt"
+  ]
+}

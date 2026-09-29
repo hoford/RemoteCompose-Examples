@@ -1,0 +1,41 @@
+{
+  "id": "androidx-kotlin/confusion",
+  "sha256": "51b697d622f76dfc2493e02e848ba789810c8bbea88b798f01458fbd8ff53461",
+  "bytes": 6759,
+  "ops": 218,
+  "distinctOps": 13,
+  "width": 640,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 42,
+    "DRAW_RECT": 17,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 25,
+    "ANIMATED_FLOAT": 107,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dMoreDemos.kt"
+  ]
+}

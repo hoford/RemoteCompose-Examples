@@ -1,0 +1,33 @@
+{
+  "id": "androidx-kotlin/cubesphere",
+  "sha256": "e005aa42df999db77018dd1f4ee8d2bb7bc499382f1aaf3039d9fa17409fa212",
+  "bytes": 72607,
+  "ops": 11,
+  "distinctOps": 6,
+  "width": 800,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "DATA_BITMAP": 6,
+    "DATA_TEXT": 1,
+    "DATA_SHADER": 1,
+    "PAINT_VALUES": 1,
+    "DRAW_RECT": 1
+  },
+  "apis": [
+    "drawRect",
+    "paint",
+    "shaders",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "shaders"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "CubeSphereTransitionShader.kt"
+  ]
+}

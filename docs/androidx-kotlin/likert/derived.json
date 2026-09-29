@@ -1,0 +1,43 @@
+{
+  "id": "androidx-kotlin/likert",
+  "sha256": "d396b23d7927bf44f737debc78695e64eb55233182233f4c21f251fe7f20fbcc",
+  "bytes": 4743,
+  "ops": 195,
+  "distinctOps": 14,
+  "width": 820,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 41,
+    "DRAW_RECT": 30,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 10,
+    "ANIMATED_FLOAT": 92,
+    "DRAW_LINE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dMoreDemos.kt"
+  ]
+}

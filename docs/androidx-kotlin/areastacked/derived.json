@@ -1,0 +1,51 @@
+{
+  "id": "androidx-kotlin/areastacked",
+  "sha256": "34e27cb79b47c58b9209bb122c41e24f91fb74ab8d5faeb3d0a01c095e3cf0b0",
+  "bytes": 7842,
+  "ops": 312,
+  "distinctOps": 20,
+  "width": 900,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 141,
+    "PAINT_VALUES": 44,
+    "DRAW_RECT": 4,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 19,
+    "PATH_CREATE": 3,
+    "PATH_ADD": 48,
+    "DRAW_PATH": 3,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dLineDemos.kt"
+  ]
+}

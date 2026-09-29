@@ -1,0 +1,49 @@
+{
+  "id": "androidx-kotlin/stocksparkline",
+  "sha256": "d5384281753074c63114c37dd6d186d7c5b791d00c03871199429e0f971ce4ed",
+  "bytes": 1672,
+  "ops": 68,
+  "distinctOps": 20,
+  "width": 500,
+  "height": 350,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "ANIMATED_FLOAT": 24,
+    "PAINT_VALUES": 7,
+    "TEXT_FROM_FLOAT": 4,
+    "DRAW_TEXT_ANCHOR": 5,
+    "DATA_TEXT": 4,
+    "TEXT_MERGE": 2,
+    "PATH_CREATE": 1,
+    "LOOP_START": 1,
+    "PATH_ADD": 4,
+    "CONTAINER_END": 4,
+    "DRAW_PATH": 2
+  },
+  "apis": [
+    "drawPath",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizStockSparkline.kt"
+  ]
+}

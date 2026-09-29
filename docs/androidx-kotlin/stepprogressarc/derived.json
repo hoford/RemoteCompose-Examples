@@ -1,0 +1,47 @@
+{
+  "id": "androidx-kotlin/stepprogressarc",
+  "sha256": "9f22919d399bc5f5655e3fcd29455833f8babe70001402f7abdfe67f0d3347b2",
+  "bytes": 3904,
+  "ops": 94,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 350,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "ANIMATED_FLOAT": 46,
+    "PAINT_VALUES": 13,
+    "DRAW_ARC": 2,
+    "DRAW_LINE": 4,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 6,
+    "TEXT_FROM_FLOAT": 2,
+    "TEXT_MERGE": 2,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizStepProgressArc.kt"
+  ]
+}

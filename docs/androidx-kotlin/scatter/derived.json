@@ -1,0 +1,49 @@
+{
+  "id": "androidx-kotlin/scatter",
+  "sha256": "617937062ba930332b381e43b70fb31cd34b1a4f83760f7fc100d8d3d8fc75e1",
+  "bytes": 7568,
+  "ops": 325,
+  "distinctOps": 18,
+  "width": 720,
+  "height": 540,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 159,
+    "PAINT_VALUES": 42,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 15,
+    "DRAW_LINE": 25,
+    "DRAW_CIRCLE": 60,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dRelationDemos.kt"
+  ]
+}

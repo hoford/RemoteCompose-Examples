@@ -1,0 +1,45 @@
+{
+  "id": "androidx-kotlin/rose",
+  "sha256": "83dc748e7197b289f5edb18376d789ec48d3caf851575d87dfa417e010790194",
+  "bytes": 4549,
+  "ops": 184,
+  "distinctOps": 15,
+  "width": 640,
+  "height": 640,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 39,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 13,
+    "DRAW_TEXT_ANCHOR": 13,
+    "ANIMATED_FLOAT": 79,
+    "DRAW_CIRCLE": 4,
+    "DRAW_SECTOR": 24,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dPolarDemos.kt"
+  ]
+}

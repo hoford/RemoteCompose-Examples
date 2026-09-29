@@ -1,0 +1,49 @@
+{
+  "id": "androidx-kotlin/radar",
+  "sha256": "34becd25036995f3436727d38375a39a9ad4dde53096a52c307d98f71ff65770",
+  "bytes": 6525,
+  "ops": 262,
+  "distinctOps": 18,
+  "width": 680,
+  "height": 680,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 3,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "ANIMATED_FLOAT": 134,
+    "PATH_CREATE": 6,
+    "PATH_ADD": 36,
+    "DRAW_PATH": 8,
+    "DRAW_LINE": 6,
+    "DRAW_CIRCLE": 12,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dRelationDemos.kt"
+  ]
+}

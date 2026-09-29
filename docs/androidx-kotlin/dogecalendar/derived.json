@@ -1,0 +1,46 @@
+{
+  "id": "androidx-kotlin/dogecalendar",
+  "sha256": "817fc31314bad8315d680a222de9612db5713474607ed4642a78876aa24715b0",
+  "bytes": 4927705,
+  "ops": 780,
+  "distinctOps": 20,
+  "width": 480,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 34,
+    "MODIFIER_WIDTH": 56,
+    "MODIFIER_HEIGHT": 56,
+    "MODIFIER_BACKGROUND": 23,
+    "LAYOUT_CONTENT": 111,
+    "ANIMATED_FLOAT": 33,
+    "INTEGER_EXPRESSION": 11,
+    "LAYOUT_COLUMN": 11,
+    "MODIFIER_GRAPHICS_LAYER": 11,
+    "DATA_BITMAP": 11,
+    "LAYOUT_IMAGE": 11,
+    "MODIFIER_PADDING": 33,
+    "CONTAINER_END": 234,
+    "COMPONENT_VALUE": 44,
+    "MODIFIER_ROUNDED_CLIP_RECT": 22,
+    "LAYOUT_FIT_BOX": 11,
+    "DATA_TEXT": 11,
+    "CORE_TEXT": 55
+  },
+  "apis": [
+    "expressions",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DogeCalendar.kt"
+  ]
+}

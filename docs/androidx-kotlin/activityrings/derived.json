@@ -1,0 +1,45 @@
+{
+  "id": "androidx-kotlin/activityrings",
+  "sha256": "6bbac49b22878c19297efce20c5fdd8a82cdd6a0b693db101b2c2295554ff63f",
+  "bytes": 3419,
+  "ops": 91,
+  "distinctOps": 17,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "ANIMATED_FLOAT": 43,
+    "PAINT_VALUES": 13,
+    "DRAW_ARC": 6,
+    "TEXT_FROM_FLOAT": 3,
+    "DATA_TEXT": 4,
+    "TEXT_MERGE": 3,
+    "DRAW_TEXT_ANCHOR": 6,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizActivityRings.kt"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "androidx-kotlin/sleeprings",
+  "sha256": "1e9f7a84d2032ea49ccd1e03b6701822ace2c66094577b337fea3433afd42ec4",
+  "bytes": 3389,
+  "ops": 139,
+  "distinctOps": 22,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "FLOAT_LIST": 1,
+    "ANIMATED_FLOAT": 66,
+    "PAINT_VALUES": 18,
+    "DRAW_ARC": 4,
+    "MATRIX_SAVE": 4,
+    "MATRIX_ROTATE": 4,
+    "DRAW_LINE": 4,
+    "MATRIX_RESTORE": 4,
+    "TEXT_FROM_FLOAT": 2,
+    "DATA_TEXT": 7,
+    "TEXT_MERGE": 3,
+    "DRAW_TEXT_ANCHOR": 6,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "DslDataVizSleepQualityRings.kt"
+  ]
+}

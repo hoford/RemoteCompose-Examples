@@ -1,0 +1,43 @@
+{
+  "id": "androidx-kotlin/radialbar",
+  "sha256": "aa2c93435602734a319f252ee97cc2fde312375452a58063c6f5773c23488262",
+  "bytes": 2054,
+  "ops": 72,
+  "distinctOps": 14,
+  "width": 620,
+  "height": 620,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "PAINT_VALUES": 14,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 5,
+    "DRAW_TEXT_ANCHOR": 5,
+    "ANIMATED_FLOAT": 28,
+    "DRAW_ARC": 8,
+    "CONTAINER_END": 3
+  },
+  "apis": [
+    "drawArc",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Graph2dPolarDemos.kt"
+  ]
+}

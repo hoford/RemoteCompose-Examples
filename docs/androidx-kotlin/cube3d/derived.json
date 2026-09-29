@@ -1,0 +1,48 @@
+{
+  "id": "androidx-kotlin/cube3d",
+  "sha256": "69426960e29066eaf8bc929328475882cb92f82d9bc74d3126c6c5f9acfe0c12",
+  "bytes": 2775,
+  "ops": 119,
+  "distinctOps": 18,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "COMPONENT_VALUE": 2,
+    "ANIMATED_FLOAT": 30,
+    "PAINT_VALUES": 9,
+    "DRAW_CIRCLE": 1,
+    "MATRIX_EXPRESSION": 2,
+    "MATRIX_VECTOR_MATH": 16,
+    "DATA_PATH": 6,
+    "CONDITIONAL_OPERATIONS": 12,
+    "DRAW_PATH": 12,
+    "CONTAINER_END": 18
+  },
+  "apis": [
+    "conditionals",
+    "drawCircle",
+    "drawPath",
+    "expressions",
+    "layout",
+    "paint",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": false,
+  "jsonReproduces": null,
+  "src": [
+    "Cube3D.kt"
+  ]
+}
