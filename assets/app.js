@@ -124,6 +124,7 @@ function updateAvailability() {
             ui.btn.classList.toggle('off', n === 0);
         }
     }
+    (S.facetApply || []).forEach((f) => f());
 }
 
 // ── shards ───────────────────────────────────────────────────────────────────
@@ -145,6 +146,7 @@ async function record(idx) {
 // ── windowed grid ────────────────────────────────────────────────────────────
 
 const CARD_W = 232, CARD_H = 330, GAP = 16;
+const FACET_VISIBLE = 12;   // values shown before a facet collapses behind 'show all'
 let cols = 1, mounted = new Map();   // idx -> {el, cancel}
 
 function layout(reset) {
@@ -217,7 +219,10 @@ function renderFacets() {
     const host = document.getElementById('facets');
     host.innerHTML = '';
     S.buttons = new Map();
-    for (const kind of ['tag', 'api', 'flag', 'source', 'authoring']) {
+    // Compact, high-signal facets first. Hashtags last because its vocabulary is the one that
+    // grows: with 30 values it occupied 413px at the top of the sidebar and pushed "Authored
+    // in" to y=969 in an 895px column, i.e. off-screen entirely unless you thought to scroll.
+    for (const kind of ['source', 'authoring', 'flag', 'api', 'tag']) {
         const vals = S.facets[kind];
         if (!vals || !Object.keys(vals).length) continue;
         const sec = document.createElement('section');
@@ -228,7 +233,8 @@ function renderFacets() {
         wrap.className = 'facet-values';
         const reg = new Map();
         S.buttons.set(kind, reg);
-        for (const [v, info] of Object.entries(vals).sort((a, b) => b[1].n - a[1].n)) {
+        const entries = Object.entries(vals).sort((a, b) => b[1].n - a[1].n);
+        for (const [v, info] of entries) {
             const b = document.createElement('button');
             b.className = 'facet';
             b.innerHTML = `${esc(v)} <span class="n">${info.n}</span>`;
@@ -244,6 +250,27 @@ function renderFacets() {
             wrap.appendChild(b);
         }
         sec.appendChild(wrap);
+        // Long facets are capped so no single section can bury the ones below it. The cap is
+        // on display only - a hidden value still filters once revealed, and a selected value
+        // is always shown so the current filter is never invisible.
+        if (entries.length > FACET_VISIBLE) {
+            const more = document.createElement('button');
+            more.className = 'more';
+            const apply = () => {
+                const open = more.dataset.open === '1';
+                [...wrap.children].forEach((b, i) => {
+                    b.hidden = !open && i >= FACET_VISIBLE && !b.classList.contains('on');
+                });
+                more.textContent = open
+                    ? 'show fewer' : `show all ${entries.length}`;
+            };
+            more.onclick = () => { more.dataset.open = more.dataset.open === '1' ? '0' : '1'; apply(); };
+            more.dataset.open = '0';
+            apply();
+            sec.appendChild(more);
+            S.facetApply = S.facetApply || [];
+            S.facetApply.push(apply);
+        }
         host.appendChild(sec);
     }
 }

@@ -165,3 +165,8 @@ table.kv td:first-child { color: var(--dim); white-space: nowrap; }
 }
 .chip.tag { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
 #tags { margin: 8px 0 0; }
+#facets .more {
+  background: none; border: none; color: var(--accent); cursor: pointer;
+  font-size: 11px; padding: 4px 0 0; margin: 0;
+}
+#facets .more:hover { text-decoration: underline; }
