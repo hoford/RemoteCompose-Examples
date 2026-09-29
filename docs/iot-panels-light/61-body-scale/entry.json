@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/61-body-scale",
   "title": "61 body scale",
-  "description": "",
+  "description": "Body Scale \u2014 bio-impedance \u00b7 settling",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "fe78294f927385057a1a5f6dd6f3c586868d64bc31bde5c2a8bd1a2cfb7d598d",
-  "provenance": "github/rcJson/iot-panels/out-light/61_body_scale.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/61_body_scale.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

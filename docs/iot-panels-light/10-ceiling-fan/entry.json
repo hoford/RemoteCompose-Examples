@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/10-ceiling-fan",
   "title": "10 ceiling fan",
-  "description": "",
+  "description": "Ceiling Fan \u2014 speed 3 \u00b7 reverse off",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "4cb20a9d915b5fc76c8d1d3ca4d0d190e7b55171347428c56c2cd0dbdd880727",
-  "provenance": "github/rcJson/iot-panels/out-light/10_ceiling_fan.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/10_ceiling_fan.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

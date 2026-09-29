@@ -1,12 +1,13 @@
 {
   "id": "render/radial-bars",
   "title": "radial bars",
-  "description": "",
+  "description": "Radial/polar bar chart: bars radiating from the center, one per value, length proportional to value, evenly spaced around the circle.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "2c6c622a354fb7619ca47481f81995d1be9359d33a7456931fd5082d91f73e99",
-  "provenance": "github/rcJson/render/radial_bars.rc"
+  "provenance": "github/rcJson/render/radial_bars.rc",
+  "descriptionSource": "json:description"
 }

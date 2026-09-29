@@ -62,6 +62,8 @@ async function main() {
     document.getElementById('title').textContent = entry.title || id;
     document.getElementById('docid').textContent = id;
     document.getElementById('desc').textContent = entry.description || '';
+    document.getElementById('tags').innerHTML =
+        (entry.tags || []).map((t) => `<span class="chip tag">#${esc(t)}</span>`).join('');
 
     native = { w: derived.width || 400, h: derived.height || 400 };
 

@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/73-weather-station",
   "title": "73 weather station",
-  "description": "",
+  "description": "Weather Station \u2014 anemometer \u00b7 vane",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "6073db7af1d51f6dc224a3f7b8692a596f92ca2e15f71ad7722f390c3ff05892",
-  "provenance": "github/rcJson/iot-panels/out-light/73_weather_station.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/73_weather_station.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

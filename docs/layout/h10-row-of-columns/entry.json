@@ -1,12 +1,15 @@
 {
   "id": "layout/h10-row-of-columns",
   "title": "h10 row of columns",
-  "description": "",
+  "description": "H10 a row of three columns, each with its own arrangement",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "aff5cae94db5c4af0c0b529b92e7b56752b2b790448b1505a988e4b5daabd31f",
-  "provenance": "github/rcJson/layout/rc/h10_row_of_columns.rc"
+  "provenance": "github/rcJson/layout/rc/h10_row_of_columns.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

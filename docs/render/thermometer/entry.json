@@ -1,12 +1,13 @@
 {
   "id": "render/thermometer",
   "title": "thermometer",
-  "description": "",
+  "description": "Thermometer gauge: a vertical tube with a bulb, filled red from the bottom to a level set by a single value. Use for temperature / a 0-100 reading.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "7acbddf5e87c692e4e115c71910191f6d6401b534f56de9ef4f413694912087d",
-  "provenance": "github/rcJson/render/thermometer.rc"
+  "provenance": "github/rcJson/render/thermometer.rc",
+  "descriptionSource": "json:description"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/h08-nested-padding-alignment",
   "title": "h08 nested padding alignment",
-  "description": "",
+  "description": "H08 padding at two levels with centring at both",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "7c5476b9285d4b3c9763548ca7445be7c2da4adb22f633d3cc6c40cf40d1b8e3",
-  "provenance": "github/rcJson/layout/rc/h08_nested_padding_alignment.rc"
+  "provenance": "github/rcJson/layout/rc/h08_nested_padding_alignment.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/35-trash-compactor",
   "title": "35 trash compactor",
-  "description": "",
+  "description": "Trash Compactor \u2014 4:1 \u00b7 ram down",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "0dc2cbb4212d4d182bca7696967b5925e678e57fbca055eff67683e5902e39dd",
-  "provenance": "github/rcJson/iot-panels/out/35_trash_compactor.rc"
+  "provenance": "github/rcJson/iot-panels/out/35_trash_compactor.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

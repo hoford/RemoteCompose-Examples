@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/04-motion-night-light",
   "title": "04 motion night light",
-  "description": "",
+  "description": "Motion Night Light \u2014 PIR \u00b7 auto-on",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "933f529e17146796dd59b1e940109570938a81235fa3b7c13ffbe129a1c54a4d",
-  "provenance": "github/rcJson/iot-panels/out/04_motion_night_light.rc"
+  "provenance": "github/rcJson/iot-panels/out/04_motion_night_light.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

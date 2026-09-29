@@ -1,12 +1,15 @@
 {
   "id": "layout/e03-row-two-unequal",
   "title": "e03 row two unequal",
-  "description": "",
+  "description": "E03 two children, weight 1 and 2",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "88400a8800bb6afab887750f65237706c7c3670cab76d20dcc8f05e6c8eef647",
-  "provenance": "github/rcJson/layout/rc/e03_row_two_unequal.rc"
+  "provenance": "github/rcJson/layout/rc/e03_row_two_unequal.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

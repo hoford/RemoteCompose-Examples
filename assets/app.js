@@ -144,7 +144,7 @@ async function record(idx) {
 
 // ── windowed grid ────────────────────────────────────────────────────────────
 
-const CARD_W = 232, CARD_H = 286, GAP = 16;
+const CARD_W = 232, CARD_H = 330, GAP = 16;
 let cols = 1, mounted = new Map();   // idx -> {el, cancel}
 
 function layout(reset) {
@@ -191,10 +191,15 @@ async function hydrate(i, entry) {
     const r = await record(docIdx);
     if (!r || !entry.el.isConnected) return;
     entry.el.href = `doc.html?id=${encodeURIComponent(r.id)}`;
+    // The full description goes in title= as well as the clamped line, so a truncated one is
+    // still readable on hover without opening the document.
+    entry.el.title = r.d || '';
     entry.el.querySelector('.meta').innerHTML =
         `<div class="t">${esc(r.t)}</div>
          <div class="sub">${esc(r.s)}${r.w ? ` · ${r.w}×${r.h}` : ''} · ${(r.b / 1024).toFixed(1)} KB</div>
-         <div class="chips">${r.f.map((f) => `<span class="chip">${esc(f)}</span>`).join('')}</div>`;
+         ${r.d ? `<div class="desc">${esc(r.d)}</div>` : ''}
+         <div class="chips">${(r.g || []).map((t) => `<span class="chip tag">#${esc(t)}</span>`).join('')}${
+             r.f.map((f) => `<span class="chip">${esc(f)}</span>`).join('')}</div>`;
     entry.cancel = preview(r.id, entry.el.querySelector('img'), 320);
 }
 
@@ -203,13 +208,14 @@ const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) =>
 
 // ── facet UI ─────────────────────────────────────────────────────────────────
 
-const KIND_LABEL = { source: 'Source', api: 'API used', flag: 'Features', authoring: 'Authored in' };
+const KIND_LABEL = { source: 'Source', api: 'API used', flag: 'Features',
+                     authoring: 'Authored in', tag: 'Hashtags' };
 
 function renderFacets() {
     const host = document.getElementById('facets');
     host.innerHTML = '';
     S.buttons = new Map();
-    for (const kind of ['api', 'flag', 'source', 'authoring']) {
+    for (const kind of ['tag', 'api', 'flag', 'source', 'authoring']) {
         const vals = S.facets[kind];
         if (!vals || !Object.keys(vals).length) continue;
         const sec = document.createElement('section');

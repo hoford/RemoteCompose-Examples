@@ -1,12 +1,15 @@
 {
   "id": "layout/f08-padding-exceeds-space",
   "title": "f08 padding exceeds space",
-  "description": "",
+  "description": "F08 padding larger than the box it is on",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "17cb6e3dd5596bd5ffff5224c70afbaf98b885f583f5102b325a00e0b7c42483",
-  "provenance": "github/rcJson/layout/rc/f08_padding_exceeds_space.rc"
+  "provenance": "github/rcJson/layout/rc/f08_padding_exceeds_space.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

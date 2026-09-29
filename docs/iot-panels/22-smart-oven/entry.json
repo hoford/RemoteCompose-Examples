@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/22-smart-oven",
   "title": "22 smart oven",
-  "description": "",
+  "description": "Smart Oven \u2014 fan bake \u00b7 190\u00b0C",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "bfaf913a504985226f63652a1bc8ab01f65d5929d5b65cb51d3984f83b5637d8",
-  "provenance": "github/rcJson/iot-panels/out/22_smart_oven.rc"
+  "provenance": "github/rcJson/iot-panels/out/22_smart_oven.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

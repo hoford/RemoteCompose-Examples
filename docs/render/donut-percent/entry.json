@@ -1,12 +1,13 @@
 {
   "id": "render/donut-percent",
   "title": "donut percent",
-  "description": "",
+  "description": "Donut/pie chart: a ring split into colored segments sized by an array of values (e.g. percentages of a whole). Use for share/proportion/composition.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "8146952e933c23ba2a090227cdda62528df11f882be2917b3c1ca6610380a219",
-  "provenance": "github/rcJson/render/donut_percent.rc"
+  "provenance": "github/rcJson/render/donut_percent.rc",
+  "descriptionSource": "json:description"
 }

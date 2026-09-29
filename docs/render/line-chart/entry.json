@@ -1,12 +1,13 @@
 {
   "id": "render/line-chart",
   "title": "line chart",
-  "description": "",
+  "description": "Line chart: a polyline connecting a series of y-values evenly spaced on the x-axis, with a dot at each point. Use for trends/time series.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "d83538d5ab09478248b9279641944eed13dbe4d89516e19fd40cbaf2b3df9094",
-  "provenance": "github/rcJson/render/line_chart.rc"
+  "provenance": "github/rcJson/render/line_chart.rc",
+  "descriptionSource": "json:description"
 }

@@ -1,12 +1,13 @@
 {
   "id": "render/gantt",
   "title": "gantt",
-  "description": "",
+  "description": "Gantt chart of a project schedule",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "b72cabeb70c11b5ba49c856791d3f79ce6fddff4a668f03d19914511deae0615",
-  "provenance": "github/rcJson/render/gantt.rc"
+  "provenance": "github/rcJson/render/gantt.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

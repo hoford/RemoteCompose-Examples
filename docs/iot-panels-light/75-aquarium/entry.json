@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/75-aquarium",
   "title": "75 aquarium",
-  "description": "",
+  "description": "Aquarium Controller \u2014 26.5\u00b0C \u00b7 day cycle",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "4e8498d67677877600c87f26a28eb5def5adf908eda247da4194ceaba5ae0b82",
-  "provenance": "github/rcJson/iot-panels/out-light/75_aquarium.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/75_aquarium.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

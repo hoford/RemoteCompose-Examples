@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/48-smart-tv",
   "title": "48 smart tv",
-  "description": "",
+  "description": "Smart TV \u2014 4K HDR \u00b7 playing",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "e542f57b85c856acc4c940dc77f099ea3db187fcc86f0ea11def51949a9f1df8",
-  "provenance": "github/rcJson/iot-panels/out/48_smart_tv.rc"
+  "provenance": "github/rcJson/iot-panels/out/48_smart_tv.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

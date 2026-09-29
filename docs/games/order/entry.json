@@ -1,12 +1,15 @@
 {
   "id": "games/order",
   "title": "order",
-  "description": "",
+  "description": "equation order probe",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "game"
+  ],
   "sha256": "3b0a763801d569dcb743a55fa1424324a0a075673e38171f5d1bf8c7138f8f55",
-  "provenance": "github/rcJson/games/rc/order.rc"
+  "provenance": "github/rcJson/games/rc/order.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/g02-widthin-max-caps",
   "title": "g02 widthin max caps",
-  "description": "",
+  "description": "G02 widthIn max smaller than the requested width",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "8189a63e992e47ca06c2e7c548448fc5763a435aace2ff3af3ecf72d50adbca9",
-  "provenance": "github/rcJson/layout/rc/g02_widthin_max_caps.rc"
+  "provenance": "github/rcJson/layout/rc/g02_widthin_max_caps.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

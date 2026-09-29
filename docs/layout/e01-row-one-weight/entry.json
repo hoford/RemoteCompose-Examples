@@ -1,12 +1,15 @@
 {
   "id": "layout/e01-row-one-weight",
   "title": "e01 row one weight",
-  "description": "",
+  "description": "E01 single weighted child takes the whole row",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "e33f3a63c8c36038642b385156ee50604c4d79adcef5df37c0085d4616ab3e6f",
-  "provenance": "github/rcJson/layout/rc/e01_row_one_weight.rc"
+  "provenance": "github/rcJson/layout/rc/e01_row_one_weight.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

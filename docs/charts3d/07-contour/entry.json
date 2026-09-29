@@ -1,12 +1,16 @@
 {
   "id": "charts3d/07-contour",
   "title": "07 contour",
-  "description": "",
+  "description": "3D contour plot, nine quantised level slabs \u2014 drag to orbit",
   "source": "rc-experiments",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "3d",
+    "graph"
+  ],
   "sha256": "f6b4f83213405d53ce9e78ca6fb637c66fdf323443e926dee272e3dca8bddd17",
-  "provenance": "github/rcExperiments/samples/3d/07_contour.rc"
+  "provenance": "github/rcExperiments/samples/3d/07_contour.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

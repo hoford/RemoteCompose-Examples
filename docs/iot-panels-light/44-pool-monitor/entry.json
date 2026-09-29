@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/44-pool-monitor",
   "title": "44 pool monitor",
-  "description": "",
+  "description": "Pool Monitor \u2014 pH 7.4 \u00b7 27.4\u00b0C",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "24d985bf745c9ea61877cfacfb81eeaca7527719a92e39d3e6873b80f4287b87",
-  "provenance": "github/rcJson/iot-panels/out-light/44_pool_monitor.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/44_pool_monitor.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/32-robot-mop",
   "title": "32 robot mop",
-  "description": "",
+  "description": "Robot Mop \u2014 wet pass \u00b7 tank 60%",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "d35c41572f981081218d352eb35cc473cd969d221b95357d3ab2d027ee4416f1",
-  "provenance": "github/rcJson/iot-panels/out/32_robot_mop.rc"
+  "provenance": "github/rcJson/iot-panels/out/32_robot_mop.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/g10-widthin-exceeds-parent",
   "title": "g10 widthin exceeds parent",
-  "description": "",
+  "description": "G10 widthIn min larger than the parent - does the parent still bound it?",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "a966e6c3a93f1787862af14dd3154af8306c9869824cc28f0694afd17624daaf",
-  "provenance": "github/rcJson/layout/rc/g10_widthin_exceeds_parent.rc"
+  "provenance": "github/rcJson/layout/rc/g10_widthin_exceeds_parent.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

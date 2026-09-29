@@ -1,12 +1,15 @@
 {
   "id": "python-samples/gauge-rpm",
   "title": "gauge rpm",
-  "description": "",
+  "description": "RPM Tachometer Gauge",
   "source": "origami",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "python"
+  ],
   "sha256": "08dc352014a2211329d1772047084a04820b0b571106830e6c4e998f8b3789af",
-  "provenance": "github/Origami/pythonRcCreation/samples/output/gauge_rpm.rc"
+  "provenance": "github/Origami/pythonRcCreation/samples/output/gauge_rpm.rc",
+  "descriptionSource": "json:header.description"
 }

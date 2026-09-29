@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/02-led-strip",
   "title": "02 led strip",
-  "description": "",
+  "description": "LED Light Strip \u2014 chase \u00b7 60 fps",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "b277c21f7b929ab7c7af19e202afab1ca66f9091e5933247c2903d75601b10eb",
-  "provenance": "github/rcJson/iot-panels/out/02_led_strip.rc"
+  "provenance": "github/rcJson/iot-panels/out/02_led_strip.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,10 +1,11 @@
 {
   "id": "render/96-perf-limit",
   "title": "96 perf limit",
-  "description": "",
+  "description": "Self-limiting performance probe: ramps path complexity until the frame rate drops below 10 fps, then freezes and reports the limit",
   "source": "rcjson",
   "authoring": [],
   "tags": [],
   "sha256": "1a77ccb8576bbeafff4a88928bfc4ce62f9bf1469cd56e2f87bb2b67914fcdb7",
-  "provenance": "github/rcJson/render/96_perf_limit.rc"
+  "provenance": "github/rcJson/render/96_perf_limit.rc",
+  "descriptionSource": "rc:contentDescription"
 }

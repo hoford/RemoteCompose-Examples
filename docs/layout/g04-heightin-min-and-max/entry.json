@@ -1,12 +1,15 @@
 {
   "id": "layout/g04-heightin-min-and-max",
   "title": "g04 heightin min and max",
-  "description": "",
+  "description": "G04 heightIn clamping a requested height",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "10aa3ef67baf7fc72c9c04a06189b60d905cc7f4e69dbdc6db332ee8d965aa4e",
-  "provenance": "github/rcJson/layout/rc/g04_heightin_min_and_max.rc"
+  "provenance": "github/rcJson/layout/rc/g04_heightin_min_and_max.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/k05-text-weight-in-row",
   "title": "k05 text weight in row",
-  "description": "",
+  "description": "K05 text with weight beside a fixed sibling - the weighted BOX is pure logic",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "40a16c140a4ece0e70626bcd932ca11625b0347aa519ab96ac56869f772d9fe7",
-  "provenance": "github/rcJson/layout/rc/k05_text_weight_in_row.rc"
+  "provenance": "github/rcJson/layout/rc/k05_text_weight_in_row.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

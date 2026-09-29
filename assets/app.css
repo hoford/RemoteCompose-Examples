@@ -157,3 +157,11 @@ table.kv td:first-child { color: var(--dim); white-space: nowrap; }
                    font-weight: 400; opacity: .7; font-size: 10px; }
 .facet.off { opacity: .32; cursor: default; }
 .facet.off:hover { border-color: var(--line); }
+:root { --card-h: 330px; }
+.meta .desc {
+  font-size: 11px; color: var(--dim); margin-top: 4px; line-height: 1.35;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.chip.tag { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+#tags { margin: 8px 0 0; }

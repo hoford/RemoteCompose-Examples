@@ -1,12 +1,13 @@
 {
   "id": "render/histogram",
   "title": "histogram",
-  "description": "",
+  "description": "Histogram: adjacent (touching) bars showing a distribution of bin counts from an array. Single color with outlines. Use for frequency/distribution.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "06cc085d78ee6772e09569ba0749dd95c65cef1f886a5ddd1b23045885e042d7",
-  "provenance": "github/rcJson/render/histogram.rc"
+  "provenance": "github/rcJson/render/histogram.rc",
+  "descriptionSource": "json:description"
 }

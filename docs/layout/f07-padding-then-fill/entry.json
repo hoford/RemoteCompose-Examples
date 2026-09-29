@@ -1,12 +1,15 @@
 {
   "id": "layout/f07-padding-then-fill",
   "title": "f07 padding then fill",
-  "description": "",
+  "description": "F07 does a filling child fill inside or outside the parent padding?",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "dcb957e64720db7d7ee2a232f694bb2d3e70af7f101b7753bcfbc4e565a1d23e",
-  "provenance": "github/rcJson/layout/rc/f07_padding_then_fill.rc"
+  "provenance": "github/rcJson/layout/rc/f07_padding_then_fill.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

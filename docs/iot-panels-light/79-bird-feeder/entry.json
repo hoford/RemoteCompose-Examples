@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/79-bird-feeder",
   "title": "79 bird feeder",
-  "description": "",
+  "description": "Bird Feeder \u2014 camera \u00b7 species ID",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "20e64be43a54eeef534aaf1666d5a9c3e32f73ccfca7999ffaa6068e62d2088b",
-  "provenance": "github/rcJson/iot-panels/out-light/79_bird_feeder.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/79_bird_feeder.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "python-samples/chart-heatmap",
   "title": "chart heatmap",
-  "description": "",
+  "description": "Heatmap grid showing weekly activity across 7 days and 5 time slots",
   "source": "origami",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "python"
+  ],
   "sha256": "875ec3b5b762eee73e58a52bb87a647b304f5541b961c2b9fc3e30e33bb293a5",
-  "provenance": "github/Origami/pythonRcCreation/samples/output/chart_heatmap.rc"
+  "provenance": "github/Origami/pythonRcCreation/samples/output/chart_heatmap.rc",
+  "descriptionSource": "json:header.description"
 }

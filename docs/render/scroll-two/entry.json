@@ -1,12 +1,13 @@
 {
   "id": "render/scroll-two",
   "title": "scroll two",
-  "description": "",
+  "description": "two independent scrollers: drag must lock to the press",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "c601ea3735a8546e021264cf75ff4954af7610664e696be603945bac4d76d061",
-  "provenance": "github/rcJson/render/scroll_two.rc"
+  "provenance": "github/rcJson/render/scroll_two.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

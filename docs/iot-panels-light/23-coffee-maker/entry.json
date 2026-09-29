@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/23-coffee-maker",
   "title": "23 coffee maker",
-  "description": "",
+  "description": "Coffee Maker \u2014 brewing \u00b7 4 cups",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "02e63b826feb222d247892eec5e9bf54cf3fa807eeb781a50c1536dc1728daec",
-  "provenance": "github/rcJson/iot-panels/out-light/23_coffee_maker.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/23_coffee_maker.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

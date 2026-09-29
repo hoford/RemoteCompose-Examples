@@ -17,7 +17,7 @@ read if you want to search the corpus.
   "authoring": ["json"],           // what produced it: json | py | kt
   "apis": ["drawCircle", "expressions", "layout", "paint", "text"],
   "flags": ["animated", "expressions"],
-  "tags": [],                      // hand-curated, may be empty
+  "tags": ["iot", "widget"],       // hashtags, from #tags written in the description
   "bytes": 1938,
   "ops": 214,                      // total operations
   "width": 360, "height": 360,
@@ -31,6 +31,22 @@ read if you want to search the corpus.
 
 The site's filter combines multiple `apis` values with AND. `apis` is the field to filter on. It is **derived from the compiled document**, not written by
 hand, so it cannot drift from what the document actually does.
+
+## Descriptions and hashtags
+
+`description` is prose about what the document draws. `descriptionSource` records where it came
+from, which is also a quality signal:
+
+| source | meaning |
+| :--- | :--- |
+| `json:…` | taken from the document's own JSON — authoritative |
+| `rc:contentDescription` | embedded in the compiled document itself — authoritative |
+| `rendered` | written by looking at the rendered output, because no source had one |
+| absent | hand-written |
+
+Hashtags are written **inside the description** — `"… #iot #widget"` — and lifted into `tags`
+during catalog, so there is one place to edit and the tag sits next to the text explaining it.
+Filter on them with the `tag` facet.
 
 ## Finding an example of a specific operation
 

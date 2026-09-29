@@ -1,12 +1,15 @@
 {
   "id": "layout/i03-nested-overflow",
   "title": "i03 nested overflow",
-  "description": "",
+  "description": "I03 a grandchild larger than its grandparent",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "e376e16b20fc76d33414dd919089d18de842e128135bf685ef8d43fa5eef7242",
-  "provenance": "github/rcJson/layout/rc/i03_nested_overflow.rc"
+  "provenance": "github/rcJson/layout/rc/i03_nested_overflow.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

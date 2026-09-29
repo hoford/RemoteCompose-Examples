@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/77-mailbox-sensor",
   "title": "77 mailbox sensor",
-  "description": "",
+  "description": "Mailbox Sensor \u2014 post detected \u00b7 flag up",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "c4fb7b412c12716b5bd17eb119f53daa51536b74058d3c01ecf5945be3a2a004",
-  "provenance": "github/rcJson/iot-panels/out/77_mailbox_sensor.rc"
+  "provenance": "github/rcJson/iot-panels/out/77_mailbox_sensor.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

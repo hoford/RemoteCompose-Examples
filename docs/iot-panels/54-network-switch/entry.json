@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/54-network-switch",
   "title": "54 network switch",
-  "description": "",
+  "description": "Network Switch \u2014 8-port gigabit \u00b7 PoE",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "4fce1a63630c09e864a3f23372e02b8b887fc219aa28e11d40cf25f9bfd83fc8",
-  "provenance": "github/rcJson/iot-panels/out/54_network_switch.rc"
+  "provenance": "github/rcJson/iot-panels/out/54_network_switch.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

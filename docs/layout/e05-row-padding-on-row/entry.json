@@ -1,12 +1,15 @@
 {
   "id": "layout/e05-row-padding-on-row",
   "title": "e05 row padding on row",
-  "description": "",
+  "description": "E05 weights inside a padded row - slack is the padded width",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "17001a4092ddb0d20b597275b4c9b84750da77f0242814d1a0a28b26588d0089",
-  "provenance": "github/rcJson/layout/rc/e05_row_padding_on_row.rc"
+  "provenance": "github/rcJson/layout/rc/e05_row_padding_on_row.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

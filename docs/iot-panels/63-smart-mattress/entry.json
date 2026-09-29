@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/63-smart-mattress",
   "title": "63 smart mattress",
-  "description": "",
+  "description": "Smart Mattress \u2014 zones \u00b7 dual climate",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "7121862496e17b620ed8909f38092624c3fe95043e52d7ad0550a8cbeadee5ae",
-  "provenance": "github/rcJson/iot-panels/out/63_smart_mattress.rc"
+  "provenance": "github/rcJson/iot-panels/out/63_smart_mattress.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/d02-col-arrange-center",
   "title": "d02 col arrange center",
-  "description": "",
+  "description": "D column verticalArrangement=center",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "d8519254013a24991d3cfd1819ac80a2958ed749f52cbb8a0b05f5fa9a8611b6",
-  "provenance": "github/rcJson/layout/rc/d02_col_arrange_center.rc"
+  "provenance": "github/rcJson/layout/rc/d02_col_arrange_center.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

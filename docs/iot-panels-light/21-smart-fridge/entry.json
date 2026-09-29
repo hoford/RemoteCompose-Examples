@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/21-smart-fridge",
   "title": "21 smart fridge",
-  "description": "",
+  "description": "Smart Fridge \u2014 3\u00b0C \u00b7 door closed",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "436202a9e97037ecb5ecc9454d58eee6af942fd00a921d542048e679122764e0",
-  "provenance": "github/rcJson/iot-panels/out-light/21_smart_fridge.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/21_smart_fridge.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

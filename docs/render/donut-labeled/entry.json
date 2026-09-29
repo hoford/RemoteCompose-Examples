@@ -1,12 +1,13 @@
 {
   "id": "render/donut-labeled",
   "title": "donut labeled",
-  "description": "",
+  "description": "Donut chart with a big label in the hole (e.g. a total or headline number). Segments sized by a values array. Use for a KPI-with-breakdown.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "8bf4ad37feb4b9523647a8b90b23d82c93bee2f3815155f07d5baa7ada203e14",
-  "provenance": "github/rcJson/render/donut_labeled.rc"
+  "provenance": "github/rcJson/render/donut_labeled.rc",
+  "descriptionSource": "json:description"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/b10-box-two-children",
   "title": "b10 box two children",
-  "description": "",
+  "description": "B10 two children of different size, centred - they stack",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "3f4c968d52f2e605c2b8e53d6ecf484fe7cc1d507a124485e5991fe47a98b004",
-  "provenance": "github/rcJson/layout/rc/b10_box_two_children.rc"
+  "provenance": "github/rcJson/layout/rc/b10_box_two_children.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/f02-padding-per-side",
   "title": "f02 padding per side",
-  "description": "",
+  "description": "F02 per-side padding object",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "6235daa7355d895211c7b38f31e2890f2ca057d2ddff13ead39971ecfca1f025",
-  "provenance": "github/rcJson/layout/rc/f02_padding_per_side.rc"
+  "provenance": "github/rcJson/layout/rc/f02_padding_per_side.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

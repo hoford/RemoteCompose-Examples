@@ -1,10 +1,11 @@
 {
   "id": "render/jit-400",
   "title": "jit 400",
-  "description": "",
+  "description": "Self-limiting performance probe: ramps path complexity until the frame rate drops below 10 fps, then freezes and reports the limit",
   "source": "rcjson",
   "authoring": [],
   "tags": [],
   "sha256": "df5a4a2864fdcb3c78c949673675674b9aa29afd4b55fea9bdfd2421c0b65389",
-  "provenance": "github/rcJson/render/jit_400.rc"
+  "provenance": "github/rcJson/render/jit_400.rc",
+  "descriptionSource": "rc:contentDescription"
 }

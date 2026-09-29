@@ -1,12 +1,13 @@
 {
   "id": "render/stat-card",
   "title": "stat card",
-  "description": "",
+  "description": "KPI/stat card: a big headline number with a label underneath, centered on a card. Use for a single key metric.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "5d911b90cc6b32420aece8c96037d41954146deaa1dacf547a6fa514805d580f",
-  "provenance": "github/rcJson/render/stat_card.rc"
+  "provenance": "github/rcJson/render/stat_card.rc",
+  "descriptionSource": "json:description"
 }

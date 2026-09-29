@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/05-mood-lamp",
   "title": "05 mood lamp",
-  "description": "",
+  "description": "Mood Lamp \u2014 colour cycle \u00b7 12s",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "cb78747833f55bc64c28e33a84518fd106c85239170196ea3aac41e87b2839e9",
-  "provenance": "github/rcJson/iot-panels/out/05_mood_lamp.rc"
+  "provenance": "github/rcJson/iot-panels/out/05_mood_lamp.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

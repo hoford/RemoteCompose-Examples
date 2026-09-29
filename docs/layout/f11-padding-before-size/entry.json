@@ -1,12 +1,15 @@
 {
   "id": "layout/f11-padding-before-size",
   "title": "f11 padding before size",
-  "description": "",
+  "description": "F11 padding declared BEFORE width - Compose: padding outside, total 260",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "7058508150acccf84315987e390e4f4ec741712d5f293c583c8e25628bd8e955",
-  "provenance": "github/rcJson/layout/rc/f11_padding_before_size.rc"
+  "provenance": "github/rcJson/layout/rc/f11_padding_before_size.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

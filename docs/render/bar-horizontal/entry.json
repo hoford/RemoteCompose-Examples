@@ -1,12 +1,13 @@
 {
   "id": "render/bar-horizontal",
   "title": "bar horizontal",
-  "description": "",
+  "description": "Horizontal bar chart: one colored bar per value, growing left-to-right, length proportional to the value. Good for ranked lists / long labels.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "c894ca8d43da7fe8b9ac02244d7c370ac934ee835fcbb9375e34eeafd8ad1b34",
-  "provenance": "github/rcJson/render/bar_horizontal.rc"
+  "provenance": "github/rcJson/render/bar_horizontal.rc",
+  "descriptionSource": "json:description"
 }

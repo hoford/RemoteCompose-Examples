@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/71-aroma-diffuser",
   "title": "71 aroma diffuser",
-  "description": "",
+  "description": "Aroma Diffuser \u2014 ultrasonic \u00b7 4h",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "c1429dc66468c29dc3bc428949f53b1550c6b23413090dd2e43fa33ec4d015f8",
-  "provenance": "github/rcJson/iot-panels/out/71_aroma_diffuser.rc"
+  "provenance": "github/rcJson/iot-panels/out/71_aroma_diffuser.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

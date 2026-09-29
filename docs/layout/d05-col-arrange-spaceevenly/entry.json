@@ -1,12 +1,15 @@
 {
   "id": "layout/d05-col-arrange-spaceevenly",
   "title": "d05 col arrange spaceevenly",
-  "description": "",
+  "description": "D column verticalArrangement=spaceEvenly",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "71634ad67abf95b1974d293494789b23539c64308225bc238388496fb8122be9",
-  "provenance": "github/rcJson/layout/rc/d05_col_arrange_spaceevenly.rc"
+  "provenance": "github/rcJson/layout/rc/d05_col_arrange_spaceevenly.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

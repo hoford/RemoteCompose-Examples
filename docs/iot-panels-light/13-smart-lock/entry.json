@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/13-smart-lock",
   "title": "13 smart lock",
-  "description": "",
+  "description": "Smart Lock \u2014 deadbolt \u00b7 auto-lock 30s",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "9ba4698b0a0a1d0ec23d2afa8f435ca55f16edb7f2012e1aaab93b9e15e8067a",
-  "provenance": "github/rcJson/iot-panels/out-light/13_smart_lock.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/13_smart_lock.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

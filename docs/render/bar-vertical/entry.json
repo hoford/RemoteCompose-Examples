@@ -1,12 +1,13 @@
 {
   "id": "render/bar-vertical",
   "title": "bar vertical",
-  "description": "",
+  "description": "Vertical bar chart: one colored bar per value in an array, bar height proportional to the value. Use for comparing quantities across categories.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "7dad920ebed29074264aca05c112a06163a03d243f7d024c28dee37b9d322f0b",
-  "provenance": "github/rcJson/render/bar_vertical.rc"
+  "provenance": "github/rcJson/render/bar_vertical.rc",
+  "descriptionSource": "json:description"
 }

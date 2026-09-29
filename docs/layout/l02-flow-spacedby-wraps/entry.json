@@ -1,12 +1,15 @@
 {
   "id": "layout/l02-flow-spacedby-wraps",
   "title": "l02 flow spacedby wraps",
-  "description": "",
+  "description": "L02 same flow with spacedBy 30 - the spacing alone must force a wrap",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "e7d068193ffdc55159bc3d476c212165e7d6463d537cdfaf312ba5719cf798b4",
-  "provenance": "github/rcJson/layout/rc/l02_flow_spacedby_wraps.rc"
+  "provenance": "github/rcJson/layout/rc/l02_flow_spacedby_wraps.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

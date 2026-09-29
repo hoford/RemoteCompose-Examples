@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/08-air-purifier",
   "title": "08 air purifier",
-  "description": "",
+  "description": "Air Purifier \u2014 HEPA \u00b7 auto \u00b7 PM2.5 12",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "74052f096f60d2270e3b8099af534ceb35392ace035c92c3229f78d484508766",
-  "provenance": "github/rcJson/iot-panels/out-light/08_air_purifier.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/08_air_purifier.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

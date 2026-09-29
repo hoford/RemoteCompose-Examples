@@ -1,12 +1,13 @@
 {
   "id": "render/gauge-value",
   "title": "gauge value",
-  "description": "",
+  "description": "Speedometer/gauge: a 270\u00b0 dial with tick marks and a needle whose angle is driven by a single value (0-100). Use for a single metric vs a scale.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "a3d066ac8add406f06f368af9bedf2768b7aacd3f0a78d49e27076ff62150e13",
-  "provenance": "github/rcJson/render/gauge_value.rc"
+  "provenance": "github/rcJson/render/gauge_value.rc",
+  "descriptionSource": "json:description"
 }

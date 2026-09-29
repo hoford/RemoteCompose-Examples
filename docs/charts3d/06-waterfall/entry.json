@@ -1,12 +1,16 @@
 {
   "id": "charts3d/06-waterfall",
   "title": "06 waterfall",
-  "description": "",
+  "description": "waterfall / ribbon plot, eleven offset traces \u2014 drag to orbit",
   "source": "rc-experiments",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "3d",
+    "graph"
+  ],
   "sha256": "599a8ff58642ff51e4cc528b7370c66c2e1d1e9dc635674affc28bb873458f03",
-  "provenance": "github/rcExperiments/samples/3d/06_waterfall.rc"
+  "provenance": "github/rcExperiments/samples/3d/06_waterfall.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,13 @@
 {
   "id": "render/clock-analog",
   "title": "clock analog",
-  "description": "",
+  "description": "Analog clock: a circular face with tick marks and white hour and minute hands that animate via the time variable. Use for clocks/timers.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "6d5b695c0034ca371414c9188ac1fb29d3d7899df9f380f9cc317454eb75fe26",
-  "provenance": "github/rcJson/render/clock_analog.rc"
+  "provenance": "github/rcJson/render/clock_analog.rc",
+  "descriptionSource": "json:description"
 }

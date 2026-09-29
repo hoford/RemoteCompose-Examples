@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/70-pet-door",
   "title": "70 pet door",
-  "description": "",
+  "description": "Pet Door \u2014 microchip \u00b7 unlocked",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "79eb7b009392273e99a5ef2c86bfe8b59384863adcdecee34db1b1709f6f7913",
-  "provenance": "github/rcJson/iot-panels/out/70_pet_door.rc"
+  "provenance": "github/rcJson/iot-panels/out/70_pet_door.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

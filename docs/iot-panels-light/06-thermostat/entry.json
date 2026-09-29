@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/06-thermostat",
   "title": "06 thermostat",
-  "description": "",
+  "description": "Smart Thermostat \u2014 heating \u00b7 target 22\u00b0",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "aadeada2042f090f5e2409b7bbe2ae6dc03305bb5593f12a0ae6ef2827713b84",
-  "provenance": "github/rcJson/iot-panels/out-light/06_thermostat.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/06_thermostat.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/50-projector",
   "title": "50 projector",
-  "description": "",
+  "description": "Projector \u2014 lamp 78% \u00b7 1080p",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "646b5990c62e3d387b9e8b37940ee9bf40a72a40e798e95aa8a55906446f424f",
-  "provenance": "github/rcJson/iot-panels/out-light/50_projector.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/50_projector.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

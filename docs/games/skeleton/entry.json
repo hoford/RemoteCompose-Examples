@@ -1,12 +1,15 @@
 {
   "id": "games/skeleton",
   "title": "skeleton",
-  "description": "",
+  "description": "skeleton: one actor bouncing in a box",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "game"
+  ],
   "sha256": "0f85901d0fea4713a6ecd03c426564eec9c243b8dcbd1243d34b0dc896020a3c",
-  "provenance": "github/rcJson/games/rc/skeleton.rc"
+  "provenance": "github/rcJson/games/rc/skeleton.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/h01-row-in-column",
   "title": "h01 row in column",
-  "description": "",
+  "description": "H01 a row nested inside a column",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "c6c7076fa2b01074a281485e2598ee3f8065a3e697e00acdc3687a08034c9021",
-  "provenance": "github/rcJson/layout/rc/h01_row_in_column.rc"
+  "provenance": "github/rcJson/layout/rc/h01_row_in_column.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

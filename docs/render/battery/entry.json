@@ -1,12 +1,13 @@
 {
   "id": "render/battery",
   "title": "battery",
-  "description": "",
+  "description": "Battery icon with a charge level (0-100%): outlined body, terminal nub, and a green fill whose width is driven by the percentage.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "97928c6614f69b8ffaba7c7d0f48ec8f8f19cfe53498310344ec92b6342de98c",
-  "provenance": "github/rcJson/render/battery.rc"
+  "provenance": "github/rcJson/render/battery.rc",
+  "descriptionSource": "json:description"
 }

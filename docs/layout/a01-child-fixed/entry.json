@@ -1,12 +1,15 @@
 {
   "id": "layout/a01-child-fixed",
   "title": "a01 child fixed",
-  "description": "",
+  "description": "A01 fixed 120x80 child in a filled root",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "6881c058aae58f56fd9baf4378a692da866d5e695f175cf69c36d917e4b56b78",
-  "provenance": "github/rcJson/layout/rc/a01_child_fixed.rc"
+  "provenance": "github/rcJson/layout/rc/a01_child_fixed.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

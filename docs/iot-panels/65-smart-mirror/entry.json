@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/65-smart-mirror",
   "title": "65 smart mirror",
-  "description": "",
+  "description": "Smart Mirror \u2014 presence \u00b7 widgets",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "aad5c9de5bdf471d51ef50addcfbf6ad33dccea5fdf6b764cea77c304f6e1dee",
-  "provenance": "github/rcJson/iot-panels/out/65_smart_mirror.rc"
+  "provenance": "github/rcJson/iot-panels/out/65_smart_mirror.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

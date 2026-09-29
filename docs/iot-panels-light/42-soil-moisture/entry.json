@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/42-soil-moisture",
   "title": "42 soil moisture",
-  "description": "",
+  "description": "Soil Moisture Sensor \u2014 VWC \u00b7 capacitive",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "dc58c202ebe74bea2f0b1009257b2703a46158bc99439545e543130381e7c5cd",
-  "provenance": "github/rcJson/iot-panels/out-light/42_soil_moisture.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/42_soil_moisture.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

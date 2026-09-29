@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/41-sprinkler",
   "title": "41 sprinkler",
-  "description": "",
+  "description": "Sprinkler Controller \u2014 6 zones \u00b7 zone 3 live",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "8523e0ac2140108ec642ec53d1cb0776f4c13387946c47b8b5c08bf75a60b842",
-  "provenance": "github/rcJson/iot-panels/out-light/41_sprinkler.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/41_sprinkler.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

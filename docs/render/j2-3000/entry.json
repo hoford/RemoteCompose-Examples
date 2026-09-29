@@ -1,10 +1,11 @@
 {
   "id": "render/j2-3000",
   "title": "j2 3000",
-  "description": "",
+  "description": "Self-limiting performance probe: ramps path complexity until the frame rate drops below 10 fps, then freezes and reports the limit",
   "source": "rcjson",
   "authoring": [],
   "tags": [],
   "sha256": "6ac43c568e8c8813dc1e71e1c4e9ea297c1340b79e506beedfb2e8261a7f2c9f",
-  "provenance": "github/rcJson/render/j2_3000.rc"
+  "provenance": "github/rcJson/render/j2_3000.rc",
+  "descriptionSource": "rc:contentDescription"
 }

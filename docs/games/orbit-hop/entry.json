@@ -1,12 +1,15 @@
 {
   "id": "games/orbit-hop",
   "title": "orbit hop",
-  "description": "",
+  "description": "Orbit Hop: tap to leave orbit and fly to the next planet",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "game"
+  ],
   "sha256": "ca01f3d8e64b3e1c4be02c3556ae1b537ab3e59ee22a40a1216db879542fb85e",
-  "provenance": "github/rcJson/games/rc/orbit_hop.rc"
+  "provenance": "github/rcJson/games/rc/orbit_hop.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

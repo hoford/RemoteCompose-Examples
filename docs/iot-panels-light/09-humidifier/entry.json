@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/09-humidifier",
   "title": "09 humidifier",
-  "description": "",
+  "description": "Humidifier \u2014 ultrasonic \u00b7 48% RH",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "89bedb43ee6c2894e04ed517f537705fe30e72d7f0648a5f91aae695ea2ba5ed",
-  "provenance": "github/rcJson/iot-panels/out-light/09_humidifier.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/09_humidifier.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

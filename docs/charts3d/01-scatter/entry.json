@@ -1,12 +1,16 @@
 {
   "id": "charts3d/01-scatter",
   "title": "01 scatter",
-  "description": "",
+  "description": "3D scatter / bubble plot, 46 points sized and coloured by magnitude \u2014 drag to orbit",
   "source": "rc-experiments",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "3d",
+    "graph"
+  ],
   "sha256": "a0ecfe33bc162782a8f3a253f77281c4d1a1699a6aa4fa5513b60f4df4cc6480",
-  "provenance": "github/rcExperiments/samples/3d/01_scatter.rc"
+  "provenance": "github/rcExperiments/samples/3d/01_scatter.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

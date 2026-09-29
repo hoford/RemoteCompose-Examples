@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/68-pet-camera",
   "title": "68 pet camera",
-  "description": "",
+  "description": "Pet Camera \u2014 1080p \u00b7 treat toss",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "e6d7cbee998a0e49d470c01820b26d14803f75e7b0efc6adb8c6a5d93037a581",
-  "provenance": "github/rcJson/iot-panels/out/68_pet_camera.rc"
+  "provenance": "github/rcJson/iot-panels/out/68_pet_camera.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

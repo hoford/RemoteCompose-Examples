@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/29-toaster",
   "title": "29 toaster",
-  "description": "",
+  "description": "Toaster \u2014 medium \u00b7 2 slice",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "1c399216ffeb9bf940d0596a6143650cbb1d9bbe7ef298f501ff9276b232be7c",
-  "provenance": "github/rcJson/iot-panels/out-light/29_toaster.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/29_toaster.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,13 @@
 {
   "id": "render/scatter-plot",
   "title": "scatter plot",
-  "description": "",
+  "description": "Scatter plot: a dot for each (x,y) pair from two parallel arrays. Use for correlation / point clouds.",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
   "tags": [],
   "sha256": "d69c225ac1a01b99b88b87051d85db99e9a6c2d8f0a4d8f560686a5d9dcbfa66",
-  "provenance": "github/rcJson/render/scatter_plot.rc"
+  "provenance": "github/rcJson/render/scatter_plot.rc",
+  "descriptionSource": "json:description"
 }

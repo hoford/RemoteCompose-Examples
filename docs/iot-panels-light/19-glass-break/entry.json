@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/19-glass-break",
   "title": "19 glass break",
-  "description": "",
+  "description": "Glass-Break Sensor \u2014 acoustic \u00b7 dual-stage",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "7654262e642f17186da644b13455f93796bc3fdf759157d2ae3f5a5f45a6b7cc",
-  "provenance": "github/rcJson/iot-panels/out-light/19_glass_break.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/19_glass_break.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

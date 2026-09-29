@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/38-solar-inverter",
   "title": "38 solar inverter",
-  "description": "",
+  "description": "Solar Inverter \u2014 string \u00b7 MPPT",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "82af163e81f3cfafaf799c5b9aa72b1065fe47cb1ce29b48c3df67078c3deecc",
-  "provenance": "github/rcJson/iot-panels/out-light/38_solar_inverter.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/38_solar_inverter.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

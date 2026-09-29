@@ -29,6 +29,7 @@ import hashlib
 import json
 import os
 import re
+from collections import Counter
 import shutil
 import subprocess
 import sys
@@ -126,62 +127,77 @@ def api_tags(op_names) -> list[str]:
 
 HEADER_MAGIC = 0x048C0000
 TAG_DOC_WIDTH, TAG_DOC_HEIGHT = 5, 6
+TAG_CONTENT_DESCRIPTION = 9
 
 
-def parse_header(data: bytes) -> tuple[int, int]:
-    """Document width/height, read straight from the bytes.
+def parse_header_tags(data: bytes) -> dict[int, object]:
+    """The header's tag map, decoded from the bytes.
 
-    Done natively rather than via rc2json for two reasons. rc2json mislabels this op - it
-    reports fixed `width`/`height` fields that are really the tag count and the first tag pair,
-    so a 1040x700 document comes back as 4x327684. And it cannot decode every document in the
-    corpus, whereas the header is the first op in the file and always readable.
+    Done natively rather than via rc2json, which mislabels this op - it reports fixed
+    `width`/`height` fields that are really the tag count and the first tag pair, so a
+    1040x700 document comes back as 4x327684.
 
     Wire layout (Header.apply, apiLevel >= 7): opcode byte, then MAGIC|MAJOR, MINOR, PATCH and
-    a tag count as big-endian ints, then that many entries of
-    short(tag | dataType << 10), short(size), payload. INT and FLOAT payloads are 4 bytes;
-    a STRING writes size = len + 4 and then len bytes.
+    a tag count as big-endian ints, then that many entries of short(tag | dataType << 10),
+    short(size), payload.
+
+    The payload is `size` bytes for every type. A STRING writes size = len + 4 because its
+    payload is a four-byte length prefix followed by the bytes - so advancing by size - 4
+    leaves the cursor four bytes short and every subsequent tag decodes as garbage. That is
+    only visible on documents where a string tag precedes the size tags.
     """
     import struct
+    out: dict[int, object] = {}
     try:
         if len(data) < 17 or data[0] != 0:
-            return (0, 0)
+            return out
         magic, _minor, _patch, ntags = struct.unpack_from(">iiii", data, 1)
         if (magic & 0xFFFF0000) != HEADER_MAGIC:
-            return (0, 0)
+            return out
         off = 17
-        w = h = 0
         for _ in range(ntags):
             if off + 4 > len(data):
                 break
             raw, size = struct.unpack_from(">HH", data, off)
             off += 4
             tag, dtype = raw & 0x3FF, raw >> 10
-            if dtype == 3:                       # STRING
-                off += max(0, size - 4)
-                continue
-            if off + 4 > len(data):
+            if off + size > len(data):
                 break
-            (val,) = struct.unpack_from(">i", data, off)
-            off += 8 if dtype == 2 else 4        # LONG is 8 bytes
-            if tag == TAG_DOC_WIDTH:
-                w = val
-            elif tag == TAG_DOC_HEIGHT:
-                h = val
-        return (w, h)
+            if dtype == 3:                                  # STRING: int length, then bytes
+                (ln,) = struct.unpack_from(">i", data, off)
+                out[tag] = data[off + 4:off + 4 + max(0, ln)].decode("utf-8", "replace")
+            elif dtype == 1:                                # FLOAT
+                (out[tag],) = struct.unpack_from(">f", data, off)
+            else:
+                (out[tag],) = struct.unpack_from(">i", data, off)
+            off += size
+        return out
     except Exception:
-        return (0, 0)
+        return out
+
+
+def parse_header(data: bytes) -> tuple[int, int]:
+    """Document width/height. (0, 0) when the header declares neither."""
+    t = parse_header_tags(data)
+    w = t.get(TAG_DOC_WIDTH); h = t.get(TAG_DOC_HEIGHT)
+    return (int(w) if isinstance(w, int) else 0, int(h) if isinstance(h, int) else 0)
+
+
+def header_description(data: bytes) -> str:
+    v = parse_header_tags(data).get(TAG_CONTENT_DESCRIPTION)
+    return v.strip() if isinstance(v, str) else ""
+
 
 
 
 def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
     """(op names, width, height, content tags) for a compiled document, via rc2json.
 
-    One decode per document, not two. At ten thousand documents a second pass to re-read the
-    header would mean twenty thousand subprocess spawns, and rc2json is the slowest step in a
-    catalog run by a wide margin.
+    One decode per document: at ten thousand documents a second pass would mean twenty
+    thousand subprocess spawns, and rc2json is the slowest step in a catalog run by far.
 
-    Returns None if the document cannot be decoded at all - which is recorded rather than
-    treated as fatal, since an undecodable file is still worth reporting.
+    Returns None if the document cannot be decoded, which is recorded rather than treated as
+    fatal - an undecodable file is still worth reporting.
     """
     if not Path(RC2JSON).exists():
         return None
@@ -196,13 +212,13 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
         # Every entry, not just kind == "op".
         #
         # rc2json emits two kinds. "op" entries are decoded and named in SCREAMING_SNAKE;
-        # "opaque" entries are ones it carries through without decoding, named after the C++
-        # class in CamelCase - PathData, RootContentBehavior. Filtering to kind == "op" drops
-        # them silently, and the result looks plausible: 147 documents reported DRAW_PATH while
-        # DATA_PATH appeared in none, because the path payload is always opaque.
+        # "opaque" entries are carried through undecoded and named after the C++ class in
+        # CamelCase - PathData, RootContentBehavior. Filtering to kind == "op" drops them
+        # silently, and the result looks plausible: 147 documents reported DRAW_PATH while
+        # DATA_PATH appeared in none, because a path payload is always opaque.
         #
-        # Both kinds carry `opcode`, so names are resolved through Operations.java rather than
-        # from the two different conventions. PathData and DATA_PATH are the same opcode 123.
+        # Both kinds carry `opcode`, so names resolve through Operations.java rather than from
+        # two different conventions. PathData and DATA_PATH are the same opcode 123.
         names = []
         for o in ops:
             if o.get("kind") not in ("op", "opaque"):
@@ -213,14 +229,10 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
         w = h = 0
         content = set()
         for o in ops:
-            if o.get("name") == "HEADER" and not w:
-                f = {x["name"]: x["value"] for x in o.get("fields", [])}
-                w, h = int(f.get("width", 0)), int(f.get("height", 0))
             # A shader is not an opcode. Its AGSL source is carried as a DATA_TEXT payload and
             # applied through paint, so op names alone can never reveal one - tagging purely
-            # from opcodes leaves the "shaders" facet permanently empty while shader documents
-            # sit in the corpus. Detect it from the text itself.
-            elif o.get("name") == "DATA_TEXT":
+            # from opcodes leaves the "shaders" facet permanently empty.
+            if o.get("name") == "DATA_TEXT":
                 for f in o.get("fields", []):
                     v = f.get("value")
                     if isinstance(v, str) and SHADER_RE.search(v):
@@ -231,6 +243,136 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
         return None
     finally:
         tmp.unlink(missing_ok=True)
+
+
+# ── Descriptions and hashtags ─────────────────────────────────────────────────
+#
+# Descriptions are CURATED data: `describe` only ever fills in a blank one, never overwrites
+# text already there, so hand-editing is safe and re-running is idempotent.
+#
+# Hashtags live inside the description itself - "#iot #validation" - rather than in a separate
+# field, so there is one place to edit and the tag is visible in the text that explains it.
+# `catalog` lifts them into the `tag` facet.
+
+HASHTAG_RE = re.compile(r"#([A-Za-z][\w-]{1,30})")
+
+# Descriptions that say nothing. Matched case-insensitively against the whole string; a
+# description that merely repeats the document's own name is rejected the same way.
+GENERIC = {
+    "demo", "demos", "test", "tests", "sample", "samples", "example", "examples",
+    "untitled", "document", "rc document", "remote compose", "remotecompose",
+    "none", "n/a", "todo", "placeholder", "content description",
+}
+
+# Hashtags seeded from the collection a document came from. Deliberately a small explicit
+# table rather than something inferred: a wrong auto-tag is worse than a missing one, because
+# it makes the filter quietly lie.
+COLLECTION_TAGS = {
+    "iot-panels": ["iot"], "iot-panels-light": ["iot"],
+    "charts3d": ["graph", "3d"], "d3": ["graph"],
+    "python-samples": ["python"], "androidx-demos": ["androidx"],
+    "games": ["game"], "layout": ["layout"], "events": ["events"],
+    "loading-panels": ["loading"], "probes": ["validation"], "probe": ["validation"],
+}
+
+
+def _usable(text: str, slug: str) -> str:
+    """A description worth keeping, or ''."""
+    t = " ".join((text or "").split())
+    if len(t) < 8:
+        return ""
+    low = t.lower().strip(" .")
+    if low in GENERIC:
+        return ""
+    # "area_chart" as the description of area-chart tells a reader nothing they cannot see.
+    if re.sub(r"[^a-z0-9]", "", low) == re.sub(r"[^a-z0-9]", "", slug.lower()):
+        return ""
+    return t
+
+
+def _from_json(doc_json: Path) -> tuple[str, str]:
+    """(description, where it came from) for the richest prose in a doc.json."""
+    try:
+        j = json.loads(doc_json.read_text())
+    except Exception:
+        return "", ""
+    if not isinstance(j, dict):
+        return "", ""
+    cands = []
+    for k in ("description", "_comment", "summary", "doc"):
+        if isinstance(j.get(k), str):
+            cands.append((j[k], f"json:{k}"))
+    hdr = j.get("header")
+    if isinstance(hdr, dict):
+        for k in ("contentDescription", "description", "_comment"):
+            if isinstance(hdr.get(k), str):
+                cands.append((hdr[k], f"json:header.{k}"))
+    # Longest wins: these fields range from a one-word title to a real sentence.
+    cands.sort(key=lambda c: -len(c[0]))
+    return (cands[0] if cands else ("", ""))
+
+
+DOCSTRING_RE = re.compile(r'^\s*(?:"""|\x27\x27\x27)(.+?)(?:"""|\x27\x27\x27)', re.S)
+KDOC_RE = re.compile(r"^\s*/\*\*(.+?)\*/", re.S)
+LINE_COMMENTS_RE = re.compile(r"^\s*(?:#|//)\s?(.*)$")
+
+
+def _from_source(path: Path) -> str:
+    """Leading docstring, KDoc block, or run of line comments from a generator source."""
+    try:
+        text = path.read_text(errors="replace")
+    except Exception:
+        return ""
+    m = DOCSTRING_RE.search(text) or KDOC_RE.search(text)
+    if m:
+        body = re.sub(r"^\s*\*\s?", "", m.group(1), flags=re.M)
+        return " ".join(body.split())
+    out = []
+    for line in text.splitlines()[:40]:
+        if not line.strip():
+            if out:
+                break
+            continue
+        if line.lstrip().startswith("#!"):          # shebang, not prose
+            continue
+        c = LINE_COMMENTS_RE.match(line)
+        if c:
+            out.append(c.group(1))
+        elif out:
+            break
+        elif line.lstrip().startswith(("import", "from", "package", "@")):
+            continue
+        else:
+            break
+    return " ".join(" ".join(out).split())
+
+
+def _neighbour_sources(provenance: str, stem: str) -> list[Path]:
+    """Generator sources named after this document, near where it came from.
+
+    Exact stem matches only. A looser rule - any .py in the folder - attached rcj's own module
+    docstring to 135 unrelated documents, all of them then "described" as a Python
+    implementation of RemoteCompose. A description shared by 135 documents describes none of
+    them, and unlike a missing description it is not obviously wrong to a reader.
+    """
+    if not provenance:
+        return []
+    d = (CODE_ROOT / provenance).parent
+    if not d.exists():
+        return []
+    folders = [d]
+    if d.parent.exists():
+        try:
+            folders += [x for x in d.parent.iterdir() if x.is_dir() and x != d]
+        except Exception:
+            pass
+    out = []
+    for folder in folders:
+        for suf in (".py", ".kt", ".kts"):
+            f = folder / (stem + suf)
+            if f.exists():
+                out.append(f)
+    return out
 
 
 # ── JSON round-trip ───────────────────────────────────────────────────────────
@@ -600,7 +742,7 @@ def cmd_catalog(args):
         shard = [{
             "i": r["i"], "id": r["id"], "t": r["title"], "w": r["width"], "h": r["height"],
             "b": r["bytes"], "o": r["ops"], "s": r["source"], "a": r["authoring"],
-            "f": r["flags"], "j": r["hasJson"], "d": r["description"],
+            "f": r["flags"], "j": r["hasJson"], "d": r["description"], "g": r["tags"],
         } for r in records[s:s + SHARD_SIZE]]
         (CATALOG / f"docs-{s // SHARD_SIZE:03d}.json").write_text(
             json.dumps(shard, separators=(",", ":")) + "\n")
@@ -826,6 +968,111 @@ def self_test():
     sys.exit(0 if ok else 1)
 
 
+
+def cmd_describe(args):
+    """Fill in blank descriptions from whatever source can be found, and seed hashtags.
+
+    Never overwrites an existing description: curation wins, and re-running is safe.
+    """
+    filled = Counter()
+    blank = []
+    for ep in sorted(DOCS.glob("*/*/entry.json")):
+        d = ep.parent
+        entry = json.loads(ep.read_text())
+        did = entry.get("id") or f"{d.parent.name}/{d.name}"
+        slug = d.name
+        collection = d.parent.name
+
+        # Hashtags: keep any already written by hand, add the collection's seeds.
+        tags = set(entry.get("tags") or [])
+        tags |= {t.lower() for t in HASHTAG_RE.findall(entry.get("description") or "")}
+        tags |= set(COLLECTION_TAGS.get(collection, []))
+
+        desc = (entry.get("description") or "").strip()
+        prior_src = entry.get("descriptionSource", "")
+        if desc and not args.force:
+            entry["tags"] = sorted(tags)
+            ep.write_text(json.dumps(entry, indent=2) + "\n")
+            filled["already had one"] += 1
+            continue
+
+        # Best available, in order of how much it is likely to say.
+        desc, src = "", ""
+        cand, where = _from_json(d / "doc.json") if (d / "doc.json").exists() else ("", "")
+        if _usable(cand, slug):
+            desc, src = _usable(cand, slug), where
+        if not desc:
+            for f in sorted((d / "src").glob("*")) if (d / "src").exists() else []:
+                t = _usable(_from_source(f), slug)
+                if t:
+                    desc, src = t, f"src:{f.name}"
+                    break
+        if not desc:
+            t = _usable(header_description((d / "doc.rc").read_bytes()), slug)
+            if t:
+                desc, src = t, "rc:contentDescription"
+        if not desc:
+            for f in _neighbour_sources(entry.get("provenance", ""), slug):
+                t = _usable(_from_source(f), slug)
+                if t:
+                    desc, src = t, f"neighbour:{f.name}"
+                    break
+
+        if desc:
+            entry["description"] = desc
+            entry["descriptionSource"] = src
+            tags |= {t.lower() for t in HASHTAG_RE.findall(desc)}
+            filled[src.split(":")[0]] += 1
+        else:
+            # Nothing found. Clear a previously DERIVED description - leaving it behind would
+            # keep a stale auto-generated line forever with no recorded origin, which is how
+            # a wrong blurb survives a re-run that was meant to remove it. A hand-written
+            # description has no descriptionSource and is never touched.
+            if prior_src:
+                entry["description"] = ""
+            entry.pop("descriptionSource", None)
+            blank.append(did)
+            filled["none found"] += 1
+
+        entry["tags"] = sorted(tags)
+        ep.write_text(json.dumps(entry, indent=2) + "\n")
+
+    # A description derived from a file not named after the document is a guess. If the same
+    # guess lands on many documents it is a module-level blurb, not a description of any of
+    # them - drop it. Descriptions carried inside the document (rc:) or in its own JSON are
+    # authoritative even when they repeat, so they are left alone.
+    SPECULATIVE = ("neighbour", "src")
+    REPEAT_LIMIT = 5
+    counts = Counter()
+    for ep in DOCS.glob("*/*/entry.json"):
+        e = json.loads(ep.read_text())
+        if (e.get("descriptionSource", "").split(":")[0] in SPECULATIVE) and e.get("description"):
+            counts[e["description"]] += 1
+    dropped = 0
+    for ep in DOCS.glob("*/*/entry.json"):
+        e = json.loads(ep.read_text())
+        if (e.get("descriptionSource", "").split(":")[0] in SPECULATIVE
+                and counts.get(e.get("description", ""), 0) > REPEAT_LIMIT):
+            src = e.pop("descriptionSource", "")
+            e["description"] = ""
+            ep.write_text(json.dumps(e, indent=2) + "\n")
+            filled[src.split(":")[0]] -= 1
+            filled["none found"] += 1
+            blank.append(e["id"])
+            dropped += 1
+    if dropped:
+        print(f"  dropped {dropped} descriptions shared by more than {REPEAT_LIMIT} documents")
+
+    total = sum(filled.values())
+    print(f"  {total} documents")
+    for k, v in filled.most_common():
+        print(f"    {k:22} {v}")
+    if blank:
+        Path("/tmp/rcx_no_description.txt").write_text("\n".join(blank) + "\n")
+        print(f"  {len(blank)} still without a description "
+              f"(ids written to /tmp/rcx_no_description.txt)")
+
+
 def cmd_serve(args):
     os.chdir(ROOT)
     import http.server, socketserver
@@ -868,6 +1115,11 @@ def main():
     v.add_argument("--self-test", action="store_true",
                    help="break the corpus on purpose and confirm the checks notice")
     v.set_defaults(fn=cmd_verify)
+
+    de = sub.add_parser("describe", help="fill blank descriptions, seed hashtags")
+    de.add_argument("--force", action="store_true",
+                    help="re-derive even where a description already exists")
+    de.set_defaults(fn=cmd_describe)
 
     s = sub.add_parser("serve", help="preview the site")
     s.add_argument("--port", type=int, default=8000)

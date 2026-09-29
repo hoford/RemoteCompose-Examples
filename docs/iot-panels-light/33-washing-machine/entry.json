@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/33-washing-machine",
   "title": "33 washing machine",
-  "description": "",
+  "description": "Washing Machine \u2014 cottons 40\u00b0 \u00b7 spin",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "6b86baac1ca6237b726323ec7372ddc12c559b6aff04fe973016631c24d04181",
-  "provenance": "github/rcJson/iot-panels/out-light/33_washing_machine.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/33_washing_machine.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

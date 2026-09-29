@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/26-microwave",
   "title": "26 microwave",
-  "description": "",
+  "description": "Microwave \u2014 900W \u00b7 2:30 remaining",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "61b2c695e475225458ed88c17ab17cf6cacdcef2580399ee713eb9044327e744",
-  "provenance": "github/rcJson/iot-panels/out-light/26_microwave.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/26_microwave.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

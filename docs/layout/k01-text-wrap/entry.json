@@ -1,12 +1,15 @@
 {
   "id": "layout/k01-text-wrap",
   "title": "k01 text wrap",
-  "description": "",
+  "description": "K01 text sizing itself - pure font metrics, expected to differ",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "1b54b94aaa9cacb070dc39274edc01247bbadeb0d4f872f8e899e571ab61d360",
-  "provenance": "github/rcJson/layout/rc/k01_text_wrap.rc"
+  "provenance": "github/rcJson/layout/rc/k01_text_wrap.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

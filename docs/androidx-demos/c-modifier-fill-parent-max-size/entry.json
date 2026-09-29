@@ -1,10 +1,15 @@
 {
   "id": "androidx-demos/c-modifier-fill-parent-max-size",
   "title": "c modifier fill parent max size",
-  "description": "",
+  "description": "Modifier check: fillParentMaxSize. Draws nothing at the default size, so it is only meaningful inside a sized parent. #layout #validation",
   "source": "androidx",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "androidx",
+    "layout",
+    "validation"
+  ],
   "sha256": "e196b9d49d1085d37505daf2c4efe7cc132bbd475a94655e88f78b39e992e338",
-  "provenance": "androidx-main2/frameworks/support/compose/remote/integration-tests/player-view-demos/src/main/res/raw/c_modifier_fill_parent_max_size.rc"
+  "provenance": "androidx-main2/frameworks/support/compose/remote/integration-tests/player-view-demos/src/main/res/raw/c_modifier_fill_parent_max_size.rc",
+  "descriptionSource": "rendered"
 }

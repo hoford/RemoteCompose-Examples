@@ -1,12 +1,15 @@
 {
   "id": "layout/k04-text-maxlines-3",
   "title": "k04 text maxlines 3",
-  "description": "",
+  "description": "K04 the same text with maxLines 3 - height should be taller than K03",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "01cc93c96be1354b334bc36c8a5526accb7366bde7a9a3e3b5ef2082ff8901d3",
-  "provenance": "github/rcJson/layout/rc/k04_text_maxlines_3.rc"
+  "provenance": "github/rcJson/layout/rc/k04_text_maxlines_3.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

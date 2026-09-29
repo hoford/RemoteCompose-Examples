@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/62-sleep-tracker",
   "title": "62 sleep tracker",
-  "description": "",
+  "description": "Sleep Tracker \u2014 hypnogram \u00b7 6h 42m",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "333832db512d834b5dc5ebe7012e3f85d0d3e0d28a195aa7c2ab6ef4b0f8145a",
-  "provenance": "github/rcJson/iot-panels/out/62_sleep_tracker.rc"
+  "provenance": "github/rcJson/iot-panels/out/62_sleep_tracker.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

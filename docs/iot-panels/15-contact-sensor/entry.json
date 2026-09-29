@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/15-contact-sensor",
   "title": "15 contact sensor",
-  "description": "",
+  "description": "Door/Window Sensor \u2014 reed contact \u00b7 open",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "07e2b4b0cc4c178d12fd5845871bdf07a5f5144f6ac5c27bda7d3a934b384672",
-  "provenance": "github/rcJson/iot-panels/out/15_contact_sensor.rc"
+  "provenance": "github/rcJson/iot-panels/out/15_contact_sensor.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

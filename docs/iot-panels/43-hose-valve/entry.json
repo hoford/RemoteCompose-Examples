@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/43-hose-valve",
   "title": "43 hose valve",
-  "description": "",
+  "description": "Hose Valve \u2014 flow \u00b7 9.2 L/min",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "ff1732d0e8c449e83654b8f8dfa486f822aced78ec77a47f66a0801fbeeafd82",
-  "provenance": "github/rcJson/iot-panels/out/43_hose_valve.rc"
+  "provenance": "github/rcJson/iot-panels/out/43_hose_valve.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

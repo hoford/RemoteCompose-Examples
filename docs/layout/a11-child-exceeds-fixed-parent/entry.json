@@ -1,12 +1,15 @@
 {
   "id": "layout/a11-child-exceeds-fixed-parent",
   "title": "a11 child exceeds fixed parent",
-  "description": "",
+  "description": "A11 child larger than a fixed-size parent that is NOT the root, so overflow is visible",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "01e9a8a1fb482ffd7fecb02b5328c87c7660ec9f6c216beb2e1003c86a727cf2",
-  "provenance": "github/rcJson/layout/rc/a11_child_exceeds_fixed_parent.rc"
+  "provenance": "github/rcJson/layout/rc/a11_child_exceeds_fixed_parent.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

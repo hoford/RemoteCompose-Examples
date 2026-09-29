@@ -1,12 +1,15 @@
 {
   "id": "layout/f09-padding-row-arrangement",
   "title": "f09 padding row arrangement",
-  "description": "",
+  "description": "F09 padding on a row changes the slack the arrangement distributes",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "be62c2aa7e19881cbc8654fd2f7c431bd9f63830b2f808234b531cc6e4f6cea6",
-  "provenance": "github/rcJson/layout/rc/f09_padding_row_arrangement.rc"
+  "provenance": "github/rcJson/layout/rc/f09_padding_row_arrangement.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

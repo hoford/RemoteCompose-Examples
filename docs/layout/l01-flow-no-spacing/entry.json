@@ -1,12 +1,15 @@
 {
   "id": "layout/l01-flow-no-spacing",
   "title": "l01 flow no spacing",
-  "description": "",
+  "description": "L01 flow, four children that exactly fit one row with no spacing",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "561651feb9a7b7254c385628dc713ffcb29b7503e6d883b8ab4556c447528213",
-  "provenance": "github/rcJson/layout/rc/l01_flow_no_spacing.rc"
+  "provenance": "github/rcJson/layout/rc/l01_flow_no_spacing.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

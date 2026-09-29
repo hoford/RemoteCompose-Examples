@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/67-water-fountain",
   "title": "67 water fountain",
-  "description": "",
+  "description": "Water Fountain \u2014 circulating \u00b7 filtered",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "0a37a4f12c4fca98e0713003373333fcead8d7d6289f0214edd0c2539dec8b3a",
-  "provenance": "github/rcJson/iot-panels/out-light/67_water_fountain.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/67_water_fountain.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

@@ -1,12 +1,15 @@
 {
   "id": "layout/h06-nested-fills",
   "title": "h06 nested fills",
-  "description": "",
+  "description": "H06 fill inside fill inside a fixed box",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "4df6b68bb5e6c8534df4a721ff720b17000d527ccbfa6009dd3118dcb1138191",
-  "provenance": "github/rcJson/layout/rc/h06_nested_fills.rc"
+  "provenance": "github/rcJson/layout/rc/h06_nested_fills.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

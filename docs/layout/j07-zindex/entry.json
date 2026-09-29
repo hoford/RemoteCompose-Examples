@@ -1,12 +1,15 @@
 {
   "id": "layout/j07-zindex",
   "title": "j07 zindex",
-  "description": "",
+  "description": "J07 zIndex should reorder painting, not layout",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "20b084fc4eae30438b2cc9c15e605e5b4e35fdd6f0ade7d589a7604074f6b556",
-  "provenance": "github/rcJson/layout/rc/j07_zindex.rc"
+  "provenance": "github/rcJson/layout/rc/j07_zindex.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

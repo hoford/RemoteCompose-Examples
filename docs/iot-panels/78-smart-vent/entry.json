@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/78-smart-vent",
   "title": "78 smart vent",
-  "description": "",
+  "description": "Smart Vent \u2014 zone 4 \u00b7 62% open",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "0843b30a7e8262de8c7a84ea0e9ff99fd04851d2c3a3893b4b69537f1c38f82d",
-  "provenance": "github/rcJson/iot-panels/out/78_smart_vent.rc"
+  "provenance": "github/rcJson/iot-panels/out/78_smart_vent.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

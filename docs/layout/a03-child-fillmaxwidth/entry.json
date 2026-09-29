@@ -1,12 +1,15 @@
 {
   "id": "layout/a03-child-fillmaxwidth",
   "title": "a03 child fillmaxwidth",
-  "description": "",
+  "description": "A03 child fillMaxWidth, fixed height",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "823898ef6a7b645e06c13621dae88987827f0151a6b0a5cde139fc129d8a24f9",
-  "provenance": "github/rcJson/layout/rc/a03_child_fillmaxwidth.rc"
+  "provenance": "github/rcJson/layout/rc/a03_child_fillmaxwidth.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

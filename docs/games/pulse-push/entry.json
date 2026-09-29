@@ -1,12 +1,15 @@
 {
   "id": "games/pulse-push",
   "title": "pulse push",
-  "description": "",
+  "description": "Pulse Push: tap to push the ball to the goal without hitting a hazard",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "game"
+  ],
   "sha256": "2e19b77eb996e85be2d05ce23c5155a7a8ef179982ca9c01b26388a7e606d36c",
-  "provenance": "github/rcJson/games/rc/pulse_push.rc"
+  "provenance": "github/rcJson/games/rc/pulse_push.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

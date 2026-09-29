@@ -1,12 +1,15 @@
 {
   "id": "layout/j03-offset",
   "title": "j03 offset",
-  "description": "",
+  "description": "J03 offset modifier on a child",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "0c9f04c7269cc76fcb8d5055a3938c0e473a07aa3e832779eddac31a320338ae",
-  "provenance": "github/rcJson/layout/rc/j03_offset.rc"
+  "provenance": "github/rcJson/layout/rc/j03_offset.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

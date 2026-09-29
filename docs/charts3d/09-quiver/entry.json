@@ -1,12 +1,16 @@
 {
   "id": "charts3d/09-quiver",
   "title": "09 quiver",
-  "description": "",
+  "description": "3D vector field, 5x5x5 swirl about the y axis \u2014 drag to orbit",
   "source": "rc-experiments",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "3d",
+    "graph"
+  ],
   "sha256": "4a3274dbb801a338cfaf28eaa9a546ca9f36a516bc34026a51b6d1cdd5f6a5a1",
-  "provenance": "github/rcExperiments/samples/3d/09_quiver.rc"
+  "provenance": "github/rcExperiments/samples/3d/09_quiver.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

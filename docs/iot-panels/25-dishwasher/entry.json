@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/25-dishwasher",
   "title": "25 dishwasher",
-  "description": "",
+  "description": "Dishwasher \u2014 eco 50\u00b0 \u00b7 42 min",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "57e35991b84dd080c585fa3bc446184f879afb1fedcae1dea9c38154544a7bcf",
-  "provenance": "github/rcJson/iot-panels/out/25_dishwasher.rc"
+  "provenance": "github/rcJson/iot-panels/out/25_dishwasher.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

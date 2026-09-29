@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/74-smart-planter",
   "title": "74 smart planter",
-  "description": "",
+  "description": "Smart Planter \u2014 self-watering \u00b7 grow light",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "710d69169e61ab4de07d1d0fe46898384c954e9a4b1382459549fa89943a18ef",
-  "provenance": "github/rcJson/iot-panels/out/74_smart_planter.rc"
+  "provenance": "github/rcJson/iot-panels/out/74_smart_planter.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

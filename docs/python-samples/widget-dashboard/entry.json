@@ -1,12 +1,15 @@
 {
   "id": "python-samples/widget-dashboard",
   "title": "widget dashboard",
-  "description": "",
+  "description": "2x2 dashboard grid with four mini-gauge panels: speed, temp, fuel, battery",
   "source": "origami",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "python"
+  ],
   "sha256": "8fd79579d18dac877f6598e56874dbb20f51d0593f908d1b03be69b18648123e",
-  "provenance": "github/Origami/pythonRcCreation/samples/output/widget_dashboard.rc"
+  "provenance": "github/Origami/pythonRcCreation/samples/output/widget_dashboard.rc",
+  "descriptionSource": "json:_comment"
 }

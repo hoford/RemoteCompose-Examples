@@ -1,12 +1,15 @@
 {
   "id": "iot-panels-light/11-video-doorbell",
   "title": "11 video doorbell",
-  "description": "",
+  "description": "Video Doorbell \u2014 1440p \u00b7 chime \u00b7 motion",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "e549649f71795c21dfcf4d0639b61fcd6ca18dca2c6c7e588957f677d40e4a39",
-  "provenance": "github/rcJson/iot-panels/out-light/11_video_doorbell.rc"
+  "provenance": "github/rcJson/iot-panels/out-light/11_video_doorbell.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

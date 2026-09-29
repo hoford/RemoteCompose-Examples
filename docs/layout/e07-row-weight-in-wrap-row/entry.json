@@ -1,12 +1,15 @@
 {
   "id": "layout/e07-row-weight-in-wrap-row",
   "title": "e07 row weight in wrap row",
-  "description": "",
+  "description": "E07 weight inside a row that wraps its width - there is no slack to share",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "6ba467dc7fd13f4305f637029e8ba7351325ee85ce30c2d55c7937e8d15c9792",
-  "provenance": "github/rcJson/layout/rc/e07_row_weight_in_wrap_row.rc"
+  "provenance": "github/rcJson/layout/rc/e07_row_weight_in_wrap_row.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

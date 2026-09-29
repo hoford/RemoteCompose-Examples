@@ -1,12 +1,15 @@
 {
   "id": "iot-panels/18-water-leak",
   "title": "18 water leak",
-  "description": "",
+  "description": "Water Leak Sensor \u2014 probe pair \u00b7 alarm",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "iot"
+  ],
   "sha256": "f3a593d4a06781110598d4b32f5ee03f55f4ed5a2a100a7296dc24c67263a517",
-  "provenance": "github/rcJson/iot-panels/out/18_water_leak.rc"
+  "provenance": "github/rcJson/iot-panels/out/18_water_leak.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

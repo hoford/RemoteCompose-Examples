@@ -1,12 +1,15 @@
 {
   "id": "layout/k06-text-padding",
   "title": "k06 text padding",
-  "description": "",
+  "description": "K06 padding around text inside a fixed box",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "19f76c5bf4cd4a65af272011fc784af8a2fb1c6c2e4d904d0568593a5f0e2c62",
-  "provenance": "github/rcJson/layout/rc/k06_text_padding.rc"
+  "provenance": "github/rcJson/layout/rc/k06_text_padding.rc",
+  "descriptionSource": "json:header.contentDescription"
 }

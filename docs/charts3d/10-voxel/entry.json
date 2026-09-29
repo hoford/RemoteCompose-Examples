@@ -1,12 +1,16 @@
 {
   "id": "charts3d/10-voxel",
   "title": "10 voxel",
-  "description": "",
+  "description": "voxel density plot, two gaussian blobs in a 7x7x7 grid \u2014 drag to orbit",
   "source": "rc-experiments",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "3d",
+    "graph"
+  ],
   "sha256": "e718fdc0afe66b9586572cd066b0e2e6ed416849d11267558e36c116e8b4740a",
-  "provenance": "github/rcExperiments/samples/3d/10_voxel.rc"
+  "provenance": "github/rcExperiments/samples/3d/10_voxel.rc",
+  "descriptionSource": "json:header.contentDescription"
 }
