@@ -7,6 +7,8 @@ const stripTags = (s) => String(s || '').replace(/#[A-Za-z0-9][\w-]*/g, '').repl
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+import { mountSources } from './source.js';
+
 const id = new URLSearchParams(location.search).get('id');
 
 let handle = null;
@@ -80,10 +82,16 @@ async function main() {
     document.getElementById('size').addEventListener('change', applySize);
     addEventListener('resize', fitCanvas);
 
-    const dl = [`<a href="${base}/doc.rc" download>doc.rc</a>`];
-    if (derived.hasJson) dl.push(`<a href="${base}/doc.json" download>doc.json</a>`);
-    for (const f of derived.src || []) dl.push(`<a href="${base}/src/${f}" download>${esc(f)}</a>`);
-    document.getElementById('downloads').innerHTML = dl.join('');
+    // The compiled document is binary, so it is download-only. Everything it was authored
+    // from expands in place.
+    const files = [{ name: 'doc.rc', url: `${base}/doc.rc`, kind: 'binary', bytes: derived.bytes }];
+    if (derived.hasJson) {
+        files.push({ name: 'doc.json', url: `${base}/doc.json`, kind: 'json', bytes: null });
+    }
+    for (const f of derived.src || []) {
+        files.push({ name: f, url: `${base}/src/${f}`, kind: 'code', bytes: null });
+    }
+    mountSources(document.getElementById('downloads'), files);
 
     const kv = [
         ['source', entry.source],

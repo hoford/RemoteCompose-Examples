@@ -41,6 +41,16 @@ already selected, and values that would yield none are greyed and inert. With AN
 facet it is otherwise easy to pick a combination nothing satisfies — `shaders` and `particles`
 share no document here — and an empty grid does not say whether that is a bug or the answer.
 
+## Reading the source
+
+Each document page lists what it was authored from, and those files expand in place rather
+than only offering a download. JSON renders as a collapsible tree — objects and arrays past
+the top level start closed, and long arrays render a bounded window, because a document's
+JSON can run to thousands of nodes. Every file also has its own download button; the compiled
+`.rc` is binary, so it is download-only.
+
+Content is fetched on first expand, not with the page.
+
 ## Finding your way in
 
 `ops.html` — every operation the engine defines, the documents using it, and the ones with no
