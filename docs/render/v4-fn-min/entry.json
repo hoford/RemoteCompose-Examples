@@ -1,10 +1,14 @@
 {
   "id": "render/v4-fn-min",
   "title": "v4 fn min",
-  "description": "",
+  "description": "Expression probe: the min function. Draws nothing visible; the behaviour under test is evaluation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "3c8c154d03824f9c4c996d1af17d2296e10ff5b4e78dedbcb134230baee0154e",
-  "provenance": "github/rcJson/render/v4_fn_min.rc"
+  "provenance": "github/rcJson/render/v4_fn_min.rc",
+  "descriptionSource": "rendered"
 }

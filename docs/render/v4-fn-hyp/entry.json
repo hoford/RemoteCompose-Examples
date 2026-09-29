@@ -1,10 +1,14 @@
 {
   "id": "render/v4-fn-hyp",
   "title": "v4 fn hyp",
-  "description": "",
+  "description": "Expression probe: the hypot function. Draws nothing visible; the behaviour under test is evaluation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "b5a34ecec1c750ab36904db7bf84a0aee73f3d538552821807c4112fe6aa0ad8",
-  "provenance": "github/rcJson/render/v4_fn_hyp.rc"
+  "provenance": "github/rcJson/render/v4_fn_hyp.rc",
+  "descriptionSource": "rendered"
 }

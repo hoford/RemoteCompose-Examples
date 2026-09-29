@@ -2,6 +2,8 @@
 //
 // Unlike the grid, this page leaves the player running - one document animating is the point.
 
+const stripTags = (s) => String(s || '').replace(/#[A-Za-z0-9][\w-]*/g, '').replace(/\s+/g, ' ').trim();
+
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -61,7 +63,7 @@ async function main() {
     document.title = `${entry.title || id} — RemoteCompose Examples`;
     document.getElementById('title').textContent = entry.title || id;
     document.getElementById('docid').textContent = id;
-    document.getElementById('desc').textContent = entry.description || '';
+    document.getElementById('desc').textContent = stripTags(entry.description);
     document.getElementById('tags').innerHTML =
         (entry.tags || []).map((t) => `<span class="chip tag">#${esc(t)}</span>`).join('');
 

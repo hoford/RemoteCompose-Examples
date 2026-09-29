@@ -1,12 +1,16 @@
 {
   "id": "render/d11-stats",
   "title": "d11 stats",
-  "description": "",
+  "description": "Statistics strip: 128 Users, 94% Uptime and 3.4k Events in blue, green and purple tiles. #widget #layout",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "layout",
+    "widget"
+  ],
   "sha256": "d5fc27054f9e8cd1331d683cf44dea5fed605ce5527d8df9ce1269f732e5a561",
-  "provenance": "github/rcJson/render/d11_stats.rc"
+  "provenance": "github/rcJson/render/d11_stats.rc",
+  "descriptionSource": "rendered"
 }

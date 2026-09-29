@@ -1,10 +1,14 @@
 {
   "id": "render/y-after",
   "title": "y after",
-  "description": "",
+  "description": "Ordering probe, after state: the value is read once it has been written. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "14f17e9b1af5e4f2d5afdf70206cd2d74ef77378b6943a4132874b0c38f5ba8c",
-  "provenance": "github/rcJson/render/y_after.rc"
+  "provenance": "github/rcJson/render/y_after.rc",
+  "descriptionSource": "rendered"
 }

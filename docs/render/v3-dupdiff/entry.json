@@ -1,10 +1,14 @@
 {
   "id": "render/v3-dupdiff",
   "title": "v3 dupdiff",
-  "description": "",
+  "description": "Variable probe: duplicate names with differing values. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "e3075085f50bc7f103655f6206185c9558b835b0c866773f9a68e58e6da787f8",
-  "provenance": "github/rcJson/render/v3_dupdiff.rc"
+  "provenance": "github/rcJson/render/v3_dupdiff.rc",
+  "descriptionSource": "rendered"
 }

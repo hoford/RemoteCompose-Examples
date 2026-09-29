@@ -1,10 +1,14 @@
 {
   "id": "render/w-guard",
   "title": "w guard",
-  "description": "",
+  "description": "Guard probe: a clamped expression protected against out-of-range input. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "672765c89c28668a9147b15c8ed5b55b43ad90b9bd02db540afbe5fb5b89a18e",
-  "provenance": "github/rcJson/render/w_guard.rc"
+  "provenance": "github/rcJson/render/w_guard.rc",
+  "descriptionSource": "rendered"
 }

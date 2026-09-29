@@ -193,15 +193,17 @@ async function hydrate(i, entry) {
     entry.el.href = `doc.html?id=${encodeURIComponent(r.id)}`;
     // The full description goes in title= as well as the clamped line, so a truncated one is
     // still readable on hover without opening the document.
-    entry.el.title = r.d || '';
+    entry.el.title = stripTags(r.d);
     entry.el.querySelector('.meta').innerHTML =
         `<div class="t">${esc(r.t)}</div>
          <div class="sub">${esc(r.s)}${r.w ? ` · ${r.w}×${r.h}` : ''} · ${(r.b / 1024).toFixed(1)} KB</div>
-         ${r.d ? `<div class="desc">${esc(r.d)}</div>` : ''}
+         ${r.d ? `<div class="desc">${esc(stripTags(r.d))}</div>` : ''}
          <div class="chips">${(r.g || []).map((t) => `<span class="chip tag">#${esc(t)}</span>`).join('')}${
              r.f.map((f) => `<span class="chip">${esc(f)}</span>`).join('')}</div>`;
     entry.cancel = preview(r.id, entry.el.querySelector('img'), 320);
 }
+
+const stripTags = (s) => String(s || '').replace(/#[A-Za-z0-9][\w-]*/g, '').replace(/\s+/g, ' ').trim();
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));

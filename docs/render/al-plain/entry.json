@@ -1,10 +1,14 @@
 {
   "id": "render/al-plain",
   "title": "al plain",
-  "description": "",
+  "description": "Baseline case: a plain green circle with no expressions, used as the control. #drawCircle #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "drawcircle",
+    "validation"
+  ],
   "sha256": "90c3b433d33079547c64cc9df59e9afd1592053d51c0781557f63f9a742ac155",
-  "provenance": "github/rcJson/render/al_plain.rc"
+  "provenance": "github/rcJson/render/al_plain.rc",
+  "descriptionSource": "rendered"
 }

@@ -1,10 +1,14 @@
 {
   "id": "render/v-before",
   "title": "v before",
-  "description": "",
+  "description": "Variable probe, before state: a green circle sized from the original value. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "cb27c9939c80707d7fe86f33fe21e5f9300eda4e3b9c54d2d02f3dacb6f07408",
-  "provenance": "github/rcJson/render/v_before.rc"
+  "provenance": "github/rcJson/render/v_before.rc",
+  "descriptionSource": "rendered"
 }

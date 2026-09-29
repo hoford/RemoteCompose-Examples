@@ -1,10 +1,14 @@
 {
   "id": "render/iso-w-only",
   "title": "iso w only",
-  "description": "",
+  "description": "Intrinsic sizing probe: width only. Draws nothing visible; the behaviour under test is measurement. #layout #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "layout",
+    "validation"
+  ],
   "sha256": "4dd94c394aa3c01b443d50372a33e905405a5853eac48602c0921d520e3e66ed",
-  "provenance": "github/rcJson/render/iso_w_only.rc"
+  "provenance": "github/rcJson/render/iso_w_only.rc",
+  "descriptionSource": "rendered"
 }

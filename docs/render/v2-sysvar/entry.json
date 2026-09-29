@@ -1,10 +1,14 @@
 {
   "id": "render/v2-sysvar",
   "title": "v2 sysvar",
-  "description": "",
+  "description": "Variable probe: system variable. Draws nothing visible; the behaviour under test is value propagation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "04f6b8a683412f1989db67dfb9c134986dc6017632b80c824d5f1f94a62b8f32",
-  "provenance": "github/rcJson/render/v2_sysvar.rc"
+  "provenance": "github/rcJson/render/v2_sysvar.rc",
+  "descriptionSource": "rendered"
 }

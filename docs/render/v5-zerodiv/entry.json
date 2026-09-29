@@ -1,10 +1,14 @@
 {
   "id": "render/v5-zerodiv",
   "title": "v5 zerodiv",
-  "description": "",
+  "description": "Edge-case probe: division by zero. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "de1e4808c71d29fb1e061295488729482500008c39eddbcc238de994d2b9bb5c",
-  "provenance": "github/rcJson/render/v5_zerodiv.rc"
+  "provenance": "github/rcJson/render/v5_zerodiv.rc",
+  "descriptionSource": "rendered"
 }

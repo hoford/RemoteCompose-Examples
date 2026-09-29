@@ -1,10 +1,14 @@
 {
   "id": "render/v5-nanonly",
   "title": "v5 nanonly",
-  "description": "",
+  "description": "Edge-case probe: NaN alone. An amber disc is drawn, showing the document still renders when a value is NaN. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "0102cb1cb4d227da7099631cc1a14161d049d249d0845ac0ca8785c80eb6d2bb",
-  "provenance": "github/rcJson/render/v5_nanonly.rc"
+  "provenance": "github/rcJson/render/v5_nanonly.rc",
+  "descriptionSource": "rendered"
 }

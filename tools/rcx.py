@@ -254,7 +254,10 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
 # field, so there is one place to edit and the tag is visible in the text that explains it.
 # `catalog` lifts them into the `tag` facet.
 
-HASHTAG_RE = re.compile(r"#([A-Za-z][\w-]{1,30})")
+# Leading digit allowed: "#3d" is a tag people actually write, and requiring a letter first
+# silently made it display as prose while never becoming a tag. A letter must appear somewhere,
+# so "#12" is not mistaken for a tag.
+HASHTAG_RE = re.compile(r"#([A-Za-z0-9][\w-]{1,30})")
 
 # Descriptions that say nothing. Matched case-insensitively against the whole string; a
 # description that merely repeats the document's own name is rejected the same way.
@@ -985,7 +988,8 @@ def cmd_describe(args):
 
         # Hashtags: keep any already written by hand, add the collection's seeds.
         tags = set(entry.get("tags") or [])
-        tags |= {t.lower() for t in HASHTAG_RE.findall(entry.get("description") or "")}
+        tags |= {t.lower() for t in HASHTAG_RE.findall(entry.get("description") or "")
+                 if re.search(r"[A-Za-z]", t)}
         tags |= set(COLLECTION_TAGS.get(collection, []))
 
         desc = (entry.get("description") or "").strip()
@@ -1021,7 +1025,7 @@ def cmd_describe(args):
         if desc:
             entry["description"] = desc
             entry["descriptionSource"] = src
-            tags |= {t.lower() for t in HASHTAG_RE.findall(desc)}
+            tags |= {t.lower() for t in HASHTAG_RE.findall(desc) if re.search(r"[A-Za-z]", t)}
             filled[src.split(":")[0]] += 1
         else:
             # Nothing found. Clear a previously DERIVED description - leaving it behind would

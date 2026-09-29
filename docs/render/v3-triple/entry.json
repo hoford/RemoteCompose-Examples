@@ -1,10 +1,14 @@
 {
   "id": "render/v3-triple",
   "title": "v3 triple",
-  "description": "",
+  "description": "Variable probe: three variables at once. Draws nothing visible; the behaviour under test is value propagation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "cb47fb60adfc04593c6ced31b213b73f82016175395c531a6a2c551058fb7f53",
-  "provenance": "github/rcJson/render/v3_triple.rc"
+  "provenance": "github/rcJson/render/v3_triple.rc",
+  "descriptionSource": "rendered"
 }

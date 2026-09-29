@@ -1,10 +1,14 @@
 {
   "id": "render/var-noacos",
   "title": "var noacos",
-  "description": "",
+  "description": "Variable probe: the same chain without acos. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "07602f3e2341e9e4abbc4c53162eadfc2d5a0a04da3dccaea7b838391f9788d6",
-  "provenance": "github/rcJson/render/var_noacos.rc"
+  "provenance": "github/rcJson/render/var_noacos.rc",
+  "descriptionSource": "rendered"
 }

@@ -1,12 +1,16 @@
 {
   "id": "render/11-layout-expr",
   "title": "11 layout expr",
-  "description": "",
+  "description": "Layout driven by an expression: a blue block sized to half the width, labelled sized by expr. #layout #expressions",
   "source": "rcjson",
   "authoring": [
     "json"
   ],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "layout"
+  ],
   "sha256": "4d5413b7163719b68774c74965d8962a3fe2fb79d53c291fa0faf53ae37c04fb",
-  "provenance": "github/rcJson/render/11_layout_expr.rc"
+  "provenance": "github/rcJson/render/11_layout_expr.rc",
+  "descriptionSource": "rendered"
 }

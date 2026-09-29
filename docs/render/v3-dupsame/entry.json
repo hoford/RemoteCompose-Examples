@@ -1,10 +1,14 @@
 {
   "id": "render/v3-dupsame",
   "title": "v3 dupsame",
-  "description": "",
+  "description": "Variable probe: duplicate names with identical values. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "f63d591bbf3432dff433b2e205ceb52108ade655021914b4495c27d9b88d052a",
-  "provenance": "github/rcJson/render/v3_dupsame.rc"
+  "provenance": "github/rcJson/render/v3_dupsame.rc",
+  "descriptionSource": "rendered"
 }

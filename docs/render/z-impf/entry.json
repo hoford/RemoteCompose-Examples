@@ -1,10 +1,14 @@
 {
   "id": "render/z-impf",
   "title": "z impf",
-  "description": "",
+  "description": "Impulse probe: an impulse with a float parameter. Draws nothing visible at rest. #animation #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "animation",
+    "validation"
+  ],
   "sha256": "f4728d2452650ac2e61f01228c6d832d11e0dec169358dec93bed7db02b353a4",
-  "provenance": "github/rcJson/render/z_impf.rc"
+  "provenance": "github/rcJson/render/z_impf.rc",
+  "descriptionSource": "rendered"
 }

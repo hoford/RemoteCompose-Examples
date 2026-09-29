@@ -1,10 +1,15 @@
 {
   "id": "render/v3-onesens",
   "title": "v3 onesens",
-  "description": "",
+  "description": "Variable probe: a single sensor variable. Draws nothing visible. #expressions #sensors #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "sensors",
+    "validation"
+  ],
   "sha256": "5027b3fca0dfc5ca456f4c062a0a8aad2eec6cf502d6b550df5ac5a48fe8a6c8",
-  "provenance": "github/rcJson/render/v3_onesens.rc"
+  "provenance": "github/rcJson/render/v3_onesens.rc",
+  "descriptionSource": "rendered"
 }

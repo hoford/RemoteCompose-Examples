@@ -1,10 +1,14 @@
 {
   "id": "render/y-both",
   "title": "y both",
-  "description": "",
+  "description": "Ordering probe: a value read both before and after it is written. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "b4044807eb1c12af5b3fccdd5d0b8dd12454c038eb3eaa58e2c355b231866479",
-  "provenance": "github/rcJson/render/y_both.rc"
+  "provenance": "github/rcJson/render/y_both.rc",
+  "descriptionSource": "rendered"
 }

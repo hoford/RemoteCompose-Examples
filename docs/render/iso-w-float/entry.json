@@ -1,10 +1,14 @@
 {
   "id": "render/iso-w-float",
   "title": "iso w float",
-  "description": "",
+  "description": "Intrinsic sizing probe: width as a float. Draws nothing visible; the behaviour under test is measurement. #layout #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "layout",
+    "validation"
+  ],
   "sha256": "e02d85cd6cbb5a7589e8dce736280a3b0759fbdab8cc9de57b2275092c63f265",
-  "provenance": "github/rcJson/render/iso_w_float.rc"
+  "provenance": "github/rcJson/render/iso_w_float.rc",
+  "descriptionSource": "rendered"
 }

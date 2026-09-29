@@ -1,10 +1,14 @@
 {
   "id": "render/v5-lognegv",
   "title": "v5 lognegv",
-  "description": "",
+  "description": "Edge-case probe: logarithm of a negative value. Draws nothing visible. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "f9bd9f733184ceba1d3d59993391a59e8ba1a3067790f3516c891e4755045dd3",
-  "provenance": "github/rcJson/render/v5_lognegv.rc"
+  "provenance": "github/rcJson/render/v5_lognegv.rc",
+  "descriptionSource": "rendered"
 }

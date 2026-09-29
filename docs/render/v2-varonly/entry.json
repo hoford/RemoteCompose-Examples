@@ -1,10 +1,14 @@
 {
   "id": "render/v2-varonly",
   "title": "v2 varonly",
-  "description": "",
+  "description": "Variable probe: variable declaration only. Draws nothing visible; the behaviour under test is value propagation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "2d0281814e87bc426d1062a848c113074726d406e21720be9cbd96c0e07f2036",
-  "provenance": "github/rcJson/render/v2_varonly.rc"
+  "provenance": "github/rcJson/render/v2_varonly.rc",
+  "descriptionSource": "rendered"
 }

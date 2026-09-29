@@ -1,10 +1,14 @@
 {
   "id": "render/z-imp",
   "title": "z imp",
-  "description": "",
+  "description": "Impulse probe: an impulse applied. Draws nothing visible at rest. #animation #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "animation",
+    "validation"
+  ],
   "sha256": "6c28a4efa2fdf97514882360ba4bb3aef2f17ecddd63c1038d3e4fda06578f6f",
-  "provenance": "github/rcJson/render/z_imp.rc"
+  "provenance": "github/rcJson/render/z_imp.rc",
+  "descriptionSource": "rendered"
 }

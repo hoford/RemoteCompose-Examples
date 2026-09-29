@@ -13,7 +13,7 @@ from pathlib import Path
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 import re
-HASHTAG = re.compile(r"#([A-Za-z][\w-]{1,30})")
+HASHTAG = re.compile(r"#([A-Za-z0-9][\w-]{1,30})")
 
 data = json.loads(Path(sys.argv[1]).read_text())
 wrote = skipped = missing = 0

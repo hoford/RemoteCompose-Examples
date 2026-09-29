@@ -1,10 +1,14 @@
 {
   "id": "render/iso-padding",
   "title": "iso padding",
-  "description": "",
+  "description": "Intrinsic sizing probe: padding. Draws nothing visible; the behaviour under test is measurement. #layout #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "layout",
+    "validation"
+  ],
   "sha256": "b0187fff3c70311cd4f8140b1e3aa9cd4e0e3bdfa453eaa534d963449fca04d9",
-  "provenance": "github/rcJson/render/iso_padding.rc"
+  "provenance": "github/rcJson/render/iso_padding.rc",
+  "descriptionSource": "rendered"
 }

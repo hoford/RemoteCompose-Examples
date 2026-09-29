@@ -1,10 +1,13 @@
 {
   "id": "render/iso-bg",
   "title": "iso bg",
-  "description": "",
+  "description": "Isometric background layer. Renders blank on its own; it is composited beneath other scenes. #layout",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "layout"
+  ],
   "sha256": "4ba1629263577fabe212e24e7b31030d9a3cc424c0d306bc48ee7b47bc19d002",
-  "provenance": "github/rcJson/render/iso_bg.rc"
+  "provenance": "github/rcJson/render/iso_bg.rc",
+  "descriptionSource": "rendered"
 }

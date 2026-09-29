@@ -1,10 +1,15 @@
 {
   "id": "render/y-split",
   "title": "y split",
-  "description": "",
+  "description": "Ordering probe: the write split from the read, showing a green circle once resolved. #expressions #drawCircle #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "drawcircle",
+    "expressions",
+    "validation"
+  ],
   "sha256": "fdb1db84411fc8ec475d61e7f482038ac57cabddc38f6fd6549804ebb7125079",
-  "provenance": "github/rcJson/render/y_split.rc"
+  "provenance": "github/rcJson/render/y_split.rc",
+  "descriptionSource": "rendered"
 }

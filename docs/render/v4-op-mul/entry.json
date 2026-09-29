@@ -1,10 +1,14 @@
 {
   "id": "render/v4-op-mul",
   "title": "v4 op mul",
-  "description": "",
+  "description": "Expression probe: the multiply operator. Draws nothing visible; the behaviour under test is evaluation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "63a87d4c171b9b6fb90527f1b7ddf2626d0648dcfcdbac2e1746420fbcec96e2",
-  "provenance": "github/rcJson/render/v4_op_mul.rc"
+  "provenance": "github/rcJson/render/v4_op_mul.rc",
+  "descriptionSource": "rendered"
 }

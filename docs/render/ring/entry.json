@@ -1,10 +1,14 @@
 {
   "id": "render/ring",
   "title": "ring",
-  "description": "",
+  "description": "Progress ring at 70%, green sweep on a dark track with the value at the centre. #widget #drawArc",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "drawarc",
+    "widget"
+  ],
   "sha256": "da234245787056ce897b8bf72052e97b6e25d54c3084257a75d35c841a717ca8",
-  "provenance": "github/rcJson/render/ring.rc"
+  "provenance": "github/rcJson/render/ring.rc",
+  "descriptionSource": "rendered"
 }

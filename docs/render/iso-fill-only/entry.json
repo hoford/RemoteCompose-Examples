@@ -1,10 +1,14 @@
 {
   "id": "render/iso-fill-only",
   "title": "iso fill only",
-  "description": "",
+  "description": "Intrinsic sizing probe: fill only. Draws nothing visible; the behaviour under test is measurement. #layout #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "layout",
+    "validation"
+  ],
   "sha256": "a63a380c667da1c21b1610bd514e983247ff229c67d5e7c215583a0747dd7e99",
-  "provenance": "github/rcJson/render/iso_fill_only.rc"
+  "provenance": "github/rcJson/render/iso_fill_only.rc",
+  "descriptionSource": "rendered"
 }

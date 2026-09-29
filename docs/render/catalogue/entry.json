@@ -1,10 +1,13 @@
 {
   "id": "render/catalogue",
   "title": "catalogue",
-  "description": "",
+  "description": "Catalogue index document. Renders blank on its own; it is a container for other entries. #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "validation"
+  ],
   "sha256": "4c52c27f5ce5ff1356afc0f74048fe65c8587831ea294dee49dc4a10834f0b27",
-  "provenance": "github/rcJson/render/catalogue.rc"
+  "provenance": "github/rcJson/render/catalogue.rc",
+  "descriptionSource": "rendered"
 }

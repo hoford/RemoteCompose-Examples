@@ -1,10 +1,14 @@
 {
   "id": "render/v-after",
   "title": "v after",
-  "description": "",
+  "description": "Variable probe, after state: a green circle sized from the updated value. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "3fb4d326a4c0441b506763c21dac92466b16d8e7674dbb7b4ef35f60a0e7b6ab",
-  "provenance": "github/rcJson/render/v_after.rc"
+  "provenance": "github/rcJson/render/v_after.rc",
+  "descriptionSource": "rendered"
 }

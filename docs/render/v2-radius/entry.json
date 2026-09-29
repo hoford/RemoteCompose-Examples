@@ -1,10 +1,14 @@
 {
   "id": "render/v2-radius",
   "title": "v2 radius",
-  "description": "",
+  "description": "Variable probe: radius. Draws nothing visible; the behaviour under test is value propagation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "3931309fb4630ead2a72678d7c645c2fe3ab8df035d8122a81c63ecb35a62cde",
-  "provenance": "github/rcJson/render/v2_radius.rc"
+  "provenance": "github/rcJson/render/v2_radius.rc",
+  "descriptionSource": "rendered"
 }

@@ -1,10 +1,14 @@
 {
   "id": "render/v2-timevar",
   "title": "v2 timevar",
-  "description": "",
+  "description": "Variable probe: time variable. Draws nothing visible; the behaviour under test is value propagation. #expressions #validation",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "expressions",
+    "validation"
+  ],
   "sha256": "eee73ef43486813b5d4393db2397f62f9522b60b8d4c280c3e0f07a34ad8d4e9",
-  "provenance": "github/rcJson/render/v2_timevar.rc"
+  "provenance": "github/rcJson/render/v2_timevar.rc",
+  "descriptionSource": "rendered"
 }
