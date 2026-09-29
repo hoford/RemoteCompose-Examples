@@ -7,13 +7,28 @@
 <link rel="stylesheet" href="assets/app.css">
 <script src="assets/player.js"></script>
 </head>
-<body>
-<a class="back" href="index.html">← all examples</a>
-<div class="doc-wrap">
+<body class="doc-body">
+<div class="doc-page">
   <div class="stage">
+    <div class="stage-bar">
+      <a class="back" href="index.html">← all examples</a>
+      <label class="size-pick">
+        played at
+        <select id="size">
+          <option value="native">default</option>
+          <option value="2x">2×</option>
+          <option value="4x">4×</option>
+          <option value="320">320 × 320</option>
+          <option value="512">512 × 512</option>
+          <option value="1024">1024 × 1024</option>
+        </select>
+        <span id="size-note"></span>
+      </label>
+    </div>
     <div class="frame"><div id="player"></div></div>
   </div>
-  <div class="doc-side">
+
+  <div class="doc-info">
     <h2 id="title">loading…</h2>
     <div class="path" id="docid"></div>
     <p id="desc"></p>
