@@ -22,6 +22,7 @@ read if you want to search the corpus.
   "ops": 214,                      // total operations
   "width": 360, "height": 360,
   "hasJson": true,
+  "jsonReproduces": "yes",         // yes | differs | unsupported | null
   "src": [],                       // generator sources, if any
   "rc": "docs/iot-panels/01-smart-bulb/doc.rc",
   "json": "docs/iot-panels/01-smart-bulb/doc.json"
@@ -58,6 +59,13 @@ purely from opcode names finds no shader documents at all.
 their histogram is empty, so they carry no `apis`. They are still valid documents that play
 correctly — the decoder used for cataloguing is simply behind the format. Dimensions are still
 correct for them, being read from the header directly.
+
+**`jsonReproduces` tells you whether the JSON is trustworthy as a source.** `yes` means it
+recompiles to byte-identical output, so it genuinely reconstructs the document — filter on the
+`json-rebuilds` flag to get only those (421 of 1023 today). `unsupported` means the reference
+compiler cannot read it: 141 of those are Origami's `pythonRcCreation` dialect, which uses
+`header`/`ops` rather than `root`, and needs that project's own compiler. `differs` means the
+JSON is stale or belongs to a different variant of the document.
 
 **`animated` is a static inference**, true when a document uses expressions, shaders or
 particles. A player can answer this exactly at runtime via `CoreDocument.needsRepaint()`.

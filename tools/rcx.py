@@ -218,6 +218,48 @@ def decode(rc_path: Path) -> tuple[list[str], int, int, set[str]] | None:
         tmp.unlink(missing_ok=True)
 
 
+# ── JSON round-trip ───────────────────────────────────────────────────────────
+#
+# A doc.json is only useful as a reconstruction source if it actually rebuilds the document.
+# That is checked rather than assumed, and the answer is recorded per document so it can be
+# filtered on: "show me examples whose JSON I can trust".
+#
+# Three outcomes, and they mean different things:
+#   yes          recompiles byte-identically - the JSON is the document
+#   differs      recompiles, but to different bytes - stale, or a different variant
+#   unsupported  the compiler cannot read it - a different JSON dialect, or an op it lacks
+#
+# rcj is optional; without it the field is absent rather than wrong.
+RCJ_PATH = os.environ.get("RCJ_PATH", "/Users/john/code/github/rcJson")
+_rcj = None
+
+
+def _load_rcj():
+    global _rcj
+    if _rcj is None:
+        try:
+            if RCJ_PATH not in sys.path:
+                sys.path.insert(0, RCJ_PATH)
+            import rcj as _m
+            _rcj = _m
+        except Exception:
+            _rcj = False
+    return _rcj or None
+
+
+def json_roundtrip(json_path, rc_bytes):
+    m = _load_rcj()
+    if not m:
+        return None
+    import contextlib, io
+    try:
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            out = m.convert_doc(json.loads(json_path.read_text()))
+    except Exception:
+        return "unsupported"
+    return "yes" if out == rc_bytes else "differs"
+
+
 # ── Ingest ────────────────────────────────────────────────────────────────────
 
 # AGSL/SkSL signatures. Deliberately narrow: "uniform" or "float2" alone appear in ordinary
@@ -232,6 +274,17 @@ def slugify(name: str) -> str:
 
 
 SIDECAR_SUFFIXES = (".py", ".kt", ".kts")
+
+
+def _affinity(a: str, b: str) -> int:
+    """Shared qualifier tokens between two directory names.
+
+    `out-light` and `src-light` share "light"; `out-light` and `src` share nothing. The first
+    token is ignored because it names the role (out/src/rc), not the variant.
+    """
+    ta = re.split(r"[-_]", a.lower())[1:]
+    tb = re.split(r"[-_]", b.lower())[1:]
+    return len(set(ta) & set(tb))
 
 
 def find_sidecars(rc: Path) -> dict[str, Path]:
@@ -264,9 +317,15 @@ def find_sidecars(rc: Path) -> dict[str, Path]:
         # compiled output one level below the source, so samples/output/x.rc pairs with
         # samples/x.json. Checking only sibling directories misses that entirely.
         take(parent)
-        for sib in sorted(x for x in parent.iterdir() if x.is_dir()):
-            if sib == rc.parent or sib.name.startswith(("preview", "out", "build", "web")):
-                continue
+        # Sibling directories, most-related first. Alphabetical order is actively wrong here:
+        # a document in `out-light` finds `src` before `src-light` and silently pairs every
+        # light-theme document with its DARK source. The files are the same size and both
+        # parse, so nothing complains - it only shows up as a failed round-trip.
+        sibs = [x for x in parent.iterdir()
+                if x.is_dir() and x != rc.parent
+                and not x.name.startswith(("preview", "out", "build", "web"))]
+        sibs.sort(key=lambda x: (-_affinity(rc.parent.name, x.name), x.name))
+        for sib in sibs:
             take(sib)
     return out
 
@@ -459,6 +518,8 @@ def cmd_catalog(args):
             # Mirrored here so the document page needs one fetch, not a directory listing
             # (GitHub Pages serves no index for a directory).
             "hasJson": (d / "doc.json").exists(),
+            "jsonReproduces": (json_roundtrip(d / "doc.json", data)
+                               if (d / "doc.json").exists() else None),
             "src": sorted(x.name for x in (d / "src").glob("*")) if (d / "src").exists() else [],
         }
         (d / "derived.json").write_text(json.dumps(derived, indent=2) + "\n")
@@ -477,6 +538,7 @@ def cmd_catalog(args):
             "width": w,
             "height": h,
             "hasJson": (d / "doc.json").exists(),
+            "jsonReproduces": derived["jsonReproduces"],
             "src": sorted(p.name for p in (d / "src").glob("*")) if (d / "src").exists() else [],
         })
 
@@ -500,6 +562,8 @@ def cmd_catalog(args):
             push("flag", f, r["i"])
         for a in r["authoring"]:
             push("authoring", a, r["i"])
+        if r.get("jsonReproduces") == "yes":
+            push("flag", "json-rebuilds", r["i"])
         for t in r["tags"]:
             push("tag", t, r["i"])
 
@@ -530,6 +594,13 @@ def cmd_catalog(args):
                 "rc": f"docs/{r['id']}/doc.rc",
                 "json": f"docs/{r['id']}/doc.json" if r["hasJson"] else None,
             }, separators=(",", ":")) + "\n")
+
+    rt = {}
+    for r in records:
+        if r.get("jsonReproduces"):
+            rt[r["jsonReproduces"]] = rt.get(r["jsonReproduces"], 0) + 1
+    if rt:
+        print("  json round-trip: " + ", ".join(f"{k}={v}" for k, v in sorted(rt.items())))
 
     shards = (len(records) + SHARD_SIZE - 1) // SHARD_SIZE
     fsize = (CATALOG / "facets.json").stat().st_size
