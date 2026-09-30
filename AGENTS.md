@@ -3,6 +3,22 @@
 Everything here is static and same-origin. There is no API to call and no key to obtain: fetch
 the files.
 
+## AI authoring recipe
+
+To create a new RemoteCompose document:
+
+1. Read `catalog/corpus.jsonl`.
+2. Find 1–3 similar examples.
+3. Fetch their `doc.json` where `jsonReproduces == "yes"` — those are known to rebuild.
+4. Modify one of those rather than starting from scratch.
+5. Open `playground.html?agent=1#doc=<base64url of your JSON>`.
+6. Wait for `status` to reach `ready` in `#agent-output`.
+7. If `valid` is false, fix the listed errors — each carries a JSON path — and retry.
+8. If `valid` is true, look at `#preview-image`.
+9. Iterate until it is visually correct, then take `#download-json` and `#download-rc`.
+
+Check the interface itself first with `playground.html?agent=1&test=1`.
+
 ## Start here
 
 `catalog/corpus.jsonl` — one JSON object per line, one line per document. This is the file to
