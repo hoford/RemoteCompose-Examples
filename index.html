@@ -8,32 +8,71 @@
 <script src="assets/player.js"></script>
 </head>
 <body>
-<header>
-  <h1>RemoteCompose Examples</h1>
-  <p class="tagline">
-    A browsable corpus of RemoteCompose documents. Every preview below is rendered in your
-    browser from the <code>.rc</code> itself — the site ships no thumbnails.
-  </p>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">RemoteCompose</span>
+  </a>
+  <nav class="topnav">
+    <a class="on" href="index.html">Explore</a>
+    <a href="ops.html">Operations</a>
+    <a href="AGENTS.md">For agents</a>
+  </nav>
+  <div class="searchwrap">
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search documents…" aria-label="Search documents">
+  </div>
+  <div class="topright">
+    <div class="segmented" role="group" aria-label="View">
+      <button id="view-grid" class="on" title="Grid view" aria-pressed="true">▦</button>
+      <button id="view-list" title="List view" aria-pressed="false">☰</button>
+    </div>
+    <div class="segmented" role="group" aria-label="Theme">
+      <button id="theme-light" title="Light">☀</button>
+      <button id="theme-dark" title="Dark">☾</button>
+    </div>
+  </div>
 </header>
+
+<div class="chiprow">
+  <button id="filters-badge" class="filters-badge">
+    <span>Filters</span><span class="badge" id="filters-count">0</span>
+  </button>
+  <div class="quickchips" id="quickchips"></div>
+</div>
 
 <main>
   <aside id="sidebar">
-    <div class="counts">
-      <span id="count">loading…</span>
-      <button id="clear" hidden>clear filters</button>
+    <div class="side-head">
+      <strong>Filters</strong>
+      <span class="dim" id="side-active">none active</span>
+      <button id="clear" hidden>Clear all</button>
     </div>
     <div id="facets"></div>
     <footer class="sidebar-foot">
-      <a href="ops.html">operations index</a> ·
-      <a href="catalog/corpus.jsonl">corpus.jsonl</a> ·
-      <a href="AGENTS.md">for agents</a>
+      <a href="catalog/corpus.jsonl">corpus.jsonl</a> · <a href="README.md">about</a>
     </footer>
   </aside>
 
-  <div id="grid">
-    <div class="plane"></div>
-    <div id="spacer"></div>
-  </div>
+  <section class="results">
+    <div class="results-head">
+      <span id="count">loading…</span>
+      <div class="active-pills" id="pills"></div>
+      <label class="sortwrap">Sort by
+        <select id="sort">
+          <option value="added">Recently added</option>
+          <option value="name">Name</option>
+          <option value="size">Size</option>
+          <option value="ops">Operations</option>
+        </select>
+      </label>
+    </div>
+    <div id="grid">
+      <div class="plane"></div>
+      <div id="spacer"></div>
+    </div>
+  </section>
 </main>
 
 <script type="module" src="assets/app.js"></script>

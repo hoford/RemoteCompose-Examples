@@ -429,6 +429,11 @@ SHADER_RE = re.compile(r"half4\s+main\s*\(|gl_FragColor|uniform\s+(float|half|sh
 SLUG_RE = re.compile(r"[^a-z0-9]+")
 
 
+def _now_iso() -> str:
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
 def slugify(name: str) -> str:
     return SLUG_RE.sub("-", name.lower()).strip("-") or "doc"
 
@@ -570,6 +575,9 @@ def cmd_add(args):
             "authoring": sorted(set(authoring)),
             "tags": [],
             "sha256": sha,
+            # Recorded at ingest so "recently added" keeps working for documents added later;
+            # the existing corpus was back-filled from git history.
+            "addedAt": _now_iso(),
             # Relative to the code root, not absolute: this file is published, and an absolute
             # path leaks the maintainer's home directory layout onto a public site.
             "provenance": shorten(rc),
@@ -693,6 +701,7 @@ def cmd_catalog(args):
             "apis": apis,
             "flags": derived["flags"],
             "tags": entry.get("tags", []),
+            "addedAt": entry.get("addedAt", ""),
             "bytes": len(data),
             "ops": derived["ops"],
             "width": w,
@@ -746,6 +755,7 @@ def cmd_catalog(args):
             "i": r["i"], "id": r["id"], "t": r["title"], "w": r["width"], "h": r["height"],
             "b": r["bytes"], "o": r["ops"], "s": r["source"], "a": r["authoring"],
             "f": r["flags"], "j": r["hasJson"], "d": r["description"], "g": r["tags"],
+            "at": r.get("addedAt") or "",
         } for r in records[s:s + SHARD_SIZE]]
         (CATALOG / f"docs-{s // SHARD_SIZE:03d}.json").write_text(
             json.dumps(shard, separators=(",", ":")) + "\n")
