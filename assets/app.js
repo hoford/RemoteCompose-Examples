@@ -202,7 +202,8 @@ async function hydrate(i, entry) {
          ${r.d ? `<div class="desc">${esc(stripTags(r.d))}</div>` : ''}
          <div class="chips">${(r.g || []).map((t) => `<span class="chip tag">#${esc(t)}</span>`).join('')}${
              r.f.map((f) => `<span class="chip">${esc(f)}</span>`).join('')}</div>`;
-    entry.cancel = preview(r.id, entry.el.querySelector('img'), 320);
+    // Render at the document's own size and scale the image down; see preview.js.
+    entry.cancel = preview(r.id, entry.el.querySelector('img'), 320, { w: r.w, h: r.h });
 }
 
 const stripTags = (s) => String(s || '').replace(/#[A-Za-z0-9][\w-]*/g, '').replace(/\s+/g, ' ').trim();

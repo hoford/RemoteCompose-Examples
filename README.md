@@ -19,6 +19,18 @@ makes, and means a second visit costs no network at all.
 
 The `.rc` files themselves are the payload, and most are under 50 KB.
 
+### Preview fidelity has a ceiling
+
+Previews render at the document's **declared** size and the resulting image is scaled down.
+Rendering small instead would re-flow the document — `componentWidth`/`componentHeight` change,
+so layout, text size and stroke widths are all recomputed for a canvas it was never designed
+for, which looks broken rather than merely small.
+
+That fixes clipping, but not everything. The browser player and `rc2image` disagree on roughly
+**half** the corpus (19 of a 40-document sample, mean pixel difference over 12). Where they
+disagree the thumbnail follows the browser, so some documents will look wrong at any
+resolution. `tools/compare_players.py` measures it.
+
 ## Querying scales, not just storage
 
 Filtering never touches the documents:

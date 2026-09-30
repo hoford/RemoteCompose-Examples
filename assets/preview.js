@@ -16,7 +16,7 @@
 const DB_NAME = 'rc-previews';
 const STORE = 'png';
 // Bump when the player or the capture path changes, so stale images are not served forever.
-export const PREVIEW_VERSION = 2;
+export const PREVIEW_VERSION = 3;
 
 // Every cache operation is raced against a timeout, and the cache is optional by construction.
 //
@@ -107,11 +107,43 @@ function stageEl() {
     return stage;
 }
 
-async function capture(rcUrl, w, h) {
+/** Longest edge the player is allowed to render at, before downscaling for display. */
+const MAX_RENDER = 1024;
+/** Used when a document declares no size of its own. */
+const FALLBACK_RENDER = 512;
+
+/**
+ * Downscale a rendered canvas into the display box, preserving aspect.
+ *
+ * Done as an image resize, NOT by rendering small. Playing a document at 320x320 re-flows it -
+ * componentWidth/componentHeight change, so layout, text sizes and stroke widths are all
+ * recomputed for a canvas the document was never designed for, and the result looks broken
+ * rather than merely small.
+ */
+function downscale(src, box) {
+    const scale = Math.min(box / src.width, box / src.height, 1);
+    const w = Math.max(1, Math.round(src.width * scale));
+    const h = Math.max(1, Math.round(src.height * scale));
+    const out = document.createElement('canvas');
+    out.width = w; out.height = h;
+    const g = out.getContext('2d');
+    g.imageSmoothingEnabled = true;
+    g.imageSmoothingQuality = 'high';
+    g.drawImage(src, 0, 0, w, h);
+    return out;
+}
+
+async function capture(rcUrl, native, box) {
     const host = document.createElement('div');
     stageEl().appendChild(host);
     let handle = null;
     try {
+        // Render at the document's own size, capped so a large one cannot allocate an
+        // enormous canvas for a 232px card.
+        let w = native.w || FALLBACK_RENDER, h = native.h || FALLBACK_RENDER;
+        const cap = Math.min(1, MAX_RENDER / Math.max(w, h));
+        w = Math.max(1, Math.round(w * cap));
+        h = Math.max(1, Math.round(h * cap));
         handle = RC.createPlayer(host, { width: w, height: h });
         await handle.loadFromArrayBuffer(await (await fetch(rcUrl)).arrayBuffer());
         handle.player.repaint();
@@ -124,7 +156,7 @@ async function capture(rcUrl, w, h) {
         // toDataURL encodes synchronously and has no callback to drop. WebP is worth asking
         // for: measured 4.8 KB against PNG's 50 KB for the same frame, and browsers that
         // cannot encode it silently hand back PNG, which is still correct.
-        const dataUrl = handle.canvas.toDataURL('image/webp');
+        const dataUrl = downscale(handle.canvas, box).toDataURL('image/webp');
         if (!dataUrl.startsWith('data:image/')) return null;
         return await (await fetch(dataUrl)).blob();
     } finally {
@@ -137,8 +169,8 @@ async function capture(rcUrl, w, h) {
 /**
  * Put a still preview of `id` into `imgEl`. Returns a cancel function.
  */
-export function preview(id, imgEl, size = 320) {
-    const key = `${id}|${size}|${PREVIEW_VERSION}`;
+export function preview(id, imgEl, size = 320, native = {}) {
+    const key = `${id}|${size}|${native.w || 0}x${native.h || 0}|${PREVIEW_VERSION}`;
     let cancelled = false;
     let dequeue = () => {};
 
@@ -150,7 +182,7 @@ export function preview(id, imgEl, size = 320) {
         dequeue = enqueue(async () => {
             if (cancelled) return;
             try {
-                const blob = await capture(`docs/${id}/doc.rc`, size, size);
+                const blob = await capture(`docs/${id}/doc.rc`, native, size);
                 if (cancelled || !blob) return;
                 imgEl.src = URL.createObjectURL(blob);
                 imgEl.dataset.state = 'rendered';
