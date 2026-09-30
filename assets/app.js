@@ -177,6 +177,7 @@ function paint() {
             `<div class="thumb"><img alt="">
                <div class="thumb-actions">
                  <button class="act play" title="Play here">▶</button>
+                 <a class="act full" title="Open full page">⤢</a>
                  <a class="act more" title="Open document">···</a>
                </div>
              </div><div class="meta"></div>`;
@@ -194,6 +195,7 @@ async function hydrate(i, entry) {
     const desc = stripTags(r.d);
     entry.el.title = desc;
     entry.el.querySelector('.more').href = href;
+    entry.el.querySelector('.full').href = `${href}&full=1`;
     entry.el.querySelector('.meta').innerHTML =
         `<a class="t" href="${href}">${esc(r.t)}</a>
          <div class="sub">${esc(r.s)}${r.w ? ` · ${r.w}×${r.h}` : ''} · ${(r.b / 1024).toFixed(1)} KB</div>

@@ -53,6 +53,36 @@ function applySize() {
     fitCanvas();
 }
 
+/**
+ * Full-page mode: the stage takes the whole viewport and everything else is hidden.
+ *
+ * Done with a class rather than the Fullscreen API. The API needs a user gesture, cannot be
+ * entered from a link, and drops out of the page entirely - which makes it impossible to land
+ * directly in this mode from a URL. A class works from ?full=1, survives reload, and still
+ * leaves the real Fullscreen key available to the browser.
+ */
+function setupFullPage() {
+    const btn = document.getElementById('fullpage');
+    const set = (on) => {
+        document.body.classList.toggle('fullpage', on);
+        btn.textContent = on ? '⤡ Exit full page' : '⤢ Full page';
+        btn.setAttribute('aria-pressed', String(on));
+        const u = new URL(location.href);
+        if (on) u.searchParams.set('full', '1'); else u.searchParams.delete('full');
+        history.replaceState(null, '', u);
+        // The frame changed size, so the canvas has to be re-fitted.
+        requestAnimationFrame(fitCanvas);
+    };
+    btn.onclick = () => set(!document.body.classList.contains('fullpage'));
+    addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.body.classList.contains('fullpage')) set(false);
+        else if (e.key === 'f' && !/input|select|textarea/i.test(e.target.tagName)) {
+            set(!document.body.classList.contains('fullpage'));
+        }
+    });
+    if (new URLSearchParams(location.search).get('full') === '1') set(true);
+}
+
 async function main() {
     if (!id) { document.getElementById('title').textContent = 'No document specified'; return; }
     const base = `docs/${id}`;
@@ -81,6 +111,7 @@ async function main() {
 
     document.getElementById('size').addEventListener('change', applySize);
     addEventListener('resize', fitCanvas);
+    setupFullPage();
 
     // The compiled document is binary, so it is download-only. Everything it was authored
     // from expands in place.

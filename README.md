@@ -53,6 +53,13 @@ already selected, and values that would yield none are greyed and inert. With AN
 facet it is otherwise easy to pick a combination nothing satisfies — `shaders` and `particles`
 share no document here — and an empty grid does not say whether that is a bug or the answer.
 
+## Full page
+
+A document opens full page from the ⤢ control on its page, the ⤢ action on a card, the `f`
+key, or `?full=1` on the URL. Escape leaves it. The mode is a class rather than the Fullscreen
+API: the API needs a user gesture and cannot be entered from a link, so it could not be reached
+from a card or a shared URL.
+
 ## Reading the source
 
 Each document page lists what it was authored from, and those files expand in place rather
