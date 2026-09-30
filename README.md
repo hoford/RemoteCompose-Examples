@@ -114,7 +114,13 @@ browsing too.
 
 `playground.html` — edit a document's JSON and watch it play. Buttons download the rendered
 PNG, the compiled `.rc`, or the JSON. Any document in the corpus that carries JSON can be
-loaded into it as a starting point.
+loaded into it as a starting point, and **Copy link** produces a URL carrying the document
+inline.
+
+It is also a machine interface, so a web AI can author RemoteCompose with nothing installed:
+`#doc=` and `?src=` supply a document, `?agent=1` and `?action=` shape the run, `#agent-output`
+carries a JSON result, `#preview-image` carries a PNG of the render, and
+`window.RemoteComposePlayground` exposes the same pipeline to script. See **[AGENTS.md](AGENTS.md)**.
 
 Nothing calls a server: `assets/json2rc.js` is the TypeScript converter bundled for the
 browser, so the page compiles JSON to wire bytes locally and hands them to the player. It is

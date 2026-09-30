@@ -36,25 +36,39 @@
   <section class="pg-left">
     <div class="pg-bar">
       <span class="pg-title">document.json</span>
-      <span id="status" class="pg-status"></span>
+      <span id="document-status" class="pg-status"></span>
       <button id="fmt" class="stage-btn">Format</button>
+      <button id="share" class="stage-btn" title="URL carrying this document">Copy link</button>
     </div>
-    <textarea id="src" spellcheck="false" autocomplete="off"></textarea>
-    <pre id="err" class="pg-err" hidden></pre>
+    <textarea id="document-editor" spellcheck="false" autocomplete="off"></textarea>
+    <pre id="validation-errors" class="pg-err" hidden></pre>
+    <pre id="validation-warnings" class="pg-warn" hidden></pre>
   </section>
 
   <section class="pg-right">
     <div class="pg-bar">
       <span class="pg-title">preview</span>
-      <span id="meta" class="pg-status"></span>
+      <span id="render-status" class="pg-status"></span>
       <button id="play" class="stage-btn">Pause</button>
       <div class="pg-dl">
-        <button id="dl-png" class="stage-btn">↓ PNG</button>
-        <button id="dl-rc" class="stage-btn">↓ .rc</button>
-        <button id="dl-json" class="stage-btn">↓ .json</button>
+        <button id="download-png" class="stage-btn">↓ PNG</button>
+        <button id="download-rc" class="stage-btn">↓ .rc</button>
+        <button id="download-json" class="stage-btn">↓ .json</button>
       </div>
     </div>
     <div class="frame" id="stage"><div id="player"></div></div>
+
+    <!-- The machine-facing surface. Always present and always current, so automation never
+         has to scrape the human UI; shown as a panel only in agent mode. -->
+    <section id="agent-panel" class="agent-panel" hidden>
+      <div class="agent-row">
+        <span>status <b id="document-state">idle</b></span>
+        <span>size <b><span id="document-width">–</span> × <span id="document-height">–</span></b></span>
+        <span>operations <b id="operation-count">–</b></span>
+      </div>
+      <img id="preview-image" alt="rendered document">
+      <pre id="agent-output">{}</pre>
+    </section>
   </section>
 </div>
 
@@ -68,7 +82,8 @@ if (location.protocol === 'file:') {
     'so nothing here can load.</p><pre>cd ' +
     '&lt;this folder&gt;\npython3 tools/rcx.py serve\n\n# then open\n' +
     'http://localhost:8000/playground.html</pre>' +
-    '<p><code>python3 -m http.server 8000</code> works just as well.</p></div>';
+    '<p><code>python3 -m http.server 8000</code> works just as well, or use the published ' +
+    'copy, which needs no server at all.</p></div>';
 }
 </script>
 <script type="module" src="assets/playground.js"></script>

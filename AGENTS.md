@@ -64,6 +64,98 @@ that demonstrates the operation — usually what you want when the question is "
 corpus has no example" apart from "this operation does not exist". Both are browsable at
 `ops.html`.
 
+## Authoring and checking a document — playground.html
+
+`playground.html` is a machine interface as well as a human one. It compiles, validates and
+renders entirely in the browser, so a web AI can author RemoteCompose with no install, no
+shell and no server.
+
+### Give it a document
+
+| URL | meaning |
+| :--- | :--- |
+| `playground.html#doc=<base64url>` | document inline in the fragment — **no CORS, always works** |
+| `playground.html#doc=<uri-encoded-json>` | same, plainer encoding |
+| `playground.html?src=<URL>` | fetch a document (the source must send CORS headers) |
+| `?agent=1` | machine-oriented view; the engine is identical |
+| `?action=validate` | parse, validate, do not render |
+| `?action=render` | validate and render (the default) |
+| `?action=inspect` | validate and report structure |
+
+The fragment is gzip-aware: base64url of gzipped JSON is detected by its magic bytes, which
+keeps long documents inside URL limits.
+
+### Read the result
+
+Everything lands in one element with a stable id:
+
+```html
+<pre id="agent-output">{ … }</pre>
+```
+
+```jsonc
+{
+  "status": "ready",              // loading|parsing|validating|compiling|rendering|ready|error
+  "valid": true,
+  "width": 300, "height": 300,
+  "operationCount": 3,
+  "operations": { "canvas": 1, "paint": 1, "drawCircle": 1 },
+  "features": ["animation", "expressions"],
+  "bytes": 122,                   // size of the compiled .rc
+  "errors": [], "warnings": [],
+  "previewImage": "#preview-image (4898 chars, image/png)"
+}
+```
+
+Wait for `status: "ready"` or `"error"` — or listen for the event, which fires only after
+load, validation, render and `#agent-output` are all current:
+
+```js
+window.addEventListener('remotecompose-ready', (e) => { e.detail; /* same object */ });
+```
+
+Errors carry a code, a JSON path and, where the converter named one, the operation:
+
+```jsonc
+{ "code": "PG1030", "path": "root.canvas.commands[0]",
+  "operation": "totallyMadeUpCommand", "message": "canvas command '…' is not supported" }
+```
+
+`PG1xxx` are errors, `PG2xxx` warnings. They are **this page's codes**, not an upstream
+RemoteCompose registry.
+
+### Stable ids
+
+`#agent-output` `#validation-errors` `#validation-warnings` `#preview-image`
+`#download-json` `#download-rc` `#download-png` `#document-editor` `#document-status`
+`#document-width` `#document-height` `#operation-count` `#render-status` `#document-state`
+
+`#preview-image` is a PNG data URL of exactly what the player is showing, so the rendered
+result can be looked at directly.
+
+### Or drive it from JavaScript
+
+```js
+const P = window.RemoteComposePlayground;
+await P.validate(json);   // { valid, errors, warnings }
+await P.inspect(json);    // + width, height, operationCount, operations, features
+await P.compile(json);    // Uint8Array of .rc bytes; throws if invalid
+await P.render(json);     // full result, preview updated
+P.previewPng();           // data:image/png;base64,…
+P.shareUrl(json);         // a #doc= URL carrying the document
+```
+
+These call the same pipeline the editor uses — there is no second implementation to drift.
+
+### Worth knowing
+
+**Compiling is the validation.** The converter refuses anything outside the implemented
+surface rather than guessing, so `valid: true` means the bytes exist and the player loaded
+them. It is not a promise that the document looks right — check `#preview-image`.
+
+**A document that compiles can still draw nothing.** `operationCount: 0` and a blank preview
+are the signals.
+
 ## Searching beyond the corpus
 
 `tools/rcgrep.py` finds documents by content across any tree — `--shaders`, `--3d`,
