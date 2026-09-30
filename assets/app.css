@@ -298,3 +298,18 @@ body.fullpage .stage { height: 100vh; padding: 10px 14px 14px; }
 body.fullpage .frame { border-radius: 10px; }
 .quick.pinned { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); font-weight: 600; }
 .quick.pinned.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ── curation page ── */
+.cbar-right { margin-left: auto; display: flex; align-items: center; gap: 12px; flex: none; }
+.pending { font-size: 12.5px; color: var(--dim); white-space: nowrap; }
+.commit { background: var(--accent); color: #fff; border: none; border-radius: 9px;
+          padding: 7px 13px; cursor: pointer; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.commit[disabled] { opacity: .45; cursor: default; }
+.banner { flex: none; background: var(--accent-soft); color: var(--accent);
+          border-bottom: 1px solid var(--line); padding: 9px 18px; font-size: 13px; }
+.banner code { background: transparent; border: 1px solid currentColor; opacity: .85; }
+.act.star { background: rgba(20,26,36,.7); }
+.act.star.on { background: var(--accent); }
+/* The star stays visible once set - a featured card must be identifiable without hovering. */
+.card.is-featured { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.card.is-featured .thumb-actions { opacity: 1; }

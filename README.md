@@ -101,12 +101,18 @@ are stored for deduplication but never used as identity.
 tools/curate.py            # then open http://127.0.0.1:8900/curate
 ```
 
-A local UI for marking documents `#featured`: star them, then one button rebuilds the catalog
-and commits as "featured update". Nothing is pushed.
+`curate.html` is the explore page plus a star on each card and a commit button: star what you
+want, then one button rebuilds the catalog and commits as "featured update". Nothing is pushed.
 
-It binds to 127.0.0.1 only — it writes `entry.json` files and runs git — and its page is served
-from the tool rather than added to the site, so the published site never carries controls that
-POST to a server that is not there.
+It is the *same page*. Filtering, search, sort, previews and the grid all come from
+`assets/gallery.js`, which the explore page uses too — the curation page only adds hooks for an
+extra card control and an extra filter predicate. So search and every facet work while curating.
+
+The page is committed and safe to publish. It probes for the local API and falls back to
+read-only when it is absent: no stars, no commit button, and a banner saying how to enable
+them. In that mode "Featured only" reads the `featured` tag from the catalog, so the published
+site still shows the selection. The server binds to 127.0.0.1 only, since it writes
+`entry.json` files and runs git.
 
 `featured` lives in `entry.json`'s `tags` rather than in the description text like other
 hashtags: it is a curation flag, not a statement about what the document draws. `rcx describe`
