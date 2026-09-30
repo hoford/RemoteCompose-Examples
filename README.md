@@ -95,6 +95,25 @@ tool run, and derived facts cannot drift from the documents they describe.
 IDs are `<collection>/<slug>` — readable, stable across recompiles, and citable. Content hashes
 are stored for deduplication but never used as identity.
 
+## Curating the featured set
+
+```sh
+tools/curate.py            # then open http://127.0.0.1:8900/curate
+```
+
+A local UI for marking documents `#featured`: star them, then one button rebuilds the catalog
+and commits as "featured update". Nothing is pushed.
+
+It binds to 127.0.0.1 only — it writes `entry.json` files and runs git — and its page is served
+from the tool rather than added to the site, so the published site never carries controls that
+POST to a server that is not there.
+
+`featured` lives in `entry.json`'s `tags` rather than in the description text like other
+hashtags: it is a curation flag, not a statement about what the document draws. `rcx describe`
+preserves existing tags, so it survives a re-describe. On the site it is pinned as the first
+filter chip regardless of count — it is deliberately the smallest tag, so ranking it by
+document count would bury it.
+
 ## Tools
 
 ```sh

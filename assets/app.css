@@ -296,3 +296,5 @@ body.fullpage .doc-page { overflow: hidden; }
    reachable without leaving the mode. */
 body.fullpage .stage { height: 100vh; padding: 10px 14px 14px; }
 body.fullpage .frame { border-radius: 10px; }
+.quick.pinned { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); font-weight: 600; }
+.quick.pinned.on { background: var(--accent); border-color: var(--accent); color: #fff; }

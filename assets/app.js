@@ -38,6 +38,7 @@ const KIND_LABEL = { source: 'Source', authoring: 'Authored in', flag: 'Features
 const KIND_ORDER = ['source', 'authoring', 'flag', 'api', 'tag'];
 const FACET_VISIBLE = 8;
 const QUICK_CHIPS = 11;
+const PINNED_TAG = 'featured';
 
 // ── postings ─────────────────────────────────────────────────────────────────
 
@@ -244,7 +245,13 @@ function renderFacets() {
     for (const kind of KIND_ORDER) {
         const vals = S.facets[kind];
         if (!vals || !Object.keys(vals).length) continue;
-        const entries = Object.entries(vals).sort((a, b) => b[1].n - a[1].n);
+        const entries = Object.entries(vals).sort((a, b) => {
+            if (kind === 'tag') {
+                if (a[0] === PINNED_TAG) return -1;
+                if (b[0] === PINNED_TAG) return 1;
+            }
+            return b[1].n - a[1].n;
+        });
 
         const sec = document.createElement('section');
         sec.className = 'facet-sec';
@@ -365,10 +372,16 @@ function syncQuickChip(value, on) {
 
 function renderQuickChips() {
     const host = document.getElementById('quickchips');
-    const top = Object.entries(S.facets.tag || {})
-        .sort((a, b) => b[1].n - a[1].n).slice(0, QUICK_CHIPS);
-    host.innerHTML = top.map(([v]) =>
-        `<button class="quick" data-v="${esc(v)}">${esc(v)}</button>`).join('');
+    const tags = Object.entries(S.facets.tag || {});
+    // `featured` is pinned first regardless of count. It is a curated selection, not a
+    // description of content, so ranking it by document count would bury it: it is deliberately
+    // the smallest tag in the corpus.
+    const pinned = tags.filter(([v]) => v === PINNED_TAG);
+    const rest = tags.filter(([v]) => v !== PINNED_TAG)
+        .sort((a, b) => b[1].n - a[1].n).slice(0, QUICK_CHIPS - pinned.length);
+    host.innerHTML = [...pinned, ...rest].map(([v]) =>
+        `<button class="quick${v === PINNED_TAG ? ' pinned' : ''}" data-v="${esc(v)}">${
+            v === PINNED_TAG ? '★ ' : ''}${esc(v)}</button>`).join('');
     host.querySelectorAll('.quick').forEach((b) => {
         b.onclick = () => {
             const v = b.dataset.v;
