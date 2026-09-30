@@ -32,43 +32,64 @@
   </div>
 </header>
 
+<!-- The machine-facing surface: ordinary visible text and a real <img>, never hidden and
+     never console-only, so a reader that cannot run scripts still gets everything. In the
+     human view it sits below the fold rather than being display:none, because hiding it is
+     exactly what the contract forbids. -->
+<main id="agent-interface">
+  <h1 class="ai-h">REMOTE COMPOSE AGENT INTERFACE</h1>
+
+  <h2 class="ai-h">STATUS</h2>
+  <p id="document-state" class="ai-state">idle</p>
+
+  <h2 class="ai-h">VALIDATION</h2>
+  <pre id="agent-output">{ "status": "idle" }</pre>
+  <pre id="validation-errors" class="ai-block"></pre>
+  <pre id="validation-warnings" class="ai-block"></pre>
+
+  <h2 class="ai-h">DOCUMENT</h2>
+  <p class="ai-facts">
+    size <b><span id="document-width">–</span> × <span id="document-height">–</span></b> ·
+    operations <b id="operation-count">–</b> ·
+    compile <b id="document-status">–</b> ·
+    render <b id="render-status">–</b>
+  </p>
+
+  <h2 class="ai-h">PREVIEW</h2>
+  <img id="preview-image" alt="Rendered RemoteCompose document"
+       src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+
+  <h2 class="ai-h">DOWNLOADS</h2>
+  <p class="ai-dl">
+    <a id="download-json" download="document.json" href="#">document.json</a>
+    <a id="download-rc" download="document.rc" href="#">document.rc</a>
+    <a id="download-png" download="document.png" href="#">document.png</a>
+  </p>
+</main>
+
 <div class="pg">
   <section class="pg-left">
     <div class="pg-bar">
       <span class="pg-title">document.json</span>
-      <span id="document-status" class="pg-status"></span>
+      <span id="editor-status" class="pg-status"></span>
       <button id="fmt" class="stage-btn">Format</button>
       <button id="share" class="stage-btn" title="URL carrying this document">Copy link</button>
     </div>
     <textarea id="document-editor" spellcheck="false" autocomplete="off"></textarea>
-    <pre id="validation-errors" class="pg-err" hidden></pre>
-    <pre id="validation-warnings" class="pg-warn" hidden></pre>
   </section>
 
   <section class="pg-right">
     <div class="pg-bar">
       <span class="pg-title">preview</span>
-      <span id="render-status" class="pg-status"></span>
+      <span id="player-status" class="pg-status"></span>
       <button id="play" class="stage-btn">Pause</button>
       <div class="pg-dl">
-        <button id="download-png" class="stage-btn">↓ PNG</button>
-        <button id="download-rc" class="stage-btn">↓ .rc</button>
-        <button id="download-json" class="stage-btn">↓ .json</button>
+        <button id="btn-png" class="stage-btn">↓ PNG</button>
+        <button id="btn-rc" class="stage-btn">↓ .rc</button>
+        <button id="btn-json" class="stage-btn">↓ .json</button>
       </div>
     </div>
     <div class="frame" id="stage"><div id="player"></div></div>
-
-    <!-- The machine-facing surface. Always present and always current, so automation never
-         has to scrape the human UI; shown as a panel only in agent mode. -->
-    <section id="agent-panel" class="agent-panel" hidden>
-      <div class="agent-row">
-        <span>status <b id="document-state">idle</b></span>
-        <span>size <b><span id="document-width">–</span> × <span id="document-height">–</span></b></span>
-        <span>operations <b id="operation-count">–</b></span>
-      </div>
-      <img id="preview-image" alt="rendered document">
-      <pre id="agent-output">{}</pre>
-    </section>
   </section>
 </div>
 

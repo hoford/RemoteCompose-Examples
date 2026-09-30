@@ -364,3 +364,44 @@ body.fullpage .frame { border-radius: 10px; }
 body.agent-mode .topnav, body.agent-mode .searchwrap, body.agent-mode #share,
 body.agent-mode #fmt { display: none; }
 body.agent-mode .pg-right .frame { max-height: 34vh; }
+
+/* ── agent interface ── */
+/* Never display:none and never visibility:hidden — the contract requires this to be ordinary
+   visible text. In the human view it simply sits after the editor. */
+/* display:block overrides the global `main { display:flex }`, which is a row and laid the
+   whole agent interface out side by side. */
+#agent-interface { display: block; flex: none; padding: 14px 18px 20px;
+                   border-bottom: 1px solid var(--line); background: var(--panel);
+                   font-size: 13px; overflow-y: auto; }
+.ai-h { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim);
+        margin: 14px 0 5px; font-weight: 700; }
+.ai-h:first-child { margin-top: 0; font-size: 12.5px; color: var(--fg); }
+.ai-state { margin: 0; font-family: ui-monospace, monospace; font-size: 14px; font-weight: 600; }
+.ai-facts { margin: 0; color: var(--dim); font-size: 12.5px; }
+.ai-facts b { color: var(--fg); font-variant-numeric: tabular-nums; }
+#agent-output, .ai-block {
+  margin: 0 0 6px; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line);
+  border-radius: 8px; font-family: ui-monospace, monospace; font-size: 11.5px;
+  line-height: 1.5; white-space: pre-wrap; max-height: 320px; overflow: auto;
+}
+.ai-block { font-size: 11px; color: var(--dim); }
+#preview-image { max-width: 320px; max-height: 240px; border: 1px solid var(--line);
+                 border-radius: 8px; display: block; background: var(--bg); }
+.ai-dl { margin: 0; display: flex; gap: 10px; flex-wrap: wrap; }
+.ai-dl a { font-size: 12.5px; border: 1px solid var(--line); border-radius: 7px;
+           padding: 4px 11px; text-decoration: none; }
+.ai-dl a:hover { border-color: var(--accent); color: var(--accent); }
+.ai-dl a:not([href]) { opacity: .45; }
+/* Agent mode: the text interface is the page. The editor and player stay present because the
+   render has to happen, but they stop competing for attention. */
+body.agent-mode .topnav, body.agent-mode .searchwrap,
+body.agent-mode #share, body.agent-mode #fmt { display: none; }
+body.agent-mode #agent-interface { max-height: 62vh; }
+body.agent-mode .pg { max-height: 38vh; }
+body.agent-mode .pg-right .frame { max-height: 26vh; }
+/* In agent mode the result block is capped so PREVIEW and DOWNLOADS stay on screen; the JSON
+   scrolls within its own box rather than pushing the rest of the contract out of view. */
+body.agent-mode #agent-output { max-height: 190px; }
+body.agent-mode #preview-image { max-height: 150px; }
+body.agent-mode #agent-interface { max-height: 70vh; }
+body.agent-mode .pg { max-height: 30vh; }

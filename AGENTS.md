@@ -70,6 +70,23 @@ corpus has no example" apart from "this operation does not exist". Both are brow
 renders entirely in the browser, so a web AI can author RemoteCompose with no install, no
 shell and no server.
 
+### Check the interface first
+
+```
+playground.html?agent=1&test=1
+```
+
+Loads a small built-in document, validates, renders and reports:
+
+```jsonc
+{ "status": "ready", "valid": true, "test": "agent-interface", "result": "pass",
+  "rendered": true, "previewAvailable": true, "errors": [], "warnings": [] }
+```
+
+`"result": "pass"` means the whole path worked — not merely that the document compiled, but
+that it rendered and produced a preview. The test document uses no clock, no randomness, no
+network and no external font, so it gives the same answer every run.
+
 ### Give it a document
 
 | URL | meaning |
@@ -87,7 +104,11 @@ keeps long documents inside URL limits.
 
 ### Read the result
 
-Everything lands in one element with a stable id:
+Everything is ordinary visible text under `<main id="agent-interface">` — headed STATUS,
+VALIDATION, DOCUMENT, PREVIEW, DOWNLOADS. Nothing that matters is hidden, console-only, or
+reachable only by running script.
+
+The result lands in one element with a stable id:
 
 ```html
 <pre id="agent-output">{ … }</pre>
@@ -103,9 +124,17 @@ Everything lands in one element with a stable id:
   "features": ["animation", "expressions"],
   "bytes": 122,                   // size of the compiled .rc
   "errors": [], "warnings": [],
-  "previewImage": "#preview-image (4898 chars, image/png)"
+  "previewImage": "#preview-image (4898 chars, image/png)",
+  "source": "inline",             // inline | src | test | editor
+  "rendered": true,
+  "previewAvailable": true,
+  "downloads": { "json": true, "rc": true, "png": true }
 }
 ```
+
+`status` reaches **`ready`** whenever the document was read, whether or not it validated —
+check `valid`. `status: "error"` means the document could not be obtained or decoded at all
+(a failed fetch, an undecodable fragment), so there is nothing to be valid or invalid about.
 
 Wait for `status: "ready"` or `"error"` — or listen for the event, which fires only after
 load, validation, render and `#agent-output` are all current:
@@ -126,9 +155,14 @@ RemoteCompose registry.
 
 ### Stable ids
 
-`#agent-output` `#validation-errors` `#validation-warnings` `#preview-image`
-`#download-json` `#download-rc` `#download-png` `#document-editor` `#document-status`
-`#document-width` `#document-height` `#operation-count` `#render-status` `#document-state`
+`#agent-interface` `#agent-output` `#validation-errors` `#validation-warnings`
+`#preview-image` `#download-json` `#download-rc` `#download-png` `#document-editor`
+`#document-status` `#document-width` `#document-height` `#operation-count` `#render-status`
+`#document-state`
+
+The three downloads are real `<a download>` links carrying object URLs, so they can be read
+and followed straight from the DOM. `#validation-errors` and `#validation-warnings` always
+carry text — `(no errors)` when there are none — rather than being hidden.
 
 `#preview-image` is a PNG data URL of exactly what the player is showing, so the rendered
 result can be looked at directly.

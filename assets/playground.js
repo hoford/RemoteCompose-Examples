@@ -23,6 +23,8 @@ const state = {
     handle: null,
     playing: true,
     name: 'document',
+    source: 'editor',
+    lastPng: null,
     result: {},
     agent: false,
 };
@@ -237,6 +239,15 @@ async function decodeDoc(raw) {
 
 // ── DOM plumbing ─────────────────────────────────────────────────────────────
 
+/**
+ * Publish a lifecycle transition.
+ *
+ * `error` means the document could not be OBTAINED or decoded - a fetch that failed, a
+ * fragment that would not decode. A document that loads but does not validate still reaches
+ * `ready` with `valid: false`, because the pipeline ran to completion and the answer is the
+ * error list. Reporting those as `error` would leave a reader unable to tell "I could not
+ * look at your document" from "I looked, and here is what is wrong with it".
+ */
 function setState(status, extra = {}) {
     state.status = status;
     // `status` last. Spreading it first let the previous value in state.result overwrite it,
@@ -254,13 +265,61 @@ function publish() {
     $('agent-output').textContent = JSON.stringify(state.result, null, 2);
 }
 
+function setStatusText(text, ok) {
+    for (const id of ['document-status', 'editor-status']) {
+        $(id).textContent = text;
+        $(id).className = id === 'editor-status' ? `pg-status ${ok ? 'ok' : 'bad'}` : '';
+    }
+}
+
+/** Last transition: fill in the fields §10 asks for, then publish. */
+function finish(status, extra = {}) {
+    updateDownloads();
+    setState(status, {
+        source: state.source,
+        downloads: {
+            json: !!$('download-json').href && !$('download-json').href.endsWith('#'),
+            rc: !!state.bytes,
+            png: !!state.lastPng,
+        },
+        ...extra,
+    });
+}
+
+/**
+ * Point the download anchors at real object URLs.
+ *
+ * They are <a download> rather than buttons so the contract can be satisfied by reading the
+ * DOM: a reader that cannot run scripts still sees three working links.
+ */
+function updateDownloads() {
+    const put = (id, blob, name) => {
+        const a = $(id);
+        if (a.dataset.url) URL.revokeObjectURL(a.dataset.url);
+        if (!blob) { a.removeAttribute('href'); a.dataset.url = ''; return; }
+        const url = URL.createObjectURL(blob);
+        a.href = url; a.dataset.url = url; a.download = name;
+    };
+    put('download-json', new Blob([$('document-editor').value], { type: 'application/json' }),
+        `${state.name}.json`);
+    put('download-rc', state.bytes
+        ? new Blob([state.bytes], { type: 'application/octet-stream' }) : null,
+        `${state.name}.rc`);
+    if (state.lastPng) {
+        $('download-png').href = state.lastPng;
+        $('download-png').download = `${state.name}.png`;
+    } else {
+        $('download-png').removeAttribute('href');
+    }
+}
+
 function showDiagnostics(errors, warnings) {
     const fmt = (list) => list.map((e) =>
         `${e.code}  ${e.path ? e.path + ' — ' : ''}${e.message}`).join('\n');
-    $('validation-errors').hidden = errors.length === 0;
-    $('validation-errors').textContent = fmt(errors);
-    $('validation-warnings').hidden = warnings.length === 0;
-    $('validation-warnings').textContent = fmt(warnings);
+    // Written as text even when empty. Hiding them would put the agent interface behind a
+    // display rule, which is the one thing the contract rules out.
+    $('validation-errors').textContent = errors.length ? fmt(errors) : '(no errors)';
+    $('validation-warnings').textContent = warnings.length ? fmt(warnings) : '(no warnings)';
 }
 
 function fit(w, h) {
@@ -310,9 +369,9 @@ async function process(text, { render = true, emit = true } = {}) {
     } catch (e) {
         const errors = [err(CODE.JSON_SYNTAX, e.message, { path: '' })];
         showDiagnostics(errors, []);
-        setState('error', { valid: false, stage: 'parse', errors, warnings: [] });
-        $('document-status').textContent = 'invalid JSON';
-        $('document-status').className = 'pg-status bad';
+        finish('ready', { valid: false, stage: 'parse', errors, warnings: [],
+                          rendered: false, previewAvailable: false });
+        setStatusText('invalid JSON', false);
         if (emit) done();
         return state.result;
     }
@@ -348,9 +407,8 @@ async function process(text, { render = true, emit = true } = {}) {
 
     const valid = errors.length === 0;
     showDiagnostics(errors, warnings);
-    $('document-status').textContent = valid
-        ? `${bytes.length.toLocaleString()} bytes` : `${errors.length} error(s)`;
-    $('document-status').className = `pg-status ${valid ? 'ok' : 'bad'}`;
+    setStatusText(valid ? `${bytes.length.toLocaleString()} bytes`
+                        : `${errors.length} error(s)`, valid);
 
     Object.assign(state.result, {
         valid, errors, warnings,
@@ -362,14 +420,15 @@ async function process(text, { render = true, emit = true } = {}) {
     });
 
     if (!valid) {
-        setState('error', { stage: 'validate' });
+        finish('ready', { stage: 'validate', rendered: false, previewAvailable: false });
         $('render-status').textContent = 'not rendered';
+        $('player-status').textContent = 'not rendered';
         if (emit) done();
         return state.result;
     }
 
     if (!render) {
-        setState('ready');
+        finish('ready', { rendered: false, previewAvailable: false });
         if (emit) done();
         return state.result;
     }
@@ -381,12 +440,14 @@ async function process(text, { render = true, emit = true } = {}) {
         await state.handle.loadFromArrayBuffer(
             bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength));
         fit(w, ht);
-        $('render-status').textContent = `${w} × ${ht}`;
+            $('render-status').textContent = `${w} × ${ht}`;
+        $('player-status').textContent = `${w} × ${ht}`;
         if (!state.playing) state.handle.player.stop();
     } catch (e) {
         const errs = [err(CODE.PLAYER, `compiled, but the player could not load it: ${e.message}`)];
         showDiagnostics(errs, warnings);
-        setState('error', { stage: 'render', valid: true, errors: errs });
+        finish('ready', { stage: 'render', valid: false, errors: errs,
+                          rendered: false, previewAvailable: false });
         if (emit) done();
         return state.result;
     }
@@ -395,11 +456,12 @@ async function process(text, { render = true, emit = true } = {}) {
     // before that is blank - which an agent would read as a broken document.
     await new Promise((r) => setTimeout(r, 60));
     const png = snapshot();
+    state.lastPng = png || null;
     if (png) {
         $('preview-image').src = png;
         state.result.previewImage = `#preview-image (${png.length} chars, image/png)`;
     }
-    setState('ready');
+    finish('ready', { rendered: true, previewAvailable: !!png });
     if (emit) done();
     return state.result;
 }
@@ -428,10 +490,25 @@ async function fromUrl() {
     const action = (q.get('action') || 'render').toLowerCase();
     const render = action !== 'validate' && action !== 'inspect';
 
+    if (q.get('test') === '1') {
+        state.source = 'test';
+        state.name = 'agent-test';
+        const text = JSON.stringify(TEST_DOC, null, 2);
+        $('document-editor').value = text;
+        const r = await process(text, { render: true, emit: false });
+        // "pass" means the whole interface worked, not merely that the document compiled:
+        // it must also have rendered and produced a preview an agent can look at.
+        const pass = r.valid && r.rendered && r.previewAvailable;
+        setState('ready', { test: 'agent-interface', result: pass ? 'pass' : 'fail' });
+        done();
+        return true;
+    }
+
     const src = q.get('src');
     const docParam = hash.get('doc') || q.get('doc');
 
     if (docParam) {
+        state.source = 'inline';
         setState('loading');
         let text;
         try {
@@ -439,7 +516,9 @@ async function fromUrl() {
         } catch (e) {
             const errors = [err(CODE.DECODE, e.message)];
             showDiagnostics(errors, []);
-            setState('error', { stage: 'load', errors, warnings: [], valid: false });
+            setState('error', { stage: 'load', errors, warnings: [], valid: false,
+                                source: state.source, rendered: false,
+                                previewAvailable: false });
             done();
             return true;
         }
@@ -449,6 +528,7 @@ async function fromUrl() {
     }
 
     if (src) {
+        state.source = 'src';
         setState('loading');
         let text;
         try {
@@ -464,8 +544,9 @@ async function fromUrl() {
                 { path: 'src' })];
             showDiagnostics(errors, []);
             setState('error', {
-                stage: 'load', errorType: 'cors_or_network', source: src,
-                errors, warnings: [], valid: false,
+                stage: 'load', errorType: 'cors_or_network', source: state.source,
+                sourceUrl: src, errors, warnings: [], valid: false,
+                rendered: false, previewAvailable: false,
             });
             done();
             return true;
@@ -523,6 +604,26 @@ window.RemoteComposePlayground = {
 
 // ── boot ─────────────────────────────────────────────────────────────────────
 
+/**
+ * The ?test=1 document.
+ *
+ * Deterministic on purpose: no clock, no randomness, no network, no external font. It has to
+ * give the same bytes and the same pixels on every run, or a failing self-test would not tell
+ * a caller whether the interface or the document was at fault. Exercises parsing, validation,
+ * two drawing operations, text, rendering and preview extraction.
+ */
+const TEST_DOC = {
+    header: { apiLevel: 7, width: 200, height: 120, profiles: 513,
+              contentDescription: 'RemoteCompose AI Test' },
+    root: { canvas: { modifiers: ['fillMaxSize', { background: '#FF10141C' }], commands: [
+        { paint: { color: '#FF2F6BD8', style: 'fill', antiAlias: true } },
+        { drawCircle: { cx: 40.0, cy: 60.0, radius: 22.0 } },
+        { paint: { color: '#FFE7ECF3', style: 'fill', textSize: 18.0, antiAlias: true } },
+        { drawTextAnchored: { text: 'RemoteCompose AI Test',
+                              x: 100.0, y: 104.0, panX: 0.0, panY: 0.0 } },
+    ] } },
+};
+
 const DEFAULT_DOC = {
     header: { apiLevel: 7, width: 400, height: 400, profiles: 513,
               contentDescription: 'playground' },
@@ -560,7 +661,6 @@ async function main() {
     const q = new URLSearchParams(location.search);
     state.agent = q.get('agent') === '1';
     document.body.classList.toggle('agent-mode', state.agent);
-    $('agent-panel').hidden = !state.agent;
 
     let saved = null;
     try { saved = localStorage.getItem('rc-theme'); } catch {}
@@ -571,7 +671,7 @@ async function main() {
     let t;
     $('document-editor').addEventListener('input', () => {
         clearTimeout(t);
-        t = setTimeout(() => process($('document-editor').value), 350);
+        t = setTimeout(() => { state.source = 'editor'; process($('document-editor').value); }, 350);
     });
     $('fmt').onclick = () => {
         try {
@@ -593,14 +693,12 @@ async function main() {
         if (state.playing) process($('document-editor').value);
         else state.handle.player.stop();
     };
-    $('download-png').onclick = () => {
-        const url = snapshot();
-        if (url) fetch(url).then((r) => r.blob()).then((b) => save(b, `${state.name}.png`));
-    };
-    $('download-rc').onclick = () => state.bytes &&
-        save(new Blob([state.bytes], { type: 'application/octet-stream' }), `${state.name}.rc`);
-    $('download-json').onclick = () => save(
-        new Blob([$('document-editor').value], { type: 'application/json' }), `${state.name}.json`);
+    // The buttons click the anchors rather than repeating the download logic, so the human
+    // path and the agent-visible links can never produce different files.
+    for (const [btn, link] of [['btn-png', 'download-png'], ['btn-rc', 'download-rc'],
+                               ['btn-json', 'download-json']]) {
+        $(btn).onclick = () => { updateDownloads(); $(link).click(); };
+    }
     $('example').onchange = async (e) => {
         const id = e.target.value;
         if (!id) return;
