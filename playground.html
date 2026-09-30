@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playground — RemoteCompose Examples</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/player.js"></script>
+<script src="assets/json2rc.js"></script>
+</head>
+<body class="pg-body">
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">RemoteCompose</span>
+  </a>
+  <nav class="topnav">
+    <a href="index.html">Explore</a>
+    <a href="ops.html">Operations</a>
+    <a class="on" href="playground.html">Playground</a>
+    <a href="AGENTS.md">For agents</a>
+  </nav>
+  <div class="searchwrap">
+    <select id="example" class="pg-pick"><option value="">Load an example…</option></select>
+  </div>
+  <div class="topright">
+    <div class="segmented" role="group" aria-label="Theme">
+      <button id="theme-light" title="Light">☀</button>
+      <button id="theme-dark" title="Dark">☾</button>
+    </div>
+  </div>
+</header>
+
+<div class="pg">
+  <section class="pg-left">
+    <div class="pg-bar">
+      <span class="pg-title">document.json</span>
+      <span id="status" class="pg-status"></span>
+      <button id="fmt" class="stage-btn">Format</button>
+    </div>
+    <textarea id="src" spellcheck="false" autocomplete="off"></textarea>
+    <pre id="err" class="pg-err" hidden></pre>
+  </section>
+
+  <section class="pg-right">
+    <div class="pg-bar">
+      <span class="pg-title">preview</span>
+      <span id="meta" class="pg-status"></span>
+      <button id="play" class="stage-btn">Pause</button>
+      <div class="pg-dl">
+        <button id="dl-png" class="stage-btn">↓ PNG</button>
+        <button id="dl-rc" class="stage-btn">↓ .rc</button>
+        <button id="dl-json" class="stage-btn">↓ .json</button>
+      </div>
+    </div>
+    <div class="frame" id="stage"><div id="player"></div></div>
+  </section>
+</div>
+
+<script type="module" src="assets/playground.js"></script>
+</body>
+</html>

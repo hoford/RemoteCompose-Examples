@@ -95,6 +95,17 @@ tool run, and derived facts cannot drift from the documents they describe.
 IDs are `<collection>/<slug>` — readable, stable across recompiles, and citable. Content hashes
 are stored for deduplication but never used as identity.
 
+## Playground
+
+`playground.html` — edit a document's JSON and watch it play. Buttons download the rendered
+PNG, the compiled `.rc`, or the JSON. Any document in the corpus that carries JSON can be
+loaded into it as a starting point.
+
+Nothing calls a server: `assets/json2rc.js` is the TypeScript converter bundled for the
+browser, so the page compiles JSON to wire bytes locally and hands them to the player. It is
+the same converter verified byte-identical to `rcj` over the corpus, which is itself verified
+against the Java parser — so what the playground compiles is what the toolchain compiles.
+
 ## Curating the featured set
 
 ```sh
