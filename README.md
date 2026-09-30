@@ -95,6 +95,21 @@ tool run, and derived facts cannot drift from the documents they describe.
 IDs are `<collection>/<slug>` — readable, stable across recompiles, and citable. Content hashes
 are stored for deduplication but never used as identity.
 
+## Running it locally
+
+Every page needs to be **served over HTTP**. Opened straight from disk the browser blocks ES
+modules and `fetch`, so the pages come up blank — that is the most common way this appears
+broken.
+
+```sh
+cd RemoteCompose-Examples
+python3 tools/rcx.py serve          # or: python3 -m http.server 8000
+open http://localhost:8000/playground.html
+```
+
+`tools/curate.py` serves the same tree on 8900 and adds the curation API, so it works for
+browsing too.
+
 ## Playground
 
 `playground.html` — edit a document's JSON and watch it play. Buttons download the rendered

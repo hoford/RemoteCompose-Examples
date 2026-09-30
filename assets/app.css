@@ -335,3 +335,9 @@ body.fullpage .frame { border-radius: 10px; }
           font-size: 12px; border-top: 1px solid var(--line); white-space: pre-wrap; }
 :root[data-theme="light"] .pg-err { background: #fdecea; color: #a1231b; }
 .pg-right .frame { flex: 1; margin: 14px; border-radius: var(--radius); }
+.pg-file-note { max-width: 620px; margin: 12vh auto; padding: 0 24px;
+                font-size: 14px; line-height: 1.6; }
+.pg-file-note h2 { font-size: 19px; margin: 0 0 10px; }
+.pg-file-note pre { background: var(--panel); border: 1px solid var(--line);
+                    border-radius: 10px; padding: 12px 14px; overflow-x: auto;
+                    font-family: ui-monospace, monospace; font-size: 12.5px; }

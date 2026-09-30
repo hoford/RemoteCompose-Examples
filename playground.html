@@ -58,6 +58,19 @@
   </section>
 </div>
 
+<!-- Opened from file://, ES modules and fetch are both blocked, so the page below never
+     runs and simply appears blank. Say so rather than failing silently. -->
+<script>
+if (location.protocol === 'file:') {
+  document.body.innerHTML =
+    '<div class="pg-file-note"><h2>Serve this over HTTP</h2>' +
+    '<p>Opened straight from disk, the browser blocks ES modules and <code>fetch</code>, ' +
+    'so nothing here can load.</p><pre>cd ' +
+    '&lt;this folder&gt;\npython3 tools/rcx.py serve\n\n# then open\n' +
+    'http://localhost:8000/playground.html</pre>' +
+    '<p><code>python3 -m http.server 8000</code> works just as well.</p></div>';
+}
+</script>
 <script type="module" src="assets/playground.js"></script>
 </body>
 </html>
