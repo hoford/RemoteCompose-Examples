@@ -112,12 +112,27 @@ how an author ends up debugging a difference that was never the problem:
 |---|---|---|
 | root | an object — `"root": { "canvas": … }` | a list of components |
 | command | keyed by name — `{ "drawCircle": {…} }` | `{ "type": "drawCircle", … }` |
-| paint | one `{ "paint": { "color": …, "style": … } }` command | `setColor` / `setStyle` / `setStrokeWidth` ops |
+| paint | `{ "paint": { "ops": [ {"color": …}, {"style": …} ] } }` | direct keys on the paint object |
 
-In this corpus the object root outnumbers the list root 256 to 237 and the `paint` object
-outnumbers `setColor` ops 334 to 2, so the majority of what you will read already follows it.
-21 documents are additionally wrapped in `{name, description, json}`; that wrapper is unwrapped
-automatically, so keep it or drop it as you like.
+In this corpus the object root outnumbers the list root 256 to 237, and 332 documents use
+`paint.ops` against 154 using direct keys. 21 are additionally wrapped in
+`{name, description, json}`; that wrapper is unwrapped automatically, so keep it or drop it.
+
+**The paint row is not a style preference.** The two forms differ in what they accept and in
+how they fail:
+
+| | `paint: { ops: [ … ] }` | `paint: { … }` direct |
+|---|---|---|
+| properties | all 11, including `alpha`, `linearGradient`, `pathEffect` | 8 — those three are rejected |
+| applied | in the order you wrote them | in a fixed internal order, whatever you wrote |
+| unknown key | **raises** — you find out at once | **compiles and is silently dropped** |
+
+So the direct form can quietly ignore `antiAlias`, `typeface`, `fontWeight`, `blendMode` or a
+typo like `styl`, while still reporting `valid: true`. In the `ops` form the same key is an
+error. Use `ops` and that whole class of bug becomes impossible; the playground warns
+(`PG2030`, with a did-you-mean) if you use the direct form anyway.
+
+`strokeWidth` and `runtimeShader` are accepted spellings of `width` and `shader` in both forms.
 
 ### What it will not do
 
@@ -129,12 +144,15 @@ rather than after:
 * **AGSL/SkSL shader source in JSON** — the shader documents in this corpus carry their source
   in `DATA_TEXT`, placed by a different tool.
 * **Themed (light/dark pair) colours on canvas paint.**
-* **`typeface`, `fontWeight`, `fontStyle` on canvas paint.**
+* **`typeface`, `fontWeight`, `fontStyle` on canvas paint** — text size is settable, the face
+  is not. In the direct-key form these vanish silently; in `ops` they raise.
 
-`alpha`, `linearGradient` and `pathEffect` as direct paint keys are **rejected with a message**,
-which is the harmless case. The dangerous case is any paint key the parser has never heard of:
-it compiles, reports valid, and is silently dropped. `schema.json`'s `paint.accepted` is the
-whole list that survives, and the playground warns (`PG2030`) on anything else.
+Note what is *not* on that list. `alpha`, `linearGradient` and `pathEffect` all work — in the
+`ops` form. As direct keys they are rejected, with an error that tells you to move them into an
+`ops` array. Opacity and gradients are available; only the direct spelling of them is not.
+
+`antiAlias`, `blendMode` and `colorFilter` are the reverse trap: no form implements them, and
+the direct form drops them without a word.
 
 ## Without a browser — tools/rc.mjs
 

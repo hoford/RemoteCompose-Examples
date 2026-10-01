@@ -104,24 +104,36 @@ function unwrap(doc) {
  * well as invisible. Reported as warnings, because the document is still usable.
  */
 function unknownKeyWarnings(doc, schema) {
-    if (!schema) return [];
+    const paint = schema && schema.paint;
+    if (!paint || !paint.direct || !paint.ops) return [];
     const out = [];
-    const rejected = new Set((schema.paint && schema.paint.rejectedWithMessage) || []);
-    const accepted = new Set((schema.paint && schema.paint.accepted) || []);
-    const walk = (node, path, inPaint) => {
+
+    // Only the direct-key form can lose a key silently, so only it needs warning about. In
+    // the ops form an unknown key raises and is already reported as an error - warning about
+    // it too would just duplicate the message.
+    const direct = new Set(paint.direct.accepted || []);
+    const directRaises = new Set(paint.direct.rejectedWithMessage || []);
+    const opsOnly = new Set((paint.ops.accepted || []).filter((k) => !direct.has(k)));
+    // strokeWidth and runtimeShader are spellings of accepted keys, not unknown ones.
+    for (const alias of Object.keys(paint.aliases || {})) direct.add(alias);
+    const known = (k) => direct.has(k) || direct.has(k.toLowerCase());
+
+    const walk = (node, path, inDirectPaint) => {
         if (!node || typeof node !== 'object') return;
-        if (Array.isArray(node)) return node.forEach((v, i) => walk(v, `${path}[${i}]`, inPaint));
+        if (Array.isArray(node)) {
+            return node.forEach((v, i) => walk(v, `${path}[${i}]`, inDirectPaint));
+        }
         for (const [k, v] of Object.entries(node)) {
             const p = path ? `${path}.${k}` : k;
-            // Only the unknown keys need warning about. The ones in rejectedWithMessage
-            // raise during compile and already appear as errors, so repeating them here
-            // would be noise.
-            if (inPaint && !accepted.has(k) && !rejected.has(k)) {
-                out.push(err(CODE.UNKNOWN_KEY,
-                    `"${k}" is not a paint key the converter reads, so it compiles and is ` +
-                    `silently dropped`, { path: p }));
+            if (inDirectPaint && k !== 'ops' && !known(k) && !directRaises.has(k)) {
+                out.push(err(CODE.UNKNOWN_KEY, opsOnly.has(k)
+                    ? `"${k}" is only read inside an "ops" array; as a direct key it compiles `
+                      + `and is silently dropped`
+                    : `"${k}" is not a paint property the converter reads, so it compiles and `
+                      + `is silently dropped`, { path: p, didYouMean: nearest(k, [...direct]) }));
             }
-            walk(v, p, k === 'paint');
+            // A paint command is in direct-key form unless it uses `ops`.
+            walk(v, p, k === 'paint' && !!v && typeof v === 'object' && !('ops' in v));
         }
     };
     walk(doc, '', false);
@@ -927,9 +939,9 @@ const TEST_DOC = {
     header: { apiLevel: 7, width: 200, height: 120, profiles: 513,
               contentDescription: 'RemoteCompose AI Test' },
     root: { canvas: { modifiers: ['fillMaxSize', { background: '#FF10141C' }], commands: [
-        { paint: { color: '#FF2F6BD8', style: 'fill', antiAlias: true } },
+        { paint: { ops: [{ color: '#FF2F6BD8' }, { style: 'fill' }] } },
         { drawCircle: { cx: 40.0, cy: 60.0, radius: 22.0 } },
-        { paint: { color: '#FFE7ECF3', style: 'fill', textSize: 18.0, antiAlias: true } },
+        { paint: { ops: [{ color: '#FFE7ECF3' }, { style: 'fill' }, { textSize: 18.0 }] } },
         { drawTextAnchored: { text: 'RemoteCompose AI Test',
                               x: 100.0, y: 104.0, panX: 0.0, panY: 0.0 } },
     ] } },
@@ -939,10 +951,10 @@ const DEFAULT_DOC = {
     header: { apiLevel: 7, width: 400, height: 400, profiles: 513,
               contentDescription: 'playground' },
     root: { canvas: { modifiers: ['fillMaxSize', { background: '#FF10141C' }], commands: [
-        { paint: { color: '#FF2F6BD8', style: 'fill', antiAlias: true } },
+        { paint: { ops: [{ color: '#FF2F6BD8' }, { style: 'fill' }] } },
         { drawCircle: { cx: 200.0, cy: 200.0,
                         radius: '110 + sin(continuousSec() * 2) * 45' } },
-        { paint: { color: '#FFE7ECF3', style: 'fill', textSize: 26.0, antiAlias: true } },
+        { paint: { ops: [{ color: '#FFE7ECF3' }, { style: 'fill' }, { textSize: 26.0 }] } },
         { drawTextAnchored: { text: 'edit me', x: 200.0, y: 350.0, panX: 0.0, panY: 0.0 } },
     ] } },
 };

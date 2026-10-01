@@ -30,7 +30,7 @@
   },
   "canonicalForm": {
     "root": "object",
-    "paint": "a {\"paint\": {...}} command, not setColor/setStyle/setStrokeWidth",
+    "paint": "the ops array form - {\"paint\": {\"ops\": [...]}} - see `paint.whyOps`",
     "commandSpelling": "keyed by name - {\"drawCircle\": {...}} - not {\"type\": \"drawCircle\"}",
     "wrapper": "a {name, description, json} wrapper is unwrapped automatically"
   },
@@ -99,24 +99,50 @@
     "vectorexpression"
   ],
   "paint": {
-    "accepted": [
-      "antiAlias",
-      "blendMode",
-      "color",
-      "colorFilter",
-      "shader",
-      "strokeCap",
-      "strokeJoin",
-      "style",
-      "textSize",
-      "width"
-    ],
-    "rejectedWithMessage": [
-      "alpha",
-      "linearGradient",
-      "pathEffect"
-    ],
-    "silentlyDropped": "any key not in `accepted` - e.g. typeface, fontWeight. These compile and vanish: the document reports valid and simply does not do what was asked. The playground warns (PG2030)."
+    "recommended": "ops",
+    "whyOps": "In the ops form an unknown key RAISES, so a typo is an error. In the direct-key form an unknown key compiles and is silently dropped, and the document reports valid while quietly doing less than asked. The ops form also honours more properties, and applies them in written order.",
+    "ops": {
+      "form": "{\"paint\": {\"ops\": [{\"color\": \"#FF3366CC\"}, {\"style\": \"fill\"}]}}",
+      "accepted": [
+        "alpha",
+        "color",
+        "linearGradient",
+        "pathEffect",
+        "shader",
+        "strokeCap",
+        "strokeJoin",
+        "style",
+        "sweepGradient",
+        "textSize",
+        "width"
+      ],
+      "unknownKey": "raises NotImplementedComponent",
+      "order": "as written"
+    },
+    "direct": {
+      "form": "{\"paint\": {\"color\": \"#FF3366CC\", \"style\": \"fill\"}}",
+      "accepted": [
+        "shader",
+        "color",
+        "strokeJoin",
+        "strokeCap",
+        "style",
+        "width",
+        "textSize",
+        "sweepGradient"
+      ],
+      "rejectedWithMessage": [
+        "alpha",
+        "linearGradient",
+        "pathEffect"
+      ],
+      "silentlyDropped": "any other key - antiAlias, typeface, fontWeight, blendMode, colorFilter all compile here and vanish",
+      "order": "fixed: shader, color, strokeJoin, strokeCap, style, width, textSize, sweepGradient - not the order you write them"
+    },
+    "aliases": {
+      "strokewidth": "width",
+      "runtimeshader": "shader"
+    }
   },
   "expressions": {
     "functions": [
@@ -295,7 +321,7 @@
     "textMerge - no data-driven text composition; labels must be literals",
     "AGSL/SkSL shader source in JSON",
     "themed colours (light/dark pairs) on canvas paint",
-    "typeface, fontWeight or fontStyle on canvas paint",
+    "typeface, fontWeight, fontStyle, antiAlias, blendMode or colorFilter on canvas paint - note these are SILENTLY DROPPED in the direct-key form and raise in ops",
     "resource sections other than colors, floatArrays, variables, bitmaps",
     "any command not in `commands` - reported as \"canvas command '<lowercased>'\""
   ],

@@ -12,11 +12,12 @@ Two parts of the output matter as much as the accepted surface:
 
   refuses              constructs the converter rejects outright. Knowing these up front
                        changes a design; discovering them halfway through does not.
-  paint.accepted       probed by compiling a one-key document, not read off a table. Any
-                       paint key NOT in this list compiles and is silently dropped, which is
-                       the worst failure mode available: the document still reports valid and
-                       just does not do what was asked. `rejectedWithMessage` is the safe
-                       case - those three raise and say why.
+  paint                the TWO paint spellings and how they differ, which is not a style
+                       question: the ops form raises on an unknown key while the direct-key
+                       form silently drops it, and the ops form honours three properties the
+                       direct form rejects. Read from the parser's declared tables - probing
+                       by "does it compile" cannot tell honoured from dropped, which is what
+                       the first version of this file got wrong.
 """
 
 import json
@@ -51,41 +52,50 @@ def canonical_spellings():
     return seen
 
 
-def probe_paint_keys(rejected):
-    """Which paint keys actually survive a compile."""
-    import contextlib, io, json as _json
-    import rcj
-    base = {"header": {"apiLevel": 7, "width": 100, "height": 100, "profiles": 513},
-            "root": {"canvas": {"commands": [{"paint": {}},
-                     {"drawCircle": {"cx": 50, "cy": 50, "radius": 20}}]}}}
-    probe = {"color": "#FF112233", "style": "stroke", "width": 2.0, "strokeCap": "round",
-             "strokeJoin": "round", "textSize": 12.0, "antiAlias": True, "shader": "s",
-             "colorFilter": "x", "blendMode": "src", "sweepGradient": {}}
-    ok = []
-    for k, v in probe.items():
-        d = _json.loads(_json.dumps(base))
-        d["root"]["canvas"]["commands"][0]["paint"] = {k: v}
-        try:
-            with contextlib.redirect_stdout(io.StringIO()):
-                rcj.convert_doc(d)
-            ok.append(k)
-        except Exception:
-            pass
-    return sorted(set(ok) - set(rejected))
+def paint_surface():
+    """The two paint spellings, read from the parser's tables rather than probed.
+
+    Probing by "does it compile" cannot work here, and getting this wrong is what the schema
+    was wrong about on its first pass: in the direct-key form an UNKNOWN key compiles, so a
+    successful compile proves nothing about whether the key was honoured. The declared tables
+    are the only thing that distinguishes "read" from "silently dropped".
+    """
+    # Every key the ops form honours is a branch of _paint_setter; anything else raises.
+    setter = SRC[SRC.index("def _paint_setter("):SRC.index("def _gradient(")]
+    ops_keys = sorted(set(re.findall(r'key == "(\w+)"', setter)))
+
+    direct_keys = list(parser._PAINT_KEYS_ORDER)
+    direct_raises = sorted(parser._PAINT_KEYS_IGNORED)
+    aliases = dict(parser._PAINT_KEY_ALIASES)
+
+    return {
+        # Stated first because it is the choice that decides whether a mistake is loud.
+        "recommended": "ops",
+        "whyOps": "In the ops form an unknown key RAISES, so a typo is an error. In the "
+                  "direct-key form an unknown key compiles and is silently dropped, and the "
+                  "document reports valid while quietly doing less than asked. The ops form "
+                  "also honours more properties, and applies them in written order.",
+        "ops": {
+            "form": '{"paint": {"ops": [{"color": "#FF3366CC"}, {"style": "fill"}]}}',
+            "accepted": ops_keys,
+            "unknownKey": "raises NotImplementedComponent",
+            "order": "as written",
+        },
+        "direct": {
+            "form": '{"paint": {"color": "#FF3366CC", "style": "fill"}}',
+            "accepted": direct_keys,
+            "rejectedWithMessage": direct_raises,
+            "silentlyDropped": "any other key - antiAlias, typeface, fontWeight, blendMode, "
+                               "colorFilter all compile here and vanish",
+            "order": "fixed: " + ", ".join(direct_keys) + " - not the order you write them",
+        },
+        "aliases": aliases,
+    }
 
 
 def main():
     spell = canonical_spellings()
-    # Probed, not read off a label. `_PAINT_KEYS_IGNORED` sounds like "accepted and dropped"
-    # and is the opposite: those keys RAISE with an explanatory message, which is good
-    # behaviour. The genuinely dangerous ones are keys the parser has never heard of - they
-    # compile and vanish. Getting this backwards in the schema would have told authors to
-    # worry about the safe case and ignore the unsafe one.
-    rejected_keys = sorted(re.findall(
-        r'"(\w+)"', (re.search(r'_PAINT_KEYS_IGNORED\s*=\s*[\{\(]([^\}\)]*)[\}\)]', SRC)
-                      or re.match('', '')).group(1))) if re.search(
-        r'_PAINT_KEYS_IGNORED', SRC) else []
-    accepted_keys = probe_paint_keys(rejected_keys)
+    paint = paint_surface()
 
     schema = {
         "generatedFrom": "rcj (the reference Python converter), introspected",
@@ -104,20 +114,14 @@ def main():
         # but a generator that picks one and stays with it avoids a whole class of confusion.
         "canonicalForm": {
             "root": "object",
-            "paint": "a {\"paint\": {...}} command, not setColor/setStyle/setStrokeWidth",
+            "paint": "the ops array form - {\"paint\": {\"ops\": [...]}} - see `paint.whyOps`",
             "commandSpelling": "keyed by name - {\"drawCircle\": {...}} - not {\"type\": \"drawCircle\"}",
             "wrapper": "a {name, description, json} wrapper is unwrapped automatically",
         },
 
         "commands": [spell.get(c, c) for c in COMMANDS],
 
-        "paint": {
-            "accepted": accepted_keys,
-            "rejectedWithMessage": rejected_keys,
-            "silentlyDropped": "any key not in `accepted` - e.g. typeface, fontWeight. These "
-                               "compile and vanish: the document reports valid and simply "
-                               "does not do what was asked. The playground warns (PG2030).",
-        },
+        "paint": paint,
 
         "expressions": {
             "functions": sorted(expr.FUNCTIONS),
@@ -144,7 +148,8 @@ def main():
             "textMerge - no data-driven text composition; labels must be literals",
             "AGSL/SkSL shader source in JSON",
             "themed colours (light/dark pairs) on canvas paint",
-            "typeface, fontWeight or fontStyle on canvas paint",
+            "typeface, fontWeight, fontStyle, antiAlias, blendMode or colorFilter on canvas "
+            "paint - note these are SILENTLY DROPPED in the direct-key form and raise in ops",
             "resource sections other than colors, floatArrays, variables, bitmaps",
             "any command not in `commands` - reported as \"canvas command '<lowercased>'\"",
         ],
