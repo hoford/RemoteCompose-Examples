@@ -21,6 +21,8 @@ const state = {
     status: 'idle',
     bytes: null,
     handle: null,
+    wantGeometry: false,
+    lastGeometry: null,
     playing: true,
     name: 'document',
     source: 'editor',
@@ -541,6 +543,8 @@ async function process(text, { render = true, emit = true } = {}) {
         } catch { /* a player without a reachable clock just renders live */ }
     }
 
+    if (state.wantGeometry) showGeometry(recordGeometry(state.handle));
+
     // One frame of settle: shader programs compile asynchronously, and a snapshot taken
     // before that is blank - which an agent would read as a broken document.
     await new Promise((r) => setTimeout(r, 60));
@@ -553,6 +557,191 @@ async function process(text, { render = true, emit = true } = {}) {
     finish('ready', { rendered: true, previewAvailable: !!png });
     if (emit) done();
     return state.result;
+}
+
+// ── geometry ─────────────────────────────────────────────────────────────────
+//
+// A PNG answers "does it look right"; it cannot answer "where did it actually put things".
+// Those are different questions, and the second is the one that matters when a loop draws
+// twelve bars and two of them land on top of each other: the image shows ten bars and says
+// nothing about why.
+//
+// The coordinates are read at the PaintContext, which is the single point every draw passes
+// through and - the reason this works at all - the point where arguments have already been
+// evaluated. A `"cx": "40 + i * 30"` in the JSON arrives here as 70, then 100, then 130, so
+// the per-iteration values come out without evaluating any expressions in this page.
+//
+// Text is read one level lower, at the 2D context's fillText/strokeText. drawTextRun carries
+// a text *id*, which is no use to a caller, and by the time it reaches fillText it is the
+// actual string - and measureText can then give real bounds rather than an estimate.
+
+// Argument names, from the PaintContext signatures. The first two entries of each are the
+// point reported in device space.
+const GEOM_SIGS = {
+    drawRect: ['left', 'top', 'right', 'bottom'],
+    clipRect: ['left', 'top', 'right', 'bottom'],
+    drawOval: ['left', 'top', 'right', 'bottom'],
+    drawCircle: ['centerX', 'centerY', 'radius'],
+    drawLine: ['x1', 'y1', 'x2', 'y2'],
+    drawRoundRect: ['left', 'top', 'right', 'bottom', 'rx', 'ry'],
+    drawArc: ['left', 'top', 'right', 'bottom', 'startAngle', 'sweepAngle'],
+    drawSector: ['left', 'top', 'right', 'bottom', 'startAngle', 'sweepAngle'],
+    drawBitmapSimple: ['imageId', 'left', 'top', 'right', 'bottom'],
+    drawPath: ['pathId', 'start', 'end'],
+    drawTweenPath: ['path1Id', 'path2Id', 'tween', 'start', 'end'],
+    matrixTranslate: ['tx', 'ty'],
+    matrixRotate: ['angle', 'px', 'py'],
+    matrixScale: ['sx', 'sy', 'cx', 'cy'],
+};
+// Ops whose first two arguments are not a point.
+const GEOM_NO_POINT = new Set(['drawPath', 'drawTweenPath', 'drawBitmapSimple', 'matrixRotate',
+                               'matrixScale']);
+// Ops bounded by (left, top)-(right, bottom). `clipRect` is deliberately absent: a clip is
+// not a draw, and letting a full-canvas clip into the bounds would hide the one thing bounds
+// are good for - noticing that a document draws outside itself.
+const GEOM_BOX_OPS = new Set(['drawRect', 'drawOval', 'drawRoundRect', 'drawArc', 'drawSector']);
+const GEOM_LIMIT = 500;
+
+/**
+ * Record one frame's draw calls with evaluated coordinates. Returns null if the paint context
+ * cannot be reached, rather than an empty list that would read as "this document draws
+ * nothing".
+ */
+function recordGeometry(handle) {
+    const player = handle && handle.player;
+    const pc = player && player.paintContext;
+    const ctx = pc && pc.ctx;
+    if (!pc || !ctx || typeof ctx.getTransform !== 'function') return null;
+
+    const draws = [];
+    let total = 0;
+    const saved = [];
+    // Bounds are unioned over EVERY draw, not only the listed ones. Computing them from the
+    // capped list would make `bounds` shrink as a document grew past the cap - a document
+    // drawing off-canvas on its 600th circle would report tidy bounds.
+    let bx0 = Infinity, by0 = Infinity, bx1 = -Infinity, by1 = -Infinity;
+    const union = (b) => {
+        if (!b) return;
+        bx0 = Math.min(bx0, b.left); by0 = Math.min(by0, b.top);
+        bx1 = Math.max(bx1, b.right); by1 = Math.max(by1, b.bottom);
+    };
+
+    const mapPoint = (x, y) => {
+        const m = ctx.getTransform();
+        return { x: round(m.a * x + m.c * y + m.e), y: round(m.b * x + m.d * y + m.f) };
+    };
+    const round = (n) => (typeof n === 'number' && isFinite(n) ? Math.round(n * 100) / 100 : n);
+    const boxOf = (p, q) => ({ left: Math.min(p.x, q.x), top: Math.min(p.y, q.y),
+                               right: Math.max(p.x, q.x), bottom: Math.max(p.y, q.y) });
+
+    for (const [name, argNames] of Object.entries(GEOM_SIGS)) {
+        if (typeof pc[name] !== 'function') continue;
+        const original = pc[name];
+        saved.push([name, Object.prototype.hasOwnProperty.call(pc, name) ? original : null]);
+        pc[name] = function (...args) {
+            total++;
+            // The extent, not just the anchor: a box reported from its top-left corner alone
+            // says a 40-wide bar ends where it starts.
+            let extent = null;
+            if (GEOM_BOX_OPS.has(name)) {
+                extent = boxOf(mapPoint(args[0], args[1]), mapPoint(args[2], args[3]));
+            } else if (name === 'drawCircle') {
+                const r = args[2];
+                extent = boxOf(mapPoint(args[0] - r, args[1] - r),
+                               mapPoint(args[0] + r, args[1] + r));
+            } else if (name === 'drawLine' || name === 'drawBitmapSimple') {
+                const o = name === 'drawLine' ? 0 : 1;
+                extent = boxOf(mapPoint(args[o], args[o + 1]),
+                               mapPoint(args[o + 2], args[o + 3]));
+            }
+            union(extent);
+            if (draws.length < GEOM_LIMIT) {
+                const rec = { op: name, args: {} };
+                argNames.forEach((k, i) => { rec.args[k] = round(args[i]); });
+                if (!GEOM_NO_POINT.has(name) && typeof args[0] === 'number') {
+                    rec.device = mapPoint(args[0], args[1]);
+                }
+                if (extent) rec.extent = extent;
+                draws.push(rec);
+            }
+            return original.apply(this, args);
+        };
+    }
+
+    // Text, caught at the 2D context so the string and its measured bounds are the real ones.
+    const textHooks = [];
+    for (const m of ['fillText', 'strokeText']) {
+        const original = ctx[m];
+        if (typeof original !== 'function') continue;
+        textHooks.push([m, Object.prototype.hasOwnProperty.call(ctx, m) ? original : null]);
+        ctx[m] = function (text, x, y, ...rest) {
+            total++;
+            let measured = null;
+            try {
+                const tm = ctx.measureText(text);
+                measured = { width: round(tm.width),
+                             ascent: round(tm.actualBoundingBoxAscent),
+                             descent: round(tm.actualBoundingBoxDescent) };
+            } catch { /* measureText is optional for the record to be useful */ }
+            // Text draws from a baseline, so its box runs from the ascent above that line to
+            // the descent below - not from (x, y) downward.
+            const extent = measured
+                ? boxOf(mapPoint(x, y - measured.ascent),
+                        mapPoint(x + measured.width, y + measured.descent))
+                : null;
+            union(extent);
+            if (draws.length < GEOM_LIMIT) {
+                const rec = { op: m === 'fillText' ? 'text' : 'textStroke',
+                              text: String(text), args: { x: round(x), y: round(y) },
+                              device: mapPoint(x, y), measured };
+                if (extent) rec.extent = extent;
+                draws.push(rec);
+            }
+            return original.call(this, text, x, y, ...rest);
+        };
+    }
+
+    try {
+        player.repaint();
+    } finally {
+        for (const [name, own] of saved) { if (own === null) delete pc[name]; else pc[name] = own; }
+        for (const [name, own] of textHooks) { if (own === null) delete ctx[name]; else ctx[name] = own; }
+    }
+
+    // Device-space bounds, from the points actually drawn. Useful on its own: a document whose
+    // bounds fall outside its own width and height is drawing off-canvas.
+    const bounds = isFinite(bx0) ? { left: bx0, top: by0, right: bx1, bottom: by1 } : null;
+
+    const geometry = { recordedAtSeconds: state.pinT, draws, drawCount: total, bounds };
+    if (total > draws.length) {
+        // Said out loud: a truncated list that looked complete would be read as complete.
+        geometry.truncated = true;
+        geometry.note = `only the first ${GEOM_LIMIT} of ${total} draws are listed`;
+    }
+    return geometry;
+}
+
+/**
+ * Publish the geometry: a summary in #agent-output, the full draw list in #geometry.
+ *
+ * Split because 500 draws of JSON inside the status block would bury the status - and
+ * #agent-output is the one field a caller is told to read first. The summary is the part worth
+ * reading without being asked for: drawCount, the device-space bounds, and whether the list
+ * was cut short.
+ */
+function showGeometry(g) {
+    if (!g) {
+        state.result.geometry = { unavailable: 'the paint context could not be reached' };
+        $('geometry').textContent = 'unavailable: the paint context could not be reached';
+        return;
+    }
+    state.result.geometry = {
+        drawCount: g.drawCount, bounds: g.bounds, recordedAtSeconds: g.recordedAtSeconds,
+        listed: g.draws.length, truncated: !!g.truncated, detail: '#geometry',
+    };
+    if (g.note) state.result.geometry.note = g.note;
+    state.lastGeometry = g;
+    $('geometry').textContent = JSON.stringify(g, null, 1);
 }
 
 /** Completion signal, after load, validation, render and #agent-output are all current. */
@@ -577,7 +766,9 @@ async function fromUrl() {
     const q = new URLSearchParams(location.search);
     const hash = new URLSearchParams(location.hash.replace(/^#/, ''));
     const action = (q.get('action') || 'render').toLowerCase();
-    const render = action !== 'validate' && action !== 'inspect';
+    // Geometry needs a frame, so `inspect` renders one even though it reports no preview.
+    state.wantGeometry = action === 'inspect' || q.get('geometry') === '1';
+    const render = action !== 'validate' && (action !== 'inspect' || state.wantGeometry);
 
     if (q.get('test') === '1') {
         state.source = 'test';
@@ -681,6 +872,23 @@ window.RemoteComposePlayground = {
             operationCount: r.operationCount, operations: r.operations,
             features: r.features, errors: r.errors || [], warnings: r.warnings || [],
         };
+    },
+
+    /**
+     * Evaluated draw geometry for one frame: coordinates as the player received them, with
+     * each loop iteration separate. `seconds` pins the clock, so an animated document gives
+     * the same answer twice - without it the numbers are whatever moment the frame landed on.
+     */
+    async geometry(json, seconds = 0) {
+        const prevWant = state.wantGeometry, prevT = state.pinT;
+        state.wantGeometry = true;
+        state.pinT = seconds === null ? null : Number(seconds) || 0;
+        try {
+            await process(asText(json), { render: true });
+            return state.lastGeometry;
+        } finally {
+            state.wantGeometry = prevWant; state.pinT = prevT;
+        }
     },
     previewPng() { return snapshot(); },
     /**

@@ -193,6 +193,7 @@ network and no external font, so it gives the same answer every run.
 | `?action=render` | validate and render (the default) |
 | `?action=inspect` | validate and report structure |
 | `?t=<seconds>` | render at a fixed document time instead of live |
+| `?geometry=1` | also report evaluated draw coordinates (implied by `action=inspect`) |
 
 The fragment is gzip-aware: base64url of gzipped JSON is detected by its magic bytes, which
 keeps long documents inside URL limits. `node tools/rc.mjs encode` produces one.
@@ -263,7 +264,7 @@ RemoteCompose registry.
 ### Stable ids
 
 `#agent-interface` `#agent-output` `#validation-errors` `#validation-warnings`
-`#preview-image` `#download-json` `#download-rc` `#download-png` `#document-editor`
+`#preview-image` `#geometry` `#download-json` `#download-rc` `#download-png` `#document-editor`
 `#document-status` `#document-width` `#document-height` `#operation-count` `#render-status`
 `#document-state`
 
@@ -274,6 +275,38 @@ carry text — `(no errors)` when there are none — rather than being hidden.
 `#preview-image` is a PNG data URL of exactly what the player is showing, so the rendered
 result can be looked at directly.
 
+### Geometry — where it actually put things
+
+A PNG answers "does this look right". It cannot answer "where did it put things", and that is
+the question when a loop draws twelve bars and two land on top of each other: the image shows
+ten bars and says nothing about why. `?action=inspect` (or `?geometry=1` alongside any action)
+adds the coordinates the player received:
+
+```jsonc
+{ "op": "drawRect", "args": { "left": 76, "top": 124, "right": 116, "bottom": 180 },
+  "device": { "x": 76, "y": 124 },
+  "extent": { "left": 76, "top": 124, "right": 116, "bottom": 180 } }
+{ "op": "text", "text": "5 bars", "args": { "x": 134.99, "y": 36.3 },
+  "measured": { "width": 50.03, "ascent": 12.96, "descent": 0.36 } }
+```
+
+These are **evaluated** values, read where every draw passes through the paint context. A
+`"left": "20 + i * 56"` in your JSON comes back as 20, 76, 132, 188, 244 — one record per loop
+iteration, which is what makes a loop debuggable. `device` is the same point after the current
+matrix, so a draw inside a `rotate` or `translate` reports where it actually landed. Text is
+read lower still, at `fillText`, so the string is the real one and `measured` comes from the
+browser's own text metrics rather than an estimate.
+
+`extent` is the drawn box, not the anchor. `bounds` in the summary unions every draw, so
+comparing it against the document's own width and height tells you whether something is being
+drawn off-canvas — a common cause of "my chart is missing a bar".
+
+A summary (`drawCount`, `bounds`, `truncated`) goes in `#agent-output`; the full list is in
+`#geometry`, split so 500 draws of JSON do not bury the status. The list caps at 500 and says
+so in `truncated` and `note` when it does — `bounds` still covers everything. Pair it with
+`?t=` for an animated document, or the numbers are whatever instant the frame landed on;
+`recordedAtSeconds` reports what was pinned.
+
 ### Or drive it from JavaScript
 
 ```js
@@ -282,8 +315,9 @@ await P.validate(json);   // { valid, errors, warnings }
 await P.inspect(json);    // + width, height, operationCount, operations, features
 await P.compile(json);    // Uint8Array of .rc bytes; throws if invalid
 await P.render(json);     // full result, preview updated
+await P.geometry(json, 0) // evaluated draw coordinates at t=0 seconds
 P.previewPng();           // data:image/png;base64,…
-P.shareUrl(json);         // a #doc= URL carrying the document
+await P.shareUrl(json);   // a #doc= URL carrying the document, gzipped
 ```
 
 These call the same pipeline the editor uses — there is no second implementation to drift.
