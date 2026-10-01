@@ -7,17 +7,19 @@ the files.
 
 To create a new RemoteCompose document:
 
-1. Read `catalog/corpus.jsonl`.
-2. Find 1–3 similar examples.
+1. Read `catalog/schema.json` — what exists, and the four argument-order traps.
+2. Read `catalog/by-command.json` and find 1–3 examples using the commands you need.
 3. Fetch their `doc.json` where `jsonReproduces == "yes"` — those are known to rebuild.
 4. Modify one of those rather than starting from scratch.
 5. Open `playground.html?agent=1#doc=<base64url of your JSON>`.
 6. Wait for `status` to reach `ready` in `#agent-output`.
 7. If `valid` is false, fix the listed errors — each carries a JSON path — and retry.
-8. If `valid` is true, look at `#preview-image`.
+8. If `valid` is true, look at `#preview-image`, and read `warnings`: a silently dropped key
+   leaves `valid` true while the document quietly does less than you asked.
 9. Iterate until it is visually correct, then take `#download-json` and `#download-rc`.
 
-Check the interface itself first with `playground.html?agent=1&test=1`.
+Check the interface itself first with `playground.html?agent=1&test=1`. If you cannot run
+scripts in a page, use `node tools/rc.mjs validate` instead — same converter, same verdicts.
 
 ## Start here
 
@@ -80,6 +82,82 @@ that demonstrates the operation — usually what you want when the question is "
 corpus has no example" apart from "this operation does not exist". Both are browsable at
 `ops.html`.
 
+`by-op.json` is keyed on **wire opcodes** — `DRAW_ARC`, `DATA_PATH` — which is the wrong end
+if you are writing JSON, because nothing you type is spelled that way. `catalog/by-command.json`
+is keyed on **what you actually write**:
+
+```jsonc
+{ "loop": { "documents": 223, "examples": ["…", "…"] },
+  "conditionalOperations": { "documents": 29, "examples": ["…"] },
+  "textFromFloat": { "documents": 6, "examples": ["…"] } }
+```
+
+438 keys, 124 KB — fetch it instead of the 537 KB `corpus.jsonl` when the question is "show me
+a document that uses X".
+
+## The JSON surface — catalog/schema.json
+
+Generated from the converter's own tables by `tools/mkschema.py`, so it cannot drift from what
+is actually accepted: 62 commands, 43 expression functions, 107 system variables, the four
+argument-order traps, and the cost model. Fetch it before authoring; it is the only complete
+list that is not the minified bundle.
+
+### Pick one dialect and stay in it
+
+Several spellings are accepted, which is why corpus documents disagree with each other. The
+form below is the one to generate — not because the others fail, but because mixing them is
+how an author ends up debugging a difference that was never the problem:
+
+| | Write this | Not this |
+|---|---|---|
+| root | an object — `"root": { "canvas": … }` | a list of components |
+| command | keyed by name — `{ "drawCircle": {…} }` | `{ "type": "drawCircle", … }` |
+| paint | one `{ "paint": { "color": …, "style": … } }` command | `setColor` / `setStyle` / `setStrokeWidth` ops |
+
+In this corpus the object root outnumbers the list root 256 to 237 and the `paint` object
+outnumbers `setColor` ops 334 to 2, so the majority of what you will read already follows it.
+21 documents are additionally wrapped in `{name, description, json}`; that wrapper is unwrapped
+automatically, so keep it or drop it as you like.
+
+### What it will not do
+
+Four of these cost a redesign if you find them late, so they are worth reading before you start
+rather than after:
+
+* **`textMerge`** — no data-driven text composition. Labels are literals; a number next to a
+  label is `textFromFloat` as a separate draw.
+* **AGSL/SkSL shader source in JSON** — the shader documents in this corpus carry their source
+  in `DATA_TEXT`, placed by a different tool.
+* **Themed (light/dark pair) colours on canvas paint.**
+* **`typeface`, `fontWeight`, `fontStyle` on canvas paint.**
+
+`alpha`, `linearGradient` and `pathEffect` as direct paint keys are **rejected with a message**,
+which is the harmless case. The dangerous case is any paint key the parser has never heard of:
+it compiles, reports valid, and is silently dropped. `schema.json`'s `paint.accepted` is the
+whole list that survives, and the playground warns (`PG2030`) on anything else.
+
+## Without a browser — tools/rc.mjs
+
+The playground needs a page that can run scripts. An agent that can only fetch URLs cannot use
+it at all, because a `#doc=` fragment is never sent to a server. `tools/rc.mjs` gives that agent
+the same loop from the same bundled converter, so the two cannot disagree:
+
+```
+node tools/rc.mjs validate docs/render/bar-vertical/doc.json
+node tools/rc.mjs compile  mydoc.json out.rc
+node tools/rc.mjs inspect  mydoc.json
+node tools/rc.mjs encode   mydoc.json     # a gzipped #doc= fragment
+```
+
+Node only, no `npm install` — the browser bundle is run in a `vm` context. Validation takes
+about 25 ms and `compile` is byte-identical to the committed `.rc`. Exit status is 0 for valid
+and 1 for invalid, so it drops straight into a shell loop.
+
+`encode` gzips before base64url because uncompressed fragments get long. Over 40 sampled corpus
+documents the fragment comes out at 7–51% of the plain base64 length — a median of 14%, and the
+bigger the document the better it does, because RemoteCompose JSON is highly repetitive. The
+playground sniffs the gzip magic bytes, so both forms load from `#doc=`.
+
 ## Authoring and checking a document — playground.html
 
 `playground.html` is a machine interface as well as a human one. It compiles, validates and
@@ -114,9 +192,22 @@ network and no external font, so it gives the same answer every run.
 | `?action=validate` | parse, validate, do not render |
 | `?action=render` | validate and render (the default) |
 | `?action=inspect` | validate and report structure |
+| `?t=<seconds>` | render at a fixed document time instead of live |
 
 The fragment is gzip-aware: base64url of gzipped JSON is detected by its magic bytes, which
-keeps long documents inside URL limits.
+keeps long documents inside URL limits. `node tools/rc.mjs encode` produces one.
+
+**`?t=` is what makes an animated document reviewable.** Without it the preview is captured at
+whatever moment the render finished, so a document that moves gives a different image every run
+and you cannot tell a fix from noise. `?t=0` is the first frame; `?t=2.5` is two and a half
+seconds in. The pin reaches all three places a frame reads time from, so `continuousSec()`,
+`timeInSec()`, `animationTime` and anything derived from them agree within the frame, and the
+same `?t=` gives byte-identical PNGs across runs.
+
+Two limits worth knowing. `continuousSec()` is minute·60 + second *within the hour*, so `?t=`
+wraps at 3600 — `?t=3601` renders as `?t=1`. And the result echoes back `pinnedAtSeconds`: if
+that is `null` the pin did not take and the frame is live, so do not treat the image as
+reproducible. Capture two or three times to review an animation rather than once.
 
 ### Read the result
 

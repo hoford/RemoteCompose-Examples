@@ -25,6 +25,7 @@ const state = {
     name: 'document',
     source: 'editor',
     lastPng: null,
+    schema: null,
     result: {},
     agent: false,
 };
@@ -35,6 +36,7 @@ const state = {
 // numbers that look official would be worse than being plainly local. They are stable and
 // documented in AGENTS.md.
 const CODE = {
+    UNKNOWN_KEY: 'PG2030',   // accepted and silently dropped
     JSON_SYNTAX: 'PG1001',
     NOT_OBJECT: 'PG1002',
     NO_HEADER: 'PG1010',
@@ -84,6 +86,69 @@ function locateCommand(doc, name) {
     };
     walk(doc, '');
     return found;
+}
+
+/** The converter unwraps a {name, description, json} envelope; inspection must match. */
+function unwrap(doc) {
+    return (doc && !doc.header && doc.json && typeof doc.json === 'object') ? doc.json : doc;
+}
+
+/**
+ * Keys the converter accepts and then throws away.
+ *
+ * This is the worst failure mode the page has: the document compiles, reports valid, and
+ * quietly does not do what was asked. `typeface` on a canvas paint is the example that
+ * caught a caller out - the same key inside `ops` throws, so the silence is inconsistent as
+ * well as invisible. Reported as warnings, because the document is still usable.
+ */
+function unknownKeyWarnings(doc, schema) {
+    if (!schema) return [];
+    const out = [];
+    const rejected = new Set((schema.paint && schema.paint.rejectedWithMessage) || []);
+    const accepted = new Set((schema.paint && schema.paint.accepted) || []);
+    const walk = (node, path, inPaint) => {
+        if (!node || typeof node !== 'object') return;
+        if (Array.isArray(node)) return node.forEach((v, i) => walk(v, `${path}[${i}]`, inPaint));
+        for (const [k, v] of Object.entries(node)) {
+            const p = path ? `${path}.${k}` : k;
+            // Only the unknown keys need warning about. The ones in rejectedWithMessage
+            // raise during compile and already appear as errors, so repeating them here
+            // would be noise.
+            if (inPaint && !accepted.has(k) && !rejected.has(k)) {
+                out.push(err(CODE.UNKNOWN_KEY,
+                    `"${k}" is not a paint key the converter reads, so it compiles and is ` +
+                    `silently dropped`, { path: p }));
+            }
+            walk(v, p, k === 'paint');
+        }
+    };
+    walk(doc, '', false);
+    return out;
+}
+
+/** Nearest known command, so an unknown one points somewhere. */
+function nearest(name, names) {
+    if (!name || !names || !names.length) return null;
+    const a = String(name).toLowerCase();
+    const dist = (x, y) => {
+        const d = Array.from({ length: y.length + 1 }, (_, j) => j);
+        for (let i = 1; i <= x.length; i++) {
+            let prev = d[0]; d[0] = i;
+            for (let j = 1; j <= y.length; j++) {
+                const t = d[j];
+                d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (x[i - 1] === y[j - 1] ? 0 : 1));
+                prev = t;
+            }
+        }
+        return d[y.length];
+    };
+    let best = null, bestD = 99;
+    for (const n of names) {
+        const d = dist(a, n.toLowerCase());
+        if (d < bestD) { bestD = d; best = n; }
+    }
+    // Only offered when it is close enough to be a likely typo rather than a wild guess.
+    return bestD <= Math.max(2, Math.floor(a.length / 3)) ? best : null;
 }
 
 /** Structural checks that run before the converter, so the path is known exactly. */
@@ -377,9 +442,11 @@ async function process(text, { render = true, emit = true } = {}) {
     }
 
     setState('validating');
+    doc = unwrap(doc);
     const errors = structuralErrors(doc);
     const stats = inspectDoc(doc);
-    const warnings = errors.length ? [] : warningsFor(doc, stats);
+    const warnings = errors.length ? []
+        : warningsFor(doc, stats).concat(unknownKeyWarnings(doc, state.schema));
 
     const h = (doc && doc.header) || {};
     const w = Number(h.width) || 0, ht = Number(h.height) || 0;
@@ -398,10 +465,12 @@ async function process(text, { render = true, emit = true } = {}) {
             state.bytes = bytes;
         } catch (e) {
             const name = (String(e.message).match(/'([^']+)'/) || [])[1];
+            const near = nearest(name, (state.schema || {}).commands);
             errors.push(err(
                 e.name === 'NotImplementedComponent' ? CODE.UNSUPPORTED : CODE.COMPILE,
-                e.message,
-                { path: locateCommand(doc, name) || '', operation: name || undefined }));
+                near ? `${e.message} — did you mean "${near}"?` : e.message,
+                { path: locateCommand(doc, name) || '', operation: name || undefined,
+                  didYouMean: near || undefined }));
         }
     }
 
@@ -450,6 +519,26 @@ async function process(text, { render = true, emit = true } = {}) {
                           rendered: false, previewAvailable: false });
         if (emit) done();
         return state.result;
+    }
+
+    // ?t=<seconds> pins the player clock before the snapshot.
+    //
+    // A single frame of an animated document is often the least informative one: a grow-in
+    // animation photographs as empty bars at t=0, which reads as a broken document. Pinning
+    // lets a caller photograph the moment that shows the thing.
+    if (state.pinT !== null) {
+        // Pinning lives in the player (RC.pinClock), not here: three separate objects hold a
+        // clock and snapshot() ignores millis(), so a copy of that knowledge in this page
+        // would be a copy that drifts. Report the pin only if the player confirms it took -
+        // claiming a pinned time over a live frame is the one answer worse than no pin.
+        try {
+            const RCg = window.RC;
+            if (RCg && typeof RCg.pinClock === 'function'
+                && RCg.pinClock(state.handle.player, state.pinT)) {
+                state.handle.player.repaint();
+                state.result.pinnedAtSeconds = state.pinT;
+            }
+        } catch { /* a player without a reachable clock just renders live */ }
     }
 
     // One frame of settle: shader programs compile asynchronously, and a snapshot taken
@@ -594,11 +683,25 @@ window.RemoteComposePlayground = {
         };
     },
     previewPng() { return snapshot(); },
-    /** A URL carrying the current document inline, needing no server and no CORS. */
-    shareUrl(json) {
+    /**
+     * A URL carrying the current document inline, needing no server and no CORS.
+     *
+     * gzipped when the browser has CompressionStream - the loader already sniffs the magic
+     * bytes, and uncompressed base64 of a real document runs to thousands of characters
+     * (measured: 6,369 against 1,483 for the same document gzipped).
+     */
+    async shareUrl(json) {
         const text = asText(json ?? $('document-editor').value);
-        const b = bytesToB64url(new TextEncoder().encode(text));
-        return `${location.origin}${location.pathname}#doc=${b}`;
+        const raw = new TextEncoder().encode(text);
+        let bytes = raw;
+        if (typeof CompressionStream === 'function') {
+            try {
+                const cs = new CompressionStream('gzip');
+                const stream = new Blob([raw]).stream().pipeThrough(cs);
+                bytes = new Uint8Array(await new Response(stream).arrayBuffer());
+            } catch { bytes = raw; }
+        }
+        return `${location.origin}${location.pathname}#doc=${bytesToB64url(bytes)}`;
     },
 };
 
@@ -660,6 +763,11 @@ async function loadExamples() {
 async function main() {
     const q = new URLSearchParams(location.search);
     state.agent = q.get('agent') === '1';
+    const tp = q.get('t');
+    state.pinT = tp === null || tp === '' ? null : (Number(tp) || 0);
+    // The schema drives unknown-key warnings and did-you-mean. Absent, both degrade to
+    // silence rather than to wrong advice.
+    state.schema = await fetch('catalog/schema.json').then((r) => r.json()).catch(() => null);
     document.body.classList.toggle('agent-mode', state.agent);
 
     let saved = null;
@@ -681,7 +789,7 @@ async function main() {
         } catch { /* the error is already shown by process() */ }
     };
     $('share').onclick = async () => {
-        const url = window.RemoteComposePlayground.shareUrl();
+        const url = await window.RemoteComposePlayground.shareUrl();
         try { await navigator.clipboard.writeText(url); $('share').textContent = 'Copied'; }
         catch { prompt('Link', url); }
         setTimeout(() => ($('share').textContent = 'Copy link'), 1500);

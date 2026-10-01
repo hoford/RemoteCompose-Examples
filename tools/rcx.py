@@ -718,6 +718,7 @@ def cmd_catalog(args):
         r["i"] = i
 
     write_op_index(records)
+    write_command_index()
 
     # Facets: tag -> {count, postings}. One file drives the whole filter bar.
     facets: dict[str, dict[str, list[int]]] = {
@@ -879,6 +880,31 @@ def write_op_index(records: list[dict]) -> None:
               f"{len(uncovered)} with no example")
     else:
         print("  operation coverage: Operations.java not found, coverage.json is empty")
+
+
+def write_command_index() -> None:
+    """catalog/by-command.json - JSON command name -> documents that use it.
+
+    by-op.json indexes the COMPILED operations, which is the wrong vocabulary for someone
+    writing JSON: an author looks for `loop`, `conditionalOperations` or `textFromFloat`, not
+    LOOP_START. Answering "which examples are bar charts" previously meant reading all of
+    corpus.jsonl, half a megabyte, to find a handful of documents.
+    """
+    import re as _re
+    idx: dict[str, list[str]] = {}
+    for jp in sorted(DOCS.glob("*/*/doc.json")):
+        did = f"{jp.parent.parent.name}/{jp.parent.name}"
+        try:
+            text = jp.read_text()
+        except Exception:
+            continue
+        # Keys in object position, which is how every command and modifier is written.
+        for name in set(_re.findall(r'"([A-Za-z][A-Za-z0-9_]*)"\s*:', text)):
+            idx.setdefault(name, []).append(did)
+    out = {k: {"n": len(v), "examples": sorted(v)[:25]}
+           for k, v in sorted(idx.items()) if len(v) > 0}
+    (CATALOG / "by-command.json").write_text(json.dumps(out, separators=(",", ":")) + "\n")
+    print(f"  by-command.json: {len(out)} JSON keys indexed")
 
 
 # ── Verify ────────────────────────────────────────────────────────────────────
