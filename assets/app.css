@@ -373,6 +373,19 @@ body.agent-mode .pg-right .frame { max-height: 34vh; }
 #agent-interface { display: block; flex: none; padding: 14px 18px 20px;
                    border-bottom: 1px solid var(--line); background: var(--panel);
                    font-size: 13px; overflow-y: auto; }
+
+/* "In the human view it simply sits after the editor" was aspirational: DOM order puts this
+   block first, and with nothing to reorder it a person opening the playground met a screen of
+   JSON with the editor pushed out of a body that does not scroll. Flex order moves it after
+   the editor for humans and leaves it first in agent mode, where a reader wants it at the top.
+   Still ordinary visible content in both - the contract rules out hiding it, not placing it. */
+body.pg-body:not(.agent-mode) { overflow: auto; }
+body.pg-body:not(.agent-mode) .pg {
+    order: 1; flex: none; height: calc(100vh - var(--topbar));
+}
+body.pg-body:not(.agent-mode) #agent-interface {
+    order: 2; border-bottom: 0; border-top: 1px solid var(--line); overflow-y: visible;
+}
 .ai-h { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim);
         margin: 14px 0 5px; font-weight: 700; }
 .ai-h:first-child { margin-top: 0; font-size: 12.5px; color: var(--fg); }
