@@ -1,0 +1,1750 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "A population pyramid where each dot is a person, by age band and sex"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 127.6,
+      "top": 94.0,
+      "right": 264.0,
+      "bottom": 118.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 94.0,
+      "right": 405.8,
+      "bottom": 118.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c0m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "127.60 + rand() * 136.40",
+       "96.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 12
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c0m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c0f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 129.80",
+       "96.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 11
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c0f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0-9",
+      "x": 270.0,
+      "y": 112.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 123.2,
+      "top": 128.0,
+      "right": 264.0,
+      "bottom": 152.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 128.0,
+      "right": 410.2,
+      "bottom": 152.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c1m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "123.20 + rand() * 140.80",
+       "130.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 12
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c1m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c1f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 134.20",
+       "130.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 12
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c1f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10-19",
+      "x": 270.0,
+      "y": 146.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 110.0,
+      "top": 162.0,
+      "right": 264.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 162.0,
+      "right": 423.4,
+      "bottom": 186.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c2m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "110.00 + rand() * 154.00",
+       "164.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 14
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c2m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c2f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 147.40",
+       "164.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 13
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c2f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "20-29",
+      "x": 270.0,
+      "y": 180.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 118.8,
+      "top": 196.0,
+      "right": 264.0,
+      "bottom": 220.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 196.0,
+      "right": 416.8,
+      "bottom": 220.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c3m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "118.80 + rand() * 145.20",
+       "198.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 13
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c3m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c3f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 140.80",
+       "198.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 12
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c3f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "30-39",
+      "x": 270.0,
+      "y": 214.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 136.4,
+      "top": 230.0,
+      "right": 264.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 230.0,
+      "right": 403.6,
+      "bottom": 254.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c4m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "136.40 + rand() * 127.60",
+       "232.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 11
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c4m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c4f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 127.60",
+       "232.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 11
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c4f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "40-49",
+      "x": 270.0,
+      "y": 248.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 154.0,
+      "top": 264.0,
+      "right": 264.0,
+      "bottom": 288.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 264.0,
+      "right": 390.4,
+      "bottom": 288.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c5m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "154.00 + rand() * 110.00",
+       "266.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 10
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c5m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c5f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 114.40",
+       "266.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 10
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c5f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "50-59",
+      "x": 270.0,
+      "y": 282.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 180.4,
+      "top": 298.0,
+      "right": 264.0,
+      "bottom": 322.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 298.0,
+      "right": 368.4,
+      "bottom": 322.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c6m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "180.40 + rand() * 83.60",
+       "300.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 7
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c6m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c6f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 92.40",
+       "300.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 8
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c6f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "60-69",
+      "x": 270.0,
+      "y": 316.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 211.2,
+      "top": 332.0,
+      "right": 264.0,
+      "bottom": 356.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 332.0,
+      "right": 342.0,
+      "bottom": 356.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c7m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "211.20 + rand() * 52.80",
+       "334.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 4
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c7m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c7f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 66.00",
+       "334.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 6
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c7f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "70-79",
+      "x": 270.0,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 242.0,
+      "top": 366.0,
+      "right": 264.0,
+      "bottom": 390.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.16
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 276.0,
+      "top": 366.0,
+      "right": 315.6,
+      "bottom": 390.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c8m",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "242.00 + rand() * 22.00",
+       "368.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 4
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c8m",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "c8f",
+      "variables": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "initialValues": [
+       "276.00 + rand() * 39.60",
+       "368.00 + rand() * 22.00",
+       "rand() * 6.283"
+      ],
+      "count": 4
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@c8f",
+      "equations": [
+       "dx",
+       "dy",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF81B29A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "dx + sin(ph + animationTime * 0.8) * 1.6",
+         "cy": "dy + cos(ph + animationTime * 0.7) * 1.6",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "80+",
+      "x": 270.0,
+      "y": 384.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 270.0,
+      "y1": 86.0,
+      "x2": 270.0,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "men",
+      "x": 150.0,
+      "y": 76.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "women",
+      "x": 390.0,
+      "y": 76.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every dot is roughly five people in a thousand",
+      "x": 24.0,
+      "y": 418.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the bands narrow with age, and women outnumber men at the top",
+      "x": 24.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Population structure",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a pyramid made of people",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

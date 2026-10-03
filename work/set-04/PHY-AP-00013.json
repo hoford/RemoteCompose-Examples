@@ -1,0 +1,1112 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "Emission spectra for four elements as cards, each with its own strip over the visible range"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FFEDEFF2"
+   },
+   {
+    "padding": 16
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Atomic spectra",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FF16203A"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "every element emits its own set of wavelengths, in nm",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF5B6880"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 410
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [],
+      "children": [
+       {
+        "type": "text",
+        "value": "Hydrogen",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 12
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "4 lines",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 380
+       },
+       {
+        "height": 46
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF07080C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 380,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF8A2BE2"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 22.9,
+         "top": 0,
+         "right": 26.1,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4169E1"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 52.3,
+         "top": 0,
+         "right": 55.5,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF00CED1"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 116.1,
+         "top": 0,
+         "right": 119.3,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFDC143C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 324.5,
+         "top": 0,
+         "right": 327.7,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "400",
+         "x": 12.3,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "500",
+         "x": 134.8,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "600",
+         "x": 257.4,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "700",
+         "x": 380.0,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 410
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [],
+      "children": [
+       {
+        "type": "text",
+        "value": "Helium",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 12
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "4 lines",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 380
+       },
+       {
+        "height": 46
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF07080C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 380,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4169E1"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 68.3,
+         "top": 0,
+         "right": 71.5,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF00FA9A"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 135.7,
+         "top": 0,
+         "right": 138.9,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFD700"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 241.1,
+         "top": 0,
+         "right": 244.3,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFDC143C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 339.2,
+         "top": 0,
+         "right": 342.4,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "400",
+         "x": 12.3,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "500",
+         "x": 134.8,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "600",
+         "x": 257.4,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "700",
+         "x": 380.0,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 410
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [],
+      "children": [
+       {
+        "type": "text",
+        "value": "Sodium",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 12
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "2 lines",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 380
+       },
+       {
+        "height": 46
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF07080C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 380,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFA500"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 242.3,
+         "top": 0,
+         "right": 245.5,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFA500"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 243.6,
+         "top": 0,
+         "right": 246.8,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "400",
+         "x": 12.3,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "500",
+         "x": 134.8,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "600",
+         "x": 257.4,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "700",
+         "x": 380.0,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 410
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [],
+      "children": [
+       {
+        "type": "text",
+        "value": "Mercury",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 12
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "4 lines",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 380
+       },
+       {
+        "height": 46
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF07080C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 380,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF8A2BE2"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 16.8,
+         "top": 0,
+         "right": 20.0,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4169E1"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 54.8,
+         "top": 0,
+         "right": 58.0,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF32CD32"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 189.6,
+         "top": 0,
+         "right": 192.8,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFD700"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 228.9,
+         "top": 0,
+         "right": 232.1,
+         "bottom": 46
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "400",
+         "x": 12.3,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "500",
+         "x": 134.8,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "600",
+         "x": 257.4,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF55658A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 8.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "700",
+         "x": 380.0,
+         "y": 42.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "sodium's two lines are 1 nm apart and look like one",
+    "modifiers": [],
+    "fontSize": 9.5,
+    "color": "#FF5E6E95"
+   }
+  ]
+ }
+}

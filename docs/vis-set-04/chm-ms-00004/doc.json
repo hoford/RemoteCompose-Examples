@@ -1,0 +1,1145 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 620,
+  "profiles": 513,
+  "contentDescription": "Four molecules compared by bond angle and shape, each card drawing the geometry it states"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF0B1410"
+   },
+   {
+    "padding": 16
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Molecular shape",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FFE4F0E6"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "lone pairs push bonds closer together",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF8FA894"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FF14241C"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 110
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 110
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 43.4,
+         "y2": 33.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 43.4,
+         "cy": 33.5,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 106.6,
+         "y2": 33.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 106.6,
+         "cy": 33.5,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 81.4,
+         "cy": 83.2,
+         "radius": 7.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 68.6,
+         "cy": 83.2,
+         "radius": 7.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 58.0,
+         "radius": 15.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 270
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Water   H2O",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FF5B8CEE"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "104.5 degrees",
+        "modifiers": [],
+        "fontSize": 16.0,
+        "color": "#FFE4F0E6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "bent - 2 bonding, 2 lone",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8FA894"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FF14241C"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 110
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 110
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 36.0,
+         "y2": 49.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 36.0,
+         "cy": 49.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 75.0,
+         "y2": 18.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 18.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 114.0,
+         "y2": 49.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 114.0,
+         "cy": 49.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 84.0,
+         "radius": 7.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 58.0,
+         "radius": 15.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 270
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Ammonia   NH3",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FF4FD6C9"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "107.0 degrees",
+        "modifiers": [],
+        "fontSize": 16.0,
+        "color": "#FFE4F0E6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "pyramidal - 3 bonding, 1 lone",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8FA894"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FF14241C"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 110
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 110
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 39.8,
+         "y2": 76.9
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 39.8,
+         "cy": 76.9,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 49.6,
+         "y2": 27.1
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 49.6,
+         "cy": 27.1,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 100.4,
+         "y2": 27.1
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 100.4,
+         "cy": 27.1,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 110.2,
+         "y2": 76.9
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 110.2,
+         "cy": 76.9,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 58.0,
+         "radius": 15.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 270
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Methane   CH4",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFE8A33D"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "109.5 degrees",
+        "modifiers": [],
+        "fontSize": 16.0,
+        "color": "#FFE4F0E6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "tetrahedral - 4 bonding, 0 lone",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8FA894"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FF14241C"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 110
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 110
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 35.0,
+         "y2": 58.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 35.0,
+         "cy": 58.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9FB0D4"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 75.0,
+         "y1": 58.0,
+         "x2": 115.0,
+         "y2": 58.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4ECFA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 115.0,
+         "cy": 58.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 75.0,
+         "cy": 58.0,
+         "radius": 15.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 270
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Carbon dioxide   CO2",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFE8564F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "180.0 degrees",
+        "modifiers": [],
+        "fontSize": 16.0,
+        "color": "#FFE4F0E6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "linear - 2 bonding, 0 lone",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8FA894"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "methane has none and opens to 109.5; water has two and closes to 104.5",
+    "modifiers": [],
+    "fontSize": 9.5,
+    "color": "#FF5E6E95"
+   }
+  ]
+ }
+}

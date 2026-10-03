@@ -1,0 +1,1220 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 476,
+  "profiles": 513,
+  "contentDescription": "A four-stroke engine with the piston travel traced as a path and the current stroke highlighted"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 476
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.95,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       1.9,
+       1.1,
+       2.6
+      ],
+      "center": [
+       0,
+       -0.1,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.55,
+         -0.73
+        ],
+        "intensity": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "a",
+      "value": "continuousSec() * 1.2",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "stroke",
+      "value": "((continuousSec() * 1.2 + 7.853982) / 3.141593) % 4",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "burst",
+      "value": "clamp(0.0, 1.0, 1 - abs(@stroke - 2.0) * 3.2)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "cy",
+      "value": "330.0 + sin(@a) * 42.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "cx",
+      "value": "240.0 + cos(@a) * 42.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "piston",
+      "value": "@cy - sqrt(14400.0 - (@cx - 240.0) * (@cx - 240.0))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 326.0,
+      "y1": 168.0,
+      "x2": 326.0,
+      "y2": 252.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 318.0,
+      "y1": 168.0,
+      "x2": 334.0,
+      "y2": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "top dead centre",
+      "x": 340.0,
+      "y": 172.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 318.0,
+      "y1": 252.0,
+      "x2": 334.0,
+      "y2": 252.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bottom dead centre",
+      "x": 340.0,
+      "y": 256.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A2540"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 194.0,
+      "top": 138.0,
+      "right": 286.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD64545"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@burst * 0.85"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 200.0,
+      "top": 142.0,
+      "right": 280.0,
+      "bottom": "@piston - 20",
+      "rx": 6.0,
+      "ry": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 240.0,
+      "cy": 154.0,
+      "radius": "6 + @burst * 16"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 250.0,
+      "y1": 154.0,
+      "x2": "252.0 + @burst * 26.0",
+      "y2": "154.0 + @burst * 0.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 247.1,
+      "y1": 161.1,
+      "x2": "248.5 + @burst * 18.4",
+      "y2": "162.5 + @burst * 18.4"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 164.0,
+      "x2": "240.0 + @burst * 0.0",
+      "y2": "166.0 + @burst * 26.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 232.9,
+      "y1": 161.1,
+      "x2": "231.5 + @burst * -18.4",
+      "y2": "162.5 + @burst * 18.4"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 230.0,
+      "y1": 154.0,
+      "x2": "228.0 + @burst * -26.0",
+      "y2": "154.0 + @burst * 0.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 232.9,
+      "y1": 146.9,
+      "x2": "231.5 + @burst * -18.4",
+      "y2": "145.5 + @burst * -18.4"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 144.0,
+      "x2": "240.0 + @burst * -0.0",
+      "y2": "142.0 + @burst * -26.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFF0C0"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 247.1,
+      "y1": 146.9,
+      "x2": "248.5 + @burst * 18.4",
+      "y2": "145.5 + @burst * -18.4"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 235.0,
+      "top": 134.0,
+      "right": 245.0,
+      "bottom": 152.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 200.0,
+      "top": "@piston - 22",
+      "right": 280.0,
+      "bottom": "@piston + 22",
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 4.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "@cx",
+      "y1": "@cy",
+      "x2": 240.0,
+      "y2": "@piston"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 5.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 330.0,
+      "x2": "@cx",
+      "y2": "@cy"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 240.0,
+      "cy": 330.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 1,
+      "verts": [
+       -0.45,
+       -0.9,
+       0.45,
+       0.45,
+       -0.9,
+       0.45,
+       0.45,
+       0.9,
+       0.45,
+       -0.45,
+       0.9,
+       0.45,
+       0.45,
+       -0.9,
+       -0.45,
+       -0.45,
+       -0.9,
+       -0.45,
+       -0.45,
+       0.9,
+       -0.45,
+       0.45,
+       0.9,
+       -0.45,
+       0.45,
+       -0.9,
+       0.45,
+       0.45,
+       -0.9,
+       -0.45,
+       0.45,
+       0.9,
+       -0.45,
+       0.45,
+       0.9,
+       0.45,
+       -0.45,
+       -0.9,
+       -0.45,
+       -0.45,
+       -0.9,
+       0.45,
+       -0.45,
+       0.9,
+       0.45,
+       -0.45,
+       0.9,
+       -0.45,
+       -0.45,
+       0.9,
+       0.45,
+       0.45,
+       0.9,
+       0.45,
+       0.45,
+       0.9,
+       -0.45,
+       -0.45,
+       0.9,
+       -0.45,
+       -0.45,
+       -0.9,
+       -0.45,
+       0.45,
+       -0.9,
+       -0.45,
+       0.45,
+       -0.9,
+       0.45,
+       -0.45,
+       -0.9,
+       0.45
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27385C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.2, 1.0, 1.2 - abs(@stroke - 0))"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 30.0,
+      "top": 392.0,
+      "right": 126.0,
+      "bottom": 416.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "intake",
+      "x": 78.0,
+      "y": 408.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.2, 1.0, 1.2 - abs(@stroke - 1))"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 138.0,
+      "top": 392.0,
+      "right": 234.0,
+      "bottom": 416.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "compression",
+      "x": 186.0,
+      "y": 408.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD64545"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.2, 1.0, 1.2 - abs(@stroke - 2))"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 246.0,
+      "top": 392.0,
+      "right": 342.0,
+      "bottom": 416.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "power",
+      "x": 294.0,
+      "y": 408.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.2, 1.0, 1.2 - abs(@stroke - 3))"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 354.0,
+      "top": 392.0,
+      "right": 450.0,
+      "bottom": 416.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "exhaust",
+      "x": 402.0,
+      "y": 408.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       },
+       {
+        "alpha": "@burst"
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ignition",
+      "x": 294.0,
+      "y": 156.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the charge fires at top dead centre and drives the power stroke",
+      "x": 24.0,
+      "y": 438.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "stroke phase is tied to the crank, so the label and the piston cannot disagree",
+      "x": 24.0,
+      "y": 454.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Four strokes",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one cylinder, one cycle",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

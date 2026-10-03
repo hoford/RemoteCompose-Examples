@@ -1,0 +1,1316 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 420,
+  "profiles": 513,
+  "contentDescription": "Vesicles travelling curved routes from nucleus to ER to Golgi to membrane"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 420
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "(continuousSec() * 0.25) % 1",
+      "commit": true
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "route0",
+      "x": 90.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 93.0,
+      "y": 292.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 96.0,
+      "y": 285.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 99.0,
+      "y": 279.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 102.0,
+      "y": 272.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 105.0,
+      "y": 266.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 108.0,
+      "y": 260.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 111.0,
+      "y": 255.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 114.0,
+      "y": 249.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 117.0,
+      "y": 244.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 120.0,
+      "y": 240.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 123.0,
+      "y": 235.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 126.0,
+      "y": 231.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 129.0,
+      "y": 227.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 132.0,
+      "y": 223.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 135.0,
+      "y": 220.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 138.0,
+      "y": 216.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 141.0,
+      "y": 213.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 144.0,
+      "y": 211.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 147.0,
+      "y": 208.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 150.0,
+      "y": 206.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 153.0,
+      "y": 204.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 156.0,
+      "y": 203.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 159.0,
+      "y": 201.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 162.0,
+      "y": 200.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 165.0,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 168.0,
+      "y": 199.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 171.0,
+      "y": 199.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 174.0,
+      "y": 199.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 177.0,
+      "y": 199.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route0",
+      "x": 180.0,
+      "y": 200.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "route0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "90.0 + (90.0) * ((@t + 0.000) % 1) + (0.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "cy": "300.0 + (-220.0) * ((@t + 0.000) % 1) + (120.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "90.0 + (90.0) * ((@t + 0.333) % 1) + (0.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "cy": "300.0 + (-220.0) * ((@t + 0.333) % 1) + (120.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "90.0 + (90.0) * ((@t + 0.667) % 1) + (0.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "cy": "300.0 + (-220.0) * ((@t + 0.667) % 1) + (120.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "route1",
+      "x": 180.0,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 184.0,
+      "y": 194.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 188.0,
+      "y": 189.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 192.0,
+      "y": 184.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 196.0,
+      "y": 179.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 200.0,
+      "y": 175.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 204.0,
+      "y": 170.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 208.0,
+      "y": 166.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 212.0,
+      "y": 163.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 216.0,
+      "y": 159.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 220.0,
+      "y": 156.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 224.0,
+      "y": 153.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 228.0,
+      "y": 151.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 232.0,
+      "y": 148.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 236.0,
+      "y": 146.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 240.0,
+      "y": 145.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 244.0,
+      "y": 143.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 248.0,
+      "y": 142.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 252.0,
+      "y": 141.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 256.0,
+      "y": 140.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 260.0,
+      "y": 140.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 264.0,
+      "y": 139.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 268.0,
+      "y": 139.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 272.0,
+      "y": 140.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 276.0,
+      "y": 140.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 280.0,
+      "y": 141.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 284.0,
+      "y": 142.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 288.0,
+      "y": 144.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 292.0,
+      "y": 145.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 296.0,
+      "y": 147.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route1",
+      "x": 300.0,
+      "y": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "route1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "180.0 + (120.0) * ((@t + 0.000) % 1) + (0.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "cy": "200.0 + (-170.0) * ((@t + 0.000) % 1) + (120.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "180.0 + (120.0) * ((@t + 0.333) % 1) + (0.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "cy": "200.0 + (-170.0) * ((@t + 0.333) % 1) + (120.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "180.0 + (120.0) * ((@t + 0.667) % 1) + (0.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "cy": "200.0 + (-170.0) * ((@t + 0.667) % 1) + (120.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "route2",
+      "x": 300.0,
+      "y": 150.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 304.67,
+      "y": 148.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 309.33,
+      "y": 147.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 314.0,
+      "y": 147.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 318.67,
+      "y": 146.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 323.33,
+      "y": 146.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 328.0,
+      "y": 146.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 332.67,
+      "y": 147.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 337.33,
+      "y": 147.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 342.0,
+      "y": 148.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 346.67,
+      "y": 150.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 351.33,
+      "y": 151.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 356.0,
+      "y": 153.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 360.67,
+      "y": 155.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 365.33,
+      "y": 157.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 370.0,
+      "y": 160.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 374.67,
+      "y": 162.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 379.33,
+      "y": 165.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 384.0,
+      "y": 169.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 388.67,
+      "y": 172.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 393.33,
+      "y": 176.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 398.0,
+      "y": 180.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 402.67,
+      "y": 185.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 407.33,
+      "y": 189.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 412.0,
+      "y": 194.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 416.67,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 421.33,
+      "y": 205.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 426.0,
+      "y": 211.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 430.67,
+      "y": 217.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 435.33,
+      "y": 223.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "route2",
+      "x": 440.0,
+      "y": 230.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "route2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "300.0 + (140.0) * ((@t + 0.000) % 1) + (0.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "cy": "150.0 + (-40.0) * ((@t + 0.000) % 1) + (120.0) * ((@t + 0.000) % 1) * ((@t + 0.000) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "300.0 + (140.0) * ((@t + 0.333) % 1) + (0.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "cy": "150.0 + (-40.0) * ((@t + 0.333) % 1) + (120.0) * ((@t + 0.333) % 1) * ((@t + 0.333) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "300.0 + (140.0) * ((@t + 0.667) % 1) + (0.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "cy": "150.0 + (-40.0) * ((@t + 0.667) % 1) + (120.0) * ((@t + 0.667) % 1) * ((@t + 0.667) % 1)",
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 90.0,
+      "cy": 300.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 90.0,
+      "cy": 300.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Nucleus",
+      "x": 90.0,
+      "y": 304.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 180.0,
+      "cy": 200.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 180.0,
+      "cy": 200.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ER",
+      "x": 180.0,
+      "y": 204.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 300.0,
+      "cy": 150.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 300.0,
+      "cy": 150.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Golgi",
+      "x": 300.0,
+      "y": 154.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 440.0,
+      "cy": 230.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 440.0,
+      "cy": 230.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Membrane",
+      "x": 440.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "proteins are made at the ER, modified at the Golgi, then shipped out",
+      "x": 24.0,
+      "y": 366.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each route is a path; the vesicles are sampled from the same curve",
+      "x": 24.0,
+      "y": 384.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "three routes, nine vesicles",
+      "x": 24.0,
+      "y": 402.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cellular transport",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the secretory pathway",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

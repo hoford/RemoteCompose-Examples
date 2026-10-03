@@ -1,0 +1,38 @@
+{
+  "id": "vis-set-04/phy-ap-00012",
+  "sha256": "8883317cd496e9459149b254eeee32cb42e993d7fdf12ed087ba76298e112e6b",
+  "bytes": 3534,
+  "ops": 162,
+  "distinctOps": 13,
+  "width": 640,
+  "height": 430,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 48,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 52,
+    "DATA_TEXT": 25,
+    "DRAW_TEXT_ANCHOR": 25,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set04.py"
+  ]
+}

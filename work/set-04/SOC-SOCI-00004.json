@@ -1,0 +1,1505 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "Income decile shares for four countries with Gini coefficients, as a comparison table"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 400
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "COUNTRY",
+      "x": 26.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "POOREST TENTH TO RICHEST TENTH",
+      "x": 120.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "GINI",
+      "x": 554.0,
+      "y": 96.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 104.0,
+      "x2": 554.0,
+      "y2": 104.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Slovakia",
+      "x": 26.0,
+      "y": 140.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3C2D21"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 120.0,
+      "top": 126.0,
+      "right": 132.85,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4E3A2A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 133.65,
+      "top": 126.0,
+      "right": 151.75,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF604834"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 152.55,
+      "top": 126.0,
+      "right": 174.15,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF72553E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 174.95,
+      "top": 126.0,
+      "right": 199.7,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF846348"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 200.5,
+      "top": 126.0,
+      "right": 228.75,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF967052"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 229.55,
+      "top": 126.0,
+      "right": 261.65,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA87E5C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 262.45,
+      "top": 126.0,
+      "right": 299.45,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBA8B66"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 300.25,
+      "top": 126.0,
+      "right": 343.55,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCC9970"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.35,
+      "top": 126.0,
+      "right": 397.1,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDEA67A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 397.9,
+      "top": 126.0,
+      "right": 469.2,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3.9",
+      "x": 120.0,
+      "y": 160.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "20.6",
+      "x": 470.0,
+      "y": 160.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "24.1",
+      "x": 554.0,
+      "y": 140.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 172.0,
+      "x2": 554.0,
+      "y2": 172.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "France",
+      "x": 26.0,
+      "y": 198.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3C2D21"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 120.0,
+      "top": 184.0,
+      "right": 130.05,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4E3A2A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 130.85,
+      "top": 184.0,
+      "right": 145.8,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF604834"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 146.6,
+      "top": 184.0,
+      "right": 165.4,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF72553E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 166.2,
+      "top": 184.0,
+      "right": 188.5,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF846348"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 189.3,
+      "top": 184.0,
+      "right": 215.45,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF967052"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 216.25,
+      "top": 184.0,
+      "right": 246.6,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA87E5C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 247.4,
+      "top": 184.0,
+      "right": 283.0,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBA8B66"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 283.8,
+      "top": 184.0,
+      "right": 326.05,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCC9970"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 326.85,
+      "top": 184.0,
+      "right": 379.95,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDEA67A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 380.75,
+      "top": 184.0,
+      "right": 469.2,
+      "bottom": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3.1",
+      "x": 120.0,
+      "y": 218.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "25.5",
+      "x": 470.0,
+      "y": 218.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "30.7",
+      "x": 554.0,
+      "y": 198.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 230.0,
+      "x2": 554.0,
+      "y2": 230.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Britain",
+      "x": 26.0,
+      "y": 256.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3C2D21"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 120.0,
+      "top": 242.0,
+      "right": 128.65,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4E3A2A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 129.45,
+      "top": 242.0,
+      "right": 142.65,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF604834"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 143.45,
+      "top": 242.0,
+      "right": 160.5,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF72553E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 161.3,
+      "top": 242.0,
+      "right": 181.85,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF846348"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 182.65,
+      "top": 242.0,
+      "right": 207.05,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF967052"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 207.85,
+      "top": 242.0,
+      "right": 237.15,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA87E5C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 237.95,
+      "top": 242.0,
+      "right": 273.2,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBA8B66"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 274.0,
+      "top": 242.0,
+      "right": 316.95,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCC9970"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 317.75,
+      "top": 242.0,
+      "right": 373.3,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDEA67A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 374.1,
+      "top": 242.0,
+      "right": 469.2,
+      "bottom": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2.7",
+      "x": 120.0,
+      "y": 276.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "27.4",
+      "x": 470.0,
+      "y": 276.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "32.6",
+      "x": 554.0,
+      "y": 256.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 288.0,
+      "x2": 554.0,
+      "y2": 288.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Brazil",
+      "x": 26.0,
+      "y": 314.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3C2D21"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 120.0,
+      "top": 300.0,
+      "right": 123.05,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4E3A2A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 123.85,
+      "top": 300.0,
+      "right": 130.4,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF604834"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 131.2,
+      "top": 300.0,
+      "right": 140.9,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF72553E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 141.7,
+      "top": 300.0,
+      "right": 154.55,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF846348"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 155.35,
+      "top": 300.0,
+      "right": 172.05,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF967052"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.85,
+      "top": 300.0,
+      "right": 194.45,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA87E5C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 195.25,
+      "top": 300.0,
+      "right": 223.5,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBA8B66"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 224.3,
+      "top": 300.0,
+      "right": 262.7,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCC9970"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 263.5,
+      "top": 300.0,
+      "right": 320.1,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDEA67A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.9,
+      "top": 300.0,
+      "right": 469.2,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.1",
+      "x": 120.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "42.6",
+      "x": 470.0,
+      "y": 334.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "52.9",
+      "x": 554.0,
+      "y": 314.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each row is the same 100% of a country's income, split ten ways",
+      "x": 26.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "in Brazil the richest tenth takes 42.6%; in Slovakia, 20.6%",
+      "x": 26.0,
+      "y": 390.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Who gets what",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "income by tenth, four countries",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1409 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 640,
+  "height": 430,
+  "profiles": 513,
+  "contentDescription": "Hydrogen energy levels drawn to scale, with evenly spaced labels led to each level on both sides"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 640,
+      "bottom": 430
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 320.0,
+      "x2": 430.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 320.0,
+      "x2": 174.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 320.0,
+      "x2": 158.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 320.0,
+      "x2": 118.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 320.0,
+      "x2": 466.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 320.0,
+      "x2": 482.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 320.0,
+      "x2": 522.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 1",
+      "x": 118.0,
+      "y": 324.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-13.60 eV",
+      "x": 522.0,
+      "y": 324.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 149.0,
+      "x2": 430.0,
+      "y2": 149.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 149.0,
+      "x2": 174.0,
+      "y2": 149.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 149.0,
+      "x2": 158.0,
+      "y2": 279.2
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 279.2,
+      "x2": 118.0,
+      "y2": 279.2
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 149.0,
+      "x2": 466.0,
+      "y2": 149.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 149.0,
+      "x2": 482.0,
+      "y2": 279.2
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 279.2,
+      "x2": 522.0,
+      "y2": 279.2
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 2",
+      "x": 118.0,
+      "y": 283.2,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-3.40 eV",
+      "x": 522.0,
+      "y": 283.2,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 117.33333333333334,
+      "x2": 430.0,
+      "y2": 117.33333333333334
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 117.33333333333334,
+      "x2": 174.0,
+      "y2": 117.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 117.33333333333334,
+      "x2": 158.0,
+      "y2": 238.39999999999998
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 238.39999999999998,
+      "x2": 118.0,
+      "y2": 238.39999999999998
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 117.33333333333334,
+      "x2": 466.0,
+      "y2": 117.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 117.33333333333334,
+      "x2": 482.0,
+      "y2": 238.39999999999998
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 238.39999999999998,
+      "x2": 522.0,
+      "y2": 238.39999999999998
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 3",
+      "x": 118.0,
+      "y": 242.39999999999998,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-1.51 eV",
+      "x": 522.0,
+      "y": 242.39999999999998,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 106.25,
+      "x2": 430.0,
+      "y2": 106.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 106.25,
+      "x2": 174.0,
+      "y2": 106.25
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 106.25,
+      "x2": 158.0,
+      "y2": 197.60000000000002
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 197.60000000000002,
+      "x2": 118.0,
+      "y2": 197.60000000000002
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 106.25,
+      "x2": 466.0,
+      "y2": 106.25
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 106.25,
+      "x2": 482.0,
+      "y2": 197.60000000000002
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 197.60000000000002,
+      "x2": 522.0,
+      "y2": 197.60000000000002
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 4",
+      "x": 118.0,
+      "y": 201.60000000000002,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-0.85 eV",
+      "x": 522.0,
+      "y": 201.60000000000002,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 101.12,
+      "x2": 430.0,
+      "y2": 101.12
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 101.12,
+      "x2": 174.0,
+      "y2": 101.12
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 101.12,
+      "x2": 158.0,
+      "y2": 156.79999999999998
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 156.79999999999998,
+      "x2": 118.0,
+      "y2": 156.79999999999998
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 101.12,
+      "x2": 466.0,
+      "y2": 101.12
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 101.12,
+      "x2": 482.0,
+      "y2": 156.79999999999998
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 156.79999999999998,
+      "x2": 522.0,
+      "y2": 156.79999999999998
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 5",
+      "x": 118.0,
+      "y": 160.79999999999998,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-0.54 eV",
+      "x": 522.0,
+      "y": 160.79999999999998,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 98.33333333333334,
+      "x2": 430.0,
+      "y2": 98.33333333333334
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 98.33333333333334,
+      "x2": 174.0,
+      "y2": 98.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 174.0,
+      "y1": 98.33333333333334,
+      "x2": 158.0,
+      "y2": 116.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 158.0,
+      "y1": 116.0,
+      "x2": 118.0,
+      "y2": 116.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 436.0,
+      "y1": 98.33333333333334,
+      "x2": 466.0,
+      "y2": 98.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 466.0,
+      "y1": 98.33333333333334,
+      "x2": 482.0,
+      "y2": 116.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 116.0,
+      "x2": 522.0,
+      "y2": 116.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "n = 6",
+      "x": 118.0,
+      "y": 120.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-0.38 eV",
+      "x": 522.0,
+      "y": 120.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 246.0,
+      "y1": 149.0,
+      "x2": 246.0,
+      "y2": 320.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 246.0,
+      "y1": 320.0,
+      "x2": 241.0,
+      "y2": 311.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 246.0,
+      "y1": 320.0,
+      "x2": 251.0,
+      "y2": 311.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Lyman",
+      "x": 254.0,
+      "y": 234.5,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ultraviolet",
+      "x": 254.0,
+      "y": 248.5,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 314.0,
+      "y1": 117.33333333333334,
+      "x2": 314.0,
+      "y2": 149.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 314.0,
+      "y1": 149.0,
+      "x2": 309.0,
+      "y2": 140.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 314.0,
+      "y1": 149.0,
+      "x2": 319.0,
+      "y2": 140.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Balmer",
+      "x": 322.0,
+      "y": 133.16666666666669,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "visible",
+      "x": 322.0,
+      "y": 147.16666666666669,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 382.0,
+      "y1": 106.25,
+      "x2": 382.0,
+      "y2": 117.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 382.0,
+      "y1": 117.33333333333334,
+      "x2": 377.0,
+      "y2": 108.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 382.0,
+      "y1": 117.33333333333334,
+      "x2": 387.0,
+      "y2": 108.33333333333334
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Paschen",
+      "x": 390.0,
+      "y": 111.79166666666667,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "infrared",
+      "x": 390.0,
+      "y": 125.79166666666667,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 210.0,
+      "y1": 92.0,
+      "x2": 430.0,
+      "y2": 92.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0 eV - the electron is free",
+      "x": 210.0,
+      "y": 82.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "levels crowd towards zero, so the jumps get smaller",
+      "x": 24.0,
+      "y": 362.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a drop to n=1 releases the most energy, which is why Lyman is ultraviolet",
+      "x": 24.0,
+      "y": 380.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "labels are evenly spaced and led to their level; the levels are not",
+      "x": 24.0,
+      "y": 398.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drawn to scale: -13.6/n^2 eV",
+      "x": 24.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Energy levels",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "hydrogen, to scale",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

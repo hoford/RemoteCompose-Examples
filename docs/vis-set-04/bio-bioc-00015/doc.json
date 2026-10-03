@@ -1,0 +1,881 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 420,
+  "profiles": 513,
+  "contentDescription": "Substrate molecules as particles beside the saturation curve they produce, with the live rate marked"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 420
+     }
+    },
+    {
+     "variable": {
+      "name": "sub",
+      "value": "0.5 + sin(continuousSec() * 0.35) * 0.45",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 30.0,
+      "top": 100.0,
+      "right": 270.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "sb",
+      "variables": [
+       "bx",
+       "by",
+       "lv",
+       "ph"
+      ],
+      "initialValues": [
+       "40.0 + rand() * 220.0",
+       "110.0 + rand() * 180.0",
+       "rand()",
+       "rand() * 6.283"
+      ],
+      "count": 110
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@sb",
+      "equations": [
+       "bx",
+       "by",
+       "lv",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "clamp(0.0, 0.9, (@sub - lv) * 9)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "bx + sin(ph + animationTime * 1.4) * 3",
+         "cy": "by + cos(ph + animationTime * 1.2) * 3",
+         "radius": 4.2
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.3, 1.0, @sub * 2.2 - 0.00)"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 50.0,
+      "top": 274.0,
+      "right": 82.0,
+      "bottom": 296.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.3, 1.0, @sub * 2.2 - 0.22)"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 108.0,
+      "top": 274.0,
+      "right": 140.0,
+      "bottom": 296.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.3, 1.0, @sub * 2.2 - 0.44)"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 166.0,
+      "top": 274.0,
+      "right": 198.0,
+      "bottom": 296.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.3, 1.0, @sub * 2.2 - 0.66)"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 224.0,
+      "top": 274.0,
+      "right": 256.0,
+      "bottom": 296.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "substrate",
+      "x": 30.0,
+      "y": 90.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "enzymes",
+      "x": 30.0,
+      "y": 316.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 310.0,
+      "y1": 300.0,
+      "x2": 510.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 310.0,
+      "y1": 200.0,
+      "x2": 510.0,
+      "y2": 200.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 310.0,
+      "y1": 100.0,
+      "x2": 510.0,
+      "y2": 100.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "mm",
+      "x": 310.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 315.0,
+      "y": 281.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 320.0,
+      "y": 266.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 325.0,
+      "y": 253.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 330.0,
+      "y": 242.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 335.0,
+      "y": 233.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 340.0,
+      "y": 225.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 345.0,
+      "y": 217.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 350.0,
+      "y": 211.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 355.0,
+      "y": 205.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 360.0,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 365.0,
+      "y": 195.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 370.0,
+      "y": 190.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 375.0,
+      "y": 186.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 380.0,
+      "y": 183.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 385.0,
+      "y": 180.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 390.0,
+      "y": 176.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 395.0,
+      "y": 174.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 400.0,
+      "y": 171.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 405.0,
+      "y": 168.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 410.0,
+      "y": 166.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 415.0,
+      "y": 164.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 420.0,
+      "y": 162.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 425.0,
+      "y": 160.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 430.0,
+      "y": 158.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 435.0,
+      "y": 157.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 440.0,
+      "y": 155.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 445.0,
+      "y": 154.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 450.0,
+      "y": 152.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 455.0,
+      "y": 151.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 460.0,
+      "y": 150.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 465.0,
+      "y": 148.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 470.0,
+      "y": 147.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 475.0,
+      "y": 146.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 480.0,
+      "y": 145.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 485.0,
+      "y": 144.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 490.0,
+      "y": 143.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 495.0,
+      "y": 142.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 500.0,
+      "y": 141.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 505.0,
+      "y": 140.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "mm",
+      "x": 510.0,
+      "y": 140.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "mm"
+     }
+    },
+    {
+     "variable": {
+      "name": "vel",
+      "value": "@sub / (0.25 + @sub)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "310.0 + @sub * 200.0",
+      "cy": "300.0 - @vel * 200.0",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rate",
+      "x": 310.0,
+      "y": 90.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "substrate concentration",
+      "x": 310.0,
+      "y": 316.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "vt",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@vel * 100",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 22.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@vt",
+      "x": 510.0,
+      "y": 342.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "% of maximum rate",
+      "x": 510.0,
+      "y": 360.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "doubling the substrate stops helping once every site is busy",
+      "x": 24.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the curve flattens at saturation: more molecules, same enzymes",
+      "x": 24.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Enzyme saturation",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "why more substrate stops helping",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

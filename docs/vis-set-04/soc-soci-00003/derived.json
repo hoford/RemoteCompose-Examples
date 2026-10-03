@@ -1,0 +1,47 @@
+{
+  "id": "vis-set-04/soc-soci-00003",
+  "sha256": "6c44bce99dc4bacfa30b43e27df8b55bc37d4f117ebc9781ca71d43c779b0710",
+  "bytes": 7317,
+  "ops": 253,
+  "distinctOps": 16,
+  "width": 540,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 78,
+    "DRAW_RECT": 1,
+    "TOUCH_EXPRESSION": 1,
+    "ANIMATED_FLOAT": 56,
+    "DRAW_ROUND_RECT": 10,
+    "DATA_TEXT": 29,
+    "DRAW_TEXT_ANCHOR": 42,
+    "DRAW_LINE": 25,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set04.py"
+  ]
+}

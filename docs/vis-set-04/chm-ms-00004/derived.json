@@ -1,0 +1,45 @@
+{
+  "id": "vis-set-04/chm-ms-00004",
+  "sha256": "d850374a2a97e25ea2e627e1140151bd5c2d1f96c2e2105221edc59b268086bc",
+  "bytes": 3702,
+  "ops": 322,
+  "distinctOps": 19,
+  "width": 500,
+  "height": 620,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 5,
+    "MODIFIER_WIDTH": 17,
+    "MODIFIER_HEIGHT": 19,
+    "MODIFIER_BACKGROUND": 5,
+    "MODIFIER_PADDING": 5,
+    "LAYOUT_CONTENT": 46,
+    "DATA_TEXT": 15,
+    "CORE_TEXT": 15,
+    "CONTAINER_END": 97,
+    "LAYOUT_BOX": 18,
+    "LAYOUT_ROW": 4,
+    "LAYOUT_CANVAS": 4,
+    "LAYOUT_CANVAS_CONTENT": 4,
+    "PAINT_VALUES": 33,
+    "DRAW_RECT": 4,
+    "DRAW_LINE": 11,
+    "DRAW_CIRCLE": 18
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set04.py"
+  ]
+}
