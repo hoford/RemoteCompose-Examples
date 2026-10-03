@@ -1,10 +1,77 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 1,
- "setsLanded": 0,
- "documentsLanded": 0,
- "lastTouched": null,
+ "currentSet": 2,
+ "setsLanded": 1,
+ "documentsLanded": 16,
+ "lastTouched": "2026-10-03 set 1 landed as docs/vis-set-01 (16 documents)",
  "pausedFor": null,
- "setStatus": {},
- "findings": []
+ "setStatus": {
+  "1": "landed"
+ },
+ "findings": [
+  {
+   "id": "F-001",
+   "set": 1,
+   "kind": "tooling",
+   "status": "confirmed",
+   "summary": "rc2json cannot read documents containing 3D ops (Unknown opcode 91)"
+  },
+  {
+   "id": "F-002",
+   "set": 1,
+   "kind": "converter-divergence",
+   "status": "confirmed",
+   "summary": "rcj vs Java oracle differ up to 19x on 3D; defineMesh3D geometry is dropped by the Java writer AND the two renders differ visibly; jsonReproduces says yes for all five anyway",
+   "severity": "high"
+  },
+  {
+   "id": "F-003",
+   "set": 1,
+   "kind": "converter-divergence",
+   "status": "confirmed",
+   "summary": "rcj vs Java oracle differ 4 bytes per touchExpression (not textFromFloat)"
+  },
+  {
+   "id": "F-004",
+   "set": 1,
+   "kind": "player",
+   "status": "open",
+   "summary": "alpha on a 3D mesh does not blend in the C++ player; meshes render opaque"
+  },
+  {
+   "id": "F-005",
+   "set": 1,
+   "kind": "corpus",
+   "status": "confirmed",
+   "summary": "corpus teaches text component syntax rcj rejects; 201 of 636 are unsupported"
+  },
+  {
+   "id": "F-006",
+   "set": 1,
+   "kind": "authoring",
+   "status": "confirmed",
+   "summary": "panX 0.0 centres rather than left-aligns; every set-1 title was clipped"
+  },
+  {
+   "id": "F-007",
+   "set": 1,
+   "kind": "corpus-tooling",
+   "status": "open",
+   "summary": "coverage.json opcode table has no 3D names; 3D usage invisible"
+  },
+  {
+   "id": "F-008",
+   "set": 1,
+   "kind": "authoring",
+   "status": "confirmed",
+   "summary": "a wrongly wound defineMesh3D mesh renders as nothing, with no error anywhere"
+  },
+  {
+   "id": "F-009",
+   "set": 1,
+   "kind": "player",
+   "status": "open",
+   "summary": "wireframe meshes write depth across whole faces, occluding their contents"
+  }
+ ]
 }

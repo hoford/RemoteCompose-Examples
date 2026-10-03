@@ -1,0 +1,38 @@
+{
+  "id": "vis-set-01/eco-micr-00004",
+  "sha256": "f27e95b44462b2e143d0e95b4297a79acaca2c937a49aa71778a1f17ed582275",
+  "bytes": 2126,
+  "ops": 97,
+  "distinctOps": 13,
+  "width": 560,
+  "height": 340,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 32,
+    "DRAW_RECT": 5,
+    "DATA_TEXT": 22,
+    "DRAW_TEXT_ANCHOR": 23,
+    "DRAW_LINE": 4,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set01.py"
+  ]
+}

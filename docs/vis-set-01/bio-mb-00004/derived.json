@@ -1,0 +1,48 @@
+{
+  "id": "vis-set-01/bio-mb-00004",
+  "sha256": "b57f4b9f6fd01a4e50ac6f7b7a036662d5786f762f2446db18fd05d86d96a7bf",
+  "bytes": 1084,
+  "ops": 47,
+  "distinctOps": 17,
+  "width": 460,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 12,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 7,
+    "TOUCH_EXPRESSION": 1,
+    "ANIMATED_FLOAT": 4,
+    "DRAW_LINE": 3,
+    "DRAW_ROUND_RECT": 1,
+    "TEXT_FROM_FLOAT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set01.py"
+  ]
+}

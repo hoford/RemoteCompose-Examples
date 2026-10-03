@@ -1,0 +1,854 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "Two buyer populations as particles positioned by willingness to pay, cut by a sweeping price line"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 440
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Elasticity",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each dot is a buyer, placed at the most they will pay",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the line is the price; dots above it have left the market",
+      "x": 20.0,
+      "y": 68.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "price",
+      "value": "0.5 + sin(continuousSec() * 0.45) * 0.44",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "py",
+      "value": "330.0 - @price * 238.0",
+      "commit": true
+     }
+    },
+    {
+     "createParticles": {
+      "id": "b0",
+      "variables": [
+       "bx",
+       "res",
+       "jit"
+      ],
+      "initialValues": [
+       "44.0 + rand() * 176.0",
+       "0.440 + rand() * 0.140",
+       "rand() * 6.283"
+      ],
+      "count": 110
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@b0",
+      "equations": [
+       "bx + sin(jit + animationTime * 0.7) * 0.25",
+       "res",
+       "jit"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "clamp(0.10, 0.92, (res - @price) * 14 + 0.5)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "bx",
+         "cy": "330.0 - res * 238.0",
+         "radius": 3.8
+        }
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "sh0",
+      "value": "clamp(0.0, 1.0, (0.580 - @price) / 0.140)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 44.0,
+      "top": 376.0,
+      "right": 220.0,
+      "bottom": 394.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 44.0,
+      "top": 376.0,
+      "right": "44.0 + @sh0 * 176.0",
+      "bottom": 394.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "variable": {
+      "name": "pc0",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@sh0 * 100",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@pc0",
+      "x": 220.0,
+      "y": 412.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "elastic",
+      "x": 44.0,
+      "y": 364.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "% still buying",
+      "x": 44.0,
+      "y": 412.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "willingness 0.44-0.58",
+      "x": 44.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "b1",
+      "variables": [
+       "bx",
+       "res",
+       "jit"
+      ],
+      "initialValues": [
+       "254.0 + rand() * 176.0",
+       "0.060 + rand() * 0.900",
+       "rand() * 6.283"
+      ],
+      "count": 110
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@b1",
+      "equations": [
+       "bx + sin(jit + animationTime * 0.7) * 0.25",
+       "res",
+       "jit"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "clamp(0.10, 0.92, (res - @price) * 14 + 0.5)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "bx",
+         "cy": "330.0 - res * 238.0",
+         "radius": 3.8
+        }
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "sh1",
+      "value": "clamp(0.0, 1.0, (0.960 - @price) / 0.900)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 254.0,
+      "top": 376.0,
+      "right": 430.0,
+      "bottom": 394.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 254.0,
+      "top": 376.0,
+      "right": "254.0 + @sh1 * 176.0",
+      "bottom": 394.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "variable": {
+      "name": "pc1",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@sh1 * 100",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@pc1",
+      "x": 430.0,
+      "y": 412.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "inelastic",
+      "x": 254.0,
+      "y": 364.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "% still buying",
+      "x": 254.0,
+      "y": 412.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "willingness 0.06-0.96",
+      "x": 254.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": 330.0,
+      "x2": 440.0,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.00",
+      "x": 30.0,
+      "y": 334.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": 270.5,
+      "x2": 440.0,
+      "y2": 270.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.25",
+      "x": 30.0,
+      "y": 274.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": 211.0,
+      "x2": 440.0,
+      "y2": 211.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.50",
+      "x": 30.0,
+      "y": 215.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": 151.5,
+      "x2": 440.0,
+      "y2": 151.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.75",
+      "x": 30.0,
+      "y": 155.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": 92.0,
+      "x2": 440.0,
+      "y2": 92.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.00",
+      "x": 30.0,
+      "y": 96.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 34.0,
+      "y1": "@py",
+      "x2": 440.0,
+      "y2": "@py"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "price",
+      "x": 440.0,
+      "y": "@py - 8",
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

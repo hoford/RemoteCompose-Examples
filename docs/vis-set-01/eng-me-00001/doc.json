@@ -1,0 +1,1660 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 440,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "A four-bar linkage with its coupler curve traced as a closed path"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 440,
+      "bottom": 380
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Four-bar linkage",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the traced curve is the coupler point's path",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "locus",
+      "x": 303.3,
+      "y": 345.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 301.83,
+      "y": 345.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 300.27,
+      "y": 346.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 298.63,
+      "y": 345.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 296.93,
+      "y": 345.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 295.16,
+      "y": 345.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 293.33,
+      "y": 345.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 291.46,
+      "y": 345.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 289.55,
+      "y": 345.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 287.6,
+      "y": 345.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 285.63,
+      "y": 344.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 283.63,
+      "y": 344.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 281.63,
+      "y": 344.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 279.62,
+      "y": 343.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 277.62,
+      "y": 343.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 275.62,
+      "y": 342.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 273.64,
+      "y": 342.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 271.67,
+      "y": 341.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 269.73,
+      "y": 341.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 267.83,
+      "y": 340.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 265.95,
+      "y": 339.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 264.11,
+      "y": 339.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 262.31,
+      "y": 338.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 260.55,
+      "y": 337.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 258.83,
+      "y": 336.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 257.16,
+      "y": 335.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 255.54,
+      "y": 335.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 253.96,
+      "y": 334.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 252.43,
+      "y": 333.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 250.96,
+      "y": 332.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 249.53,
+      "y": 331.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 248.14,
+      "y": 330.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 246.81,
+      "y": 329.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 245.52,
+      "y": 329.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 244.29,
+      "y": 328.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 243.09,
+      "y": 327.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 241.95,
+      "y": 326.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 240.85,
+      "y": 325.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 239.79,
+      "y": 324.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 238.78,
+      "y": 323.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 237.8,
+      "y": 323.13
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 236.87,
+      "y": 322.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 235.98,
+      "y": 321.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 235.13,
+      "y": 320.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 234.31,
+      "y": 320.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 233.53,
+      "y": 319.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 232.79,
+      "y": 318.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 232.08,
+      "y": 317.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 231.41,
+      "y": 317.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 230.77,
+      "y": 316.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 230.16,
+      "y": 315.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 229.58,
+      "y": 315.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 229.03,
+      "y": 314.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 228.51,
+      "y": 314.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 228.03,
+      "y": 313.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 227.57,
+      "y": 313.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 227.13,
+      "y": 312.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.73,
+      "y": 312.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.35,
+      "y": 311.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.0,
+      "y": 311.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.68,
+      "y": 310.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.38,
+      "y": 310.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.1,
+      "y": 310.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.85,
+      "y": 309.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.63,
+      "y": 309.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.43,
+      "y": 309.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.25,
+      "y": 308.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.1,
+      "y": 308.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.97,
+      "y": 308.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.87,
+      "y": 308.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.8,
+      "y": 308.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.74,
+      "y": 308.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.72,
+      "y": 308.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.71,
+      "y": 308.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.74,
+      "y": 308.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.79,
+      "y": 308.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.86,
+      "y": 308.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 223.96,
+      "y": 308.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.09,
+      "y": 308.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.25,
+      "y": 308.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.43,
+      "y": 309.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.65,
+      "y": 309.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 224.89,
+      "y": 309.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.16,
+      "y": 310.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.46,
+      "y": 310.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 225.79,
+      "y": 310.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.16,
+      "y": 311.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.55,
+      "y": 311.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 226.98,
+      "y": 312.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 227.44,
+      "y": 312.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 227.93,
+      "y": 313.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 228.46,
+      "y": 314.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 229.02,
+      "y": 314.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 229.62,
+      "y": 315.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 230.25,
+      "y": 315.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 230.92,
+      "y": 316.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 231.63,
+      "y": 317.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 232.37,
+      "y": 318.13
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 233.15,
+      "y": 318.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 233.96,
+      "y": 319.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 234.81,
+      "y": 320.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 235.7,
+      "y": 321.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 236.63,
+      "y": 322.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 237.59,
+      "y": 322.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 238.59,
+      "y": 323.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 239.62,
+      "y": 324.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 240.7,
+      "y": 325.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 241.8,
+      "y": 326.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 242.94,
+      "y": 327.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 244.12,
+      "y": 328.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 245.32,
+      "y": 328.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 246.56,
+      "y": 329.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 247.84,
+      "y": 330.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 249.14,
+      "y": 331.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 250.47,
+      "y": 332.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 251.83,
+      "y": 333.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 253.22,
+      "y": 333.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 254.63,
+      "y": 334.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 256.07,
+      "y": 335.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 257.53,
+      "y": 336.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 259.01,
+      "y": 336.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 260.52,
+      "y": 337.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 262.04,
+      "y": 338.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 263.58,
+      "y": 338.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 265.13,
+      "y": 339.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 266.7,
+      "y": 340.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 268.27,
+      "y": 340.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 269.86,
+      "y": 341.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 271.45,
+      "y": 341.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 273.05,
+      "y": 342.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 274.65,
+      "y": 342.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 276.26,
+      "y": 343.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 277.86,
+      "y": 343.41
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 279.46,
+      "y": 343.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 281.05,
+      "y": 344.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 282.64,
+      "y": 344.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 284.21,
+      "y": 344.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 285.78,
+      "y": 344.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 287.32,
+      "y": 345.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 288.85,
+      "y": 345.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 290.36,
+      "y": 345.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 291.85,
+      "y": 345.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 293.32,
+      "y": 345.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 294.75,
+      "y": 345.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 296.16,
+      "y": 345.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 297.53,
+      "y": 345.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 298.87,
+      "y": 345.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 300.17,
+      "y": 346.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 301.42,
+      "y": 345.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 302.64,
+      "y": 345.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 303.81,
+      "y": 345.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 304.92,
+      "y": 345.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 305.99,
+      "y": 345.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 307.0,
+      "y": 345.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 307.95,
+      "y": 345.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 308.84,
+      "y": 345.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 309.66,
+      "y": 345.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 310.42,
+      "y": 345.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 311.11,
+      "y": 345.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 311.72,
+      "y": 345.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 312.26,
+      "y": 345.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 312.72,
+      "y": 345.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.09,
+      "y": 345.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.38,
+      "y": 345.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.58,
+      "y": 345.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.69,
+      "y": 345.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.71,
+      "y": 345.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.63,
+      "y": 345.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.45,
+      "y": 345.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 313.17,
+      "y": 345.09
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 312.78,
+      "y": 345.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 312.3,
+      "y": 345.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 311.71,
+      "y": 345.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 311.01,
+      "y": 345.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 310.21,
+      "y": 345.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 309.31,
+      "y": 345.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 308.31,
+      "y": 345.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 307.2,
+      "y": 345.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 305.99,
+      "y": 345.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 304.69,
+      "y": 345.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "locus",
+      "x": 303.3,
+      "y": 345.94
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "locus"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "locus"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 6.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 140.0,
+      "y1": 250.0,
+      "x2": 169.84,
+      "y2": 212.4
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 5.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 169.84,
+      "y1": 212.4,
+      "x2": 255.89,
+      "y2": 335.26
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 5.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 300.0,
+      "y1": 250.0,
+      "x2": 255.89,
+      "y2": 335.26
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 140.0,
+      "y1": 250.0,
+      "x2": 300.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 140.0,
+      "cy": 250.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 300.0,
+      "cy": 250.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 169.84,
+      "cy": 212.4,
+      "radius": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 255.89,
+      "cy": 335.26,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "crank",
+      "x": 136.0,
+      "y": 274.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rocker",
+      "x": 306.0,
+      "y": 274.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "coupler point",
+      "x": 265.9,
+      "y": 327.3,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ground link",
+      "x": 220.0,
+      "y": 290.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

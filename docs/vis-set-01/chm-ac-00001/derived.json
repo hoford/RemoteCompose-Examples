@@ -1,0 +1,35 @@
+{
+  "id": "vis-set-01/chm-ac-00001",
+  "sha256": "e9bd1e33f51a4e86339d2e6939333b1fd6193c84d111f93064fcfb592190b7cc",
+  "bytes": 2811,
+  "ops": 316,
+  "distinctOps": 13,
+  "width": 520,
+  "height": 300,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 4,
+    "MODIFIER_WIDTH": 18,
+    "MODIFIER_HEIGHT": 18,
+    "MODIFIER_BACKGROUND": 7,
+    "MODIFIER_PADDING": 4,
+    "LAYOUT_CONTENT": 62,
+    "DATA_TEXT": 12,
+    "CORE_TEXT": 23,
+    "CONTAINER_END": 128,
+    "LAYOUT_BOX": 28,
+    "LAYOUT_ROW": 10
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set01.py"
+  ]
+}

@@ -1,0 +1,1469 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 440,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "A replication fork in 3D with a particle pool of free nucleotides drifting around it"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 440,
+      "bottom": 440
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.9,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       0.4,
+       0.8,
+       4.2
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.5,
+         -0.75
+        ],
+        "intensity": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 11,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 1.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 11,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 12,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 1.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 12,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 13,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 1.058,
+      "z": 0.08
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 13,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 14,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 1.058,
+      "z": 0.08
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 14,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 15,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 0.865,
+      "z": 0.144
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 15,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 16,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 0.865,
+      "z": 0.144
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 16,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 17,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 0.673,
+      "z": 0.177
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 17,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 18,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 0.673,
+      "z": 0.177
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 18,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 19,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 0.481,
+      "z": 0.173
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 19,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 20,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 0.481,
+      "z": 0.173
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 20,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 21,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.16,
+      "y": 0.288,
+      "z": 0.133
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 21,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 22,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.16,
+      "y": 0.288,
+      "z": 0.133
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 22,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 23,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.178,
+      "y": 0.096,
+      "z": 0.064
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 23,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 24,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.178,
+      "y": 0.096,
+      "z": 0.064
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 24,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 25,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.3,
+      "y": -0.096,
+      "z": -0.013
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 25,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 26,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.3,
+      "y": -0.096,
+      "z": -0.013
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 26,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 27,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.422,
+      "y": -0.288,
+      "z": -0.06
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 27,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 28,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.422,
+      "y": -0.288,
+      "z": -0.06
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 28,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 29,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.544,
+      "y": -0.481,
+      "z": -0.071
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 29,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 30,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.544,
+      "y": -0.481,
+      "z": -0.071
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 30,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 31,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.666,
+      "y": -0.673,
+      "z": -0.053
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 31,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 32,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.666,
+      "y": -0.673,
+      "z": -0.053
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 32,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 33,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.788,
+      "y": -0.865,
+      "z": -0.022
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 33,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 34,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.788,
+      "y": -0.865,
+      "z": -0.022
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 34,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 35,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.909,
+      "y": -1.058,
+      "z": 0.005
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 35,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 36,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.909,
+      "y": -1.058,
+      "z": 0.005
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 36,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 37,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 1.031,
+      "y": -1.25,
+      "z": 0.011
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FB4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 37,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 38,
+      "primitive": "sphere",
+      "segments": 12,
+      "radius": 0.115,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -1.031,
+      "y": -1.25,
+      "z": 0.011
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD4C8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 38,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "createParticles": {
+      "id": "pool",
+      "variables": [
+       "px",
+       "py",
+       "vx",
+       "vy",
+       "sz"
+      ],
+      "initialValues": [
+       "rand() * 440",
+       "rand() * 440",
+       "0.3 + rand() * 0.9",
+       "0.2 + rand() * 0.7",
+       "1.6 + rand() * 2.2"
+      ],
+      "count": 90
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@pool",
+      "equations": [
+       "(px + vx * sin(py * 0.02 + animationTime) + 440) % 440",
+       "(py + vy) % 440",
+       "vx",
+       "vy",
+       "sz"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBFD0EE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "px",
+         "cy": "py",
+         "radius": "sz"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "DNA replication",
+      "x": 20.0,
+      "y": 34.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "fork opening, free nucleotides in solution",
+      "x": 20.0,
+      "y": 54.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "90 nucleotides in the pool",
+      "x": 20.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "28 bases on the parent duplex",
+      "x": 20.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

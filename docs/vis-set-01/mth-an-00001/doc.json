@@ -1,0 +1,970 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 220,
+  "profiles": 513,
+  "contentDescription": "A labelled number line from -5 to 5 with halves marked and pi placed where it falls"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 220
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The number line",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "integers, halves, and one irrational",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 40.0,
+      "y1": 120.0,
+      "x2": 520.0,
+      "y2": 120.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 40.0,
+      "y1": 108.0,
+      "x2": 40.0,
+      "y2": 132.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-5",
+      "x": 40.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 64.0,
+      "y1": 116.0,
+      "x2": 64.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 88.0,
+      "y1": 113.0,
+      "x2": 88.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-4",
+      "x": 88.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 112.0,
+      "y1": 116.0,
+      "x2": 112.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 136.0,
+      "y1": 113.0,
+      "x2": 136.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-3",
+      "x": 136.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 160.0,
+      "y1": 116.0,
+      "x2": 160.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 113.0,
+      "x2": 184.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-2",
+      "x": 184.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 208.0,
+      "y1": 116.0,
+      "x2": 208.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 232.0,
+      "y1": 113.0,
+      "x2": 232.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-1",
+      "x": 232.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 256.0,
+      "y1": 116.0,
+      "x2": 256.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 280.0,
+      "y1": 108.0,
+      "x2": 280.0,
+      "y2": 132.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 280.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 304.0,
+      "y1": 116.0,
+      "x2": 304.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 328.0,
+      "y1": 113.0,
+      "x2": 328.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 328.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 352.0,
+      "y1": 116.0,
+      "x2": 352.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 376.0,
+      "y1": 113.0,
+      "x2": 376.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2",
+      "x": 376.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 400.0,
+      "y1": 116.0,
+      "x2": 400.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 424.0,
+      "y1": 113.0,
+      "x2": 424.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3",
+      "x": 424.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 448.0,
+      "y1": 116.0,
+      "x2": 448.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 472.0,
+      "y1": 113.0,
+      "x2": 472.0,
+      "y2": 127.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4",
+      "x": 472.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 496.0,
+      "y1": 116.0,
+      "x2": 496.0,
+      "y2": 124.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 520.0,
+      "y1": 108.0,
+      "x2": 520.0,
+      "y2": 132.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 520.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 430.79644737231007,
+      "y1": 94.0,
+      "x2": 430.79644737231007,
+      "y2": 138.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pi",
+      "x": 430.79644737231007,
+      "y": 86.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3.14159...",
+      "x": 430.79644737231007,
+      "y": 70.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "halves are the short ticks",
+      "x": 40.0,
+      "y": 196.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

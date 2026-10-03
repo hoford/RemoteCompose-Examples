@@ -90,7 +90,12 @@ can make: same subject, same purpose, two pipelines.
 
 Pre-generated, balanced, and auditable rather than asserted.
 
+**Every command in this document runs from the repository root**, which is
+`/Users/john/code/github/RemoteCompose-Examples` — not from `rcJson`, where the taxonomy
+originally came from. `cd` there first or the tool paths will not resolve.
+
 ```sh
+cd /Users/john/code/github/RemoteCompose-Examples
 python3 tools/visplan.py build     # (re)generate the schedule and the state file
 python3 tools/visplan.py audit     # prove the balance claims
 python3 tools/visplan.py status    # where we are, and the next set

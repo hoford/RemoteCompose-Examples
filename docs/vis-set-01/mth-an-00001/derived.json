@@ -1,0 +1,38 @@
+{
+  "id": "vis-set-01/mth-an-00001",
+  "sha256": "c321a3f07736ec1a34da79d38cfdee519a5f8feef151139c8169ad7e196bc657",
+  "bytes": 2231,
+  "ops": 107,
+  "distinctOps": 13,
+  "width": 560,
+  "height": 220,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 40,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_LINE": 23,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set01.py"
+  ]
+}

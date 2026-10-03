@@ -1,0 +1,422 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 420,
+  "height": 420,
+  "profiles": 513,
+  "contentDescription": "The six quark flavours as a reflowing card layout, with their electric charges and a note on gluon colour"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF0C1220"
+   },
+   {
+    "padding": 16
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Quarks and gluons",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FFDCE4F2"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "six flavours, three colour charges",
+    "modifiers": [],
+    "fontSize": 11.5,
+    "color": "#FF8A99BC"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "flow",
+    "modifiers": [
+     {
+      "width": 388
+     }
+    ],
+    "children": [
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FF8FB4F2"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "up",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "+2/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FF7FA8EC"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "down",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "-1/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FFF0BD6A"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "charm",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "+2/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FFE3A94E"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "strange",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "-1/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FFF28F86"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "top",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "+2/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 118
+       },
+       {
+        "height": 76
+       },
+       {
+        "padding": 6
+       },
+       {
+        "background": "#FFE87B70"
+       }
+      ],
+      "children": [
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 8
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "bottom",
+          "modifiers": [],
+          "fontSize": 17.0,
+          "color": "#FF0C1220"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 4
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "-1/3",
+          "modifiers": [],
+          "fontSize": 11.0,
+          "color": "#FF18243C"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 16
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 388
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 10
+       },
+       {
+        "height": 10
+       },
+       {
+        "background": "#FF4FD6C9"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 10
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "gluons carry colour and bind them",
+      "modifiers": [],
+      "fontSize": 12.0,
+      "color": "#FFDCE4F2"
+     }
+    ]
+   }
+  ]
+ }
+}

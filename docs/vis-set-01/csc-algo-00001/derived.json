@@ -1,0 +1,38 @@
+{
+  "id": "vis-set-01/csc-algo-00001",
+  "sha256": "e7ecdecafa3d8f259cb13b458b7ef954180581859356bf63838e0353a3a5b068",
+  "bytes": 7492,
+  "ops": 310,
+  "distinctOps": 13,
+  "width": 520,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 140,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 19,
+    "DRAW_TEXT_ANCHOR": 75,
+    "DRAW_ROUND_RECT": 64,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set01.py"
+  ]
+}

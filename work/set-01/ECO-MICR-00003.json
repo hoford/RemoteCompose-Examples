@@ -1,0 +1,610 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 460,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Drag to change a household budget and watch spending shares reallocate across four categories"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 460,
+      "bottom": 360
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Consumer behaviour",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag up and down to change the budget",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "budget",
+      "defaultValue": 0.5,
+      "min": 0.0,
+      "max": 1.0,
+      "stopMode": "gently",
+      "expression": "1 - touchY() / 360"
+     }
+    },
+    {
+     "variable": {
+      "name": "b",
+      "value": "clamp(0.0, 1.0, @budget)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "acc",
+      "value": "0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "s0",
+      "value": "0.52 - @b * 0.26",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 120.0,
+      "right": 420.0,
+      "bottom": 154.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 120.0,
+      "right": "40.0 + @s0 * 380.0",
+      "bottom": 154.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "food",
+      "x": 50.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "p0",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@s0 * 100",
+       "whole": 2,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@p0",
+      "x": 410.0,
+      "y": 142.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s1",
+      "value": "0.30 - @b * 0.06",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 168.0,
+      "right": 420.0,
+      "bottom": 202.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 168.0,
+      "right": "40.0 + @s1 * 380.0",
+      "bottom": 202.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "housing",
+      "x": 50.0,
+      "y": 190.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "p1",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@s1 * 100",
+       "whole": 2,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@p1",
+      "x": 410.0,
+      "y": 190.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s2",
+      "value": "0.11 + @b * 0.05",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 216.0,
+      "right": 420.0,
+      "bottom": 250.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 216.0,
+      "right": "40.0 + @s2 * 380.0",
+      "bottom": 250.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "transport",
+      "x": 50.0,
+      "y": 238.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "p2",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@s2 * 100",
+       "whole": 2,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@p2",
+      "x": 410.0,
+      "y": 238.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s3",
+      "value": "0.07 + @b * 0.27",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 264.0,
+      "right": 420.0,
+      "bottom": 298.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 40.0,
+      "top": 264.0,
+      "right": "40.0 + @s3 * 380.0",
+      "bottom": 298.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "leisure",
+      "x": 50.0,
+      "y": 286.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "p3",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@s3 * 100",
+       "whole": 2,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@p3",
+      "x": 410.0,
+      "y": 286.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "share of spending, %",
+      "x": 40.0,
+      "y": 332.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "low budget",
+      "x": 420.0,
+      "y": 108.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}
