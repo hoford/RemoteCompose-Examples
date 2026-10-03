@@ -1,0 +1,6128 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "Atomic radius as 3D bars over the periodic table's own grid, showing the sawtooth across each period"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 500,
+      "bottom": 460
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 1.0,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       2.0,
+       2.3,
+       2.9
+      ],
+      "center": [
+       0,
+       -0.1,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.7,
+         -0.55
+        ],
+        "intensity": 1.0
+       },
+       {
+        "type": "directional",
+        "color": "#FF5B8CEE",
+        "dir": [
+         0.55,
+         0.25,
+         0.4
+        ],
+        "intensity": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "spin",
+      "value": "sin(continuousSec() * 0.25) * 0.5",
+      "commit": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 21,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.2835,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -1.0,
+      "y": -0.6082,
+      "z": -0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF078DC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 21,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 22,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.1658,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.8824,
+      "y": -0.6671,
+      "z": -0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5AB4A0"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 22,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 23,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.8934,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -1.0,
+      "y": -0.3033,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF078DC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 23,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 24,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.5992,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.8824,
+      "y": -0.4504,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDA80D3"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 24,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 25,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.4654,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.7647,
+      "y": -0.5173,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC589CA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 25,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 26,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.3584,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.6471,
+      "y": -0.5708,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFAF91C2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 26,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 27,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.2996,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.5294,
+      "y": -0.6002,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9AB9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 27,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 28,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.2568,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.4118,
+      "y": -0.6216,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF84A2B1"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 28,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 29,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.2247,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.2941,
+      "y": -0.6377,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FABA8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 29,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 30,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.2033,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.1765,
+      "y": -0.6484,
+      "z": -0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5AB4A0"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 30,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 31,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 1.0165,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -1.0,
+      "y": -0.2418,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF078DC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 31,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 32,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.7757,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.8824,
+      "y": -0.3621,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDA80D3"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 32,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 33,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.6313,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.7647,
+      "y": -0.4344,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC589CA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 33,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 34,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.5938,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.6471,
+      "y": -0.4531,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFAF91C2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 34,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 35,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.5243,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.5294,
+      "y": -0.4879,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9AB9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 35,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 36,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.4708,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.4118,
+      "y": -0.5146,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF84A2B1"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 36,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 37,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.4226,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.2941,
+      "y": -0.5387,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FABA8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 37,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 38,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.3798,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.1765,
+      "y": -0.5601,
+      "z": 0.2333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5AB4A0"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 38,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 39,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 1.3,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -1.0,
+      "y": -0.1,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF078DC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 39,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 40,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 1.0379,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.8824,
+      "y": -0.2311,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE77BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 40,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 41,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.9844,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.7647,
+      "y": -0.2578,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDE7FD4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 41,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 42,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.9416,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.6471,
+      "y": -0.2792,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD582D1"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 42,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 43,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.9148,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.5294,
+      "y": -0.2926,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFCC86CD"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 43,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 44,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.8881,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.4118,
+      "y": -0.306,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC389CA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 44,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 45,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.8613,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.2941,
+      "y": -0.3193,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBB8DC6"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 45,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 46,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.8346,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.1765,
+      "y": -0.3327,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB290C3"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 46,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 47,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.8132,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.0588,
+      "y": -0.3434,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA994BF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 47,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 48,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.7971,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0588,
+      "y": -0.3514,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA097BC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 48,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 49,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.7757,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.1765,
+      "y": -0.3621,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF979BB8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 49,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 50,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.7597,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.2941,
+      "y": -0.3702,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8E9EB5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 50,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 51,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.7276,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.4118,
+      "y": -0.3862,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF86A2B1"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 51,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 52,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.6687,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.5294,
+      "y": -0.4156,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7DA5AE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 52,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 53,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.6099,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.6471,
+      "y": -0.4451,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF74A9AA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 53,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 54,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.551,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.7647,
+      "y": -0.4745,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6BACA7"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 54,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 55,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.5029,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.8824,
+      "y": -0.4986,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF62B0A3"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 55,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 56,
+      "primitive": "cube",
+      "dimX": 0.085,
+      "dimY": 0.4708,
+      "dimZ": 0.085,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 1.0,
+      "y": -0.5146,
+      "z": 0.7
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5AB4A0"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 56,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 2,
+      "verts": [
+       -1.18,
+       -0.78,
+       -0.95,
+       1.18,
+       -0.78,
+       -0.95,
+       1.18,
+       -0.72,
+       -0.95,
+       -1.18,
+       -0.72,
+       -0.95,
+       1.18,
+       -0.78,
+       -1.01,
+       -1.18,
+       -0.78,
+       -1.01,
+       -1.18,
+       -0.72,
+       -1.01,
+       1.18,
+       -0.72,
+       -1.01,
+       1.18,
+       -0.78,
+       -0.95,
+       1.18,
+       -0.78,
+       -1.01,
+       1.18,
+       -0.72,
+       -1.01,
+       1.18,
+       -0.72,
+       -0.95,
+       -1.18,
+       -0.78,
+       -1.01,
+       -1.18,
+       -0.78,
+       -0.95,
+       -1.18,
+       -0.72,
+       -0.95,
+       -1.18,
+       -0.72,
+       -1.01,
+       -1.18,
+       -0.72,
+       -0.95,
+       1.18,
+       -0.72,
+       -0.95,
+       1.18,
+       -0.72,
+       -1.01,
+       -1.18,
+       -0.72,
+       -1.01,
+       -1.18,
+       -0.78,
+       -1.01,
+       1.18,
+       -0.78,
+       -1.01,
+       1.18,
+       -0.78,
+       -0.95,
+       -1.18,
+       -0.78,
+       -0.95,
+       -1.03,
+       -0.88,
+       -0.98,
+       -0.97,
+       -0.88,
+       -0.98,
+       -0.97,
+       -0.75,
+       -0.98,
+       -1.03,
+       -0.75,
+       -0.98,
+       -0.97,
+       -0.88,
+       -1.04,
+       -1.03,
+       -0.88,
+       -1.04,
+       -1.03,
+       -0.75,
+       -1.04,
+       -0.97,
+       -0.75,
+       -1.04,
+       -0.97,
+       -0.88,
+       -0.98,
+       -0.97,
+       -0.88,
+       -1.04,
+       -0.97,
+       -0.75,
+       -1.04,
+       -0.97,
+       -0.75,
+       -0.98,
+       -1.03,
+       -0.88,
+       -1.04,
+       -1.03,
+       -0.88,
+       -0.98,
+       -1.03,
+       -0.75,
+       -0.98,
+       -1.03,
+       -0.75,
+       -1.04,
+       -1.03,
+       -0.75,
+       -0.98,
+       -0.97,
+       -0.75,
+       -0.98,
+       -0.97,
+       -0.75,
+       -1.04,
+       -1.03,
+       -0.75,
+       -1.04,
+       -1.03,
+       -0.88,
+       -1.04,
+       -0.97,
+       -0.88,
+       -1.04,
+       -0.97,
+       -0.88,
+       -0.98,
+       -1.03,
+       -0.88,
+       -0.98,
+       -0.55941,
+       -0.88,
+       -0.98,
+       -0.49941,
+       -0.88,
+       -0.98,
+       -0.49941,
+       -0.75,
+       -0.98,
+       -0.55941,
+       -0.75,
+       -0.98,
+       -0.49941,
+       -0.88,
+       -1.04,
+       -0.55941,
+       -0.88,
+       -1.04,
+       -0.55941,
+       -0.75,
+       -1.04,
+       -0.49941,
+       -0.75,
+       -1.04,
+       -0.49941,
+       -0.88,
+       -0.98,
+       -0.49941,
+       -0.88,
+       -1.04,
+       -0.49941,
+       -0.75,
+       -1.04,
+       -0.49941,
+       -0.75,
+       -0.98,
+       -0.55941,
+       -0.88,
+       -1.04,
+       -0.55941,
+       -0.88,
+       -0.98,
+       -0.55941,
+       -0.75,
+       -0.98,
+       -0.55941,
+       -0.75,
+       -1.04,
+       -0.55941,
+       -0.75,
+       -0.98,
+       -0.49941,
+       -0.75,
+       -0.98,
+       -0.49941,
+       -0.75,
+       -1.04,
+       -0.55941,
+       -0.75,
+       -1.04,
+       -0.55941,
+       -0.88,
+       -1.04,
+       -0.49941,
+       -0.88,
+       -1.04,
+       -0.49941,
+       -0.88,
+       -0.98,
+       -0.55941,
+       -0.88,
+       -0.98,
+       0.02882,
+       -0.88,
+       -0.98,
+       0.08882,
+       -0.88,
+       -0.98,
+       0.08882,
+       -0.75,
+       -0.98,
+       0.02882,
+       -0.75,
+       -0.98,
+       0.08882,
+       -0.88,
+       -1.04,
+       0.02882,
+       -0.88,
+       -1.04,
+       0.02882,
+       -0.75,
+       -1.04,
+       0.08882,
+       -0.75,
+       -1.04,
+       0.08882,
+       -0.88,
+       -0.98,
+       0.08882,
+       -0.88,
+       -1.04,
+       0.08882,
+       -0.75,
+       -1.04,
+       0.08882,
+       -0.75,
+       -0.98,
+       0.02882,
+       -0.88,
+       -1.04,
+       0.02882,
+       -0.88,
+       -0.98,
+       0.02882,
+       -0.75,
+       -0.98,
+       0.02882,
+       -0.75,
+       -1.04,
+       0.02882,
+       -0.75,
+       -0.98,
+       0.08882,
+       -0.75,
+       -0.98,
+       0.08882,
+       -0.75,
+       -1.04,
+       0.02882,
+       -0.75,
+       -1.04,
+       0.02882,
+       -0.88,
+       -1.04,
+       0.08882,
+       -0.88,
+       -1.04,
+       0.08882,
+       -0.88,
+       -0.98,
+       0.02882,
+       -0.88,
+       -0.98,
+       0.61706,
+       -0.88,
+       -0.98,
+       0.67706,
+       -0.88,
+       -0.98,
+       0.67706,
+       -0.75,
+       -0.98,
+       0.61706,
+       -0.75,
+       -0.98,
+       0.67706,
+       -0.88,
+       -1.04,
+       0.61706,
+       -0.88,
+       -1.04,
+       0.61706,
+       -0.75,
+       -1.04,
+       0.67706,
+       -0.75,
+       -1.04,
+       0.67706,
+       -0.88,
+       -0.98,
+       0.67706,
+       -0.88,
+       -1.04,
+       0.67706,
+       -0.75,
+       -1.04,
+       0.67706,
+       -0.75,
+       -0.98,
+       0.61706,
+       -0.88,
+       -1.04,
+       0.61706,
+       -0.88,
+       -0.98,
+       0.61706,
+       -0.75,
+       -0.98,
+       0.61706,
+       -0.75,
+       -1.04,
+       0.61706,
+       -0.75,
+       -0.98,
+       0.67706,
+       -0.75,
+       -0.98,
+       0.67706,
+       -0.75,
+       -1.04,
+       0.61706,
+       -0.75,
+       -1.04,
+       0.61706,
+       -0.88,
+       -1.04,
+       0.67706,
+       -0.88,
+       -1.04,
+       0.67706,
+       -0.88,
+       -0.98,
+       0.61706,
+       -0.88,
+       -0.98,
+       0.97,
+       -0.88,
+       -0.98,
+       1.03,
+       -0.88,
+       -0.98,
+       1.03,
+       -0.75,
+       -0.98,
+       0.97,
+       -0.75,
+       -0.98,
+       1.03,
+       -0.88,
+       -1.04,
+       0.97,
+       -0.88,
+       -1.04,
+       0.97,
+       -0.75,
+       -1.04,
+       1.03,
+       -0.75,
+       -1.04,
+       1.03,
+       -0.88,
+       -0.98,
+       1.03,
+       -0.88,
+       -1.04,
+       1.03,
+       -0.75,
+       -1.04,
+       1.03,
+       -0.75,
+       -0.98,
+       0.97,
+       -0.88,
+       -1.04,
+       0.97,
+       -0.88,
+       -0.98,
+       0.97,
+       -0.75,
+       -0.98,
+       0.97,
+       -0.75,
+       -1.04,
+       0.97,
+       -0.75,
+       -0.98,
+       1.03,
+       -0.75,
+       -0.98,
+       1.03,
+       -0.75,
+       -1.04,
+       0.97,
+       -0.75,
+       -1.04,
+       0.97,
+       -0.88,
+       -1.04,
+       1.03,
+       -0.88,
+       -1.04,
+       1.03,
+       -0.88,
+       -0.98,
+       0.97,
+       -0.88,
+       -0.98
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22,
+       24,
+       26,
+       25,
+       24,
+       27,
+       26,
+       28,
+       30,
+       29,
+       28,
+       31,
+       30,
+       32,
+       34,
+       33,
+       32,
+       35,
+       34,
+       36,
+       38,
+       37,
+       36,
+       39,
+       38,
+       40,
+       42,
+       41,
+       40,
+       43,
+       42,
+       44,
+       46,
+       45,
+       44,
+       47,
+       46,
+       48,
+       50,
+       49,
+       48,
+       51,
+       50,
+       52,
+       54,
+       53,
+       52,
+       55,
+       54,
+       56,
+       58,
+       57,
+       56,
+       59,
+       58,
+       60,
+       62,
+       61,
+       60,
+       63,
+       62,
+       64,
+       66,
+       65,
+       64,
+       67,
+       66,
+       68,
+       70,
+       69,
+       68,
+       71,
+       70,
+       72,
+       74,
+       73,
+       72,
+       75,
+       74,
+       76,
+       78,
+       77,
+       76,
+       79,
+       78,
+       80,
+       82,
+       81,
+       80,
+       83,
+       82,
+       84,
+       86,
+       85,
+       84,
+       87,
+       86,
+       88,
+       90,
+       89,
+       88,
+       91,
+       90,
+       92,
+       94,
+       93,
+       92,
+       95,
+       94,
+       96,
+       98,
+       97,
+       96,
+       99,
+       98,
+       100,
+       102,
+       101,
+       100,
+       103,
+       102,
+       104,
+       106,
+       105,
+       104,
+       107,
+       106,
+       108,
+       110,
+       109,
+       108,
+       111,
+       110,
+       112,
+       114,
+       113,
+       112,
+       115,
+       114,
+       116,
+       118,
+       117,
+       116,
+       119,
+       118,
+       120,
+       122,
+       121,
+       120,
+       123,
+       122,
+       124,
+       126,
+       125,
+       124,
+       127,
+       126,
+       128,
+       130,
+       129,
+       128,
+       131,
+       130,
+       132,
+       134,
+       133,
+       132,
+       135,
+       134,
+       136,
+       138,
+       137,
+       136,
+       139,
+       138,
+       140,
+       142,
+       141,
+       140,
+       143,
+       142
+      ]
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 3,
+      "verts": [
+       -1.21,
+       -0.78,
+       0.98,
+       -1.15,
+       -0.78,
+       0.98,
+       -1.15,
+       -0.72,
+       0.98,
+       -1.21,
+       -0.72,
+       0.98,
+       -1.15,
+       -0.78,
+       -0.98,
+       -1.21,
+       -0.78,
+       -0.98,
+       -1.21,
+       -0.72,
+       -0.98,
+       -1.15,
+       -0.72,
+       -0.98,
+       -1.15,
+       -0.78,
+       0.98,
+       -1.15,
+       -0.78,
+       -0.98,
+       -1.15,
+       -0.72,
+       -0.98,
+       -1.15,
+       -0.72,
+       0.98,
+       -1.21,
+       -0.78,
+       -0.98,
+       -1.21,
+       -0.78,
+       0.98,
+       -1.21,
+       -0.72,
+       0.98,
+       -1.21,
+       -0.72,
+       -0.98,
+       -1.21,
+       -0.72,
+       0.98,
+       -1.15,
+       -0.72,
+       0.98,
+       -1.15,
+       -0.72,
+       -0.98,
+       -1.21,
+       -0.72,
+       -0.98,
+       -1.21,
+       -0.78,
+       -0.98,
+       -1.15,
+       -0.78,
+       -0.98,
+       -1.15,
+       -0.78,
+       0.98,
+       -1.21,
+       -0.78,
+       0.98,
+       -1.31,
+       -0.81,
+       -0.67,
+       -1.18,
+       -0.81,
+       -0.67,
+       -1.18,
+       -0.75,
+       -0.67,
+       -1.31,
+       -0.75,
+       -0.67,
+       -1.18,
+       -0.81,
+       -0.73,
+       -1.31,
+       -0.81,
+       -0.73,
+       -1.31,
+       -0.75,
+       -0.73,
+       -1.18,
+       -0.75,
+       -0.73,
+       -1.18,
+       -0.81,
+       -0.67,
+       -1.18,
+       -0.81,
+       -0.73,
+       -1.18,
+       -0.75,
+       -0.73,
+       -1.18,
+       -0.75,
+       -0.67,
+       -1.31,
+       -0.81,
+       -0.73,
+       -1.31,
+       -0.81,
+       -0.67,
+       -1.31,
+       -0.75,
+       -0.67,
+       -1.31,
+       -0.75,
+       -0.73,
+       -1.31,
+       -0.75,
+       -0.67,
+       -1.18,
+       -0.75,
+       -0.67,
+       -1.18,
+       -0.75,
+       -0.73,
+       -1.31,
+       -0.75,
+       -0.73,
+       -1.31,
+       -0.81,
+       -0.73,
+       -1.18,
+       -0.81,
+       -0.73,
+       -1.18,
+       -0.81,
+       -0.67,
+       -1.31,
+       -0.81,
+       -0.67,
+       -1.31,
+       -0.81,
+       -0.20333,
+       -1.18,
+       -0.81,
+       -0.20333,
+       -1.18,
+       -0.75,
+       -0.20333,
+       -1.31,
+       -0.75,
+       -0.20333,
+       -1.18,
+       -0.81,
+       -0.26333,
+       -1.31,
+       -0.81,
+       -0.26333,
+       -1.31,
+       -0.75,
+       -0.26333,
+       -1.18,
+       -0.75,
+       -0.26333,
+       -1.18,
+       -0.81,
+       -0.20333,
+       -1.18,
+       -0.81,
+       -0.26333,
+       -1.18,
+       -0.75,
+       -0.26333,
+       -1.18,
+       -0.75,
+       -0.20333,
+       -1.31,
+       -0.81,
+       -0.26333,
+       -1.31,
+       -0.81,
+       -0.20333,
+       -1.31,
+       -0.75,
+       -0.20333,
+       -1.31,
+       -0.75,
+       -0.26333,
+       -1.31,
+       -0.75,
+       -0.20333,
+       -1.18,
+       -0.75,
+       -0.20333,
+       -1.18,
+       -0.75,
+       -0.26333,
+       -1.31,
+       -0.75,
+       -0.26333,
+       -1.31,
+       -0.81,
+       -0.26333,
+       -1.18,
+       -0.81,
+       -0.26333,
+       -1.18,
+       -0.81,
+       -0.20333,
+       -1.31,
+       -0.81,
+       -0.20333,
+       -1.31,
+       -0.81,
+       0.26333,
+       -1.18,
+       -0.81,
+       0.26333,
+       -1.18,
+       -0.75,
+       0.26333,
+       -1.31,
+       -0.75,
+       0.26333,
+       -1.18,
+       -0.81,
+       0.20333,
+       -1.31,
+       -0.81,
+       0.20333,
+       -1.31,
+       -0.75,
+       0.20333,
+       -1.18,
+       -0.75,
+       0.20333,
+       -1.18,
+       -0.81,
+       0.26333,
+       -1.18,
+       -0.81,
+       0.20333,
+       -1.18,
+       -0.75,
+       0.20333,
+       -1.18,
+       -0.75,
+       0.26333,
+       -1.31,
+       -0.81,
+       0.20333,
+       -1.31,
+       -0.81,
+       0.26333,
+       -1.31,
+       -0.75,
+       0.26333,
+       -1.31,
+       -0.75,
+       0.20333,
+       -1.31,
+       -0.75,
+       0.26333,
+       -1.18,
+       -0.75,
+       0.26333,
+       -1.18,
+       -0.75,
+       0.20333,
+       -1.31,
+       -0.75,
+       0.20333,
+       -1.31,
+       -0.81,
+       0.20333,
+       -1.18,
+       -0.81,
+       0.20333,
+       -1.18,
+       -0.81,
+       0.26333,
+       -1.31,
+       -0.81,
+       0.26333,
+       -1.31,
+       -0.81,
+       0.73,
+       -1.18,
+       -0.81,
+       0.73,
+       -1.18,
+       -0.75,
+       0.73,
+       -1.31,
+       -0.75,
+       0.73,
+       -1.18,
+       -0.81,
+       0.67,
+       -1.31,
+       -0.81,
+       0.67,
+       -1.31,
+       -0.75,
+       0.67,
+       -1.18,
+       -0.75,
+       0.67,
+       -1.18,
+       -0.81,
+       0.73,
+       -1.18,
+       -0.81,
+       0.67,
+       -1.18,
+       -0.75,
+       0.67,
+       -1.18,
+       -0.75,
+       0.73,
+       -1.31,
+       -0.81,
+       0.67,
+       -1.31,
+       -0.81,
+       0.73,
+       -1.31,
+       -0.75,
+       0.73,
+       -1.31,
+       -0.75,
+       0.67,
+       -1.31,
+       -0.75,
+       0.73,
+       -1.18,
+       -0.75,
+       0.73,
+       -1.18,
+       -0.75,
+       0.67,
+       -1.31,
+       -0.75,
+       0.67,
+       -1.31,
+       -0.81,
+       0.67,
+       -1.18,
+       -0.81,
+       0.67,
+       -1.18,
+       -0.81,
+       0.73,
+       -1.31,
+       -0.81,
+       0.73
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22,
+       24,
+       26,
+       25,
+       24,
+       27,
+       26,
+       28,
+       30,
+       29,
+       28,
+       31,
+       30,
+       32,
+       34,
+       33,
+       32,
+       35,
+       34,
+       36,
+       38,
+       37,
+       36,
+       39,
+       38,
+       40,
+       42,
+       41,
+       40,
+       43,
+       42,
+       44,
+       46,
+       45,
+       44,
+       47,
+       46,
+       48,
+       50,
+       49,
+       48,
+       51,
+       50,
+       52,
+       54,
+       53,
+       52,
+       55,
+       54,
+       56,
+       58,
+       57,
+       56,
+       59,
+       58,
+       60,
+       62,
+       61,
+       60,
+       63,
+       62,
+       64,
+       66,
+       65,
+       64,
+       67,
+       66,
+       68,
+       70,
+       69,
+       68,
+       71,
+       70,
+       72,
+       74,
+       73,
+       72,
+       75,
+       74,
+       76,
+       78,
+       77,
+       76,
+       79,
+       78,
+       80,
+       82,
+       81,
+       80,
+       83,
+       82,
+       84,
+       86,
+       85,
+       84,
+       87,
+       86,
+       88,
+       90,
+       89,
+       88,
+       91,
+       90,
+       92,
+       94,
+       93,
+       92,
+       95,
+       94,
+       96,
+       98,
+       97,
+       96,
+       99,
+       98,
+       100,
+       102,
+       101,
+       100,
+       103,
+       102,
+       104,
+       106,
+       105,
+       104,
+       107,
+       106,
+       108,
+       110,
+       109,
+       108,
+       111,
+       110,
+       112,
+       114,
+       113,
+       112,
+       115,
+       114,
+       116,
+       118,
+       117,
+       116,
+       119,
+       118
+      ]
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 4,
+      "verts": [
+       -1.21,
+       -0.75,
+       -0.95,
+       -1.15,
+       -0.75,
+       -0.95,
+       -1.15,
+       0.55,
+       -0.95,
+       -1.21,
+       0.55,
+       -0.95,
+       -1.15,
+       -0.75,
+       -1.01,
+       -1.21,
+       -0.75,
+       -1.01,
+       -1.21,
+       0.55,
+       -1.01,
+       -1.15,
+       0.55,
+       -1.01,
+       -1.15,
+       -0.75,
+       -0.95,
+       -1.15,
+       -0.75,
+       -1.01,
+       -1.15,
+       0.55,
+       -1.01,
+       -1.15,
+       0.55,
+       -0.95,
+       -1.21,
+       -0.75,
+       -1.01,
+       -1.21,
+       -0.75,
+       -0.95,
+       -1.21,
+       0.55,
+       -0.95,
+       -1.21,
+       0.55,
+       -1.01,
+       -1.21,
+       0.55,
+       -0.95,
+       -1.15,
+       0.55,
+       -0.95,
+       -1.15,
+       0.55,
+       -1.01,
+       -1.21,
+       0.55,
+       -1.01,
+       -1.21,
+       -0.75,
+       -1.01,
+       -1.15,
+       -0.75,
+       -1.01,
+       -1.15,
+       -0.75,
+       -0.95,
+       -1.21,
+       -0.75,
+       -0.95,
+       -1.31,
+       -0.51251,
+       -0.98,
+       -1.18,
+       -0.51251,
+       -0.98,
+       -1.18,
+       -0.45251,
+       -0.98,
+       -1.31,
+       -0.45251,
+       -0.98,
+       -1.18,
+       -0.51251,
+       -1.04,
+       -1.31,
+       -0.51251,
+       -1.04,
+       -1.31,
+       -0.45251,
+       -1.04,
+       -1.18,
+       -0.45251,
+       -1.04,
+       -1.18,
+       -0.51251,
+       -0.98,
+       -1.18,
+       -0.51251,
+       -1.04,
+       -1.18,
+       -0.45251,
+       -1.04,
+       -1.18,
+       -0.45251,
+       -0.98,
+       -1.31,
+       -0.51251,
+       -1.04,
+       -1.31,
+       -0.51251,
+       -0.98,
+       -1.31,
+       -0.45251,
+       -0.98,
+       -1.31,
+       -0.45251,
+       -1.04,
+       -1.31,
+       -0.45251,
+       -0.98,
+       -1.18,
+       -0.45251,
+       -0.98,
+       -1.18,
+       -0.45251,
+       -1.04,
+       -1.31,
+       -0.45251,
+       -1.04,
+       -1.31,
+       -0.51251,
+       -1.04,
+       -1.18,
+       -0.51251,
+       -1.04,
+       -1.18,
+       -0.51251,
+       -0.98,
+       -1.31,
+       -0.51251,
+       -0.98,
+       -1.31,
+       -0.24502,
+       -0.98,
+       -1.18,
+       -0.24502,
+       -0.98,
+       -1.18,
+       -0.18502,
+       -0.98,
+       -1.31,
+       -0.18502,
+       -0.98,
+       -1.18,
+       -0.24502,
+       -1.04,
+       -1.31,
+       -0.24502,
+       -1.04,
+       -1.31,
+       -0.18502,
+       -1.04,
+       -1.18,
+       -0.18502,
+       -1.04,
+       -1.18,
+       -0.24502,
+       -0.98,
+       -1.18,
+       -0.24502,
+       -1.04,
+       -1.18,
+       -0.18502,
+       -1.04,
+       -1.18,
+       -0.18502,
+       -0.98,
+       -1.31,
+       -0.24502,
+       -1.04,
+       -1.31,
+       -0.24502,
+       -0.98,
+       -1.31,
+       -0.18502,
+       -0.98,
+       -1.31,
+       -0.18502,
+       -1.04,
+       -1.31,
+       -0.18502,
+       -0.98,
+       -1.18,
+       -0.18502,
+       -0.98,
+       -1.18,
+       -0.18502,
+       -1.04,
+       -1.31,
+       -0.18502,
+       -1.04,
+       -1.31,
+       -0.24502,
+       -1.04,
+       -1.18,
+       -0.24502,
+       -1.04,
+       -1.18,
+       -0.24502,
+       -0.98,
+       -1.31,
+       -0.24502,
+       -0.98,
+       -1.31,
+       0.02247,
+       -0.98,
+       -1.18,
+       0.02247,
+       -0.98,
+       -1.18,
+       0.08247,
+       -0.98,
+       -1.31,
+       0.08247,
+       -0.98,
+       -1.18,
+       0.02247,
+       -1.04,
+       -1.31,
+       0.02247,
+       -1.04,
+       -1.31,
+       0.08247,
+       -1.04,
+       -1.18,
+       0.08247,
+       -1.04,
+       -1.18,
+       0.02247,
+       -0.98,
+       -1.18,
+       0.02247,
+       -1.04,
+       -1.18,
+       0.08247,
+       -1.04,
+       -1.18,
+       0.08247,
+       -0.98,
+       -1.31,
+       0.02247,
+       -1.04,
+       -1.31,
+       0.02247,
+       -0.98,
+       -1.31,
+       0.08247,
+       -0.98,
+       -1.31,
+       0.08247,
+       -1.04,
+       -1.31,
+       0.08247,
+       -0.98,
+       -1.18,
+       0.08247,
+       -0.98,
+       -1.18,
+       0.08247,
+       -1.04,
+       -1.31,
+       0.08247,
+       -1.04,
+       -1.31,
+       0.02247,
+       -1.04,
+       -1.18,
+       0.02247,
+       -1.04,
+       -1.18,
+       0.02247,
+       -0.98,
+       -1.31,
+       0.02247,
+       -0.98,
+       -1.31,
+       0.28996,
+       -0.98,
+       -1.18,
+       0.28996,
+       -0.98,
+       -1.18,
+       0.34996,
+       -0.98,
+       -1.31,
+       0.34996,
+       -0.98,
+       -1.18,
+       0.28996,
+       -1.04,
+       -1.31,
+       0.28996,
+       -1.04,
+       -1.31,
+       0.34996,
+       -1.04,
+       -1.18,
+       0.34996,
+       -1.04,
+       -1.18,
+       0.28996,
+       -0.98,
+       -1.18,
+       0.28996,
+       -1.04,
+       -1.18,
+       0.34996,
+       -1.04,
+       -1.18,
+       0.34996,
+       -0.98,
+       -1.31,
+       0.28996,
+       -1.04,
+       -1.31,
+       0.28996,
+       -0.98,
+       -1.31,
+       0.34996,
+       -0.98,
+       -1.31,
+       0.34996,
+       -1.04,
+       -1.31,
+       0.34996,
+       -0.98,
+       -1.18,
+       0.34996,
+       -0.98,
+       -1.18,
+       0.34996,
+       -1.04,
+       -1.31,
+       0.34996,
+       -1.04,
+       -1.31,
+       0.28996,
+       -1.04,
+       -1.18,
+       0.28996,
+       -1.04,
+       -1.18,
+       0.28996,
+       -0.98,
+       -1.31,
+       0.28996,
+       -0.98
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22,
+       24,
+       26,
+       25,
+       24,
+       27,
+       26,
+       28,
+       30,
+       29,
+       28,
+       31,
+       30,
+       32,
+       34,
+       33,
+       32,
+       35,
+       34,
+       36,
+       38,
+       37,
+       36,
+       39,
+       38,
+       40,
+       42,
+       41,
+       40,
+       43,
+       42,
+       44,
+       46,
+       45,
+       44,
+       47,
+       46,
+       48,
+       50,
+       49,
+       48,
+       51,
+       50,
+       52,
+       54,
+       53,
+       52,
+       55,
+       54,
+       56,
+       58,
+       57,
+       56,
+       59,
+       58,
+       60,
+       62,
+       61,
+       60,
+       63,
+       62,
+       64,
+       66,
+       65,
+       64,
+       67,
+       66,
+       68,
+       70,
+       69,
+       68,
+       71,
+       70,
+       72,
+       74,
+       73,
+       72,
+       75,
+       74,
+       76,
+       78,
+       77,
+       76,
+       79,
+       78,
+       80,
+       82,
+       81,
+       80,
+       83,
+       82,
+       84,
+       86,
+       85,
+       84,
+       87,
+       86,
+       88,
+       90,
+       89,
+       88,
+       91,
+       90,
+       92,
+       94,
+       93,
+       92,
+       95,
+       94,
+       96,
+       98,
+       97,
+       96,
+       99,
+       98,
+       100,
+       102,
+       101,
+       100,
+       103,
+       102,
+       104,
+       106,
+       105,
+       104,
+       107,
+       106,
+       108,
+       110,
+       109,
+       108,
+       111,
+       110,
+       112,
+       114,
+       113,
+       112,
+       115,
+       114,
+       116,
+       118,
+       117,
+       116,
+       119,
+       118
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 2,
+      "mode": "software-flat"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 3,
+      "mode": "software-flat"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBFCBE4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 4,
+      "mode": "software-flat"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "group",
+      "x": 20.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "period",
+      "x": 86.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBFCBE4"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "radius",
+      "x": 160.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ticks: groups 1 5 10 15 18, periods 1-4, radius every 50 pm",
+      "x": 20.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "atomic radius falls across each period",
+      "x": 20.0,
+      "y": 386.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "and jumps at the start of the next one",
+      "x": 20.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "periods 1 to 4, 36 elements, picometres",
+      "x": 20.0,
+      "y": 428.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Atomic radius",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the periodic table's third axis",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,681 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 420,
+  "height": 470,
+  "profiles": 513,
+  "contentDescription": "Three Feynman diagrams as cards in a column, each pairing a small canvas with its caption"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF0C1220"
+   },
+   {
+    "padding": 16
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Feynman diagrams",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FFDCE4F2"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "time runs left to right",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF8A99BC"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 388
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 86
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 86
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBCD2FA"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 16,
+         "y1": 16,
+         "x2": 62,
+         "y2": 43
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 16,
+         "y1": 70,
+         "x2": 62,
+         "y2": 43
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 62,
+         "top": 37,
+         "right": 72,
+         "bottom": 49,
+         "startAngle": 180.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 72,
+         "top": 37,
+         "right": 82,
+         "bottom": 49,
+         "startAngle": 0.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 82,
+         "top": 37,
+         "right": 92,
+         "bottom": 49,
+         "startAngle": 180.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 92,
+         "top": 37,
+         "right": 102,
+         "bottom": 49,
+         "startAngle": 0.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 102,
+         "top": 37,
+         "right": 112,
+         "bottom": 49,
+         "startAngle": 180.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBCD2FA"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 112,
+         "y1": 43,
+         "x2": 138,
+         "y2": 18
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 112,
+         "y1": 43,
+         "x2": 138,
+         "y2": 68
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 14
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 196
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Annihilation",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFDCE4F2"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "an electron and a positron meet, become a photon, and produce a new pair",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8A99BC"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 10
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 388
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 86
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 86
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBCD2FA"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 14,
+         "y1": 20,
+         "x2": 136,
+         "y2": 20
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 14,
+         "y1": 66,
+         "x2": 136,
+         "y2": 66
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 69,
+         "top": 24,
+         "right": 81,
+         "bottom": 34,
+         "startAngle": 270.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 69,
+         "top": 34,
+         "right": 81,
+         "bottom": 44,
+         "startAngle": 90.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 69,
+         "top": 44,
+         "right": 81,
+         "bottom": 54,
+         "startAngle": 270.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 69,
+         "top": 54,
+         "right": 81,
+         "bottom": 64,
+         "startAngle": 90.0,
+         "sweepAngle": 180.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 14
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 196
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Scattering",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFDCE4F2"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "two electrons exchange a virtual photon and deflect",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8A99BC"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 10
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 388
+     },
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 150
+       },
+       {
+        "height": 86
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 150,
+         "bottom": 86
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBCD2FA"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 14,
+         "y1": 43,
+         "x2": 70,
+         "y2": 43
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          }
+         ]
+        }
+       },
+       {
+        "drawArc": {
+         "left": 70,
+         "top": 38,
+         "right": 79,
+         "bottom": 48,
+         "startAngle": 180.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 79,
+         "top": 38,
+         "right": 88,
+         "bottom": 48,
+         "startAngle": 0.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 88,
+         "top": 38,
+         "right": 97,
+         "bottom": 48,
+         "startAngle": 180.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "drawArc": {
+         "left": 97,
+         "top": 38,
+         "right": 106,
+         "bottom": 48,
+         "startAngle": 0.0,
+         "sweepAngle": 180.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFBCD2FA"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 70,
+         "y1": 43,
+         "x2": 136,
+         "y2": 20
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 106,
+         "y1": 43,
+         "x2": 136,
+         "y2": 50
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 106,
+         "y1": 43,
+         "x2": 136,
+         "y2": 76
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 14
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 196
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Beta decay",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFDCE4F2"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "a down quark emits a W boson, becoming up; the W decays to an electron and an antineutrino",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF8A99BC"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

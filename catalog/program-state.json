@@ -1,12 +1,13 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 2,
- "setsLanded": 1,
- "documentsLanded": 16,
- "lastTouched": "2026-10-03 set 1 landed as docs/vis-set-01 (16 documents)",
+ "currentSet": 3,
+ "setsLanded": 2,
+ "documentsLanded": 32,
+ "lastTouched": "2026-10-03 set 2 landed as docs/vis-set-02 (16 documents)",
  "pausedFor": null,
  "setStatus": {
-  "1": "landed"
+  "1": "landed",
+  "2": "landed"
  },
  "findings": [
   {
@@ -29,7 +30,7 @@
    "set": 1,
    "kind": "converter-divergence",
    "status": "confirmed",
-   "summary": "rcj vs Java oracle differ 4 bytes per touchExpression (not textFromFloat)"
+   "summary": "rcj vs Java differ on touchExpression, but the delta is not constant (4-20 B); cause not isolated"
   },
   {
    "id": "F-004",
@@ -72,6 +73,20 @@
    "kind": "player",
    "status": "open",
    "summary": "wireframe meshes write depth across whole faces, occluding their contents"
+  },
+  {
+   "id": "F-010",
+   "set": 2,
+   "kind": "authoring",
+   "status": "confirmed",
+   "summary": "a texture is invisible on a wireframe mesh; a 3D surface can be see-through or textured, not both"
+  },
+  {
+   "id": "F-011",
+   "set": 2,
+   "kind": "corpus-tooling",
+   "status": "fixed",
+   "summary": "rcx round-trip ignored base_dir, mislabelling any document with a bitmap asset"
   }
  ]
 }

@@ -1,0 +1,766 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "The four fundamental interactions compared by relative strength, range and force carrier"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 360
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 150.0,
+      "y1": 82.0,
+      "x2": 150.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^0",
+      "x": 150.0,
+      "y": 74.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 237.5,
+      "y1": 82.0,
+      "x2": 237.5,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^10",
+      "x": 237.5,
+      "y": 74.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 325.0,
+      "y1": 82.0,
+      "x2": 325.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^20",
+      "x": 325.0,
+      "y": 74.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 412.5,
+      "y1": 82.0,
+      "x2": 412.5,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^30",
+      "x": 412.5,
+      "y": 74.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 500.0,
+      "y1": 82.0,
+      "x2": 500.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^40",
+      "x": 500.0,
+      "y": 74.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 150.0,
+      "top": 92.0,
+      "right": 482.5,
+      "bottom": 122.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Strong",
+      "x": 138.0,
+      "y": 112.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "range 10^-15 m",
+      "x": 156.0,
+      "y": 136.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carrier gluon",
+      "x": 300.0,
+      "y": 136.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 150.0,
+      "top": 154.0,
+      "right": 465.0,
+      "bottom": 184.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Electromagnetic",
+      "x": 138.0,
+      "y": 174.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "range infinite",
+      "x": 156.0,
+      "y": 198.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carrier photon",
+      "x": 300.0,
+      "y": 198.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 150.0,
+      "top": 216.0,
+      "right": 368.75,
+      "bottom": 246.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Weak",
+      "x": 138.0,
+      "y": 236.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "range 10^-18 m",
+      "x": 156.0,
+      "y": 260.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carrier W, Z",
+      "x": 300.0,
+      "y": 260.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 150.0,
+      "top": 278.0,
+      "right": 153.0,
+      "bottom": 308.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Gravity",
+      "x": 138.0,
+      "y": 298.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "range infinite",
+      "x": 156.0,
+      "y": 322.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carrier graviton?",
+      "x": 300.0,
+      "y": 322.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "relative strength, powers of ten",
+      "x": 150.0,
+      "y": 340.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "gravity is 10^38 times weaker than the strong force",
+      "x": 150.0,
+      "y": 356.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Fundamental interactions",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one log axis, four forces",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

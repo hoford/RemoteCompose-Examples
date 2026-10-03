@@ -1,0 +1,836 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 460,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "The rock cycle as three nodes joined by curved arrow paths with arrowheads"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 460,
+      "bottom": 440
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "arc0",
+      "x": 254.3,
+      "y": 128.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 261.75,
+      "y": 135.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 268.88,
+      "y": 141.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 275.68,
+      "y": 148.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 282.16,
+      "y": 155.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 288.31,
+      "y": 163.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 294.14,
+      "y": 170.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 299.64,
+      "y": 178.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 304.82,
+      "y": 185.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 309.67,
+      "y": 194.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 314.2,
+      "y": 202.22
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 318.41,
+      "y": 210.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 322.29,
+      "y": 219.22
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 325.84,
+      "y": 228.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 329.07,
+      "y": 236.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 331.97,
+      "y": 246.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 334.55,
+      "y": 255.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 336.81,
+      "y": 265.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc0",
+      "x": 338.74,
+      "y": 274.72
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "arc0"
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 338.74,
+      "y1": 274.72,
+      "x2": 341.63,
+      "y2": 262.04
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 338.74,
+      "y1": 274.72,
+      "x2": 331.23,
+      "y2": 264.11
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "weathering",
+      "x": 333.0570230503482,
+      "y": 180.5,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "arc1",
+      "x": 314.44,
+      "y": 316.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 305.06,
+      "y": 320.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 295.67,
+      "y": 322.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 286.29,
+      "y": 325.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 276.91,
+      "y": 327.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 267.53,
+      "y": 329.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 258.15,
+      "y": 330.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 248.76,
+      "y": 331.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 239.38,
+      "y": 331.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 230.0,
+      "y": 332.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 220.62,
+      "y": 331.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 211.24,
+      "y": 331.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 201.85,
+      "y": 330.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 192.47,
+      "y": 329.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 183.09,
+      "y": 327.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 173.71,
+      "y": 325.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 164.33,
+      "y": 322.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 154.94,
+      "y": 320.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc1",
+      "x": 145.56,
+      "y": 316.81
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "arc1"
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 145.56,
+      "y1": 316.81,
+      "x2": 155.09,
+      "y2": 325.65
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 145.56,
+      "y1": 316.81,
+      "x2": 158.5,
+      "y2": 315.61
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "heat & pressure",
+      "x": 230.0,
+      "y": 359.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "arc2",
+      "x": 121.26,
+      "y": 274.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 123.19,
+      "y": 265.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 125.45,
+      "y": 255.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 128.03,
+      "y": 246.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 130.93,
+      "y": 236.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 134.16,
+      "y": 228.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 137.71,
+      "y": 219.22
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 141.59,
+      "y": 210.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 145.8,
+      "y": 202.22
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 150.33,
+      "y": 194.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 155.18,
+      "y": 185.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 160.36,
+      "y": 178.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 165.86,
+      "y": 170.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 171.69,
+      "y": 163.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 177.84,
+      "y": 155.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 184.32,
+      "y": 148.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 191.12,
+      "y": 141.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 198.25,
+      "y": 135.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "arc2",
+      "x": 205.7,
+      "y": 128.47
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "arc2"
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 205.7,
+      "y1": 128.47,
+      "x2": 193.28,
+      "y2": 132.31
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 205.7,
+      "y1": 128.47,
+      "x2": 200.27,
+      "y2": 140.28
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "melting",
+      "x": 126.94297694965178,
+      "y": 180.5,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 230.0,
+      "cy": 110.0,
+      "radius": 46.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Igneous",
+      "x": 230.0,
+      "y": 114.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 342.58330249197707,
+      "cy": 305.0,
+      "radius": 46.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Sedimentary",
+      "x": 342.58330249197707,
+      "y": 309.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 117.41669750802296,
+      "cy": 305.0,
+      "radius": 46.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Metamorphic",
+      "x": 117.41669750802296,
+      "y": 309.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every arc is a sampled Bezier: the dialect has lineTo, not curveTo",
+      "x": 20.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The rock cycle",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one rock becomes another",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

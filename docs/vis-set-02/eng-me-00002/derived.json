@@ -1,0 +1,51 @@
+{
+  "id": "vis-set-02/eng-me-00002",
+  "sha256": "ac5c664e5fa539122ac1c9a4ce668f33944846791665c877c3b8a8dc8f6782f3",
+  "bytes": 4559,
+  "ops": 297,
+  "distinctOps": 19,
+  "width": 500,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 55,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 44,
+    "DRAW_CIRCLE": 6,
+    "MATRIX_SAVE": 42,
+    "MATRIX_ROTATE": 42,
+    "DRAW_ROUND_RECT": 40,
+    "MATRIX_RESTORE": 42,
+    "DRAW_LINE": 2,
+    "DATA_TEXT": 6,
+    "DRAW_TEXT_ANCHOR": 6,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set02.py"
+  ]
+}

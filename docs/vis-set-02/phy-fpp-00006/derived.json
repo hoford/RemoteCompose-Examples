@@ -1,0 +1,49 @@
+{
+  "id": "vis-set-02/phy-fpp-00006",
+  "sha256": "cdf1fffd6098f316aa4465835b8d1a61cb803357852c2265f96fc82711236889",
+  "bytes": 2377,
+  "ops": 104,
+  "distinctOps": 18,
+  "width": 560,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "FLOAT_LIST": 2,
+    "NAMED_VARIABLE": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 28,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 5,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 17,
+    "ANIMATED_FLOAT": 13,
+    "LOOP_START": 1,
+    "DRAW_CIRCLE": 5,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set02.py"
+  ]
+}

@@ -1,0 +1,1794 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "Two meshing gears turning at a 25:15 tooth ratio from a single clock"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 500,
+      "bottom": 380
+     }
+    },
+    {
+     "variable": {
+      "name": "a1",
+      "value": "continuousSec() * 0.6",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "a2",
+      "value": "-@a1 * 1.66667",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2A4A86"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 190.0,
+      "cy": 200.0,
+      "radius": 106.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 190.0,
+      "cy": 200.0,
+      "radius": 90.0
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 0.00000) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 0.25133) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 0.50265) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 0.75398) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 1.00531) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 1.25664) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 1.50796) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 1.75929) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 2.01062) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 2.26195) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 2.51327) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 2.76460) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 3.01593) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 3.26726) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 3.51858) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 3.76991) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 4.02124) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 4.27257) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 4.52389) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 4.77522) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 5.02655) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 5.27788) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 5.52920) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 5.78053) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a1 + 6.03186) * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 185.0,
+         "top": 93.0,
+         "right": 195.0,
+         "bottom": 109.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 190.0,
+      "cy": 200.0,
+      "radius": 16.0
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "@a1 * 57.29578",
+         "pivotX": 190.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFDCE4F2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 190.0,
+         "y1": 200.0,
+         "x2": 190.0,
+         "y2": 118.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7A5A22"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 352.0,
+      "cy": 200.0,
+      "radius": 68.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 352.0,
+      "cy": 200.0,
+      "radius": 52.0
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 0.00000) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 0.41888) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 0.83776) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 1.25664) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 1.67552) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 2.09440) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 2.51327) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 2.93215) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 3.35103) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 3.76991) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 4.18879) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 4.60767) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 5.02655) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 5.44543) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "(@a2 + 5.86431) * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": 347.0,
+         "top": 131.0,
+         "right": 357.0,
+         "bottom": 147.0,
+         "rx": 2.0,
+         "ry": 2.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 352.0,
+      "cy": 200.0,
+      "radius": 16.0
+     }
+    },
+    {
+     "save": {
+      "commands": [
+       {
+        "rotate": {
+         "angle": "@a2 * 57.29578",
+         "pivotX": 352.0,
+         "pivotY": 200.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFDCE4F2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 352.0,
+         "y1": 200.0,
+         "x2": 352.0,
+         "y2": 156.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "25 teeth",
+      "x": 190.0,
+      "y": 326.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "15 teeth",
+      "x": 352.0,
+      "y": 288.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ratio 5:3 - the small gear turns 1.67 times per turn of the large",
+      "x": 24.0,
+      "y": 338.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one clock drives both; the second angle is the first times the ratio",
+      "x": 24.0,
+      "y": 356.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Gear ratio",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "25 teeth driving 15",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

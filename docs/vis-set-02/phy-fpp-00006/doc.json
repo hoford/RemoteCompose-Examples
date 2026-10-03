@@ -1,0 +1,769 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "Accelerator beam energy against year on a log axis, with bunches circulating a ring"
+ },
+ "resources": {
+  "floatArrays": [
+   {
+    "years": [
+     1932.0,
+     1939.0,
+     1954.0,
+     1960.0,
+     1976.0,
+     1983.0,
+     1989.0,
+     1992.0,
+     2000.0,
+     2008.0,
+     2029.0
+    ]
+   },
+   {
+    "energy": [
+     5.9,
+     7.2,
+     9.8,
+     10.5,
+     11.6,
+     11.9,
+     11.0,
+     11.5,
+     11.1,
+     12.8,
+     13.0
+    ]
+   }
+  ]
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 380
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 300.0,
+      "x2": 360.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^6",
+      "x": 62.0,
+      "y": 304.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 237.14285714285714,
+      "x2": 360.0,
+      "y2": 237.14285714285714
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^8",
+      "x": 62.0,
+      "y": 241.14285714285714,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 174.28571428571428,
+      "x2": 360.0,
+      "y2": 174.28571428571428
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^10",
+      "x": 62.0,
+      "y": 178.28571428571428,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 111.42857142857142,
+      "x2": 360.0,
+      "y2": 111.42857142857142
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10^12",
+      "x": 62.0,
+      "y": 115.42857142857142,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "ymin",
+      "value": "1930.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "yspan",
+      "value": "105.0",
+      "commit": true
+     }
+    },
+    {
+     "loop": {
+      "index": "i",
+      "from": 0.0,
+      "until": 11.0,
+      "step": 1.0,
+      "commands": [
+       {
+        "variable": {
+         "name": "yr",
+         "value": "arrayGet(@years, @i)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "ev",
+         "value": "arrayGet(@energy, @i)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "px",
+         "value": "70.0 + (@yr - @ymin) / @yspan * 290.0",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "py",
+         "value": "300.0 - (@ev - 6.0) / 7.0 * 220.0",
+         "commit": true
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "@px",
+         "cy": "@py",
+         "radius": 4.5
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cockcroft-Walton",
+      "x": 82.52380952380952,
+      "y": 306.1428571428571,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Tevatron",
+      "x": 223.38095238095238,
+      "y": 117.57142857142858,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "LHC",
+      "x": 292.42857142857144,
+      "y": 89.28571428571428,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "HL-LHC",
+      "x": 350.42857142857144,
+      "y": 83.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.3
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 300.0,
+      "x2": 360.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1940",
+      "x": 97.61904761904762,
+      "y": 316.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1970",
+      "x": 180.47619047619048,
+      "y": 316.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2000",
+      "x": 263.3333333333333,
+      "y": 316.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2030",
+      "x": 346.19047619047615,
+      "y": 316.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 460.0,
+      "cy": 190.0,
+      "radius": 72.0
+     }
+    },
+    {
+     "variable": {
+      "name": "th",
+      "value": "continuousSec() * 2.4",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "460.0 + cos(@th + 0.00) * 72.0",
+      "cy": "190.0 + sin(@th + 0.00) * 72.0",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "460.0 + cos(@th + 2.09) * 72.0",
+      "cy": "190.0 + sin(@th + 2.09) * 72.0",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "460.0 + cos(@th + 4.19) * 72.0",
+      "cy": "190.0 + sin(@th + 4.19) * 72.0",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "three bunches circulating",
+      "x": 460.0,
+      "y": 288.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "beam energy, eV",
+      "x": 70.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a factor of ten every six years, for seventy years",
+      "x": 70.0,
+      "y": 360.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Accelerators",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "energy per beam, 1930 to 2030",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

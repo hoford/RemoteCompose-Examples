@@ -1,0 +1,44 @@
+{
+  "id": "vis-set-02/ear-geol-00002",
+  "sha256": "c4c1a0c56cee63549c9a4fe2c267f5cca6b3a8871f4eb10b48f445cdfbc032a8",
+  "bytes": 2798,
+  "ops": 115,
+  "distinctOps": 17,
+  "width": 460,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 16,
+    "DRAW_RECT": 1,
+    "PATH_CREATE": 3,
+    "PATH_ADD": 54,
+    "DRAW_PATH": 3,
+    "DRAW_LINE": 6,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 9,
+    "DRAW_CIRCLE": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set02.py"
+  ]
+}

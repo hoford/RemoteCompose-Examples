@@ -1,0 +1,1301 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "The same shopping basket priced across five decades, as a typographic table with the money column aligned"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 380
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1980",
+      "x": 250.0,
+      "y": 92.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1990",
+      "x": 318.0,
+      "y": 92.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2000",
+      "x": 386.0,
+      "y": 92.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2010",
+      "x": 454.0,
+      "y": 92.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2020",
+      "x": 522.0,
+      "y": 92.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 100.0,
+      "x2": 554.0,
+      "y2": 100.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Loaf of bread",
+      "x": 26.0,
+      "y": 130.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.22",
+      "x": 250.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.50",
+      "x": 318.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.00",
+      "x": 386.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.98",
+      "x": 454.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2.89",
+      "x": 522.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 144.0,
+      "x2": 554.0,
+      "y2": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Litre of milk",
+      "x": 26.0,
+      "y": 170.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.18",
+      "x": 250.0,
+      "y": 170.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.41",
+      "x": 318.0,
+      "y": 170.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.72",
+      "x": 386.0,
+      "y": 170.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.12",
+      "x": 454.0,
+      "y": 170.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.55",
+      "x": 522.0,
+      "y": 170.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 184.0,
+      "x2": 554.0,
+      "y2": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Dozen eggs",
+      "x": 26.0,
+      "y": 210.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.53",
+      "x": 250.0,
+      "y": 210.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.88",
+      "x": 318.0,
+      "y": 210.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.47",
+      "x": 386.0,
+      "y": 210.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2.30",
+      "x": 454.0,
+      "y": 210.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3.82",
+      "x": 522.0,
+      "y": 210.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 224.0,
+      "x2": 554.0,
+      "y2": 224.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cinema ticket",
+      "x": 26.0,
+      "y": 250.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.55",
+      "x": 250.0,
+      "y": 250.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2.69",
+      "x": 318.0,
+      "y": 250.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4.23",
+      "x": 386.0,
+      "y": 250.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "7.89",
+      "x": 454.0,
+      "y": 250.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12.50",
+      "x": 522.0,
+      "y": 250.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 264.0,
+      "x2": 554.0,
+      "y2": 264.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Litre of petrol",
+      "x": 26.0,
+      "y": 290.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.11",
+      "x": 250.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.33",
+      "x": 318.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.68",
+      "x": 386.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.02",
+      "x": 454.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.74",
+      "x": 522.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 318.0,
+      "x2": 554.0,
+      "y2": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Basket",
+      "x": 26.0,
+      "y": 336.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2.59",
+      "x": 250.0,
+      "y": 336.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4.81",
+      "x": 318.0,
+      "y": 336.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8.10",
+      "x": 386.0,
+      "y": 336.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "14.31",
+      "x": 454.0,
+      "y": 336.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "22.50",
+      "x": 522.0,
+      "y": 336.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the same basket costs 8.7 times what it did in 1980",
+      "x": 26.0,
+      "y": 370.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "illustrative prices, one currency, five decades",
+      "x": 26.0,
+      "y": 388.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Inflation",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "what a basket costs",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

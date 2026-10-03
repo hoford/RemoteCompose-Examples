@@ -1,0 +1,906 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 320,
+  "profiles": 513,
+  "contentDescription": "A ribosome translating mRNA, with the polypeptide chain growing behind it"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 320
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "continuousSec() % 8",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "pos",
+      "value": "50.0 + @t / 8 * 420.0",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 7.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 150.0,
+      "x2": 470.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 142.0,
+      "x2": 50.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 80.0,
+      "y1": 142.0,
+      "x2": 80.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 110.0,
+      "y1": 142.0,
+      "x2": 110.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 140.0,
+      "y1": 142.0,
+      "x2": 140.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 170.0,
+      "y1": 142.0,
+      "x2": 170.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 200.0,
+      "y1": 142.0,
+      "x2": 200.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 230.0,
+      "y1": 142.0,
+      "x2": 230.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 260.0,
+      "y1": 142.0,
+      "x2": 260.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 290.0,
+      "y1": 142.0,
+      "x2": 290.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 320.0,
+      "y1": 142.0,
+      "x2": 320.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 350.0,
+      "y1": 142.0,
+      "x2": 350.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 380.0,
+      "y1": 142.0,
+      "x2": 380.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 410.0,
+      "y1": 142.0,
+      "x2": 410.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 440.0,
+      "y1": 142.0,
+      "x2": 440.0,
+      "y2": 158.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.0714) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 18.0",
+      "cy": "98.0 - sin(0.000 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.1429) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 35.0",
+      "cy": "98.0 - sin(0.800 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.2143) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 52.0",
+      "cy": "98.0 - sin(1.600 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.2857) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 69.0",
+      "cy": "98.0 - sin(2.400 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.3571) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 86.0",
+      "cy": "98.0 - sin(3.200 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.4286) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 103.0",
+      "cy": "98.0 - sin(4.000 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.5000) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 120.0",
+      "cy": "98.0 - sin(4.800 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.5714) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 137.0",
+      "cy": "98.0 - sin(5.600 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.6429) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 154.0",
+      "cy": "98.0 - sin(6.400 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.7143) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 171.0",
+      "cy": "98.0 - sin(7.200 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.7857) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 188.0",
+      "cy": "98.0 - sin(8.000 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.8571) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 205.0",
+      "cy": "98.0 - sin(8.800 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, (@t / 8 - 0.9286) * 30)"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@pos - 222.0",
+      "cy": "98.0 - sin(9.600 + @t * 1.2) * 12",
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "@pos + 26",
+      "y1": "150.0 - 60 + abs(sin(@t * 3.1)) * 44",
+      "x2": "@pos + 26",
+      "y2": "150.0 - 30 + abs(sin(@t * 3.1)) * 44"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": "@pos - 24",
+      "top": 124.0,
+      "right": "@pos + 24",
+      "bottom": 176.0,
+      "rx": 12.0,
+      "ry": 12.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ribosome",
+      "x": "@pos",
+      "y": 154.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "mRNA",
+      "x": 50.0,
+      "y": 184.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "polypeptide",
+      "x": 50.0,
+      "y": 66.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "tRNA delivers the next amino acid at the A site",
+      "x": 20.0,
+      "y": 288.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one codon, one amino acid",
+      "x": 20.0,
+      "y": 304.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Translation",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the ribosome reads codon by codon",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

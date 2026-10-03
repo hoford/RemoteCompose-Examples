@@ -1,0 +1,35 @@
+{
+  "id": "vis-set-02/csc-algo-00002",
+  "sha256": "fc7eeac53ec66dbbfb55beff34a593e2bc0c5055c80ac9dfb4721b2a3877f838",
+  "bytes": 5442,
+  "ops": 580,
+  "distinctOps": 13,
+  "width": 560,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 1,
+    "MODIFIER_WIDTH": 61,
+    "MODIFIER_HEIGHT": 36,
+    "MODIFIER_BACKGROUND": 31,
+    "MODIFIER_PADDING": 1,
+    "LAYOUT_CONTENT": 108,
+    "DATA_TEXT": 16,
+    "CORE_TEXT": 36,
+    "CONTAINER_END": 217,
+    "LAYOUT_BOX": 65,
+    "LAYOUT_ROW": 6
+  },
+  "apis": [
+    "layout",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set02.py"
+  ]
+}

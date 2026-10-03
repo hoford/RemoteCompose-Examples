@@ -414,7 +414,11 @@ def json_roundtrip(json_path, rc_bytes):
     import contextlib, io
     try:
         with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
-            out = m.convert_doc(json.loads(json_path.read_text()))
+            # base_dir, or a `file:` bitmap cannot resolve: a document's asset paths are
+            # relative to the document, and without this every document carrying a texture
+            # is reported "unsupported" when it compiles perfectly from its own directory.
+            out = m.convert_doc(json.loads(json_path.read_text()),
+                                base_dir=str(json_path.parent))
     except Exception:
         return "unsupported"
     return "yes" if out == rc_bytes else "differs"

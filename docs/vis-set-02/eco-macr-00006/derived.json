@@ -1,0 +1,46 @@
+{
+  "id": "vis-set-02/eco-macr-00006",
+  "sha256": "7348d5bb41cf755630db7517db727bc9650e442f1e3d10c6921c72588cd23b70",
+  "bytes": 1855,
+  "ops": 78,
+  "distinctOps": 16,
+  "width": 520,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 1,
+    "TOUCH_EXPRESSION": 1,
+    "ANIMATED_FLOAT": 6,
+    "DRAW_ROUND_RECT": 8,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 14,
+    "TEXT_FROM_FLOAT": 2,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set02.py"
+  ]
+}

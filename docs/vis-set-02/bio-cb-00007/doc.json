@@ -1,0 +1,590 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "Drag to cross-fade an animal cell into a plant cell; shared organelles stay put"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 400
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "mix",
+      "defaultValue": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "stopMode": "gently",
+      "expression": "touchX() / 480"
+     }
+    },
+    {
+     "variable": {
+      "name": "m",
+      "value": "clamp(0.0, 1.0, @mix)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 6.0
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 85.0,
+      "right": 410.0,
+      "bottom": 345.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.0
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 82.0,
+      "top": 97.0,
+      "right": 398.0,
+      "bottom": 333.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2E7FA8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@m * 0.8"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 148.0,
+      "top": 155.0,
+      "right": 292.0,
+      "bottom": 289.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46C46A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 310.0,
+      "top": 134.0,
+      "right": 350.0,
+      "bottom": 156.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46C46A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 336.0,
+      "top": 214.0,
+      "right": 376.0,
+      "bottom": 236.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46C46A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 292.0,
+      "top": 270.0,
+      "right": 332.0,
+      "bottom": 292.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46C46A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 100.0,
+      "top": 264.0,
+      "right": 140.0,
+      "bottom": 286.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 198.0,
+      "cy": 181.0,
+      "radius": 40.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2A4A86"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 198.0,
+      "cy": 181.0,
+      "radius": 16.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 284.0,
+      "top": 117.0,
+      "right": 328.0,
+      "bottom": 137.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 110.0,
+      "top": 195.0,
+      "right": 154.0,
+      "bottom": 215.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 234.0,
+      "top": 297.0,
+      "right": 278.0,
+      "bottom": 317.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBCD2FA"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "nucleus",
+      "x": 198.0,
+      "y": 135.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "mitochondria",
+      "x": 306.0,
+      "y": 111.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "cell wall",
+      "x": 70.0,
+      "y": 75.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46C46A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       },
+       {
+        "alpha": "@m"
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "chloroplasts",
+      "x": 360.0,
+      "y": 311.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "animal",
+      "x": 24.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "plant",
+      "x": 456.0,
+      "y": 372.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 80.0,
+      "y1": 368.0,
+      "x2": 400.0,
+      "y2": 368.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "80 + @m * 320",
+      "cy": 368.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag across to compare",
+      "x": 24.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cell structure",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "animal against plant",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

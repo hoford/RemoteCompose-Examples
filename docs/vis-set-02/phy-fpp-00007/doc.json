@@ -1,0 +1,1746 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 460,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "Four decay tracks drawn as paths inside a wireframe chamber, curving by charge and momentum"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 460,
+      "bottom": 460
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.9,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       2.2,
+       1.6,
+       2.8
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.6,
+         -0.7
+        ],
+        "intensity": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "trk0",
+      "x": 249.49,
+      "y": 286.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 249.52,
+      "y": 286.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 249.22,
+      "y": 286.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 248.56,
+      "y": 286.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 247.55,
+      "y": 286.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 246.16,
+      "y": 286.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 244.4,
+      "y": 286.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 242.28,
+      "y": 286.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 239.78,
+      "y": 286.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 236.92,
+      "y": 286.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 233.71,
+      "y": 286.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 230.17,
+      "y": 285.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 226.3,
+      "y": 285.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 222.14,
+      "y": 284.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 217.69,
+      "y": 284.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 213.0,
+      "y": 283.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 208.09,
+      "y": 282.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 202.99,
+      "y": 281.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 197.74,
+      "y": 279.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 192.36,
+      "y": 278.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 186.91,
+      "y": 276.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 181.42,
+      "y": 274.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 175.93,
+      "y": 272.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 170.49,
+      "y": 270.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 165.14,
+      "y": 267.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 159.93,
+      "y": 265.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 154.89,
+      "y": 262.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 150.08,
+      "y": 259.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 145.54,
+      "y": 255.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 141.31,
+      "y": 252.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 137.43,
+      "y": 248.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 133.96,
+      "y": 245.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 130.92,
+      "y": 241.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 128.35,
+      "y": 236.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 126.3,
+      "y": 232.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 124.79,
+      "y": 228.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 123.86,
+      "y": 223.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 123.52,
+      "y": 219.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 123.81,
+      "y": 214.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 124.75,
+      "y": 209.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 126.35,
+      "y": 205.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 128.62,
+      "y": 200.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 131.57,
+      "y": 195.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 135.21,
+      "y": 191.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 139.53,
+      "y": 186.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk0",
+      "x": 144.53,
+      "y": 182.29
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "trk0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "mu-",
+      "x": 150.53,
+      "y": 182.29,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "trk1",
+      "x": 216.44,
+      "y": 275.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 219.55,
+      "y": 276.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 223.58,
+      "y": 277.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 228.45,
+      "y": 277.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 234.05,
+      "y": 277.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 240.26,
+      "y": 277.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 246.88,
+      "y": 276.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 253.73,
+      "y": 275.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 260.59,
+      "y": 273.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 267.22,
+      "y": 271.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 273.38,
+      "y": 268.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 278.82,
+      "y": 265.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 283.32,
+      "y": 261.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 286.67,
+      "y": 257.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 288.67,
+      "y": 253.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 289.16,
+      "y": 248.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 288.02,
+      "y": 244.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 285.19,
+      "y": 239.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 280.62,
+      "y": 234.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 274.36,
+      "y": 230.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 266.46,
+      "y": 226.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 257.08,
+      "y": 222.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 246.37,
+      "y": 219.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 234.59,
+      "y": 217.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 221.99,
+      "y": 216.19
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 208.9,
+      "y": 215.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 195.64,
+      "y": 215.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 182.58,
+      "y": 216.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 170.09,
+      "y": 218.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 158.53,
+      "y": 221.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 148.28,
+      "y": 225.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 139.67,
+      "y": 229.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 133.01,
+      "y": 234.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 128.56,
+      "y": 240.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 126.54,
+      "y": 245.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 127.12,
+      "y": 251.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 130.38,
+      "y": 257.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 136.35,
+      "y": 263.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 144.98,
+      "y": 269.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 156.15,
+      "y": 274.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 169.66,
+      "y": 278.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 185.24,
+      "y": 281.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 202.56,
+      "y": 284.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 221.24,
+      "y": 285.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 240.82,
+      "y": 285.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk1",
+      "x": 260.84,
+      "y": 284.71
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "trk1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "e+",
+      "x": 266.84,
+      "y": 284.71,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "trk2",
+      "x": 203.26,
+      "y": 269.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 202.16,
+      "y": 266.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 201.66,
+      "y": 264.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 201.82,
+      "y": 261.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 202.71,
+      "y": 258.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 204.35,
+      "y": 255.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 206.78,
+      "y": 252.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 209.99,
+      "y": 249.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 213.97,
+      "y": 246.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 218.69,
+      "y": 244.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 224.11,
+      "y": 242.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 230.15,
+      "y": 240.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 236.72,
+      "y": 238.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 243.74,
+      "y": 237.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 251.08,
+      "y": 236.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 258.62,
+      "y": 235.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 266.22,
+      "y": 235.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 273.74,
+      "y": 235.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 281.02,
+      "y": 236.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 287.92,
+      "y": 237.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 294.27,
+      "y": 238.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 299.94,
+      "y": 240.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 304.78,
+      "y": 243.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 308.65,
+      "y": 245.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 311.44,
+      "y": 248.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 313.04,
+      "y": 251.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 313.36,
+      "y": 255.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 312.33,
+      "y": 258.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 309.91,
+      "y": 261.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 306.06,
+      "y": 265.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 300.8,
+      "y": 268.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 294.14,
+      "y": 271.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 286.14,
+      "y": 273.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 276.87,
+      "y": 276.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 266.44,
+      "y": 278.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 254.97,
+      "y": 279.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 242.61,
+      "y": 280.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 229.52,
+      "y": 280.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 215.91,
+      "y": 280.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 201.96,
+      "y": 278.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 187.89,
+      "y": 277.13
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 173.93,
+      "y": 274.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 160.32,
+      "y": 271.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 147.27,
+      "y": 267.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 135.03,
+      "y": 262.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk2",
+      "x": 123.82,
+      "y": 257.27
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "trk2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pi-",
+      "x": 129.82,
+      "y": 257.27,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "trk3",
+      "x": 229.26,
+      "y": 275.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 227.5,
+      "y": 273.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 225.5,
+      "y": 270.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 223.27,
+      "y": 268.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 220.8,
+      "y": 265.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 218.12,
+      "y": 263.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 215.23,
+      "y": 261.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 212.15,
+      "y": 259.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 208.9,
+      "y": 257.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 205.48,
+      "y": 255.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 201.93,
+      "y": 253.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 198.26,
+      "y": 252.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 194.49,
+      "y": 250.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 190.64,
+      "y": 249.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 186.73,
+      "y": 247.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 182.79,
+      "y": 246.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 178.84,
+      "y": 245.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 174.9,
+      "y": 244.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 171.01,
+      "y": 243.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 167.17,
+      "y": 243.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 163.43,
+      "y": 242.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 159.8,
+      "y": 242.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 156.31,
+      "y": 241.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 152.99,
+      "y": 241.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 149.85,
+      "y": 241.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 146.93,
+      "y": 241.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 144.25,
+      "y": 242.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 141.82,
+      "y": 242.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 139.68,
+      "y": 242.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 137.85,
+      "y": 243.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 136.34,
+      "y": 243.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 135.18,
+      "y": 244.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 134.37,
+      "y": 245.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 133.95,
+      "y": 246.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 133.92,
+      "y": 247.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 134.3,
+      "y": 248.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 135.1,
+      "y": 249.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 136.33,
+      "y": 250.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 138.0,
+      "y": 251.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 140.11,
+      "y": 252.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 142.68,
+      "y": 253.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 145.7,
+      "y": 254.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 149.17,
+      "y": 255.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 153.09,
+      "y": 255.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 157.46,
+      "y": 256.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "trk3",
+      "x": 162.28,
+      "y": 257.43
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "trk3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "p",
+      "x": 168.28,
+      "y": 257.43,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 230.0,
+      "cy": 250.0,
+      "radius": 4.0
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 1,
+      "primitive": "cube",
+      "dimX": 1.9,
+      "dimY": 1.9,
+      "dimZ": 1.9,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27385C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "curvature gives momentum; sign gives charge",
+      "x": 20.0,
+      "y": 408.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "tracks are 2D paths over a 3D chamber",
+      "x": 20.0,
+      "y": 424.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4 tracks, 46 points each",
+      "x": 20.0,
+      "y": 440.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Particle decay",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a vertex and what leaves it",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

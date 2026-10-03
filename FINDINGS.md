@@ -240,3 +240,48 @@ front of the contents and the contents survive, which is also the correct look.
 Whether this is intended is a fair question — a wireframe pass that wrote depth only along
 the lines it actually draws would behave the way everyone will expect. Related to F-004: both
 are cases where a mesh you can see through still blocks what is behind it.
+
+---
+
+## F-010 · A texture is invisible on a wireframe mesh, and nothing says so
+
+**authoring** · not a bug · found in set 2
+
+`texture3D` sets a bitmap on the paint state, but a mesh drawn with `wireframe: true` draws
+only its edges, so the texture never appears. The document compiles, renders, and shows a
+wireframe cage — looking exactly like a document that has no texture at all.
+
+This is a sharp edge because the two features pull in opposite directions. F-009 says draw a
+containing wireframe *last* so it does not occlude its contents; F-010 says a wireframe
+cannot show a texture. A textured containing shell therefore cannot work at all: filled, it
+hides everything inside it (F-004, since alpha does not blend); wireframe, it loses the
+texture.
+
+`BIO-CB-00008` shipped its first version claiming "membrane is a bitmap texture" in its own
+caption while showing none. Fixed by moving the texture onto the nucleus, a filled mesh, and
+leaving the membrane an untextured cage. Verified by counting distinct colours across the
+nucleus: 2,421, where a flat fill gives a handful.
+
+Worth noting for the authoring guide as a rule rather than three separate facts: **in this
+engine a 3D surface can be seen through, or textured, but not both.**
+
+---
+
+## F-011 · The cataloguer could not resolve a document's own asset paths
+
+**fixed** · corpus tooling · found in set 2
+
+`rcx catalog`'s round-trip check called `convert_doc(doc)` without `base_dir`, so a `file:`
+bitmap reference — which is relative to the document — never resolved. The converter raised,
+the check caught the exception, and the document was recorded `jsonReproduces: "unsupported"`.
+
+`BIO-CB-00008` recompiles byte-for-byte from its own directory, so the label was simply
+wrong. The exception was swallowed, which is why it looked like an unsupported construct
+rather than a path problem.
+
+Fixed by passing `base_dir=str(json_path.parent)`. Only one corpus document was affected
+today because images are the thinnest part of the corpus — 5 documents use them at all — but
+the programme is about to add many more, and every one would have been mislabelled.
+
+Compounds F-002's point about `jsonReproduces` being trusted more than it earns: here it was
+reporting failure for a document that works.

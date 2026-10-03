@@ -1,0 +1,343 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "Transcription factors as a particle cloud binding a promoter, with transcription rising as they bind"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 400
+     }
+    },
+    {
+     "variable": {
+      "name": "sig",
+      "value": "0.5 + sin(continuousSec() * 0.4) * 0.45",
+      "commit": true
+     }
+    },
+    {
+     "createParticles": {
+      "id": "tf",
+      "variables": [
+       "fx",
+       "fy",
+       "aff",
+       "ph"
+      ],
+      "initialValues": [
+       "30 + rand() * 420",
+       "60 + rand() * 200",
+       "rand()",
+       "rand() * 6.283"
+      ],
+      "count": 120
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@tf",
+      "equations": [
+       "fx + sin(ph + animationTime * 0.9) * 0.6",
+       "fy + ifElse(-0.3, 1.6, aff - (1 - @sig)) * 0.9",
+       "aff",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "clamp(0.15, 0.95, aff)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "fx",
+         "cy": "clamp(50, 286.0, fy)",
+         "radius": 4.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 30.0,
+      "top": 300.0,
+      "right": 450.0,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 300.0,
+      "right": 250.0,
+      "bottom": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "promoter",
+      "x": 150.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "gene",
+      "x": 262.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 30.0,
+      "top": 348.0,
+      "right": 450.0,
+      "bottom": 366.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 30.0,
+      "top": 348.0,
+      "right": "30 + @sig * 420",
+      "bottom": 366.0,
+      "rx": 4.0,
+      "ry": 4.0
+     }
+    },
+    {
+     "variable": {
+      "name": "pct",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@sig * 100",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@pct",
+      "x": 450.0,
+      "y": 384.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "% transcription",
+      "x": 30.0,
+      "y": 384.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Gene regulation",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "brighter factors bind more tightly",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}
