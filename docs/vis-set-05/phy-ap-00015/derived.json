@@ -1,0 +1,40 @@
+{
+  "id": "vis-set-05/phy-ap-00015",
+  "sha256": "0cb7ef0f89a287caf91e3ee248639111eb4f5b0c50fc3b8edcefee894c02de74",
+  "bytes": 3691,
+  "ops": 163,
+  "distinctOps": 15,
+  "width": 600,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 64,
+    "DRAW_RECT": 5,
+    "DRAW_LINE": 20,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 23,
+    "DRAW_CIRCLE": 8,
+    "DRAW_ARC": 16,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "vis-set-05/ear-geol-00005",
+  "sha256": "46400b649b5910d5e9ca604fc77299eabc23056865be370dd8fd74f412686797",
+  "bytes": 2358,
+  "ops": 112,
+  "distinctOps": 13,
+  "width": 600,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 45,
+    "DRAW_RECT": 25,
+    "DRAW_LINE": 9,
+    "DATA_TEXT": 11,
+    "DRAW_TEXT_ANCHOR": 11,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vis-set-05/med-phys-00002",
+  "sha256": "6f3a2d566d7ae6140bd3802b7f8342a93a29e22945595901eae2e84e7f9ab9a8",
+  "bytes": 12523,
+  "ops": 529,
+  "distinctOps": 15,
+  "width": 580,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 250,
+    "DRAW_RECT": 5,
+    "ANIMATED_FLOAT": 2,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_LINE": 228,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

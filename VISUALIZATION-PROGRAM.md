@@ -232,21 +232,45 @@ mkdir -p work/set-07
 Build all 16 before validating any. Staging matters: nothing enters `docs/` until the whole
 set passes, so a half-landed set cannot exist.
 
-### 3. Compile and check against the oracle
+### 3. Compile and check — but 2D and 3D take different gates
+
+**The oracle gate does not apply to 3D.** `RemoteComposeJsonParser.java` contains no 3D
+command at all and drops every one silently, emitting a document byte-identical to an empty
+canvas (F-014). Comparing a 3D document against it compares it against nothing. Sets 1-5 were
+landed without this distinction and their 16 3D documents were effectively ungated; do not
+repeat that.
 
 ```sh
 cd work/set-07
+K='camera3D|lights3D|matrix3D|defineMesh3D|drawMesh3D|meshPrimitive3D|clearDepth3D|texture3D|cube3D'
 for f in *.json; do
   python3 -c "import sys,json;sys.path.insert(0,'/Users/john/code/github/rcJson');import rcj;\
 open('${f%.json}.rc','wb').write(rcj.convert_doc(json.load(open('$f'))))"
-  /Users/john/code/github/rcJson/oracle/oracle.sh "$f" "/tmp/${f%.json}.oracle.rc"
+  if grep -qE "\"($K)\"" "$f"; then continue; fi          # 3D: see below
+  ORACLE_QUIET=1 /Users/john/code/github/rcJson/oracle/oracle.sh "$f" "/tmp/${f%.json}.oracle.rc"
   cmp "${f%.json}.rc" "/tmp/${f%.json}.oracle.rc" || echo "ORACLE MISMATCH: $f"
 done
+
+# 3D documents, which the oracle cannot see:
+python3 ../../tools/gate3d.py --self-test <one 3D doc>   # prove it fails before trusting it
+python3 ../../tools/gate3d.py *.json
+
 node ../../tools/rc.mjs validate <each>.json     # the converter the playground uses
 ```
 
-An oracle mismatch is a **finding**, not a chore. It means `rcj` and the Java writer disagree
-and one of them is wrong.
+An oracle mismatch is a **finding**, not a chore — with one known exception. A document using
+`touchExpression` with a string `expression` is expected to be longer than the oracle's by
+4 bytes per RPN token, because the Java parser wants a pre-compiled float array and silently
+drops the string (F-003). Check that the delta matches the token count before investigating.
+
+`gate3d.py` gates on rendered evidence, not structure: the obvious alternative — round-tripping
+through the C++ reader — does not work either, since `rc2json` decodes only two of seven 3D
+ops and loses stream sync (F-015). A gate3d pass means the C++ renderer draws it. It does
+**not** mean the engine accepts it, and the tool says so when no phone is attached.
+
+**Rebuild the oracle classes when the library is synced.** `oracle/build-mesh` shadows the
+jars class-for-class and does not rebuild itself; stale classes make the oracle drop opcodes
+it does not know and "pass" everything. Run `oracle/build-mesh-classes.sh` after any sync.
 
 ### 4. Render, in both players
 

@@ -1,0 +1,1255 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 470,
+  "profiles": 513,
+  "contentDescription": "A cost landscape with the starting point under your finger, comparing gradient descent against random search"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 470
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "start",
+      "defaultValue": 0.22,
+      "min": 0.02,
+      "max": 0.98,
+      "stopMode": "gently",
+      "expression": "touchX() / 560"
+     }
+    },
+    {
+     "variable": {
+      "name": "s",
+      "value": "clamp(0.02, 0.98, @start)",
+      "commit": true
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "land",
+      "x": 50.0,
+      "y": 123.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 53.83,
+      "y": 121.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 57.67,
+      "y": 118.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 61.5,
+      "y": 116.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 65.33,
+      "y": 114.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 69.17,
+      "y": 112.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 73.0,
+      "y": 111.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 76.83,
+      "y": 110.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 80.67,
+      "y": 110.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 84.5,
+      "y": 110.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 88.33,
+      "y": 111.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 92.17,
+      "y": 112.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 96.0,
+      "y": 115.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 99.83,
+      "y": 118.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 103.67,
+      "y": 122.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 107.5,
+      "y": 126.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 111.33,
+      "y": 131.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 115.17,
+      "y": 137.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 119.0,
+      "y": 144.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 122.83,
+      "y": 151.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 126.67,
+      "y": 158.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 130.5,
+      "y": 166.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 134.33,
+      "y": 175.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 138.17,
+      "y": 183.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 142.0,
+      "y": 192.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 145.83,
+      "y": 201.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 149.67,
+      "y": 210.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 153.5,
+      "y": 218.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 157.33,
+      "y": 227.19
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 161.17,
+      "y": 235.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 165.0,
+      "y": 242.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 168.83,
+      "y": 250.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 172.67,
+      "y": 256.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 176.5,
+      "y": 262.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 180.33,
+      "y": 267.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 184.17,
+      "y": 272.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 188.0,
+      "y": 275.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 191.83,
+      "y": 278.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 195.67,
+      "y": 280.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 199.5,
+      "y": 282.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 203.33,
+      "y": 282.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 207.17,
+      "y": 281.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 211.0,
+      "y": 280.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 214.83,
+      "y": 278.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 218.67,
+      "y": 276.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 222.5,
+      "y": 272.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 226.33,
+      "y": 269.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 230.17,
+      "y": 264.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 234.0,
+      "y": 260.41
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 237.83,
+      "y": 255.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 241.67,
+      "y": 250.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 245.5,
+      "y": 245.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 249.33,
+      "y": 240.41
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 253.17,
+      "y": 235.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 257.0,
+      "y": 230.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 260.83,
+      "y": 226.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 264.67,
+      "y": 222.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 268.5,
+      "y": 218.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 272.33,
+      "y": 215.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 276.17,
+      "y": 213.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 280.0,
+      "y": 211.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 283.83,
+      "y": 210.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 287.67,
+      "y": 209.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 291.5,
+      "y": 210.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 295.33,
+      "y": 211.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 299.17,
+      "y": 213.13
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 303.0,
+      "y": 215.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 306.83,
+      "y": 218.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 310.67,
+      "y": 222.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 314.5,
+      "y": 227.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 318.33,
+      "y": 231.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 322.17,
+      "y": 237.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 326.0,
+      "y": 243.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 329.83,
+      "y": 249.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 333.67,
+      "y": 255.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 337.5,
+      "y": 261.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 341.33,
+      "y": 267.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 345.17,
+      "y": 273.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 349.0,
+      "y": 279.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 352.83,
+      "y": 285.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 356.67,
+      "y": 290.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 360.5,
+      "y": 295.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 364.33,
+      "y": 299.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 368.17,
+      "y": 303.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 372.0,
+      "y": 305.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 375.83,
+      "y": 308.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 379.67,
+      "y": 309.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 383.5,
+      "y": 310.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 387.33,
+      "y": 309.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 391.17,
+      "y": 308.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 395.0,
+      "y": 306.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 398.83,
+      "y": 303.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 402.67,
+      "y": 300.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 406.5,
+      "y": 295.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 410.33,
+      "y": 290.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 414.17,
+      "y": 285.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 418.0,
+      "y": 279.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 421.83,
+      "y": 272.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 425.67,
+      "y": 265.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 429.5,
+      "y": 258.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 433.33,
+      "y": 250.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 437.17,
+      "y": 243.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 441.0,
+      "y": 235.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 444.83,
+      "y": 227.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 448.67,
+      "y": 220.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 452.5,
+      "y": 213.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 456.33,
+      "y": 206.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 460.17,
+      "y": 200.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 464.0,
+      "y": 194.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 467.83,
+      "y": 189.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 471.67,
+      "y": 185.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 475.5,
+      "y": 181.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 479.33,
+      "y": 178.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 483.17,
+      "y": 175.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 487.0,
+      "y": 174.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 490.83,
+      "y": 173.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 494.67,
+      "y": 173.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 498.5,
+      "y": 173.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 502.33,
+      "y": 174.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 506.17,
+      "y": 176.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "land",
+      "x": 510.0,
+      "y": 178.57
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "land"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "50.0 + @s * 460.0",
+      "y1": 102.0,
+      "x2": "50.0 + @s * 460.0",
+      "y2": 318.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 203.3,
+      "cy": 282.4,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "local",
+      "x": 203.3,
+      "y": 306.4,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 383.5,
+      "cy": 310.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "global",
+      "x": 383.5,
+      "y": 334.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "rs",
+      "variables": [
+       "ru",
+       "ph"
+      ],
+      "initialValues": [
+       "rand()",
+       "rand() * 6.283"
+      ],
+      "count": 40
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@rs",
+      "equations": [
+       "ru",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.55
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "50.0 + ru * 460.0",
+         "cy": "340.0 + sin(ph + animationTime) * 5",
+         "radius": 3.2
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "random search samples everywhere, ignoring where you started",
+      "x": 50.0,
+      "y": 362.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to move the starting point",
+      "x": 24.0,
+      "y": 388.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "gradient descent walks downhill from wherever you put it, so it finds the nearest floor",
+      "x": 24.0,
+      "y": 408.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "that is the local minimum unless you happened to start in the right basin",
+      "x": 24.0,
+      "y": 426.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2 basins on this landscape, and only the deeper one is the answer",
+      "x": 24.0,
+      "y": 448.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Local or global",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "where you start decides what you find",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

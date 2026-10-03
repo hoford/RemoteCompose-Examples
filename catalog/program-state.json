@@ -1,8 +1,8 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 5,
- "setsLanded": 4,
- "documentsLanded": 64,
+ "currentSet": 6,
+ "setsLanded": 5,
+ "documentsLanded": 80,
  "lastTouched": "2026-10-03 set 4 landed as docs/vis-set-04 (16 documents)",
  "pausedFor": null,
  "setStatus": {
@@ -31,8 +31,8 @@
    "id": "F-003",
    "set": 1,
    "kind": "converter-divergence",
-   "status": "confirmed",
-   "summary": "rcj vs Java differ on touchExpression, but the delta is not constant (4-20 B); cause not isolated"
+   "status": "resolved",
+   "summary": "touchExpression's string expression is dropped by the Java parser, which wants an RPN float array; delta is 4 B per RPN token"
   },
   {
    "id": "F-004",
@@ -89,6 +89,41 @@
    "kind": "corpus-tooling",
    "status": "fixed",
    "summary": "rcx round-trip ignored base_dir, mislabelling any document with a bitmap asset"
+  },
+  {
+   "id": "F-012",
+   "set": 5,
+   "kind": "engine-or-authoring",
+   "status": "confirmed",
+   "summary": "a sized canvas component does not clip its drawing; 2D and 3D both escape over siblings"
+  },
+  {
+   "id": "F-013",
+   "set": 5,
+   "kind": "engine",
+   "status": "confirmed",
+   "summary": "nested 3D projects into the document viewport offset by the component, not into the component"
+  },
+  {
+   "id": "F-014",
+   "set": 5,
+   "kind": "oracle",
+   "status": "confirmed",
+   "summary": "the Java JSON parser has no 3D commands at all and drops them silently; the oracle gate was vacuous for 16 of 80 documents"
+  },
+  {
+   "id": "F-015",
+   "set": 5,
+   "kind": "player-divergence",
+   "status": "confirmed",
+   "summary": "rc2json decodes only 2 of 7 3D ops and loses stream sync; no structural 3D verifier exists on the desktop"
+  },
+  {
+   "id": "F-016",
+   "set": 5,
+   "kind": "silent-drop",
+   "status": "confirmed",
+   "summary": "stopMode is a no-op in rcj and unknown to the Java parser, which reads touchMode"
   }
  ]
 }

@@ -1,0 +1,44 @@
+{
+  "id": "vis-set-05/eco-macr-00011",
+  "sha256": "306acc267eaea70904d237f7eff6b458334ea5f2873c167ad4fe73b74c91dca8",
+  "bytes": 2971,
+  "ops": 97,
+  "distinctOps": 16,
+  "width": 560,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 34,
+    "DRAW_RECT": 3,
+    "DRAW_ROUND_RECT": 12,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 20,
+    "PARTICLE_DEFINE": 2,
+    "SET_LIGHTS_3D": 1,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 5
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "layout",
+    "paint",
+    "particles",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "particles"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

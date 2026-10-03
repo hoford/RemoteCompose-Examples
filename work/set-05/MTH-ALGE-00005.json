@@ -1,0 +1,534 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "150 particles placed at their own input and output, tracing a power function as its exponent changes"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 460
+     }
+    },
+    {
+     "variable": {
+      "name": "m",
+      "value": "0.5 + sin(continuousSec() * 0.3) * 0.45",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 110.0,
+      "x2": 90.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 340.0,
+      "x2": 470.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 185.0,
+      "y1": 110.0,
+      "x2": 185.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 282.5,
+      "x2": 470.0,
+      "y2": 282.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 280.0,
+      "y1": 110.0,
+      "x2": 280.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 225.0,
+      "x2": 470.0,
+      "y2": 225.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 375.0,
+      "y1": 110.0,
+      "x2": 375.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 167.5,
+      "x2": 470.0,
+      "y2": 167.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 470.0,
+      "y1": 110.0,
+      "x2": 470.0,
+      "y2": 340.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 110.0,
+      "x2": 470.0,
+      "y2": 110.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "pt",
+      "variables": [
+       "u",
+       "jx",
+       "ph"
+      ],
+      "initialValues": [
+       "rand()",
+       "rand()",
+       "rand() * 6.283"
+      ],
+      "count": 150
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@pt",
+      "equations": [
+       "u",
+       "jx",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": 0.8
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "90.0 + u * 380.0",
+         "cy": "340.0 - pow(u, @m * 2.4 + 0.3) * 230.0",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF55658A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 340.0,
+      "x2": 470.0,
+      "y2": 110.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "f(x) = x",
+      "x": 400.0,
+      "y": 128.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "mt",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@m * 2.4 + 0.3",
+       "whole": 1,
+       "decimal": 2
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 28.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@mt",
+      "x": 470.0,
+      "y": 384.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the exponent",
+      "x": 90.0,
+      "y": 384.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x",
+      "x": 470.0,
+      "y": 360.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "f(x)",
+      "x": 80.0,
+      "y": 114.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "150 inputs spread evenly along x, each drawn at its own output",
+      "x": 24.0,
+      "y": 412.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "below 1 the curve bows above the diagonal; above 1 it sags below",
+      "x": 24.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the dots are the function, not a sample of it",
+      "x": 24.0,
+      "y": 448.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A function is a mapping",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every dot is one input and its output",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,451 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "The ATP cycle as a loop, with a phosphate leaving and returning and energy released and absorbed"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 400
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "(continuousSec() * 0.42) % 1",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "ang",
+      "value": "@t * 6.28318 - 1.5708",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF22304E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 20.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 270.0,
+      "cy": 220.0,
+      "radius": 112.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 270.0,
+      "cy": 108.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ATP",
+      "x": 270.0,
+      "y": 112.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 270.0,
+      "cy": 332.0,
+      "radius": 34.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ADP + P",
+      "x": 270.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "270.0 + cos(@ang) * 112.0",
+      "cy": "220.0 + sin(@ang) * 112.0",
+      "radius": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "P",
+      "x": "270.0 + cos(@ang) * 112.0",
+      "y": "220.0 + sin(@ang) * 112.0 + 3",
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "release",
+      "value": "clamp(0.0, 1.0, 1 - abs(@t - 0.25) * 6)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "recharge",
+      "value": "clamp(0.0, 1.0, 1 - abs(@t - 0.75) * 6)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@release"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 358.0,
+      "top": 202.0,
+      "right": 494.0,
+      "bottom": 238.0,
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       },
+       {
+        "alpha": "@release"
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "energy out",
+      "x": 426.0,
+      "y": 224.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": "@recharge"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 46.0,
+      "top": 202.0,
+      "right": 182.0,
+      "bottom": 238.0,
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       },
+       {
+        "alpha": "@recharge"
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "energy in",
+      "x": 114.0,
+      "y": 224.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "hydrolysis releases about 30 kJ per mole",
+      "x": 24.0,
+      "y": 350.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "respiration puts the phosphate back; a cell turns over its own weight in ATP daily",
+      "x": 24.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one clock drives the whole loop",
+      "x": 24.0,
+      "y": 386.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ATP",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "charged, spent, recharged",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

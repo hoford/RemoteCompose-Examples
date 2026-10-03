@@ -74,34 +74,44 @@ name that says what it actually measures.
 
 ---
 
-## F-003 · `rcj` and the Java oracle disagree on `touchExpression`
+## F-003 · RESOLVED · touchExpression's mapping is dropped by the Java parser
 
-**confirmed** · converter · found in set 1 · *cause corrected after first writing*
+**resolved** · converter dialect · found in set 1, explained in set 5
 
-Minimal repro, three documents of ~175 bytes each:
+Earlier entries here guessed at this twice and were wrong both times - first blaming
+`textFromFloat`, then calling it a flat 4 bytes per `touchExpression`. It is neither. The
+delta is **4 bytes per RPN token of the touch expression**, and it is a dialect mismatch, not
+a writer bug.
 
-| document contains | `rcj` | Java | |
-| :--- | ---: | ---: | :--- |
-| one `textFromFloat` | 176 | 176 | identical |
-| one `touchExpression` | 175 | 171 | **differs, 4 B** |
-| both | 204 | 200 | differs, 4 B |
+`RemoteComposeJsonParser.java:1759`:
 
-**The cause is `touchExpression`, not `textFromFloat`.** My first write-up of this finding
-blamed `textFromFloat` on the arithmetic that two documents differed by 4 and 20 bytes with
-1 and 4 of them — a tidy 5 bytes each. That was coincidence. Both of those documents also
-carried a `touchExpression`, and the rebuilt `ECO-MICR-00002` has two `textFromFloat` and no
-touch expression and is byte-identical.
+```java
+JSONArray expArr = command.optJSONArray("expression");
+float[] exp = new float[expArr != null ? expArr.length() : 0];
+```
 
-The delta is a flat 4 bytes per `touchExpression` regardless of what else is present, which
-suggests one writer emits a field the other omits — a stop mode, a default, or a bound.
+The Java parser expects `expression` to be a JSON **array of pre-compiled RPN floats**. This
+corpus writes it as a **string** - `"touchX() / 480"` - so `optJSONArray` returns null, `exp`
+becomes empty, and the touch mapping is silently discarded. rcj compiles the string and emits
+the RPN, so rcj's document is longer by exactly one 4-byte token per RPN token:
 
-**Repro:** a canvas with one `touchExpression` and one `drawCircle` bound to it; 175 against
-171 bytes.
+| expression | tokens | delta |
+|---|---|---|
+| `touchX()` | 1 | 4 B |
+| `touchX() / 480` | 3 | 12 B |
+| `touchY() / 380 * 36` | 5 | 20 B |
+| `1 - touchY() / 360` | 5 | 20 B |
 
-Worth remembering as a method note: a per-op byte delta that divides evenly is not evidence
-of which op is responsible. Two ops co-occurred and I attributed it to the wrong one.
+Verified against all eight 2D documents in sets 1-5 that mismatch; every one matches.
 
----
+**Which side is right.** rcj is. A document through the Java path keeps the touch *variable*
+but loses the mapping, so the drag runs raw instead of through the expression - it still
+moves, which is why this never looked like a failure. The byte difference is the only symptom
+at rest.
+
+**Consequence for the gate.** These eight documents are NOT writer bugs and should not be
+chased. They are the expected cost of writing `expression` as a string. The oracle gate should
+compare them with the expression removed, or the corpus should emit RPN arrays.
 
 ## F-004 · `alpha` on a 3D mesh does not blend in the C++ player
 
@@ -285,3 +295,151 @@ the programme is about to add many more, and every one would have been mislabell
 
 Compounds F-002's point about `jsonReproduces` being trusted more than it earns: here it was
 reporting failure for a document that works.
+
+---
+
+## F-012 · A sized `canvas` does not clip its own drawing
+
+**confirmed** · engine or authoring · found in set 5
+
+A `canvas` component with `{"width": 120}, {"height": 80}` inside a layout takes 120x80 of
+space, and its siblings are positioned as though it did. But anything it draws beyond those
+bounds is still drawn, over whatever comes next.
+
+Minimal repro: a 120x80 canvas drawing a radius-200 circle, followed by a green box.
+
+| canvas content | pixels escaping into the box below |
+| :--- | ---: |
+| 2D `drawCircle`, no clip | 1,250 |
+| 3D `drawMesh3D`, no clip | 1,262 |
+| either, with `clipRect` first | **0** |
+
+Two things worth separating. It is **not a 3D problem** - plain 2D drawing escapes exactly
+as readily, which I had assumed otherwise until the probe said so. And the layout is not
+confused: the box sits where it should, so this is purely a drawing-bounds question.
+
+`ENG-ME-00005` shipped a first version where a turbine rotor drew across all four stage
+cards beneath it, which looked like a layout bug and was not.
+
+**Workaround:** begin any sized canvas inside a layout with
+`{"clipRect": {"left": 0, "top": 0, "right": W, "bottom": H}}` matching its modifiers. Cheap
+and total.
+
+Whether the engine *should* clip is a fair question - an unclipped canvas is occasionally
+useful for deliberate overflow - but the default surprises, and nothing warns. At minimum it
+belongs in the authoring guide beside the other silent-failure traps.
+
+---
+
+## F-013 · Nested 3D projects into the document's viewport, offset by the component
+
+**confirmed** · engine · found in set 5
+
+A `camera3D` scene inside a sized `canvas` component does not project into that component.
+The viewport appears to take the DOCUMENT's dimensions, translated to the component's
+origin, so the scene centres at roughly `component offset + document size / 2` — usually
+well outside the component, and often off the document entirely.
+
+Minimal repro: a 300x400 document, a column holding a 280x250 box then a 140x100 canvas
+containing a sphere at the world origin.
+
+```
+canvas component occupies   y 250..350,  x 0..140
+sphere actually drawn at    y 386..399,  x 122..178   (centre 150, 392)
+document centre             150, 200
+canvas centre                70, 300
+```
+
+392 is neither. It is the canvas's y-offset of 250 plus half the document height, 200 —
+clipped at the document edge, so only a sliver shows.
+
+**Consequence.** The set 3 Higgs card and the set 5 turbine card both put a 3D scene in a
+layout card. Both appeared to "work" only because their cards happened to sit near enough to
+the middle; the turbine's card sits lower, so its rotor was cut in half and its hub was never
+visible at all. Combined with F-012 — a canvas does not clip — the two failure modes mask
+each other: clip it and the scene is cut off, do not clip it and the scene draws over its
+neighbours.
+
+**Workaround:** give 3D a canvas that fills the document, and use layout components for the
+surrounding material, stacking the two in a `box`. The 3D then centres predictably at the
+document centre and can be positioned by translating the scene in world space.
+
+This supersedes the advice implied by set 3's Higgs document, which got away with it.
+
+---
+
+## F-014 · The Java oracle has no 3D at all, and drops it silently
+
+**confirmed** · oracle · found in set 5
+
+`RemoteComposeJsonParser.java` contains **zero** references to any 3D command - no `camera3D`,
+`lights3D`, `matrix3D`, `defineMesh3D`, `drawMesh3D`, `meshPrimitive3D`, `clearDepth3D`,
+`texture3D` or `cube3D`. Every one is silently skipped, with no warning on stderr.
+
+Probed one command at a time into an otherwise empty 200x200 canvas:
+
+```
+             rcj     oracle
+cleardepth    109      100
+matrix        134      100
+lights        133      100
+camera        165      100
+prim_sphere   150      100
+mesh_define   229      100
+mesh_draw     238      100
+empty canvas    -      100   <- identical to every row above
+```
+
+The oracle's output for a document full of 3D is **byte-identical to an empty canvas**.
+
+**Consequence, and a correction.** Byte-identity against the Java writer is this program's
+primary gate, and it has been vacuous for every 3D document: 16 of the 80 landed so far,
+exactly the one-in-five 3D cadence. Those documents were never gated. My earlier reports that
+sets landed "byte-identical to the oracle" were true only of their 2D documents; I did not
+separate the two, and should have.
+
+The 2D half does still hold: 56 of 64 are byte-identical, and all 8 exceptions are F-003.
+
+**Replacement:** `tools/gate3d.py`, which renders instead. See F-015 for why the obvious
+alternative does not work.
+
+---
+
+## F-015 · rc2json cannot decode most 3D ops and loses stream sync
+
+**confirmed** · C++ reader · found in set 5
+
+The natural stand-in for the oracle is a round-trip through the C++ reader, which is an
+independent implementation. It does not work. Of the seven 3D commands probed, `rc2json`
+decodes two:
+
+```
+lights       SET_LIGHTS_3D     ok
+matrix       MATRIX_3D_OP      ok
+mesh_draw    DEFINE_MESH_3D    then 6 stray opcode-0 "HEADER" ops; DrawMesh3D never appears
+cleardepth / camera / prim_sphere / mesh_define    readback fails outright
+```
+
+After `DEFINE_MESH_3D` the reader loses sync and reports the remaining stream as repeated
+opcode-0 HEADER ops. Note the C++ **renderer** (rc2image) draws all of these correctly, so
+this is specific to the rc2json path, not to the C++ player in general.
+
+**Consequence:** no structural verifier exists for 3D on the desktop. `tools/gate3d.py`
+therefore gates on rendered evidence - that the 3D adds real ink over the same document with
+its 3D stripped, that it does not swallow the canvas, and that a time-driven scene moves -
+and reports the device step as outstanding, because rendered evidence is not engine evidence.
+
+---
+
+## F-016 · stopMode is a no-op in rcj; the Java parser wants touchMode
+
+**confirmed** · converter · found in set 5
+
+Every touch document in this corpus writes `"stopMode": "gently"`. rcj's output is
+byte-identical with the key present and absent, so it does nothing. The Java parser does not
+read `stopMode` either - it reads an integer `touchMode`, and its output *does* change when
+that is set.
+
+So the key is dead on both sides: the corpus has been asking for a stop behaviour it never
+gets. Harmless today, but it means none of the drag documents have had their deceleration
+exercised, and anyone reading these as examples would copy a key that does nothing.

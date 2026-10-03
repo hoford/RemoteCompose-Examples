@@ -1,0 +1,1515 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 580,
+  "profiles": 513,
+  "contentDescription": "Three carbon isotopes and a nitrogen nucleus as cards, each drawing its own protons and neutrons"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FFEDEFF2"
+   },
+   {
+    "padding": 16
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Nuclear structure",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FF16203A"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "protons decide the element; neutrons decide the isotope",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF5B6880"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 130
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 130,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.0,
+         "cy": 52.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.7,
+         "cy": 57.8,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 65.9,
+         "cy": 41.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.8,
+         "cy": 60.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 53.0,
+         "cy": 49.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FC3D6"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 76.0,
+         "cy": 45.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 61.4,
+         "cy": 65.3,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.3,
+         "cy": 39.1,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 79.3,
+         "cy": 57.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 50.4,
+         "cy": 58.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.9,
+         "cy": 37.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.1,
+         "cy": 68.2,
+         "radius": 6.5
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 290
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Carbon-12",
+        "modifiers": [],
+        "fontSize": 15.0,
+        "color": "#FF4FC3D6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "6 protons, 6 neutrons",
+        "modifiers": [],
+        "fontSize": 12.5,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "stable, 98.9% of carbon",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 130
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 130,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.0,
+         "cy": 52.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.7,
+         "cy": 57.8,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 65.9,
+         "cy": 41.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.8,
+         "cy": 60.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 53.0,
+         "cy": 49.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 76.0,
+         "cy": 45.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 61.4,
+         "cy": 65.3,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.3,
+         "cy": 39.1,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 79.3,
+         "cy": 57.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 50.4,
+         "cy": 58.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.9,
+         "cy": 37.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.1,
+         "cy": 68.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 49.9,
+         "cy": 43.2,
+         "radius": 6.5
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 290
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Carbon-13",
+        "modifiers": [],
+        "fontSize": 15.0,
+        "color": "#FF6FD08C"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "6 protons, 7 neutrons",
+        "modifiers": [],
+        "fontSize": 12.5,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "stable, 1.1%",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 130
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 130,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.0,
+         "cy": 52.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.7,
+         "cy": 57.8,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 65.9,
+         "cy": 41.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.8,
+         "cy": 60.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 53.0,
+         "cy": 49.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 76.0,
+         "cy": 45.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 61.4,
+         "cy": 65.3,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.3,
+         "cy": 39.1,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 79.3,
+         "cy": 57.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 50.4,
+         "cy": 58.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.9,
+         "cy": 37.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.1,
+         "cy": 68.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 49.9,
+         "cy": 43.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 82.6,
+         "cy": 48.1,
+         "radius": 6.5
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 290
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Carbon-14",
+        "modifiers": [],
+        "fontSize": 15.0,
+        "color": "#FFE07A5F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "6 protons, 8 neutrons",
+        "modifiers": [],
+        "fontSize": 12.5,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "decays, half-life 5,730 years",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 460
+     },
+     {
+      "padding": 8
+     },
+     {
+      "background": "#FFFFFFFF"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 130
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0F1830"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 130,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.0,
+         "cy": 52.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.7,
+         "cy": 57.8,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 65.9,
+         "cy": 41.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.8,
+         "cy": 60.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 53.0,
+         "cy": 49.9,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 76.0,
+         "cy": 45.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 61.4,
+         "cy": 65.3,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 58.3,
+         "cy": 39.1,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 79.3,
+         "cy": 57.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 50.4,
+         "cy": 58.0,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 71.9,
+         "cy": 37.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 70.1,
+         "cy": 68.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 49.9,
+         "cy": 43.2,
+         "radius": 6.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E89B4"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 82.6,
+         "cy": 48.1,
+         "radius": 6.5
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 290
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Nitrogen-14",
+        "modifiers": [],
+        "fontSize": 15.0,
+        "color": "#FFE0B354"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "7 protons, 7 neutrons",
+        "modifiers": [],
+        "fontSize": 12.5,
+        "color": "#FF16203A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "what carbon-14 becomes",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FF5B6880"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "the first three are all carbon; add one proton and it is nitrogen instead",
+    "modifiers": [],
+    "fontSize": 9.5,
+    "color": "#FF5E6E95"
+   }
+  ]
+ }
+}

@@ -1,0 +1,2060 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 500,
+  "profiles": 513,
+  "contentDescription": "A methane molecule with a bitmap-textured carbon, over a table of the three bond types"
+ },
+ "resources": {
+  "bitmaps": [
+   {
+    "shell": {
+     "file": "textures/shell.png"
+    }
+   }
+  ]
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 500
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.9,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       0.6,
+       0.8,
+       3.2
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.35,
+         -0.55,
+         -0.75
+        ],
+        "intensity": 1.0
+       },
+       {
+        "type": "directional",
+        "color": "#FF4FD6C9",
+        "dir": [
+         0.5,
+         0.25,
+         0.4
+        ],
+        "intensity": 0.28
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "spin",
+      "value": "continuousSec() * 0.3",
+      "commit": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 41,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0643,
+      "y": 0.0643,
+      "z": 0.0643
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 41,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 42,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.1287,
+      "y": 0.1287,
+      "z": 0.1287
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 42,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 43,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.193,
+      "y": 0.193,
+      "z": 0.193
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 43,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 44,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.2573,
+      "y": 0.2573,
+      "z": 0.2573
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 44,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 45,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.3217,
+      "y": 0.3217,
+      "z": 0.3217
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 45,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 46,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.386,
+      "y": 0.386,
+      "z": 0.386
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 46,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 10,
+      "primitive": "sphere",
+      "segments": 16,
+      "radius": 0.21,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.4503,
+      "y": 0.4503,
+      "z": 0.4503
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4ECFA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 10,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 49,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.0643,
+      "y": -0.0643,
+      "z": -0.0643
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 49,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 50,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.1287,
+      "y": -0.1287,
+      "z": -0.1287
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 50,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 51,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.193,
+      "y": -0.193,
+      "z": -0.193
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 51,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 52,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.2573,
+      "y": -0.2573,
+      "z": -0.2573
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 52,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 53,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.3217,
+      "y": -0.3217,
+      "z": -0.3217
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 53,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 54,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.386,
+      "y": -0.386,
+      "z": -0.386
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 54,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 11,
+      "primitive": "sphere",
+      "segments": 16,
+      "radius": 0.21,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0.4503,
+      "y": -0.4503,
+      "z": -0.4503
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4ECFA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 11,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 57,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.0643,
+      "y": 0.0643,
+      "z": -0.0643
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 57,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 58,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.1287,
+      "y": 0.1287,
+      "z": -0.1287
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 58,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 59,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.193,
+      "y": 0.193,
+      "z": -0.193
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 59,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 60,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.2573,
+      "y": 0.2573,
+      "z": -0.2573
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 60,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 61,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.3217,
+      "y": 0.3217,
+      "z": -0.3217
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 61,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 62,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.386,
+      "y": 0.386,
+      "z": -0.386
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 62,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 12,
+      "primitive": "sphere",
+      "segments": 16,
+      "radius": 0.21,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.4503,
+      "y": 0.4503,
+      "z": -0.4503
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4ECFA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 12,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 65,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.0643,
+      "y": -0.0643,
+      "z": 0.0643
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 65,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 66,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.1287,
+      "y": -0.1287,
+      "z": 0.1287
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 66,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 67,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.193,
+      "y": -0.193,
+      "z": 0.193
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 67,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 68,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.2573,
+      "y": -0.2573,
+      "z": 0.2573
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 68,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 69,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.3217,
+      "y": -0.3217,
+      "z": 0.3217
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 69,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 70,
+      "primitive": "sphere",
+      "segments": 8,
+      "radius": 0.045,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.386,
+      "y": -0.386,
+      "z": 0.386
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9FB0D4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 70,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 13,
+      "primitive": "sphere",
+      "segments": 16,
+      "radius": 0.21,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": -0.4503,
+      "y": -0.4503,
+      "z": 0.4503
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4ECFA"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 13,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "texture3D": {
+      "bitmap": "@shell"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 1,
+      "primitive": "sphere",
+      "segments": 26,
+      "radius": 0.4,
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "uv": "uv"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 24.0,
+      "top": 362.0,
+      "right": 28.0,
+      "bottom": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Covalent",
+      "x": 38.0,
+      "y": 374.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "electrons shared",
+      "x": 140.0,
+      "y": 374.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "methane, diamond, water",
+      "x": 300.0,
+      "y": 374.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 24.0,
+      "top": 398.0,
+      "right": 28.0,
+      "bottom": 416.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Ionic",
+      "x": 38.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "electrons transferred",
+      "x": 140.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "table salt, most minerals",
+      "x": 300.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 24.0,
+      "top": 434.0,
+      "right": 28.0,
+      "bottom": 452.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Metallic",
+      "x": 38.0,
+      "y": 446.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "electrons pooled and free",
+      "x": 140.0,
+      "y": 446.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "copper, iron, every wire",
+      "x": 300.0,
+      "y": 446.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the carbon's shell is a bitmap texture on a filled mesh",
+      "x": 24.0,
+      "y": 484.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Chemical bonds",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "shared, transferred, or pooled",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1597 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "Four transitions between the same two energy levels, differing only in direction and photon count"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 380
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 110.0,
+      "right": 162.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 44.0,
+      "y1": 150.0,
+      "x2": 144.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E2",
+      "x": 38.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 44.0,
+      "y1": 250.0,
+      "x2": 144.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E1",
+      "x": 38.0,
+      "y": 254.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 68.0,
+      "cy": 250.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 120.0,
+      "cy": 150.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 94.0,
+      "y1": 250.0,
+      "x2": 94.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 94.0,
+      "y1": 150.0,
+      "x2": 89.0,
+      "y2": 159.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 94.0,
+      "y1": 150.0,
+      "x2": 99.0,
+      "y2": 159.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 48.0,
+      "top": 278.0,
+      "right": 57.0,
+      "bottom": 286.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 57.0,
+      "top": 278.0,
+      "right": 66.0,
+      "bottom": 286.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 66.0,
+      "top": 278.0,
+      "right": 75.0,
+      "bottom": 286.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 75.0,
+      "top": 278.0,
+      "right": 84.0,
+      "bottom": 286.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Absorption",
+      "x": 94.0,
+      "y": 100.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a photon arrives and is taken in",
+      "x": 32.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 photon",
+      "x": 94.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.0,
+      "top": 110.0,
+      "right": 308.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 190.0,
+      "y1": 150.0,
+      "x2": 290.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E2",
+      "x": 184.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 190.0,
+      "y1": 250.0,
+      "x2": 290.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E1",
+      "x": 184.0,
+      "y": 254.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 214.0,
+      "cy": 150.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 266.0,
+      "cy": 250.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 150.0,
+      "x2": 240.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 250.0,
+      "x2": 235.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 240.0,
+      "y1": 250.0,
+      "x2": 245.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 194.0,
+      "top": 126.0,
+      "right": 203.0,
+      "bottom": 134.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 203.0,
+      "top": 126.0,
+      "right": 212.0,
+      "bottom": 134.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 212.0,
+      "top": 126.0,
+      "right": 221.0,
+      "bottom": 134.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 221.0,
+      "top": 126.0,
+      "right": 230.0,
+      "bottom": 134.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Spontaneous",
+      "x": 240.0,
+      "y": 100.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the atom drops on its own, any time",
+      "x": 178.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 photon",
+      "x": 240.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 318.0,
+      "top": 110.0,
+      "right": 454.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 336.0,
+      "y1": 150.0,
+      "x2": 436.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E2",
+      "x": 330.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 336.0,
+      "y1": 250.0,
+      "x2": 436.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E1",
+      "x": 330.0,
+      "y": 254.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 360.0,
+      "cy": 150.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 412.0,
+      "cy": 250.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 386.0,
+      "y1": 150.0,
+      "x2": 386.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 386.0,
+      "y1": 250.0,
+      "x2": 381.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 386.0,
+      "y1": 250.0,
+      "x2": 391.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 340.0,
+      "top": 126.0,
+      "right": 349.0,
+      "bottom": 134.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 349.0,
+      "top": 126.0,
+      "right": 358.0,
+      "bottom": 134.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 358.0,
+      "top": 126.0,
+      "right": 367.0,
+      "bottom": 134.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 367.0,
+      "top": 126.0,
+      "right": 376.0,
+      "bottom": 134.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 342.0,
+      "top": 140.0,
+      "right": 351.0,
+      "bottom": 148.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 351.0,
+      "top": 140.0,
+      "right": 360.0,
+      "bottom": 148.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 360.0,
+      "top": 140.0,
+      "right": 369.0,
+      "bottom": 148.0,
+      "startAngle": 180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 369.0,
+      "top": 140.0,
+      "right": 378.0,
+      "bottom": 148.0,
+      "startAngle": 0.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Stimulated",
+      "x": 386.0,
+      "y": 100.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a photon arrives and two leave, in step",
+      "x": 324.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2 photons",
+      "x": 386.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 464.0,
+      "top": 110.0,
+      "right": 600.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 150.0,
+      "x2": 582.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E2",
+      "x": 476.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 482.0,
+      "y1": 250.0,
+      "x2": 582.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "E1",
+      "x": 476.0,
+      "y": 254.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 506.0,
+      "cy": 150.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 558.0,
+      "cy": 250.0,
+      "radius": 5.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 532.0,
+      "y1": 150.0,
+      "x2": 532.0,
+      "y2": 250.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 532.0,
+      "y1": 250.0,
+      "x2": 527.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 532.0,
+      "y1": 250.0,
+      "x2": 537.0,
+      "y2": 241.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Non-radiative",
+      "x": 532.0,
+      "y": 100.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the energy goes to heat, not light",
+      "x": 470.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0 photons",
+      "x": 532.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "same two levels in every panel, so only the transition differs",
+      "x": 26.0,
+      "y": 362.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Quantum transitions",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "four ways between two levels",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

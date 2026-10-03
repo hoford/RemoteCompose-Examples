@@ -1,0 +1,1231 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 460,
+  "height": 520,
+  "profiles": 513,
+  "contentDescription": "Drag to peel skin, muscle and organs away from the skeleton, as nested 3D shells"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 460,
+      "bottom": 520
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.95,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       0.9,
+       0.5,
+       3.4
+      ],
+      "center": [
+       0,
+       -0.05,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.35,
+         -0.5,
+         -0.78
+        ],
+        "intensity": 1.0
+       },
+       {
+        "type": "directional",
+        "color": "#FF8FB4F2",
+        "dir": [
+         0.5,
+         0.25,
+         0.42
+        ],
+        "intensity": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "peel",
+      "defaultValue": 0.45,
+      "min": 0.0,
+      "max": 1.0,
+      "stopMode": "gently",
+      "expression": "touchX() / 460"
+     }
+    },
+    {
+     "variable": {
+      "name": "p",
+      "value": "clamp(0.0, 1.0, @peel)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "spin",
+      "value": "continuousSec() * 0.25",
+      "commit": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 10,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.156,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.3224,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8E4D8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 10,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 11,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.3,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.0,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8E4D8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 11,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 12,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.234,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": -0.3472,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8E4D8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 12,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 14,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.208,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.3224,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.6 - @p * 2.2)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 14,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 15,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.4,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.0,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.6 - @p * 2.2)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 15,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 16,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.312,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": -0.3472,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.6 - @p * 2.2)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 16,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 18,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.3224,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC25B4E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.3 - @p * 2.0)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 18,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 19,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.5,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.0,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC25B4E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.3 - @p * 2.0)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 19,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 20,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.39,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": -0.3472,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC25B4E"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.3 - @p * 2.0)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 20,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 22,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.312,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.3224,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9A878"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.0 - @p * 1.8)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 22,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 23,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.6,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": 0.0,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9A878"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.0 - @p * 1.8)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 23,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 24,
+      "primitive": "sphere",
+      "segments": 18,
+      "radius": 0.468,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@spin",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": 0,
+      "y": -0.3472,
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9A878"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       },
+       {
+        "alpha": "clamp(0.0, 1.0, 1.0 - @p * 1.8)"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 24,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9A878"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 30.0,
+      "cy": 368.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "skin",
+      "x": 46.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC25B4E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 30.0,
+      "cy": 388.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "muscle",
+      "x": 46.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 30.0,
+      "cy": 408.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "organs",
+      "x": 46.0,
+      "y": 412.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8E4D8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 30.0,
+      "cy": 428.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "skeleton",
+      "x": 46.0,
+      "y": 432.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 200.0,
+      "y1": 400.0,
+      "x2": 436.0,
+      "y2": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "200 + @p * 236",
+      "cy": 400.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "skin on",
+      "x": 200.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bone only",
+      "x": 436.0,
+      "y": 420.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag right to peel the layers away",
+      "x": 24.0,
+      "y": 462.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the shells occupy the same space - they are not stacked side by side",
+      "x": 24.0,
+      "y": 482.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "outer layers are wireframe, since a filled shell would hide what is inside it",
+      "x": 24.0,
+      "y": 500.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Layers of the body",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "skin, muscle, organs, bone",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

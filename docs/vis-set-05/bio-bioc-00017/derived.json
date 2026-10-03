@@ -1,0 +1,43 @@
+{
+  "id": "vis-set-05/bio-bioc-00017",
+  "sha256": "34770b359a119c4f8a03855e7454388ccb8a7d3fee4033ffedaa9b0d7401025a",
+  "bytes": 1562,
+  "ops": 62,
+  "distinctOps": 15,
+  "width": 540,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 17,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 8,
+    "DRAW_CIRCLE": 4,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 10,
+    "DRAW_ROUND_RECT": 2,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}
