@@ -1,0 +1,1554 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "Mitosis and meiosis animated side by side on one clock, so the halving of chromosome number is visible"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 440
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "continuousSec() * 0.22 - floor(continuousSec() * 0.22)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Mitosis",
+      "x": 150.0,
+      "y": 110.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "two cells, each a full copy",
+      "x": 150.0,
+      "y": 128.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s000",
+      "value": "0.0",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s000",
+      "cy": 180.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s000",
+      "cy": 180.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "160.1 + @s000",
+      "y1": 184.28360176539516,
+      "x2": "157.9 + @s000",
+      "y2": 190.90770237920705
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "145.7 + @s000",
+      "y1": 190.13167093403175,
+      "x2": "139.1 + @s000",
+      "y2": 187.86864396598722
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "139.9 + @s000",
+      "y1": 175.71639823460484,
+      "x2": "142.1 + @s000",
+      "y2": 169.09229762079295
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "154.3 + @s000",
+      "y1": 169.86832906596825,
+      "x2": "160.9 + @s000",
+      "y2": 172.13135603401278
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "divide",
+      "x": 150.0,
+      "y": 228.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s010",
+      "value": "-29.0 * clamp(0.0, 1.0, (@t - 0.330) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s010",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s010",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "160.1 + @s010",
+      "y1": 276.28360176539513,
+      "x2": "157.9 + @s010",
+      "y2": 282.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "145.7 + @s010",
+      "y1": 282.1316709340317,
+      "x2": "139.1 + @s010",
+      "y2": 279.8686439659872
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "139.9 + @s010",
+      "y1": 267.71639823460487,
+      "x2": "142.1 + @s010",
+      "y2": 261.092297620793
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "154.3 + @s010",
+      "y1": 261.8683290659683,
+      "x2": "160.9 + @s010",
+      "y2": 264.1313560340128
+     }
+    },
+    {
+     "variable": {
+      "name": "s011",
+      "value": "29.0 * clamp(0.0, 1.0, (@t - 0.330) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s011",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "150.0 + @s011",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "160.1 + @s011",
+      "y1": 276.28360176539513,
+      "x2": "157.9 + @s011",
+      "y2": 282.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "145.7 + @s011",
+      "y1": 282.1316709340317,
+      "x2": "139.1 + @s011",
+      "y2": 279.8686439659872
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "139.9 + @s011",
+      "y1": 267.71639823460487,
+      "x2": "142.1 + @s011",
+      "y2": 261.092297620793
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "154.3 + @s011",
+      "y1": 261.8683290659683,
+      "x2": "160.9 + @s011",
+      "y2": 264.1313560340128
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4 chromosomes each",
+      "x": 150.0,
+      "y": 326.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Meiosis",
+      "x": 440.0,
+      "y": 110.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "four cells, each with half",
+      "x": 440.0,
+      "y": 128.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s100",
+      "value": "0.0",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s100",
+      "cy": 180.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s100",
+      "cy": 180.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s100",
+      "y1": 184.28360176539516,
+      "x2": "447.9 + @s100",
+      "y2": 190.90770237920705
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "435.7 + @s100",
+      "y1": 190.13167093403175,
+      "x2": "429.1 + @s100",
+      "y2": 187.86864396598722
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s100",
+      "y1": 175.71639823460484,
+      "x2": "432.1 + @s100",
+      "y2": 169.09229762079295
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "444.3 + @s100",
+      "y1": 169.86832906596825,
+      "x2": "450.9 + @s100",
+      "y2": 172.13135603401278
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "divide",
+      "x": 440.0,
+      "y": 228.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s110",
+      "value": "-29.0 * clamp(0.0, 1.0, (@t - 0.330) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s110",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s110",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s110",
+      "y1": 276.28360176539513,
+      "x2": "447.9 + @s110",
+      "y2": 282.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s110",
+      "y1": 267.71639823460487,
+      "x2": "432.1 + @s110",
+      "y2": 261.092297620793
+     }
+    },
+    {
+     "variable": {
+      "name": "s111",
+      "value": "29.0 * clamp(0.0, 1.0, (@t - 0.330) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s111",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s111",
+      "cy": 272.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s111",
+      "y1": 276.28360176539513,
+      "x2": "447.9 + @s111",
+      "y2": 282.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s111",
+      "y1": 267.71639823460487,
+      "x2": "432.1 + @s111",
+      "y2": 261.092297620793
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "divide",
+      "x": 440.0,
+      "y": 320.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "s120",
+      "value": "-87.0 * clamp(0.0, 1.0, (@t - 0.660) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s120",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s120",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s120",
+      "y1": 368.28360176539513,
+      "x2": "447.9 + @s120",
+      "y2": 374.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s120",
+      "y1": 359.71639823460487,
+      "x2": "432.1 + @s120",
+      "y2": 353.092297620793
+     }
+    },
+    {
+     "variable": {
+      "name": "s121",
+      "value": "-29.0 * clamp(0.0, 1.0, (@t - 0.660) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s121",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s121",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s121",
+      "y1": 368.28360176539513,
+      "x2": "447.9 + @s121",
+      "y2": 374.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s121",
+      "y1": 359.71639823460487,
+      "x2": "432.1 + @s121",
+      "y2": 353.092297620793
+     }
+    },
+    {
+     "variable": {
+      "name": "s122",
+      "value": "29.0 * clamp(0.0, 1.0, (@t - 0.660) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s122",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s122",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s122",
+      "y1": 368.28360176539513,
+      "x2": "447.9 + @s122",
+      "y2": 374.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s122",
+      "y1": 359.71639823460487,
+      "x2": "432.1 + @s122",
+      "y2": 353.092297620793
+     }
+    },
+    {
+     "variable": {
+      "name": "s123",
+      "value": "87.0 * clamp(0.0, 1.0, (@t - 0.660) * 3.03)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s123",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "440.0 + @s123",
+      "cy": 364.0,
+      "radius": 26.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "450.1 + @s123",
+      "y1": 368.28360176539513,
+      "x2": "447.9 + @s123",
+      "y2": 374.907702379207
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "429.9 + @s123",
+      "y1": 359.71639823460487,
+      "x2": "432.1 + @s123",
+      "y2": 353.092297620793
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2 chromosomes each",
+      "x": 440.0,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 290.0,
+      "y1": 100.0,
+      "x2": 290.0,
+      "y2": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Two ways to divide",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "same clock, so the extra division is visible",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

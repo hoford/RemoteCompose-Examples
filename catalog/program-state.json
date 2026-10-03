@@ -1,9 +1,9 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 6,
- "setsLanded": 5,
- "documentsLanded": 80,
- "lastTouched": "2026-10-03 set 4 landed as docs/vis-set-04 (16 documents)",
+ "currentSet": 7,
+ "setsLanded": 6,
+ "documentsLanded": 96,
+ "lastTouched": "2026-10-03 set 6 landed as docs/vis-set-06 (16 documents). Device verification is live again: 13 of 13 2D confirmed on an X4000. 3D is desktop-only until ag/4108133 lands (F-017) and the cadence continues regardless. rc2image now has --clock; always pin it.",
  "pausedFor": null,
  "setStatus": {
   "1": "landed",
@@ -124,6 +124,41 @@
    "kind": "silent-drop",
    "status": "confirmed",
    "summary": "stopMode is a no-op in rcj and unknown to the Java parser, which reads touchMode"
+  },
+  {
+   "id": "F-017",
+   "set": 6,
+   "kind": "engine",
+   "status": "accepted-known",
+   "summary": "3D opcodes are from unlanded CL ag/4108133; no 3D runs on this APK. Cadence continues - C++ and TS players support 3D"
+  },
+  {
+   "id": "F-018",
+   "set": 6,
+   "kind": "tooling",
+   "status": "fixed",
+   "summary": "rcdev's oracle fallback silently shipped a 3D document with its 3D removed and reported OK; base_dir was also unset so every textured document hit it"
+  },
+  {
+   "id": "F-019",
+   "set": 6,
+   "kind": "player-divergence",
+   "status": "resolved",
+   "summary": "the clock WAS pinnable via --time; the bug was a >0 guard that made --time 0 silently not pin. Added --clock; corrects two earlier conclusions"
+  },
+  {
+   "id": "F-020",
+   "set": 6,
+   "kind": "silent-drop",
+   "status": "confirmed",
+   "summary": "textFromFloat renders 0 for a numeric literal value; it must be a string. No gate catches it"
+  },
+  {
+   "id": "F-021",
+   "set": 6,
+   "kind": "engine",
+   "status": "confirmed",
+   "summary": "clipRect intersects and cannot be widened; a reset is a no-op. Scoped to a canvas component. Broke three documents in set 6"
   }
  ]
 }

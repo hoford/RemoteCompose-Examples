@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-06/eng-me-00006",
+  "sha256": "f583aa5c5a7fc47ee07cb1602b1f30df0545031553d65fed8a14e002be66add6",
+  "bytes": 3777,
+  "ops": 193,
+  "distinctOps": 15,
+  "width": 600,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 25,
+    "DRAW_RECT": 3,
+    "DRAW_LINE": 126,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 12,
+    "DRAW_CIRCLE": 3,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

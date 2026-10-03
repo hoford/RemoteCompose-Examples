@@ -1,0 +1,1049 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 520,
+  "profiles": 513,
+  "contentDescription": "Drag through a year of monthly profit against the running cash balance, which stays negative until July"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 520
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 300.0,
+      "min": 60.0,
+      "max": 520.0,
+      "expression": "touchX()"
+     }
+    },
+    {
+     "variable": {
+      "name": "sel",
+      "value": "clamp(0.0, 11.0, floor((@drag - 60.0) / 460.0 * 12.0))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 120.0,
+      "right": 520.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 300.0,
+      "x2": 520.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 65.0,
+      "top": 271.2,
+      "right": 93.33333333333334,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Jan",
+      "x": 79.16666666666667,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 103.33333333333334,
+      "top": 266.4,
+      "right": 131.66666666666669,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Feb",
+      "x": 117.50000000000001,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 141.66666666666669,
+      "top": 273.6,
+      "right": 170.00000000000003,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Mar",
+      "x": 155.83333333333334,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 180.0,
+      "top": 261.6,
+      "right": 208.33333333333334,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Apr",
+      "x": 194.16666666666666,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 218.33333333333334,
+      "top": 256.8,
+      "right": 246.66666666666669,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "May",
+      "x": 232.5,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 256.6666666666667,
+      "top": 264.0,
+      "right": 285.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Jun",
+      "x": 270.83333333333337,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 295.0,
+      "top": 254.4,
+      "right": 323.3333333333333,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Jul",
+      "x": 309.1666666666667,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 333.33333333333337,
+      "top": 259.2,
+      "right": 361.6666666666667,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Aug",
+      "x": 347.50000000000006,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 371.6666666666667,
+      "top": 249.6,
+      "right": 400.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Sep",
+      "x": 385.83333333333337,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 410.0,
+      "top": 256.8,
+      "right": 438.3333333333333,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Oct",
+      "x": 424.1666666666667,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 448.33333333333337,
+      "top": 247.2,
+      "right": 476.6666666666667,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Nov",
+      "x": 462.50000000000006,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 486.6666666666667,
+      "top": 242.4,
+      "right": 515.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Dec",
+      "x": 500.83333333333337,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 79.16666666666667,
+      "y1": 391.2,
+      "x2": 117.50000000000001,
+      "y2": 374.4
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 117.50000000000001,
+      "y1": 374.4,
+      "x2": 155.83333333333334,
+      "y2": 357.6
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 155.83333333333334,
+      "y1": 357.6,
+      "x2": 194.16666666666666,
+      "y2": 340.8
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 194.16666666666666,
+      "y1": 340.8,
+      "x2": 232.5,
+      "y2": 321.6
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 232.5,
+      "y1": 321.6,
+      "x2": 270.83333333333337,
+      "y2": 304.8
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 270.83333333333337,
+      "y1": 304.8,
+      "x2": 309.1666666666667,
+      "y2": 290.4
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 309.1666666666667,
+      "y1": 290.4,
+      "x2": 347.50000000000006,
+      "y2": 278.4
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 347.50000000000006,
+      "y1": 278.4,
+      "x2": 385.83333333333337,
+      "y2": 264.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 385.83333333333337,
+      "y1": 264.0,
+      "x2": 424.1666666666667,
+      "y2": 247.2
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 424.1666666666667,
+      "y1": 247.2,
+      "x2": 462.50000000000006,
+      "y2": 225.60000000000002
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 462.50000000000006,
+      "y1": 225.60000000000002,
+      "x2": 500.83333333333337,
+      "y2": 199.2
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "60.0 + @sel * 38.333 + 19.17",
+      "y1": 126.0,
+      "x2": "60.0 + @sel * 38.333 + 19.17",
+      "y2": 396.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "profit, every month",
+      "x": 66.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "cash in the bank",
+      "x": 66.0,
+      "y": 160.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "month",
+      "x": 60.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "mlabel",
+      "commit": true,
+      "value": {
+       "type": "textFromFloat",
+       "value": "@sel + 1.0",
+       "whole": 2,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@mlabel",
+      "x": 112.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "lt",
+      "v1": "@sel",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC0322C"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "profitable, and out of money",
+         "x": 160.0,
+         "y": 452.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@sel",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0E8F80"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "the receipts have finally caught up",
+         "x": 160.0,
+         "y": 452.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every month on this page made a profit",
+      "x": 60.0,
+      "y": 482.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- the company was still nearly out of cash in March",
+      "x": 60.0,
+      "y": 500.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Profit is not cash",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to move through the year",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

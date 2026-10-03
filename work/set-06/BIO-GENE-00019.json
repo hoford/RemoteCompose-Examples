@@ -1,0 +1,744 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "A Punnett square drawn as paths, with the 3:1 ratio of appearance shown as a clipped bar"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 560
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Aa  x  Aa",
+      "x": 240.0,
+      "y": 112.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A",
+      "x": 196.0,
+      "y": 136.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A",
+      "x": 130.0,
+      "y": 201.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a",
+      "x": 288.0,
+      "y": 136.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a",
+      "x": 130.0,
+      "y": 293.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "cell0",
+      "x": 154.0,
+      "y": 154.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cell0",
+      "x": 238.0,
+      "y": 154.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cell0",
+      "x": 238.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cell0",
+      "x": 154.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "cell0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cell0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cell0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 17.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "AA",
+      "x": 196.0,
+      "y": 202.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "c0",
+      "x": 246.0,
+      "y": 154.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c0",
+      "x": 330.0,
+      "y": 154.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c0",
+      "x": 330.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c0",
+      "x": 246.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "c0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 17.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Aa",
+      "x": 288.0,
+      "y": 202.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "c1",
+      "x": 154.0,
+      "y": 246.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c1",
+      "x": 238.0,
+      "y": 246.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c1",
+      "x": 238.0,
+      "y": 330.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c1",
+      "x": 154.0,
+      "y": 330.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "c1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 17.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Aa",
+      "x": 196.0,
+      "y": 294.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "c2",
+      "x": 246.0,
+      "y": 246.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c2",
+      "x": 330.0,
+      "y": 246.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c2",
+      "x": 330.0,
+      "y": 330.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "c2",
+      "x": 246.0,
+      "y": 330.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "c2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "c2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 17.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "aa",
+      "x": 288.0,
+      "y": 294.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A monohybrid cross",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one gene, two alleles, four equally likely ways",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the ratio is of appearance, not of genotype: two of the three look alike",
+      "x": 60.0,
+      "y": 454.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "and carry a copy of the recessive allele they do not show",
+      "x": 60.0,
+      "y": 470.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 400.0,
+      "right": 420.0,
+      "bottom": 426.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 406.0,
+      "y": 418.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "clipRect": {
+      "left": 60.0,
+      "top": 400.0,
+      "right": 330.0,
+      "bottom": 426.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 400.0,
+      "right": 420.0,
+      "bottom": 426.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3 show the dominant trait",
+      "x": 70.0,
+      "y": 418.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

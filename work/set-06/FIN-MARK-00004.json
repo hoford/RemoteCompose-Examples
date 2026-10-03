@@ -1,0 +1,1019 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "Three currencies against the dollar over a year, each as a filled path from its own zero line"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 120.0,
+      "right": 540.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 270.0,
+      "x2": 540.0,
+      "y2": 270.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 354.0,
+      "x2": 540.0,
+      "y2": 354.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-10%",
+      "x": 54.0,
+      "y": 358.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 312.0,
+      "x2": 540.0,
+      "y2": 312.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-5%",
+      "x": 54.0,
+      "y": 316.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 228.0,
+      "x2": 540.0,
+      "y2": 228.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+5%",
+      "x": 54.0,
+      "y": 232.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 186.0,
+      "x2": 540.0,
+      "y2": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+10%",
+      "x": 54.0,
+      "y": 190.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Jan",
+      "x": 74.0,
+      "y": 420.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Apr",
+      "x": 197.27272727272725,
+      "y": 420.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Jul",
+      "x": 320.5454545454545,
+      "y": 420.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Oct",
+      "x": 443.8181818181818,
+      "y": 420.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "against the dollar",
+      "x": 60.0,
+      "y": 112.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the same dollar did all three of these at once",
+      "x": 60.0,
+      "y": 440.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "EUR",
+      "x": 520.0,
+      "y": 213.51999999999998,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "JPY",
+      "x": 520.0,
+      "y": 375.64,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "GBP",
+      "x": 520.0,
+      "y": 245.44,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "One year, three currencies",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each filled from zero, so direction is a shape",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "fx0",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 115.0909090909091,
+      "y": 259.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 156.1818181818182,
+      "y": 252.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 197.27272727272725,
+      "y": 258.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 238.36363636363637,
+      "y": 246.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 279.4545454545455,
+      "y": 237.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 320.5454545454545,
+      "y": 243.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 361.6363636363636,
+      "y": 231.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 402.72727272727275,
+      "y": 221.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 443.8181818181818,
+      "y": 227.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 484.90909090909093,
+      "y": 216.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 526.0,
+      "y": 209.51999999999998
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx0",
+      "x": 526.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "fx0"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 60.0,
+      "top": 120.0,
+      "right": 540.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx0"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx0"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "fx1",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 115.0909090909091,
+      "y": 285.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 156.1818181818182,
+      "y": 298.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 197.27272727272725,
+      "y": 294.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 238.36363636363637,
+      "y": 312.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 279.4545454545455,
+      "y": 327.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 320.5454545454545,
+      "y": 338.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 361.6363636363636,
+      "y": 332.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 402.72727272727275,
+      "y": 350.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 443.8181818181818,
+      "y": 364.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 484.90909090909093,
+      "y": 357.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 526.0,
+      "y": 371.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx1",
+      "x": 526.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "fx1"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 60.0,
+      "top": 120.0,
+      "right": 540.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx1"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx1"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "fx2",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 74.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 115.0909090909091,
+      "y": 264.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 156.1818181818182,
+      "y": 273.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 197.27272727272725,
+      "y": 260.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 238.36363636363637,
+      "y": 263.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 279.4545454545455,
+      "y": 254.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 320.5454545454545,
+      "y": 259.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 361.6363636363636,
+      "y": 249.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 402.72727272727275,
+      "y": 254.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 443.8181818181818,
+      "y": 243.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 484.90909090909093,
+      "y": 248.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 526.0,
+      "y": 241.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "fx2",
+      "x": 526.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "fx2"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 60.0,
+      "top": 120.0,
+      "right": 540.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx2"
+     }
+    },
+    {
+     "clipRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "fx2"
+     }
+    }
+   ]
+  }
+ }
+}

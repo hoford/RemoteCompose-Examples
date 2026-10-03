@@ -29,7 +29,8 @@ KEYS_3D = ("camera3D", "lights3D", "matrix3D", "defineMesh3D", "drawMesh3D",
 # Only these make a document move on the clock. touchExpression does NOT: a touch-driven
 # scene is identical at every time sample, and treating it as animated failed BIO-CB-00011
 # for standing still when standing still is what it should do.
-TIME_MARKERS = ("continuousSec", "timeSec")
+TIME_MARKERS = ("animationTime",)        # the only clock --anim can drive
+WALLCLOCK_MARKERS = ("continuousSec",)   # animates on a player, unpinnable here
 TOUCH_MARKERS = ("touchExpression",)
 
 
@@ -60,17 +61,33 @@ def compile_rc(doc, out, base_dir):
     return len(b)
 
 
-def render(rc, png, t):
-    subprocess.run([RC2IMG, rc, png, "--time", str(t)], capture_output=True)
+# The clock is PINNED for every render here. Without --clock, every date and time variable
+# reads the wall clock, two renders of the same document differ, and a motion measurement
+# is really a measurement of how long the two runs were apart (F-019). --anim moves
+# animationTime; --clock moves everything else, and a document may use either.
+# A fixed instant, given in epoch millis so the step can be sub-second. The step must not
+# be a whole multiple of a document's period or the comparison aliases to zero and the gate
+# reports a moving document as static - which it did at a 4 s step against a 0.25 Hz scene.
+# 1300 ms is not a round fraction of any period used in this corpus, and two different steps
+# are tried before anything is called static.
+CLOCK_MS = 1773066600000
+CLOCK_BASE = "@%d" % CLOCK_MS
+CLOCK_LATE = "@%d" % (CLOCK_MS + 1300)
+CLOCK_LATE2 = "@%d" % (CLOCK_MS + 2900)
+
+
+def render(rc, png, t, clock=CLOCK_BASE):
+    subprocess.run([RC2IMG, rc, png, "--anim", str(t), "--clock", clock],
+                   capture_output=True)
     from PIL import Image
     return Image.open(png).convert("RGB")
 
 
-def ink_and_motion(doc, base_dir, tmp, animated):
+def ink_and_motion(doc, base_dir, tmp, animated, same=False, alt=False):
     """Returns (ink fraction at t=0, pixels changed between frames, width, height)."""
     rc = str(tmp / "g.rc")
     compile_rc(doc, rc, base_dir)
-    a = render(rc, str(tmp / "a.png"), 0.0)
+    a = render(rc, str(tmp / "a.png"), 0.0, CLOCK_BASE)
     # background = the most common colour; ink = everything else
     hist = {}
     for p in a.getdata():
@@ -79,7 +96,8 @@ def ink_and_motion(doc, base_dir, tmp, animated):
     ink = 1.0 - bgn / float(a.width * a.height)
     moved = 0
     if animated:
-        b = render(rc, str(tmp / "b.png"), 0.85)
+        b = render(rc, str(tmp / "b.png"), 0.0 if same else 2.5,
+                   CLOCK_BASE if same else (CLOCK_LATE2 if alt else CLOCK_LATE))
         moved = sum(1 for p, q in zip(a.getdata(), b.getdata()) if p != q)
     return ink, moved, a.width, a.height
 
@@ -93,12 +111,18 @@ def check(path, verbose=True):
             print("  %-20s 2D - the oracle gate applies instead" % name)
         return True
     src = path.read_text()
-    animated = any(m in src for m in TIME_MARKERS)
+    wallclock = any(m in src for m in WALLCLOCK_MARKERS)
+    # with --clock pinned, a continuousSec() document is measurable like any other:
+    # advance the pinned instant and the scene must move
+    animated = any(m in src for m in TIME_MARKERS) or wallclock
     touch = any(m in src for m in TOUCH_MARKERS)
     tmp = pathlib.Path("/Users/john/.claude/jobs/168469d6/tmp") / ("gate_" + name)
     tmp.mkdir(parents=True, exist_ok=True)
     try:
         ink, moved, width, height = ink_and_motion(doc, str(path.parent), tmp, animated)
+        # run-to-run noise at identical settings: nonzero only for a wall-clock document,
+        # and the floor any motion claim has to clear
+        _, noise, _, _ = ink_and_motion(doc, str(path.parent), tmp, True, same=True)
         # the same document with its 3D removed, as the floor to beat
         base_ink, _, _, _ = ink_and_motion(strip_3d(doc), str(path.parent), tmp, False)
     except Exception as e:
@@ -116,8 +140,16 @@ def check(path, verbose=True):
     if ink > 0.97:
         bad.append("the 3D covers %.0f%% of the canvas - probably a camera inside the mesh"
                    % (100 * ink))
-    if animated and moved < 50:
-        bad.append("time-driven but only %d px change between t=0 and t=0.85" % moved)
+    if animated and moved - noise < 50:
+        # a second, differently-spaced step, in case the first aliased with the period
+        try:
+            _, moved2, _, _ = ink_and_motion(doc, str(path.parent), tmp, True, alt=True)
+            moved = max(moved, moved2)
+        except Exception:
+            pass
+    if animated and moved - noise < 50:
+        bad.append("time-driven but only %d px change when the clock advances 4 s "
+                   "(noise at a fixed clock is %d px)" % (moved, noise))
     if verbose:
         how = ("moved %6d px" % moved) if animated else (
               "touch-driven " if touch else "static       ")

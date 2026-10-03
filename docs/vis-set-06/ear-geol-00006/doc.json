@@ -1,0 +1,865 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 600,
+  "profiles": 513,
+  "contentDescription": "Four ways mountains form, each with its own cross-section drawn at the same size"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "padding": 16
+   },
+   {
+    "background": "#FF0B1410"
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "How mountains are made",
+    "modifiers": [],
+    "fontSize": 19.0,
+    "color": "#FFE4F0E6"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 3
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "sections at one scale, so the shapes can be compared",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF8FA894"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "flow",
+    "modifiers": [
+     {
+      "width": 520
+     }
+    ],
+    "children": [
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 248
+       },
+       {
+        "padding": 9
+       },
+       {
+        "background": "#FF14241C"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 96
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF27402F"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF4FC3D6"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 60,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 53,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF4FC3D6"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 46,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 39,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF4FC3D6"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 2.4
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 90,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 210,
+           "y1": 90,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 28,
+           "y1": 86,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 202,
+           "y1": 86,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 36,
+           "y1": 82,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 194,
+           "y1": 82,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 44,
+           "y1": 78,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 186,
+           "y1": 78,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 52,
+           "y1": 74,
+           "x2": 115,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 178,
+           "y1": 74,
+           "x2": 115,
+           "y2": 24
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 7
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Collision",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF4FC3D6"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 3
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "two continents meet and neither sinks",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8FA894"
+       },
+       {
+        "type": "text",
+        "value": "Himalaya",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FFE4F0E6"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 248
+       },
+       {
+        "padding": 9
+       },
+       {
+        "background": "#FF14241C"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 96
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF27402F"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 56,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFE07A5F"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 70,
+           "cy": 30,
+           "radius": 16
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 116,
+           "cy": 36,
+           "radius": 13
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 162,
+           "cy": 42,
+           "radius": 10
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFE07A5F"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 2.0
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 0,
+           "y1": 60,
+           "x2": 230,
+           "y2": 92
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 7
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Volcanic",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFE07A5F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 3
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "one plate dives, melts, and comes back up",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8FA894"
+       },
+       {
+        "type": "text",
+        "value": "Andes",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FFE4F0E6"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 248
+       },
+       {
+        "padding": 9
+       },
+       {
+        "background": "#FF14241C"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 96
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF27402F"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 30,
+           "right": 54,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF6FD08C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 58,
+           "top": 42,
+           "right": 112,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 116,
+           "top": 54,
+           "right": 170,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF6FD08C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 174,
+           "top": 66,
+           "right": 228,
+           "bottom": 96
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 7
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Fault-block",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF6FD08C"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 3
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "the crust pulls apart and blocks tilt",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8FA894"
+       },
+       {
+        "type": "text",
+        "value": "Sierra Nevada",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FFE4F0E6"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 248
+       },
+       {
+        "padding": 9
+       },
+       {
+        "background": "#FF14241C"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 96
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF27402F"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF14241C"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 40,
+           "right": 230,
+           "bottom": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFE0B354"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 2.0
+            }
+           ]
+          }
+         },
+         {
+          "drawArc": {
+           "left": 50,
+           "top": 26,
+           "right": 180,
+           "bottom": 120,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFE0B354"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 2.0
+            }
+           ]
+          }
+         },
+         {
+          "drawArc": {
+           "left": 36,
+           "top": 36,
+           "right": 194,
+           "bottom": 130,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFE0B354"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 2.0
+            }
+           ]
+          }
+         },
+         {
+          "drawArc": {
+           "left": 22,
+           "top": 46,
+           "right": 208,
+           "bottom": 140,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 7
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Dome",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFE0B354"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 3
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "magma lifts the layers without breaking out",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8FA894"
+       },
+       {
+        "type": "text",
+        "value": "Black Hills",
+        "modifiers": [],
+        "fontSize": 10.0,
+        "color": "#FFE4F0E6"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

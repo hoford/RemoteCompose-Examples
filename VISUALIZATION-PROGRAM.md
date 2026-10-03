@@ -234,6 +234,13 @@ set passes, so a half-landed set cannot exist.
 
 ### 3. Compile and check — but 2D and 3D take different gates
 
+**3D does not run on the Android engine in this tree, and that is expected.** The 3D opcodes
+come from ag/4108133, still in review; the C++ and TypeScript players implement them, the APK
+does not. A phone refusing a 3D document with `Unknown operation encountered 114` is F-017 and
+needs no diagnosis. The one-in-five 3D cadence continues regardless, because both desktop
+players render these documents properly. To verify 3D on a device, pull ag/4108133 into
+androidx-main3 and rebuild the player-view-demos APK.
+
 **The oracle gate does not apply to 3D.** `RemoteComposeJsonParser.java` contains no 3D
 command at all and drops every one silently, emitting a document byte-identical to an empty
 canvas (F-014). Comparing a 3D document against it compares it against nothing. Sets 1-5 were
@@ -272,14 +279,31 @@ ops and loses stream sync (F-015). A gate3d pass means the C++ renderer draws it
 jars class-for-class and does not rebuild itself; stale classes make the oracle drop opcodes
 it does not know and "pass" everything. Run `oracle/build-mesh-classes.sh` after any sync.
 
-### 4. Render, in both players
+### 4. Render, in both players — with the clock pinned
 
 ```sh
-# C++ reference
-/Users/john/code/github/rcExperiments/players/cpp/build/tools/rc2image/rc2image doc.rc out.png --time 0
+# C++ reference. ALWAYS pass --clock: without it every date and time variable reads the
+# wall clock, so two renders of the same document differ and nothing can be compared.
+rc2image doc.rc out.png --clock 2026-03-09T14:30:00
+rc2image doc.rc out.png --clock @1773066600000     # or raw epoch millis, for sub-second steps
+# --anim pins animationTime, which is a SEPARATE clock; a document may use either.
+
 # browser player, pinned so an animated document is reproducible
 # playground.html?agent=1&action=inspect&t=0#doc=<base64url>
 ```
+
+`--clock` accepts `HH:MM[:SS]`, `YYYY-MM-DD`, `YYYY-MM-DDTHH:MM[:SS]` or `@MILLIS`, and pins
+`continuousSec`, seconds, minutes, hour, month, weekday, day of month, day of year and year
+together from one instant.
+
+Two things to know when choosing the instant:
+
+* **Pick one that shows the document well.** A scene whose opening phase is empty will be
+  captured empty. The instant is part of how the document presents itself; keep it with the
+  document.
+* **Do not step by a whole multiple of the document's period.** Comparing two instants exactly
+  one cycle apart aliases to zero motion and makes a moving document look static. `gate3d.py`
+  tries two differently-spaced steps for this reason.
 
 Compare them. **A disagreement between the two players is one of the most valuable things
 this programme can produce** — that is how the gradient/shader-clear bug surfaced. Use

@@ -443,3 +443,191 @@ that is set.
 So the key is dead on both sides: the corpus has been asking for a stop behaviour it never
 gets. Harmless today, but it means none of the drag documents have had their deceleration
 exercised, and anyone reading these as examples would copy a key that does nothing.
+
+---
+
+## F-017 · The 3D opcodes are an unlanded CL; no 3D document runs on a device
+
+**confirmed on device** · engine · found in set 6
+
+Every 3D document in this catalog is refused by the engine:
+
+```
+java.lang.RuntimeException: Unknown operation encountered 114
+```
+
+114 is `PAINT_3D_STATE` in `rcj/writer.py`, under a comment that says what is going on:
+
+```python
+# ---- 3D (in review as ag/4108133) ----
+```
+
+The 3D opcodes come from a change still **in review**. The engine in this checkout does not
+have it: `remote-core` contains no 3D operation class at all, and `Operations.java` has no
+3D opcode. The numbers are not merely unknown, they are **taken**: opcode 110, which rcj
+writes as `DEFINE_MESH_3D`, is `EVENT_ACTION` in the shipped engine. A 3D document is
+therefore misread before it fails, and it fails at the first opcode with no assignment at all.
+
+**Measured on an X4000, Android 14, with the player-view-demos app:**
+
+| | ran | refused |
+|---|---|---|
+| set 6, 2D (13) | 13 | 0 |
+| sets 1-5, 3D (16) | 0 | 16 |
+| set 6, 3D (3) | 0 | 3 |
+
+So the device path works; the failure is specific to 3D, and total.
+
+**What this means for the programme.** One document in five is 3D by design — the schedule
+uses `THREE_D_IN = 5`. That cadence is building against a change that has not landed. Those
+documents render in the C++ renderer and in the TypeScript player, so every desktop check
+passes; the engine is where they stop. Nineteen documents are in this state now, and a 32-set
+pass would reach about 96.
+
+**Decided (2026-10-03): the one-in-five 3D cadence continues.** The C++ and TypeScript players
+both implement 3D, so these documents are real, reviewable and useful today; only the Android
+engine in this checkout lacks the ops. Device verification of a 3D document requires pulling
+ag/4108133 into the tree and rebuilding the APK, and until that happens a 3D document's gates
+are: compile, gate3d on the C++ renderer, and the browser player. A refusal with
+`Unknown operation encountered 114` on a phone is expected, not a regression - do not spend
+time rediagnosing it.
+
+**Corrected claim.** Two of the sixteen first appeared to run. They did not: rcj had failed on
+a texture path and `rcdev` fell back to the oracle, which drops 3D, so what reached the phone
+was a 2D remnant of the document. See F-018. With that fixed, the score is 0 of 16.
+
+---
+
+## F-018 · rcdev's oracle fallback silently shipped a different document
+
+**confirmed, fixed** · tooling · found in set 6
+
+`rcdev.py build_one` falls back to the Java parser whenever rcj raises, so that authoring is
+never blocked by converter coverage. That is reasonable for a 2D construct rcj lacks. For a
+3D document it is not: the Java parser has no 3D commands, so the fallback ships a document
+with all the 3D removed - and reported `OK`.
+
+Two documents were recorded as running on the device that way. What ran was their 2D remnant.
+The trigger was unrelated: `convert(src)` was called without `base_dir`, so relative texture
+paths resolved against the working directory, every textured document raised, and the
+fallback took over. (Same class of bug as F-011 in rcx.py, in a second tool.)
+
+Fixed both halves: `base_dir` now comes from the document's own directory, and a fallback that
+drops 3D says `[3D DROPPED: the oracle cannot see it]` instead of a quiet `oracle`.
+
+Also added `rcdev.py --no-check`, because the byte-check otherwise refuses to ship any
+document with a `touchExpression` (the expected F-003 delta) and any 3D document at all - the
+two kinds of document most worth putting in front of the engine.
+
+**Engine result for F-003.** With the check bypassed, both touch documents run on the engine
+using rcj's bytes. The engine accepts the RPN mapping the Java parser discards, which confirms
+rcj is the correct side of that divergence.
+
+---
+
+## F-019 · CORRECTED · the clock can be pinned; --time 0 silently did not
+
+**resolved, tooling fixed** · player · found in set 6
+
+What is true: `--anim` pins `animationTime` only, and without a clock flag every date and time
+variable reads the wall clock, so a document using `continuousSec()` renders differently every
+run.
+
+**What I got wrong.** I reported that `continuousSec()` "cannot be pinned by any flag rc2image
+offers". It could: `--time <epoch_ms>` already pinned the whole set. The real defect was
+narrower and nastier - both `rc2image` and `CoreDocument` tested `fixedTimeMs > 0`, so the one
+value a person is most likely to pass for "the beginning", `--time 0`, silently did not pin
+anything and left the wall clock running. Every render I had made used `--time 0`, which is
+why the clock appeared unpinnable.
+
+Two further conclusions downstream of that error are also corrected:
+
+* The "3D renderer non-determinism" (7,572 px between identical runs) was the wall clock
+  moving, not the rasterizer. With the clock pinned, repeated renders are byte-identical.
+* gate3d's "moved N px" column compared two `--time` values that both failed the `> 0` test,
+  so it measured drift rather than animation.
+
+**Fixed.** The guard now tracks whether a flag was *given*, not whether its value is nonzero
+(`mFixedTimeMs = -1` means unset, so epoch 0 is pinnable), and there is a readable flag:
+
+```
+--clock HH:MM[:SS]              today at that local time
+--clock YYYY-MM-DD              that date at midnight
+--clock YYYY-MM-DDTHH:MM[:SS]   that date and time
+--clock @MILLIS                 raw epoch milliseconds
+```
+
+It pins the whole set from one instant - `continuousSec`, seconds, minutes, hour, month,
+weekday, day of month, day of year, year, epoch second - so they stay mutually consistent. An
+unparseable spec is an error rather than a silent fall-back to "now".
+
+Verified, with the negative control the project asks for:
+
+```
+--clock 14:30:05 vs 14:30:35   30.00 s apart   (exactly the 30 s asked for)
+--clock 09:15:00, three runs   -0.11, -0.11, -0.11   (pinned)
+no flag, three runs            10.50, 11.68, 12.86   (drifts, so the test can fail)
+```
+
+**Authoring consequence that still stands.** A document whose opening phase is empty will be
+captured empty unless the clock is set to a later instant. Pick a `--clock` that shows the
+document at its most legible, and keep it with the document.
+
+---
+
+## F-020 · textFromFloat renders 0 for a numeric literal, silently
+
+**confirmed** · converter · found in set 6
+
+`textFromFloat`'s `value` must be a string - an expression, or a number written as one. Given
+an actual JSON number it emits `0`, with no warning:
+
+```
+{"type": "textFromFloat", "value": 78.0,   "whole": 2, "decimal": 0}  ->  "0"
+{"type": "textFromFloat", "value": "78.0", "whole": 2, "decimal": 0}  ->  "78"
+{"type": "textFromFloat", "value": 78.0,   "whole": 3, "decimal": 1}  ->  "0.0"
+```
+
+The failure is the worst shape available: the document renders, the layout is right, and a
+confident wrong number appears where the right one should be. `SOC-PSYC-00005` shipped in this
+set claiming "0% of it does not make the next step" about three different stages before this
+was caught - and it was caught by reading the picture, not by any gate.
+
+No check in this programme would have found it. Byte-identity passes, the renderer is happy,
+and the number is plausible. Worth remembering when a figure in a generated document looks
+suspiciously round.
+
+---
+
+## F-021 · clipRect intersects and can never be widened
+
+**confirmed** · engine semantics · found in set 6
+
+`clipRect` narrows the clip and nothing in a canvas's command list can widen it again. There
+is no save/restore, and re-issuing a full-canvas `clipRect` does nothing:
+
+```
+no clip                              40000 px   (200x200)
+clipRect 100x100                     10000 px
+clipRect 100x100 then clipRect full  10000 px   <- the "reset" is a no-op
+```
+
+A clip is therefore permanent for the remainder of that canvas. It IS scoped to the canvas
+component, though - a nested canvas that clips does not affect a sibling drawn afterwards:
+
+```
+clipped child    2500 px   (clip held inside the child)
+sibling after   10000 px   (full size; no leak)
+```
+
+**This broke three documents in one set, all the same way.** BIO-GENE-00019, MTH-ALGE-00006
+and FIN-MARK-00004 each clipped something mid-document and then "reset". Everything after the
+clip - titles, a bar, axis labels, a whole discriminant readout - was silently confined to a
+small rectangle. Each document still rendered, and still looked deliberate; the missing title
+was the only visible hint, and on a contact sheet that reads as a design choice.
+
+**Rule.** Either draw clipped content last, or give it its own nested canvas. And note how
+this composes with F-012: a sized canvas does not clip its own drawing, so the fix for F-012
+is a `clipRect` - which is exactly the irreversible thing described here. The safe pattern is
+a nested canvas whose first command is its clip and which draws nothing it does not want
+clipped.

@@ -1,0 +1,461 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Units of sale falling as particles into a fixed cost bucket that never moves and a variable one that does"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0B1410"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 500,
+      "bottom": 560
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 110.0,
+      "right": 460.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "units",
+      "count": 70,
+      "variables": [
+       "sx",
+       "sy",
+       "drift",
+       "speed"
+      ],
+      "initialValues": [
+       "60 + rand() * 380",
+       "118 + rand() * 176",
+       "-0.4 + rand() * 0.8",
+       "0.6 + rand() * 1.5"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@units",
+      "equations": [
+       "sx + drift",
+       "118 + ((sy - 118 + speed) % 176)",
+       "drift",
+       "speed"
+      ],
+      "commands": [
+       {
+        "drawCircle": {
+         "cx": "@sx",
+         "cy": "@sy",
+         "radius": 2.6
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every unit sold",
+      "x": 250.0,
+      "y": 136.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 320.0,
+      "x2": 56.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 244.0,
+      "y1": 320.0,
+      "x2": 244.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 440.0,
+      "x2": 244.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 59.0,
+      "top": 366.84000000000003,
+      "right": 241.0,
+      "bottom": 438.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Fixed",
+      "x": 150.0,
+      "y": 466.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rent, salaries, the lease on the machine",
+      "x": 150.0,
+      "y": 484.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 268.0,
+      "y1": 320.0,
+      "x2": 268.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 456.0,
+      "y1": 320.0,
+      "x2": 456.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 268.0,
+      "y1": 440.0,
+      "x2": 456.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "variable": {
+      "name": "vol",
+      "value": "0.45 + 0.33 * sin(continuousSec() * 0.6)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 271.0,
+      "top": "438.0 - 118.0 * @vol",
+      "right": 453.0,
+      "bottom": 438.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Variable",
+      "x": 362.0,
+      "y": 466.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "materials, shipping, the hour someone worked",
+      "x": 362.0,
+      "y": 484.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the left bucket is the same height whether you sell nothing or everything",
+      "x": 40.0,
+      "y": 520.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- which is why volume is survival when fixed costs are high",
+      "x": 40.0,
+      "y": 538.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Two kinds of cost",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one tracks the stream, one does not",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

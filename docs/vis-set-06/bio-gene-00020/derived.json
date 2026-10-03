@@ -1,0 +1,44 @@
+{
+  "id": "vis-set-06/bio-gene-00020",
+  "sha256": "01d9a0ac5130b980785791a379bad9971cf0c338d389183a02d463f800368306",
+  "bytes": 5135,
+  "ops": 230,
+  "distinctOps": 16,
+  "width": 580,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 61,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 87,
+    "DATA_TEXT": 9,
+    "DRAW_TEXT_ANCHOR": 11,
+    "DRAW_CIRCLE": 20,
+    "DRAW_LINE": 29,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}
