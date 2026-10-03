@@ -1,0 +1,889 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "A signalling cascade as a table, with the amplification at each step stated as a multiplier"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 400
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "STEP",
+      "x": 26.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "MOLECULES",
+      "x": 420.0,
+      "y": 96.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "AMPLIFICATION",
+      "x": 544.0,
+      "y": 96.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 104.0,
+      "x2": 544.0,
+      "y2": 104.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Hormone binds receptor",
+      "x": 26.0,
+      "y": 134.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 molecule",
+      "x": 420.0,
+      "y": 134.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 140.0,
+      "right": 29.0,
+      "bottom": 144.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 154.0,
+      "x2": 544.0,
+      "y2": 154.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.3
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "G protein activated",
+      "x": 26.0,
+      "y": 176.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10",
+      "x": 420.0,
+      "y": 176.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x10",
+      "x": 544.0,
+      "y": 176.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 182.0,
+      "right": 85.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 196.0,
+      "x2": 544.0,
+      "y2": 196.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.6
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Adenylyl cyclase",
+      "x": 26.0,
+      "y": 218.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100",
+      "x": 420.0,
+      "y": 218.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x10",
+      "x": 544.0,
+      "y": 218.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 224.0,
+      "right": 141.0,
+      "bottom": 228.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 238.0,
+      "x2": 544.0,
+      "y2": 238.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 16.2
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "cAMP produced",
+      "x": 26.0,
+      "y": 260.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10 thousand",
+      "x": 420.0,
+      "y": 260.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x100",
+      "x": 544.0,
+      "y": 260.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 266.0,
+      "right": 253.0,
+      "bottom": 270.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 280.0,
+      "x2": 544.0,
+      "y2": 280.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 17.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Protein kinase A",
+      "x": 26.0,
+      "y": 302.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100 thousand",
+      "x": 420.0,
+      "y": 302.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x10",
+      "x": 544.0,
+      "y": 302.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 308.0,
+      "right": 309.0,
+      "bottom": 312.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 322.0,
+      "x2": 544.0,
+      "y2": 322.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 20.1
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Target enzymes",
+      "x": 26.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10 million",
+      "x": 420.0,
+      "y": 344.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "x100",
+      "x": 544.0,
+      "y": 344.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "alpha": 0.55
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 350.0,
+      "right": 421.0,
+      "bottom": 354.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one hormone molecule ends up moving ten million enzymes",
+      "x": 26.0,
+      "y": 380.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Signal amplification",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one molecule in, ten million out",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

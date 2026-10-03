@@ -1,0 +1,38 @@
+{
+ "id": "vis-set-03/eng-me-00003",
+ "title": "Slider-crank",
+ "description": "Rotation in, straight-line motion out. The slider's travel is computed exactly from the rod length, not faked with a sine, which is why a piston dwells longer at one end. #engineering #mechanism #animated",
+ "source": "rcjson",
+ "authoring": [
+  "json",
+  "py"
+ ],
+ "tags": [],
+ "sha256": "bcb72adc1665a056042a01fffee55ea318c0354089234766fb416effc4d9edc6",
+ "addedAt": "2026-10-03T18:43:26+00:00",
+ "provenance": "github/RemoteCompose-Examples/work/set-03/ENG-ME-00003.rc",
+ "programmeId": "ENG-ME-00003",
+ "subject": [
+  "Engineering",
+  "Mechanical Engineering",
+  "Linkages"
+ ],
+ "concepts": [
+  "slider-crank",
+  "piston",
+  "connecting rod",
+  "reciprocating motion"
+ ],
+ "how": "expression-animation",
+ "why": "demonstrate",
+ "dimension": "2D",
+ "accuracy": "quantitative",
+ "scale": "0.1 m",
+ "audience": [
+  "high-school",
+  "undergraduate"
+ ],
+ "dataSource": "theoretical-model",
+ "set": 3,
+ "palette": "paper"
+}

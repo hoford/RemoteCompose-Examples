@@ -1,0 +1,45 @@
+{
+  "id": "vis-set-03/bio-cb-00009",
+  "sha256": "c36d8ed8d52d972c1125de51fec64fbbe1eba34c69a2401fb294659d30e1920b",
+  "bytes": 5085,
+  "ops": 251,
+  "distinctOps": 15,
+  "width": 540,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 100,
+    "DRAW_RECT": 5,
+    "DRAW_CIRCLE": 82,
+    "ANIMATED_FLOAT": 28,
+    "DATA_TEXT": 12,
+    "DRAW_TEXT_ANCHOR": 12,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set03.py"
+  ]
+}

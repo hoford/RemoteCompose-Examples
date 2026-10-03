@@ -62,6 +62,29 @@ Taken verbatim from the taxonomy. The purpose is a real constraint on the docume
 label applied afterwards: a `compare` document needs two things side by side and a shared
 scale; an `analyze` document needs readable values, not just a shape.
 
+### Visual identity — vary it on purpose
+
+**Pick a palette per document, deterministically from its id.** Three sets in, every
+document shared one navy ground and one blue accent, and the catalogue had started to look
+like one author's taste rather than a demonstration of what the format can do. For a corpus
+whose job is to be a source of examples, that is a real weakness.
+
+`work/set-03/make_set03.py` carries six — `midnight`, `carbon`, `paper`, `plum`, `forest`,
+`ember` — each supplying the same nine roles so no document needs to know which one it got.
+Include a **light** ground: a light document differs from a dark one far more than two dark
+documents differ from each other.
+
+Two rules about how the pick is made:
+
+* **Hash the document id, never call `random`.** Generators must be deterministic — the
+  corpus stores compiled bytes, and a rebuild that produced different colours would turn
+  every re-run into a false diff.
+* **Vary the palette, not the structure.** The axis obligations, the layout conventions and
+  the authoring rules stay fixed. Only the colour identity moves.
+
+Sets 1 and 2 predate this and are uniformly `midnight`. They can be re-palettised later;
+doing so rewrites their bytes, so it is a deliberate re-landing rather than a touch-up.
+
 ### Dimension — 2D or 3D, as a delivery constraint
 
 **80% 2D, 20% 3D** (101 of 507). This is not an aesthetic ratio.

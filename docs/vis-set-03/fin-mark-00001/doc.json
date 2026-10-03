@@ -1,0 +1,647 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 480,
+  "profiles": 513,
+  "contentDescription": "Ninety holdings as a particle scatter in three axes, turned by dragging"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 500,
+      "bottom": 480
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.9,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       2.3,
+       1.9,
+       2.6
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.6,
+         -0.7
+        ],
+        "intensity": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 0.6,
+      "min": -6.0,
+      "max": 6.0,
+      "stopMode": "gently",
+      "expression": "touchX() / 90"
+     }
+    },
+    {
+     "variable": {
+      "name": "rot",
+      "value": "@drag",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "ca",
+      "value": "cos(@rot)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "sa",
+      "value": "sin(@rot)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "cp",
+      "value": "@ca + @sa",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "cm",
+      "value": "@sa - @ca",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "dp",
+      "value": "@ca - @sa",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "dm",
+      "value": "@sa + @ca",
+      "commit": true
+     }
+    },
+    {
+     "createParticles": {
+      "id": "px",
+      "variables": [
+       "rx",
+       "ry",
+       "rz",
+       "sz"
+      ],
+      "initialValues": [
+       "rand()",
+       "rand()",
+       "rand()",
+       "2.5 + rand() * 6.0"
+      ],
+      "count": 90
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@px",
+      "equations": [
+       "rx",
+       "ry",
+       "rz",
+       "sz"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0E8F80"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "alpha": "clamp(0.25, 0.95, ry)"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "250.0 + ((rx - 0.5) * @cp + (rz - 0.5) * @cm) * 120.0",
+         "cy": "250.0 - (ry - 0.5) * 150.0 + ((rx - 0.5) * @dp + (rz - 0.5) * @dm) * 46.0",
+         "radius": "sz"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 1,
+      "verts": [
+       -1.0,
+       -1.0,
+       1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       1.0,
+       1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       1.0,
+       -1.0,
+       -1.0,
+       1.0
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "rotate",
+      "angle": "@rot",
+      "axis": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27385C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "software-smooth",
+      "wireframe": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag left and right to turn the scatter",
+      "x": 24.0,
+      "y": 382.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "90 holdings",
+      "x": 24.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "across: risk    up: return    depth: sector",
+      "x": 24.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "dot size is position size; brighter is higher return",
+      "x": 24.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the rotation is applied to each point before projecting it, so the cloud turns with the box",
+      "x": 24.0,
+      "y": 458.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A portfolio in three axes",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to turn: risk, return and sector",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

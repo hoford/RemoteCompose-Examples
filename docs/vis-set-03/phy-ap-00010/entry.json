@@ -1,0 +1,38 @@
+{
+ "id": "vis-set-03/phy-ap-00010",
+ "title": "Ionization energy",
+ "description": "First ionization energy against atomic number. Peaks are full shells, troughs are the next shell starting - the sawtooth IS the shell structure. #physics #atoms #chart",
+ "source": "rcjson",
+ "authoring": [
+  "json",
+  "py"
+ ],
+ "tags": [],
+ "sha256": "6454bbd1df190842816b8b3f5442c05dd741d631664900bbb579fdea04758e9a",
+ "addedAt": "2026-10-03T18:43:26+00:00",
+ "provenance": "github/RemoteCompose-Examples/work/set-03/PHY-AP-00010.rc",
+ "programmeId": "PHY-AP-00010",
+ "subject": [
+  "Physics",
+  "Atomic Physics",
+  "Atomic structure"
+ ],
+ "concepts": [
+  "ionization energy",
+  "electron shell",
+  "noble gas",
+  "alkali metal"
+ ],
+ "how": "data-plot",
+ "why": "explain",
+ "dimension": "2D",
+ "accuracy": "quantitative",
+ "scale": "10^-10 m",
+ "audience": [
+  "high-school",
+  "undergraduate"
+ ],
+ "dataSource": "theoretical-model",
+ "set": 3,
+ "palette": "ember"
+}

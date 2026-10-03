@@ -1,0 +1,275 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "A recursive factorial drawn as nested layout boxes, one box per call frame"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "background": "#FF131313"
+   },
+   {
+    "padding": 18
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Recursion",
+    "modifiers": [],
+    "fontSize": 20.0,
+    "color": "#FFEDEDED"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 4
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "each box is a call waiting for the one inside it",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF9A9A9A"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "padding": 10
+     },
+     {
+      "background": "#FF1E2C4A"
+     }
+    ],
+    "children": [
+     {
+      "type": "text",
+      "value": "factorial(5)",
+      "modifiers": [],
+      "fontSize": 12.5,
+      "color": "#FFEDEDED"
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 5
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "5 x factorial(4)",
+      "modifiers": [],
+      "fontSize": 10.5,
+      "color": "#FF9A9A9A"
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "padding": 10
+       },
+       {
+        "background": "#FF24355A"
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "factorial(4)",
+        "modifiers": [],
+        "fontSize": 12.5,
+        "color": "#FFEDEDED"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 5
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "4 x factorial(3)",
+        "modifiers": [],
+        "fontSize": 10.5,
+        "color": "#FF9A9A9A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "column",
+        "modifiers": [
+         {
+          "padding": 10
+         },
+         {
+          "background": "#FF2A3F6A"
+         }
+        ],
+        "children": [
+         {
+          "type": "text",
+          "value": "factorial(3)",
+          "modifiers": [],
+          "fontSize": 12.5,
+          "color": "#FFEDEDED"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 5
+           }
+          ]
+         },
+         {
+          "type": "text",
+          "value": "3 x factorial(2)",
+          "modifiers": [],
+          "fontSize": 10.5,
+          "color": "#FF9A9A9A"
+         },
+         {
+          "type": "spacer",
+          "modifiers": [
+           {
+            "height": 6
+           }
+          ]
+         },
+         {
+          "type": "column",
+          "modifiers": [
+           {
+            "padding": 10
+           },
+           {
+            "background": "#FF31497A"
+           }
+          ],
+          "children": [
+           {
+            "type": "text",
+            "value": "factorial(2)",
+            "modifiers": [],
+            "fontSize": 12.5,
+            "color": "#FFEDEDED"
+           },
+           {
+            "type": "spacer",
+            "modifiers": [
+             {
+              "height": 5
+             }
+            ]
+           },
+           {
+            "type": "text",
+            "value": "2 x factorial(1)",
+            "modifiers": [],
+            "fontSize": 10.5,
+            "color": "#FF9A9A9A"
+           },
+           {
+            "type": "spacer",
+            "modifiers": [
+             {
+              "height": 6
+             }
+            ]
+           },
+           {
+            "type": "column",
+            "modifiers": [
+             {
+              "padding": 10
+             },
+             {
+              "background": "#FF385380"
+             }
+            ],
+            "children": [
+             {
+              "type": "text",
+              "value": "factorial(1)",
+              "modifiers": [],
+              "fontSize": 12.5,
+              "color": "#FFEDEDED"
+             },
+             {
+              "type": "spacer",
+              "modifiers": [
+               {
+                "height": 5
+               }
+              ]
+             },
+             {
+              "type": "text",
+              "value": "return 1",
+              "modifiers": [],
+              "fontSize": 11.0,
+              "color": "#FF8BD450"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "the innermost box returns first; every box outside it is still on the stack",
+    "modifiers": [],
+    "fontSize": 10.0,
+    "color": "#FF5E6E95"
+   }
+  ]
+ }
+}

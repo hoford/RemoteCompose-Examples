@@ -1,0 +1,397 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "Chromosomes aligning on the metaphase plate then separating to the poles, as a particle system"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 380
+     }
+    },
+    {
+     "variable": {
+      "name": "ph",
+      "value": "(continuousSec() * 0.35) % 4",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "align",
+      "value": "clamp(0.0, 1.0, @ph)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "sep",
+      "value": "clamp(0.0, 1.0, @ph - 2)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A2540"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 70.0,
+      "top": 94.0,
+      "right": 450.0,
+      "bottom": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 260.0,
+      "y1": 106.0,
+      "x2": 260.0,
+      "y2": 314.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "metaphase plate",
+      "x": 260.0,
+      "y": 94.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "chr",
+      "variables": [
+       "sx",
+       "sy",
+       "side",
+       "ph"
+      ],
+      "initialValues": [
+       "110.0 + rand() * 300",
+       "120.0 + rand() * 180",
+       "ifElse(-1, 1, rand() - 0.5)",
+       "rand() * 6.283"
+      ],
+      "count": 16
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@chr",
+      "equations": [
+       "sx",
+       "sy",
+       "side",
+       "ph"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE07A5F"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRoundRect": {
+         "left": "sx * (1 - @align) + (260.0 + side * @sep * 150) * @align - 5",
+         "top": "sy * (1 - @align) + (210.0 + (ph - 3.14) * 26) * @align - 14",
+         "right": "sx * (1 - @align) + (260.0 + side * @sep * 150) * @align + 5",
+         "bottom": "sy * (1 - @align) + (210.0 + (ph - 3.14) * 26) * @align + 14",
+         "rx": 4.0,
+         "ry": 4.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "prophase",
+      "x": 60.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "metaphase",
+      "x": 178.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "anaphase",
+      "x": 296.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "telophase",
+      "x": 414.0,
+      "y": 344.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 354.0,
+      "x2": 470.0,
+      "y2": 354.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "56 + @ph / 4 * 414",
+      "cy": 354.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "16 chromosomes, one clock, four phases",
+      "x": 56.0,
+      "y": 374.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Mitosis",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "line up, then pull apart",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

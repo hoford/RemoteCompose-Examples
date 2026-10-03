@@ -1,0 +1,3711 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 360,
+  "profiles": 513,
+  "contentDescription": "Neutrino flavour probabilities oscillating with distance over energy, always summing to one"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 360
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 280.0,
+      "x2": 520.0,
+      "y2": 280.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.00",
+      "x": 52.0,
+      "y": 284.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 232.5,
+      "x2": 520.0,
+      "y2": 232.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.25",
+      "x": 52.0,
+      "y": 236.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 185.0,
+      "x2": 520.0,
+      "y2": 185.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.50",
+      "x": 52.0,
+      "y": 189.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 137.5,
+      "x2": 520.0,
+      "y2": 137.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.75",
+      "x": 52.0,
+      "y": 141.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 90.0,
+      "x2": 520.0,
+      "y2": 90.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1.00",
+      "x": 52.0,
+      "y": 94.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "f0",
+      "x": 60.0,
+      "y": 108.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 63.09,
+      "y": 113.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 66.17,
+      "y": 120.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 69.26,
+      "y": 130.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 72.35,
+      "y": 142.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 75.44,
+      "y": 156.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 78.52,
+      "y": 171.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 81.61,
+      "y": 187.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 84.7,
+      "y": 202.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 87.79,
+      "y": 217.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 90.87,
+      "y": 230.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 93.96,
+      "y": 242.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 97.05,
+      "y": 252.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 100.13,
+      "y": 259.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 103.22,
+      "y": 263.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 106.31,
+      "y": 264.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 109.4,
+      "y": 262.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 112.48,
+      "y": 257.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 115.57,
+      "y": 249.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 118.66,
+      "y": 239.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 121.74,
+      "y": 226.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 124.83,
+      "y": 212.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 127.92,
+      "y": 197.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 131.01,
+      "y": 181.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 134.09,
+      "y": 165.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 137.18,
+      "y": 150.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 140.27,
+      "y": 136.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 143.36,
+      "y": 124.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 146.44,
+      "y": 114.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 149.53,
+      "y": 107.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 152.62,
+      "y": 102.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 155.7,
+      "y": 100.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 158.79,
+      "y": 101.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 161.88,
+      "y": 105.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 164.97,
+      "y": 112.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 168.05,
+      "y": 120.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 171.14,
+      "y": 130.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 174.23,
+      "y": 142.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 177.32,
+      "y": 155.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 180.4,
+      "y": 167.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 183.49,
+      "y": 180.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 186.58,
+      "y": 192.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 189.66,
+      "y": 202.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 192.75,
+      "y": 211.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 195.84,
+      "y": 218.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 198.93,
+      "y": 222.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 202.01,
+      "y": 225.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 205.1,
+      "y": 225.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 208.19,
+      "y": 222.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 211.28,
+      "y": 218.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 214.36,
+      "y": 212.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 217.45,
+      "y": 204.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 220.54,
+      "y": 196.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 223.62,
+      "y": 187.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 226.71,
+      "y": 178.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 229.8,
+      "y": 169.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 232.89,
+      "y": 162.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 235.97,
+      "y": 155.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 239.06,
+      "y": 151.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 242.15,
+      "y": 148.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 245.23,
+      "y": 147.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 248.32,
+      "y": 148.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 251.41,
+      "y": 151.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 254.5,
+      "y": 155.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 257.58,
+      "y": 162.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 260.67,
+      "y": 170.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 263.76,
+      "y": 178.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 266.85,
+      "y": 187.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 269.93,
+      "y": 196.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 273.02,
+      "y": 205.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 276.11,
+      "y": 212.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 279.19,
+      "y": 218.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 282.28,
+      "y": 223.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 285.37,
+      "y": 225.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 288.46,
+      "y": 225.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 291.54,
+      "y": 223.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 294.63,
+      "y": 218.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 297.72,
+      "y": 211.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 300.81,
+      "y": 203.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 303.89,
+      "y": 192.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 306.98,
+      "y": 180.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 310.07,
+      "y": 168.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 313.15,
+      "y": 155.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 316.24,
+      "y": 142.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 319.33,
+      "y": 131.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 322.42,
+      "y": 120.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 325.5,
+      "y": 111.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 328.59,
+      "y": 105.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 331.68,
+      "y": 101.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 334.77,
+      "y": 100.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 337.85,
+      "y": 102.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 340.94,
+      "y": 106.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 344.03,
+      "y": 113.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 347.11,
+      "y": 123.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 350.2,
+      "y": 135.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 353.29,
+      "y": 149.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 356.38,
+      "y": 164.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 359.46,
+      "y": 180.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 362.55,
+      "y": 196.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 365.64,
+      "y": 211.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 368.72,
+      "y": 226.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 371.81,
+      "y": 238.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 374.9,
+      "y": 249.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 377.99,
+      "y": 257.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 381.07,
+      "y": 262.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 384.16,
+      "y": 264.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 387.25,
+      "y": 263.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 390.34,
+      "y": 259.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 393.42,
+      "y": 252.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 396.51,
+      "y": 243.09
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 399.6,
+      "y": 231.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 402.68,
+      "y": 217.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 405.77,
+      "y": 203.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 408.86,
+      "y": 187.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 411.95,
+      "y": 172.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 415.03,
+      "y": 157.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 418.12,
+      "y": 143.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 421.21,
+      "y": 131.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 424.3,
+      "y": 121.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 427.38,
+      "y": 113.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 430.47,
+      "y": 108.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 433.56,
+      "y": 106.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 436.64,
+      "y": 106.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 439.73,
+      "y": 109.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 442.82,
+      "y": 115.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 445.91,
+      "y": 123.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 448.99,
+      "y": 132.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 452.08,
+      "y": 143.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 455.17,
+      "y": 154.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 458.26,
+      "y": 166.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 461.34,
+      "y": 178.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 464.43,
+      "y": 189.22
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 467.52,
+      "y": 198.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 470.6,
+      "y": 206.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 473.69,
+      "y": 213.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 476.78,
+      "y": 217.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 479.87,
+      "y": 218.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 482.95,
+      "y": 218.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 486.04,
+      "y": 216.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 489.13,
+      "y": 211.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 492.21,
+      "y": 205.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 495.3,
+      "y": 198.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 498.39,
+      "y": 190.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 501.48,
+      "y": 181.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 504.56,
+      "y": 173.09
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 507.65,
+      "y": 165.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 510.74,
+      "y": 158.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 513.83,
+      "y": 152.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 516.91,
+      "y": 148.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f0",
+      "x": 520.0,
+      "y": 146.22
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "f0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "electron",
+      "x": 68.0,
+      "y": 306.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "f1",
+      "x": 60.0,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 63.09,
+      "y": 278.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 66.17,
+      "y": 274.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 69.26,
+      "y": 268.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 72.35,
+      "y": 260.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 75.44,
+      "y": 250.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 78.52,
+      "y": 239.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 81.61,
+      "y": 227.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 84.7,
+      "y": 214.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 87.79,
+      "y": 202.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 90.87,
+      "y": 191.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 93.96,
+      "y": 181.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 97.05,
+      "y": 173.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 100.13,
+      "y": 167.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 103.22,
+      "y": 163.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 106.31,
+      "y": 162.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 109.4,
+      "y": 163.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 112.48,
+      "y": 167.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 115.57,
+      "y": 173.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 118.66,
+      "y": 181.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 121.74,
+      "y": 191.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 124.83,
+      "y": 202.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 127.92,
+      "y": 214.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 131.01,
+      "y": 227.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 134.09,
+      "y": 239.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 137.18,
+      "y": 250.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 140.27,
+      "y": 260.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 143.36,
+      "y": 268.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 146.44,
+      "y": 274.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 149.53,
+      "y": 278.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 152.62,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 155.7,
+      "y": 278.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 158.79,
+      "y": 274.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 161.88,
+      "y": 268.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 164.97,
+      "y": 260.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 168.05,
+      "y": 250.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 171.14,
+      "y": 239.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 174.23,
+      "y": 227.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 177.32,
+      "y": 215.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 180.4,
+      "y": 202.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 183.49,
+      "y": 191.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 186.58,
+      "y": 181.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 189.66,
+      "y": 173.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 192.75,
+      "y": 167.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 195.84,
+      "y": 163.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 198.93,
+      "y": 162.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 202.01,
+      "y": 163.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 205.1,
+      "y": 167.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 208.19,
+      "y": 173.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 211.28,
+      "y": 181.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 214.36,
+      "y": 191.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 217.45,
+      "y": 202.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 220.54,
+      "y": 214.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 223.62,
+      "y": 227.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 226.71,
+      "y": 239.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 229.8,
+      "y": 250.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 232.89,
+      "y": 260.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 235.97,
+      "y": 268.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 239.06,
+      "y": 274.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 242.15,
+      "y": 278.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 245.23,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 248.32,
+      "y": 278.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 251.41,
+      "y": 274.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 254.5,
+      "y": 268.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 257.58,
+      "y": 260.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 260.67,
+      "y": 250.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 263.76,
+      "y": 239.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 266.85,
+      "y": 227.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 269.93,
+      "y": 215.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 273.02,
+      "y": 203.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 276.11,
+      "y": 191.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 279.19,
+      "y": 181.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 282.28,
+      "y": 173.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 285.37,
+      "y": 167.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 288.46,
+      "y": 163.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 291.54,
+      "y": 162.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 294.63,
+      "y": 163.45
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 297.72,
+      "y": 167.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 300.81,
+      "y": 173.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 303.89,
+      "y": 181.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 306.98,
+      "y": 191.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 310.07,
+      "y": 202.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 313.15,
+      "y": 214.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 316.24,
+      "y": 227.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 319.33,
+      "y": 239.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 322.42,
+      "y": 250.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 325.5,
+      "y": 260.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 328.59,
+      "y": 268.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 331.68,
+      "y": 274.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 334.77,
+      "y": 278.67
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 337.85,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 340.94,
+      "y": 278.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 344.03,
+      "y": 275.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 347.11,
+      "y": 268.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 350.2,
+      "y": 260.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 353.29,
+      "y": 250.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 356.38,
+      "y": 239.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 359.46,
+      "y": 227.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 362.55,
+      "y": 215.19
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 365.64,
+      "y": 203.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 368.72,
+      "y": 191.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 371.81,
+      "y": 181.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 374.9,
+      "y": 173.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 377.99,
+      "y": 167.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 381.07,
+      "y": 163.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 384.16,
+      "y": 162.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 387.25,
+      "y": 163.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 390.34,
+      "y": 167.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 393.42,
+      "y": 173.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 396.51,
+      "y": 181.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 399.6,
+      "y": 191.41
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 402.68,
+      "y": 202.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 405.77,
+      "y": 214.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 408.86,
+      "y": 226.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 411.95,
+      "y": 239.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 415.03,
+      "y": 250.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 418.12,
+      "y": 260.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 421.21,
+      "y": 268.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 424.3,
+      "y": 274.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 427.38,
+      "y": 278.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 430.47,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 433.56,
+      "y": 278.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 436.64,
+      "y": 275.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 439.73,
+      "y": 268.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 442.82,
+      "y": 260.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 445.91,
+      "y": 250.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 448.99,
+      "y": 239.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 452.08,
+      "y": 227.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 455.17,
+      "y": 215.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 458.26,
+      "y": 203.21
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 461.34,
+      "y": 191.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 464.43,
+      "y": 181.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 467.52,
+      "y": 173.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 470.6,
+      "y": 167.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 473.69,
+      "y": 163.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 476.78,
+      "y": 162.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 479.87,
+      "y": 163.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 482.95,
+      "y": 167.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 486.04,
+      "y": 173.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 489.13,
+      "y": 181.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 492.21,
+      "y": 191.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 495.3,
+      "y": 202.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 498.39,
+      "y": 214.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 501.48,
+      "y": 226.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 504.56,
+      "y": 238.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 507.65,
+      "y": 250.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 510.74,
+      "y": 260.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 513.83,
+      "y": 268.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 516.91,
+      "y": 274.75
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f1",
+      "x": 520.0,
+      "y": 278.63
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "f1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "muon",
+      "x": 164.0,
+      "y": 306.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "f2",
+      "x": 60.0,
+      "y": 261.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 63.09,
+      "y": 258.11
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 66.17,
+      "y": 254.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 69.26,
+      "y": 250.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 72.35,
+      "y": 246.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 75.44,
+      "y": 242.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 78.52,
+      "y": 239.09
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 81.61,
+      "y": 235.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 84.7,
+      "y": 232.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 87.79,
+      "y": 229.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 90.87,
+      "y": 227.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 93.96,
+      "y": 225.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 97.05,
+      "y": 224.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 100.13,
+      "y": 223.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 103.22,
+      "y": 223.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 106.31,
+      "y": 223.18
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 109.4,
+      "y": 223.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 112.48,
+      "y": 225.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 115.57,
+      "y": 226.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 118.66,
+      "y": 228.98
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 121.74,
+      "y": 231.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 124.83,
+      "y": 234.54
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 127.92,
+      "y": 237.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 131.01,
+      "y": 241.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 134.09,
+      "y": 245.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 137.18,
+      "y": 248.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 140.27,
+      "y": 252.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 143.36,
+      "y": 256.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 146.44,
+      "y": 260.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 149.53,
+      "y": 264.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 152.62,
+      "y": 267.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 155.7,
+      "y": 270.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 158.79,
+      "y": 273.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 161.88,
+      "y": 275.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 164.97,
+      "y": 277.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 168.05,
+      "y": 278.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 171.14,
+      "y": 279.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 174.23,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 177.32,
+      "y": 279.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 180.4,
+      "y": 279.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 183.49,
+      "y": 277.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 186.58,
+      "y": 276.09
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 189.66,
+      "y": 273.89
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 192.75,
+      "y": 271.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 195.84,
+      "y": 268.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 198.93,
+      "y": 264.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 202.01,
+      "y": 261.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 205.1,
+      "y": 257.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 208.19,
+      "y": 253.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 211.28,
+      "y": 249.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 214.36,
+      "y": 246.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 217.45,
+      "y": 242.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 220.54,
+      "y": 238.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 223.62,
+      "y": 235.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 226.71,
+      "y": 232.3
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 229.8,
+      "y": 229.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 232.89,
+      "y": 227.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 235.97,
+      "y": 225.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 239.06,
+      "y": 224.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 242.15,
+      "y": 223.31
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 245.23,
+      "y": 223.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 248.32,
+      "y": 223.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 251.41,
+      "y": 223.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 254.5,
+      "y": 225.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 257.58,
+      "y": 227.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 260.67,
+      "y": 229.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 263.76,
+      "y": 231.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 266.85,
+      "y": 234.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 269.93,
+      "y": 238.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 273.02,
+      "y": 241.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 276.11,
+      "y": 245.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 279.19,
+      "y": 249.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 282.28,
+      "y": 253.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 285.37,
+      "y": 257.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 288.46,
+      "y": 260.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 291.54,
+      "y": 264.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 294.63,
+      "y": 267.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 297.72,
+      "y": 270.86
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 300.81,
+      "y": 273.53
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 303.89,
+      "y": 275.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 306.98,
+      "y": 277.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 310.07,
+      "y": 278.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 313.15,
+      "y": 279.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 316.24,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 319.33,
+      "y": 279.74
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 322.42,
+      "y": 278.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 325.5,
+      "y": 277.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 328.59,
+      "y": 275.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 331.68,
+      "y": 273.63
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 334.77,
+      "y": 270.97
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 337.85,
+      "y": 267.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 340.94,
+      "y": 264.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 344.03,
+      "y": 261.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 347.11,
+      "y": 257.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 350.2,
+      "y": 253.42
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 353.29,
+      "y": 249.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 356.38,
+      "y": 245.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 359.46,
+      "y": 241.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 362.55,
+      "y": 238.33
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 365.64,
+      "y": 235.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 368.72,
+      "y": 231.99
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 371.81,
+      "y": 229.34
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 374.9,
+      "y": 227.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 377.99,
+      "y": 225.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 381.07,
+      "y": 224.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 384.16,
+      "y": 223.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 387.25,
+      "y": 223.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 390.34,
+      "y": 223.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 393.42,
+      "y": 224.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 396.51,
+      "y": 225.43
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 399.6,
+      "y": 227.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 402.68,
+      "y": 229.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 405.77,
+      "y": 232.19
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 408.86,
+      "y": 235.23
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 411.95,
+      "y": 238.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 415.03,
+      "y": 242.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 418.12,
+      "y": 245.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 421.21,
+      "y": 249.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 424.3,
+      "y": 253.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 427.38,
+      "y": 257.55
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 430.47,
+      "y": 261.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 433.56,
+      "y": 264.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 436.64,
+      "y": 268.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 439.73,
+      "y": 271.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 442.82,
+      "y": 273.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 445.91,
+      "y": 276.01
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 448.99,
+      "y": 277.77
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 452.08,
+      "y": 279.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 455.17,
+      "y": 279.78
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 458.26,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 461.34,
+      "y": 279.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 464.43,
+      "y": 278.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 467.52,
+      "y": 277.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 470.6,
+      "y": 275.65
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 473.69,
+      "y": 273.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 476.78,
+      "y": 270.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 479.87,
+      "y": 267.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 482.95,
+      "y": 264.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 486.04,
+      "y": 260.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 489.13,
+      "y": 256.87
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 492.21,
+      "y": 253.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 495.3,
+      "y": 249.1
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 498.39,
+      "y": 245.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 501.48,
+      "y": 241.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 504.56,
+      "y": 237.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 507.65,
+      "y": 234.66
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 510.74,
+      "y": 231.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 513.83,
+      "y": 229.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 516.91,
+      "y": 226.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "f2",
+      "x": 520.0,
+      "y": 225.15
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "f2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "tau",
+      "x": 260.0,
+      "y": 306.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.3
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 280.0,
+      "x2": 520.0,
+      "y2": 280.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "distance / energy",
+      "x": 60.0,
+      "y": 298.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "probability of detecting each flavour",
+      "x": 60.0,
+      "y": 332.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the three always sum to one: a neutrino is never lost, only changed",
+      "x": 60.0,
+      "y": 348.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Neutrino oscillation",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "three flavours, one particle",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

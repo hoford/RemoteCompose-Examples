@@ -1,0 +1,38 @@
+{
+  "id": "vis-set-03/fin-mark-00003",
+  "sha256": "cc013b7ed3d4c5ecb70523cd2bb81352a725e0364a6dc84e6d772d033893e20d",
+  "bytes": 2811,
+  "ops": 126,
+  "distinctOps": 13,
+  "width": 580,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 44,
+    "DRAW_RECT": 7,
+    "DATA_TEXT": 27,
+    "DRAW_TEXT_ANCHOR": 31,
+    "DRAW_LINE": 6,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set03.py"
+  ]
+}

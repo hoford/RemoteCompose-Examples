@@ -1,0 +1,1071 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 380,
+  "profiles": 513,
+  "contentDescription": "Six commodity futures contracts, their venues, contract sizes and quoting units"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 380
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "COMMODITY",
+      "x": 26.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "VENUE",
+      "x": 210.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "CONTRACT",
+      "x": 310.0,
+      "y": 96.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "QUOTED IN",
+      "x": 554.0,
+      "y": 96.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 104.0,
+      "x2": 554.0,
+      "y2": 104.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 121.0,
+      "right": 30.0,
+      "bottom": 139.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Crude oil",
+      "x": 40.0,
+      "y": 134.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "WTI",
+      "x": 210.0,
+      "y": 134.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1,000 barrels",
+      "x": 310.0,
+      "y": 134.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD / barrel",
+      "x": 554.0,
+      "y": 134.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 148.0,
+      "x2": 554.0,
+      "y2": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 161.0,
+      "right": 30.0,
+      "bottom": 179.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Natural gas",
+      "x": 40.0,
+      "y": 174.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Henry Hub",
+      "x": 210.0,
+      "y": 174.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10,000 MMBtu",
+      "x": 310.0,
+      "y": 174.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD / MMBtu",
+      "x": 554.0,
+      "y": 174.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 188.0,
+      "x2": 554.0,
+      "y2": 188.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9B44A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 201.0,
+      "right": 30.0,
+      "bottom": 219.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Gold",
+      "x": 40.0,
+      "y": 214.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "COMEX",
+      "x": 210.0,
+      "y": 214.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD9B44A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100 troy ounces",
+      "x": 310.0,
+      "y": 214.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD / ounce",
+      "x": 554.0,
+      "y": 214.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 228.0,
+      "x2": 554.0,
+      "y2": 228.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC07A4A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 241.0,
+      "right": 30.0,
+      "bottom": 259.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Copper",
+      "x": 40.0,
+      "y": 254.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "COMEX",
+      "x": 210.0,
+      "y": 254.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC07A4A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "25,000 pounds",
+      "x": 310.0,
+      "y": 254.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD / pound",
+      "x": 554.0,
+      "y": 254.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 268.0,
+      "x2": 554.0,
+      "y2": 268.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 281.0,
+      "right": 30.0,
+      "bottom": 299.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Corn",
+      "x": 40.0,
+      "y": 294.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "CBOT",
+      "x": 210.0,
+      "y": 294.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5,000 bushels",
+      "x": 310.0,
+      "y": 294.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD cents / bushel",
+      "x": 554.0,
+      "y": 294.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1B2740"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 26.0,
+      "y1": 308.0,
+      "x2": 554.0,
+      "y2": 308.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBFCBE4"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 321.0,
+      "right": 30.0,
+      "bottom": 339.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 14.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Wheat",
+      "x": 40.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "CBOT",
+      "x": 210.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFBFCBE4"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5,000 bushels",
+      "x": 310.0,
+      "y": 334.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB9C6E0"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "USD cents / bushel",
+      "x": 554.0,
+      "y": 334.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one contract is a fixed quantity, so a price move means a different amount of money in each row",
+      "x": 26.0,
+      "y": 356.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Commodity contracts",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "what one contract is",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

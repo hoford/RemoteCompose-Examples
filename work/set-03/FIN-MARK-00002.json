@@ -1,0 +1,1225 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "Drag the yield and watch a bond's price move inversely along the price-yield curve"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 400
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "y",
+      "defaultValue": 4.0,
+      "min": 1.0,
+      "max": 10.0,
+      "stopMode": "gently",
+      "expression": "touchY() / 400 * 11"
+     }
+    },
+    {
+     "variable": {
+      "name": "yl",
+      "value": "clamp(1.0, 10.0, @y)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "price",
+      "value": "100 + (5.0 - @yl) * 7.8",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 300.0,
+      "x2": 480.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "60",
+      "x": 62.0,
+      "y": 304.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 252.5,
+      "x2": 480.0,
+      "y2": 252.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "80",
+      "x": 62.0,
+      "y": 256.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 205.0,
+      "x2": 480.0,
+      "y2": 205.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100",
+      "x": 62.0,
+      "y": 209.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 157.5,
+      "x2": 480.0,
+      "y2": 157.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "120",
+      "x": 62.0,
+      "y": 161.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": 110.0,
+      "x2": 480.0,
+      "y2": 110.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "140",
+      "x": 62.0,
+      "y": 114.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "py",
+      "x": 70.0,
+      "y": 130.9
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 76.83,
+      "y": 133.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 83.67,
+      "y": 136.46
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 90.5,
+      "y": 139.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 97.33,
+      "y": 142.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 104.17,
+      "y": 144.79
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 111.0,
+      "y": 147.57
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 117.83,
+      "y": 150.35
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 124.67,
+      "y": 153.13
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 131.5,
+      "y": 155.91
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 138.33,
+      "y": 158.69
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 145.17,
+      "y": 161.47
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 152.0,
+      "y": 164.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 158.83,
+      "y": 167.02
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 165.67,
+      "y": 169.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 172.5,
+      "y": 172.58
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 179.33,
+      "y": 175.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 186.17,
+      "y": 178.14
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 193.0,
+      "y": 180.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 199.83,
+      "y": 183.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 206.67,
+      "y": 186.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 213.5,
+      "y": 189.25
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 220.33,
+      "y": 192.03
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 227.17,
+      "y": 194.81
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 234.0,
+      "y": 197.59
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 240.83,
+      "y": 200.37
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 247.67,
+      "y": 203.15
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 254.5,
+      "y": 205.93
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 261.33,
+      "y": 208.7
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 268.17,
+      "y": 211.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 275.0,
+      "y": 214.26
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 281.83,
+      "y": 217.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 288.67,
+      "y": 219.82
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 295.5,
+      "y": 222.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 302.33,
+      "y": 225.38
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 309.17,
+      "y": 228.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 316.0,
+      "y": 230.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 322.83,
+      "y": 233.71
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 329.67,
+      "y": 236.49
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 336.5,
+      "y": 239.27
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 343.33,
+      "y": 242.05
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 350.17,
+      "y": 244.83
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 357.0,
+      "y": 247.61
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 363.83,
+      "y": 250.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 370.67,
+      "y": 253.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 377.5,
+      "y": 255.94
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 384.33,
+      "y": 258.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 391.17,
+      "y": 261.5
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 398.0,
+      "y": 264.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 404.83,
+      "y": 267.06
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 411.67,
+      "y": 269.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 418.5,
+      "y": 272.62
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 425.33,
+      "y": 275.39
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 432.17,
+      "y": 278.17
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 439.0,
+      "y": 280.95
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 445.83,
+      "y": 283.73
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 452.67,
+      "y": 286.51
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 459.5,
+      "y": 289.29
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 466.33,
+      "y": 292.07
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 473.17,
+      "y": 294.85
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "py",
+      "x": 480.0,
+      "y": 297.62
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF3E5A8C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "py"
+     }
+    },
+    {
+     "variable": {
+      "name": "mx",
+      "value": "70.0 + (@yl - 1) / 9 * 410.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "my",
+      "value": "300.0 - (@price - 60) / 80 * 190.0",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "@mx",
+      "y1": 110.0,
+      "x2": "@mx",
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@mx",
+      "cy": "@my",
+      "radius": 8.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2A4A86"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 70.0,
+      "y1": "300.0 - (100 - 60) / 80 * 190.0",
+      "x2": 480.0,
+      "y2": "300.0 - (100 - 60) / 80 * 190.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF7E9AC6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "par",
+      "x": 486.0,
+      "y": 209.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1%",
+      "x": 70.0,
+      "y": 318.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3%",
+      "x": 161.1111111111111,
+      "y": 318.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5%",
+      "x": 252.2222222222222,
+      "y": 318.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "7%",
+      "x": 343.3333333333333,
+      "y": 318.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10%",
+      "x": 480.0,
+      "y": 318.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "yield",
+      "x": 70.0,
+      "y": 338.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "price",
+      "x": 70.0,
+      "y": 100.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "tyield",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@yl",
+       "whole": 2,
+       "decimal": 2
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 26.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@tyield",
+      "x": 70.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "yield",
+      "x": 70.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "tprice",
+      "value": {
+       "type": "textFromFloat",
+       "value": "@price",
+       "whole": 3,
+       "decimal": 2
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 26.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@tprice",
+      "x": 270.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "price",
+      "x": 270.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag up and down; a 5% coupon pays par only when yields are 5%",
+      "x": 24.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Price and yield",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one goes up, the other down",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

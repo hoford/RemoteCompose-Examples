@@ -1,0 +1,2005 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 400,
+  "profiles": 513,
+  "contentDescription": "Passive and active transport across a membrane, side by side on one clock"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 400
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "continuousSec()",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 92.0,
+      "right": 250.0,
+      "bottom": 316.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 47.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 59.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 71.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 83.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 95.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 107.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 119.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 131.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 143.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 155.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 167.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 179.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 191.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 203.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 215.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 227.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 239.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 47.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 59.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 71.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 83.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 95.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 107.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 119.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 131.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 143.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 155.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 167.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 179.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 191.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 203.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 215.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 227.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 239.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2A3C60"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 190.0,
+      "right": 250.0,
+      "bottom": 210.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "70.0 + sin(@t * 1.3 + 0.00) * 14",
+      "cy": "92 + ((@t * 30 + 0.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "95.0 + sin(@t * 1.3 + 0.90) * 14",
+      "cy": "92 + ((@t * 30 + 32.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "120.0 + sin(@t * 1.3 + 1.80) * 14",
+      "cy": "92 + ((@t * 30 + 64.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "145.0 + sin(@t * 1.3 + 2.70) * 14",
+      "cy": "92 + ((@t * 30 + 96.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "170.0 + sin(@t * 1.3 + 3.60) * 14",
+      "cy": "92 + ((@t * 30 + 128.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "195.0 + sin(@t * 1.3 + 4.50) * 14",
+      "cy": "92 + ((@t * 30 + 160.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "220.0 + sin(@t * 1.3 + 5.40) * 14",
+      "cy": "92 + ((@t * 30 + 192.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Passive",
+      "x": 145.0,
+      "y": 84.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "high concentration",
+      "x": 145.0,
+      "y": 110.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "low",
+      "x": 145.0,
+      "y": 306.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "down the gradient, free",
+      "x": 145.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 290.0,
+      "top": 92.0,
+      "right": 500.0,
+      "bottom": 316.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 297.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 309.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 321.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 333.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 345.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 357.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 369.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 381.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 393.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 405.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 417.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 429.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 441.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 453.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 465.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 477.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 489.0,
+      "cy": 186.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 297.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 309.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 321.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 333.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 345.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 357.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 369.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 381.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 393.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 405.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 417.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 429.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 441.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 453.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 465.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 477.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF46608E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 489.0,
+      "cy": 214.0,
+      "radius": 4.6
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2A3C60"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 290.0,
+      "top": 190.0,
+      "right": 500.0,
+      "bottom": 210.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "320.0 + sin(@t * 1.3 + 0.00) * 14",
+      "cy": "316 - ((@t * 34 + 0.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "345.0 + sin(@t * 1.3 + 0.90) * 14",
+      "cy": "316 - ((@t * 34 + 32.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "370.0 + sin(@t * 1.3 + 1.80) * 14",
+      "cy": "316 - ((@t * 34 + 64.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "395.0 + sin(@t * 1.3 + 2.70) * 14",
+      "cy": "316 - ((@t * 34 + 96.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "420.0 + sin(@t * 1.3 + 3.60) * 14",
+      "cy": "316 - ((@t * 34 + 128.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "445.0 + sin(@t * 1.3 + 4.50) * 14",
+      "cy": "316 - ((@t * 34 + 160.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "470.0 + sin(@t * 1.3 + 5.40) * 14",
+      "cy": "316 - ((@t * 34 + 192.0) % 224)",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Active",
+      "x": 395.0,
+      "y": 84.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "low concentration",
+      "x": 395.0,
+      "y": 110.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "high",
+      "x": 395.0,
+      "y": 306.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "against it, costs ATP",
+      "x": 395.0,
+      "y": 336.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 373.0,
+      "top": 184.0,
+      "right": 417.0,
+      "bottom": 216.0,
+      "rx": 6.0,
+      "ry": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pump",
+      "x": 395.0,
+      "y": 204.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "both panels run from the same clock, so the rates are comparable",
+      "x": 40.0,
+      "y": 376.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Crossing the membrane",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "with the gradient, and against it",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

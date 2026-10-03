@@ -1,0 +1,443 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 340,
+  "profiles": 513,
+  "contentDescription": "A slider-crank linkage turning rotation into straight-line motion, computed exactly"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 340
+     }
+    },
+    {
+     "variable": {
+      "name": "a",
+      "value": "continuousSec() * 1.5",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "px",
+      "value": "150.0 + cos(@a) * 56.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "py",
+      "value": "190.0 + sin(@a) * 56.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "sx",
+      "value": "@px + sqrt(22500.0 - (@py - 190.0) * (@py - 190.0))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A2540"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 300.0,
+      "top": 156.0,
+      "right": 500.0,
+      "bottom": 224.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 150.0,
+      "y1": 190.0,
+      "x2": 500.0,
+      "y2": 190.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 5.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 150.0,
+      "y1": 190.0,
+      "x2": "@px",
+      "y2": "@py"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 4.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "@px",
+      "y1": "@py",
+      "x2": "@sx",
+      "y2": 190.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": "@sx - 26",
+      "top": 168.0,
+      "right": "@sx + 26",
+      "bottom": 212.0,
+      "rx": 5.0,
+      "ry": 5.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 150.0,
+      "cy": 190.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "@px",
+      "cy": "@py",
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 150.0,
+      "cy": 190.0,
+      "radius": 56.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "crank",
+      "x": 150.0,
+      "y": 268.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "connecting rod",
+      "x": 250.0,
+      "y": 136.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "slider",
+      "x": 400.0,
+      "y": 236.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rotation in, straight-line motion out",
+      "x": 24.0,
+      "y": 290.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the slider's travel is not a sine wave: it is computed exactly from the rod length",
+      "x": 24.0,
+      "y": 308.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5E6E95"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "which is why a piston spends longer at the far end than the near one",
+      "x": 24.0,
+      "y": 324.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Slider-crank",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the piston mechanism",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

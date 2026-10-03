@@ -1,0 +1,530 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 480,
+  "height": 480,
+  "profiles": 513,
+  "contentDescription": "Drag to run meiosis: one cell dividing twice into four haploid daughters, in 3D"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize"
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 480,
+      "bottom": 480
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.95,
+      "aspect": 1.0,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       0.5,
+       1.5,
+       3.6
+      ],
+      "center": [
+       0,
+       0,
+       0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.35,
+         -0.6,
+         -0.72
+        ],
+        "intensity": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "stage",
+      "defaultValue": 0.42,
+      "min": 0.0,
+      "max": 1.0,
+      "stopMode": "gently",
+      "expression": "touchX() / 480"
+     }
+    },
+    {
+     "variable": {
+      "name": "s",
+      "value": "clamp(0.0, 1.0, @stage)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "d1",
+      "value": "clamp(0.0, 1.0, @s * 2)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "d2",
+      "value": "clamp(0.0, 1.0, @s * 2 - 1)",
+      "commit": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 10,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.44,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "-1 * @d1 * 0.72",
+      "y": "-1 * @d2 * 0.66",
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 10,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 11,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.44,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "-1 * @d1 * 0.72",
+      "y": "1 * @d2 * 0.66",
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 11,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 12,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.44,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "1 * @d1 * 0.72",
+      "y": "-1 * @d2 * 0.66",
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 12,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 13,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.44,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "1 * @d1 * 0.72",
+      "y": "1 * @d2 * 0.66",
+      "z": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 13,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag across to run the two divisions",
+      "x": 24.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "meiosis I separates homologues",
+      "x": 24.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "meiosis II separates sister chromatids",
+      "x": 24.0,
+      "y": 408.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one diploid cell becomes four haploid ones",
+      "x": 24.0,
+      "y": 424.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 24.0,
+      "y1": 448.0,
+      "x2": 456.0,
+      "y2": 448.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "24 + @s * 432",
+      "cy": 448.0,
+      "radius": 7.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "I",
+      "x": 240.0,
+      "y": 466.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "II",
+      "x": 456.0,
+      "y": 466.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Meiosis",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "two divisions, four cells",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

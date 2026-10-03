@@ -1,0 +1,51 @@
+{
+  "id": "vis-set-03/chm-ac-00003",
+  "sha256": "b4dd2b53840576435d023481683152af547995bb641cef3d7aff7e0db1227e4c",
+  "bytes": 3326,
+  "ops": 147,
+  "distinctOps": 19,
+  "width": 560,
+  "height": 380,
+  "histogram": {
+    "HEADER": 1,
+    "FLOAT_LIST": 2,
+    "NAMED_VARIABLE": 2,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 46,
+    "DRAW_RECT": 1,
+    "DRAW_LINE": 6,
+    "DATA_TEXT": 28,
+    "DRAW_TEXT_ANCHOR": 36,
+    "ANIMATED_FLOAT": 10,
+    "LOOP_START": 1,
+    "DRAW_ROUND_RECT": 1,
+    "CONTAINER_END": 5,
+    "DRAW_CIRCLE": 2
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "drawRoundRect",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": [
+    "make_set03.py"
+  ]
+}
