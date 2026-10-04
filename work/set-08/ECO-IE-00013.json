@@ -1,0 +1,563 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 620,
+  "profiles": 513,
+  "contentDescription": "The four effects of a tariff as stacked bars on one scale, with the net result"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "padding": 18
+   },
+   {
+    "background": "#FF1A1310"
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Who pays a tariff",
+    "modifiers": [],
+    "fontSize": 19.0,
+    "color": "#FFF5E9E2"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 3
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "a 20% duty on an imported good, as four separate effects",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FFB49C91"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 16
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 11
+     },
+     {
+      "background": "#FF28201C"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [
+       {
+        "width": 434
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Consumers pay more",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFD64545"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 1
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "-100",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFF5E9E2"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 434
+       },
+       {
+        "height": 8
+       },
+       {
+        "background": "#FF463630"
+       }
+      ],
+      "children": [
+       {
+        "type": "box",
+        "modifiers": [
+         {
+          "width": 434
+         },
+         {
+          "height": 8
+         },
+         {
+          "background": "#FFD64545"
+         }
+        ],
+        "children": []
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "the whole price rise lands here first",
+      "modifiers": [],
+      "fontSize": 9.5,
+      "color": "#FFB49C91"
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 9
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 11
+     },
+     {
+      "background": "#FF28201C"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [
+       {
+        "width": 434
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Domestic producers gain",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF81B29A"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 1
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "+42",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFF5E9E2"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 434
+       },
+       {
+        "height": 8
+       },
+       {
+        "background": "#FF463630"
+       }
+      ],
+      "children": [
+       {
+        "type": "box",
+        "modifiers": [
+         {
+          "width": 182
+         },
+         {
+          "height": 8
+         },
+         {
+          "background": "#FF81B29A"
+         }
+        ],
+        "children": []
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "they can now charge the higher price too",
+      "modifiers": [],
+      "fontSize": 9.5,
+      "color": "#FFB49C91"
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 9
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 11
+     },
+     {
+      "background": "#FF28201C"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [
+       {
+        "width": 434
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Government collects",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFE07A5F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 1
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "+31",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFF5E9E2"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 434
+       },
+       {
+        "height": 8
+       },
+       {
+        "background": "#FF463630"
+       }
+      ],
+      "children": [
+       {
+        "type": "box",
+        "modifiers": [
+         {
+          "width": 134
+         },
+         {
+          "height": 8
+         },
+         {
+          "background": "#FFE07A5F"
+         }
+        ],
+        "children": []
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "the tariff itself, on what still comes in",
+      "modifiers": [],
+      "fontSize": 9.5,
+      "color": "#FFB49C91"
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 9
+     }
+    ]
+   },
+   {
+    "type": "column",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 11
+     },
+     {
+      "background": "#FF28201C"
+     }
+    ],
+    "children": [
+     {
+      "type": "row",
+      "modifiers": [
+       {
+        "width": 434
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Lost outright",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFF2CC8F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "width": 1
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "-27",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFF5E9E2"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "box",
+      "modifiers": [
+       {
+        "width": 434
+       },
+       {
+        "height": 8
+       },
+       {
+        "background": "#FF463630"
+       }
+      ],
+      "children": [
+       {
+        "type": "box",
+        "modifiers": [
+         {
+          "width": 117
+         },
+         {
+          "height": 8
+         },
+         {
+          "background": "#FFF2CC8F"
+         }
+        ],
+        "children": []
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "height": 6
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "trades that simply stop happening. Nobody gets this.",
+      "modifiers": [],
+      "fontSize": 9.5,
+      "color": "#FFB49C91"
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 9
+     }
+    ]
+   },
+   {
+    "type": "box",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "height": 1
+     },
+     {
+      "background": "#FF463630"
+     }
+    ],
+    "children": []
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 10
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 456
+     }
+    ],
+    "children": [
+     {
+      "type": "text",
+      "value": "Net, for the country imposing it",
+      "modifiers": [],
+      "fontSize": 12.5,
+      "color": "#FFF5E9E2"
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 1
+       }
+      ]
+     },
+     {
+      "type": "text",
+      "value": "-54",
+      "modifiers": [],
+      "fontSize": 15.0,
+      "color": "#FFD64545"
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 10
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "The gains are concentrated on a few producers who notice them, and the losses are spread across every buyer, who mostly do not. That asymmetry is political, not economic.",
+    "modifiers": [],
+    "fontSize": 10.0,
+    "color": "#FFB49C91"
+   }
+  ]
+ }
+}

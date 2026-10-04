@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-08/phy-qm-00025",
+  "sha256": "3e1a8c3abafca683f28e7c1c174f7b8b85d4c7d916a38bff4176e84837470b91",
+  "bytes": 3736,
+  "ops": 167,
+  "distinctOps": 15,
+  "width": 620,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 70,
+    "DRAW_RECT": 19,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 20,
+    "DRAW_CIRCLE": 12,
+    "DRAW_LINE": 19,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

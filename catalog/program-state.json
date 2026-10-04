@@ -1,9 +1,9 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 8,
- "setsLanded": 7,
- "documentsLanded": 112,
- "lastTouched": "2026-10-03 set 7 landed as docs/vis-set-07 (16 documents). Renders now need BOTH --clock and --seed: the clock does not pin rand() (F-023). rcj writes over-cap expressions the engine refuses, and only the oracle byte delta catches it (F-022).",
+ "currentSet": 9,
+ "setsLanded": 8,
+ "documentsLanded": 129,
+ "lastTouched": "2026-10-03 set 8 landed as docs/vis-set-08 (17 documents: 16 scheduled plus CAL-GLOBE-00001, an instrument). The sphere winding bug behind F-024/F-028/F-029 is fixed. Set 8 is NOT device-verified - the player stopped staying up mid-session.",
  "pausedFor": null,
  "setStatus": {
   "1": "landed",
@@ -173,6 +173,56 @@
    "kind": "player",
    "status": "fixed",
    "summary": "rand() is not pinned by --clock, so no particle document reproduced; added rc2image --seed"
+  },
+  {
+   "id": "F-024",
+   "set": 8,
+   "kind": "engine",
+   "status": "confirmed",
+   "summary": "texture v runs bottom-to-top; the u mirroring reported here was an artefact of the inside-out sphere (F-029), not a player convention"
+  },
+  {
+   "id": "F-025",
+   "set": 8,
+   "kind": "authoring",
+   "status": "confirmed",
+   "summary": "a great circle over ~110 degrees reads as a line through the globe; C++ and TS agree to 0.1 mean diff, so it was never a player divergence"
+  },
+  {
+   "id": "F-026",
+   "set": 8,
+   "kind": "engine",
+   "status": "superseded",
+   "summary": "claimed the sphere UV convention was solved by calibration; superseded by F-028, which shows route placement still disagrees"
+  },
+  {
+   "id": "F-027",
+   "set": 8,
+   "kind": "player",
+   "status": "worked-around",
+   "summary": "a thin tube mesh is not occluded by a sphere even when deep inside it; splitting, draw order and texture all ruled out. Worked around by raising the arcs"
+  },
+  {
+   "id": "F-028",
+   "set": 8,
+   "kind": "unresolved",
+   "status": "resolved",
+   "summary": "route/texture mismatch: root cause was the inside-out sphere winding (F-029)",
+   "instrument": "work/set-08/CAL-GLOBE-00001.json"
+  },
+  {
+   "id": "F-029",
+   "set": 8,
+   "kind": "engine",
+   "status": "corrected",
+   "summary": "CORRECTED: no engine defect. uv_sphere was wound inside out, so the player drew the inner far hemisphere - mirrored and counter-rotating"
+  },
+  {
+   "id": "F-030",
+   "set": 8,
+   "kind": "tooling",
+   "status": "confirmed",
+   "summary": "rc.mjs cannot convert a document whose bitmap names a file (PG1030); affects every textured document since set 2. The .rc embeds the image, so only the JS JSON path is blocked"
   }
  ]
 }

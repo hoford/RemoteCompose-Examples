@@ -1,0 +1,35 @@
+{
+  "id": "vis-set-08/his-emh-00004",
+  "sha256": "2ad2118cfbddc83f395bbf7064a72610a1fc6a3d1bbc8fd844cd2bb573347f91",
+  "bytes": 2763,
+  "ops": 118,
+  "distinctOps": 13,
+  "width": 580,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 42,
+    "DRAW_RECT": 17,
+    "DATA_TEXT": 22,
+    "DRAW_TEXT_ANCHOR": 25,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

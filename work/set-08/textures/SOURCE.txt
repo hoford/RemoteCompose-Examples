@@ -1,0 +1,18 @@
+earth.png
+
+NASA Visible Earth, "Blue Marble: Land Surface, Shallow Water, and Shaded Topography"
+https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57752/land_shallow_topo_2048.jpg
+
+NASA imagery is in the public domain and carries no licence restriction on reuse.
+https://www.nasa.gov/nasa-brand-center/images-and-media/
+
+Original 2048x1024 JPEG, 233 KB. Resampled in one step to 410x205 with Lanczos and
+quantised to a 256-colour palette, giving a 33 KB PNG.
+
+Sized to a budget rather than to a standard: the document it serves has to stay under
+100 KB compiled, and at 410x205 it lands at 95 KB. The globe is drawn about 250 px across,
+so one visible hemisphere gets roughly 250 px of screen for 180 degrees of longitude, and a
+410-wide map still supplies more texels than that. Resampling is always from the original
+download, never from an already-reduced copy.
+
+Equirectangular: x maps to longitude -180..180, y maps to latitude +90..-90.

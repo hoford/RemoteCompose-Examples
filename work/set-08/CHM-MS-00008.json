@@ -1,0 +1,630 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 520,
+  "profiles": 513,
+  "contentDescription": "Polar molecules aligning in a field beside non-polar ones that keep tumbling"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 520
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 44.0,
+      "top": 150.0,
+      "right": 268.0,
+      "bottom": 370.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Water",
+      "x": 156.0,
+      "y": 142.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a bent molecule with a permanent dipole",
+      "x": 156.0,
+      "y": 388.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "mol0",
+      "count": 44,
+      "variables": [
+       "mx",
+       "my",
+       "ang",
+       "sp"
+      ],
+      "initialValues": [
+       "56.0 + rand() * 200.0",
+       "162 + rand() * 196",
+       "rand() * 6.28",
+       "0.3 + rand() * 0.9"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@mol0",
+      "equations": [
+       "mx",
+       "my",
+       "ang * 0.86",
+       "sp"
+      ],
+      "commands": [
+       {
+        "drawLine": {
+         "x1": "@mx - cos(@ang) * 7.0",
+         "y1": "@my - sin(@ang) * 7.0",
+         "x2": "@mx + cos(@ang) * 7.0",
+         "y2": "@my + sin(@ang) * 7.0"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 170.0,
+      "x2": 262.0,
+      "y2": 170.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 218.0,
+      "x2": 262.0,
+      "y2": 218.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 266.0,
+      "x2": 262.0,
+      "y2": 266.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 314.0,
+      "x2": 262.0,
+      "y2": 314.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 50.0,
+      "y1": 362.0,
+      "x2": 262.0,
+      "y2": 362.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+",
+      "x": 156.0,
+      "y": 164.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "\u2212",
+      "x": 156.0,
+      "y": 368.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 292.0,
+      "top": 150.0,
+      "right": 516.0,
+      "bottom": 370.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Oil",
+      "x": 404.0,
+      "y": 142.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "symmetrical, so the pulls cancel",
+      "x": 404.0,
+      "y": 388.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "mol1",
+      "count": 44,
+      "variables": [
+       "mx",
+       "my",
+       "ang",
+       "sp"
+      ],
+      "initialValues": [
+       "304.0 + rand() * 200.0",
+       "162 + rand() * 196",
+       "rand() * 6.28",
+       "0.3 + rand() * 0.9"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@mol1",
+      "equations": [
+       "mx",
+       "my",
+       "ang + sp * 0.04",
+       "sp"
+      ],
+      "commands": [
+       {
+        "drawLine": {
+         "x1": "@mx - cos(@ang) * 7.0",
+         "y1": "@my - sin(@ang) * 7.0",
+         "x2": "@mx + cos(@ang) * 7.0",
+         "y2": "@my + sin(@ang) * 7.0"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 298.0,
+      "y1": 170.0,
+      "x2": 510.0,
+      "y2": 170.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 298.0,
+      "y1": 218.0,
+      "x2": 510.0,
+      "y2": 218.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 298.0,
+      "y1": 266.0,
+      "x2": 510.0,
+      "y2": 266.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 298.0,
+      "y1": 314.0,
+      "x2": 510.0,
+      "y2": 314.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 298.0,
+      "y1": 362.0,
+      "x2": 510.0,
+      "y2": 362.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+",
+      "x": 404.0,
+      "y": 164.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "\u2212",
+      "x": 404.0,
+      "y": 368.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the field is identical on both sides",
+      "x": 44.0,
+      "y": 428.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- water turns to face it and oil does not, which is the whole of why the two will not mix,",
+      "x": 44.0,
+      "y": 448.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "and why soap, which has one end of each kind, works at all",
+      "x": 44.0,
+      "y": 466.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Polar and not",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the same field, two responses",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

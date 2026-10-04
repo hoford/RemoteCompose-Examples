@@ -1,0 +1,878 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "World population from 4000 BCE to the present with historical eras marked, and a sweeping time marker"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 460
+     }
+    },
+    {
+     "variable": {
+      "name": "sweep",
+      "value": "continuousSec() * 0.08 - floor(continuousSec() * 0.08)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 180.0,
+      "right": 560.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 101.49377593360995,
+      "top": 158.0,
+      "right": 325.56016597510376,
+      "bottom": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Bronze and Iron",
+      "x": 213.52697095435684,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 325.56016597510376,
+      "top": 158.0,
+      "right": 433.4439834024896,
+      "bottom": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Classical",
+      "x": 379.5020746887967,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 433.4439834024896,
+      "top": 158.0,
+      "right": 516.4315352697096,
+      "bottom": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Medieval",
+      "x": 474.9377593360996,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 516.4315352697096,
+      "top": 158.0,
+      "right": 541.3278008298755,
+      "bottom": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Early modern",
+      "x": 528.8796680497926,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 541.3278008298755,
+      "top": 158.0,
+      "right": 560.0,
+      "bottom": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Industrial",
+      "x": 550.6639004149378,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": -437.9253112033195,
+      "y1": 329.9312195121951,
+      "x2": -22.98755186721992,
+      "y2": 329.9140243902439
+     }
+    },
+    {
+     "drawLine": {
+      "x1": -22.98755186721992,
+      "y1": 329.9140243902439,
+      "x2": 142.9875518672199,
+      "y2": 329.7592682926829
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 142.9875518672199,
+      "y1": 329.7592682926829,
+      "x2": 308.9626556016598,
+      "y2": 329.140243902439
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 308.9626556016598,
+      "y1": 329.140243902439,
+      "x2": 391.9502074688797,
+      "y2": 326.7329268292683
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 391.9502074688797,
+      "y1": 326.7329268292683,
+      "x2": 433.4439834024896,
+      "y2": 326.7329268292683
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 433.4439834024896,
+      "y1": 326.7329268292683,
+      "x2": 474.9377593360996,
+      "y2": 325.4432926829268
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 474.9377593360996,
+      "y1": 325.4432926829268,
+      "x2": 516.4315352697096,
+      "y2": 322.090243902439
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 516.4315352697096,
+      "y1": 322.090243902439,
+      "x2": 533.0290456431535,
+      "y2": 319.6829268292683
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 533.0290456431535,
+      "y1": 319.6829268292683,
+      "x2": 541.3278008298755,
+      "y2": 312.9768292682927
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 541.3278008298755,
+      "y1": 312.9768292682927,
+      "x2": 549.6265560165975,
+      "y2": 301.6280487804878
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 549.6265560165975,
+      "y1": 301.6280487804878,
+      "x2": 553.7759336099584,
+      "y2": 286.3243902439024
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 553.7759336099584,
+      "y1": 286.3243902439024,
+      "x2": 557.9253112033196,
+      "y2": 224.4219512195122
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 557.9253112033196,
+      "y1": 224.4219512195122,
+      "x2": 560.0,
+      "y2": 189.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 142.9875518672199,
+      "y1": 180.0,
+      "x2": 142.9875518672199,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3000 BCE",
+      "x": 142.9875518672199,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 308.9626556016598,
+      "y1": 180.0,
+      "x2": 308.9626556016598,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1000 BCE",
+      "x": 308.9626556016598,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 391.9502074688797,
+      "y1": 180.0,
+      "x2": 391.9502074688797,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "year 1",
+      "x": 391.9502074688797,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 474.9377593360996,
+      "y1": 180.0,
+      "x2": 474.9377593360996,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1000",
+      "x": 474.9377593360996,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 557.9253112033196,
+      "y1": 180.0,
+      "x2": 557.9253112033196,
+      "y2": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2000",
+      "x": 557.9253112033196,
+      "y": 350.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "60.0 + @sweep * 500.0",
+      "y1": 150.0,
+      "x2": "60.0 + @sweep * 500.0",
+      "y2": 338.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "world population",
+      "x": 68.0,
+      "y": 198.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8.2 billion",
+      "x": 554.0,
+      "y": 181.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Five thousand years sit in the flat part of that line.",
+      "x": 60.0,
+      "y": 376.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Everything that looks like history - the empires, the migrations, the whole classical world -",
+      "x": 60.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "happened without the curve moving much at all.",
+      "x": 60.0,
+      "y": 414.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Population figures before about 1700 are estimates, and the early ones are disputed by a factor of two.",
+      "x": 60.0,
+      "y": 440.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Five thousand years",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "and where the line actually turns",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

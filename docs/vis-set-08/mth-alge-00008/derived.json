@@ -1,0 +1,41 @@
+{
+  "id": "vis-set-08/mth-alge-00008",
+  "sha256": "8fa51736a61aebfa4e76e99ab92fdd3f945b7360583da4013a2ffa7e074b2e9c",
+  "bytes": 3651,
+  "ops": 161,
+  "distinctOps": 17,
+  "width": 620,
+  "height": 470,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 37,
+    "DRAW_RECT": 5,
+    "DRAW_LINE": 8,
+    "PATH_CREATE": 8,
+    "PATH_ADD": 48,
+    "DRAW_PATH": 12,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 16,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

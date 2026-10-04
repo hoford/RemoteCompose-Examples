@@ -1,0 +1,1249 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 470,
+  "profiles": 513,
+  "contentDescription": "One polygon under four linear transformations, each over a ghost of the original, with determinants"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 470
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 42.0,
+      "top": 150.0,
+      "right": 172.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 42.0,
+      "y1": 300.0,
+      "x2": 172.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 84.0,
+      "y1": 150.0,
+      "x2": 84.0,
+      "y2": 330.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "g0",
+      "x": 84.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g0",
+      "x": 146.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g0",
+      "x": 146.0,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g0",
+      "x": 111.9,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g0",
+      "x": 111.9,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g0",
+      "x": 84.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "g0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "g0"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "t0",
+      "x": 84.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t0",
+      "x": 146.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t0",
+      "x": 146.0,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t0",
+      "x": 111.9,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t0",
+      "x": 111.9,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t0",
+      "x": 84.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "t0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Identity",
+      "x": 42.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "det = +1.00",
+      "x": 42.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "nothing moves",
+      "x": 42.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 192.0,
+      "top": 150.0,
+      "right": 322.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 192.0,
+      "y1": 300.0,
+      "x2": 322.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 234.0,
+      "y1": 150.0,
+      "x2": 234.0,
+      "y2": 330.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "g1",
+      "x": 234.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g1",
+      "x": 296.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g1",
+      "x": 296.0,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g1",
+      "x": 261.9,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g1",
+      "x": 261.9,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g1",
+      "x": 234.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "g1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "g1"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "t1",
+      "x": 234.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t1",
+      "x": 320.8,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t1",
+      "x": 320.8,
+      "y": 273.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t1",
+      "x": 273.06,
+      "y": 273.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t1",
+      "x": 273.06,
+      "y": 256.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t1",
+      "x": 234.0,
+      "y": 256.6
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "t1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Scale 1.4, 0.7",
+      "x": 192.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "det = +0.98",
+      "x": 192.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "area x 0.98 - almost unchanged",
+      "x": 192.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 342.0,
+      "top": 150.0,
+      "right": 472.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 342.0,
+      "y1": 300.0,
+      "x2": 472.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 384.0,
+      "y1": 150.0,
+      "x2": 384.0,
+      "y2": 330.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "g2",
+      "x": 384.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g2",
+      "x": 446.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g2",
+      "x": 446.0,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g2",
+      "x": 411.9,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g2",
+      "x": 411.9,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g2",
+      "x": 384.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "g2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "g2"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "t2",
+      "x": 384.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t2",
+      "x": 434.778,
+      "y": 264.41200000000003
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t2",
+      "x": 413.4252,
+      "y": 233.9452
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t2",
+      "x": 385.4973,
+      "y": 253.5186
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t2",
+      "x": 371.2621,
+      "y": 233.2074
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t2",
+      "x": 348.41200000000003,
+      "y": 249.222
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "t2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Rotate 35\u00b0",
+      "x": 342.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "det = +1.00",
+      "x": 342.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "area x 1.00 - rotation preserves it",
+      "x": 342.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 492.0,
+      "top": 150.0,
+      "right": 622.0,
+      "bottom": 330.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 492.0,
+      "y1": 300.0,
+      "x2": 622.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 534.0,
+      "y1": 150.0,
+      "x2": 534.0,
+      "y2": 330.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "g3",
+      "x": 534.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g3",
+      "x": 596.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g3",
+      "x": 596.0,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g3",
+      "x": 561.9,
+      "y": 262.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g3",
+      "x": 561.9,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "g3",
+      "x": 534.0,
+      "y": 238.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "g3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "g3"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "t3",
+      "x": 534.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t3",
+      "x": 596.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t3",
+      "x": 625.76,
+      "y": 337.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t3",
+      "x": 591.66,
+      "y": 337.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t3",
+      "x": 611.5,
+      "y": 362.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "t3",
+      "x": 583.6,
+      "y": 362.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "t3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "t3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Shear + flip",
+      "x": 492.0,
+      "y": 142.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "det = -1.00",
+      "x": 492.0,
+      "y": 352.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "area x -1.00 - the sign is the flip",
+      "x": 492.0,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the grey outline is the same shape in every panel",
+      "x": 54.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the determinant is the area ratio, and its sign says whether the shape was turned over",
+      "x": 54.0,
+      "y": 424.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Four matrices",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "what the determinant is actually telling you",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

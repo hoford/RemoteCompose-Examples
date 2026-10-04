@@ -701,3 +701,299 @@ document has particles in it, and then it quietly is not.
 
 Reach of this: sets 1-7 contain particle documents in every set bar one. None of them were
 pixel-reproducible before this.
+
+---
+
+## F-024 · texture V runs bottom-to-top, so the obvious UV mapping is upside down
+
+**confirmed** · engine semantics · found in set 8
+
+A bitmap is sampled with **v = 0 at the bottom row**, not the top. Mapping v = 0 to the north
+pole of a sphere - the natural reading, and the one that matches how an equirectangular image
+file is laid out - renders the whole world inverted.
+
+Measured on the trade globe, counting near-white pixels (the polar caps) in the top and
+bottom quarters of the rendered sphere:
+
+```
+                top    bottom
+v = 0 at north   786      420     Africa inverted, Antarctica over the Arctic
+v = 0 at south   786      171     correct
+```
+
+The giveaway was visual and immediate once the texture was a map - Africa upside down is not
+a subtle defect. **On a texture with no known orientation it is invisible**, which is the
+reason to record it: the set 2 membrane and the set 5 shell are both abstract, both are
+probably mapped upside down, and nothing in the corpus would ever have shown it.
+
+`uv_sphere()` in the set 8 generator emits `(1 - u, 1 - v)` for this reason. Any new textured
+mesh should either use that helper or check its orientation against something recognisable
+before trusting it.
+
+**Two negative results worth keeping, because both are the natural suspicion.**
+
+*It is not a depth-buffer failure*, which this player has had before (F-009). Occlusion is
+correct, for `meshPrimitive3D` and `defineMesh3D` alike, and at a 0.02-unit standoff as well
+as a 0.52-unit one:
+
+```
+a marker sphere in front of a globe   5707 red px
+the same marker behind it                0 red px
+```
+
+and a single arc rendered through a full rotation is hidden exactly when it passes behind.
+
+*Nor is it a difference between the players.* With the rotation pinned to a constant and the
+same document rendered by rc2image and by the TypeScript player in headless Chrome, the two
+images differ by a **mean absolute difference of 0.1** - agreement to within rounding on a
+textured, lit, depth-tested 3D scene. Any apparent disagreement between a video of one player
+and a still of the other is the clock, not the renderer; pin the rotation before comparing.
+
+What actually crossed the globe was a route 168 degrees of arc long. See F-025.
+
+---
+
+## F-025 · A near-antipodal great circle reads as a line through the planet
+
+**confirmed** · authoring · found in set 8
+
+A route drawn as a great circle between two points more than about 110 degrees apart stops
+reading as a route. At 160-170 degrees it wraps so far round the sphere that a large part of
+it lies on the near side at any rotation, and it draws as a long straight streak across the
+face - indistinguishable from a line passing through the planet.
+
+This was diagnosed twice and fixed wrongly the first time. Brazil-China (161 deg) was removed
+for exactly this reason and replaced with **Chile-China, which is 168 - worse**. The second
+version looked fine in the four still frames I happened to sample and was obvious the moment
+it was watched rotating.
+
+Three hypotheses were tested and eliminated before the real cause was found, which is the
+useful part of the record:
+
+| suspicion | result |
+|---|---|
+| far side bleeding through (depth bug) | no - occlusion correct in both players, all mesh types |
+| depth precision at a small standoff | no - a 0.02-unit standoff occludes correctly |
+| C++ and TypeScript rendering differently | no - mean absolute difference 0.1 with the clock pinned |
+
+The generator now asserts the separation of every route:
+
+```python
+assert deg < 110.0, "%s spans %.0f degrees of arc" % (nm, deg)
+```
+
+**A still frame is not enough for a rotating scene.** Four stills at 4-second intervals passed
+this document; a five-second screen recording failed it immediately. Anything that turns
+should be checked over a full period, not sampled.
+
+---
+
+## F-026 · Calibrate a texture mapping, do not derive it
+
+**confirmed** · engine semantics · found in set 8
+
+The sphere UV convention took six wrong attempts to pin down, and every wrong one looked
+plausible on screen. The correct emission for an equirectangular map is:
+
+```python
+uv += [(1.5 - u) % 1.0, 1.0 - v]      # u from longitude, v from latitude
+```
+
+Both axes are inverted relative to the obvious reading and u carries an extra half-texture
+offset. The failure modes are very different in how loud they are:
+
+| wrong | how it looks |
+|---|---|
+| `v` not flipped | world upside down - unmissable |
+| `u` not flipped | map mirrored; routes on the wrong ocean; **texture appears to counter-rotate** |
+| `u` flipped but not offset | map correct at one rotation, half a world out at others |
+
+**The method that actually worked**, after eyeballing failed repeatedly: render the globe,
+reconstruct latitude and longitude for each pixel of the disc, sample the source bitmap, and
+fit the longitude offset and mirror that minimise the difference. It returns a number instead
+of an impression, and it caught two mistakes that renders had passed.
+
+**Measurement mistakes I made getting here, each of which gave a confident wrong answer:**
+
+* a centroid-of-bright-pixels motion test - on a sphere the centroid tracks the limb, not the
+  surface
+* a pixel count whose scan window quietly included the legend swatches, inverting the result
+* the same fitter pointed at the real document, whose camera is oblique and whose globe is
+  y-offset - it violates the fitter's head-on assumption and returns a constant, which reads
+  like "the texture does not rotate" and is simply garbage
+* marker probes that omitted the globe's own +0.52 y translation, putting every marker south
+  of where it belonged
+
+A fit is only as good as the geometry assumed by the fitter. Calibrate with the simplest
+possible scene - head-on camera, sphere at the origin, no offsets - and only then trust it
+against the real one.
+
+---
+
+## F-027 · A thin tube mesh is not occluded by a sphere it lies on
+
+**confirmed, worked around** · player · found in set 8
+
+A compact box behind a sphere is correctly hidden. A long thin tube - a route arc built from
+many small oriented boxes - is **not**, even when its geometry is entirely on the far side,
+and even when it is scaled to sit deep inside the sphere:
+
+```
+arc at 1.00 of its radius (on the surface)   1011 px visible
+arc at 0.45 (deep inside the globe)           166 px visible    should be 0
+arc at 0.10 (almost at the centre)             10 px visible    should be 0
+```
+
+Things tried that did **not** change it:
+
+* splitting the arc from one 18-box mesh into 18 single-box meshes - identical, 778 px both ways
+* drawing the globe after the arcs instead of before - identical
+* seating the tube exactly on the surface rather than above it - 1011 px down to 685, not fixed
+* removing the texture - 3330 px down to 3119, so the texture is not the cause either
+
+A single compact box in the same position occludes perfectly, so this is specific to thin or
+elongated geometry rather than to depth testing in general. Not isolated further.
+
+**Worked around by design rather than fixed.** ECO-IE-00012 now draws its routes as arcs
+raised clearly above the globe instead of painted on its surface. The same unoccluded geometry
+then reads as a corridor passing over and behind the Earth - which is what it is - and is
+correct at every rotation, where a surface-painted route was wrong at about half of them.
+
+If a document needs a line to disappear behind a solid, do not rely on this. Lift it until
+being visible is the intended reading.
+
+---
+
+## F-028 · UNRESOLVED · route placement does not agree with a sphere texture
+
+**unresolved** · found in set 8 · ECO-IE-00012 shipped without the texture
+
+A NASA Blue Marble texture was mapped onto the trade globe. The map renders cleanly, but a
+route placed by latitude and longitude does not land on the place it names, and I could not
+characterise the disagreement well enough to correct it.
+
+What is established:
+
+* the seam bug is real and fixed - any wrapped UV expression such as `(1.5 - u) % 1` puts a
+  texture seam across the middle of the visible face, because u jumps from 0.01 to 0.99 at
+  longitude 0 and the triangles spanning it smear the map backwards
+* the arcs are self-consistent: an arc drawn between two cities passes exactly through markers
+  placed at those same cities, so `latlon()` and the arc builder agree with each other
+* the disagreement is **not a constant rotation**. A +40 degree correction puts Tokyo on Japan
+  and leaves Jakarta and Sydney just as wrong as before
+* it is **not parallax**: markers at radius 0.781 and 0.80 land in the same wrong places
+* it is not the texture's alpha (none), tessellation, draw order, or mesh splitting
+
+What defeated me was measurement. Four separate automated checks disagreed with each other,
+and each looked convincing on its own: a reference-projection fit said the mapping was exact
+at five rotations; a land-versus-ocean score peaked at 3 of 6; a banded calibration texture
+implied a half-texture offset; and direct marker probes showed a position-dependent error.
+The fits that said "correct" were run on a controlled head-on scene; the probes that said
+"wrong" were run on the real document, whose camera is oblique and whose globe is y-offset.
+I was not able to reconcile them.
+
+**The document therefore ships with a plain globe.** A trade map whose corridors touch down in
+the wrong ocean is worse than one with no coastlines at all. `textures/earth.png` and its
+`SOURCE.txt` stay in the tree, correctly downsampled and documented, for a later attempt.
+
+**The instrument now exists: CAL-GLOBE-00001**, in this same set. It draws the same textured
+sphere with a graticule and six coastal landmarks built from the same `latlon()` the trade
+routes use, on a head-on camera with no offsets - the configuration in which every earlier
+measurement was reliable.
+
+What it shows at the current mapping, read directly off the picture rather than inferred:
+
+* the **prime meridian is right** - the red line runs down through western Europe, across the
+  Sahara and out at the Gulf of Guinea
+* the **equator is right** - the green line is level and crosses Africa where it should
+* the **pins are not** - they sit north and west of their headlands by a few degrees, by an
+  amount that varies with position
+
+That combination rules out the two cheap explanations. A longitude mirror is excluded: negating
+longitude was tried in the instrument and puts the Horn of Africa in the Atlantic, which is
+worse. A constant offset is excluded by the two reference lines being correct while the pins
+are not - an offset would move all three together.
+
+A pin at an eastern longitude also shows up when it should be hidden round the back, which is
+F-027 again and is a separate matter from the placement.
+
+Next step is to work on that document rather than on ECO-IE-00012: it isolates the question,
+it renders in a second, and the answer transfers straight back.
+
+---
+
+## F-029 · CORRECTED · the sphere mesh was wound inside out
+
+**resolved** · authoring error, not an engine defect · found in set 8
+
+This entry previously claimed that a texture travels the opposite way to the mesh it is
+painted on, and that it could not be corrected from the UV. **Both claims were wrong**, and
+the measurements behind them were real but misread.
+
+`uv_sphere()` wound its triangles the wrong way. The player was therefore culling the near
+face and drawing the **inner** surface of the far hemisphere - which is mirrored left-to-right
+and travels backwards as the globe turns. Every symptom in F-024 and F-028 follows from that
+one line:
+
+* the map looked mirrored, so the UV needed `(1.5 - u) % 1` to compensate
+* that modulo put a seam across the middle of the visible face
+* a route placed by latitude and longitude sat on the correct geometry while the visible map
+  was the wrong hemisphere, so no single offset could line them up - +40 degrees fixed Tokyo
+  and left Sydney wrong, because the two were being compared against different hemispheres
+* the texture appeared to counter-rotate against ribbons carrying the identical transform
+
+Fixed by reversing the winding:
+
+```python
+idx += [a, b, a + 1, a + 1, b, b + 1]      # was [a, a + 1, b, b, a + 1, b + 1]
+```
+
+With that done the UV needs no correction at all - plain `u`, and `1 - v` only because a
+bitmap's first row is its top. Mesh rotation works normally again: continents +14 px,
+corridors +14 px, measured together. The camera-orbit workaround was removed.
+
+**How it was found.** Not by me. I had measured the counter-rotation correctly and concluded
+the engine was at fault; the user looked at the animation and asked "what if the mesh for the
+sphere is backward?". One render settled it. A correct measurement with the wrong frame of
+reference is worse than no measurement, because it carries authority - every number in the old
+F-029 was accurate and every conclusion drawn from it was wrong.
+
+**What should have caught it.** F-008 already records that a wrongly wound mesh is invisible,
+so winding was a known hazard. A sphere does not disappear when it is inside out - it quietly
+shows you its far side - which is why the existing check did not fire. Worth testing winding
+on any closed mesh by putting a recognisable texture on it, not by checking it renders.
+
+---
+
+## F-030 · A document with an external bitmap cannot be converted in the browser
+
+**confirmed** · tooling · found in set 8, pre-existing since set 2
+
+`tools/rc.mjs validate` rejects any document whose `resources.bitmaps` names a file:
+
+```
+PG1030  bitmap 'earth' names a file, but this converter was given no file reader -
+        pass one via convert(json, {readFile}), or inline the image as base64
+```
+
+It affects every textured document in the corpus - BIO-CB-00008 (set 2), CHM-MS-00005
+(set 5), ECO-IE-00012 and CAL-GLOBE-00001 (set 8) - so it is not new, and earlier reports of
+"16 of 16 valid" for sets 2 and 5 were wrong: those runs counted the textured document as
+passing when the validator had refused it.
+
+**It does not affect the corpus itself.** The primary artifact is the `.rc`, and rcj embeds
+the bitmap in it byte-for-byte:
+
+```
+ECO-IE-00012.rc      97471 bytes, texture 34250 bytes, embedded whole: yes
+docs/.../bio-cb-00008/doc.rc   15118 bytes, embedded whole: yes
+```
+
+So a compiled document is self-contained and renders anywhere. What is blocked is the
+JSON-to-rc path in JavaScript - the playground converting a document from source, and this
+validator. Anything that loads the `.rc` is fine.
+
+**Consequence for the gate.** The node validator cannot be run on a textured document, so a
+set containing one can never score 17 of 17. Either pass a `readFile` to the converter, or
+exclude textured documents from that gate and say so, rather than letting the count quietly
+look like a pass.

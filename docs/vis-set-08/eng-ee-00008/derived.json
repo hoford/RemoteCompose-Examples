@@ -1,0 +1,43 @@
+{
+  "id": "vis-set-08/eng-ee-00008",
+  "sha256": "9fef230774f8852cf866fbdc95930f5b161b4fd828366dd7889ca8267f0c55ad",
+  "bytes": 2698,
+  "ops": 132,
+  "distinctOps": 16,
+  "width": 600,
+  "height": 460,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 5,
+    "DRAW_LINE": 64,
+    "DATA_TEXT": 11,
+    "DRAW_TEXT_ANCHOR": 15,
+    "ANIMATED_FLOAT": 1,
+    "TEXT_FROM_FLOAT": 1,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

@@ -1,0 +1,2682 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 470,
+  "profiles": 513,
+  "contentDescription": "A search descending a binary tree one level at a time, halving what remains at each step"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 470
+     }
+    },
+    {
+     "variable": {
+      "name": "beat",
+      "value": "continuousSec() * 0.55 - floor(continuousSec() * 0.55 / 5.0) * 5.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "lvl",
+      "value": "clamp(0.0, 4.0, floor(@beat))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 300.0,
+      "y1": 150.0,
+      "x2": 185.0,
+      "y2": 212.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 300.0,
+      "y1": 150.0,
+      "x2": 415.0,
+      "y2": 212.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 185.0,
+      "y1": 212.0,
+      "x2": 127.5,
+      "y2": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 185.0,
+      "y1": 212.0,
+      "x2": 242.5,
+      "y2": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 415.0,
+      "y1": 212.0,
+      "x2": 357.5,
+      "y2": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 415.0,
+      "y1": 212.0,
+      "x2": 472.5,
+      "y2": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 127.5,
+      "y1": 274.0,
+      "x2": 98.75,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 127.5,
+      "y1": 274.0,
+      "x2": 156.25,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 242.5,
+      "y1": 274.0,
+      "x2": 213.75,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 242.5,
+      "y1": 274.0,
+      "x2": 271.25,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 357.5,
+      "y1": 274.0,
+      "x2": 328.75,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 357.5,
+      "y1": 274.0,
+      "x2": 386.25,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 472.5,
+      "y1": 274.0,
+      "x2": 443.75,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 472.5,
+      "y1": 274.0,
+      "x2": 501.25,
+      "y2": 336.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 98.75,
+      "y1": 336.0,
+      "x2": 84.375,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 98.75,
+      "y1": 336.0,
+      "x2": 113.125,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 156.25,
+      "y1": 336.0,
+      "x2": 141.875,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 156.25,
+      "y1": 336.0,
+      "x2": 170.625,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 213.75,
+      "y1": 336.0,
+      "x2": 199.375,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 213.75,
+      "y1": 336.0,
+      "x2": 228.125,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 271.25,
+      "y1": 336.0,
+      "x2": 256.875,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 271.25,
+      "y1": 336.0,
+      "x2": 285.625,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 328.75,
+      "y1": 336.0,
+      "x2": 314.375,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 328.75,
+      "y1": 336.0,
+      "x2": 343.125,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 386.25,
+      "y1": 336.0,
+      "x2": 371.875,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 386.25,
+      "y1": 336.0,
+      "x2": 400.625,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 443.75,
+      "y1": 336.0,
+      "x2": 429.375,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 443.75,
+      "y1": 336.0,
+      "x2": 458.125,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 501.25,
+      "y1": 336.0,
+      "x2": 486.875,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 501.25,
+      "y1": 336.0,
+      "x2": 515.625,
+      "y2": 398.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 300.0,
+         "y1": 150.0,
+         "x2": 185.0,
+         "y2": 212.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 185.0,
+         "y1": 212.0,
+         "x2": 242.5,
+         "y2": 274.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 242.5,
+         "y1": 274.0,
+         "x2": 213.75,
+         "y2": 336.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 3.0
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 213.75,
+         "y1": 336.0,
+         "x2": 228.125,
+         "y2": 398.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 300.0,
+      "cy": 150.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 300.0,
+      "cy": 150.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lvl",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 300.0,
+         "cy": 150.0,
+         "radius": 11.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 44.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 185.0,
+      "cy": 212.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 185.0,
+      "cy": 212.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lvl",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 185.0,
+         "cy": 212.0,
+         "radius": 11.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 415.0,
+      "cy": 212.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 415.0,
+      "cy": 212.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2",
+      "x": 44.0,
+      "y": 216.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 127.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 127.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 242.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 242.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lvl",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 242.5,
+         "cy": 274.0,
+         "radius": 11.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 357.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 357.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 472.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 472.5,
+      "cy": 274.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4",
+      "x": 44.0,
+      "y": 278.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 98.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 98.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 156.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 156.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 213.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 213.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lvl",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 213.75,
+         "cy": 336.0,
+         "radius": 11.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 271.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 271.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 328.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 328.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 386.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 386.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 443.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 443.75,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 501.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 501.25,
+      "cy": 336.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8",
+      "x": 44.0,
+      "y": 340.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 84.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 84.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 113.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 113.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 141.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 141.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 170.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 170.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 199.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 199.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 228.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 228.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lvl",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 228.125,
+         "cy": 398.0,
+         "radius": 11.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 256.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 256.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 285.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 285.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 314.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 314.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 343.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 343.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 371.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 371.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 400.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 400.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 429.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 429.375,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 458.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 458.125,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 486.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 486.875,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 515.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 515.625,
+      "cy": 398.0,
+      "radius": 13.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "16",
+      "x": 44.0,
+      "y": 402.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "nodes",
+      "x": 44.0,
+      "y": 130.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFA98BBE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "half of what was left, gone",
+         "x": 560.0,
+         "y": 216.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFA98BBE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "half of what was left, gone",
+         "x": 560.0,
+         "y": 278.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFA98BBE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "half of what was left, gone",
+         "x": 560.0,
+         "y": 340.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "gt",
+      "v1": "@lvl",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFA98BBE"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "half of what was left, gone",
+         "x": 560.0,
+         "y": 402.0,
+         "panX": 1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sixteen leaves, four decisions",
+      "x": 70.0,
+      "y": 424.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- a million would take twenty, which is the only reason this structure is worth the pointers",
+      "x": 70.0,
+      "y": 444.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Searching a tree",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one level per beat",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

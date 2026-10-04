@@ -1,0 +1,932 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 480,
+  "profiles": 513,
+  "contentDescription": "The current and capital accounts as mirrored filled paths, showing they sum to zero by construction"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 480
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 140.0,
+      "right": 540.0,
+      "bottom": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2B3A5C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 260.0,
+      "x2": 540.0,
+      "y2": 260.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "cur",
+      "x": 72.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 72.0,
+      "y": 317.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 91.82608695652173,
+      "y": 305.86682183354645
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 111.65217391304347,
+      "y": 295.42585076281085
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 131.47826086956522,
+      "y": 286.32625579894994
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 151.30434782608694,
+      "y": 279.13380568364465
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 171.1304347826087,
+      "y": 274.2956921289986
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 190.95652173913044,
+      "y": 272.11272560281753
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 210.7826086956522,
+      "y": 272.72063239067285
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 230.6086956521739,
+      "y": 276.08161579284433
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 250.43478260869566,
+      "y": 281.98670614004357
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 270.2608695652174,
+      "y": 290.068753515322
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 290.0869565217391,
+      "y": 299.82525535764506
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 309.9130434782609,
+      "y": 310.649599637306
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 329.7391304347826,
+      "y": 321.8687810538549
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 349.5652173913044,
+      "y": 332.7852452460329
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 369.39130434782606,
+      "y": 342.7202593434055
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 389.2173913043478,
+      "y": 351.05611228885675
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 409.04347826086956,
+      "y": 357.27452112028624
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 428.8695652173913,
+      "y": 360.98885529492935
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 448.69565217391306,
+      "y": 361.968175503892
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 468.5217391304348,
+      "y": 360.15159235984123
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 488.3478260869565,
+      "y": 355.65205220419665
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 508.17391304347825,
+      "y": 348.74931465066766
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 528.0,
+      "y": 339.8725584874666
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cur",
+      "x": 528.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "cur"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cur"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cur"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "cap",
+      "x": 72.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 72.0,
+      "y": 203.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 91.82608695652173,
+      "y": 214.13317816645355
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 111.65217391304347,
+      "y": 224.57414923718915
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 131.47826086956522,
+      "y": 233.67374420105003
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 151.30434782608694,
+      "y": 240.86619431635535
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 171.1304347826087,
+      "y": 245.7043078710014
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 190.95652173913044,
+      "y": 247.88727439718244
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 210.7826086956522,
+      "y": 247.27936760932715
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 230.6086956521739,
+      "y": 243.91838420715567
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 250.43478260869566,
+      "y": 238.01329385995646
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 270.2608695652174,
+      "y": 229.93124648467804
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 290.0869565217391,
+      "y": 220.17474464235494
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 309.9130434782609,
+      "y": 209.35040036269402
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 329.7391304347826,
+      "y": 198.1312189461451
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 349.5652173913044,
+      "y": 187.2147547539671
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 369.39130434782606,
+      "y": 177.27974065659453
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 389.2173913043478,
+      "y": 168.94388771114322
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 409.04347826086956,
+      "y": 162.72547887971376
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 428.8695652173913,
+      "y": 159.01114470507065
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 448.69565217391306,
+      "y": 158.03182449610802
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 468.5217391304348,
+      "y": 159.84840764015877
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 488.3478260869565,
+      "y": 164.34794779580335
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 508.17391304347825,
+      "y": 171.25068534933234
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 528.0,
+      "y": 180.12744151253338
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "cap",
+      "x": 528.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "cap"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cap"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "cap"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Current account",
+      "x": 70.0,
+      "y": 160.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "goods, services, income - what the country sells and buys",
+      "x": 70.0,
+      "y": 176.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Capital account",
+      "x": 70.0,
+      "y": 356.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "assets bought and sold - who ends up owning what",
+      "x": 70.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "zero",
+      "x": 52.0,
+      "y": 264.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q1",
+      "x": 72.0,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q2",
+      "x": 151.30434782608694,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q3",
+      "x": 230.6086956521739,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q4",
+      "x": 309.9130434782609,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q5",
+      "x": 389.2173913043478,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Q6",
+      "x": 468.5217391304348,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the two shapes are the same shape, mirrored",
+      "x": 60.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- a trade deficit IS a capital surplus. The country buying more goods than it sells is",
+      "x": 60.0,
+      "y": 450.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "selling assets to pay for them, and the accounts cannot do otherwise.",
+      "x": 60.0,
+      "y": 468.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The accounts that must balance",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "because they are the same trade, twice",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}
