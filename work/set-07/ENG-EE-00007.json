@@ -1,0 +1,695 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Two 100 ohm resistors in series and in parallel, with the same battery and the arithmetic for each"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "padding": 18
+   },
+   {
+    "background": "#FF1A0F20"
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Two resistors, two ways",
+    "modifiers": [],
+    "fontSize": 19.0,
+    "color": "#FFF0E4F7"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 3
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "same two 100 ohm parts, same 12 V battery",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FFA98BBE"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 520
+     }
+    ],
+    "children": [
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 250
+       },
+       {
+        "padding": 10
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "In series",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FFC77DFF"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 8
+         }
+        ]
+       },
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 120
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 120
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 120
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 40,
+           "x2": 20,
+           "y2": 80
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 28,
+           "y1": 50,
+           "x2": 28,
+           "y2": 70
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 40,
+           "x2": 20,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 24,
+           "x2": 210,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 210,
+           "y1": 24,
+           "x2": 210,
+           "y2": 96
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 210,
+           "y1": 96,
+           "x2": 20,
+           "y2": 96
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 96,
+           "x2": 20,
+           "y2": 80
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFC77DFF"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 80,
+           "top": 16,
+           "right": 120,
+           "bottom": 32
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFC77DFF"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 148,
+           "top": 16,
+           "right": 188,
+           "bottom": 32
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 9
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "R = R1 + R2",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFF0E4F7"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "200 ohms",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFC77DFF"
+       },
+       {
+        "type": "text",
+        "value": "I = 12 / 200 = 60 mA",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFF0E4F7"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "one path, so the same current goes through both",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FFA98BBE"
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 16
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 250
+       },
+       {
+        "padding": 10
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "In parallel",
+        "modifiers": [],
+        "fontSize": 14.0,
+        "color": "#FF5BE8B5"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 8
+         }
+        ]
+       },
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 230
+         },
+         {
+          "height": 120
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 120
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 230,
+           "bottom": 120
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 40,
+           "x2": 20,
+           "y2": 80
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 28,
+           "y1": 50,
+           "x2": 28,
+           "y2": 70
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 40,
+           "x2": 20,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 24,
+           "x2": 210,
+           "y2": 24
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 210,
+           "y1": 24,
+           "x2": 210,
+           "y2": 96
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 210,
+           "y1": 96,
+           "x2": 20,
+           "y2": 96
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 20,
+           "y1": 96,
+           "x2": 20,
+           "y2": 80
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96,
+           "y1": 24,
+           "x2": 96,
+           "y2": 44
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96,
+           "y1": 44,
+           "x2": 124,
+           "y2": 44
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164,
+           "y1": 44,
+           "x2": 164,
+           "y2": 44
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164,
+           "y1": 44,
+           "x2": 164,
+           "y2": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF5BE8B5"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 124,
+           "top": 37,
+           "right": 164,
+           "bottom": 51
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96,
+           "y1": 24,
+           "x2": 96,
+           "y2": 76
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96,
+           "y1": 76,
+           "x2": 124,
+           "y2": 76
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164,
+           "y1": 76,
+           "x2": 164,
+           "y2": 76
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164,
+           "y1": 76,
+           "x2": 164,
+           "y2": 96
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF5BE8B5"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 124,
+           "top": 69,
+           "right": 164,
+           "bottom": 83
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFF0E4F7"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.8
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 9
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "1/R = 1/R1 + 1/R2",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFF0E4F7"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "50 ohms",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF5BE8B5"
+       },
+       {
+        "type": "text",
+        "value": "I = 12 / 50 = 240 mA",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFF0E4F7"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "two paths, so each gets the full voltage",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FFA98BBE"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 16
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "Adding a resistor in parallel LOWERS the resistance, which reads as wrong until you notice you have added a road, not a narrowing.",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FFF0E4F7"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 6
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "The parallel circuit draws four times the current from the same battery, which is how a wall socket ends up overloaded.",
+    "modifiers": [],
+    "fontSize": 10.0,
+    "color": "#FFA98BBE"
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "vis-set-07/soc-psyc-00006",
+  "sha256": "043e0ea575fbf921ccf4b17b3a3a60961beb918bd4029de877b670ab71c2afdb",
+  "bytes": 4061,
+  "ops": 206,
+  "distinctOps": 18,
+  "width": 580,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 2,
+    "TOUCH_EXPRESSION": 1,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_LINE": 124,
+    "DATA_TEXT": 17,
+    "DRAW_TEXT_ANCHOR": 18,
+    "TEXT_FROM_FLOAT": 1,
+    "CONDITIONAL_OPERATIONS": 2,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "conditionals",
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

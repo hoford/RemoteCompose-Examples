@@ -1,0 +1,1328 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 500,
+  "profiles": 513,
+  "contentDescription": "Drag to narrow an artery and watch flow fall as the fourth power of the remaining radius"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 500
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 160.0,
+      "min": 60.0,
+      "max": 520.0,
+      "expression": "touchX()"
+     }
+    },
+    {
+     "variable": {
+      "name": "narrow",
+      "value": "clamp(0.0, 0.82, (@drag - 60.0) / 460.0 * 0.82)",
+      "commit": true
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "wallTop",
+      "x": 60.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 71.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 83.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 94.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 106.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 117.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 129.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 140.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 152.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 163.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 175.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 186.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 198.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 209.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 221.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 232.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 244.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 255.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 267.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 278.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 290.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 301.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 313.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 324.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 336.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 347.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 359.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 370.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 382.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 393.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 405.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 416.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 428.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 439.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 451.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 462.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 474.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 485.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 497.0,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 508.5,
+      "y": 166.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallTop",
+      "x": 520.0,
+      "y": 166.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "wallTop"
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "wallBot",
+      "x": 60.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 71.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 83.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 94.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 106.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 117.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 129.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 140.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 152.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 163.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 175.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 186.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 198.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 209.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 221.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 232.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 244.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 255.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 267.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 278.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 290.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 301.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 313.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 324.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 336.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 347.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 359.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 370.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 382.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 393.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 405.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 416.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 428.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 439.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 451.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 462.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 474.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 485.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 497.0,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 508.5,
+      "y": 274.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "wallBot",
+      "x": 520.0,
+      "y": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 3.0
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "wallBot"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "right": 72.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0000)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 71.5,
+      "right": 84.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0000)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 83.0,
+      "right": 95.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0001)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 94.5,
+      "right": 107.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0001)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0003)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 106.0,
+      "right": 118.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0003)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0008)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 117.5,
+      "right": 130.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0008)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0019)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 129.0,
+      "right": 141.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0019)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0046)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 140.5,
+      "right": 153.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0046)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0101)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 152.0,
+      "right": 164.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0101)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0211)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 163.5,
+      "right": 176.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0211)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0412)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 175.0,
+      "right": 187.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0412)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0756)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 186.5,
+      "right": 199.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0756)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.1299)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 198.0,
+      "right": 210.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.1299)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.2096)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 209.5,
+      "right": 222.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.2096)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.3173)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 221.0,
+      "right": 233.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.3173)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.4506)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 232.5,
+      "right": 245.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.4506)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.6004)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 244.0,
+      "right": 256.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.6004)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.7505)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 255.5,
+      "right": 268.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.7505)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.8802)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 267.0,
+      "right": 279.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.8802)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.9686)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 278.5,
+      "right": 291.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.9686)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 1.0000)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 290.0,
+      "right": 302.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 1.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.9686)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 301.5,
+      "right": 314.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.9686)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.8802)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 313.0,
+      "right": 325.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.8802)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.7505)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 324.5,
+      "right": 337.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.7505)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.6004)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 336.0,
+      "right": 348.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.6004)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.4506)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 347.5,
+      "right": 360.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.4506)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.3173)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 359.0,
+      "right": 371.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.3173)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.2096)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 370.5,
+      "right": 383.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.2096)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.1299)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 382.0,
+      "right": 394.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.1299)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0756)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 393.5,
+      "right": 406.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0756)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0412)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 405.0,
+      "right": 417.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0412)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0211)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 416.5,
+      "right": 429.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0211)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0101)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 428.0,
+      "right": 440.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0101)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0046)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 439.5,
+      "right": 452.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0046)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0019)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 451.0,
+      "right": 463.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0019)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0008)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 462.5,
+      "right": 475.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0008)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0003)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 474.0,
+      "right": 486.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0003)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0001)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 485.5,
+      "right": 498.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0001)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0000)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 497.0,
+      "right": 509.5,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0000)"
+     }
+    },
+    {
+     "drawRect": {
+      "left": 508.5,
+      "right": 521.0,
+      "top": "220.00 - 50.00 * (1.0 - @narrow * 0.0000)",
+      "bottom": "220.00 + 50.00 * (1.0 - @narrow * 0.0000)"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "plaque",
+      "x": 290.0,
+      "y": 152.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "blood",
+      "x": 90.0,
+      "y": 225.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "open",
+      "value": "1.0 - @narrow",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "flow",
+      "value": "@open * @open * @open * @open",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 336.0,
+      "right": 520.0,
+      "bottom": 364.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 336.0,
+      "right": "60.0 + @flow * 460.0",
+      "bottom": 364.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "flow, relative to a clear vessel",
+      "x": 60.0,
+      "y": 328.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "pct",
+      "commit": true,
+      "value": {
+       "type": "textFromFloat",
+       "value": "@flow * 100.0",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@pct",
+      "x": 60.0,
+      "y": 394.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "per cent",
+      "x": 104.0,
+      "y": 394.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "lt",
+      "v1": "@flow",
+      "v2": 0.35,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "this is where climbing stairs starts to hurt",
+         "x": 160.0,
+         "y": 394.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "halve the radius and you lose fifteen sixteenths of the flow",
+      "x": 60.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- which is why a narrowing can be severe long before it is felt",
+      "x": 60.0,
+      "y": 456.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A narrowing artery",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to close it",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -631,3 +631,73 @@ this composes with F-012: a sized canvas does not clip its own drawing, so the f
 is a `clipRect` - which is exactly the irreversible thing described here. The safe pattern is
 a nested canvas whose first command is its clip and which draws nothing it does not want
 clipped.
+
+---
+
+## F-022 · rcj writes over-long expressions that the engine will refuse
+
+**confirmed** · converter · found in set 7
+
+A `FloatExpression` is capped at 32 RPN tokens and the cap is enforced by the **reader**. The
+Java writer checks it at write time and refuses:
+
+```
+java.lang.RuntimeException: 300.0 0.14 [45] 290.0 - 104.55 / 5.0 pow * 0.9 [45] 290.0 -
+104.55 / 3.0 pow * - 1.1 [45] 290.0 - 104.55 / * + 30.0 * - [48] sin 3.0 * +  to long
+  at FloatExpression.apply(FloatExpression.java:332)
+```
+
+rcj does not check. It wrote the same expression without complaint - 787 bytes more than the
+oracle produced - and the C++ renderer drew the result correctly. A device would have refused
+the document.
+
+**This is the trap CLAUDE.md names explicitly**, and it is worth noting how close it came to
+shipping. The document compiled, rendered, looked right, and passed every visual check. The
+only thing that caught it was the oracle byte comparison showing a difference too large to be
+F-003 - an unexplained 787 B, in a set where every other difference was 4.
+
+**Consequence:** treat any oracle delta that is not a multiple of 4 matching the touch
+expression's token count as a hard failure, not a curiosity. And when an expression starts
+needing `pow` and nested parentheses, count the tokens: the budget is per expression FIELD,
+so the fix is usually to compute constants in the generator rather than in the document.
+
+rcj should enforce the cap at write time. Until it does, the oracle is the only thing standing
+between a long expression and a device.
+
+---
+
+## F-023 · rand() is not pinned by the clock, so particle documents never reproduce
+
+**confirmed, tooling fixed** · player · found in set 7
+
+`--clock` pins every date and time variable, and with it a 3D document renders twice at 0 px
+difference (F-019). It does **not** pin `rand()`. A document whose particles draw their
+initial values from `rand()` therefore lands somewhere different on every run:
+
+```
+particles with rand() in initialValues
+  no clock flag        3188 px between two runs
+  --clock pinned       3030 px between two runs     <- the clock does not help
+  rand() replaced by constants, --clock pinned   0 px
+```
+
+This is by design in the player, not a bug: `JavaRandom` seeds arbitrarily on first use,
+matching the reference's lazy `new Random()`, and a document that seeds itself gets a
+repeatable stream on every player. But it means a pixel baseline cannot include any particle
+document unless the seed is fixed from outside.
+
+**Fixed** with `rc2image --seed N`, which seeds the stream before the first paint - the point
+that matters, because particle initial values are drawn once when the system is created.
+A document that seeds itself still wins.
+
+```
+--clock only          3099 px between two runs
+--clock --seed 7         0 px between two runs
+--seed 7 vs --seed 8  3140 px differ   (so the flag is doing something)
+```
+
+**Use both flags together.** `--clock` alone looks like it is enough right up until the
+document has particles in it, and then it quietly is not.
+
+Reach of this: sets 1-7 contain particle documents in every set bar one. None of them were
+pixel-reproducible before this.

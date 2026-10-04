@@ -284,8 +284,8 @@ it does not know and "pass" everything. Run `oracle/build-mesh-classes.sh` after
 ```sh
 # C++ reference. ALWAYS pass --clock: without it every date and time variable reads the
 # wall clock, so two renders of the same document differ and nothing can be compared.
-rc2image doc.rc out.png --clock 2026-03-09T14:30:00
-rc2image doc.rc out.png --clock @1773066600000     # or raw epoch millis, for sub-second steps
+rc2image doc.rc out.png --clock 2026-03-09T14:30:00 --seed 7
+rc2image doc.rc out.png --clock @1773066600000 --seed 7   # epoch millis, for sub-second steps
 # --anim pins animationTime, which is a SEPARATE clock; a document may use either.
 
 # browser player, pinned so an animated document is reproducible
@@ -301,6 +301,9 @@ Two things to know when choosing the instant:
 * **Pick one that shows the document well.** A scene whose opening phase is empty will be
   captured empty. The instant is part of how the document presents itself; keep it with the
   document.
+* **Pass `--seed` too.** `--clock` does not pin `rand()`, so a document with particles in it
+  still renders differently on every run (F-023). The clock flag alone looks sufficient right
+  up until the document has a particle system, and then it is not.
 * **Do not step by a whole multiple of the document's period.** Comparing two instants exactly
   one cycle apart aliases to zero motion and makes a moving document look static. `gate3d.py`
   tries two differently-spaced steps for this reason.

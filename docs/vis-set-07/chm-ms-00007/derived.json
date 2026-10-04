@@ -1,0 +1,41 @@
+{
+  "id": "vis-set-07/chm-ms-00007",
+  "sha256": "433986c327951bf5e09a53f205b27a1256286ce7e2c097da763c91dc7f92e503",
+  "bytes": 3665,
+  "ops": 175,
+  "distinctOps": 16,
+  "width": 600,
+  "height": 470,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 71,
+    "DRAW_RECT": 6,
+    "DRAW_LINE": 17,
+    "DRAW_CIRCLE": 22,
+    "DRAW_ARC": 5,
+    "DATA_TEXT": 21,
+    "DRAW_TEXT_ANCHOR": 21,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawArc",
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

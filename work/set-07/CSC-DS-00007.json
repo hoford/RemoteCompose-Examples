@@ -1,0 +1,1144 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "Drag along a seven-node linked list, counting the pointers that must be followed to reach each node"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 440
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 120.0,
+      "min": 50.0,
+      "max": 550.0,
+      "expression": "touchX()"
+     }
+    },
+    {
+     "variable": {
+      "name": "k",
+      "value": "clamp(0.0, 6.0, floor((@drag - 50.0) / 500.0 * 7.0))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 48.0,
+      "top": 200.0,
+      "right": 110.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 48.0,
+      "top": 200.0,
+      "right": 110.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 200.0,
+      "x2": 90.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 69.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 100.0,
+      "y1": 227.0,
+      "x2": 128.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 128.0,
+      "y1": 227.0,
+      "x2": 121.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 128.0,
+      "y1": 227.0,
+      "x2": 121.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 128.0,
+      "top": 200.0,
+      "right": 190.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 128.0,
+      "top": 200.0,
+      "right": 190.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 170.0,
+      "y1": 200.0,
+      "x2": 170.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "22",
+      "x": 149.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 180.0,
+      "y1": 227.0,
+      "x2": 208.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 208.0,
+      "y1": 227.0,
+      "x2": 201.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 208.0,
+      "y1": 227.0,
+      "x2": 201.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 208.0,
+      "top": 200.0,
+      "right": 270.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 208.0,
+      "top": 200.0,
+      "right": 270.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 250.0,
+      "y1": 200.0,
+      "x2": 250.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "39",
+      "x": 229.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 260.0,
+      "y1": 227.0,
+      "x2": 288.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 288.0,
+      "y1": 227.0,
+      "x2": 281.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 288.0,
+      "y1": 227.0,
+      "x2": 281.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 288.0,
+      "top": 200.0,
+      "right": 350.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 288.0,
+      "top": 200.0,
+      "right": 350.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 330.0,
+      "y1": 200.0,
+      "x2": 330.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "56",
+      "x": 309.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 340.0,
+      "y1": 227.0,
+      "x2": 368.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 368.0,
+      "y1": 227.0,
+      "x2": 361.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 368.0,
+      "y1": 227.0,
+      "x2": 361.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 368.0,
+      "top": 200.0,
+      "right": 430.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 368.0,
+      "top": 200.0,
+      "right": 430.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 410.0,
+      "y1": 200.0,
+      "x2": 410.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "73",
+      "x": 389.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 420.0,
+      "y1": 227.0,
+      "x2": 448.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 448.0,
+      "y1": 227.0,
+      "x2": 441.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 448.0,
+      "y1": 227.0,
+      "x2": 441.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 448.0,
+      "top": 200.0,
+      "right": 510.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 448.0,
+      "top": 200.0,
+      "right": 510.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 490.0,
+      "y1": 200.0,
+      "x2": 490.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 469.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 500.0,
+      "y1": 227.0,
+      "x2": 528.0,
+      "y2": 227.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 528.0,
+      "y1": 227.0,
+      "x2": 521.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 528.0,
+      "y1": 227.0,
+      "x2": 521.0,
+      "y2": 232.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 528.0,
+      "top": 200.0,
+      "right": 590.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF43295A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 528.0,
+      "top": 200.0,
+      "right": 590.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 570.0,
+      "y1": 200.0,
+      "x2": 570.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "17",
+      "x": 549.0,
+      "y": 234.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "null",
+      "x": 580.0,
+      "y": 233.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": "44.0 + @k * 80.0",
+      "top": 196.0,
+      "right": "114.0 + @k * 80.0",
+      "bottom": 258.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "head",
+      "x": 48.0,
+      "y": 184.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "variable": {
+      "name": "klabel",
+      "commit": true,
+      "value": {
+       "type": "textFromFloat",
+       "value": "@k",
+       "whole": 1,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@klabel",
+      "x": 188.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pointers followed:",
+      "x": 60.0,
+      "y": 318.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "lt",
+      "v1": "@k",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "the head is free - you already have it",
+         "x": 230.0,
+         "y": 318.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@k",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "every one of them a jump to somewhere else in memory",
+         "x": 230.0,
+         "y": 318.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "an array would have computed the address and gone straight there",
+      "x": 60.0,
+      "y": 366.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- what a list buys instead is inserting in the middle without moving anything",
+      "x": 60.0,
+      "y": 386.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Walking a linked list",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to move along it",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

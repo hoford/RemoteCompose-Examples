@@ -76,8 +76,13 @@ CLOCK_LATE = "@%d" % (CLOCK_MS + 1300)
 CLOCK_LATE2 = "@%d" % (CLOCK_MS + 2900)
 
 
+# --seed as well as --clock: the clock does not pin rand(), so a particle document renders
+# differently every run and its "motion" measurement is really measuring the dice (F-023).
+SEED = "7"
+
+
 def render(rc, png, t, clock=CLOCK_BASE):
-    subprocess.run([RC2IMG, rc, png, "--anim", str(t), "--clock", clock],
+    subprocess.run([RC2IMG, rc, png, "--anim", str(t), "--clock", clock, "--seed", SEED],
                    capture_output=True)
     from PIL import Image
     return Image.open(png).convert("RGB")
