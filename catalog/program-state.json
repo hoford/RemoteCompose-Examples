@@ -221,8 +221,8 @@
    "id": "F-030",
    "set": 8,
    "kind": "tooling",
-   "status": "confirmed",
-   "summary": "rc.mjs cannot convert a document whose bitmap names a file (PG1030); affects every textured document since set 2. The .rc embeds the image, so only the JS JSON path is blocked"
+   "status": "resolved",
+   "summary": "a file-named bitmap makes a document non-self-contained and the JS converter refuses it; base64 fixes it with a byte-identical .rc. Sets 2 and 5 still need converting"
   }
  ]
 }

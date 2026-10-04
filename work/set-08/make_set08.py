@@ -131,6 +131,19 @@ def oriented_box(verts, normals, uv, idx, centre, axis, half_len, hw, hh):
     q(1, 5, 7, 3, (ux, uy, uz))
 
 
+def embedded_bitmap(name, rel_path):
+    """A bitmap resource carrying the image itself rather than naming a file.
+
+    A document that names a file is not self-contained: the JS converter cannot read it at
+    all and refuses the document outright (F-030), and the landed doc.json is broken unless
+    the texture is copied alongside it. base64 costs about a third more bytes in the JSON
+    and nothing at all in the compiled .rc, which embeds the same image either way.
+    """
+    import base64
+    data = (OUT / rel_path).read_bytes()
+    return {"bitmaps": [{name: {"base64": base64.b64encode(data).decode("ascii")}}]}
+
+
 def surface_ribbon(mesh_id, pts, half_w, radius):
     """A flat single-sided strip lying on a sphere, one quad per gap.
 
@@ -1046,7 +1059,7 @@ def trade():
     title(cmds, W, H, "Four trade corridors", "drawn on a sphere, because they are")
     return {"header": header(W, H, "Four major trade corridors as arcs over a slowly "
                                    "turning globe"),
-            "resources": {"bitmaps": [{"earth": {"file": "textures/earth.png"}}]},
+            "resources": embedded_bitmap("earth", "textures/earth.png"),
             "root": canvas(cmds, INK)}
 
 
@@ -1605,7 +1618,7 @@ def calibration():
     return {"header": header(W, H, "A graticule and six coastal landmarks drawn by latitude "
                                    "and longitude over the Blue Marble texture, to check "
                                    "that the two agree"),
-            "resources": {"bitmaps": [{"earth": {"file": "textures/earth.png"}}]},
+            "resources": embedded_bitmap("earth", "textures/earth.png"),
             "root": canvas(cmds, INK)}
 
 

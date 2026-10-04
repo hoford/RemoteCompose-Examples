@@ -965,35 +965,44 @@ on any closed mesh by putting a recognisable texture on it, not by checking it r
 
 ---
 
-## F-030 · A document with an external bitmap cannot be converted in the browser
+## F-030 · RESOLVED · name a bitmap by file and the document is not self-contained
 
-**confirmed** · tooling · found in set 8, pre-existing since set 2
+**resolved** · authoring convention · found in set 8
 
-`tools/rc.mjs validate` rejects any document whose `resources.bitmaps` names a file:
+`tools/rc.mjs validate` refuses any document whose `resources.bitmaps` names a file:
 
 ```
 PG1030  bitmap 'earth' names a file, but this converter was given no file reader -
         pass one via convert(json, {readFile}), or inline the image as base64
 ```
 
-It affects every textured document in the corpus - BIO-CB-00008 (set 2), CHM-MS-00005
-(set 5), ECO-IE-00012 and CAL-GLOBE-00001 (set 8) - so it is not new, and earlier reports of
-"16 of 16 valid" for sets 2 and 5 were wrong: those runs counted the textured document as
-passing when the validator had refused it.
+I first recorded this as a tooling limitation to work around. It is not - the error message
+says what to do, and rcj has supported it all along:
 
-**It does not affect the corpus itself.** The primary artifact is the `.rc`, and rcj embeds
-the bitmap in it byte-for-byte:
-
-```
-ECO-IE-00012.rc      97471 bytes, texture 34250 bytes, embedded whole: yes
-docs/.../bio-cb-00008/doc.rc   15118 bytes, embedded whole: yes
+```python
+"""... `base64` is accepted for a self-contained document."""
 ```
 
-So a compiled document is self-contained and renders anywhere. What is blocked is the
-JSON-to-rc path in JavaScript - the playground converting a document from source, and this
-validator. Anything that loads the `.rc` is fine.
+Switching the two textured documents to `{"base64": "..."}` makes them valid:
 
-**Consequence for the gate.** The node validator cannot be run on a textured document, so a
-set containing one can never score 17 of 17. Either pass a `readFile` to the converter, or
-exclude textured documents from that gate and say so, rather than letting the count quietly
-look like a pass.
+```
+before   15 of 17 documents valid
+after    17 of 17
+```
+
+and the compiled `.rc` is **byte-identical** either way - sha256 unchanged - because rcj
+embeds the same image bytes whichever form the JSON uses. The cost is only in the JSON:
+ECO-IE-00012 goes from 25 KB to 263 KB of source, while its `.rc` stays at 95.2 KB.
+
+**What a named file actually costs.** The document is not self-contained, so the JS converter
+cannot read it at all, the landed `doc.json` is broken unless the texture is copied beside it,
+and that copy is easy to forget - CHM-MS-00005 had been landed in set 5 without its
+`shell.png` and nothing noticed, because the `.rc` works regardless and nothing checks the
+JSON.
+
+**Convention from here: embed.** `embedded_bitmap()` in the set 8 generator does it. A file
+path is for authoring convenience only and should not survive into a landed document.
+
+**Correction.** Earlier reports of "16 of 16 valid" for sets 2 and 5 counted the textured
+document as passing when the validator had refused it; those sets still carry file-named
+bitmaps and should be converted when next touched.
