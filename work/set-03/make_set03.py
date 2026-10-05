@@ -1005,8 +1005,11 @@ def stocks():
             {"lights3D": {"lights": [{"type": "directional", "color": "#FFFFFFFF",
                                       "dir": [-0.4, -0.6, -0.7], "intensity": 1.0}]}}]
 
+    # `min` omitted so the scatter keeps turning instead of stopping at +-6 radians. The
+    # max becomes exactly one turn: the value wraps there, and here the value IS the angle
+    # in radians, so 6.0 would have wrapped 16 degrees short of a full turn and shown it.
     cmds.append({"touchExpression": {"name": "drag", "defaultValue": 0.6,
-                                     "min": -6.0, "max": 6.0, "stopMode": "gently",
+                                     "max": 2 * math.pi, "stopMode": "gently",
                                      "expression": "touchX() / 90"}})
     cmds.append(var("rot", "@drag"))
     cmds.append(var("ca", "cos(@rot)"))

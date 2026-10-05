@@ -14,12 +14,15 @@ Renders are pinned with --clock AND --seed. The clock alone does not pin rand() 
 and an unpinned render cannot be compared against anything, including its own previous run.
 """
 
+import hashlib
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+DOCS = ROOT / "docs"
 RCJ = Path.home() / "code/github/rcJson"
 RC2IMAGE = (Path.home() /
             "code/github/rcExperiments/players/cpp/build/tools/rc2image/rc2image")
@@ -69,12 +72,39 @@ def main():
             bad += 1
             continue
         hdr = json.loads(jp.read_text())["header"]
-        print("  ok    %-16s %6d B   %dx%d" % (jp.stem, len(data), hdr["width"],
-                                               hdr["height"]))
+        relinked = relink(int(sys.argv[1]), jp, rc)
+        print("  ok    %-16s %6d B   %dx%d%s" % (jp.stem, len(data), hdr["width"],
+                                                 hdr["height"],
+                                                 "  -> docs" if relinked else ""))
         ok += 1
     print("  %d built, %d failed" % (ok, bad))
     contact_sheet(setdir, render)
     return 1 if bad else 0
+
+
+def relink(setno: int, json_path: Path, rc_path: Path) -> bool:
+    """Push a rebuilt document into its landed copy under docs/.
+
+    The site serves `docs/<collection>/<slug>/doc.rc`, not `work/`. Rebuilding a landed
+    document used to change only the work/ copy, so the page went on serving the old bytes
+    and nothing said so - `rcx verify` passes either way, because docs/ stays internally
+    consistent with its own stale file. That cost a wrong conclusion: a browser test of a
+    "fixed" document was really exercising the version before the fix.
+
+    `rcx add` is not the tool for this; it dedupes on content hash and would mint a second
+    entry rather than update the first.
+    """
+    dest = DOCS / ("vis-set-%02d" % setno) / json_path.stem.lower()
+    if not dest.is_dir():
+        return False
+    shutil.copy2(rc_path, dest / "doc.rc")
+    shutil.copy2(json_path, dest / "doc.json")
+    entry = dest / "entry.json"
+    if entry.exists():
+        e = json.loads(entry.read_text())
+        e["sha256"] = hashlib.sha256(rc_path.read_bytes()).hexdigest()
+        entry.write_text(json.dumps(e, indent=2) + "\n")
+    return True
 
 
 def contact_sheet(setdir, render, cols=4, cell=300):

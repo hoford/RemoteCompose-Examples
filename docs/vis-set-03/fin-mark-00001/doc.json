@@ -79,8 +79,7 @@
      "touchExpression": {
       "name": "drag",
       "defaultValue": 0.6,
-      "min": -6.0,
-      "max": 6.0,
+      "max": 6.283185307179586,
       "stopMode": "gently",
       "expression": "touchX() / 90"
      }

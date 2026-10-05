@@ -1552,9 +1552,24 @@ def migration():
                  "dir": [-0.35, -0.42, -0.84], "intensity": 1.0},
                 {"type": "directional", "color": ACCENT,
                  "dir": [0.6, 0.3, 0.45], "intensity": 0.40}]}}]
-    cmds.append({"touchExpression": {"name": "drag", "defaultValue": 270.0, "min": 0.0,
-                                     "max": 540.0, "expression": "touchX()"}})
-    cmds.append(var("spin", "(@drag - 270.0) / 150.0"))
+    # A globe has to keep turning. `min` is OMITTED, which is how wrap mode is asked for:
+    # the op treats a plain NaN minimum as "wrap at max" rather than "clamp at min", so
+    # dragging past the end returns to 0 instead of stopping dead. With min: 0.0 the globe
+    # hit a wall after about 100 degrees and the far side could not be reached at all.
+    #
+    # Wrap alone is not enough. The value wraps at `max`, so the angle has to cover exactly
+    # one turn across that range or the seam is a visible jump: at the wrap the angle must
+    # already be 2pi, which reads the same as 0. The constant is computed rather than typed
+    # so the two cannot drift apart.
+    #
+    # This is a range of the VALUE, not of pixels. The op accumulates
+    # `valueAtDown + (touchX now - touchX at down)`, and how much value a pixel of drag
+    # buys depends on the player's touch scaling - measured at about half a unit per CSS
+    # pixel in the browser, so roughly 1080 px of dragging per revolution there.
+    VALUE_PER_TURN = 540.0
+    cmds.append({"touchExpression": {"name": "drag", "defaultValue": 0.0,
+                                     "max": VALUE_PER_TURN, "expression": "touchX()"}})
+    cmds.append(var("spin", "@drag * %.8f" % (2 * math.pi / VALUE_PER_TURN)))
     def latlon(lat, lon):
         la, lo = math.radians(lat), math.radians(lon)
         return (math.cos(la) * math.sin(lo), math.sin(la), math.cos(la) * math.cos(lo))

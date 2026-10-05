@@ -100,8 +100,7 @@
     {
      "touchExpression": {
       "name": "drag",
-      "defaultValue": 270.0,
-      "min": 0.0,
+      "defaultValue": 0.0,
       "max": 540.0,
       "expression": "touchX()"
      }
@@ -109,7 +108,7 @@
     {
      "variable": {
       "name": "spin",
-      "value": "(@drag - 270.0) / 150.0",
+      "value": "@drag * 0.01163553",
       "commit": true
      }
     },

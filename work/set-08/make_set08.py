@@ -1527,10 +1527,14 @@ def calibration():
                  "dir": [0.0, 0.0, -1.0], "intensity": 1.0}]}}]
     # Head-on, no y offset, no tilt. Every earlier measurement that disagreed with another
     # did so because it was taken on an oblique camera; this one removes that variable.
-    cmds.append({"touchExpression": {"name": "drag", "defaultValue": 280.0,
-                                     "min": 0.0, "max": 560.0,
+    # Wrap, not clamp: `min` omitted means the op wraps at max instead of stopping there.
+    # See the note in set 10's migration globe - the angle covers exactly one turn across
+    # the drag range so the wrap has no seam.
+    VALUE_PER_TURN = 560.0
+    cmds.append({"touchExpression": {"name": "drag", "defaultValue": 0.0,
+                                     "max": VALUE_PER_TURN,
                                      "expression": "touchX()"}})
-    cmds.append(var("spin", "(@drag - 280.0) / 180.0"))
+    cmds.append(var("spin", "@drag * %.8f" % (2 * math.pi / VALUE_PER_TURN)))
 
     R0 = 1.0
     cmds.append(uv_sphere(1, R0, nlat=32, nlon=64))
