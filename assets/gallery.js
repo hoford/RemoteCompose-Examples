@@ -166,6 +166,11 @@ function layout(reset) {
     CARD_W = list ? Math.max(320, g.clientWidth - GAP * 2) : 268;
     CARD_H = list ? 116 : 344;
     cols = list ? 1 : Math.max(1, Math.floor((g.clientWidth - GAP) / (CARD_W + GAP)));
+    // One column and room to spare is a phone. A fixed 268px card there leaves a dead strip
+    // down the side of every screenful, so the card takes the width instead.
+    if (!list && cols === 1) {
+        CARD_W = Math.max(268, g.clientWidth - GAP * 2);
+    }
     document.getElementById('spacer').style.height =
         `${Math.ceil(S.matching.length / cols) * (CARD_H + GAP)}px`;
     paint();
@@ -496,8 +501,25 @@ async function init(hooks = {}) {
     document.getElementById('theme-light').onclick = () => setTheme('light');
     document.getElementById('theme-dark').onclick = () => setTheme('dark');
 
-    document.getElementById('filters-badge').onclick = () =>
-        document.body.classList.toggle('no-sidebar');
+    // The Filters button means two different things by width. On a desktop the sidebar is
+    // always there and the button collapses it (`no-sidebar`). On a phone it is off-canvas
+    // and the button slides it in (`sidebar-open`). One class per mode: making a single
+    // class mean "hidden" at one width and "shown" at another was unreadable.
+    const narrow = matchMedia('(max-width: 760px)');
+    const scrim = document.getElementById('scrim');
+    const closeDrawer = () => document.body.classList.remove('sidebar-open');
+
+    document.getElementById('filters-badge').onclick = () => {
+        document.body.classList.toggle(narrow.matches ? 'sidebar-open' : 'no-sidebar');
+    };
+    if (scrim) scrim.onclick = closeDrawer;
+    const sideClose = document.getElementById('side-close');
+    if (sideClose) sideClose.onclick = closeDrawer;
+    addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+    // Rotating a phone into landscape can cross the breakpoint. Without this the drawer
+    // class survives into the desktop layout, where it means nothing and the scrim is gone,
+    // leaving no way to see that anything is set.
+    narrow.addEventListener('change', closeDrawer);
 }
 
 export { init, applyFilter as refresh };

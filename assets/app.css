@@ -418,3 +418,60 @@ body.agent-mode #agent-output { max-height: 190px; }
 body.agent-mode #preview-image { max-height: 150px; }
 body.agent-mode #agent-interface { max-height: 70vh; }
 body.agent-mode .pg { max-height: 30vh; }
+
+/* ── phones ───────────────────────────────────────────────────────────────────
+   The desktop frame is a fixed 276px filter column beside a virtualised grid. On a
+   390px-wide phone that column is most of the viewport, so below 760px it becomes a
+   drawer: off-canvas by default, slid in over a scrim when Filters is tapped.
+
+   `body.no-sidebar` is the DESKTOP collapse and means "hidden". The drawer needs the
+   opposite default, so here that class is neutralised and `body.sidebar-open` governs
+   instead — one class per mode rather than one class meaning different things at
+   different widths, which is the version that was unreadable. */
+/* Both of these belong to the drawer and are declared OFF here, before the media query
+   turns them on. Declared after it they would win at every width, which is how the drawer
+   first shipped without a close control. The scrim is explicitly display:none rather than
+   left as a zero-height static div, so it can never sit over the desktop page. */
+.side-close { display: none; }
+#scrim { display: none; }
+
+@media (max-width: 760px) {
+  .topbar {
+    height: auto; flex-wrap: wrap; gap: 10px 14px; padding: 9px 12px;
+  }
+  /* search onto its own full-width row, so the brand and the toggles keep theirs */
+  .searchwrap { order: 5; flex-basis: 100%; }
+  #q { max-width: none; }
+  .topnav { gap: 2px; overflow-x: auto; scrollbar-width: none; }
+  .topnav::-webkit-scrollbar { display: none; }
+  .topnav a { padding: 6px 8px; font-size: 13px; }
+  .topright { margin-left: auto; }
+  .chiprow { padding: 0 12px; }
+
+  #sidebar {
+    position: fixed; top: 0; bottom: 0; left: 0; z-index: 40;
+    width: min(86vw, 320px); padding: 14px;
+    transform: translateX(-100%); transition: transform .22s ease;
+    box-shadow: 0 0 0 1px var(--line), 12px 0 28px rgba(16, 24, 40, .18);
+  }
+  body.sidebar-open #sidebar { transform: none; }
+  /* the desktop collapse must not also hide the drawer */
+  body.no-sidebar #sidebar { display: block; }
+
+  #scrim {
+    display: block; position: fixed; inset: 0; z-index: 35; background: rgba(16, 24, 40, .44);
+    opacity: 0; pointer-events: none; transition: opacity .22s ease;
+  }
+  body.sidebar-open #scrim { opacity: 1; pointer-events: auto; }
+  /* the page behind a drawer must not scroll with it */
+  body.sidebar-open { overflow: hidden; }
+
+  /* a close control, pointless with a mouse and necessary with a thumb */
+  .side-close { display: inline-flex; margin-left: auto; background: none;
+                border: none; color: var(--dim); cursor: pointer;
+                font-size: 20px; line-height: 1; padding: 0 2px; }
+
+  #grid { padding: 12px; }
+  .plane { inset: 12px auto auto 12px; }
+  .results-head { padding: 8px 12px; flex-wrap: wrap; gap: 8px; }
+}
