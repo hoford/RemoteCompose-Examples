@@ -204,7 +204,14 @@ body.no-sidebar #sidebar { display: none; }
 .frame { flex: 1; min-height: 0; background: var(--bg); border: 1px solid var(--line);
          border-radius: var(--radius); display: flex; align-items: center;
          justify-content: center; overflow: auto; }
-.frame canvas { flex: none; margin: auto; }
+/* The player must get the drag, not the browser. `.frame` is overflow:auto, so without
+   this a horizontal swipe is claimed for panning the frame before the document's own touch
+   handling sees it - which makes every touch-driven document unusable on a phone, and on
+   any touchscreen. The player reads pointer events; this is what lets them arrive.
+
+   The matching half is in doc.js: wherever this applies the canvas is also fitted to the
+   frame, so giving the gesture away costs nothing - there is nothing left to pan to. */
+.frame canvas { flex: none; margin: auto; touch-action: none; }
 .doc-info { padding: 22px 28px 48px; max-width: 980px; }
 .doc-info h2 { margin: 0 0 4px; font-size: 19px; }
 .doc-info .path { color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
@@ -470,6 +477,16 @@ body.agent-mode .pg { max-height: 30vh; }
   .side-close { display: inline-flex; margin-left: auto; background: none;
                 border: none; color: var(--dim); cursor: pointer;
                 font-size: 20px; line-height: 1; padding: 0 2px; }
+
+  /* The document page. The stage bar carries three controls that do not fit one row. */
+  .stage { padding: 10px 12px 0; }
+  .stage-bar { flex-wrap: wrap; gap: 8px 12px; }
+  .size-pick { font-size: 11.5px; gap: 6px; }
+  #size-note { min-width: 0; }
+  .doc-info { padding: 18px 12px 40px; }
+  /* The canvas is fitted to this frame by doc.js at this width, so there is nothing left
+     to scroll to - and a scrollable frame would compete with the canvas for the gesture. */
+  .frame { overflow: hidden; }
 
   #grid { padding: 12px; }
   .plane { inset: 12px auto auto 12px; }

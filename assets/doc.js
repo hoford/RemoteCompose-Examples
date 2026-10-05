@@ -41,9 +41,35 @@ function fitCanvas() {
     if (!handle) return;
     const cw = handle.canvas.width, ch = handle.canvas.height;
     if (!cw || !ch) return;
-    handle.canvas.style.width = `${cw}px`;
-    handle.canvas.style.height = `${ch}px`;
-    document.getElementById('size-note').textContent = `${cw} × ${ch}`;
+
+    // ...except on a phone, where 1:1 is not an option. Every document in the corpus is
+    // wider than a 390px viewport, so showing it at its played size means the frame scrolls
+    // sideways - and the canvas now takes the gesture (touch-action: none), so there is no
+    // way to pan to the rest of it. Fitting is the only way to see the document at all.
+    //
+    // Input still lands correctly: the player maps a pointer through canvas.width /
+    // rect.width, so a canvas scaled down by CSS reports the same document coordinates.
+    //
+    // The scale is printed rather than hidden. The reason the desktop shows 1:1 is that a
+    // document squeezed into a smaller box is not showing you what it looks like; that is
+    // just as true here, so the reader is told what they are looking at.
+    // Keyed on touch, not only on width. `touch-action: none` gives the canvas every
+    // gesture, so wherever that applies there must be nothing left to pan to - otherwise a
+    // document larger than the frame on a tablet could be neither driven nor scrolled. A
+    // mouse desktop matches neither condition and keeps its 1:1 view and its scrollbars.
+    const frame = document.querySelector('.frame');
+    let scale = 1;
+    if (frame && matchMedia('(max-width: 760px), (pointer: coarse)').matches) {
+        const availW = frame.clientWidth - 8, availH = frame.clientHeight - 8;
+        if (availW > 0 && availH > 0) {
+            scale = Math.min(1, availW / cw, availH / ch);
+        }
+    }
+    handle.canvas.style.width = `${Math.round(cw * scale)}px`;
+    handle.canvas.style.height = `${Math.round(ch * scale)}px`;
+    document.getElementById('size-note').textContent = scale < 1
+        ? `${cw} × ${ch} · ${Math.round(scale * 100)}%`
+        : `${cw} × ${ch}`;
 }
 
 function applySize() {
