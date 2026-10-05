@@ -274,6 +274,37 @@ def uv_sphere(mesh_id, radius, nlat=24, nlon=48, centre=(0.0, 0.0, 0.0)):
                              "uv": uv, "indices": idx}}
 
 
+def sphere_primitive(mesh_id, radius, nlat, centre=(0.0, 0.0, 0.0)):
+    """The same sphere as uv_sphere, built on the player instead of shipped.
+
+    meshPrimitive3D takes slices and derives stacks = round(slices * 0.5), so passing
+    nlon = 2 * nlat recovers uv_sphere's grid exactly. Roughly halves the document: the
+    migration globe goes from 325 KB of JSON and 111 KB compiled to 125 KB and 55 KB.
+
+    "uv": "uv" is not optional. The default is "none", and a sphere with no texture
+    coordinates still binds the texture and still draws - as a plain white ball, with
+    nothing logged to say why (F-010).
+
+    This does NOT replace uv_sphere's convention. The primitive measures its angle from +x
+    and reverses u; uv_sphere measures from +z and leaves u alone. The reversals cancel, so
+    neither map is mirrored - east runs to screen-right on both - but the angle starts 90
+    degrees apart. latlon() is built from uv_sphere's convention, so anything placed by
+    latitude and longitude needs the sphere turned to meet it: see SPHERE_ALIGN, which every
+    caller here puts in the globe's own matrix chain. Measured, not assumed - with it the two
+    constructions agree to a mean 0.12-0.25 of 255, and shifting one render against the other
+    by a single pixel quadruples that, so they are registered to well under a pixel.
+    """
+    return {"meshPrimitive3D": {"id": mesh_id, "primitive": "sphere",
+                                "radius": radius, "center": list(centre),
+                                "segments": 2 * nlat, "uv": "uv"}}
+
+
+# Turns a sphere_primitive to meet latlon(). Goes in the GLOBE's matrix chain only - putting
+# it in the shared prefix would turn the route ribbons too, which looks almost right: the
+# globe lands correctly and every route sits 90 degrees of longitude out.
+SPHERE_ALIGN = {"matrix3D": {"op": "rotate", "angle": math.pi / 2, "axis": [0, 1, 0]}}
+
+
 def surface_mesh(mesh_id, f, N, half=1.0, yscale=1.0, yoff=0.0):
     """A height-field surface y = f(u, v) over [-half, half]^2, with analytic-ish normals
     from finite differences. Winding per F-008."""
@@ -1611,10 +1642,11 @@ def migration():
     # uv_sphere, so the map lands on the sphere the same way it does there. Drawing it last
     # keeps the near-side ribbons out of the globe's own shading; the far side needs no help
     # from draw order, since a ribbon round the back is back-facing and culled (F-027).
-    cmds.append(uv_sphere(1, 0.80, nlat=22, nlon=44))
+    cmds.append(sphere_primitive(1, 0.80, nlat=22))
     cmds.append({"texture3D": {"bitmap": "@earth"}})
     cmds += [{"matrix3D": {"op": "identity"}},
              {"matrix3D": {"op": "rotate", "angle": "@spin", "axis": [0, 1, 0]}},
+             SPHERE_ALIGN,
              {"matrix3D": {"op": "translate", "x": 0.0, "y": 0.30, "z": 0.0}},
              paint({"color": "#FFFFFFFF"}, {"style": "fill"}),
              {"drawMesh3D": {"mesh": 1, "mode": "software-smooth"}}]
