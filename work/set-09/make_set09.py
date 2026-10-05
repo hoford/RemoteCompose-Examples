@@ -212,22 +212,34 @@ def surface_patch(mesh_id, centre_unit, size, radius):
 def uv_sphere(mesh_id, radius, nlat=24, nlon=48, centre=(0.0, 0.0, 0.0)):
     """A sphere carrying equirectangular UVs, for texture mapping.
 
-    meshPrimitive3D makes a sphere but this corpus cannot assume it carries UVs, and a
-    texture with nothing to map onto is one of the quieter ways to draw nothing (F-010).
-    BOTH texture axes run opposite to the obvious reading, and the two failures look
-    completely different (F-024):
+    Emits uv = (u, 1 - v). Plain u; v inverted only because a bitmap's first row is its top
+    while v = 0 is the south pole. Map v = 0 to the north pole instead and the world is
+    upside down - Africa inverted, Antarctica over the Arctic - which is obvious the moment
+    the texture is a map.
 
-      v  the player samples a bitmap with v = 0 at the BOTTOM row, so mapping v = 0 to the
-         north pole turns the world upside down - Africa inverted, Antarctica over the
-         Arctic. Obvious the moment the texture is a map.
+    **meshPrimitive3D would also do this**, and would halve the document, since the vertices
+    are built on the player instead of shipped: 50.7 KB against 97.5 KB for the trade globe.
+    Two things to know before reaching for it, both measured rather than assumed:
 
-      u  mapping u with increasing longitude mirrors the map east-west. That one is quiet:
-         the globe still looks like a globe, and the only tell is that the texture appears
-         to rotate OPPOSITE to the geometry drawn on it. Anything placed by latitude and
-         longitude then sits on the wrong ocean.
+      uv defaults to "none".  {"primitive": "sphere"} with no "uv": "uv" produces a sphere
+         with no texture coordinates at all. The texture still binds, the mesh still draws,
+         and you get a plain white ball with nothing to say why (F-010).
 
-    So this emits (1 - u, 1 - v), and anything positioned on the sphere must use latlon()
-    below, which is built from the same convention.
+      its convention is rotated 90 degrees from this one, NOT mirrored.  The primitive
+         measures its angle from +x and reverses u; this measures from +z and leaves u
+         alone. The two reversals cancel, so east still runs to screen-right on the near
+         face and neither map is a mirror image. What is left is where the angle starts.
+         Insert a +pi/2 rotation about y and the two spheres agree to a mean absolute
+         difference of 0.32 of 255 - the residue is tessellation, not orientation. At
+         -pi/2 it is 13.55, unrotated 15.82.
+
+    So either mesh will show the Earth correctly. What cannot differ is the convention used
+    by the mesh and the convention used to place things on it: latlon() below is built from
+    this one, and against the primitive every pin would sit 90 degrees of longitude east.
+
+    (An earlier version of this note claimed the primitive mirrors the map east-west, and
+    that mapping u with increasing longitude does the same. Both were wrong; the rendering
+    above is what settled it.)
     """
     verts, normals, uv, idx = [], [], [], []
     for i in range(nlat + 1):

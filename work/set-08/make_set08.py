@@ -214,22 +214,34 @@ def surface_patch(mesh_id, centre_unit, size, radius):
 def uv_sphere(mesh_id, radius, nlat=24, nlon=48, centre=(0.0, 0.0, 0.0)):
     """A sphere carrying equirectangular UVs, for texture mapping.
 
-    meshPrimitive3D makes a sphere but this corpus cannot assume it carries UVs, and a
-    texture with nothing to map onto is one of the quieter ways to draw nothing (F-010).
-    BOTH texture axes run opposite to the obvious reading, and the two failures look
-    completely different (F-024):
+    Emits uv = (u, 1 - v). Plain u; v inverted only because a bitmap's first row is its top
+    while v = 0 is the south pole. Map v = 0 to the north pole instead and the world is
+    upside down - Africa inverted, Antarctica over the Arctic - which is obvious the moment
+    the texture is a map.
 
-      v  the player samples a bitmap with v = 0 at the BOTTOM row, so mapping v = 0 to the
-         north pole turns the world upside down - Africa inverted, Antarctica over the
-         Arctic. Obvious the moment the texture is a map.
+    **meshPrimitive3D would also do this**, and would halve the document, since the vertices
+    are built on the player instead of shipped: 50.7 KB against 97.5 KB for the trade globe.
+    Two things to know before reaching for it, both measured rather than assumed:
 
-      u  mapping u with increasing longitude mirrors the map east-west. That one is quiet:
-         the globe still looks like a globe, and the only tell is that the texture appears
-         to rotate OPPOSITE to the geometry drawn on it. Anything placed by latitude and
-         longitude then sits on the wrong ocean.
+      uv defaults to "none".  {"primitive": "sphere"} with no "uv": "uv" produces a sphere
+         with no texture coordinates at all. The texture still binds, the mesh still draws,
+         and you get a plain white ball with nothing to say why (F-010).
 
-    So this emits (1 - u, 1 - v), and anything positioned on the sphere must use latlon()
-    below, which is built from the same convention.
+      its convention is rotated 90 degrees from this one, NOT mirrored.  The primitive
+         measures its angle from +x and reverses u; this measures from +z and leaves u
+         alone. The two reversals cancel, so east still runs to screen-right on the near
+         face and neither map is a mirror image. What is left is where the angle starts.
+         Insert a +pi/2 rotation about y and the two spheres agree to a mean absolute
+         difference of 0.32 of 255 - the residue is tessellation, not orientation. At
+         -pi/2 it is 13.55, unrotated 15.82.
+
+    So either mesh will show the Earth correctly. What cannot differ is the convention used
+    by the mesh and the convention used to place things on it: latlon() below is built from
+    this one, and against the primitive every pin would sit 90 degrees of longitude east.
+
+    (An earlier version of this note claimed the primitive mirrors the map east-west, and
+    that mapping u with increasing longitude does the same. Both were wrong; the rendering
+    above is what settled it.)
     """
     verts, normals, uv, idx = [], [], [], []
     for i in range(nlat + 1):
@@ -262,6 +274,37 @@ def uv_sphere(mesh_id, radius, nlat=24, nlon=48, centre=(0.0, 0.0, 0.0)):
             idx += [a, b, a + 1, a + 1, b, b + 1]
     return {"defineMesh3D": {"id": mesh_id, "verts": verts, "normals": normals,
                              "uv": uv, "indices": idx}}
+
+
+def sphere_primitive(mesh_id, radius, nlat, centre=(0.0, 0.0, 0.0)):
+    """The same sphere as uv_sphere, built on the player instead of shipped.
+
+    meshPrimitive3D takes slices and derives stacks = round(slices * 0.5), so passing
+    nlon = 2 * nlat recovers uv_sphere's grid exactly. Roughly halves the document: the
+    migration globe goes from 325 KB of JSON and 111 KB compiled to 125 KB and 55 KB.
+
+    "uv": "uv" is not optional. The default is "none", and a sphere with no texture
+    coordinates still binds the texture and still draws - as a plain white ball, with
+    nothing logged to say why (F-010).
+
+    This does NOT replace uv_sphere's convention. The primitive measures its angle from +x
+    and reverses u; uv_sphere measures from +z and leaves u alone. The reversals cancel, so
+    neither map is mirrored - east runs to screen-right on both - but the angle starts 90
+    degrees apart. latlon() is built from uv_sphere's convention, so anything placed by
+    latitude and longitude needs the sphere turned to meet it: see SPHERE_ALIGN, which every
+    caller here puts in the globe's own matrix chain. Measured, not assumed - with it the two
+    constructions agree to a mean 0.12-0.25 of 255, and shifting one render against the other
+    by a single pixel quadruples that, so they are registered to well under a pixel.
+    """
+    return {"meshPrimitive3D": {"id": mesh_id, "primitive": "sphere",
+                                "radius": radius, "center": list(centre),
+                                "segments": 2 * nlat, "uv": "uv"}}
+
+
+# Turns a sphere_primitive to meet latlon(). Goes in the GLOBE's matrix chain only - putting
+# it in the shared prefix would turn the route ribbons too, which looks almost right: the
+# globe lands correctly and every route sits 90 degrees of longitude out.
+SPHERE_ALIGN = {"matrix3D": {"op": "rotate", "angle": math.pi / 2, "axis": [0, 1, 0]}}
 
 
 def surface_mesh(mesh_id, f, N, half=1.0, yscale=1.0, yoff=0.0):
@@ -1034,12 +1077,14 @@ def trade():
     # The globe is drawn after the routes. With ribbons this no longer matters for
     # correctness - the far side is culled rather than covered - but it keeps the near-side
     # ribbons from being dimmed by the globe's own shading.
-    # Textured. The route-to-map alignment is still not exact (F-028) - CAL-GLOBE-00001 is
-    # the instrument for fixing that, and whatever it settles on should be copied back here.
-    cmds.append(uv_sphere(1, 0.78, nlat=20, nlon=40))
+    # Textured, and the sphere is built on the player rather than shipped - see
+    # sphere_primitive. SPHERE_ALIGN is in THIS chain and not the ribbons' above, which is
+    # what keeps the corridors where latlon() put them.
+    cmds.append(sphere_primitive(1, 0.78, nlat=20))
     cmds.append({"texture3D": {"bitmap": "@earth"}})
     cmds += [{"matrix3D": {"op": "identity"}},
              {"matrix3D": {"op": "rotate", "angle": "@spin", "axis": [0, 1, 0]}},
+             SPHERE_ALIGN,
              {"matrix3D": {"op": "translate", "x": 0.0, "y": 0.52, "z": 0.0}},
              paint({"color": "#FFFFFFFF"}, {"style": "fill"}),
              {"drawMesh3D": {"mesh": 1, "mode": "software-smooth"}}]
@@ -1537,10 +1582,14 @@ def calibration():
     cmds.append(var("spin", "@drag * %.8f" % (2 * math.pi / VALUE_PER_TURN)))
 
     R0 = 1.0
-    cmds.append(uv_sphere(1, R0, nlat=32, nlon=64))
+    # The instrument measures the construction actually in use, so it moves to the
+    # primitive with the documents it calibrates. If the alignment below were wrong, this
+    # is the document that would say so.
+    cmds.append(sphere_primitive(1, R0, nlat=32))
     cmds.append({"texture3D": {"bitmap": "@earth"}})
     cmds += [{"matrix3D": {"op": "identity"}},
              {"matrix3D": {"op": "rotate", "angle": "@spin", "axis": [0, 1, 0]}},
+             SPHERE_ALIGN,
              paint({"color": "#FFFFFFFF"}, {"style": "fill"}),
              {"drawMesh3D": {"mesh": 1, "mode": "software-smooth"}}]
     cmds.append({"texture3D": {"bitmap": 0}})
