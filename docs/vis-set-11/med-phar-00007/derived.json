@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-11/med-phar-00007",
+  "sha256": "9b1549b2dddfa874de7105a615c9f43e63c022985cb245638aedbc5f2ff564c4",
+  "bytes": 3036,
+  "ops": 131,
+  "distinctOps": 14,
+  "width": 620,
+  "height": 440,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 48,
+    "DRAW_RECT": 21,
+    "DRAW_LINE": 4,
+    "DATA_TEXT": 23,
+    "DRAW_TEXT_ANCHOR": 23,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

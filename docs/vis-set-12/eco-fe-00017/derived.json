@@ -1,0 +1,42 @@
+{
+  "id": "vis-set-12/eco-fe-00017",
+  "sha256": "090fca27db35549bbbbdd26a4757effd3192a749acca848299e3aa6a15e7cb06",
+  "bytes": 4033,
+  "ops": 194,
+  "distinctOps": 15,
+  "width": 580,
+  "height": 540,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 24,
+    "DRAW_RECT": 6,
+    "ANIMATED_FLOAT": 3,
+    "DRAW_LINE": 119,
+    "DATA_TEXT": 15,
+    "DRAW_TEXT_ANCHOR": 15,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

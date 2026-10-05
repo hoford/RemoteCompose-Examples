@@ -1,0 +1,911 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 500,
+  "profiles": 513,
+  "contentDescription": "CPU and GPU die area budgets drawn to the same scale, showing the different allocation"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 500
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "CPU",
+      "x": 160.0,
+      "y": 150.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "optimised for one thread finishing fast",
+      "x": 160.0,
+      "y": 168.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 186.0,
+      "right": 260.0,
+      "bottom": 225.8
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cores (8 big)",
+      "x": 68.0,
+      "y": 210.9,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "22%",
+      "x": 252.0,
+      "y": 210.9,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 227.8,
+      "right": 260.0,
+      "bottom": 301.8
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cache",
+      "x": 68.0,
+      "y": 269.8,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "40%",
+      "x": 252.0,
+      "y": 269.8,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 303.8,
+      "right": 260.0,
+      "bottom": 351.2
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Branch prediction, scheduling",
+      "x": 68.0,
+      "y": 332.5,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "26%",
+      "x": 252.0,
+      "y": 332.5,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 353.2,
+      "right": 260.0,
+      "bottom": 374.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Memory controller",
+      "x": 68.0,
+      "y": 368.59999999999997,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12%",
+      "x": 252.0,
+      "y": 368.59999999999997,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "GPU",
+      "x": 410.0,
+      "y": 150.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "optimised for ten thousand threads finishing eventually",
+      "x": 410.0,
+      "y": 168.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 310.0,
+      "top": 186.0,
+      "right": 510.0,
+      "bottom": 320.79999999999995
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cores (10,000 small)",
+      "x": 318.0,
+      "y": 258.4,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "72%",
+      "x": 502.0,
+      "y": 258.4,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 310.0,
+      "top": 322.79999999999995,
+      "right": 510.0,
+      "bottom": 339.79999999999995
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 310.0,
+      "top": 341.79999999999995,
+      "right": 510.0,
+      "bottom": 351.19999999999993
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 310.0,
+      "top": 353.19999999999993,
+      "right": 510.0,
+      "bottom": 373.99999999999994
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Memory controller",
+      "x": 318.0,
+      "y": 368.5999999999999,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12%",
+      "x": 502.0,
+      "y": 368.5999999999999,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "die area",
+      "x": 44.0,
+      "y": 186.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 407.0,
+      "right": 65.0,
+      "bottom": 421.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Same transistor budget",
+      "x": 76.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "both pictures are the same height; only the allocation differs",
+      "x": 76.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 437.0,
+      "right": 65.0,
+      "bottom": 451.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A GPU core is weak on purpose",
+      "x": 76.0,
+      "y": 446.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "no branch prediction, tiny cache, and it stalls constantly - but there are thousands",
+      "x": 76.0,
+      "y": 460.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 467.0,
+      "right": 65.0,
+      "bottom": 481.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Which is why it needs the right problem",
+      "x": 76.0,
+      "y": 476.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ten thousand independent pieces of work, or most of the chip idles",
+      "x": 76.0,
+      "y": 490.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Proportions are illustrative of the design philosophy, not a floorplan of any particular chip.",
+      "x": 60.0,
+      "y": 486.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Two ways to spend a die",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the same silicon, different bets",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

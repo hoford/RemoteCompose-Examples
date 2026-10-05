@@ -1,0 +1,1026 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 420,
+  "profiles": 513,
+  "contentDescription": "A pendulum's potential and kinetic energy as stacked bars of constant total height through one swing"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 420
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 150.0,
+      "right": 158.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 150.0,
+      "right": 158.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 320.0,
+      "right": 158.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 114.0,
+      "y1": 116.0,
+      "x2": 91.66070640087422,
+      "y2": 136.02388477523925
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 91.66070640087422,
+      "cy": 136.02388477523925,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Released",
+      "x": 114.0,
+      "y": 340.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100%",
+      "x": 114.0,
+      "y": 239.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.0,
+      "top": 150.0,
+      "right": 260.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.0,
+      "top": 150.0,
+      "right": 260.0,
+      "bottom": 255.4
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.0,
+      "top": 255.4,
+      "right": 260.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 216.0,
+      "y1": 116.0,
+      "x2": 203.7671864082129,
+      "y2": 143.39266820936925
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 203.7671864082129,
+      "cy": 143.39266820936925,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Falling",
+      "x": 216.0,
+      "y": 340.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "62%",
+      "x": 216.0,
+      "y": 206.7,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "38%",
+      "x": 216.0,
+      "y": 291.7,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 274.0,
+      "top": 150.0,
+      "right": 362.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 274.0,
+      "top": 150.0,
+      "right": 362.0,
+      "bottom": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 274.0,
+      "top": 150.0,
+      "right": 362.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 318.0,
+      "y1": 116.0,
+      "x2": 318.0,
+      "y2": 146.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 318.0,
+      "cy": 146.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Lowest point",
+      "x": 318.0,
+      "y": 340.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100%",
+      "x": 318.0,
+      "y": 239.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 376.0,
+      "top": 150.0,
+      "right": 464.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 376.0,
+      "top": 150.0,
+      "right": 464.0,
+      "bottom": 255.4
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 376.0,
+      "top": 255.4,
+      "right": 464.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 420.0,
+      "y1": 116.0,
+      "x2": 432.2328135917871,
+      "y2": 143.39266820936925
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 432.2328135917871,
+      "cy": 143.39266820936925,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Rising",
+      "x": 420.0,
+      "y": 340.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "62%",
+      "x": 420.0,
+      "y": 206.7,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "38%",
+      "x": 420.0,
+      "y": 291.7,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 478.0,
+      "top": 150.0,
+      "right": 566.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 478.0,
+      "top": 150.0,
+      "right": 566.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 478.0,
+      "top": 320.0,
+      "right": 566.0,
+      "bottom": 320.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 522.0,
+      "y1": 116.0,
+      "x2": 544.3392935991258,
+      "y2": 136.02388477523925
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 544.3392935991258,
+      "cy": 136.02388477523925,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Far side",
+      "x": 522.0,
+      "y": 340.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "100%",
+      "x": 522.0,
+      "y": 239.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "height",
+      "x": 58.0,
+      "y": 180.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "speed",
+      "x": 58.0,
+      "y": 300.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Every bar is the same height. That is the whole of energy conservation.",
+      "x": 36.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- the pendulum does not run down here because nothing is drawn taking energy out; a real one",
+      "x": 36.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "loses it to air and to the pivot, and the bars would shrink.",
+      "x": 36.0,
+      "y": 408.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Two forms, one total",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a pendulum through one swing",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

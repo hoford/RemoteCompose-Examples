@@ -1,0 +1,1100 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 620,
+  "profiles": 513,
+  "contentDescription": "A coccus and a bacillus dividing in 3D on a shared clock, at true relative scale"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 620
+     }
+    },
+    {
+     "clearDepth3D": {}
+    },
+    {
+     "camera3D": {
+      "projection": "perspective",
+      "fovY": 0.7,
+      "aspect": 0.8387096774193549,
+      "near": 0.1,
+      "far": 60.0,
+      "eye": [
+       1.1,
+       0.8,
+       4.6
+      ],
+      "center": [
+       0.0,
+       0.25,
+       0.0
+      ],
+      "up": [
+       0,
+       1,
+       0
+      ]
+     }
+    },
+    {
+     "lights3D": {
+      "lights": [
+       {
+        "type": "directional",
+        "color": "#FFFFFFFF",
+        "dir": [
+         -0.4,
+         -0.5,
+         -0.76
+        ],
+        "intensity": 1.0
+       },
+       {
+        "type": "directional",
+        "color": "#FF5B8CEE",
+        "dir": [
+         0.6,
+         0.3,
+         0.45
+        ],
+        "intensity": 0.42
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "ph",
+      "value": "continuousSec() * 0.22 - floor(continuousSec() * 0.22)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "sep",
+      "value": "@ph * 0.62",
+      "commit": true
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 1,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "-0.62 + @sep * -0.62",
+      "y": 0.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 1,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "meshPrimitive3D": {
+      "id": 2,
+      "primitive": "sphere",
+      "segments": 20,
+      "radius": 0.26,
+      "center": [
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "-0.62 + @sep * 0.62",
+      "y": 0.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 2,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 3,
+      "verts": [
+       -0.17,
+       -0.17,
+       0.42,
+       0.17,
+       -0.17,
+       0.42,
+       0.17,
+       0.17,
+       0.42,
+       -0.17,
+       0.17,
+       0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       0.17,
+       0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       0.17,
+       -0.42,
+       0.17,
+       0.17,
+       0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       0.42,
+       -0.17,
+       0.17,
+       0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       0.42,
+       0.17,
+       0.17,
+       0.42,
+       0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       0.42,
+       -0.17,
+       -0.17,
+       0.42
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "0.72 + @sep * -0.62",
+      "y": 0.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 3,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "defineMesh3D": {
+      "id": 4,
+      "verts": [
+       -0.17,
+       -0.17,
+       0.42,
+       0.17,
+       -0.17,
+       0.42,
+       0.17,
+       0.17,
+       0.42,
+       -0.17,
+       0.17,
+       0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       0.17,
+       0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       0.17,
+       -0.42,
+       0.17,
+       0.17,
+       0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       0.42,
+       -0.17,
+       0.17,
+       0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       0.42,
+       0.17,
+       0.17,
+       0.42,
+       0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       0.17,
+       -0.42,
+       -0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       -0.42,
+       0.17,
+       -0.17,
+       0.42,
+       -0.17,
+       -0.17,
+       0.42
+      ],
+      "normals": [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0,
+       0,
+       -1,
+       0
+      ],
+      "uv": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "indices": [
+       0,
+       2,
+       1,
+       0,
+       3,
+       2,
+       4,
+       6,
+       5,
+       4,
+       7,
+       6,
+       8,
+       10,
+       9,
+       8,
+       11,
+       10,
+       12,
+       14,
+       13,
+       12,
+       15,
+       14,
+       16,
+       18,
+       17,
+       16,
+       19,
+       18,
+       20,
+       22,
+       21,
+       20,
+       23,
+       22
+      ]
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "identity"
+     }
+    },
+    {
+     "matrix3D": {
+      "op": "translate",
+      "x": "0.72 + @sep * 0.62",
+      "y": 0.25,
+      "z": 0.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawMesh3D": {
+      "mesh": 4,
+      "mode": "software-smooth"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Coccus",
+      "x": 140.0,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "about 1 micrometre across",
+      "x": 140.0,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Bacillus",
+      "x": 380.0,
+      "y": 400.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 by 3 micrometres",
+      "x": 380.0,
+      "y": 418.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 36.0,
+      "top": 453.0,
+      "right": 41.0,
+      "bottom": 467.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Doubling time",
+      "x": 52.0,
+      "y": 462.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "20 minutes for E. coli in a rich broth, hours in soil",
+      "x": 52.0,
+      "y": 477.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 36.0,
+      "top": 491.0,
+      "right": 41.0,
+      "bottom": 505.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "What limits it",
+      "x": 52.0,
+      "y": 500.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "not the genome - the ribosomes, which must be built first",
+      "x": 52.0,
+      "y": 515.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 36.0,
+      "top": 529.0,
+      "right": 41.0,
+      "bottom": 543.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Why shape matters",
+      "x": 52.0,
+      "y": 538.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a rod has more surface for the same volume, which helps when food is scarce",
+      "x": 52.0,
+      "y": 553.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Two shapes, one clock",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "both dividing, drawn at the same scale",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

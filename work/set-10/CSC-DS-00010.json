@@ -1,0 +1,1338 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 460,
+  "profiles": 513,
+  "contentDescription": "A hash table with chained collisions, showing the average and worst-case lookup together"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 460
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 54.0,
+      "top": 118.0,
+      "right": 98.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 76.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 54.0,
+      "top": 158.0,
+      "right": 98.0,
+      "bottom": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "date",
+      "x": 76.0,
+      "y": 175.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 104.0,
+      "top": 118.0,
+      "right": 148.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 126.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 154.0,
+      "top": 118.0,
+      "right": 198.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2",
+      "x": 176.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 204.0,
+      "top": 118.0,
+      "right": 248.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3",
+      "x": 226.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 204.0,
+      "top": 158.0,
+      "right": 248.0,
+      "bottom": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "apple",
+      "x": 226.0,
+      "y": 175.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 204.0,
+      "top": 190.0,
+      "right": 248.0,
+      "bottom": 216.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "cherry",
+      "x": 226.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 226.0,
+      "y1": 184.0,
+      "x2": 226.0,
+      "y2": 190.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 204.0,
+      "top": 222.0,
+      "right": 248.0,
+      "bottom": 248.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "fig",
+      "x": 226.0,
+      "y": 239.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 226.0,
+      "y1": 216.0,
+      "x2": 226.0,
+      "y2": 222.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 204.0,
+      "top": 254.0,
+      "right": 248.0,
+      "bottom": 280.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "lemon",
+      "x": 226.0,
+      "y": 271.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 226.0,
+      "y1": 248.0,
+      "x2": 226.0,
+      "y2": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 254.0,
+      "top": 118.0,
+      "right": 298.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4",
+      "x": 276.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 304.0,
+      "top": 118.0,
+      "right": 348.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 326.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 304.0,
+      "top": 158.0,
+      "right": 348.0,
+      "bottom": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "elder",
+      "x": 326.0,
+      "y": 175.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 354.0,
+      "top": 118.0,
+      "right": 398.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "6",
+      "x": 376.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 404.0,
+      "top": 118.0,
+      "right": 448.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "7",
+      "x": 426.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 404.0,
+      "top": 158.0,
+      "right": 448.0,
+      "bottom": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "banana",
+      "x": 426.0,
+      "y": 175.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 404.0,
+      "top": 190.0,
+      "right": 448.0,
+      "bottom": 216.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "grape",
+      "x": 426.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 426.0,
+      "y1": 184.0,
+      "x2": 426.0,
+      "y2": 190.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 454.0,
+      "top": 118.0,
+      "right": 498.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8",
+      "x": 476.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 504.0,
+      "top": 118.0,
+      "right": 548.0,
+      "bottom": 148.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "9",
+      "x": 526.0,
+      "y": 138.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 504.0,
+      "top": 158.0,
+      "right": 548.0,
+      "bottom": 184.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "kiwi",
+      "x": 526.0,
+      "y": 175.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "buckets",
+      "x": 54.0,
+      "y": 108.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Average lookup",
+      "x": 54.0,
+      "y": 330.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "O(1)",
+      "x": 200.0,
+      "y": 330.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "most buckets hold one key, so one probe finds it",
+      "x": 270.0,
+      "y": 330.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Worst lookup",
+      "x": 54.0,
+      "y": 354.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "O(n)",
+      "x": 200.0,
+      "y": 354.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bucket 3 holds four; a bad hash puts everything there",
+      "x": 270.0,
+      "y": 354.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Load factor here",
+      "x": 54.0,
+      "y": 378.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.9",
+      "x": 200.0,
+      "y": 378.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "nine keys in ten buckets - most tables grow at 0.75",
+      "x": 270.0,
+      "y": 378.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A hash table is fast on average and slow in the worst case, and the difference is entirely",
+      "x": 54.0,
+      "y": 414.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the hash function. This one sends four of nine keys to the same place.",
+      "x": 54.0,
+      "y": 432.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Nine keys, ten buckets",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the collisions are the interesting part",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

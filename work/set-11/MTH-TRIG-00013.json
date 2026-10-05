@@ -1,0 +1,1336 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 440,
+  "profiles": 513,
+  "contentDescription": "A rotating radius on the unit circle tied across to the sine curve it traces"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 440
+     }
+    },
+    {
+     "variable": {
+      "name": "ang",
+      "value": "continuousSec() * 0.7 - floor(continuousSec() * 0.7 / 6.2832) * 6.2832",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 150.0,
+      "cy": 260.0,
+      "radius": 92.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 150.0,
+      "cy": 260.0,
+      "radius": 92.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 58.0,
+      "y1": 260.0,
+      "x2": 242.0,
+      "y2": 260.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 150.0,
+      "y1": 168.0,
+      "x2": 150.0,
+      "y2": 352.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 280.0,
+      "top": 168.0,
+      "right": 580.0,
+      "bottom": 352.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 280.0,
+      "y1": 260.0,
+      "x2": 580.0,
+      "y2": 260.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "sine",
+      "x": 280.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 282.5,
+      "y": 255.18509202564917
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 285.0,
+      "y": 250.3833813793759
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 287.5,
+      "y": 245.60802921629875
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 290.0,
+      "y": 240.87212444476614
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 292.5,
+      "y": 236.1886478505681
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 295.0,
+      "y": 231.57043651750485
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 297.5,
+      "y": 227.03014864183237
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 300.0,
+      "y": 222.58022883702637
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 302.5,
+      "y": 218.2328740239617
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 305.0,
+      "y": 214.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 307.5,
+      "y": 209.89320877861752
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 310.0,
+      "y": 205.92375678909247
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 312.5,
+      "y": 202.10252402341496
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 315.0,
+      "y": 198.43998421498503
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 317.5,
+      "y": 194.9461761308376
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 320.0,
+      "y": 191.63067605607972
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 322.5,
+      "y": 188.5025715459587
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 325.0,
+      "y": 185.57043651750485
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 327.5,
+      "y": 182.84230774902102
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 330.0,
+      "y": 180.32566285183165
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 332.5,
+      "y": 178.02739977467016
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 335.0,
+      "y": 175.95381789688074
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 337.5,
+      "y": 174.11060076225743
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 340.0,
+      "y": 172.50280050084586
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 342.5,
+      "y": 171.1348239814057
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 345.0,
+      "y": 170.01042073248988
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 347.5,
+      "y": 169.13267266524733
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 350.0,
+      "y": 168.50398562611886
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 352.5,
+      "y": 168.12608280257922
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 355.0,
+      "y": 168.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 357.5,
+      "y": 168.12608280257922
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 360.0,
+      "y": 168.50398562611883
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 362.5,
+      "y": 169.13267266524736
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 365.0,
+      "y": 170.01042073248988
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 367.5,
+      "y": 171.1348239814057
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 370.0,
+      "y": 172.50280050084586
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 372.5,
+      "y": 174.11060076225743
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 375.0,
+      "y": 175.9538178968807
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 377.5,
+      "y": 178.02739977467016
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 380.0,
+      "y": 180.32566285183162
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 382.5,
+      "y": 182.842307749021
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 385.0,
+      "y": 185.57043651750485
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 387.5,
+      "y": 188.5025715459587
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 390.0,
+      "y": 191.63067605607972
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 392.5,
+      "y": 194.9461761308376
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 395.0,
+      "y": 198.43998421498506
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 397.5,
+      "y": 202.10252402341496
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 400.0,
+      "y": 205.92375678909247
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 402.5,
+      "y": 209.8932087786175
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 405.0,
+      "y": 214.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 407.5,
+      "y": 218.2328740239617
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 410.0,
+      "y": 222.5802288370264
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 412.5,
+      "y": 227.03014864183234
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 415.0,
+      "y": 231.57043651750485
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 417.5,
+      "y": 236.18864785056806
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 420.0,
+      "y": 240.87212444476614
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 422.5,
+      "y": 245.60802921629875
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 425.0,
+      "y": 250.38338137937586
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 427.5,
+      "y": 255.18509202564914
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 430.0,
+      "y": 260.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 432.5,
+      "y": 264.81490797435083
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 435.0,
+      "y": 269.61661862062414
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 437.5,
+      "y": 274.39197078370125
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 440.0,
+      "y": 279.12787555523386
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 442.5,
+      "y": 283.81135214943185
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 445.0,
+      "y": 288.4295634824952
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 447.5,
+      "y": 292.96985135816766
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 450.0,
+      "y": 297.4197711629736
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 452.5,
+      "y": 301.76712597603824
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 455.0,
+      "y": 306.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 457.5,
+      "y": 310.1067912213825
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 460.0,
+      "y": 314.07624321090753
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 462.5,
+      "y": 317.89747597658504
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 465.0,
+      "y": 321.56001578501497
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 467.5,
+      "y": 325.0538238691624
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 470.0,
+      "y": 328.3693239439202
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 472.5,
+      "y": 331.49742845404137
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 475.0,
+      "y": 334.42956348249515
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 477.5,
+      "y": 337.15769225097904
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 480.0,
+      "y": 339.6743371481683
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 482.5,
+      "y": 341.97260022532987
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 485.0,
+      "y": 344.0461821031193
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 487.5,
+      "y": 345.8893992377425
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 490.0,
+      "y": 347.49719949915414
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 492.5,
+      "y": 348.8651760185943
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 495.0,
+      "y": 349.9895792675101
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 497.5,
+      "y": 350.86732733475264
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 500.0,
+      "y": 351.49601437388117
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 502.5,
+      "y": 351.87391719742084
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 505.0,
+      "y": 352.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 507.5,
+      "y": 351.87391719742084
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 510.0,
+      "y": 351.49601437388117
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 512.5,
+      "y": 350.86732733475264
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 515.0,
+      "y": 349.9895792675101
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 517.5,
+      "y": 348.8651760185943
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 520.0,
+      "y": 347.49719949915414
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 522.5,
+      "y": 345.88939923774257
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 525.0,
+      "y": 344.0461821031193
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 527.5,
+      "y": 341.97260022532987
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 530.0,
+      "y": 339.6743371481683
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 532.5,
+      "y": 337.15769225097904
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 535.0,
+      "y": 334.42956348249515
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 537.5,
+      "y": 331.49742845404137
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 540.0,
+      "y": 328.3693239439202
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 542.5,
+      "y": 325.0538238691624
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 545.0,
+      "y": 321.560015785015
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 547.5,
+      "y": 317.89747597658504
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 550.0,
+      "y": 314.07624321090753
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 552.5,
+      "y": 310.1067912213825
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 555.0,
+      "y": 306.00000000000006
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 557.5,
+      "y": 301.7671259760383
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 560.0,
+      "y": 297.41977116297363
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 562.5,
+      "y": 292.96985135816766
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 565.0,
+      "y": 288.4295634824952
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 567.5,
+      "y": 283.8113521494319
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 570.0,
+      "y": 279.1278755552339
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 572.5,
+      "y": 274.39197078370125
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 575.0,
+      "y": 269.6166186206242
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 577.5,
+      "y": 264.8149079743508
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "sine",
+      "x": 580.0,
+      "y": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.4
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "sine"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 150.0,
+      "y1": 260.0,
+      "x2": "150.0 + cos(@ang) * 92.0",
+      "y2": "260.0 - sin(@ang) * 92.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "150.0 + cos(@ang) * 92.0",
+      "y1": "260.0 - sin(@ang) * 92.0",
+      "x2": "280.0 + @ang / 6.2832 * 300.0",
+      "y2": "260.0 - sin(@ang) * 92.0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB5651D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "280.0 + @ang / 6.2832 * 300.0",
+      "cy": "260.0 - sin(@ang) * 92.0",
+      "radius": 4.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sin",
+      "x": 160.0,
+      "y": 158.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 280.0,
+      "y": 372.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pi/2",
+      "x": 355.0,
+      "y": 372.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pi",
+      "x": 430.0,
+      "y": 372.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3pi/2",
+      "x": 505.0,
+      "y": 372.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2pi",
+      "x": 580.0,
+      "y": 372.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The wave is the circle's height, plotted against how far round you have gone.",
+      "x": 60.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- not an analogy, a construction. Cosine is the same picture read horizontally instead.",
+      "x": 60.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Unrolling a circle",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the radius turns, the wave is its shadow",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

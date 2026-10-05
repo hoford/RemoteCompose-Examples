@@ -1,0 +1,2223 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 480,
+  "profiles": 513,
+  "contentDescription": "Six instructions advancing through a five-stage CPU pipeline, one stage per clock"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 480
+     }
+    },
+    {
+     "variable": {
+      "name": "beat",
+      "value": "continuousSec() * 0.9 - floor(continuousSec() * 0.9 / 11.0) * 11.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "clk",
+      "value": "clamp(0.0, 9.0, floor(@beat))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "fetch",
+      "x": 64.0,
+      "y": 187.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "decode",
+      "x": 64.0,
+      "y": 223.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "execute",
+      "x": 64.0,
+      "y": 259.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "memory",
+      "x": 64.0,
+      "y": 295.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "write",
+      "x": 64.0,
+      "y": 331.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 102.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 154.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2",
+      "x": 206.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3",
+      "x": 258.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4",
+      "x": 310.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 362.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "6",
+      "x": 414.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "7",
+      "x": 466.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8",
+      "x": 518.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "9",
+      "x": 570.0,
+      "y": 155.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 78.0,
+         "top": 167.0,
+         "right": 124.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i0",
+         "x": 102.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 130.0,
+         "top": 203.0,
+         "right": 176.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i0",
+         "x": 154.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 182.0,
+         "top": 239.0,
+         "right": 228.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i0",
+         "x": 206.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 234.0,
+         "top": 275.0,
+         "right": 280.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i0",
+         "x": 258.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 286.0,
+         "top": 311.0,
+         "right": 332.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i0",
+         "x": 310.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 130.0,
+         "top": 167.0,
+         "right": 176.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i1",
+         "x": 154.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 182.0,
+         "top": 203.0,
+         "right": 228.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i1",
+         "x": 206.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 234.0,
+         "top": 239.0,
+         "right": 280.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i1",
+         "x": 258.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 286.0,
+         "top": 275.0,
+         "right": 332.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i1",
+         "x": 310.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 338.0,
+         "top": 311.0,
+         "right": 384.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i1",
+         "x": 362.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 182.0,
+         "top": 167.0,
+         "right": 228.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i2",
+         "x": 206.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 234.0,
+         "top": 203.0,
+         "right": 280.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i2",
+         "x": 258.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 286.0,
+         "top": 239.0,
+         "right": 332.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i2",
+         "x": 310.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 338.0,
+         "top": 275.0,
+         "right": 384.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i2",
+         "x": 362.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 390.0,
+         "top": 311.0,
+         "right": 436.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i2",
+         "x": 414.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 234.0,
+         "top": 167.0,
+         "right": 280.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i3",
+         "x": 258.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 286.0,
+         "top": 203.0,
+         "right": 332.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i3",
+         "x": 310.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 338.0,
+         "top": 239.0,
+         "right": 384.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i3",
+         "x": 362.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 390.0,
+         "top": 275.0,
+         "right": 436.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i3",
+         "x": 414.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 442.0,
+         "top": 311.0,
+         "right": 488.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i3",
+         "x": 466.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 286.0,
+         "top": 167.0,
+         "right": 332.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i4",
+         "x": 310.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 338.0,
+         "top": 203.0,
+         "right": 384.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i4",
+         "x": 362.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 390.0,
+         "top": 239.0,
+         "right": 436.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i4",
+         "x": 414.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 442.0,
+         "top": 275.0,
+         "right": 488.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i4",
+         "x": 466.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 8.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 494.0,
+         "top": 311.0,
+         "right": 540.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i4",
+         "x": 518.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5BE8B5"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 338.0,
+         "top": 167.0,
+         "right": 384.0,
+         "bottom": 197.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i5",
+         "x": 362.0,
+         "y": 186.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC77DFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 390.0,
+         "top": 203.0,
+         "right": 436.0,
+         "bottom": 233.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i5",
+         "x": 414.0,
+         "y": 222.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFC857"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 442.0,
+         "top": 239.0,
+         "right": 488.0,
+         "bottom": 269.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i5",
+         "x": 466.0,
+         "y": 258.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 8.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFF6B9D"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 494.0,
+         "top": 275.0,
+         "right": 540.0,
+         "bottom": 305.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i5",
+         "x": 518.0,
+         "y": 294.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@clk",
+      "v2": 9.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF0E4F7"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 546.0,
+         "top": 311.0,
+         "right": 592.0,
+         "bottom": 341.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF1A0F20"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 9.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "i5",
+         "x": 570.0,
+         "y": 330.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": "76.0 + @clk * 52.0 + 52.0",
+      "y1": 161.0,
+      "x2": "76.0 + @clk * 52.0 + 52.0",
+      "y2": 349.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Each instruction takes five cycles. One finishes every cycle anyway.",
+      "x": 60.0,
+      "y": 390.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- the empty triangle at the start is the pipeline filling, and the one at the end is it draining.",
+      "x": 60.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A branch that guesses wrong throws away everything in flight and pays that fill cost again,",
+      "x": 60.0,
+      "y": 426.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "which is why branch prediction is worth so much silicon.",
+      "x": 60.0,
+      "y": 442.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A five-stage pipeline",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one stage per beat",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

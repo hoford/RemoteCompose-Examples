@@ -1,0 +1,955 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 500,
+  "profiles": 513,
+  "contentDescription": "Blood pressure through the circulation with the pulse running and the arteriolar drop marked"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 500
+     }
+    },
+    {
+     "variable": {
+      "name": "beat",
+      "value": "0.5 + 0.5 * sin(continuousSec() * 7.3)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 150.0,
+      "right": 540.0,
+      "bottom": 340.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 82.0,
+      "top": 164.6153846153846,
+      "right": 143.71428571428572,
+      "bottom": 193.84615384615384
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Aorta",
+      "x": 112.85714285714286,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "120",
+      "x": 112.85714285714286,
+      "y": 159.6153846153846,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 147.71428571428572,
+      "top": 171.92307692307693,
+      "right": 209.42857142857142,
+      "bottom": 201.15384615384616
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Arteries",
+      "x": 178.57142857142856,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "115",
+      "x": 178.57142857142856,
+      "y": 166.92307692307693,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 213.42857142857142,
+      "top": 237.69230769230768,
+      "right": 275.1428571428571,
+      "bottom": 274.2307692307692
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Arterioles",
+      "x": 244.28571428571428,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "70",
+      "x": 244.28571428571428,
+      "y": 232.69230769230768,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 279.1428571428571,
+      "top": 293.2307692307692,
+      "right": 340.85714285714283,
+      "bottom": 310.7692307692308
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Capillaries",
+      "x": 310.0,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "32",
+      "x": 310.0,
+      "y": 288.2307692307692,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.85714285714283,
+      "top": 316.61538461538464,
+      "right": 406.57142857142856,
+      "bottom": 322.46153846153845
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Venules",
+      "x": 375.71428571428567,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "16",
+      "x": 375.71428571428567,
+      "y": 311.61538461538464,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 410.57142857142856,
+      "top": 326.84615384615387,
+      "right": 472.2857142857143,
+      "bottom": 331.2307692307692
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Veins",
+      "x": 441.42857142857144,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "9",
+      "x": 441.42857142857144,
+      "y": 321.84615384615387,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 476.2857142857143,
+      "top": 332.6923076923077,
+      "right": 538.0,
+      "bottom": 335.61538461538464
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Vena cava",
+      "x": 507.1428571428571,
+      "y": 358.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 507.1428571428571,
+      "y": 327.6923076923077,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 112.85714285714286,
+      "cy": "340.0 - (100.0 + @beat * 20.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 178.57142857142856,
+      "cy": "340.0 - (95.0 + @beat * 20.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 244.28571428571428,
+      "cy": "340.0 - (45.0 + @beat * 25.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 310.0,
+      "cy": "340.0 - (20.0 + @beat * 12.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 375.7142857142857,
+      "cy": "340.0 - (12.0 + @beat * 4.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 441.42857142857144,
+      "cy": "340.0 - (6.0 + @beat * 3.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 507.14285714285717,
+      "cy": "340.0 - (3.0 + @beat * 2.0) / 130.0 * 190.0",
+      "radius": 3.4
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "pressure, mmHg",
+      "x": 80.0,
+      "y": 138.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 211.42857142857142,
+      "y1": 160.0,
+      "x2": 277.1428571428571,
+      "y2": 160.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "most of the pressure is lost here",
+      "x": 244.28571428571428,
+      "y": 154.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 383.0,
+      "right": 85.0,
+      "bottom": 397.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Arterioles are the taps",
+      "x": 96.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "they carry most of the resistance, so dilating or constricting them sets blood pressure",
+      "x": 96.0,
+      "y": 407.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 417.0,
+      "right": 85.0,
+      "bottom": 431.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The pulse dies at the capillaries",
+      "x": 96.0,
+      "y": 426.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "which is why they are not torn apart sixty times a minute",
+      "x": 96.0,
+      "y": 441.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 451.0,
+      "right": 85.0,
+      "bottom": 465.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Veins are a reservoir",
+      "x": 96.0,
+      "y": 460.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "about two thirds of the blood sits in them at any moment, at very low pressure",
+      "x": 96.0,
+      "y": 475.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Pressure round the circuit",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "beating, from aorta to vena cava",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

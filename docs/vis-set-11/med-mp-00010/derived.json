@@ -1,0 +1,35 @@
+{
+  "id": "vis-set-11/med-mp-00010",
+  "sha256": "9d5a5da14108280090e07995af105fc41ee001746b10daa946372f4a3ada09b5",
+  "bytes": 2668,
+  "ops": 116,
+  "distinctOps": 13,
+  "width": 600,
+  "height": 500,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 41,
+    "DRAW_RECT": 17,
+    "DATA_TEXT": 22,
+    "DRAW_TEXT_ANCHOR": 24,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

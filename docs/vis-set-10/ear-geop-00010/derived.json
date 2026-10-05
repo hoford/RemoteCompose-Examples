@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-10/ear-geop-00010",
+  "sha256": "5efe24dfcddf34f72898ee34439fdddb7eb5e465399e6f72b6d81ac8468ec7d0",
+  "bytes": 3557,
+  "ops": 168,
+  "distinctOps": 14,
+  "width": 580,
+  "height": 540,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 29,
+    "DRAW_RECT": 6,
+    "DATA_TEXT": 16,
+    "DRAW_TEXT_ANCHOR": 16,
+    "DRAW_LINE": 89,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

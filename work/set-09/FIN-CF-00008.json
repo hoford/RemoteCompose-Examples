@@ -1,0 +1,486 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 580,
+  "profiles": 513,
+  "contentDescription": "Cash arriving as particles and being claimed by debt at a fixed level and equity with all the variation"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0B1410"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 540,
+      "bottom": 580
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 130.0,
+      "right": 500.0,
+      "bottom": 290.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "cash coming in, quarter by quarter",
+      "x": 270.0,
+      "y": 150.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "cash",
+      "count": 90,
+      "variables": [
+       "cx",
+       "cy",
+       "sp",
+       "ph"
+      ],
+      "initialValues": [
+       "60 + rand() * 420",
+       "140 + rand() * 130",
+       "0.5 + rand() * 1.4",
+       "rand() * 6.28"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@cash",
+      "equations": [
+       "cx",
+       "140 + ((cy - 140 + sp) % 130)",
+       "sp",
+       "ph"
+      ],
+      "commands": [
+       {
+        "drawCircle": {
+         "cx": "@cx",
+         "cy": "@cy",
+         "radius": 2.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "variable": {
+      "name": "swing",
+      "value": "0.5 + 0.42 * sin(continuousSec() * 0.5)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 320.0,
+      "x2": 56.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 256.0,
+      "y1": 320.0,
+      "x2": 256.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 440.0,
+      "x2": 256.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 59.0,
+      "top": 378.0,
+      "right": 253.0,
+      "bottom": 438.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Debt",
+      "x": 156.0,
+      "y": 464.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "paid first, and the same amount whatever happens",
+      "x": 156.0,
+      "y": 482.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 292.0,
+      "y1": 320.0,
+      "x2": 292.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 492.0,
+      "y1": 320.0,
+      "x2": 492.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 292.0,
+      "y1": 440.0,
+      "x2": 492.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 295.0,
+      "top": "438.0 - 112.0 * @swing",
+      "right": 489.0,
+      "bottom": 438.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Equity",
+      "x": 392.0,
+      "y": 464.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "paid last, and gets every bit of the variation",
+      "x": 392.0,
+      "y": 482.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Leverage does not create value. It moves the variation off the debt and onto the equity,",
+      "x": 40.0,
+      "y": 518.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "which is why a leveraged firm's shares swing more than its business does - and why, in a bad",
+      "x": 40.0,
+      "y": 536.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "quarter, the equity bucket is the one that empties.",
+      "x": 40.0,
+      "y": 552.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Who gets paid first",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the same stream, two claims on it",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

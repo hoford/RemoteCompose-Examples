@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-11/geo-pg-00004",
+  "sha256": "619ee6322cdc3a8e2af8af77b4929e03619a7bd07235f6cb462bc8da67881b6b",
+  "bytes": 2921,
+  "ops": 125,
+  "distinctOps": 15,
+  "width": 600,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 44,
+    "DRAW_RECT": 2,
+    "DRAW_LINE": 9,
+    "DATA_TEXT": 25,
+    "DRAW_TEXT_ANCHOR": 25,
+    "DRAW_CIRCLE": 8,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

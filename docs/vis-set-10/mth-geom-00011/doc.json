@@ -1,0 +1,523 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "A cloud of particles under a repeated linear map, revealing the stretching and squashing eigendirections"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 560
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 140.0,
+      "right": 500.0,
+      "bottom": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 270.0,
+      "x2": 500.0,
+      "y2": 270.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 280.0,
+      "y1": 140.0,
+      "x2": 280.0,
+      "y2": 400.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 149.82712304835252,
+      "y1": 344.5320206765605,
+      "x2": 410.1728769516475,
+      "y2": 195.4679793234395
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "stretched, x1.45",
+      "x": 381.53484402228503,
+      "y": 205.8650238722828,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 221.47724735376545,
+      "y1": 131.88741033957965,
+      "x2": 338.52275264623455,
+      "y2": 408.1125896604203
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "squashed, x0.75",
+      "x": 325.64774706406297,
+      "y": 371.72781993512785,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "cloud",
+      "count": 150,
+      "variables": [
+       "qx",
+       "qy",
+       "ph",
+       "sp"
+      ],
+      "initialValues": [
+       "-1 + rand() * 2",
+       "-1 + rand() * 2",
+       "rand() * 6.28",
+       "0.3 + rand() * 0.6"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@cloud",
+      "equations": [
+       "qx * 1.004 + qy * 0.002",
+       "qy * 0.998 + qx * 0.001",
+       "ph",
+       "sp"
+      ],
+      "commands": [
+       {
+        "drawCircle": {
+         "cx": "280.0 + @qx * 150.0",
+         "cy": "270.0 + @qy * 110.0",
+         "radius": 2.2
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a square cloud of points, mapped again and again",
+      "x": 68.0,
+      "y": 158.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 427.0,
+      "right": 65.0,
+      "bottom": 441.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The green line is an eigenvector",
+      "x": 76.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "points on it stay on it, and get further from the origin",
+      "x": 76.0,
+      "y": 451.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 465.0,
+      "right": 65.0,
+      "bottom": 479.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The red line is the other one",
+      "x": 76.0,
+      "y": 474.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "points on it stay on it, and get closer",
+      "x": 76.0,
+      "y": 489.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 503.0,
+      "right": 65.0,
+      "bottom": 517.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Everything else drifts green",
+      "x": 76.0,
+      "y": 512.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "repeat the map enough and the whole cloud lies along the stretching direction",
+      "x": 76.0,
+      "y": 527.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "What a matrix does to a cloud",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the directions that survive are the eigenvectors",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-12/ear-mete-00012",
+  "sha256": "d5420e5c791721c6eea1f41f3462bc41de5cfd2782d08d652b822d81be36f565",
+  "bytes": 3762,
+  "ops": 163,
+  "distinctOps": 15,
+  "width": 520,
+  "height": 640,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 57,
+    "DRAW_RECT": 13,
+    "DRAW_LINE": 7,
+    "DATA_TEXT": 34,
+    "DRAW_TEXT_ANCHOR": 36,
+    "DRAW_OVAL": 4,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawOval",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

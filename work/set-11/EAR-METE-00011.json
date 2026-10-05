@@ -1,0 +1,1750 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 580,
+  "profiles": 513,
+  "contentDescription": "The three-cell atmospheric circulation by latitude, draggable, with the desert bands explained"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 580
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 290.0,
+      "min": 60.0,
+      "max": 520.0,
+      "expression": "touchX()"
+     }
+    },
+    {
+     "variable": {
+      "name": "lat",
+      "value": "(@drag - 60.0) / 460.0 * 180.0 - 90.0",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 334.3333333333333,
+      "right": 96.0,
+      "bottom": 369.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 297.6666666666667,
+      "right": 96.0,
+      "bottom": 332.3333333333333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 261.0,
+      "right": 96.0,
+      "bottom": 295.6666666666667
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 224.33333333333334,
+      "right": 96.0,
+      "bottom": 259.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 187.66666666666666,
+      "right": 96.0,
+      "bottom": 222.33333333333334
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 151.0,
+      "right": 96.0,
+      "bottom": 185.66666666666666
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 244.0,
+      "x2": 130.0,
+      "y2": 276.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 276.0,
+      "x2": 126.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 276.0,
+      "x2": 134.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 244.0,
+      "x2": 184.0,
+      "y2": 276.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 276.0,
+      "x2": 180.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 276.0,
+      "x2": 188.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 244.0,
+      "x2": 238.0,
+      "y2": 276.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 276.0,
+      "x2": 234.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 276.0,
+      "x2": 242.0,
+      "y2": 271.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rising",
+      "x": 300.0,
+      "y": 264.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 239.33333333333334,
+      "x2": 130.0,
+      "y2": 207.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 207.33333333333334,
+      "x2": 126.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 207.33333333333334,
+      "x2": 134.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 239.33333333333334,
+      "x2": 184.0,
+      "y2": 207.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 207.33333333333334,
+      "x2": 180.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 207.33333333333334,
+      "x2": 188.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 239.33333333333334,
+      "x2": 238.0,
+      "y2": 207.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 207.33333333333334,
+      "x2": 234.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 207.33333333333334,
+      "x2": 242.0,
+      "y2": 212.33333333333334
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sinking",
+      "x": 300.0,
+      "y": 227.33333333333334,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 312.6666666666667,
+      "x2": 130.0,
+      "y2": 280.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 280.6666666666667,
+      "x2": 126.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 280.6666666666667,
+      "x2": 134.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 312.6666666666667,
+      "x2": 184.0,
+      "y2": 280.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 280.6666666666667,
+      "x2": 180.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 280.6666666666667,
+      "x2": 188.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 312.6666666666667,
+      "x2": 238.0,
+      "y2": 280.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 280.6666666666667,
+      "x2": 234.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 280.6666666666667,
+      "x2": 242.0,
+      "y2": 285.6666666666667
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8A33D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sinking",
+      "x": 300.0,
+      "y": 300.6666666666667,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 170.66666666666666,
+      "x2": 130.0,
+      "y2": 202.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 202.66666666666666,
+      "x2": 126.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 202.66666666666666,
+      "x2": 134.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 170.66666666666666,
+      "x2": 184.0,
+      "y2": 202.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 202.66666666666666,
+      "x2": 180.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 202.66666666666666,
+      "x2": 188.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 170.66666666666666,
+      "x2": 238.0,
+      "y2": 202.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 202.66666666666666,
+      "x2": 234.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 202.66666666666666,
+      "x2": 242.0,
+      "y2": 197.66666666666666
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rising",
+      "x": 300.0,
+      "y": 190.66666666666666,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 317.3333333333333,
+      "x2": 130.0,
+      "y2": 349.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 349.3333333333333,
+      "x2": 126.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 349.3333333333333,
+      "x2": 134.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 317.3333333333333,
+      "x2": 184.0,
+      "y2": 349.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 349.3333333333333,
+      "x2": 180.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 349.3333333333333,
+      "x2": 188.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 317.3333333333333,
+      "x2": 238.0,
+      "y2": 349.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 349.3333333333333,
+      "x2": 234.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 349.3333333333333,
+      "x2": 242.0,
+      "y2": 344.3333333333333
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rising",
+      "x": 300.0,
+      "y": 337.3333333333333,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 166.0,
+      "x2": 130.0,
+      "y2": 134.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 134.0,
+      "x2": 126.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 134.0,
+      "x2": 134.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 166.0,
+      "x2": 184.0,
+      "y2": 134.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 134.0,
+      "x2": 180.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 134.0,
+      "x2": 188.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 166.0,
+      "x2": 238.0,
+      "y2": 134.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 134.0,
+      "x2": 234.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 134.0,
+      "x2": 242.0,
+      "y2": 139.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sinking",
+      "x": 300.0,
+      "y": 154.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 386.0,
+      "x2": 130.0,
+      "y2": 354.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 354.0,
+      "x2": 126.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 130.0,
+      "y1": 354.0,
+      "x2": 134.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 386.0,
+      "x2": 184.0,
+      "y2": 354.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 354.0,
+      "x2": 180.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 184.0,
+      "y1": 354.0,
+      "x2": 188.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 386.0,
+      "x2": 238.0,
+      "y2": 354.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 354.0,
+      "x2": 234.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 238.0,
+      "y1": 354.0,
+      "x2": 242.0,
+      "y2": 359.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sinking",
+      "x": 300.0,
+      "y": 374.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "north pole",
+      "x": 514.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "30 N - deserts",
+      "x": 514.0,
+      "y": 227.33333333333334,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "equator - rainforest",
+      "x": 514.0,
+      "y": 264.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "30 S - deserts",
+      "x": 514.0,
+      "y": 300.6666666666667,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "south pole",
+      "x": 514.0,
+      "y": 374.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 64.0,
+      "y1": "370.0 - (@lat + 90.0) / 180.0 * 220.0",
+      "x2": 526.0,
+      "y2": "370.0 - (@lat + 90.0) / 180.0 * 220.0"
+     }
+    },
+    {
+     "variable": {
+      "name": "latlbl",
+      "commit": true,
+      "value": {
+       "type": "textFromFloat",
+       "value": "@lat",
+       "whole": 3,
+       "decimal": 0
+      }
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "@latlbl",
+      "x": 70.0,
+      "y": 414.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "degrees latitude",
+      "x": 128.0,
+      "y": 414.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": -90.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": -60.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFE8564F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Polar cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "cold air sinking, easterly surface winds",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": -60.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": -30.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF5B8CEE"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Ferrel cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "westerlies; the storm track",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": -30.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": 0.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF4FD6C9"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Hadley cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "trade winds blowing toward the equator",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": 0.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": 30.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF4FD6C9"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Hadley cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "trade winds blowing toward the equator",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": 30.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": 60.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF5B8CEE"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Ferrel cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "westerlies; the storm track",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@lat",
+      "v2": 60.0,
+      "commands": [
+       {
+        "conditionalOperations": {
+         "condition": "lt",
+         "v1": "@lat",
+         "v2": 90.0,
+         "commands": [
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FFE8564F"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 13.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "Polar cell",
+            "x": 70.0,
+            "y": 446.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "color": "#FF8A99BC"
+             },
+             {
+              "style": "fill"
+             },
+             {
+              "textSize": 10.0
+             }
+            ]
+           }
+          },
+          {
+           "drawTextAnchored": {
+            "text": "cold air sinking, easterly surface winds",
+            "x": 70.0,
+            "y": 466.0,
+            "panX": -1.0,
+            "panY": 0.0,
+            "flags": 0
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Air rises at the equator, dries out, and comes back down at thirty degrees.",
+      "x": 70.0,
+      "y": 506.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- that descending dry air is the Sahara, the Arabian, the Kalahari and the Australian interior,",
+      "x": 70.0,
+      "y": 524.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "all at the same latitude on both sides, for the same reason.",
+      "x": 70.0,
+      "y": 540.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to move north and south",
+      "x": 70.0,
+      "y": 564.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Three cells per hemisphere",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag through the latitudes",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,556 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Oxygen and carbon dioxide crossing the alveolar membrane as particles, with the lung's dimensions"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0B1410"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 560
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 140.0,
+      "right": 520.0,
+      "bottom": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 256.0,
+      "right": 520.0,
+      "bottom": 264.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "alveolar wall, half a micrometre thick",
+      "x": 280.0,
+      "y": 252.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "air",
+      "x": 60.0,
+      "y": 170.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "blood",
+      "x": 60.0,
+      "y": 362.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "ox",
+      "count": 60,
+      "variables": [
+       "gx",
+       "gy",
+       "gv",
+       "gp"
+      ],
+      "initialValues": [
+       "60 + rand() * 440",
+       "150.0 + rand() * 100.0",
+       "0.5 + rand() * 1.3",
+       "rand() * 6.28"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@ox",
+      "equations": [
+       "gx + sin(gp) * 0.4",
+       "150.0 + ((gy - 150.0 + gv * 1) % 100)",
+       "gv",
+       "gp + 0.04"
+      ],
+      "commands": [
+       {
+        "drawCircle": {
+         "cx": "@gx",
+         "cy": "@gy",
+         "radius": 2.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "co",
+      "count": 60,
+      "variables": [
+       "gx",
+       "gy",
+       "gv",
+       "gp"
+      ],
+      "initialValues": [
+       "60 + rand() * 440",
+       "270.0 + rand() * 100.0",
+       "0.5 + rand() * 1.3",
+       "rand() * 6.28"
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "@co",
+      "equations": [
+       "gx + sin(gp) * 0.4",
+       "270.0 + ((gy - 270.0 + gv * -1) % 100)",
+       "gv",
+       "gp + 0.04"
+      ],
+      "commands": [
+       {
+        "drawCircle": {
+         "cx": "@gx",
+         "cy": "@gy",
+         "radius": 2.4
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FC3D6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "70 m\u00b2",
+      "x": 40.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "surface area for gas exchange - about a tennis court",
+      "x": 170.0,
+      "y": 410.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.5 \u00b5m",
+      "x": 40.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the distance a molecule has to cross",
+      "x": 170.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "480 million",
+      "x": 40.0,
+      "y": 462.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "alveoli, in a volume of about six litres",
+      "x": 170.0,
+      "y": 462.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0.25 s",
+      "x": 40.0,
+      "y": 488.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the time a red cell spends in a capillary; the transfer finishes in a third of that",
+      "x": 170.0,
+      "y": 488.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The lung's whole design problem is packing a tennis court into a chest.",
+      "x": 40.0,
+      "y": 524.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- emphysema destroys the walls between alveoli, which loses area without losing volume.",
+      "x": 40.0,
+      "y": 542.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Across the membrane",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "oxygen in, carbon dioxide out",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

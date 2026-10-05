@@ -1,0 +1,1968 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 600,
+  "height": 450,
+  "profiles": 513,
+  "contentDescription": "A four-bit ripple-carry adder drawn as bit cells that flash as each stage reads its inputs and writes its sum"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A1310"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A1310"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 600,
+      "bottom": 450
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "continuousSec() * 0.8 - floor(continuousSec() * 0.8 / 5.0) * 5.0",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "ph",
+      "value": "floor(@t * 2.0)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF28201C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 56.0,
+      "top": 154.0,
+      "right": 160.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bit 3",
+      "x": 58.0,
+      "y": 146.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 162.0,
+      "right": 136.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 108.0,
+      "y": 179.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 77.0,
+         "top": 159.0,
+         "right": 139.0,
+         "bottom": 189.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 190.0,
+      "right": 136.0,
+      "bottom": 214.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 108.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 77.0,
+         "top": 187.0,
+         "right": 139.0,
+         "bottom": 217.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 80.0,
+      "top": 218.0,
+      "right": 136.0,
+      "bottom": 242.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF2CC8F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 15.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0",
+         "x": 108.0,
+         "y": 235.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 77.0,
+         "top": 215.0,
+         "right": 139.0,
+         "bottom": 245.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF28201C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 172.0,
+      "top": 154.0,
+      "right": 276.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bit 2",
+      "x": 174.0,
+      "y": 146.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 196.0,
+      "top": 162.0,
+      "right": 252.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0",
+      "x": 224.0,
+      "y": 179.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 193.0,
+         "top": 159.0,
+         "right": 255.0,
+         "bottom": 189.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 196.0,
+      "top": 190.0,
+      "right": 252.0,
+      "bottom": 214.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 224.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 193.0,
+         "top": 187.0,
+         "right": 255.0,
+         "bottom": 217.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 196.0,
+      "top": 218.0,
+      "right": 252.0,
+      "bottom": 242.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF2CC8F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 15.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0",
+         "x": 224.0,
+         "y": 235.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 193.0,
+         "top": 215.0,
+         "right": 255.0,
+         "bottom": 245.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF28201C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 288.0,
+      "top": 154.0,
+      "right": 392.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bit 1",
+      "x": 290.0,
+      "y": 146.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 312.0,
+      "top": 162.0,
+      "right": 368.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 340.0,
+      "y": 179.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 309.0,
+         "top": 159.0,
+         "right": 371.0,
+         "bottom": 189.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 312.0,
+      "top": 190.0,
+      "right": 368.0,
+      "bottom": 214.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 340.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 309.0,
+         "top": 187.0,
+         "right": 371.0,
+         "bottom": 217.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 312.0,
+      "top": 218.0,
+      "right": 368.0,
+      "bottom": 242.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF2CC8F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 15.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1",
+         "x": 340.0,
+         "y": 235.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 309.0,
+         "top": 215.0,
+         "right": 371.0,
+         "bottom": 245.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF28201C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 404.0,
+      "top": 154.0,
+      "right": 508.0,
+      "bottom": 254.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bit 0",
+      "x": 406.0,
+      "y": 146.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 428.0,
+      "top": 162.0,
+      "right": 484.0,
+      "bottom": 186.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 456.0,
+      "y": 179.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 425.0,
+         "top": 159.0,
+         "right": 487.0,
+         "bottom": 189.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 428.0,
+      "top": 190.0,
+      "right": 484.0,
+      "bottom": 214.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 456.0,
+      "y": 207.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF5E9E2"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 425.0,
+         "top": 187.0,
+         "right": 487.0,
+         "bottom": 217.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 428.0,
+      "top": 218.0,
+      "right": 484.0,
+      "bottom": 242.0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF2CC8F"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 15.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "0",
+         "x": 456.0,
+         "y": 235.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@ph",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 425.0,
+         "top": 215.0,
+         "right": 487.0,
+         "bottom": 245.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF81B29A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A",
+      "x": 46.0,
+      "y": 178.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE07A5F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "B",
+      "x": 46.0,
+      "y": 206.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF2CC8F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sum",
+      "x": 46.0,
+      "y": 234.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF463630"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 30.0,
+      "y1": 274.0,
+      "x2": 556.0,
+      "y2": 274.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carry in 0",
+      "x": 560.0,
+      "y": 278.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.8
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 456.0,
+         "y1": 274.0,
+         "x2": 340.0,
+         "y2": 274.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 340.0,
+         "y1": 274.0,
+         "x2": 347.0,
+         "y2": 269.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 340.0,
+         "y1": 274.0,
+         "x2": 347.0,
+         "y2": 279.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 10.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1",
+         "x": 398.0,
+         "y": 267.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.8
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 340.0,
+         "y1": 274.0,
+         "x2": 224.0,
+         "y2": 274.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 224.0,
+         "y1": 274.0,
+         "x2": 231.0,
+         "y2": 269.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 224.0,
+         "y1": 274.0,
+         "x2": 231.0,
+         "y2": 279.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 10.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1",
+         "x": 282.0,
+         "y": 267.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.8
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 224.0,
+         "y1": 274.0,
+         "x2": 108.0,
+         "y2": 274.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 108.0,
+         "y1": 274.0,
+         "x2": 115.0,
+         "y2": 269.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 108.0,
+         "y1": 274.0,
+         "x2": 115.0,
+         "y2": 279.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 10.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1",
+         "x": 166.0,
+         "y": 267.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "ge",
+      "v1": "@ph",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.8
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 108.0,
+         "y1": 274.0,
+         "x2": 32.0,
+         "y2": 274.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 32.0,
+         "y1": 274.0,
+         "x2": 39.0,
+         "y2": 269.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 32.0,
+         "y1": 274.0,
+         "x2": 39.0,
+         "y2": 279.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD64545"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 10.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "1",
+         "x": 70.0,
+         "y": 267.0,
+         "panX": 0.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD64545"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carry out",
+      "x": 26.0,
+      "y": 294.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 56.0,
+      "top": 76.0,
+      "right": 76.0,
+      "bottom": 94.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "read",
+      "x": 84.0,
+      "y": 89.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "takes its two bits and the carry arriving from the right",
+      "x": 130.0,
+      "y": 89.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD64545"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 56.0,
+      "top": 102.0,
+      "right": 76.0,
+      "bottom": 120.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFD64545"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "write",
+      "x": 84.0,
+      "y": 115.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "puts out its sum bit and a carry leaving to the left",
+      "x": 130.0,
+      "y": 115.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The carry has to walk from the right-hand end to the left before the answer is correct.",
+      "x": 56.0,
+      "y": 322.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- that walk is why a 64-bit add is not 64 times a 1-bit add, and why real adders predict the",
+      "x": 56.0,
+      "y": 342.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "carries in parallel instead of waiting for them. The trick costs gates and buys depth.",
+      "x": 56.0,
+      "y": 358.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 13.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1011 + 0111 = 10010",
+      "x": 56.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "11 + 7 = 18",
+      "x": 266.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF5E9E2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A ripple-carry adder",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFB49C91"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each box is one bit; it flashes when it is read, and again when it is written",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

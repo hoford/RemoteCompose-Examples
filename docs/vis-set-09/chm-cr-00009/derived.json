@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-09/chm-cr-00009",
+  "sha256": "867011f5203b837b310d79b0545d9bc7faba39fcfc7521ccf0284a22a0f45481",
+  "bytes": 3378,
+  "ops": 167,
+  "distinctOps": 15,
+  "width": 580,
+  "height": 480,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 23,
+    "DRAW_RECT": 2,
+    "DRAW_LINE": 97,
+    "DRAW_CIRCLE": 5,
+    "DATA_TEXT": 14,
+    "DRAW_TEXT_ANCHOR": 14,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

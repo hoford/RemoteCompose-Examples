@@ -1,0 +1,44 @@
+{
+  "id": "vis-set-09/fin-acco-00009",
+  "sha256": "621c012b1b60aa093d124450d35445c4873639debe5920e11f9d848d8dbc4060",
+  "bytes": 3820,
+  "ops": 186,
+  "distinctOps": 16,
+  "width": 560,
+  "height": 580,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 55,
+    "DRAW_RECT": 25,
+    "TOUCH_EXPRESSION": 1,
+    "ANIMATED_FLOAT": 1,
+    "DATA_TEXT": 30,
+    "DRAW_TEXT_ANCHOR": 30,
+    "CONDITIONAL_OPERATIONS": 16,
+    "CONTAINER_END": 20
+  },
+  "apis": [
+    "conditionals",
+    "drawRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

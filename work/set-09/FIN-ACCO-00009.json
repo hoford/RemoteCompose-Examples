@@ -1,0 +1,1455 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 560,
+  "height": 580,
+  "profiles": 513,
+  "contentDescription": "An income statement as proportional bars, draggable line by line from revenue to net profit"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 560,
+      "bottom": 580
+     }
+    },
+    {
+     "touchExpression": {
+      "name": "drag",
+      "defaultValue": 70.0,
+      "min": 60.0,
+      "max": 520.0,
+      "expression": "touchX()"
+     }
+    },
+    {
+     "variable": {
+      "name": "sel",
+      "value": "clamp(0.0, 7.0, floor((@drag - 60.0) / 460.0 * 8.0))",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 137.0,
+      "right": 520.0,
+      "bottom": 163.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 141.0,
+      "right": 510.0,
+      "bottom": 159.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Revenue",
+      "x": 48.0,
+      "y": 154.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+1000",
+      "x": 200.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 135.0,
+         "right": 522.0,
+         "bottom": 165.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 171.0,
+      "right": 520.0,
+      "bottom": 197.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 175.0,
+      "right": 393.0,
+      "bottom": 193.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cost of goods sold",
+      "x": 48.0,
+      "y": 188.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-610",
+      "x": 200.0,
+      "y": 188.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 169.0,
+         "right": 522.0,
+         "bottom": 199.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 205.0,
+      "right": 520.0,
+      "bottom": 231.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 209.0,
+      "right": 327.0,
+      "bottom": 227.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Gross profit",
+      "x": 48.0,
+      "y": 222.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+390",
+      "x": 200.0,
+      "y": 222.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 203.0,
+         "right": 522.0,
+         "bottom": 233.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 239.0,
+      "right": 520.0,
+      "bottom": 265.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 243.0,
+      "right": 279.0,
+      "bottom": 261.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Operating expenses",
+      "x": 48.0,
+      "y": 256.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-230",
+      "x": 200.0,
+      "y": 256.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 237.0,
+         "right": 522.0,
+         "bottom": 267.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 273.0,
+      "right": 520.0,
+      "bottom": 299.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 277.0,
+      "right": 258.0,
+      "bottom": 295.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Operating profit",
+      "x": 48.0,
+      "y": 290.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+160",
+      "x": 200.0,
+      "y": 290.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 271.0,
+         "right": 522.0,
+         "bottom": 301.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 307.0,
+      "right": 520.0,
+      "bottom": 333.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 311.0,
+      "right": 223.5,
+      "bottom": 329.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Interest",
+      "x": 48.0,
+      "y": 324.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-45",
+      "x": 200.0,
+      "y": 324.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 305.0,
+         "right": 522.0,
+         "bottom": 335.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 341.0,
+      "right": 520.0,
+      "bottom": 367.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 345.0,
+      "right": 218.7,
+      "bottom": 363.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Tax",
+      "x": 48.0,
+      "y": 358.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "-29",
+      "x": 200.0,
+      "y": 358.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 339.0,
+         "right": 522.0,
+         "bottom": 369.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 40.0,
+      "top": 375.0,
+      "right": 520.0,
+      "bottom": 401.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 379.0,
+      "right": 235.8,
+      "bottom": 397.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Net profit",
+      "x": 48.0,
+      "y": 392.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+86",
+      "x": 200.0,
+      "y": 392.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEDEDED"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 38.0,
+         "top": 373.0,
+         "right": 522.0,
+         "bottom": 403.0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 0.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "what customers paid",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 1.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "what the product itself cost",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 2.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "the first number anyone calls profit",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 3.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "salaries, rent, marketing",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 4.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "EBIT - the business, before financing",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 5.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "the cost of the debt",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 6.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "on what is left",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "conditionalOperations": {
+      "condition": "eq",
+      "v1": "@sel",
+      "v2": 7.0,
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9A9A9A"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "the last line, and the smallest",
+         "x": 40.0,
+         "y": 448.0,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Five of these eight lines get called 'profit' by somebody.",
+      "x": 40.0,
+      "y": 486.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- a company can have a healthy gross margin and still lose money, and most arguments about",
+      "x": 40.0,
+      "y": 506.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "whether a business is profitable are really arguments about which line is meant.",
+      "x": 40.0,
+      "y": 522.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "drag to move down the statement",
+      "x": 40.0,
+      "y": 552.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Where the money goes",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "one thousand in, eighty-six out",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

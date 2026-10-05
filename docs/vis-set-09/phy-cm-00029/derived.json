@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-09/phy-cm-00029",
+  "sha256": "676c37bca7f8b9f98b375304853124d9b90d1568e70eb36c8afa02141e307c61",
+  "bytes": 5521,
+  "ops": 300,
+  "distinctOps": 14,
+  "width": 580,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 22,
+    "DRAW_RECT": 4,
+    "DRAW_LINE": 242,
+    "DATA_TEXT": 10,
+    "DRAW_TEXT_ANCHOR": 10,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

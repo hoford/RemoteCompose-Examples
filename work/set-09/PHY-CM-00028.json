@@ -1,0 +1,998 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 500,
+  "height": 640,
+  "profiles": 513,
+  "contentDescription": "Four free-body diagrams with their forces named and the net force stated for each"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "padding": 18
+   },
+   {
+    "background": "#FF0C1220"
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "Four free bodies",
+    "modifiers": [],
+    "fontSize": 19.0,
+    "color": "#FFDCE4F2"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 3
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "the same arrows every time; only the lengths change",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FF8A99BC"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 9
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 120
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "clipRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF2B3A5C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF141E33"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 47.0,
+         "top": 39.0,
+         "right": 73.0,
+         "bottom": 65.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 18.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 18.0,
+         "x2": 65.0,
+         "y2": 25.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 18.0,
+         "x2": 55.0,
+         "y2": 25.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 86.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 55.0,
+         "y2": 79.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 65.0,
+         "y2": 79.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 300
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "At rest on a table",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF8A99BC"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "weight down, normal up, and they cancel exactly",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8A99BC"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "net zero",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFDCE4F2"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 9
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 120
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "clipRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF2B3A5C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF141E33"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 47.0,
+         "top": 39.0,
+         "right": 73.0,
+         "bottom": 65.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 94.0,
+         "y2": 52.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 94.0,
+         "y1": 52.0,
+         "x2": 87.0,
+         "y2": 57.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 94.0,
+         "y1": 52.0,
+         "x2": 87.0,
+         "y2": 47.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8A33D"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 36.2,
+         "y2": 52.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 36.2,
+         "y1": 52.0,
+         "x2": 41.1,
+         "y2": 48.5
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 36.2,
+         "y1": 52.0,
+         "x2": 41.1,
+         "y2": 55.5
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4FD6C9"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 18.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 18.0,
+         "x2": 65.0,
+         "y2": 25.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 18.0,
+         "x2": 55.0,
+         "y2": 25.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 86.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 55.0,
+         "y2": 79.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 65.0,
+         "y2": 79.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 300
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Sliding, friction on",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF5B8CEE"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "a push forward, friction back, still no acceleration",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8A99BC"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "net forward, small",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFDCE4F2"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 9
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 120
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "clipRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF2B3A5C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF141E33"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 47.0,
+         "top": 39.0,
+         "right": 73.0,
+         "bottom": 65.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 86.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 55.0,
+         "y2": 79.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 65.0,
+         "y2": 79.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 300
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "In free fall",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FFE8564F"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "nothing holds it up any more",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8A99BC"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "net down, full g",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFDCE4F2"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "row",
+    "modifiers": [
+     {
+      "width": 456
+     },
+     {
+      "padding": 9
+     },
+     {
+      "background": "#FF141E33"
+     }
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       {
+        "width": 120
+       },
+       {
+        "height": 104
+       }
+      ],
+      "commands": [
+       {
+        "clipRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF2B3A5C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 120,
+         "bottom": 104
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF141E33"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 47.0,
+         "top": 39.0,
+         "right": 73.0,
+         "bottom": 65.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF5B8CEE"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 26.0,
+         "y2": 52.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 26.0,
+         "y1": 52.0,
+         "x2": 33.0,
+         "y2": 47.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 26.0,
+         "y1": 52.0,
+         "x2": 33.0,
+         "y2": 57.0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8564F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.4
+          },
+          {
+           "strokeCap": "round"
+          }
+         ]
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 52.0,
+         "x2": 60.0,
+         "y2": 86.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 55.0,
+         "y2": 79.0
+        }
+       },
+       {
+        "drawLine": {
+         "x1": 60.0,
+         "y1": 86.0,
+         "x2": 65.0,
+         "y2": 79.0
+        }
+       }
+      ]
+     },
+     {
+      "type": "spacer",
+      "modifiers": [
+       {
+        "width": 12
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 300
+       }
+      ],
+      "children": [
+       {
+        "type": "text",
+        "value": "Circling on a string",
+        "modifiers": [],
+        "fontSize": 13.0,
+        "color": "#FF4FD6C9"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 4
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "the tension points at the centre, always",
+        "modifiers": [],
+        "fontSize": 9.5,
+        "color": "#FF8A99BC"
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "net toward the centre",
+        "modifiers": [],
+        "fontSize": 11.0,
+        "color": "#FFDCE4F2"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 8
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "An object at rest and an object sliding at a steady speed have the same net force on them: none. Newton's first law is the claim that those two states need no explaining.",
+    "modifiers": [],
+    "fontSize": 10.0,
+    "color": "#FF8A99BC"
+   }
+  ]
+ }
+}

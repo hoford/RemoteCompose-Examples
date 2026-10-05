@@ -1,0 +1,1386 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 520,
+  "height": 640,
+  "profiles": 513,
+  "contentDescription": "Six cloud types placed by altitude with what each one indicates about coming weather"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 520,
+      "bottom": 640
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 60.0,
+      "top": 150.0,
+      "right": 300.0,
+      "bottom": 480.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 480.0,
+      "x2": 300.0,
+      "y2": 480.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0 m",
+      "x": 54.0,
+      "y": 484.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 425.0,
+      "x2": 300.0,
+      "y2": 425.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2000 m",
+      "x": 54.0,
+      "y": 429.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 370.0,
+      "x2": 300.0,
+      "y2": 370.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4000 m",
+      "x": 54.0,
+      "y": 374.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 315.0,
+      "x2": 300.0,
+      "y2": 315.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "6000 m",
+      "x": 54.0,
+      "y": 319.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 260.0,
+      "x2": 300.0,
+      "y2": 260.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8000 m",
+      "x": 54.0,
+      "y": 264.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 205.0,
+      "x2": 300.0,
+      "y2": 205.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10000 m",
+      "x": 54.0,
+      "y": 209.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 0.7
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 60.0,
+      "y1": 150.0,
+      "x2": 300.0,
+      "y2": 150.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12000 m",
+      "x": 54.0,
+      "y": 154.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 74.0,
+      "top": 200.0,
+      "right": 180.0,
+      "bottom": 209.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 74.0,
+      "top": 255.0,
+      "right": 180.0,
+      "bottom": 264.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 74.0,
+      "top": 337.5,
+      "right": 180.0,
+      "bottom": 346.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawOval": {
+      "left": 90.0,
+      "top": 424.75,
+      "right": 122.0,
+      "bottom": 448.75
+     }
+    },
+    {
+     "drawOval": {
+      "left": 112.0,
+      "top": 424.75,
+      "right": 144.0,
+      "bottom": 448.75
+     }
+    },
+    {
+     "drawOval": {
+      "left": 134.0,
+      "top": 424.75,
+      "right": 166.0,
+      "bottom": 448.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 74.0,
+      "top": 453.0,
+      "right": 180.0,
+      "bottom": 462.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 210.0,
+      "top": 177.5,
+      "right": 270.0,
+      "bottom": 420.0
+     }
+    },
+    {
+     "drawOval": {
+      "left": 190.0,
+      "top": 161.0,
+      "right": 290.0,
+      "bottom": 199.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 152.0,
+      "right": 332.0,
+      "bottom": 164.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cirrus",
+      "x": 342.0,
+      "y": 160.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "10000 m",
+      "x": 480.0,
+      "y": 160.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "ice crystals; warm front",
+      "x": 342.0,
+      "y": 174.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "coming in a day or so",
+      "x": 342.0,
+      "y": 185.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 206.0,
+      "right": 332.0,
+      "bottom": 218.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cirrostratus",
+      "x": 342.0,
+      "y": 214.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8000 m",
+      "x": 480.0,
+      "y": 214.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "halo round the sun; rain",
+      "x": 342.0,
+      "y": 228.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "within 24 hours",
+      "x": 342.0,
+      "y": 239.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 260.0,
+      "right": 332.0,
+      "bottom": 272.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Altostratus",
+      "x": 342.0,
+      "y": 268.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5000 m",
+      "x": 480.0,
+      "y": 268.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "sun as a dim disc; rain is",
+      "x": 342.0,
+      "y": 282.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "close",
+      "x": 342.0,
+      "y": 293.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 314.0,
+      "right": 332.0,
+      "bottom": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cumulus",
+      "x": 342.0,
+      "y": 322.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1500 m",
+      "x": 480.0,
+      "y": 322.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "fair weather, if they stay",
+      "x": 342.0,
+      "y": 336.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "small",
+      "x": 342.0,
+      "y": 347.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 368.0,
+      "right": 332.0,
+      "bottom": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Stratus",
+      "x": 342.0,
+      "y": 376.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "800 m",
+      "x": 480.0,
+      "y": 376.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "flat grey; drizzle at",
+      "x": 342.0,
+      "y": 390.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "worst",
+      "x": 342.0,
+      "y": 401.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 320.0,
+      "top": 422.0,
+      "right": 332.0,
+      "bottom": 434.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cumulonimbus",
+      "x": 342.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1000 m",
+      "x": 480.0,
+      "y": 430.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the only one that is",
+      "x": 342.0,
+      "y": 444.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "genuinely dangerous",
+      "x": 342.0,
+      "y": 455.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "High and wispy means a front is coming but not yet. Tall and cauliflower-shaped means now.",
+      "x": 60.0,
+      "y": 520.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- the anvil on a cumulonimbus is the top hitting the stratosphere and spreading sideways, which is",
+      "x": 60.0,
+      "y": 538.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the single most useful shape to recognise in the sky.",
+      "x": 60.0,
+      "y": 554.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Reading the sky",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "altitude is most of the diagnosis",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

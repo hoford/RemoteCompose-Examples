@@ -1,0 +1,2190 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 680,
+  "height": 450,
+  "profiles": 513,
+  "contentDescription": "The vertex figure of each Platonic solid, gathering to a shared corner, with the leftover angle that lets it fold - and the hexagons that leave none"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF1A0F20"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1A0F20"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 680,
+      "bottom": 450
+     }
+    },
+    {
+     "variable": {
+      "name": "fold",
+      "value": "0.5 + 0.5 * sin(continuousSec() * 0.5)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 134.0,
+      "right": 125.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p0_0",
+      "x": "75.50 + (1 - @fold) * 11.26 + 0.00",
+      "y": "206.00 + (1 - @fold) * 6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_0",
+      "x": "75.50 + (1 - @fold) * 11.26 + 36.37",
+      "y": "206.00 + (1 - @fold) * 6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_0",
+      "x": "75.50 + (1 - @fold) * 11.26 + 18.19",
+      "y": "206.00 + (1 - @fold) * 6.50 + 31.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p0_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p0_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p0_1",
+      "x": "75.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_1",
+      "x": "75.50 + (1 - @fold) * 0.00 + 18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_1",
+      "x": "75.50 + (1 - @fold) * 0.00 + -18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p0_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p0_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p0_2",
+      "x": "75.50 + (1 - @fold) * -11.26 + 0.00",
+      "y": "206.00 + (1 - @fold) * 6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_2",
+      "x": "75.50 + (1 - @fold) * -11.26 + -18.19",
+      "y": "206.00 + (1 - @fold) * 6.50 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p0_2",
+      "x": "75.50 + (1 - @fold) * -11.26 + -36.37",
+      "y": "206.00 + (1 - @fold) * 6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p0_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p0_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 60.5,
+      "top": 191.0,
+      "right": 90.5,
+      "bottom": 221.0,
+      "startAngle": -180.0,
+      "sweepAngle": 180.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 75.5,
+      "y1": 206.0,
+      "x2": 60.5,
+      "y2": 206.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 75.5,
+      "y1": 206.0,
+      "x2": 90.5,
+      "y2": 206.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5BE8B5"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Tetrahedron",
+      "x": 75.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4 faces",
+      "x": 75.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3 x 3-gon at a corner",
+      "x": 75.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "180\u00b0 to spare",
+      "x": 75.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 132.0,
+      "top": 134.0,
+      "right": 231.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p1_0",
+      "x": "181.50 + (1 - @fold) * 13.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_0",
+      "x": "181.50 + (1 - @fold) * 13.00 + 21.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + -21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_0",
+      "x": "181.50 + (1 - @fold) * 13.00 + 42.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_0",
+      "x": "181.50 + (1 - @fold) * 13.00 + 21.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 21.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p1_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p1_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p1_1",
+      "x": "181.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_1",
+      "x": "181.50 + (1 - @fold) * 0.00 + 21.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_1",
+      "x": "181.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 42.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_1",
+      "x": "181.50 + (1 - @fold) * 0.00 + -21.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 21.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p1_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p1_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p1_2",
+      "x": "181.50 + (1 - @fold) * -13.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_2",
+      "x": "181.50 + (1 - @fold) * -13.00 + -21.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_2",
+      "x": "181.50 + (1 - @fold) * -13.00 + -42.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p1_2",
+      "x": "181.50 + (1 - @fold) * -13.00 + -21.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + -21.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p1_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p1_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 166.5,
+      "top": 191.0,
+      "right": 196.5,
+      "bottom": 221.0,
+      "startAngle": -135.0,
+      "sweepAngle": 90.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 181.5,
+      "y1": 206.0,
+      "x2": 170.8933982822018,
+      "y2": 195.3933982822018
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 181.5,
+      "y1": 206.0,
+      "x2": 192.1066017177982,
+      "y2": 195.3933982822018
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC77DFF"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cube",
+      "x": 181.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "6 faces",
+      "x": 181.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3 x 4-gon at a corner",
+      "x": 181.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "90\u00b0 to spare",
+      "x": 181.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 238.0,
+      "top": 134.0,
+      "right": 337.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p2_0",
+      "x": "287.50 + (1 - @fold) * 13.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_0",
+      "x": "287.50 + (1 - @fold) * 13.00 + 31.50",
+      "y": "206.00 + (1 - @fold) * 0.00 + -18.19"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_0",
+      "x": "287.50 + (1 - @fold) * 13.00 + 31.50",
+      "y": "206.00 + (1 - @fold) * 0.00 + 18.19"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p2_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p2_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p2_1",
+      "x": "287.50 + (1 - @fold) * 6.50 + 0.00",
+      "y": "206.00 + (1 - @fold) * 11.26 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_1",
+      "x": "287.50 + (1 - @fold) * 6.50 + 31.50",
+      "y": "206.00 + (1 - @fold) * 11.26 + 18.19"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_1",
+      "x": "287.50 + (1 - @fold) * 6.50 + 0.00",
+      "y": "206.00 + (1 - @fold) * 11.26 + 36.37"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p2_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p2_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p2_2",
+      "x": "287.50 + (1 - @fold) * -6.50 + 0.00",
+      "y": "206.00 + (1 - @fold) * 11.26 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_2",
+      "x": "287.50 + (1 - @fold) * -6.50 + 0.00",
+      "y": "206.00 + (1 - @fold) * 11.26 + 36.37"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_2",
+      "x": "287.50 + (1 - @fold) * -6.50 + -31.50",
+      "y": "206.00 + (1 - @fold) * 11.26 + 18.19"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p2_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p2_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p2_3",
+      "x": "287.50 + (1 - @fold) * -13.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 0.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_3",
+      "x": "287.50 + (1 - @fold) * -13.00 + -31.50",
+      "y": "206.00 + (1 - @fold) * 0.00 + 18.19"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p2_3",
+      "x": "287.50 + (1 - @fold) * -13.00 + -31.50",
+      "y": "206.00 + (1 - @fold) * 0.00 + -18.19"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p2_3"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p2_3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 272.5,
+      "top": 191.0,
+      "right": 302.5,
+      "bottom": 221.0,
+      "startAngle": -150.0,
+      "sweepAngle": 120.00000000000001
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 287.5,
+      "y1": 206.0,
+      "x2": 274.5096189432334,
+      "y2": 198.5
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 287.5,
+      "y1": 206.0,
+      "x2": 300.4903810567666,
+      "y2": 198.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Octahedron",
+      "x": 287.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8 faces",
+      "x": 287.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4 x 3-gon at a corner",
+      "x": 287.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "120\u00b0 to spare",
+      "x": 287.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.0,
+      "top": 134.0,
+      "right": 443.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p3_0",
+      "x": "393.50 + (1 - @fold) * 12.36 + -0.00",
+      "y": "206.00 + (1 - @fold) * -4.02 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_0",
+      "x": "393.50 + (1 - @fold) * 12.36 + 7.63",
+      "y": "206.00 + (1 - @fold) * -4.02 + -23.48"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_0",
+      "x": "393.50 + (1 - @fold) * 12.36 + 32.32",
+      "y": "206.00 + (1 - @fold) * -4.02 + -23.48"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_0",
+      "x": "393.50 + (1 - @fold) * 12.36 + 39.94",
+      "y": "206.00 + (1 - @fold) * -4.02 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_0",
+      "x": "393.50 + (1 - @fold) * 12.36 + 19.97",
+      "y": "206.00 + (1 - @fold) * -4.02 + 14.51"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p3_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p3_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p3_1",
+      "x": "393.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_1",
+      "x": "393.50 + (1 - @fold) * 0.00 + 19.97",
+      "y": "206.00 + (1 - @fold) * 13.00 + 14.51"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_1",
+      "x": "393.50 + (1 - @fold) * 0.00 + 12.34",
+      "y": "206.00 + (1 - @fold) * 13.00 + 37.99"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_1",
+      "x": "393.50 + (1 - @fold) * 0.00 + -12.34",
+      "y": "206.00 + (1 - @fold) * 13.00 + 37.99"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_1",
+      "x": "393.50 + (1 - @fold) * 0.00 + -19.97",
+      "y": "206.00 + (1 - @fold) * 13.00 + 14.51"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p3_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p3_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p3_2",
+      "x": "393.50 + (1 - @fold) * -12.36 + -0.00",
+      "y": "206.00 + (1 - @fold) * -4.02 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_2",
+      "x": "393.50 + (1 - @fold) * -12.36 + -19.97",
+      "y": "206.00 + (1 - @fold) * -4.02 + 14.51"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_2",
+      "x": "393.50 + (1 - @fold) * -12.36 + -39.94",
+      "y": "206.00 + (1 - @fold) * -4.02 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_2",
+      "x": "393.50 + (1 - @fold) * -12.36 + -32.32",
+      "y": "206.00 + (1 - @fold) * -4.02 + -23.48"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p3_2",
+      "x": "393.50 + (1 - @fold) * -12.36 + -7.63",
+      "y": "206.00 + (1 - @fold) * -4.02 + -23.48"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p3_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p3_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 378.5,
+      "top": 191.0,
+      "right": 408.5,
+      "bottom": 221.0,
+      "startAngle": -108.0,
+      "sweepAngle": 36.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 393.5,
+      "y1": 206.0,
+      "x2": 388.8647450843758,
+      "y2": 191.7341522555727
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 393.5,
+      "y1": 206.0,
+      "x2": 398.1352549156242,
+      "y2": 191.7341522555727
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF6B9D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Dodecahedron",
+      "x": 393.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12 faces",
+      "x": 393.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3 x 5-gon at a corner",
+      "x": 393.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "36\u00b0 to spare",
+      "x": 393.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 450.0,
+      "top": 134.0,
+      "right": 549.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p4_0",
+      "x": "499.50 + (1 - @fold) * 11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_0",
+      "x": "499.50 + (1 - @fold) * 11.26 + 18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + -31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_0",
+      "x": "499.50 + (1 - @fold) * 11.26 + 36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p4_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p4_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p4_1",
+      "x": "499.50 + (1 - @fold) * 11.26 + 0.00",
+      "y": "206.00 + (1 - @fold) * 6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_1",
+      "x": "499.50 + (1 - @fold) * 11.26 + 36.37",
+      "y": "206.00 + (1 - @fold) * 6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_1",
+      "x": "499.50 + (1 - @fold) * 11.26 + 18.19",
+      "y": "206.00 + (1 - @fold) * 6.50 + 31.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p4_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p4_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p4_2",
+      "x": "499.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_2",
+      "x": "499.50 + (1 - @fold) * 0.00 + 18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_2",
+      "x": "499.50 + (1 - @fold) * 0.00 + -18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p4_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p4_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p4_3",
+      "x": "499.50 + (1 - @fold) * -11.26 + 0.00",
+      "y": "206.00 + (1 - @fold) * 6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_3",
+      "x": "499.50 + (1 - @fold) * -11.26 + -18.19",
+      "y": "206.00 + (1 - @fold) * 6.50 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_3",
+      "x": "499.50 + (1 - @fold) * -11.26 + -36.37",
+      "y": "206.00 + (1 - @fold) * 6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p4_3"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p4_3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p4_4",
+      "x": "499.50 + (1 - @fold) * -11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_4",
+      "x": "499.50 + (1 - @fold) * -11.26 + -36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p4_4",
+      "x": "499.50 + (1 - @fold) * -11.26 + -18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + -31.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p4_4"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p4_4"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawArc": {
+      "left": 484.5,
+      "top": 191.0,
+      "right": 514.5,
+      "bottom": 221.0,
+      "startAngle": -120.00000000000001,
+      "sweepAngle": 60.000000000000036
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 499.5,
+      "y1": 206.0,
+      "x2": 492.0,
+      "y2": 193.00961894323342
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 499.5,
+      "y1": 206.0,
+      "x2": 507.0,
+      "y2": 193.00961894323342
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Icosahedron",
+      "x": 499.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "20 faces",
+      "x": 499.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5 x 3-gon at a corner",
+      "x": 499.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFC857"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "60\u00b0 to spare",
+      "x": 499.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF271634"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 556.0,
+      "top": 134.0,
+      "right": 655.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + -21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + 18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + -31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + 36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + -21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + 36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + -0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_0",
+      "x": "605.50 + (1 - @fold) * 11.26 + 18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + 10.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p5_0"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p5_0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + 18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 10.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + 18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + 0.00",
+      "y": "206.00 + (1 - @fold) * 13.00 + 42.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + -18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_1",
+      "x": "605.50 + (1 - @fold) * 0.00 + -18.19",
+      "y": "206.00 + (1 - @fold) * 13.00 + 10.50"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p5_1"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p5_1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + 10.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + 0.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -36.37",
+      "y": "206.00 + (1 - @fold) * -6.50 + -21.00"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -18.19",
+      "y": "206.00 + (1 - @fold) * -6.50 + -31.50"
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "p5_2",
+      "x": "605.50 + (1 - @fold) * -11.26 + -0.00",
+      "y": "206.00 + (1 - @fold) * -6.50 + -21.00"
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "p5_2"
+     }
+    },
+    {
+     "drawPath": {
+      "path": "p5_2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "No sixth",
+      "x": 605.5,
+      "y": 322.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "does not exist",
+      "x": 605.5,
+      "y": 339.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3 x 6-gon at a corner",
+      "x": 605.5,
+      "y": 355.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "0\u00b0 to spare",
+      "x": 605.5,
+      "y": 369.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "There are five, and there cannot be a sixth.",
+      "x": 26.0,
+      "y": 402.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "- three regular polygons must meet at a corner with angles summing under 360 degrees. Triangles allow 3, 4 or 5 per",
+      "x": 26.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "corner; squares and pentagons allow 3. Three hexagons already use the whole 360, so there is nothing left to fold with.",
+      "x": 26.0,
+      "y": 436.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFF0E4F7"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The five regular solids",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFA98BBE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "what has to be left over at a corner",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

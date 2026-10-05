@@ -1,0 +1,958 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 474,
+  "profiles": 513,
+  "contentDescription": "Euclid's five postulates drawn as diagrams, with the parallel postulate set apart"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 474
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 100.0,
+      "right": 178.0,
+      "bottom": 220.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 58.0,
+      "y1": 178.0,
+      "x2": 146.0,
+      "y2": 146.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 58.0,
+      "cy": 178.0,
+      "radius": 3.5
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 146.0,
+      "cy": 146.0,
+      "radius": 3.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1",
+      "x": 35.0,
+      "y": 123.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a line between any two points",
+      "x": 35.0,
+      "y": 209.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 188.0,
+      "top": 100.0,
+      "right": 340.0,
+      "bottom": 220.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 162.0,
+      "x2": 324.0,
+      "y2": 162.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 162.0,
+      "x2": 213.0,
+      "y2": 156.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 204.0,
+      "y1": 162.0,
+      "x2": 213.0,
+      "y2": 168.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 324.0,
+      "y1": 162.0,
+      "x2": 315.0,
+      "y2": 156.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 324.0,
+      "y1": 162.0,
+      "x2": 315.0,
+      "y2": 168.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2",
+      "x": 197.0,
+      "y": 123.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a line extends forever",
+      "x": 197.0,
+      "y": 209.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 26.0,
+      "top": 230.0,
+      "right": 178.0,
+      "bottom": 350.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 102.0,
+      "cy": 292.0,
+      "radius": 32.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 102.0,
+      "y1": 292.0,
+      "x2": 134.0,
+      "y2": 292.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 102.0,
+      "cy": 292.0,
+      "radius": 3.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "3",
+      "x": 35.0,
+      "y": 253.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a circle, given centre and radius",
+      "x": 35.0,
+      "y": 339.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 188.0,
+      "top": 230.0,
+      "right": 340.0,
+      "bottom": 350.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 218.0,
+      "y1": 312.0,
+      "x2": 250.0,
+      "y2": 312.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 218.0,
+      "y1": 312.0,
+      "x2": 218.0,
+      "y2": 280.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 229.0,
+      "y1": 312.0,
+      "x2": 229.0,
+      "y2": 301.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 218.0,
+      "y1": 301.0,
+      "x2": 229.0,
+      "y2": 301.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 290.0,
+      "y1": 314.0,
+      "x2": 312.624,
+      "y2": 291.376
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 290.0,
+      "y1": 314.0,
+      "x2": 267.376,
+      "y2": 291.376
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 297.777,
+      "y1": 306.223,
+      "x2": 290.0,
+      "y2": 298.446
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 282.223,
+      "y1": 306.223,
+      "x2": 290.0,
+      "y2": 298.446
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4",
+      "x": 197.0,
+      "y": 253.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "all right angles are equal",
+      "x": 197.0,
+      "y": 339.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 352.0,
+      "top": 100.0,
+      "right": 594.0,
+      "bottom": 350.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.2
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 473.0,
+      "y1": 196.0,
+      "x2": 388.0,
+      "y2": 290.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 473.0,
+      "y1": 196.0,
+      "x2": 558.0,
+      "y2": 290.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 374.0,
+      "y1": 268.0,
+      "x2": 572.0,
+      "y2": 268.0
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 374.0,
+      "y1": 196.0,
+      "x2": 572.0,
+      "y2": 196.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 473.0,
+      "cy": 196.0,
+      "radius": 4.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "P",
+      "x": 482.0,
+      "y": 189.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "every other line through P meets it",
+      "x": 361.0,
+      "y": 312.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 15.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "5",
+      "x": 361.0,
+      "y": 123.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 8.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "through a point, exactly one parallel",
+      "x": 361.0,
+      "y": 339.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The fifth is the odd one. It is longer, less obvious, and for two thousand years people tried",
+      "x": 26.0,
+      "y": 386.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "to derive it from the other four. They could not - and the reason is that it is a choice.",
+      "x": 26.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Deny it and you do not get a contradiction. You get a different geometry, and the surface of",
+      "x": 26.0,
+      "y": 430.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a sphere is one: there, every pair of 'parallels' meets, and a triangle's angles exceed 180.",
+      "x": 26.0,
+      "y": 446.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Five postulates",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "four are obvious; the fifth is a decision",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

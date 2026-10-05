@@ -1,0 +1,1004 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 540,
+  "height": 502,
+  "profiles": 513,
+  "contentDescription": "One graph drawn four ways, showing that the layout carries meaning the graph does not"
+ },
+ "root": {
+  "type": "column",
+  "modifiers": [
+   "fillMaxSize",
+   {
+    "padding": 16
+   },
+   {
+    "background": "#FF1A0F20"
+   }
+  ],
+  "children": [
+   {
+    "type": "text",
+    "value": "One graph, four drawings",
+    "modifiers": [],
+    "fontSize": 19.0,
+    "color": "#FFF0E4F7"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 3
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "same seven nodes, same nine edges, every time",
+    "modifiers": [],
+    "fontSize": 11.0,
+    "color": "#FFA98BBE"
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 12
+     }
+    ]
+   },
+   {
+    "type": "flow",
+    "modifiers": [
+     {
+      "width": 508
+     }
+    ],
+    "children": [
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 252
+       },
+       {
+        "padding": 8
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 236
+         },
+         {
+          "height": 150
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFA98BBE"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.3
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 118.0,
+           "y1": 19.0,
+           "x2": 161.78256301820966,
+           "y2": 40.084571095910924
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 161.78256301820966,
+           "y1": 40.084571095910924,
+           "x2": 172.59596308218212,
+           "y2": 87.4611723015536
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 172.59596308218212,
+           "y1": 87.4611723015536,
+           "x2": 142.29748939058325,
+           "y2": 125.45425660253548
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 142.29748939058325,
+           "y1": 125.45425660253548,
+           "x2": 93.70251060941675,
+           "y2": 125.45425660253548
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 93.70251060941675,
+           "y1": 125.45425660253548,
+           "x2": 63.404036917817876,
+           "y2": 87.46117230155362
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 63.404036917817876,
+           "y1": 87.46117230155362,
+           "x2": 74.21743698179033,
+           "y2": 40.08457109591093
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 74.21743698179033,
+           "y1": 40.08457109591093,
+           "x2": 118.0,
+           "y2": 19.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 161.78256301820966,
+           "y1": 40.084571095910924,
+           "x2": 93.70251060941675,
+           "y2": 125.45425660253548
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 172.59596308218212,
+           "y1": 87.4611723015536,
+           "x2": 74.21743698179033,
+           "y2": 40.08457109591093
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF5BE8B5"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 118.0,
+           "cy": 19.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 161.78256301820966,
+           "cy": 40.084571095910924,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 172.59596308218212,
+           "cy": 87.4611723015536,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 142.29748939058325,
+           "cy": 125.45425660253548,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 93.70251060941675,
+           "cy": 125.45425660253548,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 63.404036917817876,
+           "cy": 87.46117230155362,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 74.21743698179033,
+           "cy": 40.08457109591093,
+           "radius": 7.5
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Drawn as a ring",
+        "modifiers": [],
+        "fontSize": 12.0,
+        "color": "#FF5BE8B5"
+       },
+       {
+        "type": "text",
+        "value": "no node is special",
+        "modifiers": [],
+        "fontSize": 9.0,
+        "color": "#FFA98BBE"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 252
+       },
+       {
+        "padding": 8
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 236
+         },
+         {
+          "height": 150
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFA98BBE"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.3
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 52.0,
+           "y1": 43.0,
+           "x2": 96.0,
+           "y2": 43.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96.0,
+           "y1": 43.0,
+           "x2": 140.0,
+           "y2": 43.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 140.0,
+           "y1": 43.0,
+           "x2": 184.0,
+           "y2": 43.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 184.0,
+           "y1": 43.0,
+           "x2": 162.0,
+           "y2": 107.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 162.0,
+           "y1": 107.0,
+           "x2": 118.0,
+           "y2": 107.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 118.0,
+           "y1": 107.0,
+           "x2": 70.0,
+           "y2": 107.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 70.0,
+           "y1": 107.0,
+           "x2": 52.0,
+           "y2": 43.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 96.0,
+           "y1": 43.0,
+           "x2": 162.0,
+           "y2": 107.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 140.0,
+           "y1": 43.0,
+           "x2": 70.0,
+           "y2": 107.0
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFC77DFF"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 52.0,
+           "cy": 43.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 96.0,
+           "cy": 43.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 140.0,
+           "cy": 43.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 184.0,
+           "cy": 43.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 162.0,
+           "cy": 107.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 118.0,
+           "cy": 107.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 70.0,
+           "cy": 107.0,
+           "radius": 7.5
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Drawn as a grid",
+        "modifiers": [],
+        "fontSize": 12.0,
+        "color": "#FFC77DFF"
+       },
+       {
+        "type": "text",
+        "value": "looks like a map; it is not one",
+        "modifiers": [],
+        "fontSize": 9.0,
+        "color": "#FFA98BBE"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 252
+       },
+       {
+        "padding": 8
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 236
+         },
+         {
+          "height": 150
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFA98BBE"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.3
+            }
+           ]
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 118.0,
+           "y1": 17.0,
+           "x2": 78.0,
+           "y2": 55.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 78.0,
+           "y1": 55.0,
+           "x2": 46.0,
+           "y2": 93.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 46.0,
+           "y1": 93.0,
+           "x2": 46.0,
+           "y2": 131.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 46.0,
+           "y1": 131.0,
+           "x2": 98.0,
+           "y2": 93.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 98.0,
+           "y1": 93.0,
+           "x2": 164.0,
+           "y2": 93.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164.0,
+           "y1": 93.0,
+           "x2": 164.0,
+           "y2": 55.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 164.0,
+           "y1": 55.0,
+           "x2": 118.0,
+           "y2": 17.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 78.0,
+           "y1": 55.0,
+           "x2": 98.0,
+           "y2": 93.0
+          }
+         },
+         {
+          "drawLine": {
+           "x1": 46.0,
+           "y1": 93.0,
+           "x2": 164.0,
+           "y2": 55.0
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFFFC857"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 118.0,
+           "cy": 17.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 78.0,
+           "cy": 55.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 46.0,
+           "cy": 93.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 46.0,
+           "cy": 131.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 98.0,
+           "cy": 93.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 164.0,
+           "cy": 93.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 164.0,
+           "cy": 55.0,
+           "radius": 7.5
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Drawn as a tree",
+        "modifiers": [],
+        "fontSize": 12.0,
+        "color": "#FFFFC857"
+       },
+       {
+        "type": "text",
+        "value": "suggests a root that does not exist",
+        "modifiers": [],
+        "fontSize": 9.0,
+        "color": "#FFA98BBE"
+       }
+      ]
+     },
+     {
+      "type": "column",
+      "modifiers": [
+       {
+        "width": 252
+       },
+       {
+        "padding": 8
+       },
+       {
+        "background": "#FF271634"
+       }
+      ],
+      "children": [
+       {
+        "type": "canvas",
+        "modifiers": [
+         {
+          "width": 236
+         },
+         {
+          "height": 150
+         }
+        ],
+        "commands": [
+         {
+          "clipRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FF43295A"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawRect": {
+           "left": 0,
+           "top": 0,
+           "right": 236,
+           "bottom": 150
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFA98BBE"
+            },
+            {
+             "style": "stroke"
+            },
+            {
+             "width": 1.3
+            }
+           ]
+          }
+         },
+         {
+          "drawArc": {
+           "left": 52.0,
+           "top": 64.0,
+           "right": 74.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 74.0,
+           "top": 64.0,
+           "right": 96.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 96.0,
+           "top": 64.0,
+           "right": 118.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 118.0,
+           "top": 64.0,
+           "right": 140.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 140.0,
+           "top": 64.0,
+           "right": 162.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 162.0,
+           "top": 64.0,
+           "right": 184.0,
+           "bottom": 86.0,
+           "startAngle": 0.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 52.0,
+           "top": 9.0,
+           "right": 184.0,
+           "bottom": 141.0,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 74.0,
+           "top": 42.0,
+           "right": 140.0,
+           "bottom": 108.0,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "drawArc": {
+           "left": 96.0,
+           "top": 31.0,
+           "right": 184.0,
+           "bottom": 119.0,
+           "startAngle": 180.0,
+           "sweepAngle": 180.0
+          }
+         },
+         {
+          "paint": {
+           "ops": [
+            {
+             "color": "#FFFF6B9D"
+            },
+            {
+             "style": "fill"
+            }
+           ]
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 52.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 74.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 96.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 118.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 140.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 162.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         },
+         {
+          "drawCircle": {
+           "cx": 184.0,
+           "cy": 75.0,
+           "radius": 7.5
+          }
+         }
+        ]
+       },
+       {
+        "type": "spacer",
+        "modifiers": [
+         {
+          "height": 6
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "value": "Drawn as a line",
+        "modifiers": [],
+        "fontSize": 12.0,
+        "color": "#FFFF6B9D"
+       },
+       {
+        "type": "text",
+        "value": "suggests an order that does not exist",
+        "modifiers": [],
+        "fontSize": 9.0,
+        "color": "#FFA98BBE"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "spacer",
+    "modifiers": [
+     {
+      "height": 14
+     }
+    ]
+   },
+   {
+    "type": "text",
+    "value": "Only the vertices and the edges are the graph. Everything else - the ring, the rows, the apparent root - is something the drawing added, and a reader will believe it unless told otherwise.",
+    "modifiers": [],
+    "fontSize": 10.5,
+    "color": "#FFF0E4F7"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1409 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 580,
+  "height": 500,
+  "profiles": 513,
+  "contentDescription": "Two carts colliding, drawn as paths in position against time, with the momentum arithmetic beneath"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0C1220"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0C1220"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 580,
+      "bottom": 500
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF141E33"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 140.0,
+      "right": 540.0,
+      "bottom": 380.0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "CartA",
+      "x": 70.0,
+      "y": 358.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 77.83333333333333,
+      "y": 356.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 85.66666666666667,
+      "y": 354.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 93.5,
+      "y": 352.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 101.33333333333333,
+      "y": 350.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 109.16666666666666,
+      "y": 348.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 117.0,
+      "y": 346.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 124.83333333333334,
+      "y": 344.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 132.66666666666666,
+      "y": 343.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 140.5,
+      "y": 341.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 148.33333333333331,
+      "y": 339.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 156.16666666666666,
+      "y": 337.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 164.0,
+      "y": 335.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 171.83333333333334,
+      "y": 333.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 179.66666666666669,
+      "y": 331.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 187.5,
+      "y": 329.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 195.33333333333331,
+      "y": 327.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 203.16666666666666,
+      "y": 325.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 211.0,
+      "y": 323.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 218.83333333333331,
+      "y": 321.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 226.66666666666666,
+      "y": 320.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 234.5,
+      "y": 318.08000000000004
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 242.33333333333331,
+      "y": 316.15999999999997
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 250.16666666666669,
+      "y": 314.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 258.0,
+      "y": 312.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 265.83333333333337,
+      "y": 310.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 273.6666666666667,
+      "y": 308.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 281.5,
+      "y": 306.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 289.33333333333337,
+      "y": 304.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 297.16666666666663,
+      "y": 302.71999999999997
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 305.0,
+      "y": 300.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 312.83333333333337,
+      "y": 298.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 320.66666666666663,
+      "y": 298.11199999999997
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 328.5,
+      "y": 297.632
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 336.3333333333333,
+      "y": 297.152
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 344.1666666666667,
+      "y": 296.672
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 352.0,
+      "y": 296.192
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 359.83333333333337,
+      "y": 295.712
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 367.66666666666663,
+      "y": 295.23199999999997
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 375.5,
+      "y": 294.75199999999995
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 383.3333333333333,
+      "y": 294.272
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 391.1666666666667,
+      "y": 293.79200000000003
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 399.0,
+      "y": 293.312
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 406.8333333333333,
+      "y": 292.832
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 414.66666666666663,
+      "y": 292.352
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 422.5,
+      "y": 291.872
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 430.33333333333337,
+      "y": 291.392
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 438.1666666666667,
+      "y": 290.912
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 446.0,
+      "y": 290.432
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 453.8333333333333,
+      "y": 289.952
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 461.6666666666667,
+      "y": 289.472
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 469.5,
+      "y": 288.992
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 477.33333333333337,
+      "y": 288.512
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 485.16666666666663,
+      "y": 288.032
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 493.0,
+      "y": 287.552
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 500.8333333333333,
+      "y": 287.072
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 508.6666666666667,
+      "y": 286.592
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 516.5,
+      "y": 286.11199999999997
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 524.3333333333333,
+      "y": 285.632
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 532.1666666666666,
+      "y": 285.152
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartA",
+      "x": 540.0,
+      "y": 284.672
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "CartA"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cart A, 2 kg",
+      "x": 78.0,
+      "y": 158.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "CartB",
+      "x": 70.0,
+      "y": 322.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 77.83333333333333,
+      "y": 323.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 85.66666666666667,
+      "y": 324.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 93.5,
+      "y": 325.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 101.33333333333333,
+      "y": 326.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 109.16666666666666,
+      "y": 327.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 117.0,
+      "y": 328.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 124.83333333333334,
+      "y": 329.12
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 132.66666666666666,
+      "y": 330.08
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 140.5,
+      "y": 331.04
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 148.33333333333331,
+      "y": 332.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 156.16666666666666,
+      "y": 332.96
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 164.0,
+      "y": 333.92
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 171.83333333333334,
+      "y": 334.88
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 179.66666666666669,
+      "y": 335.84
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 187.5,
+      "y": 336.8
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 195.33333333333331,
+      "y": 337.76
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 203.16666666666666,
+      "y": 338.72
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 211.0,
+      "y": 339.68
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 218.83333333333331,
+      "y": 340.64
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 226.66666666666666,
+      "y": 341.6
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 234.5,
+      "y": 342.56
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 242.33333333333331,
+      "y": 343.52
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 250.16666666666669,
+      "y": 344.48
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 258.0,
+      "y": 345.44
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 265.83333333333337,
+      "y": 346.4
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 273.6666666666667,
+      "y": 347.36
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 281.5,
+      "y": 348.32
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 289.33333333333337,
+      "y": 349.28
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 297.16666666666663,
+      "y": 350.24
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 305.0,
+      "y": 351.2
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 312.83333333333337,
+      "y": 352.16
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 320.66666666666663,
+      "y": 350.624
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 328.5,
+      "y": 348.464
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 336.3333333333333,
+      "y": 346.304
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 344.1666666666667,
+      "y": 344.144
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 352.0,
+      "y": 341.98400000000004
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 359.83333333333337,
+      "y": 339.824
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 367.66666666666663,
+      "y": 337.664
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 375.5,
+      "y": 335.504
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 383.3333333333333,
+      "y": 333.344
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 391.1666666666667,
+      "y": 331.184
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 399.0,
+      "y": 329.024
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 406.8333333333333,
+      "y": 326.86400000000003
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 414.66666666666663,
+      "y": 324.704
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 422.5,
+      "y": 322.544
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 430.33333333333337,
+      "y": 320.384
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 438.1666666666667,
+      "y": 318.224
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 446.0,
+      "y": 316.06399999999996
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 453.8333333333333,
+      "y": 313.904
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 461.6666666666667,
+      "y": 311.744
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 469.5,
+      "y": 309.584
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 477.33333333333337,
+      "y": 307.424
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 485.16666666666663,
+      "y": 305.264
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 493.0,
+      "y": 303.104
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 500.8333333333333,
+      "y": 300.944
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 508.6666666666667,
+      "y": 298.784
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 516.5,
+      "y": 296.624
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 524.3333333333333,
+      "y": 294.464
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 532.1666666666666,
+      "y": 292.304
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "CartB",
+      "x": 540.0,
+      "y": 290.144
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 2.8
+       },
+       {
+        "strokeCap": "round"
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "CartB"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B8CEE"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cart B, 1 kg",
+      "x": 78.0,
+      "y": 174.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "width": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 314.4,
+      "y1": 140.0,
+      "x2": 314.4,
+      "y2": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE8564F"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "they touch",
+      "x": 320.4,
+      "y": 154.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "position",
+      "x": 70.0,
+      "y": 128.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "time",
+      "x": 305.0,
+      "y": 402.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cart A momentum",
+      "x": 70.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2 x 1.6 = +3.2",
+      "x": 250.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2 x 0.4 = +0.8",
+      "x": 400.0,
+      "y": 416.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Cart B momentum",
+      "x": 70.0,
+      "y": 434.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 x -0.8 = -0.8",
+      "x": 250.0,
+      "y": 434.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1 x 1.8 = +1.8",
+      "x": 400.0,
+      "y": 434.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF4FD6C9"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Total",
+      "x": 70.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+2.4",
+      "x": 250.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "+2.6",
+      "x": 400.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the totals differ only by rounding in the numbers printed here",
+      "x": 70.0,
+      "y": 478.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFDCE4F2"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A collision in position-time",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8A99BC"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the slopes are the velocities",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

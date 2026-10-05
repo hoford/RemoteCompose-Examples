@@ -1,15 +1,23 @@
 {
  "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 9,
- "setsLanded": 8,
- "documentsLanded": 129,
- "lastTouched": "2026-10-03 set 8 landed as docs/vis-set-08 (17 documents: 16 scheduled plus CAL-GLOBE-00001, an instrument). The sphere winding bug behind F-024/F-028/F-029 is fixed. Set 8 is NOT device-verified - the player stopped staying up mid-session.",
+ "currentSet": 13,
+ "setsLanded": 12,
+ "documentsLanded": 193,
+ "lastTouched": "2026-10-05 sets 9-12 landed, 64 documents. First sets in the programme checked against the engine: 52 of 52 2D documents load on device; the 12 3D documents cannot be checked at all, because androidx-main3 has no 3D opcodes and no 3D operation classes, so the oracle and the player share one gap. They are landed as unverifiable, not as verified.",
  "pausedFor": null,
  "setStatus": {
   "1": "landed",
   "2": "landed",
   "3": "landed",
-  "4": "landed"
+  "4": "landed",
+  "5": "landed",
+  "6": "landed",
+  "7": "landed",
+  "8": "landed",
+  "9": "landed",
+  "10": "landed",
+  "11": "landed",
+  "12": "landed"
  },
  "findings": [
   {
@@ -223,6 +231,34 @@
    "kind": "tooling",
    "status": "resolved",
    "summary": "a file-named bitmap makes a document non-self-contained and the JS converter refuses it; base64 fixes it with a byte-identical .rc. Sets 2 and 5 still need converting"
+  },
+  {
+   "id": "F-031",
+   "set": 9,
+   "kind": "engine",
+   "status": "open",
+   "summary": "the device player refuses every 3D document - opcode 114 PAINT_3D_STATE, which clearDepth3D emits; removing it moves the error to 111 SET_CAMERA_3D. androidx-main3 has no 3D opcodes or operation classes at all, so rebuilding the APK cannot help and F-014 is not merely a converter gap. The 12 3D documents in sets 9-12 have no engine verification available"
+  },
+  {
+   "id": "F-032",
+   "set": 9,
+   "kind": "tooling",
+   "status": "resolved",
+   "summary": "rcdev refuses to push when rcj and the oracle disagree, so an F-003 touch delta reads as a device failure when the document never reached the phone. All six such documents load, from rcj's bytes as well as the oracle's"
+  },
+  {
+   "id": "F-033",
+   "set": 10,
+   "kind": "converter",
+   "status": "open",
+   "summary": "an inline expression in a visibility modifier goes through parseIntegerExpression upstream, so a float literal throws NumberFormatException and the document is refused; with integer literals rcj emits a float expression op (0x51) where the reference emits an integer one (0x90). Declare the expression in resources.variables and use a bare reference. Written up in rcJson/docs/JSON_GAPS.md"
+  },
+  {
+   "id": "F-034",
+   "set": 11,
+   "kind": "method",
+   "status": "resolved",
+   "summary": "a rotating 3D scene overflows the page at some angles and not others, so one rendered frame cannot answer 'is it on the page'. EAR-GEOP-00009 looked clean over 8 sampled frames and still crossed by 88px elsewhere in the turn"
   }
  ]
 }

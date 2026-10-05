@@ -1,0 +1,39 @@
+{
+  "id": "vis-set-09/mth-geom-00009",
+  "sha256": "c67d176b6404c75a5622aa7a059958469ea22dc238d2150bac8b729d12acea3f",
+  "bytes": 2760,
+  "ops": 113,
+  "distinctOps": 15,
+  "width": 620,
+  "height": 474,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 35,
+    "DRAW_RECT": 6,
+    "DRAW_LINE": 19,
+    "DRAW_CIRCLE": 5,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}
