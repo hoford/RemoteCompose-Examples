@@ -1,0 +1,1586 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Colliding particles beside a first-order rate plot, showing that rate follows the number of encounters"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF0B1410"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0B1410"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 560
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 56.0,
+      "top": 112.0,
+      "right": 356.0,
+      "bottom": 362.0
+     }
+    },
+    {
+     "createParticles": {
+      "id": "molA",
+      "count": 26,
+      "variables": [
+       "molAx",
+       "molAy",
+       "molAvx",
+       "molAvy"
+      ],
+      "initialValues": [
+       "rand() * 300.0",
+       "rand() * 250.0",
+       "(rand() - 0.5) * 3.0",
+       "(rand() - 0.5) * 3.0"
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "molA",
+      "equations": [
+       "(molAx + molAvx + 300.0) % 300.0",
+       "(molAy + molAvy + 250.0) % 250.0",
+       "molAvx",
+       "molAvy"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6FD08C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "56.0 + molAx",
+         "cy": "112.0 + molAy",
+         "radius": "3.2"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "createParticles": {
+      "id": "molB",
+      "count": 13,
+      "variables": [
+       "molBx",
+       "molBy",
+       "molBvx",
+       "molBvy"
+      ],
+      "initialValues": [
+       "rand() * 300.0",
+       "rand() * 250.0",
+       "(rand() - 0.5) * 3.0",
+       "(rand() - 0.5) * 3.0"
+      ]
+     }
+    },
+    {
+     "particlesLoop": {
+      "system": "molB",
+      "equations": [
+       "(molBx + molBvx + 300.0) % 300.0",
+       "(molBy + molBvy + 250.0) % 250.0",
+       "molBvx",
+       "molBvy"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE0B354"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "56.0 + molBx",
+         "cy": "112.0 + molBy",
+         "radius": "4.6"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A and B, moving and colliding",
+      "x": 56.0,
+      "y": 102.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 390.0,
+      "top": 112.0,
+      "right": 572.0,
+      "bottom": 362.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 112.0,
+      "x2": 572.0,
+      "y2": 112.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 174.5,
+      "x2": 572.0,
+      "y2": 174.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 237.0,
+      "x2": 572.0,
+      "y2": 237.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 299.5,
+      "x2": 572.0,
+      "y2": 299.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF27402F"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 362.0,
+      "x2": 572.0,
+      "y2": 362.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 390.0,
+      "y1": 362.0,
+      "x2": 394.55,
+      "y2": 355.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 394.55,
+      "y1": 355.75,
+      "x2": 399.1,
+      "y2": 349.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 399.1,
+      "y1": 349.5,
+      "x2": 403.65,
+      "y2": 343.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 403.65,
+      "y1": 343.25,
+      "x2": 408.2,
+      "y2": 337.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 408.2,
+      "y1": 337.0,
+      "x2": 412.75,
+      "y2": 330.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 412.75,
+      "y1": 330.75,
+      "x2": 417.3,
+      "y2": 324.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 417.3,
+      "y1": 324.5,
+      "x2": 421.85,
+      "y2": 318.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 421.85,
+      "y1": 318.25,
+      "x2": 426.4,
+      "y2": 312.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 426.4,
+      "y1": 312.0,
+      "x2": 430.95,
+      "y2": 305.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 430.95,
+      "y1": 305.75,
+      "x2": 435.5,
+      "y2": 299.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 435.5,
+      "y1": 299.5,
+      "x2": 440.05,
+      "y2": 293.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 440.05,
+      "y1": 293.25,
+      "x2": 444.6,
+      "y2": 287.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 444.6,
+      "y1": 287.0,
+      "x2": 449.15,
+      "y2": 280.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 449.15,
+      "y1": 280.75,
+      "x2": 453.7,
+      "y2": 274.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 453.7,
+      "y1": 274.5,
+      "x2": 458.25,
+      "y2": 268.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 458.25,
+      "y1": 268.25,
+      "x2": 462.8,
+      "y2": 262.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 462.8,
+      "y1": 262.0,
+      "x2": 467.35,
+      "y2": 255.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 467.35,
+      "y1": 255.75,
+      "x2": 471.9,
+      "y2": 249.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 471.9,
+      "y1": 249.5,
+      "x2": 476.45,
+      "y2": 243.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 476.45,
+      "y1": 243.25,
+      "x2": 481.0,
+      "y2": 237.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 481.0,
+      "y1": 237.0,
+      "x2": 485.55,
+      "y2": 230.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 485.55,
+      "y1": 230.75,
+      "x2": 490.1,
+      "y2": 224.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 490.1,
+      "y1": 224.5,
+      "x2": 494.65,
+      "y2": 218.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 494.65,
+      "y1": 218.25,
+      "x2": 499.2,
+      "y2": 212.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 499.2,
+      "y1": 212.0,
+      "x2": 503.75,
+      "y2": 205.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 503.75,
+      "y1": 205.75,
+      "x2": 508.3,
+      "y2": 199.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 508.3,
+      "y1": 199.5,
+      "x2": 512.85,
+      "y2": 193.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 512.85,
+      "y1": 193.25,
+      "x2": 517.4,
+      "y2": 187.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 517.4,
+      "y1": 187.0,
+      "x2": 521.95,
+      "y2": 180.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 521.95,
+      "y1": 180.75,
+      "x2": 526.5,
+      "y2": 174.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 526.5,
+      "y1": 174.5,
+      "x2": 531.05,
+      "y2": 168.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 531.05,
+      "y1": 168.25,
+      "x2": 535.6,
+      "y2": 162.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 535.6,
+      "y1": 162.0,
+      "x2": 540.15,
+      "y2": 155.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 540.15,
+      "y1": 155.75,
+      "x2": 544.7,
+      "y2": 149.5
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 544.7,
+      "y1": 149.5,
+      "x2": 549.25,
+      "y2": 143.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 549.25,
+      "y1": 143.25,
+      "x2": 553.8,
+      "y2": 137.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 553.8,
+      "y1": 137.0,
+      "x2": 558.35,
+      "y2": 130.75
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 558.35,
+      "y1": 130.75,
+      "x2": 562.9,
+      "y2": 124.50000000000001
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 562.9,
+      "y1": 124.50000000000001,
+      "x2": 567.45,
+      "y2": 118.25
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.4
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 567.45,
+      "y1": 118.25,
+      "x2": 572.0,
+      "y2": 112.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF6FD08C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rate",
+      "x": 398.0,
+      "y": 130.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "[A]",
+      "x": 564.0,
+      "y": 352.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "first order in A: a straight line",
+      "x": 390.0,
+      "y": 380.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE0B354"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 22.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "rate = k [A] [B]",
+      "x": 56.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "k",
+      "x": 56.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "how often a collision actually reacts \u2014 orientation and energy, not numbers",
+      "x": 136.0,
+      "y": 452.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "[A] [B]",
+      "x": 56.0,
+      "y": 472.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "how often the two meet at all",
+      "x": 136.0,
+      "y": 472.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF14241C"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 44.0,
+      "top": 498.0,
+      "right": 576.0,
+      "bottom": 544.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Temperature enters through k, not through the concentrations: heating does not add",
+      "x": 56.0,
+      "y": 516.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "molecules, it makes a larger fraction of the collisions energetic enough to matter.",
+      "x": 56.0,
+      "y": 529.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "That is why a ten-degree rise can double a rate.",
+      "x": 56.0,
+      "y": 542.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFE4F0E6"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Why rate depends on concentration",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8FA894"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a rate law is a statement about collisions",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

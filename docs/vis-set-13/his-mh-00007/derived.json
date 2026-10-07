@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-13/his-mh-00007",
+  "sha256": "3d7bfdf42d08a10806476d93a9055a200e42dde432bd6242a6af4b42302769ef",
+  "bytes": 2587,
+  "ops": 112,
+  "distinctOps": 14,
+  "width": 680,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 42,
+    "DRAW_RECT": 13,
+    "DATA_TEXT": 18,
+    "DRAW_TEXT_ANCHOR": 18,
+    "DRAW_LINE": 9,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

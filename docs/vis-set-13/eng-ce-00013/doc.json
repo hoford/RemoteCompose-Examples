@@ -1,0 +1,2340 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 580,
+  "profiles": 513,
+  "contentDescription": "A tall building's gravity and wind load paths, with the overturning moment growing as the square of height"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FFEDEFF2"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEFF2"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 580
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 118.0,
+      "right": 240.0,
+      "bottom": 143.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 118.0,
+      "right": 180.0,
+      "bottom": 143.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 146.0,
+      "right": 240.0,
+      "bottom": 171.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 146.0,
+      "right": 180.0,
+      "bottom": 171.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 174.0,
+      "right": 240.0,
+      "bottom": 199.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 174.0,
+      "right": 180.0,
+      "bottom": 199.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 202.0,
+      "right": 240.0,
+      "bottom": 227.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 202.0,
+      "right": 180.0,
+      "bottom": 227.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 230.0,
+      "right": 240.0,
+      "bottom": 255.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 230.0,
+      "right": 180.0,
+      "bottom": 255.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 258.0,
+      "right": 240.0,
+      "bottom": 283.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 258.0,
+      "right": 180.0,
+      "bottom": 283.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 286.0,
+      "right": 240.0,
+      "bottom": 311.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 286.0,
+      "right": 180.0,
+      "bottom": 311.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 314.0,
+      "right": 240.0,
+      "bottom": 339.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 314.0,
+      "right": 180.0,
+      "bottom": 339.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 342.0,
+      "right": 240.0,
+      "bottom": 367.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 342.0,
+      "right": 180.0,
+      "bottom": 367.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 370.0,
+      "right": 240.0,
+      "bottom": 395.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 370.0,
+      "right": 180.0,
+      "bottom": 395.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 398.0,
+      "right": 240.0,
+      "bottom": 423.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 398.0,
+      "right": 180.0,
+      "bottom": 423.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 426.0,
+      "right": 240.0,
+      "bottom": 451.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 426.0,
+      "right": 180.0,
+      "bottom": 451.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 454.0,
+      "right": 240.0,
+      "bottom": 479.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 454.0,
+      "right": 180.0,
+      "bottom": 479.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 90.0,
+      "top": 482.0,
+      "right": 240.0,
+      "bottom": 507.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 150.0,
+      "top": 482.0,
+      "right": 180.0,
+      "bottom": 507.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC6CDD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 74.0,
+      "top": 510.0,
+      "right": 256.0,
+      "bottom": 526.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "core",
+      "x": 165.0,
+      "y": 108.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "foundation",
+      "x": 165.0,
+      "y": 542.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 122.0,
+      "right": 273.2857142857143,
+      "bottom": 139.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 150.0,
+      "right": 276.57142857142856,
+      "bottom": 167.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 178.0,
+      "right": 279.85714285714283,
+      "bottom": 195.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 206.0,
+      "right": 283.14285714285717,
+      "bottom": 223.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 234.0,
+      "right": 286.42857142857144,
+      "bottom": 251.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 262.0,
+      "right": 289.7142857142857,
+      "bottom": 279.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 290.0,
+      "right": 293.0,
+      "bottom": 307.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 318.0,
+      "right": 296.2857142857143,
+      "bottom": 335.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 346.0,
+      "right": 299.57142857142856,
+      "bottom": 363.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 374.0,
+      "right": 302.85714285714283,
+      "bottom": 391.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 402.0,
+      "right": 306.14285714285717,
+      "bottom": 419.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 430.0,
+      "right": 309.42857142857144,
+      "bottom": 447.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 458.0,
+      "right": 312.7142857142857,
+      "bottom": 475.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 266.0,
+      "top": 486.0,
+      "right": 316.0,
+      "bottom": 503.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "gravity",
+      "x": 266.0,
+      "y": 108.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "each floor adds its own weight to everything below \u2014 linear in height",
+      "x": 266.0,
+      "y": 530.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 132.0,
+      "x2": 70.0,
+      "y2": 132.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 160.0,
+      "x2": 70.0,
+      "y2": 160.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 188.0,
+      "x2": 70.0,
+      "y2": 188.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 216.0,
+      "x2": 70.0,
+      "y2": 216.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 244.0,
+      "x2": 70.0,
+      "y2": 244.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 272.0,
+      "x2": 70.0,
+      "y2": 272.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 300.0,
+      "x2": 70.0,
+      "y2": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 328.0,
+      "x2": 70.0,
+      "y2": 328.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 356.0,
+      "x2": 70.0,
+      "y2": 356.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 384.0,
+      "x2": 70.0,
+      "y2": 384.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 412.0,
+      "x2": 70.0,
+      "y2": 412.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 440.0,
+      "x2": 70.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 468.0,
+      "x2": 70.0,
+      "y2": 468.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 496.0,
+      "x2": 70.0,
+      "y2": 496.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "wind",
+      "x": 14.0,
+      "y": 108.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 14.0,
+      "y1": 118.0,
+      "x2": 21.714285714285715,
+      "y2": 146.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 21.714285714285715,
+      "y1": 146.0,
+      "x2": 28.857142857142854,
+      "y2": 174.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 28.857142857142854,
+      "y1": 174.0,
+      "x2": 35.42857142857143,
+      "y2": 202.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 35.42857142857143,
+      "y1": 202.0,
+      "x2": 41.42857142857143,
+      "y2": 230.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 41.42857142857143,
+      "y1": 230.0,
+      "x2": 46.85714285714286,
+      "y2": 258.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 46.85714285714286,
+      "y1": 258.0,
+      "x2": 51.714285714285715,
+      "y2": 286.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 51.714285714285715,
+      "y1": 286.0,
+      "x2": 56.0,
+      "y2": 314.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 56.0,
+      "y1": 314.0,
+      "x2": 59.714285714285715,
+      "y2": 342.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 59.714285714285715,
+      "y1": 342.0,
+      "x2": 62.85714285714286,
+      "y2": 370.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 62.85714285714286,
+      "y1": 370.0,
+      "x2": 65.42857142857143,
+      "y2": 398.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 65.42857142857143,
+      "y1": 398.0,
+      "x2": 67.42857142857143,
+      "y2": 426.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 67.42857142857143,
+      "y1": 426.0,
+      "x2": 68.85714285714286,
+      "y2": 454.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 68.85714285714286,
+      "y1": 454.0,
+      "x2": 69.71428571428571,
+      "y2": 482.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 69.71428571428571,
+      "y1": 482.0,
+      "x2": 70.0,
+      "y2": 510.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFC0322C"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "overturning moment \u221d height\u00b2",
+      "x": 20.0,
+      "y": 530.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 330.0,
+      "top": 118.0,
+      "right": 596.0,
+      "bottom": 300.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Which one shapes the building",
+      "x": 344.0,
+      "y": 144.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Below about ten storeys, weight decides",
+      "x": 344.0,
+      "y": 166.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the structure. Above that, wind does:",
+      "x": 344.0,
+      "y": 180.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the moment it has to resist grows with",
+      "x": 344.0,
+      "y": 194.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "the square of height while the",
+      "x": 344.0,
+      "y": 208.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "building's ability to resist it grows",
+      "x": 344.0,
+      "y": 222.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "only with its width. That is why tall",
+      "x": 344.0,
+      "y": 236.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "buildings get a stiff core, or a braced",
+      "x": 344.0,
+      "y": 250.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "perimeter, long before they need thicker",
+      "x": 344.0,
+      "y": 264.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "columns.",
+      "x": 344.0,
+      "y": 278.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFFFFF"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 330.0,
+      "top": 322.0,
+      "right": 596.0,
+      "bottom": 470.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Load paths",
+      "x": 344.0,
+      "y": 348.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.0,
+      "top": 364.0,
+      "right": 349.0,
+      "bottom": 377.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "slab \u2192 beam",
+      "x": 358.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "floor load to the frame",
+      "x": 470.0,
+      "y": 372.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.0,
+      "top": 388.0,
+      "right": 349.0,
+      "bottom": 401.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "beam \u2192 column",
+      "x": 358.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "gathered at each level",
+      "x": 470.0,
+      "y": 396.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.0,
+      "top": 412.0,
+      "right": 349.0,
+      "bottom": 425.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF0E8F80"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "column \u2192 foundation",
+      "x": 358.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "accumulated weight",
+      "x": 470.0,
+      "y": 420.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 344.0,
+      "top": 436.0,
+      "right": 349.0,
+      "bottom": 449.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF2F6BD8"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.5
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "fa\u00e7ade \u2192 core",
+      "x": 358.0,
+      "y": 444.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "wind, as shear and moment",
+      "x": 470.0,
+      "y": 444.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF16203A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "What holds a tall building up",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF5B6880"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "two load paths, and which one wins",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

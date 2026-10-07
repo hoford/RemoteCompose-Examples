@@ -1,37 +1,39 @@
 {
- "id": "vis-set-04/soc-soci-00003",
- "title": "Where you start, where you land",
- "description": "Drag to choose a child's starting income quintile and see where they end up. The top and bottom are stickier than the middle. #society #mobility #interactive",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "6c44bce99dc4bacfa30b43e27df8b55bc37d4f117ebc9781ca71d43c779b0710",
- "addedAt": "2026-10-03T20:53:58+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-04/SOC-SOCI-00003.rc",
- "programmeId": "SOC-SOCI-00003",
- "subject": [
-  "Social Sciences",
-  "Sociology",
-  "Social mobility"
- ],
- "concepts": [
-  "social mobility",
-  "income quintile",
-  "intergenerational",
-  "transition matrix"
- ],
- "how": "interactive",
- "why": "explore",
- "dimension": "2D",
- "accuracy": "quantitative",
- "scale": "n/a",
- "audience": [
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 4,
- "palette": "paper"
+  "id": "vis-set-04/soc-soci-00003",
+  "title": "Where you start, where you land",
+  "description": "Drag to choose a child's starting income quintile and see where they end up. The top and bottom are stickier than the middle. #society #mobility #interactive #input",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "input"
+  ],
+  "sha256": "6c44bce99dc4bacfa30b43e27df8b55bc37d4f117ebc9781ca71d43c779b0710",
+  "addedAt": "2026-10-03T20:53:58+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-04/SOC-SOCI-00003.rc",
+  "programmeId": "SOC-SOCI-00003",
+  "subject": [
+    "Social Sciences",
+    "Sociology",
+    "Social mobility"
+  ],
+  "concepts": [
+    "social mobility",
+    "income quintile",
+    "intergenerational",
+    "transition matrix"
+  ],
+  "how": "interactive",
+  "why": "explore",
+  "dimension": "2D",
+  "accuracy": "quantitative",
+  "scale": "n/a",
+  "audience": [
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 4,
+  "palette": "paper"
 }

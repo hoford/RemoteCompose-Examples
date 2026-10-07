@@ -1,38 +1,40 @@
 {
- "id": "vis-set-04/bio-bioc-00015",
- "title": "Enzyme saturation",
- "description": "Substrate molecules as particles beside the saturation curve they produce. Doubling the substrate stops helping once every site is busy. #biology #enzymes #particles",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "3a35c9ffe3e60e96eef5545eec7db20836a72baaa91d2607cdb9243d0183038e",
- "addedAt": "2026-10-03T20:53:58+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-04/BIO-BIOC-00015.rc",
- "programmeId": "BIO-BIOC-00015",
- "subject": [
-  "Biology",
-  "Biochemistry",
-  "Enzymes"
- ],
- "concepts": [
-  "enzyme",
-  "substrate",
-  "saturation",
-  "Michaelis-Menten",
-  "reaction rate"
- ],
- "how": "particle-system",
- "why": "analyze",
- "dimension": "2D",
- "accuracy": "quantitative",
- "scale": "n/a",
- "audience": [
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 4,
- "palette": "plum"
+  "id": "vis-set-04/bio-bioc-00015",
+  "title": "Enzyme saturation",
+  "description": "Substrate molecules as particles beside the saturation curve they produce. Doubling the substrate stops helping once every site is busy. #biology #enzymes #particles #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "animated"
+  ],
+  "sha256": "3a35c9ffe3e60e96eef5545eec7db20836a72baaa91d2607cdb9243d0183038e",
+  "addedAt": "2026-10-03T20:53:58+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-04/BIO-BIOC-00015.rc",
+  "programmeId": "BIO-BIOC-00015",
+  "subject": [
+    "Biology",
+    "Biochemistry",
+    "Enzymes"
+  ],
+  "concepts": [
+    "enzyme",
+    "substrate",
+    "saturation",
+    "Michaelis-Menten",
+    "reaction rate"
+  ],
+  "how": "particle-system",
+  "why": "analyze",
+  "dimension": "2D",
+  "accuracy": "quantitative",
+  "scale": "n/a",
+  "audience": [
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 4,
+  "palette": "plum"
 }

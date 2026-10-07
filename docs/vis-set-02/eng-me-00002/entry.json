@@ -1,37 +1,39 @@
 {
- "id": "vis-set-02/eng-me-00002",
- "title": "Gear ratio, 25 teeth driving 15",
- "description": "Two meshing gears from a single clock: the second angle is the first times the tooth ratio, so they cannot drift out of step. #engineering #gears #animated",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "ac5c664e5fa539122ac1c9a4ce668f33944846791665c877c3b8a8dc8f6782f3",
- "addedAt": "2026-10-03T18:11:18+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-02/ENG-ME-00002.rc",
- "programmeId": "ENG-ME-00002",
- "subject": [
-  "Engineering",
-  "Mechanical Engineering",
-  "Gears"
- ],
- "concepts": [
-  "gear ratio",
-  "tooth count",
-  "meshing",
-  "angular velocity"
- ],
- "how": "expression-animation",
- "why": "explore",
- "dimension": "2D",
- "accuracy": "quantitative",
- "scale": "0.1 m",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 2
+  "id": "vis-set-02/eng-me-00002",
+  "title": "Gear ratio, 25 teeth driving 15",
+  "description": "Two meshing gears from a single clock: the second angle is the first times the tooth ratio, so they cannot drift out of step. #engineering #gears #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "animated"
+  ],
+  "sha256": "ac5c664e5fa539122ac1c9a4ce668f33944846791665c877c3b8a8dc8f6782f3",
+  "addedAt": "2026-10-03T18:11:18+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-02/ENG-ME-00002.rc",
+  "programmeId": "ENG-ME-00002",
+  "subject": [
+    "Engineering",
+    "Mechanical Engineering",
+    "Gears"
+  ],
+  "concepts": [
+    "gear ratio",
+    "tooth count",
+    "meshing",
+    "angular velocity"
+  ],
+  "how": "expression-animation",
+  "why": "explore",
+  "dimension": "2D",
+  "accuracy": "quantitative",
+  "scale": "0.1 m",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 2
 }

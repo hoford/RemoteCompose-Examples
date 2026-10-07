@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-13/mth-trig-00015",
+  "sha256": "ef557df6542f8665a0184706446891ca91d5964d0664e90e8a76002c2d894423",
+  "bytes": 20831,
+  "ops": 1197,
+  "distinctOps": 14,
+  "width": 640,
+  "height": 540,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 347,
+    "DRAW_RECT": 323,
+    "DRAW_LINE": 487,
+    "DATA_TEXT": 14,
+    "DRAW_TEXT_ANCHOR": 14,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

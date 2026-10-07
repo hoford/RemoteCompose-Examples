@@ -1,38 +1,40 @@
 {
- "id": "vis-set-02/phy-fpp-00006",
- "title": "Accelerator energy, 1930 to 2030",
- "description": "The Livingston plot: beam energy per machine on a log axis, a factor of ten every six years for seventy years, with bunches circulating alongside. #physics #accelerators #chart",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "cdf1fffd6098f316aa4465835b8d1a61cb803357852c2265f96fc82711236889",
- "addedAt": "2026-10-03T18:11:18+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-02/PHY-FPP-00006.rc",
- "programmeId": "PHY-FPP-00006",
- "subject": [
-  "Physics",
-  "Fundamental / Particle Physics",
-  "Particle accelerators"
- ],
- "concepts": [
-  "accelerator",
-  "beam energy",
-  "Livingston plot",
-  "LHC",
-  "Tevatron"
- ],
- "how": "data-plot",
- "why": "simulate",
- "dimension": "2D",
- "accuracy": "quantitative",
- "scale": "n/a",
- "audience": [
-  "undergraduate",
-  "professional"
- ],
- "dataSource": "theoretical-model",
- "set": 2
+  "id": "vis-set-02/phy-fpp-00006",
+  "title": "Accelerator energy, 1930 to 2030",
+  "description": "The Livingston plot: beam energy per machine on a log axis, a factor of ten every six years for seventy years, with bunches circulating alongside. #physics #accelerators #chart #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "animated"
+  ],
+  "sha256": "cdf1fffd6098f316aa4465835b8d1a61cb803357852c2265f96fc82711236889",
+  "addedAt": "2026-10-03T18:11:18+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-02/PHY-FPP-00006.rc",
+  "programmeId": "PHY-FPP-00006",
+  "subject": [
+    "Physics",
+    "Fundamental / Particle Physics",
+    "Particle accelerators"
+  ],
+  "concepts": [
+    "accelerator",
+    "beam energy",
+    "Livingston plot",
+    "LHC",
+    "Tevatron"
+  ],
+  "how": "data-plot",
+  "why": "simulate",
+  "dimension": "2D",
+  "accuracy": "quantitative",
+  "scale": "n/a",
+  "audience": [
+    "undergraduate",
+    "professional"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 2
 }

@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-13/phy-fm-00039",
+  "sha256": "5a44fd38378e8d55a1b109964bf3b0836412685fb493ca0f91407492260920f8",
+  "bytes": 3095,
+  "ops": 129,
+  "distinctOps": 14,
+  "width": 600,
+  "height": 520,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 48,
+    "DRAW_RECT": 7,
+    "DRAW_LINE": 20,
+    "DATA_TEXT": 21,
+    "DRAW_TEXT_ANCHOR": 21,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

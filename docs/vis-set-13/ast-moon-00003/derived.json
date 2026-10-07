@@ -1,0 +1,40 @@
+{
+  "id": "vis-set-13/ast-moon-00003",
+  "sha256": "8c2a85e57126246e09b8376a025cc7a08778e9c7b49ffc7e32b8735b190e48ac",
+  "bytes": 2205,
+  "ops": 92,
+  "distinctOps": 16,
+  "width": 620,
+  "height": 600,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 33,
+    "COMPONENT_VALUE": 2,
+    "DRAW_RECT": 1,
+    "TOUCH_EXPRESSION": 2,
+    "DRAW_CIRCLE": 4,
+    "DATA_TEXT": 19,
+    "DRAW_TEXT_ANCHOR": 19,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "interaction",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "differs",
+  "src": []
+}

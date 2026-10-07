@@ -1,264 +1,272 @@
 {
- "note": "The only source of truth for where the programme is. Read this first after any pause.",
- "currentSet": 13,
- "setsLanded": 12,
- "documentsLanded": 193,
- "lastTouched": "2026-10-05 sets 9-12 landed, 64 documents. First sets in the programme checked against the engine: 52 of 52 2D documents load on device; the 12 3D documents cannot be checked at all, because androidx-main3 has no 3D opcodes and no 3D operation classes, so the oracle and the player share one gap. They are landed as unverifiable, not as verified.",
- "pausedFor": null,
- "setStatus": {
-  "1": "landed",
-  "2": "landed",
-  "3": "landed",
-  "4": "landed",
-  "5": "landed",
-  "6": "landed",
-  "7": "landed",
-  "8": "landed",
-  "9": "landed",
-  "10": "landed",
-  "11": "landed",
-  "12": "landed"
- },
- "findings": [
-  {
-   "id": "F-001",
-   "set": 1,
-   "kind": "tooling",
-   "status": "confirmed",
-   "summary": "rc2json cannot read documents containing 3D ops (Unknown opcode 91)"
+  "note": "The only source of truth for where the programme is. Read this first after any pause.",
+  "currentSet": 13,
+  "setsLanded": 13,
+  "documentsLanded": 209,
+  "lastTouched": "2026-10-07 set 13 landed: 16 documents, first set on the primitive-based helper block and the first Astronomy documents in the programme. Gates: node validator 16/16; Java oracle 16/16; rcj byte-identical on 15 of 16, the exception EAR-METE-00013 being the known F-003 touchExpression delta (4 bytes, one RPN token). Device pass on an attached phone: 14 of 16 render, the two 3D documents refused with 'Unknown operation encountered 114' (F-017, the installed player predates PAINT_3D_STATE). Also backfilled the three structural hashtags across the whole corpus - see F-035.",
+  "pausedFor": null,
+  "setStatus": {
+    "1": "landed",
+    "2": "landed",
+    "3": "landed",
+    "4": "landed",
+    "5": "landed",
+    "6": "landed",
+    "7": "landed",
+    "8": "landed",
+    "9": "landed",
+    "10": "landed",
+    "11": "landed",
+    "12": "landed",
+    "13": "landed"
   },
-  {
-   "id": "F-002",
-   "set": 1,
-   "kind": "converter-divergence",
-   "status": "confirmed",
-   "summary": "rcj vs Java oracle differ up to 19x on 3D; defineMesh3D geometry is dropped by the Java writer AND the two renders differ visibly; jsonReproduces says yes for all five anyway",
-   "severity": "high"
-  },
-  {
-   "id": "F-003",
-   "set": 1,
-   "kind": "converter-divergence",
-   "status": "resolved",
-   "summary": "touchExpression's string expression is dropped by the Java parser, which wants an RPN float array; delta is 4 B per RPN token"
-  },
-  {
-   "id": "F-004",
-   "set": 1,
-   "kind": "player",
-   "status": "open",
-   "summary": "alpha on a 3D mesh does not blend in the C++ player; meshes render opaque"
-  },
-  {
-   "id": "F-005",
-   "set": 1,
-   "kind": "corpus",
-   "status": "confirmed",
-   "summary": "corpus teaches text component syntax rcj rejects; 201 of 636 are unsupported"
-  },
-  {
-   "id": "F-006",
-   "set": 1,
-   "kind": "authoring",
-   "status": "confirmed",
-   "summary": "panX 0.0 centres rather than left-aligns; every set-1 title was clipped"
-  },
-  {
-   "id": "F-007",
-   "set": 1,
-   "kind": "corpus-tooling",
-   "status": "open",
-   "summary": "coverage.json opcode table has no 3D names; 3D usage invisible"
-  },
-  {
-   "id": "F-008",
-   "set": 1,
-   "kind": "authoring",
-   "status": "confirmed",
-   "summary": "a wrongly wound defineMesh3D mesh renders as nothing, with no error anywhere"
-  },
-  {
-   "id": "F-009",
-   "set": 1,
-   "kind": "player",
-   "status": "open",
-   "summary": "wireframe meshes write depth across whole faces, occluding their contents"
-  },
-  {
-   "id": "F-010",
-   "set": 2,
-   "kind": "authoring",
-   "status": "confirmed",
-   "summary": "a texture is invisible on a wireframe mesh; a 3D surface can be see-through or textured, not both"
-  },
-  {
-   "id": "F-011",
-   "set": 2,
-   "kind": "corpus-tooling",
-   "status": "fixed",
-   "summary": "rcx round-trip ignored base_dir, mislabelling any document with a bitmap asset"
-  },
-  {
-   "id": "F-012",
-   "set": 5,
-   "kind": "engine-or-authoring",
-   "status": "confirmed",
-   "summary": "a sized canvas component does not clip its drawing; 2D and 3D both escape over siblings"
-  },
-  {
-   "id": "F-013",
-   "set": 5,
-   "kind": "engine",
-   "status": "confirmed",
-   "summary": "nested 3D projects into the document viewport offset by the component, not into the component"
-  },
-  {
-   "id": "F-014",
-   "set": 5,
-   "kind": "oracle",
-   "status": "confirmed",
-   "summary": "the Java JSON parser has no 3D commands at all and drops them silently; the oracle gate was vacuous for 16 of 80 documents"
-  },
-  {
-   "id": "F-015",
-   "set": 5,
-   "kind": "player-divergence",
-   "status": "confirmed",
-   "summary": "rc2json decodes only 2 of 7 3D ops and loses stream sync; no structural 3D verifier exists on the desktop"
-  },
-  {
-   "id": "F-016",
-   "set": 5,
-   "kind": "silent-drop",
-   "status": "confirmed",
-   "summary": "stopMode is a no-op in rcj and unknown to the Java parser, which reads touchMode"
-  },
-  {
-   "id": "F-017",
-   "set": 6,
-   "kind": "engine",
-   "status": "accepted-known",
-   "summary": "3D opcodes are from unlanded CL ag/4108133; no 3D runs on this APK. Cadence continues - C++ and TS players support 3D"
-  },
-  {
-   "id": "F-018",
-   "set": 6,
-   "kind": "tooling",
-   "status": "fixed",
-   "summary": "rcdev's oracle fallback silently shipped a 3D document with its 3D removed and reported OK; base_dir was also unset so every textured document hit it"
-  },
-  {
-   "id": "F-019",
-   "set": 6,
-   "kind": "player-divergence",
-   "status": "resolved",
-   "summary": "the clock WAS pinnable via --time; the bug was a >0 guard that made --time 0 silently not pin. Added --clock; corrects two earlier conclusions"
-  },
-  {
-   "id": "F-020",
-   "set": 6,
-   "kind": "silent-drop",
-   "status": "confirmed",
-   "summary": "textFromFloat renders 0 for a numeric literal value; it must be a string. No gate catches it"
-  },
-  {
-   "id": "F-021",
-   "set": 6,
-   "kind": "engine",
-   "status": "confirmed",
-   "summary": "clipRect intersects and cannot be widened; a reset is a no-op. Scoped to a canvas component. Broke three documents in set 6"
-  },
-  {
-   "id": "F-022",
-   "set": 7,
-   "kind": "converter",
-   "status": "confirmed",
-   "summary": "rcj writes expressions over the 32-token cap that the Java writer refuses and a device would reject; only the oracle byte delta catches it"
-  },
-  {
-   "id": "F-023",
-   "set": 7,
-   "kind": "player",
-   "status": "fixed",
-   "summary": "rand() is not pinned by --clock, so no particle document reproduced; added rc2image --seed"
-  },
-  {
-   "id": "F-024",
-   "set": 8,
-   "kind": "engine",
-   "status": "confirmed",
-   "summary": "texture v runs bottom-to-top; the u mirroring reported here was an artefact of the inside-out sphere (F-029), not a player convention"
-  },
-  {
-   "id": "F-025",
-   "set": 8,
-   "kind": "authoring",
-   "status": "confirmed",
-   "summary": "a great circle over ~110 degrees reads as a line through the globe; C++ and TS agree to 0.1 mean diff, so it was never a player divergence"
-  },
-  {
-   "id": "F-026",
-   "set": 8,
-   "kind": "engine",
-   "status": "superseded",
-   "summary": "claimed the sphere UV convention was solved by calibration; superseded by F-028, which shows route placement still disagrees"
-  },
-  {
-   "id": "F-027",
-   "set": 8,
-   "kind": "player",
-   "status": "worked-around",
-   "summary": "a thin tube mesh is not occluded by a sphere even when deep inside it; splitting, draw order and texture all ruled out. Worked around by raising the arcs"
-  },
-  {
-   "id": "F-028",
-   "set": 8,
-   "kind": "unresolved",
-   "status": "resolved",
-   "summary": "route/texture mismatch: root cause was the inside-out sphere winding (F-029)",
-   "instrument": "work/set-08/CAL-GLOBE-00001.json"
-  },
-  {
-   "id": "F-029",
-   "set": 8,
-   "kind": "engine",
-   "status": "corrected",
-   "summary": "CORRECTED: no engine defect. uv_sphere was wound inside out, so the player drew the inner far hemisphere - mirrored and counter-rotating"
-  },
-  {
-   "id": "F-030",
-   "set": 8,
-   "kind": "tooling",
-   "status": "resolved",
-   "summary": "a file-named bitmap makes a document non-self-contained and the JS converter refuses it; base64 fixes it with a byte-identical .rc. Sets 2 and 5 still need converting"
-  },
-  {
-   "id": "F-031",
-   "set": 9,
-   "kind": "engine",
-   "status": "open",
-   "summary": "the device player refuses every 3D document - opcode 114 PAINT_3D_STATE, which clearDepth3D emits; removing it moves the error to 111 SET_CAMERA_3D. androidx-main3 has no 3D opcodes or operation classes at all, so rebuilding the APK cannot help and F-014 is not merely a converter gap. The 12 3D documents in sets 9-12 have no engine verification available"
-  },
-  {
-   "id": "F-032",
-   "set": 9,
-   "kind": "tooling",
-   "status": "resolved",
-   "summary": "rcdev refuses to push when rcj and the oracle disagree, so an F-003 touch delta reads as a device failure when the document never reached the phone. All six such documents load, from rcj's bytes as well as the oracle's"
-  },
-  {
-   "id": "F-033",
-   "set": 10,
-   "kind": "converter",
-   "status": "open",
-   "summary": "an inline expression in a visibility modifier goes through parseIntegerExpression upstream, so a float literal throws NumberFormatException and the document is refused; with integer literals rcj emits a float expression op (0x51) where the reference emits an integer one (0x90). Declare the expression in resources.variables and use a bare reference. Written up in rcJson/docs/JSON_GAPS.md"
-  },
-  {
-   "id": "F-034",
-   "set": 11,
-   "kind": "method",
-   "status": "resolved",
-   "summary": "a rotating 3D scene overflows the page at some angles and not others, so one rendered frame cannot answer 'is it on the page'. EAR-GEOP-00009 looked clean over 8 sampled frames and still crossed by 88px elsewhere in the turn"
-  }
- ]
+  "findings": [
+    {
+      "id": "F-001",
+      "set": 1,
+      "kind": "tooling",
+      "status": "confirmed",
+      "summary": "rc2json cannot read documents containing 3D ops (Unknown opcode 91)"
+    },
+    {
+      "id": "F-002",
+      "set": 1,
+      "kind": "converter-divergence",
+      "status": "confirmed",
+      "summary": "rcj vs Java oracle differ up to 19x on 3D; defineMesh3D geometry is dropped by the Java writer AND the two renders differ visibly; jsonReproduces says yes for all five anyway",
+      "severity": "high"
+    },
+    {
+      "id": "F-003",
+      "set": 1,
+      "kind": "converter-divergence",
+      "status": "resolved",
+      "summary": "touchExpression's string expression is dropped by the Java parser, which wants an RPN float array; delta is 4 B per RPN token"
+    },
+    {
+      "id": "F-004",
+      "set": 1,
+      "kind": "player",
+      "status": "open",
+      "summary": "alpha on a 3D mesh does not blend in the C++ player; meshes render opaque"
+    },
+    {
+      "id": "F-005",
+      "set": 1,
+      "kind": "corpus",
+      "status": "confirmed",
+      "summary": "corpus teaches text component syntax rcj rejects; 201 of 636 are unsupported"
+    },
+    {
+      "id": "F-006",
+      "set": 1,
+      "kind": "authoring",
+      "status": "confirmed",
+      "summary": "panX 0.0 centres rather than left-aligns; every set-1 title was clipped"
+    },
+    {
+      "id": "F-007",
+      "set": 1,
+      "kind": "corpus-tooling",
+      "status": "open",
+      "summary": "coverage.json opcode table has no 3D names; 3D usage invisible"
+    },
+    {
+      "id": "F-008",
+      "set": 1,
+      "kind": "authoring",
+      "status": "confirmed",
+      "summary": "a wrongly wound defineMesh3D mesh renders as nothing, with no error anywhere"
+    },
+    {
+      "id": "F-009",
+      "set": 1,
+      "kind": "player",
+      "status": "open",
+      "summary": "wireframe meshes write depth across whole faces, occluding their contents"
+    },
+    {
+      "id": "F-010",
+      "set": 2,
+      "kind": "authoring",
+      "status": "confirmed",
+      "summary": "a texture is invisible on a wireframe mesh; a 3D surface can be see-through or textured, not both"
+    },
+    {
+      "id": "F-011",
+      "set": 2,
+      "kind": "corpus-tooling",
+      "status": "fixed",
+      "summary": "rcx round-trip ignored base_dir, mislabelling any document with a bitmap asset"
+    },
+    {
+      "id": "F-012",
+      "set": 5,
+      "kind": "engine-or-authoring",
+      "status": "confirmed",
+      "summary": "a sized canvas component does not clip its drawing; 2D and 3D both escape over siblings"
+    },
+    {
+      "id": "F-013",
+      "set": 5,
+      "kind": "engine",
+      "status": "confirmed",
+      "summary": "nested 3D projects into the document viewport offset by the component, not into the component"
+    },
+    {
+      "id": "F-014",
+      "set": 5,
+      "kind": "oracle",
+      "status": "confirmed",
+      "summary": "the Java JSON parser has no 3D commands at all and drops them silently; the oracle gate was vacuous for 16 of 80 documents"
+    },
+    {
+      "id": "F-015",
+      "set": 5,
+      "kind": "player-divergence",
+      "status": "confirmed",
+      "summary": "rc2json decodes only 2 of 7 3D ops and loses stream sync; no structural 3D verifier exists on the desktop"
+    },
+    {
+      "id": "F-016",
+      "set": 5,
+      "kind": "silent-drop",
+      "status": "confirmed",
+      "summary": "stopMode is a no-op in rcj and unknown to the Java parser, which reads touchMode"
+    },
+    {
+      "id": "F-017",
+      "set": 6,
+      "kind": "engine",
+      "status": "accepted-known",
+      "summary": "3D opcodes are from unlanded CL ag/4108133; no 3D runs on this APK. Cadence continues - C++ and TS players support 3D"
+    },
+    {
+      "id": "F-018",
+      "set": 6,
+      "kind": "tooling",
+      "status": "fixed",
+      "summary": "rcdev's oracle fallback silently shipped a 3D document with its 3D removed and reported OK; base_dir was also unset so every textured document hit it"
+    },
+    {
+      "id": "F-019",
+      "set": 6,
+      "kind": "player-divergence",
+      "status": "resolved",
+      "summary": "the clock WAS pinnable via --time; the bug was a >0 guard that made --time 0 silently not pin. Added --clock; corrects two earlier conclusions"
+    },
+    {
+      "id": "F-020",
+      "set": 6,
+      "kind": "silent-drop",
+      "status": "confirmed",
+      "summary": "textFromFloat renders 0 for a numeric literal value; it must be a string. No gate catches it"
+    },
+    {
+      "id": "F-021",
+      "set": 6,
+      "kind": "engine",
+      "status": "confirmed",
+      "summary": "clipRect intersects and cannot be widened; a reset is a no-op. Scoped to a canvas component. Broke three documents in set 6"
+    },
+    {
+      "id": "F-022",
+      "set": 7,
+      "kind": "converter",
+      "status": "confirmed",
+      "summary": "rcj writes expressions over the 32-token cap that the Java writer refuses and a device would reject; only the oracle byte delta catches it"
+    },
+    {
+      "id": "F-023",
+      "set": 7,
+      "kind": "player",
+      "status": "fixed",
+      "summary": "rand() is not pinned by --clock, so no particle document reproduced; added rc2image --seed"
+    },
+    {
+      "id": "F-024",
+      "set": 8,
+      "kind": "engine",
+      "status": "confirmed",
+      "summary": "texture v runs bottom-to-top; the u mirroring reported here was an artefact of the inside-out sphere (F-029), not a player convention"
+    },
+    {
+      "id": "F-025",
+      "set": 8,
+      "kind": "authoring",
+      "status": "confirmed",
+      "summary": "a great circle over ~110 degrees reads as a line through the globe; C++ and TS agree to 0.1 mean diff, so it was never a player divergence"
+    },
+    {
+      "id": "F-026",
+      "set": 8,
+      "kind": "engine",
+      "status": "superseded",
+      "summary": "claimed the sphere UV convention was solved by calibration; superseded by F-028, which shows route placement still disagrees"
+    },
+    {
+      "id": "F-027",
+      "set": 8,
+      "kind": "player",
+      "status": "worked-around",
+      "summary": "a thin tube mesh is not occluded by a sphere even when deep inside it; splitting, draw order and texture all ruled out. Worked around by raising the arcs"
+    },
+    {
+      "id": "F-028",
+      "set": 8,
+      "kind": "unresolved",
+      "status": "resolved",
+      "summary": "route/texture mismatch: root cause was the inside-out sphere winding (F-029)",
+      "instrument": "work/set-08/CAL-GLOBE-00001.json"
+    },
+    {
+      "id": "F-029",
+      "set": 8,
+      "kind": "engine",
+      "status": "corrected",
+      "summary": "CORRECTED: no engine defect. uv_sphere was wound inside out, so the player drew the inner far hemisphere - mirrored and counter-rotating"
+    },
+    {
+      "id": "F-030",
+      "set": 8,
+      "kind": "tooling",
+      "status": "resolved",
+      "summary": "a file-named bitmap makes a document non-self-contained and the JS converter refuses it; base64 fixes it with a byte-identical .rc. Sets 2 and 5 still need converting"
+    },
+    {
+      "id": "F-031",
+      "set": 9,
+      "kind": "engine",
+      "status": "open",
+      "summary": "the device player refuses every 3D document - opcode 114 PAINT_3D_STATE, which clearDepth3D emits; removing it moves the error to 111 SET_CAMERA_3D. androidx-main3 has no 3D opcodes or operation classes at all, so rebuilding the APK cannot help and F-014 is not merely a converter gap. The 12 3D documents in sets 9-12 have no engine verification available"
+    },
+    {
+      "id": "F-032",
+      "set": 9,
+      "kind": "tooling",
+      "status": "resolved",
+      "summary": "rcdev refuses to push when rcj and the oracle disagree, so an F-003 touch delta reads as a device failure when the document never reached the phone. All six such documents load, from rcj's bytes as well as the oracle's"
+    },
+    {
+      "id": "F-033",
+      "set": 10,
+      "kind": "converter",
+      "status": "open",
+      "summary": "an inline expression in a visibility modifier goes through parseIntegerExpression upstream, so a float literal throws NumberFormatException and the document is refused; with integer literals rcj emits a float expression op (0x51) where the reference emits an integer one (0x90). Declare the expression in resources.variables and use a bare reference. Written up in rcJson/docs/JSON_GAPS.md"
+    },
+    {
+      "id": "F-034",
+      "set": 11,
+      "kind": "method",
+      "status": "resolved",
+      "summary": "a rotating 3D scene overflows the page at some angles and not others, so one rendered frame cannot answer 'is it on the page'. EAR-GEOP-00009 looked clean over 8 sampled frames and still crossed by 88px elsewhere in the turn"
+    },
+    {
+      "id": "F-035",
+      "set": 13,
+      "kind": "method",
+      "status": "resolved",
+      "summary": "the three hashtags readers filter on - #3d, #animated, #input - were wrong on 65 of 209 documents, and silently so. vistags.py only ever fills a BLANK description, so any document that arrived with one kept whatever tags it was born with. Two rules were also wrong: #animated tested for a clock read, but a particle system moves itself from dt with no clock anywhere, which left 36 visibly moving documents untagged; and the touchable tag was spelled #touch in 21 documents and nowhere else. tools/structtags.py now derives all three from document content, renames touch to input, and is idempotent. Its detector is self-tested against negative controls (prose mentioning '3D' must not tag) and a mutation test (renaming the 3D opcodes must drop the tag). Counts after: #3d 41, #animated 83, #input 30."
+    }
+  ]
 }

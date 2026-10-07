@@ -1,39 +1,41 @@
 {
- "id": "vis-set-03/bio-cb-00009",
- "title": "Across the membrane",
- "description": "Passive and active transport side by side on one clock, so the rates are comparable: down the gradient is free, against it costs ATP. #biology #membrane #animated",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "c36d8ed8d52d972c1125de51fec64fbbe1eba34c69a2401fb294659d30e1920b",
- "addedAt": "2026-10-03T18:43:26+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-03/BIO-CB-00009.rc",
- "programmeId": "BIO-CB-00009",
- "subject": [
-  "Biology",
-  "Cell Biology",
-  "Cell membrane"
- ],
- "concepts": [
-  "passive transport",
-  "active transport",
-  "concentration gradient",
-  "ATP",
-  "bilayer"
- ],
- "how": "expression-animation",
- "why": "compare",
- "dimension": "2D",
- "accuracy": "schematic",
- "scale": "10^-8 m",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 3,
- "palette": "plum"
+  "id": "vis-set-03/bio-cb-00009",
+  "title": "Across the membrane",
+  "description": "Passive and active transport side by side on one clock, so the rates are comparable: down the gradient is free, against it costs ATP. #biology #membrane #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "animated"
+  ],
+  "sha256": "c36d8ed8d52d972c1125de51fec64fbbe1eba34c69a2401fb294659d30e1920b",
+  "addedAt": "2026-10-03T18:43:26+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-03/BIO-CB-00009.rc",
+  "programmeId": "BIO-CB-00009",
+  "subject": [
+    "Biology",
+    "Cell Biology",
+    "Cell membrane"
+  ],
+  "concepts": [
+    "passive transport",
+    "active transport",
+    "concentration gradient",
+    "ATP",
+    "bilayer"
+  ],
+  "how": "expression-animation",
+  "why": "compare",
+  "dimension": "2D",
+  "accuracy": "schematic",
+  "scale": "10^-8 m",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 3,
+  "palette": "plum"
 }

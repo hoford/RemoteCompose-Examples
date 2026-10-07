@@ -1,39 +1,42 @@
 {
- "id": "vis-set-03/bio-cb-00011",
- "title": "Meiosis, two divisions",
- "description": "Drag to run both divisions: one diploid cell becomes four haploid ones, in 3D so the two splits stay distinguishable. #biology #meiosis #3d #interactive",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "4f2f586af948baa7057c9bf45f6dbb7017d193deda806990f90b4c38a3f0bdc4",
- "addedAt": "2026-10-03T18:43:26+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-03/BIO-CB-00011.rc",
- "programmeId": "BIO-CB-00011",
- "subject": [
-  "Biology",
-  "Cell Biology",
-  "Meiosis"
- ],
- "concepts": [
-  "meiosis",
-  "homologue",
-  "sister chromatid",
-  "haploid",
-  "diploid"
- ],
- "how": "interactive",
- "why": "simulate",
- "dimension": "3D",
- "accuracy": "schematic",
- "scale": "10^-5 m",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 3,
- "palette": "plum"
+  "id": "vis-set-03/bio-cb-00011",
+  "title": "Meiosis, two divisions",
+  "description": "Drag to run both divisions: one diploid cell becomes four haploid ones, in 3D so the two splits stay distinguishable. #biology #meiosis #3d #interactive #input",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "3d",
+    "input"
+  ],
+  "sha256": "4f2f586af948baa7057c9bf45f6dbb7017d193deda806990f90b4c38a3f0bdc4",
+  "addedAt": "2026-10-03T18:43:26+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-03/BIO-CB-00011.rc",
+  "programmeId": "BIO-CB-00011",
+  "subject": [
+    "Biology",
+    "Cell Biology",
+    "Meiosis"
+  ],
+  "concepts": [
+    "meiosis",
+    "homologue",
+    "sister chromatid",
+    "haploid",
+    "diploid"
+  ],
+  "how": "interactive",
+  "why": "simulate",
+  "dimension": "3D",
+  "accuracy": "schematic",
+  "scale": "10^-5 m",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 3,
+  "palette": "plum"
 }

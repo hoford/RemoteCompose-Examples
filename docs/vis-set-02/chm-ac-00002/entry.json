@@ -1,38 +1,41 @@
 {
- "id": "vis-set-02/chm-ac-00002",
- "title": "Atomic radius over the periodic table",
- "description": "The table's grid is already two axes, so the third carries atomic radius. The sawtooth across each period is invisible on a flat table. #chemistry #periodic #3d #chart",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "8f3271c6f3a6ac43c5d853d0f9c703c59e651df72a90454caeacf212e05ac557",
- "addedAt": "2026-10-03T18:11:18+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-02/CHM-AC-00002.rc",
- "programmeId": "CHM-AC-00002",
- "subject": [
-  "Chemistry",
-  "Atomic Chemistry",
-  "Periodic table"
- ],
- "concepts": [
-  "atomic radius",
-  "periodic trend",
-  "group",
-  "period",
-  "shielding"
- ],
- "how": "data-plot",
- "why": "analyze",
- "dimension": "3D",
- "accuracy": "quantitative",
- "scale": "10^-12 m",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 2
+  "id": "vis-set-02/chm-ac-00002",
+  "title": "Atomic radius over the periodic table",
+  "description": "The table's grid is already two axes, so the third carries atomic radius. The sawtooth across each period is invisible on a flat table. #chemistry #periodic #3d #chart #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "3d",
+    "animated"
+  ],
+  "sha256": "8f3271c6f3a6ac43c5d853d0f9c703c59e651df72a90454caeacf212e05ac557",
+  "addedAt": "2026-10-03T18:11:18+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-02/CHM-AC-00002.rc",
+  "programmeId": "CHM-AC-00002",
+  "subject": [
+    "Chemistry",
+    "Atomic Chemistry",
+    "Periodic table"
+  ],
+  "concepts": [
+    "atomic radius",
+    "periodic trend",
+    "group",
+    "period",
+    "shielding"
+  ],
+  "how": "data-plot",
+  "why": "analyze",
+  "dimension": "3D",
+  "accuracy": "quantitative",
+  "scale": "10^-12 m",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 2
 }

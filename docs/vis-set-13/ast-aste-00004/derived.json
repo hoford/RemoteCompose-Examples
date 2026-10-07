@@ -1,0 +1,37 @@
+{
+  "id": "vis-set-13/ast-aste-00004",
+  "sha256": "865a191fad5d1a0aa6b9067c9051dbc17dcdf124fd7372ebac4481a847aeaf05",
+  "bytes": 7119,
+  "ops": 360,
+  "distinctOps": 14,
+  "width": 660,
+  "height": 540,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_CANVAS": 1,
+    "MODIFIER_WIDTH": 1,
+    "MODIFIER_HEIGHT": 1,
+    "MODIFIER_BACKGROUND": 1,
+    "LAYOUT_CONTENT": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 158,
+    "DRAW_RECT": 112,
+    "DRAW_LINE": 14,
+    "DATA_TEXT": 32,
+    "DRAW_TEXT_ANCHOR": 32,
+    "CONTAINER_END": 4
+  },
+  "apis": [
+    "drawLine",
+    "drawRect",
+    "layout",
+    "paint",
+    "text"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

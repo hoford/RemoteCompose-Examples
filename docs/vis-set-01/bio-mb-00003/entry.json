@@ -1,37 +1,40 @@
 {
- "id": "vis-set-01/bio-mb-00003",
- "title": "Replication fork with free nucleotides",
- "description": "A replication fork opening in 3D while a particle pool of ninety free nucleotides drifts around it. #biology #dna #particles #3d",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "3ee6625db11e62addc0164b80883f7c54b2cba807d3d4c772f7b213b4c26dd46",
- "addedAt": "2026-10-03T16:46:09+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-01/BIO-MB-00003.rc",
- "programmeId": "BIO-MB-00003",
- "subject": [
-  "Biology",
-  "Molecular Biology",
-  "DNA replication"
- ],
- "concepts": [
-  "DNA replication",
-  "replication fork",
-  "nucleotide",
-  "polymerase"
- ],
- "how": "particle-system",
- "why": "analyze",
- "dimension": "3D",
- "accuracy": "conceptual",
- "scale": "10^-9 m",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 1
+  "id": "vis-set-01/bio-mb-00003",
+  "title": "Replication fork with free nucleotides",
+  "description": "A replication fork opening in 3D while a particle pool of ninety free nucleotides drifts around it. #biology #dna #particles #3d #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "3d",
+    "animated"
+  ],
+  "sha256": "3ee6625db11e62addc0164b80883f7c54b2cba807d3d4c772f7b213b4c26dd46",
+  "addedAt": "2026-10-03T16:46:09+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-01/BIO-MB-00003.rc",
+  "programmeId": "BIO-MB-00003",
+  "subject": [
+    "Biology",
+    "Molecular Biology",
+    "DNA replication"
+  ],
+  "concepts": [
+    "DNA replication",
+    "replication fork",
+    "nucleotide",
+    "polymerase"
+  ],
+  "how": "particle-system",
+  "why": "analyze",
+  "dimension": "3D",
+  "accuracy": "conceptual",
+  "scale": "10^-9 m",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 1
 }

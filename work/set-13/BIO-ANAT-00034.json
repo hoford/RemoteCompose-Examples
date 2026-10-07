@@ -1,0 +1,1129 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 620,
+  "height": 540,
+  "profiles": 513,
+  "contentDescription": "A travelling wave of contraction moving a bolus along the gut, with transit times for each section"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 620,
+      "bottom": 540
+     }
+    },
+    {
+     "variable": {
+      "name": "t",
+      "value": "continuousSec()",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "c0",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 0.0000)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h0",
+      "value": "14.0 + 26.0 * (1.0 - c0)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 70.0,
+      "top": "160.0 - h0",
+      "right": 139.57142857142856,
+      "bottom": "160.0 + h0",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 72.0,
+      "top": "162.0 - h0",
+      "right": 137.57142857142856,
+      "bottom": "158.0 + h0",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c1",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 0.8976)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h1",
+      "value": "14.0 + 26.0 * (1.0 - c1)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 138.57142857142856,
+      "top": "160.0 - h1",
+      "right": 208.14285714285714,
+      "bottom": "160.0 + h1",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 140.57142857142856,
+      "top": "162.0 - h1",
+      "right": 206.14285714285714,
+      "bottom": "158.0 + h1",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c2",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 1.7952)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h2",
+      "value": "14.0 + 26.0 * (1.0 - c2)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 207.14285714285714,
+      "top": "160.0 - h2",
+      "right": 276.7142857142857,
+      "bottom": "160.0 + h2",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 209.14285714285714,
+      "top": "162.0 - h2",
+      "right": 274.7142857142857,
+      "bottom": "158.0 + h2",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c3",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 2.6928)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h3",
+      "value": "14.0 + 26.0 * (1.0 - c3)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 275.7142857142857,
+      "top": "160.0 - h3",
+      "right": 345.2857142857143,
+      "bottom": "160.0 + h3",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 277.7142857142857,
+      "top": "162.0 - h3",
+      "right": 343.2857142857143,
+      "bottom": "158.0 + h3",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c4",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 3.5904)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h4",
+      "value": "14.0 + 26.0 * (1.0 - c4)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 344.2857142857143,
+      "top": "160.0 - h4",
+      "right": 413.85714285714283,
+      "bottom": "160.0 + h4",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 346.2857142857143,
+      "top": "162.0 - h4",
+      "right": 411.85714285714283,
+      "bottom": "158.0 + h4",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c5",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 4.4880)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h5",
+      "value": "14.0 + 26.0 * (1.0 - c5)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 412.85714285714283,
+      "top": "160.0 - h5",
+      "right": 482.42857142857144,
+      "bottom": "160.0 + h5",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 414.85714285714283,
+      "top": "162.0 - h5",
+      "right": 480.42857142857144,
+      "bottom": "158.0 + h5",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "c6",
+      "value": "0.5 + 0.5 * sin(t * 2.6 - 5.3856)",
+      "commit": true
+     }
+    },
+    {
+     "variable": {
+      "name": "h6",
+      "value": "14.0 + 26.0 * (1.0 - c6)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 481.42857142857144,
+      "top": "160.0 - h6",
+      "right": 551.0,
+      "bottom": "160.0 + h6",
+      "rx": 10.0,
+      "ry": 10.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRoundRect": {
+      "left": 483.42857142857144,
+      "top": "162.0 - h6",
+      "right": 549.0,
+      "bottom": "158.0 + h6",
+      "rx": 8.0,
+      "ry": 8.0
+     }
+    },
+    {
+     "variable": {
+      "name": "bx",
+      "value": "90.0 + 440.0 * ((t * 0.26) % 1.0)",
+      "commit": true
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": "bx",
+      "cy": 160.0,
+      "radius": 15.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "bolus",
+      "x": "bx",
+      "y": 196.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "contracted behind",
+      "x": 80.0,
+      "y": 108.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "relaxed ahead",
+      "x": 540.0,
+      "y": 108.0,
+      "panX": 1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 70.0,
+      "top": 300.0,
+      "right": 550.0,
+      "bottom": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 98.8,
+      "y1": 300.0,
+      "x2": 98.8,
+      "y2": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 166.0,
+      "y1": 300.0,
+      "x2": 166.0,
+      "y2": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 338.8,
+      "y1": 300.0,
+      "x2": 338.8,
+      "y2": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 473.2,
+      "y1": 300.0,
+      "x2": 473.2,
+      "y2": 326.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 98.8,
+      "y1": 326.0,
+      "x2": 98.8,
+      "y2": 344.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "mouth / oesophagus",
+      "x": 98.8,
+      "y": 354.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "8 s",
+      "x": 98.8,
+      "y": 368.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 166.0,
+      "y1": 326.0,
+      "x2": 166.0,
+      "y2": 380.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "stomach",
+      "x": 166.0,
+      "y": 390.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "2\u20134 h",
+      "x": 166.0,
+      "y": 404.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 338.8,
+      "y1": 326.0,
+      "x2": 338.8,
+      "y2": 416.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "small intestine",
+      "x": 338.8,
+      "y": 426.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "4\u20136 h",
+      "x": 338.8,
+      "y": 440.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 1.0
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 473.2,
+      "y1": 326.0,
+      "x2": 473.2,
+      "y2": 452.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "large intestine",
+      "x": 473.2,
+      "y": 462.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "12\u201348 h",
+      "x": 473.2,
+      "y": 476.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 36.0,
+      "top": 474.0,
+      "right": 584.0,
+      "bottom": 524.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "The wave is the mechanism, not the muscle. A ring contracts behind and relaxes ahead,",
+      "x": 48.0,
+      "y": 492.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "so the contents move even against gravity \u2014 which is why you can swallow upside down.",
+      "x": 48.0,
+      "y": 505.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Transit time varies a hundredfold along the tract because each section is doing a",
+      "x": 48.0,
+      "y": 518.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "different job.",
+      "x": 48.0,
+      "y": 531.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Peristalsis",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "a travelling squeeze, not a push",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}

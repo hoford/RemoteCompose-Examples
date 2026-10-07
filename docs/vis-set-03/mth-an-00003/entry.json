@@ -1,38 +1,41 @@
 {
- "id": "vis-set-03/mth-an-00003",
- "title": "Primes on a grid",
- "description": "Primes below 576 as towers on a 24 by 24 grid, where the composite gaps fall into diagonal lanes. #maths #primes #3d",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "9afeebdef97940549af1912745efa07f454e508cb9a44815cdf108ce6bc3b99b",
- "addedAt": "2026-10-03T18:43:26+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-03/MTH-AN-00003.rc",
- "programmeId": "MTH-AN-00003",
- "subject": [
-  "Mathematics",
-  "Arithmetic / Numbers",
-  "Prime numbers"
- ],
- "concepts": [
-  "prime number",
-  "composite",
-  "Ulam spiral",
-  "divisibility"
- ],
- "how": "static-diagram",
- "why": "analyze",
- "dimension": "3D",
- "accuracy": "quantitative",
- "scale": "n/a",
- "audience": [
-  "high-school",
-  "undergraduate"
- ],
- "dataSource": "theoretical-model",
- "set": 3,
- "palette": "carbon"
+  "id": "vis-set-03/mth-an-00003",
+  "title": "Primes on a grid",
+  "description": "Primes below 576 as towers on a 24 by 24 grid, where the composite gaps fall into diagonal lanes. #maths #primes #3d #animated",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "3d",
+    "animated"
+  ],
+  "sha256": "9afeebdef97940549af1912745efa07f454e508cb9a44815cdf108ce6bc3b99b",
+  "addedAt": "2026-10-03T18:43:26+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-03/MTH-AN-00003.rc",
+  "programmeId": "MTH-AN-00003",
+  "subject": [
+    "Mathematics",
+    "Arithmetic / Numbers",
+    "Prime numbers"
+  ],
+  "concepts": [
+    "prime number",
+    "composite",
+    "Ulam spiral",
+    "divisibility"
+  ],
+  "how": "static-diagram",
+  "why": "analyze",
+  "dimension": "3D",
+  "accuracy": "quantitative",
+  "scale": "n/a",
+  "audience": [
+    "high-school",
+    "undergraduate"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 3,
+  "palette": "carbon"
 }

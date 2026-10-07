@@ -1,39 +1,41 @@
 {
- "id": "vis-set-02/bio-cb-00007",
- "title": "Animal cell into plant cell",
- "description": "Drag across to cross-fade between the two; shared organelles stay put so only the differences move. #biology #cells #interactive",
- "source": "rcjson",
- "authoring": [
-  "json",
-  "py"
- ],
- "tags": [],
- "sha256": "c01ba57db0b484314316e0fdb5768e319a350b60270cd5b17eb12767c3de1536",
- "addedAt": "2026-10-03T18:11:18+00:00",
- "provenance": "github/RemoteCompose-Examples/work/set-02/BIO-CB-00007.rc",
- "programmeId": "BIO-CB-00007",
- "subject": [
-  "Biology",
-  "Cell Biology",
-  "Cell structure"
- ],
- "concepts": [
-  "cell structure",
-  "cell wall",
-  "vacuole",
-  "chloroplast",
-  "nucleus",
-  "mitochondria"
- ],
- "how": "interactive",
- "why": "compare",
- "dimension": "2D",
- "accuracy": "schematic",
- "scale": "10^-5 m",
- "audience": [
-  "primary",
-  "high-school"
- ],
- "dataSource": "theoretical-model",
- "set": 2
+  "id": "vis-set-02/bio-cb-00007",
+  "title": "Animal cell into plant cell",
+  "description": "Drag across to cross-fade between the two; shared organelles stay put so only the differences move. #biology #cells #interactive #input",
+  "source": "rcjson",
+  "authoring": [
+    "json",
+    "py"
+  ],
+  "tags": [
+    "input"
+  ],
+  "sha256": "c01ba57db0b484314316e0fdb5768e319a350b60270cd5b17eb12767c3de1536",
+  "addedAt": "2026-10-03T18:11:18+00:00",
+  "provenance": "github/RemoteCompose-Examples/work/set-02/BIO-CB-00007.rc",
+  "programmeId": "BIO-CB-00007",
+  "subject": [
+    "Biology",
+    "Cell Biology",
+    "Cell structure"
+  ],
+  "concepts": [
+    "cell structure",
+    "cell wall",
+    "vacuole",
+    "chloroplast",
+    "nucleus",
+    "mitochondria"
+  ],
+  "how": "interactive",
+  "why": "compare",
+  "dimension": "2D",
+  "accuracy": "schematic",
+  "scale": "10^-5 m",
+  "audience": [
+    "primary",
+    "high-school"
+  ],
+  "dataSource": "theoretical-model",
+  "set": 2
 }

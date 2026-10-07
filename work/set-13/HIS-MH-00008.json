@@ -1,0 +1,806 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 640,
+  "height": 560,
+  "profiles": 513,
+  "contentDescription": "Four outlines of Poland's borders in 1772, 1815, 1919 and 1945 with the territory's centre travelling westward"
+ },
+ "root": {
+  "canvas": {
+   "modifiers": [
+    "fillMaxSize",
+    {
+     "background": "#FF131313"
+    }
+   ],
+   "commands": [
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF131313"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 0,
+      "top": 0,
+      "right": 640,
+      "bottom": 560
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "b0",
+      "x": 120.0,
+      "y": 205.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 228.0,
+      "y": 170.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 336.0,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 366.0,
+      "y": 280.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 300.0,
+      "y": 350.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 192.0,
+      "y": 345.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b0",
+      "x": 126.0,
+      "y": 285.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "b0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "b0"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1772",
+      "x": 238.28571428571428,
+      "y": 235.14285714285717,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "b1",
+      "x": 168.0,
+      "y": 215.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 252.0,
+      "y": 190.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 312.0,
+      "y": 225.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 324.0,
+      "y": 300.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 258.0,
+      "y": 340.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 186.0,
+      "y": 325.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b1",
+      "x": 156.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "b1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "b1"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1815",
+      "x": 236.57142857142858,
+      "y": 257.42857142857144,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "b2",
+      "x": 144.0,
+      "y": 225.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 228.0,
+      "y": 200.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 294.0,
+      "y": 230.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 306.0,
+      "y": 305.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 234.0,
+      "y": 340.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 162.0,
+      "y": 320.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b2",
+      "x": 132.0,
+      "y": 270.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "b2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "b2"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1919",
+      "x": 214.28571428571428,
+      "y": 279.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "pathCreate": {
+      "id": "b3",
+      "x": 108.0,
+      "y": 230.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 192.0,
+      "y": 205.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 252.0,
+      "y": 235.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 264.0,
+      "y": 310.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 198.0,
+      "y": 345.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 126.0,
+      "y": 325.0
+     }
+    },
+    {
+     "pathAppendLineTo": {
+      "path": "b3",
+      "x": 96.0,
+      "y": 275.0
+     }
+    },
+    {
+     "pathAppendClose": {
+      "path": "b3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 2.6
+       }
+      ]
+     }
+    },
+    {
+     "drawPath": {
+      "path": "b3"
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 12.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1945",
+      "x": 176.57142857142858,
+      "y": 302.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF343434"
+       },
+       {
+        "style": "stroke"
+       },
+       {
+        "strokeWidth": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "drawLine": {
+      "x1": 90.0,
+      "y1": 440.0,
+      "x2": 390.0,
+      "y2": 440.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 238.28571428571428,
+      "cy": 440.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF8A3D"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1772",
+      "x": 238.28571428571428,
+      "y": 462.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 236.57142857142858,
+      "cy": 440.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFFD166"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1815",
+      "x": 236.57142857142858,
+      "y": 462.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 214.28571428571428,
+      "cy": 440.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF8BD450"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1919",
+      "x": 214.28571428571428,
+      "y": 462.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawCircle": {
+      "cx": 176.57142857142858,
+      "cy": 440.0,
+      "radius": 6.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFFF5E5B"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1945",
+      "x": 176.57142857142858,
+      "y": 462.0,
+      "panX": 0.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 10.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "centre of the territory, west is left",
+      "x": 90.0,
+      "y": 418.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF1E1E1E"
+       },
+       {
+        "style": "fill"
+       }
+      ]
+     }
+    },
+    {
+     "drawRect": {
+      "left": 48.0,
+      "top": 486.0,
+      "right": 592.0,
+      "bottom": 544.0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Partitioned out of existence in 1795 and absent from the map for 123 years; restored in",
+      "x": 60.0,
+      "y": 504.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "1918; and in 1945 moved bodily some 200 km west, losing its eastern half and gaining",
+      "x": 60.0,
+      "y": 517.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 9.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "German territory in the west. The area changed less than the position did.",
+      "x": 60.0,
+      "y": 530.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FFEDEDED"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 19.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "A country that moved",
+      "x": 20.0,
+      "y": 32.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    },
+    {
+     "paint": {
+      "ops": [
+       {
+        "color": "#FF9A9A9A"
+       },
+       {
+        "style": "fill"
+       },
+       {
+        "textSize": 11.0
+       }
+      ]
+     }
+    },
+    {
+     "drawTextAnchored": {
+      "text": "Poland's borders, four dates",
+      "x": 20.0,
+      "y": 52.0,
+      "panX": -1.0,
+      "panY": 0.0,
+      "flags": 0
+     }
+    }
+   ]
+  }
+ }
+}
