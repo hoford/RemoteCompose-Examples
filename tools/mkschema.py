@@ -33,8 +33,16 @@ from rcj import expr, parser  # noqa: E402
 
 SRC = (RCJ / "rcj" / "parser.py").read_text()
 
-# Commands are recognised by the parser's dispatch, which is a chain of `ctype == "name"`.
-COMMANDS = sorted(set(re.findall(r'ctype == "([a-z0-9_]+)"', SRC)))
+# Commands are recognised by the parser's dispatch. Most are `ctype == "name"`, but a
+# command with several accepted spellings is written `ctype in ("a", "b")` — and matching
+# only the first form silently drops every one of those. That is the worst failure mode
+# available to a file whose whole claim is that it is derived and therefore cannot drift:
+# it under-reports, quietly, and the gap report built on it then recommends implementing
+# things that already exist. `runAction` was listed as missing while being implemented.
+COMMANDS = sorted(
+    set(re.findall(r'ctype == "([a-z0-9_]+)"', SRC))
+    | {n for grp in re.findall(r'ctype in \(([^)]*)\)', SRC)
+         for n in re.findall(r'"([a-z0-9_]+)"', grp)})
 
 # Canonical spelling, recovered from the corpus where available: the parser lowercases, so
 # the dispatch table cannot tell us that `drawTextAnchored` is camelCase.

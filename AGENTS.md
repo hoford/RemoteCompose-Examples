@@ -98,7 +98,7 @@ a document that uses X".
 ## The JSON surface — catalog/schema.json
 
 Generated from the converter's own tables by `tools/mkschema.py`, so it cannot drift from what
-is actually accepted: 62 commands, 43 expression functions, 107 system variables, the four
+is actually accepted: 77 commands, 43 expression functions, 107 system variables, the four
 argument-order traps, and the cost model. Fetch it before authoring; it is the only complete
 list that is not the minified bundle.
 
