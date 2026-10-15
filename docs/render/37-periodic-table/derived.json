@@ -1,0 +1,48 @@
+{
+  "id": "render/37-periodic-table",
+  "sha256": "8aa3c2ca9b1ff87a0aa57d41cc616f4557f57a96a8a2153d7b3836529232fa58",
+  "bytes": 81012,
+  "ops": 8126,
+  "distinctOps": 23,
+  "width": 400,
+  "height": 800,
+  "histogram": {
+    "HEADER": 1,
+    "NAMED_VARIABLE": 149,
+    "DATA_FLOAT": 15,
+    "ANIMATED_FLOAT": 148,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_COLUMN": 252,
+    "MODIFIER_WIDTH": 638,
+    "MODIFIER_HEIGHT": 271,
+    "MODIFIER_BACKGROUND": 265,
+    "MODIFIER_PADDING": 251,
+    "LAYOUT_CONTENT": 1353,
+    "DATA_TEXT": 504,
+    "CORE_TEXT": 606,
+    "CONTAINER_END": 2736,
+    "LAYOUT_BOX": 387,
+    "LAYOUT_ROW": 122,
+    "MODIFIER_CLICK": 14,
+    "VALUE_FLOAT_EXPRESSION_CHANGE_ACTION": 14,
+    "MODIFIER_ROUNDED_CLIP_RECT": 264,
+    "MODIFIER_VISIBILITY": 132,
+    "MODIFIER_CLIP_RECT": 1,
+    "MODIFIER_SCROLL": 1,
+    "TOUCH_EXPRESSION": 1
+  },
+  "apis": [
+    "expressions",
+    "interaction",
+    "layout",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}
