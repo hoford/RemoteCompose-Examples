@@ -1,0 +1,92 @@
+/* The curation workbench. Layout only — colours come from app.css's tokens so the page
+   follows the site's light/dark switch without a second palette to keep in step. */
+
+.cur { display: flex; flex-direction: column; gap: 0; height: calc(100vh - var(--topbar)); }
+
+.cur-bar {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .55rem .9rem; border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+}
+.cur-spacer { flex: 1 1 auto; }
+.cur-pos { font-variant-numeric: tabular-nums; color: var(--dim); min-width: 6.5rem; }
+.cur-filter { display: flex; align-items: center; gap: .35rem; color: var(--dim); }
+.cur-bar input[type=search] {
+    min-width: 14rem; padding: .3rem .5rem;
+    border: 1px solid var(--line); border-radius: .4rem;
+    background: var(--bg); color: var(--fg);
+}
+
+.navbtn {
+    font-size: 1.1rem; line-height: 1; padding: .3rem .7rem;
+    border: 1px solid var(--line); border-radius: .4rem;
+    background: var(--panel); color: var(--fg); cursor: pointer;
+}
+.navbtn:hover { background: var(--line-soft); }
+
+.cur-body {
+    display: grid; grid-template-columns: minmax(0, 1fr) 24rem;
+    gap: 1rem; padding: 1rem; min-height: 0; flex: 1 1 auto;
+}
+@media (max-width: 900px) { .cur-body { grid-template-columns: 1fr; } }
+
+.cur-stage {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .5rem; min-height: 0; background: var(--panel);
+    border: 1px solid var(--line); border-radius: .6rem; padding: 1rem;
+}
+/* The player sizes itself to the document; this only stops a tall one from pushing the
+   panel off screen. */
+.cur-player { max-width: 100%; max-height: 100%; overflow: auto; }
+.cur-player canvas { max-width: 100%; height: auto; }
+.cur-meta { display: flex; gap: .8rem; align-items: center; font-size: .85rem; }
+
+.cur-panel {
+    display: flex; flex-direction: column; gap: .5rem; min-height: 0; overflow: auto;
+    /* Room for the scrollbar, which otherwise sits over the Add button. */
+    padding-right: .5rem;
+}
+.cur-panel h1 { font-size: 1.15rem; margin: 0; flex: none; }
+.cur-panel code.dim { font-size: .8rem; }
+.cur-label { flex: none; font-weight: 600; margin-top: .4rem; display: flex; gap: .5rem; align-items: baseline; }
+.cur-panel textarea {
+    /* `flex: none` or the column shrinks it to one line: a flex item's default min-height
+       is auto, but it will still compress past its `rows` when the panel overflows. */
+    flex: none; width: 100%; resize: vertical; padding: .5rem; min-height: 7rem;
+    border: 1px solid var(--line); border-radius: .4rem;
+    background: var(--bg); color: var(--fg); font: inherit; line-height: 1.4;
+}
+
+.tagpalette { flex: none; display: flex; flex-wrap: wrap; gap: .35rem; }
+.tagchip {
+    display: inline-flex; align-items: center; gap: .35rem;
+    padding: .25rem .55rem; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: var(--panel); color: var(--fg); font-size: .85rem;
+}
+.tagchip:hover { background: var(--line-soft); }
+/* Selected has to survive a glance across forty chips, so it changes fill AND border
+   rather than relying on one of them. */
+.tagchip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tagchip .n { font-size: .72rem; opacity: .65; font-variant-numeric: tabular-nums; }
+.tagchip .k {
+    font-size: .68rem; opacity: .55; border: 1px solid currentColor;
+    border-radius: .25rem; padding: 0 .2rem; line-height: 1.2;
+}
+
+.newtag { flex: none; display: flex; gap: .4rem; }
+.newtag input {
+    flex: 1 1 auto; padding: .3rem .5rem;
+    border: 1px solid var(--line); border-radius: .4rem;
+    background: var(--bg); color: var(--fg);
+}
+.newtag button {
+    padding: .3rem .7rem; border: 1px solid var(--line); border-radius: .4rem;
+    background: var(--panel); color: var(--fg); cursor: pointer;
+}
+
+.cur-help { font-size: .8rem; margin-top: .3rem; }
+.cur-help kbd {
+    border: 1px solid var(--line); border-radius: .25rem;
+    padding: 0 .25rem; font-size: .75rem;
+}

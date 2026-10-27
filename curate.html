@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Curate — RemoteCompose Examples</title>
 <link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/curate.css">
 <script src="assets/player.js"></script>
 </head>
 <body>
@@ -21,15 +22,7 @@
     <a href="AGENTS.md">For agents</a>
     <a class="on" href="curate.html">Curate</a>
   </nav>
-  <div class="searchwrap">
-    <input id="q" type="search" autocomplete="off" spellcheck="false"
-           placeholder="Search documents…" aria-label="Search documents">
-  </div>
   <div class="topright">
-    <div class="segmented" role="group" aria-label="View">
-      <button id="view-grid" class="on" title="Grid view" aria-pressed="true">▦</button>
-      <button id="view-list" title="List view" aria-pressed="false">☰</button>
-    </div>
     <div class="segmented" role="group" aria-label="Theme">
       <button id="theme-light" title="Light">☀</button>
       <button id="theme-dark" title="Dark">☾</button>
@@ -37,57 +30,72 @@
   </div>
 </header>
 
-<div class="chiprow">
-  <button id="filters-badge" class="filters-badge">
-    <span>Filters</span><span class="badge" id="filters-count">0</span>
-  </button>
-  <div class="quickchips" id="quickchips"></div>
-  <div class="cbar-right">
-    <button id="only" class="quick">★ Featured only</button>
-    <span class="pending" id="cstatus"></span>
-    <button class="commit" id="commit" disabled>Commit “featured update”</button>
-  </div>
-</div>
-
 <div id="cbanner" class="banner" hidden>
-  Read-only. Curation edits need the local tool: <code>tools/curate.py</code>, then open
+  Read-only. Curation needs the local tool: <code>tools/curate.py</code>, then open
   <code>http://127.0.0.1:8900/curate.html</code>.
 </div>
 
-<div id="scrim"></div>
+<main class="cur">
 
-<main>
-  <aside id="sidebar">
-    <div class="side-head">
-      <strong>Filters</strong>
-      <span class="dim" id="side-active">none active</span>
-      <button id="clear" hidden>Clear all</button>
-      <button class="side-close" id="side-close" aria-label="Close filters">×</button>
-    </div>
-    <div id="facets"></div>
-    <footer class="sidebar-foot">
-      <a href="catalog/corpus.jsonl">corpus.jsonl</a> · <a href="README.md">about</a>
-    </footer>
-  </aside>
+  <div class="cur-bar">
+    <button id="prev" class="navbtn" title="Previous (←)">←</button>
+    <button id="next" class="navbtn" title="Next (→)">→</button>
+    <span class="cur-pos" id="pos">—</span>
 
-  <section class="results">
-    <div class="results-head">
-      <span id="count">loading…</span>
-      <div class="active-pills" id="pills"></div>
-      <label class="sortwrap">Sort by
-        <select id="sort">
-          <option value="added">Recently added</option>
-          <option value="name">Name</option>
-          <option value="size">Size</option>
-          <option value="ops">Operations</option>
-        </select>
+    <label class="cur-filter">Show
+      <select id="filter">
+        <option value="all">all documents</option>
+        <option value="untagged">untagged only</option>
+        <option value="nodesc">no description</option>
+        <option value="touched">edited this session</option>
+      </select>
+    </label>
+
+    <input id="jump" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Jump to document…" aria-label="Jump to document">
+
+    <span class="cur-spacer"></span>
+    <span class="pending" id="cstatus"></span>
+    <button class="commit" id="commit" disabled>Commit</button>
+  </div>
+
+  <div class="cur-body">
+
+    <section class="cur-stage">
+      <div id="player" class="cur-player"></div>
+      <div class="cur-meta">
+        <a id="openlink" href="#" target="_blank" rel="noopener">open ↗</a>
+        <span id="dims" class="dim"></span>
+      </div>
+    </section>
+
+    <section class="cur-panel">
+      <h1 id="title">loading…</h1>
+      <code id="docid" class="dim"></code>
+
+      <label class="cur-label" for="desc">Description</label>
+      <textarea id="desc" rows="5" spellcheck="true"
+                placeholder="What does this document draw?"></textarea>
+
+      <label class="cur-label">Tags
+        <span class="dim" id="tagcount"></span>
       </label>
-    </div>
-    <div id="grid">
-      <div class="plane"></div>
-      <div id="spacer"></div>
-    </div>
-  </section>
+      <div id="tags" class="tagpalette"></div>
+
+      <form id="newtagform" class="newtag" autocomplete="off">
+        <input id="newtag" type="text" placeholder="new tag, then Enter"
+               aria-label="Add a new tag" spellcheck="false">
+        <button type="submit">Add</button>
+      </form>
+
+      <p class="cur-help dim">
+        <kbd>←</kbd> <kbd>→</kbd> previous / next ·
+        <kbd>1</kbd>…<kbd>9</kbd> toggle the first nine tags ·
+        <kbd>⌘</kbd><kbd>↵</kbd> save and go next
+      </p>
+    </section>
+
+  </div>
 </main>
 
 <script type="module" src="assets/curate.js"></script>

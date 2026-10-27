@@ -20,6 +20,12 @@ const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) =>
 // Hooks supplied by the page. Defaults make the plain explore page.
 const HOOKS = {
     pinnedTag: 'featured',
+    // Tagged `test` means scaffolding for the corpus itself rather than an example anyone
+    // came here to look at, so those documents stay out of the listing unless the tag is
+    // explicitly selected. The facet is still offered, with its real count, so they remain
+    // one click away — hiding something that cannot be unhidden is how a corpus loses
+    // documents. Set to null to show everything.
+    hiddenTag: 'test',
     cardActions: () => '',        // extra buttons in the thumbnail overlay
     onCard: () => {},             // wire those buttons once the record is known
     extraFilter: null,            // (record) => boolean, applied after facets and search
@@ -113,6 +119,16 @@ async function applyFilter() {
         result = result === null ? merged : intersect(result, merged);
     }
     if (result === null) result = Array.from({ length: S.total }, (_, i) => i);
+
+    // Subtract the hidden tag unless the reader asked for it. Done from the facet's own
+    // posting list rather than by reading each record, so it costs one set build and needs
+    // no shard to have been fetched yet.
+    const hideTag = HOOKS.hiddenTag;
+    const askedFor = S.selected.get('tag')?.has(hideTag);
+    if (hideTag && !askedFor && S.facets.tag && S.facets.tag[hideTag]) {
+        const hidden = new Set(decodePostings(S.facets.tag[hideTag].p));
+        if (hidden.size) result = result.filter((i) => !hidden.has(i));
+    }
 
     const recs = await allRecords();
     if (S.query) {
