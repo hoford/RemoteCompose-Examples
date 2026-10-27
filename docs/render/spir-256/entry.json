@@ -4,7 +4,9 @@
   "description": "Self-limiting performance probe: ramps path complexity until the frame rate drops below 10 fps, then freezes and reports the limit",
   "source": "rcjson",
   "authoring": [],
-  "tags": [],
+  "tags": [
+    "test"
+  ],
   "sha256": "e8f7cf1d3e6c86ccb6e6a6d639f872901d3402997522f65486c2659f31b52d0a",
   "provenance": "github/rcJson/render/spir_256.rc",
   "descriptionSource": "rc:contentDescription",
