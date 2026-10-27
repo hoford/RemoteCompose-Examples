@@ -1,0 +1,2683 @@
+{
+ "header": {
+  "apiLevel": 7,
+  "width": 420,
+  "height": 420,
+  "profiles": 513,
+  "contentDescription": "An IKEA MICKE desk assembling itself in 3D as a white line drawing: every panel filled in pale grey and outlined in black, like a technical illustration. Cabinet, shelves, steel leg, modesty panel, top, door and drawer each fly into place in the order the manual builds them. Drag to turn it."
+ },
+ "//": [
+  "MICKE desk (105x50), from assembly manual AA-476615-12.",
+  "",
+  "Dimensions are METRES and are the real ones. The origin is the floor at the",
+  "centre of the desk: +y up, +x along the width, +z toward the viewer.",
+  "",
+  "Each part flies in during its own window of a 26 second cycle. To change the",
+  "order, reorder PARTS in tools/mk_ikea_desk.py - the timing is derived from a",
+  "part's index, not written down per part.",
+  "",
+  "Drag to turn the desk; it coasts to a stop when you let go."
+ ],
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 420,
+         "bottom": 420
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "spinPx",
+         "defaultValue": 0.0,
+         "min": -100000.0,
+         "max": 100000.0,
+         "stopMode": "gently",
+         "expression": "touchX()"
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "tiltPx",
+         "defaultValue": 0.0,
+         "min": -140.0,
+         "max": 150.0,
+         "stopMode": "gently",
+         "expression": "touchY()"
+        }
+       },
+       {
+        "variable": {
+         "name": "spin",
+         "value": "spinPx * 0.0120 + -0.5200",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "tilt",
+         "value": "tiltPx * 0.0060 + 0.1700",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "tc",
+         "value": "continuousSec() % 26.00",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p0",
+         "value": "max(0, min(1, (tc - 0.000) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e0",
+         "value": "p0 * p0 * (3 - 2 * p0)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p1",
+         "value": "max(0, min(1, (tc - 0.550) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e1",
+         "value": "p1 * p1 * (3 - 2 * p1)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p2",
+         "value": "max(0, min(1, (tc - 1.100) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e2",
+         "value": "p2 * p2 * (3 - 2 * p2)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p3",
+         "value": "max(0, min(1, (tc - 1.650) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e3",
+         "value": "p3 * p3 * (3 - 2 * p3)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p4",
+         "value": "max(0, min(1, (tc - 2.200) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e4",
+         "value": "p4 * p4 * (3 - 2 * p4)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p5",
+         "value": "max(0, min(1, (tc - 2.750) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e5",
+         "value": "p5 * p5 * (3 - 2 * p5)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p6",
+         "value": "max(0, min(1, (tc - 3.300) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e6",
+         "value": "p6 * p6 * (3 - 2 * p6)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p7",
+         "value": "max(0, min(1, (tc - 3.850) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e7",
+         "value": "p7 * p7 * (3 - 2 * p7)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p8",
+         "value": "max(0, min(1, (tc - 4.400) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e8",
+         "value": "p8 * p8 * (3 - 2 * p8)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p9",
+         "value": "max(0, min(1, (tc - 4.950) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e9",
+         "value": "p9 * p9 * (3 - 2 * p9)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p10",
+         "value": "max(0, min(1, (tc - 5.500) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e10",
+         "value": "p10 * p10 * (3 - 2 * p10)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p11",
+         "value": "max(0, min(1, (tc - 6.050) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e11",
+         "value": "p11 * p11 * (3 - 2 * p11)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p12",
+         "value": "max(0, min(1, (tc - 6.600) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e12",
+         "value": "p12 * p12 * (3 - 2 * p12)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p13",
+         "value": "max(0, min(1, (tc - 7.150) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e13",
+         "value": "p13 * p13 * (3 - 2 * p13)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p14",
+         "value": "max(0, min(1, (tc - 7.700) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e14",
+         "value": "p14 * p14 * (3 - 2 * p14)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p15",
+         "value": "max(0, min(1, (tc - 8.250) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e15",
+         "value": "p15 * p15 * (3 - 2 * p15)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p16",
+         "value": "max(0, min(1, (tc - 8.800) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e16",
+         "value": "p16 * p16 * (3 - 2 * p16)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p17",
+         "value": "max(0, min(1, (tc - 9.350) * 0.6897))",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "e17",
+         "value": "p17 * p17 * (3 - 2 * p17)",
+         "commit": true
+        }
+       },
+       {
+        "clearDepth3D": {}
+       },
+       {
+        "camera3D": {
+         "projection": "perspective",
+         "fovY": 0.8,
+         "aspect": 1.0,
+         "near": 0.05,
+         "far": 40.0,
+         "eye": [
+          0.0,
+          0.82,
+          2.05
+         ],
+         "center": [
+          0.0,
+          0.4,
+          0.0
+         ],
+         "up": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "lights3D": {
+         "lights": [
+          {
+           "type": "directional",
+           "color": "#FFFFF6E8",
+           "dir": [
+            -0.45,
+            -0.75,
+            -0.5
+           ],
+           "intensity": 0.85
+          },
+          {
+           "type": "directional",
+           "color": "#FFFFFFFF",
+           "dir": [
+            0.0,
+            -0.26,
+            -0.96
+           ],
+           "intensity": 0.65
+          }
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 1,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.016,
+         "dimY": 0.715,
+         "dimZ": 0.48,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 2,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.016,
+         "dimY": 0.715,
+         "dimZ": 0.48,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 3,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.364,
+         "dimY": 0.016,
+         "dimZ": 0.48,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 4,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.364,
+         "dimY": 0.715,
+         "dimZ": 0.01,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 5,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.358,
+         "dimY": 0.014,
+         "dimZ": 0.44,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 6,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.358,
+         "dimY": 0.014,
+         "dimZ": 0.44,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 7,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.034,
+         "dimY": 0.7,
+         "dimZ": 0.024,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 8,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.034,
+         "dimY": 0.7,
+         "dimZ": 0.024,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 9,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.034,
+         "dimY": 0.024,
+         "dimZ": 0.434,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 10,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.034,
+         "dimY": 0.024,
+         "dimZ": 0.434,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 11,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.66,
+         "dimY": 0.22,
+         "dimZ": 0.012,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 12,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 1.05,
+         "dimY": 0.025,
+         "dimZ": 0.5,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 13,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.358,
+         "dimY": 0.586,
+         "dimZ": 0.016,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 14,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.338,
+         "dimY": 0.075,
+         "dimZ": 0.44,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 15,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.358,
+         "dimY": 0.084,
+         "dimZ": 0.016,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 16,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.6,
+         "dimY": 0.075,
+         "dimZ": 0.44,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 17,
+         "primitive": "cube",
+         "segments": 1,
+         "dimX": 0.62,
+         "dimY": 0.084,
+         "dimZ": 0.016,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 18,
+         "primitive": "torus",
+         "segments": 20,
+         "majorRadius": 0.032,
+         "minorRadius": 0.009,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "pass 1 - shaded fill, and the depth it writes"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "-1.25000 + e0 * 0.73300",
+         "y": 0.3575,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "0.60000 + e1 * -0.75300",
+         "y": 0.3575,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 2,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": "-0.45000 + e2 * 0.45800",
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 3,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.3575,
+         "z": "-1.10000 + e3 * 0.85500"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 4,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.2,
+         "z": "1.15000 + e4 * -1.13800"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 5,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.4,
+         "z": "1.15000 + e5 * -1.13800"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 6,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e6 * -0.88500",
+         "y": 0.35,
+         "z": -0.205
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 7,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e7 * -0.88500",
+         "y": 0.35,
+         "z": 0.205
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 8,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e8 * -0.88500",
+         "y": 0.688,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 9,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e9 * -0.88500",
+         "y": 0.012,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 10,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.6,
+         "z": "-1.20000 + e10 * 0.95600"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 11,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.0,
+         "y": "1.70000 + e11 * -0.96250",
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 12,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.306,
+         "z": "1.25000 + e12 * -1.00200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 13,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.673,
+         "z": "1.25000 + e13 * -1.23200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 14,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.673,
+         "z": "1.45000 + e14 * -1.20200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 15,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.673,
+         "z": "1.25000 + e15 * -1.23200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 16,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.673,
+         "z": "1.45000 + e16 * -1.20200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 17,
+         "mode": "software-flat"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFFFFF"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.255,
+         "y": "1.45000 + e17 * -0.69750",
+         "z": -0.165
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 18,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "pass 2 - outlines, against the finished depth"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "-1.25000 + e0 * 0.73300",
+         "y": 0.3575,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "0.60000 + e1 * -0.75300",
+         "y": 0.3575,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 2,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": "-0.45000 + e2 * 0.45800",
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 3,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.3575,
+         "z": "-1.10000 + e3 * 0.85500"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 4,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.2,
+         "z": "1.15000 + e4 * -1.13800"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 5,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.4,
+         "z": "1.15000 + e5 * -1.13800"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 6,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e6 * -0.88500",
+         "y": 0.35,
+         "z": -0.205
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 7,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e7 * -0.88500",
+         "y": 0.35,
+         "z": 0.205
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 8,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e8 * -0.88500",
+         "y": 0.688,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 9,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": "1.35000 + e9 * -0.88500",
+         "y": 0.012,
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 10,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.6,
+         "z": "-1.20000 + e10 * 0.95600"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 11,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.0,
+         "y": "1.70000 + e11 * -0.96250",
+         "z": 0.0
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 12,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.306,
+         "z": "1.25000 + e12 * -1.00200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 13,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.673,
+         "z": "1.25000 + e13 * -1.23200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 14,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": -0.335,
+         "y": 0.673,
+         "z": "1.45000 + e14 * -1.20200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 15,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.673,
+         "z": "1.25000 + e15 * -1.23200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 16,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.19,
+         "y": 0.673,
+         "z": "1.45000 + e16 * -1.20200"
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 17,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF101418"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.255,
+         "y": "1.45000 + e17 * -0.69750",
+         "z": -0.165
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 18,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
