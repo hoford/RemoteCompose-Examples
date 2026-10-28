@@ -61,8 +61,11 @@ HAIR = importlib.util.module_from_spec(hs_spec)
 hs_spec.loader.exec_module(HAIR)
 
 W = H = 720
-CAPTION = 46
-FILL_FRAC = 0.95
+# No caption and no margin: this one is the finished watch, not a plate in a study, so it
+# is a dial and nothing else. The parts documents keep their captions — you need to be told
+# which part you are looking at — but a watch face with a label under it is a diagram.
+CAPTION = 0
+FILL_FRAC = 0.995
 
 ESC_TEETH = P.ESCAPE_TEETH
 # Two meshes between the centre wheel and the escape wheel now, an EVEN number, so they
@@ -307,9 +310,7 @@ def build():
     Bar, Min, Lev, Bal = at(g["barrel"]), at(g["minute"]), at(g["lever"]), at(g["balance"])
     mb = g["mw_module_b"]
 
-    cmds = P.frame(W, H, "SKELETON WATCH",
-                   "barrel · train · escapement · motion work · dial"
-                   + P.speed_note())
+    cmds = P.frame(W, H)
     cmds += P.time_var()
 
     # One variable for the whole movement. Every wheel below is a multiple of it, which
