@@ -1,0 +1,47 @@
+{
+  "id": "skeleton-watch/escape",
+  "sha256": "7a8b63d3e11f1510542f3f50b437251332a16eb58639df0f3436059fc0d2fdb1",
+  "bytes": 26812,
+  "ops": 245,
+  "distinctOps": 19,
+  "width": 420,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 70,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 2,
+    "DRAW_TEXT_ANCHOR": 2,
+    "ANIMATED_FLOAT": 2,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DATA_PATH": 74,
+    "DRAW_PATH": 74,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

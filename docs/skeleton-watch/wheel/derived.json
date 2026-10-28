@@ -1,0 +1,47 @@
+{
+  "id": "skeleton-watch/wheel",
+  "sha256": "93616a69393b09d5e2a94fec1c6004b3416b08e6879f21571a03454e59056fd1",
+  "bytes": 52449,
+  "ops": 70,
+  "distinctOps": 19,
+  "width": 420,
+  "height": 420,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 11,
+    "DRAW_RECT": 1,
+    "DATA_TEXT": 2,
+    "DRAW_TEXT_ANCHOR": 2,
+    "ANIMATED_FLOAT": 2,
+    "MATRIX_SAVE": 1,
+    "MATRIX_ROTATE": 1,
+    "DATA_PATH": 16,
+    "DRAW_PATH": 16,
+    "MATRIX_RESTORE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint",
+    "text",
+    "transforms"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

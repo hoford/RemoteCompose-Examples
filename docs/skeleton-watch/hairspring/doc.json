@@ -1,0 +1,214 @@
+{
+ "header": {
+  "width": 420,
+  "height": 420,
+  "apiLevel": 7,
+  "profiles": 512,
+  "contentDescription": "A watch hairspring seen as an X-ray: twelve turns of flat spiral, pinned to the collet on the balance staff at the inner end and to a fixed stud at the outer. It does not rotate. It winds and unwinds as the balance swings, and because the wire keeps its length the coils draw inward as it tightens and push out again as it opens."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF070B12"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 420,
+         "bottom": 420
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6BACCC"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 15.0
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "HAIRSPRING",
+         "x": 14,
+         "y": 390,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF326586"
+          },
+          {
+           "style": "fill"
+          },
+          {
+           "textSize": 11.5
+          }
+         ]
+        }
+       },
+       {
+        "drawTextAnchored": {
+         "text": "12 turns \u00b7 pinned at both ends \u00b7 the wire keeps its length",
+         "x": 14,
+         "y": 407,
+         "panX": -1.0,
+         "panY": 0.0,
+         "flags": 0
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "3600 * (timeInHr() - 12 * floor(timeInHr() / 12)) + continuousSec()",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "hair_d",
+         "value": "2.6000 * sin(3.141593 * t)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "hair_w",
+         "value": "76.585048 - hair_d",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "hair_b",
+         "value": "6 * (6892.6543 / hair_w - 90.0000)",
+         "commit": true
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "hair",
+         "expressionX": "205.00 + (22.000 + 136.000 * a[0] + hair_b * a[0] * (1 - a[0])) * cos(hair_d + a[0] * hair_w)",
+         "expressionY": "205.00 + (22.000 + 136.000 * a[0] + hair_b * a[0] * (1 - a[0])) * sin(hair_d + a[0] * hair_w)",
+         "start": 0,
+         "end": 1,
+         "count": 1500,
+         "flags": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6BACCC"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.15
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "hair"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF326586"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.1
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "M 227.000 205.000 L 226.577 209.292 L 225.325 213.419 L 223.292 217.223 L 220.556 220.556 L 217.223 223.292 L 213.419 225.325 L 209.292 226.577 L 205.000 227.000 L 200.708 226.577 L 196.581 225.325 L 192.777 223.292 L 189.444 220.556 L 186.708 217.223 L 184.675 213.419 L 183.423 209.292 L 183.000 205.000 L 183.423 200.708 L 184.675 196.581 L 186.708 192.777 L 189.444 189.444 L 192.777 186.708 L 196.581 184.675 L 200.708 183.423 L 205.000 183.000 L 209.292 183.423 L 213.419 184.675 L 217.223 186.708 L 220.556 189.444 L 223.292 192.777 L 225.325 196.581 L 226.577 200.708 Z"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#40B99048"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "M 272.188 351.495 L 271.915 353.566 L 271.116 355.495 L 269.845 357.152 L 268.188 358.423 L 266.258 359.222 L 264.188 359.495 L 262.117 359.222 L 260.188 358.423 L 258.531 357.152 L 257.260 355.495 L 256.460 353.566 L 256.188 351.495 L 256.460 349.424 L 257.260 347.495 L 258.531 345.838 L 260.188 344.567 L 262.117 343.768 L 264.188 343.495 L 266.258 343.768 L 268.188 344.567 L 269.845 345.838 L 271.116 347.495 L 271.915 349.424 Z"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFB99048"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.3
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "M 272.188 351.495 L 271.915 353.566 L 271.116 355.495 L 269.845 357.152 L 268.188 358.423 L 266.258 359.222 L 264.188 359.495 L 262.117 359.222 L 260.188 358.423 L 258.531 357.152 L 257.260 355.495 L 256.460 353.566 L 256.188 351.495 L 256.460 349.424 L 257.260 347.495 L 258.531 345.838 L 260.188 344.567 L 262.117 343.768 L 264.188 343.495 L 266.258 343.768 L 268.188 344.567 L 269.845 345.838 L 271.116 347.495 L 271.915 349.424 Z"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
