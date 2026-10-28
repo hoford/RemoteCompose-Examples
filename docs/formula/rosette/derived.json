@@ -1,0 +1,35 @@
+{
+  "id": "formula/rosette",
+  "sha256": "846e786219a170d62c8d20d019d76f1c7e910f24052a33d5ad92049cceb0ee88",
+  "bytes": 2384,
+  "ops": 37,
+  "distinctOps": 13,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 7,
+    "DRAW_RECT": 1,
+    "PATH_EXPRESSION": 6,
+    "DRAW_PATH": 6,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

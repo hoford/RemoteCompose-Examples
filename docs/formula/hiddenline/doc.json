@@ -1,0 +1,190 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "A torus drawn as a wireframe grid, tumbling slowly. Every edge of the mesh is submitted on every frame and the back half is hidden by the surface's own front faces, so edges wink out as they cross the silhouette. Drag to turn it."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0E1116"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "spinPx",
+         "defaultValue": 0.0,
+         "min": -100000.0,
+         "max": 100000.0,
+         "stopMode": "gently",
+         "expression": "touchX()"
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "tiltPx",
+         "defaultValue": 0.0,
+         "min": -130.0,
+         "max": 130.0,
+         "stopMode": "gently",
+         "expression": "touchY()"
+        }
+       },
+       {
+        "variable": {
+         "name": "spin",
+         "value": "spinPx * 0.0120 + -0.4000 + continuousSec() * 0.270",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "tilt",
+         "value": "tiltPx * 0.0090 + -0.9500 + continuousSec() * 0.070",
+         "commit": true
+        }
+       },
+       {
+        "clearDepth3D": {}
+       },
+       {
+        "camera3D": {
+         "projection": "ortho",
+         "left": -1.25,
+         "right": 1.25,
+         "bottom": -1.25,
+         "top": 1.25,
+         "near": -30.0,
+         "far": 40.0,
+         "eye": [
+          0.0,
+          0.0,
+          6.0
+         ],
+         "center": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "up": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "lights3D": {
+         "lights": [
+          {
+           "type": "directional",
+           "color": "#FFFFFFFF",
+           "dir": [
+            0.0,
+            -0.26,
+            -0.96
+           ],
+           "intensity": 0.85
+          }
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 1,
+         "primitive": "torus",
+         "segments": 30,
+         "majorRadius": 0.78,
+         "minorRadius": 0.3,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8EDF2"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-flat",
+         "wireframe": true,
+         "edges": [
+          0,
+          1
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

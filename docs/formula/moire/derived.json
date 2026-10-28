@@ -1,0 +1,42 @@
+{
+  "id": "formula/moire",
+  "sha256": "b9fb5782e0f453a293f9b638bd3cb7d186d573e782046c53b2fbede1b2cb5241",
+  "bytes": 3712,
+  "ops": 200,
+  "distinctOps": 15,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 2,
+    "DRAW_RECT": 1,
+    "TOUCH_EXPRESSION": 2,
+    "ANIMATED_FLOAT": 90,
+    "REM": 2,
+    "DRAW_CIRCLE": 86,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "interaction",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

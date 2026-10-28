@@ -1,0 +1,135 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "A harmonograph figure drawing itself: two decaying sine pairs per axis, with a bright pen at the growing end of the trace and the completed figure showing faintly behind it. The curve grows because the drawn interval grows, not because anything is remembered between frames."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0B0E12"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "variable": {
+         "name": "s",
+         "value": "min(190.0, (continuousSec() % 24.0) * 9.6545)",
+         "commit": true
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "ghost",
+         "expressionX": "200.0 + 96.0 * sin(2.0000 * a[0] + 0.000) * exp(0 - 0.00420 * a[0]) + 62.0 * sin(3.0040 * a[0] + 1.570) * exp(0 - 0.00580 * a[0])",
+         "expressionY": "200.0 + 96.0 * sin(3.0000 * a[0] + 0.900) * exp(0 - 0.00450 * a[0]) + 58.0 * sin(2.0020 * a[0] + 0.000) * exp(0 - 0.00610 * a[0])",
+         "start": 0,
+         "end": 190.0,
+         "count": 2400,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "trace",
+         "expressionX": "200.0 + 96.0 * sin(2.0000 * a[0] + 0.000) * exp(0 - 0.00420 * a[0]) + 62.0 * sin(3.0040 * a[0] + 1.570) * exp(0 - 0.00580 * a[0])",
+         "expressionY": "200.0 + 96.0 * sin(3.0000 * a[0] + 0.900) * exp(0 - 0.00450 * a[0]) + 58.0 * sin(2.0020 * a[0] + 0.000) * exp(0 - 0.00610 * a[0])",
+         "start": 0,
+         "end": "@s",
+         "count": 2400,
+         "flags": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF263040"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 0.8
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "ghost"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF7FD4C1"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "trace"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFD98A"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + 96.0 * sin(2.0000 * s + 0.000) * exp(0 - 0.00420 * s) + 62.0 * sin(3.0040 * s + 1.570) * exp(0 - 0.00580 * s)",
+         "cy": "200.0 + 96.0 * sin(3.0000 * s + 0.900) * exp(0 - 0.00450 * s) + 58.0 * sin(2.0020 * s + 0.000) * exp(0 - 0.00610 * s)",
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

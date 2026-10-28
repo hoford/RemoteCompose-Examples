@@ -1,0 +1,948 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "Nine warm-toned rings arranged around a vertical axis, opening and closing like a flower around a glowing core. Each ring reads the same opening cosine with its own phase offset, so the opening travels around the whorl. Drag to turn it."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF120A14"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "spinPx",
+         "defaultValue": 0.0,
+         "min": -100000.0,
+         "max": 100000.0,
+         "stopMode": "gently",
+         "expression": "touchX()"
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "tiltPx",
+         "defaultValue": 0.0,
+         "min": -120.0,
+         "max": 120.0,
+         "stopMode": "gently",
+         "expression": "touchY()"
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "spin",
+         "value": "spinPx * 0.0120 + t * 0.160",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "tilt",
+         "value": "tiltPx * 0.0090 + -0.9200",
+         "commit": true
+        }
+       },
+       {
+        "clearDepth3D": {}
+       },
+       {
+        "camera3D": {
+         "projection": "perspective",
+         "fovY": 0.8,
+         "aspect": 1.0,
+         "near": 0.05,
+         "far": 40.0,
+         "eye": [
+          0.0,
+          0.4,
+          3.05
+         ],
+         "center": [
+          0.0,
+          0.0,
+          0.0
+         ],
+         "up": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "lights3D": {
+         "lights": [
+          {
+           "type": "directional",
+           "color": "#FFFFF0DC",
+           "dir": [
+            -0.4,
+            -0.7,
+            -0.59
+           ],
+           "intensity": 0.85
+          },
+          {
+           "type": "directional",
+           "color": "#FF90A8FF",
+           "dir": [
+            0.65,
+            -0.2,
+            -0.73
+           ],
+           "intensity": 0.3
+          },
+          {
+           "type": "point",
+           "color": "#FFFFD9A0",
+           "pos": [
+            0.0,
+            0.0,
+            0.0
+           ],
+           "intensity": 0.5
+          }
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 1,
+         "primitive": "torus",
+         "segments": 22,
+         "majorRadius": 0.36,
+         "minorRadius": 0.088,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "meshPrimitive3D": {
+         "id": 2,
+         "primitive": "icosphere",
+         "segments": 2,
+         "radius": 0.17,
+         "center": [
+          0,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8617A"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 0.0,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 0.0000)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 1"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEE7A62"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 0.6981317007977318,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 0.6981)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 2"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF09A58"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 1.3962634015954636,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 1.3963)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 3"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE9B65C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 2.0943951023931953,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 2.0944)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 4"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD9C87A"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 2.792526803190927,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 2.7925)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 5"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE8617A"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 3.490658503988659,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 3.4907)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 6"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFEE7A62"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 4.1887902047863905,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 4.1888)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 7"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF09A58"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 4.886921905584122,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 4.8869)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "petal 8"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE9B65C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": 5.585053606381854,
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "translate",
+         "x": 0.62,
+         "y": 0.0,
+         "z": 0.0
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "0.8000 + 0.6200 * cos(t * 0.1900 + 5.5851)",
+         "axis": [
+          0,
+          0,
+          1
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 1,
+         "mode": "software-smooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "core"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFFFE9B0"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "identity"
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@tilt",
+         "axis": [
+          1,
+          0,
+          0
+         ]
+        }
+       },
+       {
+        "matrix3D": {
+         "op": "rotate",
+         "angle": "@spin",
+         "axis": [
+          0,
+          1,
+          0
+         ]
+        }
+       },
+       {
+        "drawMesh3D": {
+         "mesh": 2,
+         "mode": "software-smooth"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

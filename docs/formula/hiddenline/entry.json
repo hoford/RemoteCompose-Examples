@@ -1,0 +1,19 @@
+{
+  "id": "formula/hiddenline",
+  "title": "Hidden-line torus",
+  "description": "A torus drawn as a wireframe grid, tumbling slowly. Every edge of the mesh is submitted on every frame and the back half is hidden by the surface's own front faces, so edges wink out as they cross the silhouette. Drag to turn it.",
+  "source": "rcjson",
+  "authoring": [
+    "json"
+  ],
+  "tags": [
+    "3d",
+    "animated",
+    "expressions",
+    "input"
+  ],
+  "sha256": "c05e15f9ae991acb62ac9b79aa2b23a236d8815cd6e7e39a7a13e418258725c4",
+  "addedAt": "2026-10-28T01:34:48+00:00",
+  "provenance": "github/rcJson/d3/hiddenline.rc",
+  "descriptionSource": "json:header.contentDescription"
+}

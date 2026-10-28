@@ -1,0 +1,729 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "Two identical sets of concentric circles with their centres slightly apart. The broad dark bands sweeping across the square are moire fringes \u2014 interference between the two sets, not drawn by anything in the document. Drag to pull the centres further apart and crowd the fringes together."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFF6F3EA"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "dragX",
+         "defaultValue": 0.0,
+         "min": -90.0,
+         "max": 90.0,
+         "stopMode": "gently",
+         "expression": "touchX()"
+        }
+       },
+       {
+        "touchExpression": {
+         "name": "dragY",
+         "defaultValue": 0.0,
+         "min": -90.0,
+         "max": 90.0,
+         "stopMode": "gently",
+         "expression": "touchY()"
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "ang",
+         "value": "t * 0.1300",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "dist",
+         "value": "62.000 + 48.000 * sin(t * 0.2100)",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "offX",
+         "value": "dist * cos(ang) + dragX * 0.350",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "offY",
+         "value": "dist * sin(ang) + dragY * 0.350",
+         "commit": true
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF162B38"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 5.0
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "layer 1 - bullseye at the centre"
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 10.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 20.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 30.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 40.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 50.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 60.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 70.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 80.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 90.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 100.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 110.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 120.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 130.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 140.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 150.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 160.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 170.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 180.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 190.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 200.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 210.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 220.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 230.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 240.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 250.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 260.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 270.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 280.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 290.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 300.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 310.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 320.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 330.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 340.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 350.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 360.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 370.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 380.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 390.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 400.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 410.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 420.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.0,
+         "cy": 200.0,
+         "radius": 430.0
+        }
+       },
+       {
+        "rem": {
+         "text": "layer 2 - the same bullseye, centre offset"
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 10.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 20.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 30.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 40.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 50.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 60.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 70.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 80.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 90.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 100.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 110.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 120.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 130.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 140.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 150.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 160.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 170.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 180.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 190.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 200.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 210.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 220.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 230.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 240.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 250.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 260.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 270.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 280.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 290.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 300.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 310.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 320.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 330.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 340.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 350.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 360.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 370.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 380.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 390.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 400.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 410.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 420.0
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": "200.0 + offX",
+         "cy": "200.0 + offY",
+         "radius": 430.0
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

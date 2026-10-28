@@ -1,0 +1,579 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "A sunflower seed head of nine hundred florets, dark olive at the centre and gold at the rim. Each floret sits at the golden angle from the one before it, at a radius proportional to the square root of its index; the interlocking spirals are not drawn but fall out of that placement. The divergence angle drifts a fraction of a degree either side of golden, and the spiral families unwind and re-form as it passes through."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF120F08"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "variable": {
+         "name": "phi",
+         "value": "2.399963230 + 0.004886922 * sin(continuousSec() * 0.0850)",
+         "commit": true
+        }
+       },
+       {
+        "rem": {
+         "text": "band 0: florets 0..129"
+        }
+       },
+       {
+        "loop": {
+         "from": 0,
+         "step": 1,
+         "until": 129,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th0",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr0",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx0",
+            "value": "200.0 + rr0 * cos(th0)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy0",
+            "value": "200.0 + rr0 * sin(th0)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FF302A16",
+                "#FF14110A"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx0 - 3.96",
+               "y1": "sy0 - 4.46",
+               "x2": "sx0 + 3.46",
+               "y2": "sy0 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx0",
+            "cy": "@sy0",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 1: florets 129..257"
+        }
+       },
+       {
+        "loop": {
+         "from": 129,
+         "step": 1,
+         "until": 257,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th1",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr1",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx1",
+            "value": "200.0 + rr1 * cos(th1)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy1",
+            "value": "200.0 + rr1 * sin(th1)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FF4A3C18",
+                "#FF201A0C"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx1 - 3.96",
+               "y1": "sy1 - 4.46",
+               "x2": "sx1 + 3.46",
+               "y2": "sy1 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx1",
+            "cy": "@sy1",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 2: florets 257..386"
+        }
+       },
+       {
+        "loop": {
+         "from": 257,
+         "step": 1,
+         "until": 386,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th2",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr2",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx2",
+            "value": "200.0 + rr2 * cos(th2)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy2",
+            "value": "200.0 + rr2 * sin(th2)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FF705418",
+                "#FF32280E"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx2 - 3.96",
+               "y1": "sy2 - 4.46",
+               "x2": "sx2 + 3.46",
+               "y2": "sy2 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx2",
+            "cy": "@sy2",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 3: florets 386..514"
+        }
+       },
+       {
+        "loop": {
+         "from": 386,
+         "step": 1,
+         "until": 514,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th3",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr3",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx3",
+            "value": "200.0 + rr3 * cos(th3)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy3",
+            "value": "200.0 + rr3 * sin(th3)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FF9C7620",
+                "#FF4C3A10"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx3 - 3.96",
+               "y1": "sy3 - 4.46",
+               "x2": "sx3 + 3.46",
+               "y2": "sy3 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx3",
+            "cy": "@sy3",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 4: florets 514..643"
+        }
+       },
+       {
+        "loop": {
+         "from": 514,
+         "step": 1,
+         "until": 643,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th4",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr4",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx4",
+            "value": "200.0 + rr4 * cos(th4)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy4",
+            "value": "200.0 + rr4 * sin(th4)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FFC89A2C",
+                "#FF6E5416"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx4 - 3.96",
+               "y1": "sy4 - 4.46",
+               "x2": "sx4 + 3.46",
+               "y2": "sy4 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx4",
+            "cy": "@sy4",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 5: florets 643..771"
+        }
+       },
+       {
+        "loop": {
+         "from": 643,
+         "step": 1,
+         "until": 771,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th5",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr5",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx5",
+            "value": "200.0 + rr5 * cos(th5)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy5",
+            "value": "200.0 + rr5 * sin(th5)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FFE6BE48",
+                "#FF8C6C1E"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx5 - 3.96",
+               "y1": "sy5 - 4.46",
+               "x2": "sx5 + 3.46",
+               "y2": "sy5 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx5",
+            "cy": "@sy5",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       },
+       {
+        "rem": {
+         "text": "band 6: florets 771..900"
+        }
+       },
+       {
+        "loop": {
+         "from": 771,
+         "step": 1,
+         "until": 900,
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "th6",
+            "value": "i * phi",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "rr6",
+            "value": "6.350 * sqrt(i)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx6",
+            "value": "200.0 + rr6 * cos(th6)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy6",
+            "value": "200.0 + rr6 * sin(th6)",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FFF8DE8A",
+                "#FFAE882C"
+               ],
+               "stops": [
+                0.0,
+                1.0
+               ],
+               "x1": "sx6 - 3.96",
+               "y1": "sy6 - 4.46",
+               "x2": "sx6 + 3.46",
+               "y2": "sy6 + 4.46"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx6",
+            "cy": "@sy6",
+            "radius": 4.95
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

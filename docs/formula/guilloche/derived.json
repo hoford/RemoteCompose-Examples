@@ -1,0 +1,37 @@
+{
+  "id": "formula/guilloche",
+  "sha256": "33483f3a31e5c64c4dc9a1de44ff6476f9f479799cc9cbaafc655080e5fff949",
+  "bytes": 1499,
+  "ops": 45,
+  "distinctOps": 14,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 11,
+    "DRAW_RECT": 1,
+    "PATH_EXPRESSION": 6,
+    "DRAW_PATH": 6,
+    "DRAW_CIRCLE": 4,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "layout",
+    "paint"
+  ],
+  "flags": [],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

@@ -1,0 +1,44 @@
+{
+  "id": "formula/phyllotaxis",
+  "sha256": "88c54f9765c258603b6a9c034c70b3db9af37cbda3ecb38de6b5c94861495022",
+  "bytes": 2824,
+  "ops": 112,
+  "distinctOps": 16,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 8,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 57,
+    "REM": 7,
+    "DATA_TEXT": 1,
+    "LOOP_START": 7,
+    "DRAW_CIRCLE": 7,
+    "CONTAINER_END": 13
+  },
+  "apis": [
+    "drawCircle",
+    "drawRect",
+    "expressions",
+    "layout",
+    "loop",
+    "paint",
+    "text"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

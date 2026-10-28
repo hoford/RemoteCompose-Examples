@@ -1,0 +1,42 @@
+{
+  "id": "formula/harmonograph",
+  "sha256": "48da33cdc71a2c2be07a95861d15c17591e8fc654d4d24dc106c8cd114a76791",
+  "bytes": 1432,
+  "ops": 30,
+  "distinctOps": 15,
+  "width": 400,
+  "height": 400,
+  "histogram": {
+    "HEADER": 1,
+    "LAYOUT_ROOT": 1,
+    "LAYOUT_BOX": 1,
+    "MODIFIER_WIDTH": 2,
+    "MODIFIER_HEIGHT": 2,
+    "LAYOUT_CONTENT": 2,
+    "LAYOUT_CANVAS": 1,
+    "LAYOUT_CANVAS_CONTENT": 1,
+    "PAINT_VALUES": 4,
+    "DRAW_RECT": 1,
+    "ANIMATED_FLOAT": 3,
+    "PATH_EXPRESSION": 2,
+    "DRAW_PATH": 2,
+    "DRAW_CIRCLE": 1,
+    "CONTAINER_END": 6
+  },
+  "apis": [
+    "drawCircle",
+    "drawPath",
+    "drawRect",
+    "expressions",
+    "layout",
+    "paint"
+  ],
+  "flags": [
+    "animated",
+    "expressions"
+  ],
+  "decoded": true,
+  "hasJson": true,
+  "jsonReproduces": "yes",
+  "src": []
+}

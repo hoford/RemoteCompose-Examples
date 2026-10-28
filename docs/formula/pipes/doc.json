@@ -1,0 +1,175 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "A pipe of shaded metallic balls running in straight stretches and square corners, coiling toward the viewer and growing longer as time passes, in the manner of the old Pipes screensaver. The pipe is drawn in two dimensions; the depth is a hand-written perspective divide, and the pipe grows because the drawing loop's bound is an expression in the clock."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF070A12"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "variable": {
+         "name": "n",
+         "value": "min(120.00, (continuousSec() % 26.00) * 5.4945)",
+         "commit": true
+        }
+       },
+       {
+        "loop": {
+         "from": 0,
+         "step": 0.19,
+         "until": "@n",
+         "index": "i",
+         "commands": [
+          {
+           "variable": {
+            "name": "c",
+            "value": "floor(i / 24.000)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "a",
+            "value": "c * 0.5500",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "g",
+            "value": "1 + 0.220 * sin(c * 0.9)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "bx",
+            "value": "(min((i % 24.000), 6.00) - max(0, min((i % 24.000) - 12.00, 6.00)) - 3.00) * g",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "by",
+            "value": "(max(0, min((i % 24.000) - 6.00, 6.00)) - max(0, (i % 24.000) - 18.00) - 3.00) * g",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "px",
+            "value": "(bx * cos(a) - by * sin(a)) * 15.00",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "py",
+            "value": "(bx * sin(a) + by * cos(a)) * 15.00",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "k",
+            "value": "300.0 / (300.0 - i * 1.6200)",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sx",
+            "value": "200.0 + px * k",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "sy",
+            "value": "200.0 + py * k",
+            "commit": true
+           }
+          },
+          {
+           "variable": {
+            "name": "r",
+            "value": "11.00 * k",
+            "commit": true
+           }
+          },
+          {
+           "paint": {
+            "ops": [
+             {
+              "linearGradient": {
+               "colors": [
+                "#FFC9DCEF",
+                "#FF7E9FC0",
+                "#FF3B5574"
+               ],
+               "stops": [
+                0.0,
+                0.45,
+                1.0
+               ],
+               "x1": "sx - r * 0.65",
+               "y1": "sy - r * 0.75",
+               "x2": "sx + r * 0.55",
+               "y2": "sy + r * 0.85"
+              }
+             },
+             {
+              "style": "fill"
+             }
+            ]
+           }
+          },
+          {
+           "drawCircle": {
+            "cx": "@sx",
+            "cy": "@sy",
+            "radius": "@r"
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

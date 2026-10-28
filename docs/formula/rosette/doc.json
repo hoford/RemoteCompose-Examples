@@ -1,0 +1,233 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "Six rose curves of three to nine petals, drawn over one another in a cool-to-warm ramp. Each turns at its own rate and breathes in radius, so the figure continuously re-composes. Every curve is a single formula sampled by the renderer."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF0C0E13"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose0",
+         "expressionX": "200.0 + 168.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 0.00)) * cos(3 * (a[0] + continuousSec() * 0.0520 + 0.00)) * cos(a[0] + continuousSec() * 0.0520 + 0.00)",
+         "expressionY": "200.0 + 168.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 0.00)) * cos(3 * (a[0] + continuousSec() * 0.0520 + 0.00)) * sin(a[0] + continuousSec() * 0.0520 + 0.00)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose1",
+         "expressionX": "200.0 + 150.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 0.70)) * cos(5 * (a[0] + continuousSec() * -0.0710 + 0.70)) * cos(a[0] + continuousSec() * -0.0710 + 0.70)",
+         "expressionY": "200.0 + 150.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 0.70)) * cos(5 * (a[0] + continuousSec() * -0.0710 + 0.70)) * sin(a[0] + continuousSec() * -0.0710 + 0.70)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose2",
+         "expressionX": "200.0 + 132.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 1.40)) * cos(7 * (a[0] + continuousSec() * 0.0890 + 1.40)) * cos(a[0] + continuousSec() * 0.0890 + 1.40)",
+         "expressionY": "200.0 + 132.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 1.40)) * cos(7 * (a[0] + continuousSec() * 0.0890 + 1.40)) * sin(a[0] + continuousSec() * 0.0890 + 1.40)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose3",
+         "expressionX": "200.0 + 112.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 2.10)) * cos(4 * (a[0] + continuousSec() * -0.0430 + 2.10)) * cos(a[0] + continuousSec() * -0.0430 + 2.10)",
+         "expressionY": "200.0 + 112.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 2.10)) * cos(4 * (a[0] + continuousSec() * -0.0430 + 2.10)) * sin(a[0] + continuousSec() * -0.0430 + 2.10)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose4",
+         "expressionX": "200.0 + 92.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 2.80)) * cos(6 * (a[0] + continuousSec() * 0.0650 + 2.80)) * cos(a[0] + continuousSec() * 0.0650 + 2.80)",
+         "expressionY": "200.0 + 92.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 2.80)) * cos(6 * (a[0] + continuousSec() * 0.0650 + 2.80)) * sin(a[0] + continuousSec() * 0.0650 + 2.80)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "rose5",
+         "expressionX": "200.0 + 70.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 3.50)) * cos(9 * (a[0] + continuousSec() * -0.0970 + 3.50)) * cos(a[0] + continuousSec() * -0.0970 + 3.50)",
+         "expressionY": "200.0 + 70.0 * (1 + 0.060 * sin(continuousSec() * 0.0370 + 3.50)) * cos(9 * (a[0] + continuousSec() * -0.0970 + 3.50)) * sin(a[0] + continuousSec() * -0.0970 + 3.50)",
+         "start": 0,
+         "end": 6.2831853,
+         "count": 420,
+         "flags": 4
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF3E5C7A"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 2.2
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF4E7E86"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.9
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose1"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E9A7E"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.6
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose2"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF9AA87A"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.5
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose3"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFC2A066"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.3
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose4"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFE4603C"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.2
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "rose5"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
