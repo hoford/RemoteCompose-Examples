@@ -1,0 +1,831 @@
+{
+ "header": {
+  "width": 400,
+  "height": 400,
+  "apiLevel": 7,
+  "contentDescription": "Three watch wheels of eighteen, eleven and twenty-four teeth, turning in mesh. Each wheel's rim is a single polar expression in its tooth count, and the wheels stay engaged because their phases are locked by the gear ratio rather than animated separately."
+ },
+ "root": [
+  {
+   "box": {
+    "modifiers": [
+     "fillMaxSize"
+    ],
+    "children": [
+     {
+      "type": "canvas",
+      "modifiers": [
+       "fillMaxSize"
+      ],
+      "commands": [
+       {
+        "rem": {
+         "text": "GEAR RECIPE - how these wheels are made and why they mesh."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "A wheel of N teeth is one polar curve. With theta the angle round the wheel and"
+        }
+       },
+       {
+        "rem": {
+         "text": "phi the wheel's rotation:"
+        }
+       },
+       {
+        "rem": {
+         "text": "  u     = fract(N * (theta - phi) / 2pi)        position within one tooth pitch, 0..1"
+        }
+       },
+       {
+        "rem": {
+         "text": "  s     = clamp((hr - abs(u - 0.5)) / (hr - ht))    trapezoid, tooth centred at u=0.5"
+        }
+       },
+       {
+        "rem": {
+         "text": "  tooth = 0.5 - 0.5 * cos(pi * s)               eased: curved flanks, rounded tip"
+        }
+       },
+       {
+        "rem": {
+         "text": "  r     = rp - ded*m + (add + ded)*m * tooth"
+        }
+       },
+       {
+        "rem": {
+         "text": "then x = cx + r*cos(theta), y = cy + r*sin(theta) over theta = 0..2pi."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "m is the module: pitch diameter per tooth. rp = m*N/2 is the pitch radius."
+        }
+       },
+       {
+        "rem": {
+         "text": "add (addendum) is how far a tooth rises above the pitch circle, ded (dedendum) how"
+        }
+       },
+       {
+        "rem": {
+         "text": "far the root falls below it. ht and hr are the tooth's half-thickness at tip and at"
+        }
+       },
+       {
+        "rem": {
+         "text": "root as a fraction of the pitch; hr > ht splays the flanks outward going down, as a"
+        }
+       },
+       {
+        "rem": {
+         "text": "real tooth does."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "This document uses m=5.20 px, add=0.95, ded=1.20, ht=0.13, hr=0.29. Those were"
+        }
+       },
+       {
+        "rem": {
+         "text": "chosen by measuring interference, not by eye: sample both outlines densely, test"
+        }
+       },
+       {
+        "rem": {
+         "text": "each point of one against the other's polar radius, and sweep a full tooth pitch of"
+        }
+       },
+       {
+        "rem": {
+         "text": "rotation. Worst clearance here is about +0.09 of a module, a real backlash figure."
+        }
+       },
+       {
+        "rem": {
+         "text": "Fatter teeth jam. Below about nine teeth this profile interferes with itself, which"
+        }
+       },
+       {
+        "rem": {
+         "text": "is the same undercutting limit that stops real gears having tiny tooth counts."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "TWO WHEELS MESH when they share a module. That fixes the centre distance:"
+        }
+       },
+       {
+        "rem": {
+         "text": "  C = m * (NA + NB) / 2"
+        }
+       },
+       {
+        "rem": {
+         "text": "and the ratio: B turns NA/NB times as fast as A, in the opposite direction."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "THE PHASE is the part that is easy to get wrong. With B's centre at angle beta as"
+        }
+       },
+       {
+        "rem": {
+         "text": "seen from A:"
+        }
+       },
+       {
+        "rem": {
+         "text": "  phi_B = beta + pi - pi/NB + (NA/NB) * (beta - phi_A)"
+        }
+       },
+       {
+        "rem": {
+         "text": "The invariant this maintains at the contact point is a REFLECTION, u_B = 0.5 - u_A,"
+        }
+       },
+       {
+        "rem": {
+         "text": "not a translation: at A's contact point increasing theta runs one way round the rim"
+        }
+       },
+       {
+        "rem": {
+         "text": "and at B's it runs the other, so the tooth pattern is mirrored. Deriving it as a"
+        }
+       },
+       {
+        "rem": {
+         "text": "translation gives phi_B running forwards with phi_A and the wheels jam solid except"
+        }
+       },
+       {
+        "rem": {
+         "text": "at the instants when teeth happen to line up - which a clearance test only catches"
+        }
+       },
+       {
+        "rem": {
+         "text": "if it samples BETWEEN those instants, not just at them."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "For a train, each wheel's phase stays linear in the first wheel's, so phi_i can be"
+        }
+       },
+       {
+        "rem": {
+         "text": "folded to a single constant plus a multiple of phi_0 - as the p0/p1/p2 variables"
+        }
+       },
+       {
+        "rem": {
+         "text": "below are."
+        }
+       },
+       {
+        "rem": {
+         "text": ""
+        }
+       },
+       {
+        "rem": {
+         "text": "ONE SYNTAX TRAP: the tooth term must be parenthesised where it is multiplied in."
+        }
+       },
+       {
+        "rem": {
+         "text": "Written as rroot + height * 0.5 - 0.5*cos(...) it parses as (rroot + height*0.5)"
+        }
+       },
+       {
+        "rem": {
+         "text": "minus a half-amplitude cosine, which draws a near-perfect circle with a half-pixel"
+        }
+       },
+       {
+        "rem": {
+         "text": "wobble - and renders without complaint, so nothing tells you the gear is gone."
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF13161C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawRect": {
+         "left": 0,
+         "top": 0,
+         "right": 400,
+         "bottom": 400
+        }
+       },
+       {
+        "variable": {
+         "name": "t",
+         "value": "continuousSec()",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p0",
+         "value": "t * 0.33000",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p1",
+         "value": "3.963266 - p0 * 1.636364",
+         "commit": true
+        }
+       },
+       {
+        "variable": {
+         "name": "p2",
+         "value": "-0.191221 - p0 * -0.750000",
+         "commit": true
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "gear0",
+         "expressionX": "131.31+(40.560+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(18*(a[0]-p0)/6.28318531)-0.5))/0.1600)))))*cos(a[0])",
+         "expressionY": "223.17+(40.560+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(18*(a[0]-p0)/6.28318531)-0.5))/0.1600)))))*sin(a[0])",
+         "start": 0,
+         "end": 6.28318531,
+         "count": 468,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "gear1",
+         "expressionX": "200.16+(22.360+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(11*(a[0]-p1)/6.28318531)-0.5))/0.1600)))))*cos(a[0])",
+         "expressionY": "253.91+(22.360+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(11*(a[0]-p1)/6.28318531)-0.5))/0.1600)))))*sin(a[0])",
+         "start": 0,
+         "end": 6.28318531,
+         "count": 286,
+         "flags": 4
+        }
+       },
+       {
+        "pathExpression": {
+         "id": "gear2",
+         "expressionX": "253.09+(56.160+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(24*(a[0]-p2)/6.28318531)-0.5))/0.1600)))))*cos(a[0])",
+         "expressionY": "179.89+(56.160+11.180*(0.5-0.5*cos(3.14159265*max(0,min(1,(0.290-abs(fract(24*(a[0]-p2)/6.28318531)-0.5))/0.1600)))))*sin(a[0])",
+         "start": 0,
+         "end": 6.28318531,
+         "count": 624,
+         "flags": 4
+        }
+       },
+       {
+        "rem": {
+         "text": "wheel 0: 18 teeth"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFD9A441",
+             "#FF8A5F1E"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 84.50996637961927,
+            "y1": 176.3652673072249,
+            "x2": 178.1099663796193,
+            "y2": 269.9652673072249
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear0"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF8A5F1E"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.1
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear0"
+        }
+       },
+       {
+        "save": {}
+       },
+       {
+        "rotate": {
+         "angle": "p0 * 57.2957795",
+         "pivotX": 131.30996637961928,
+         "pivotY": 223.16526730722492
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF13161C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 153.49204737636302,
+         "cy": 239.2814925205775,
+         "radius": 11.356800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 122.83716535626608,
+         "cy": 249.24186745548553,
+         "radius": 11.356800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 103.89140637961928,
+         "cy": 223.1652672685591,
+         "radius": 11.356800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 122.8371654298129,
+         "cy": 197.0886671350675,
+         "radius": 11.356800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 153.4920474218174,
+         "cy": 207.04904215643498,
+         "radius": 11.356800000000002
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFD9A441",
+             "#FF8A5F1E"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 119.14196637961928,
+            "y1": 210.99726730722492,
+            "x2": 143.4779663796193,
+            "y2": 235.33326730722493
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 131.30996637961928,
+         "cy": 223.16526730722492,
+         "radius": 12.168000000000001
+        }
+       },
+       {
+        "restore": {}
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD5455E"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 131.30996637961928,
+         "cy": 223.16526730722492,
+         "radius": 3.4
+        }
+       },
+       {
+        "rem": {
+         "text": "wheel 1: 11 teeth"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFC9CDD4",
+             "#FF6E767F"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 171.55687247916734,
+            "y1": 225.31040546791652,
+            "x2": 228.75687247916733,
+            "y2": 282.51040546791654
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear1"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF6E767F"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.1
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear1"
+        }
+       },
+       {
+        "save": {}
+       },
+       {
+        "rotate": {
+         "angle": "p1 * 57.2957795",
+         "pivotX": 200.15687247916733,
+         "pivotY": 253.91040546791652
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF13161C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 210.95241312509262,
+         "cy": 264.7059461214538,
+         "radius": 6.144
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 189.36133181801813,
+         "cy": 264.7059461062298,
+         "radius": 6.144
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 189.36133184846602,
+         "cy": 243.11486479915533,
+         "radius": 6.144
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 210.9524131555405,
+         "cy": 243.11486484482717,
+         "radius": 6.144
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFC9CDD4",
+             "#FF6E767F"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 193.15687247916733,
+            "y1": 246.91040546791652,
+            "x2": 207.15687247916733,
+            "y2": 260.9104054679165
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.15687247916733,
+         "cy": 253.91040546791652,
+         "radius": 7.0
+        }
+       },
+       {
+        "restore": {}
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD5455E"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 200.15687247916733,
+         "cy": 253.91040546791652,
+         "radius": 3.4
+        }
+       },
+       {
+        "rem": {
+         "text": "wheel 2: 24 teeth"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFD9A441",
+             "#FF8A5F1E"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 190.69003362038072,
+            "y1": 117.48959453208349,
+            "x2": 315.4900336203807,
+            "y2": 242.2895945320835
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear2"
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF8A5F1E"
+          },
+          {
+           "style": "stroke"
+          },
+          {
+           "width": 1.1
+          }
+         ]
+        }
+       },
+       {
+        "drawPath": {
+         "path": "gear2"
+        }
+       },
+       {
+        "save": {}
+       },
+       {
+        "rotate": {
+         "angle": "p2 * 57.2957795",
+         "pivotX": 253.09003362038072,
+         "pivotY": 179.8895945320835
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FF13161C"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 285.9679606092563,
+         "cy": 198.87167453981095,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 253.09003359361205,
+         "cy": 217.85375453208349,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 220.21210660473645,
+         "cy": 198.87167449344628,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 220.2121066582738,
+         "cy": 160.90751447799136,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 253.09003370068672,
+         "cy": 141.9254345320835,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 285.96796066279364,
+         "cy": 160.9075146170854,
+         "radius": 15.724800000000002
+        }
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "linearGradient": {
+            "colors": [
+             "#FFD9A441",
+             "#FF8A5F1E"
+            ],
+            "stops": [
+             0.0,
+             1.0
+            ],
+            "x1": 236.2420336203807,
+            "y1": 163.04159453208348,
+            "x2": 269.93803362038074,
+            "y2": 196.7375945320835
+           }
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 253.09003362038072,
+         "cy": 179.8895945320835,
+         "radius": 16.848
+        }
+       },
+       {
+        "restore": {}
+       },
+       {
+        "paint": {
+         "ops": [
+          {
+           "color": "#FFD5455E"
+          },
+          {
+           "style": "fill"
+          }
+         ]
+        }
+       },
+       {
+        "drawCircle": {
+         "cx": 253.09003362038072,
+         "cy": 179.8895945320835,
+         "radius": 3.4
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
